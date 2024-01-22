@@ -1,0 +1,229 @@
+{
+  "classes": "#about_content, #holidaysDesc, #benefits, #howitworks, #ImpInfoPackage ul, #HowToBookPackage ul",
+  "KeyWords": [
+    {
+      "KeyWord": [
+        {
+          "words": "SWISStours"
+        },
+        {
+          "words": "Switzerland trip from India"
+        }
+      ],
+      "URL": "/",
+      "Target": "_blank"
+    },
+    {
+      "KeyWord": [
+        {
+          "words": "Swiss International Air Lines"
+        }
+      ],
+      "URL": "https://www.swiss.com/in/EN/book/flight-information/timetable",
+      "Target": "_blank"
+    },
+    {
+      "KeyWord": [
+        {
+          "words": "Swiss Pass"
+        },
+        {
+          "words": "Swiss Travel Pass"
+        },
+        {
+          "words": "Switzerland train pass"
+        }
+      ],
+      "URL": "/swiss-travel-pass",
+      "Target": "_blank"
+    },
+    {
+      "KeyWord": [
+        {
+          "words": "rail passes"
+        },
+        {
+          "words": "Eurail passes"
+        }
+      ],
+      "URL": "/PassMtEx/Rail-Pass.aspx?FamilyId=100029&cntry=",
+      "Target": "_blank"
+    },
+    {
+      "KeyWord": [
+        {
+          "words": "hotels"
+        },
+        {
+          "words": "luxurious hotels in Switzerland"
+        }
+      ],
+      "URL": "/hotels",
+      "Target": "_blank"
+    },
+    {
+      "KeyWord": [
+        {
+          "words": "Switzerland holiday packages"
+        },
+        {
+          "words": "Switzerland tour packages"
+        }
+      ],
+      "URL": "/switzerland-tour-packages",
+      "Target": "_blank"
+    },
+    {
+      "KeyWord": [
+        {
+          "words": "rail trip"
+        }
+      ],
+      "URL": "/european-rail-tickets",
+      "Target": "_blank"
+    },
+    {
+      "KeyWord": [
+        {
+          "words": "apartments"
+        }
+      ],
+      "URL": "/apartments",
+      "Target": "_blank"
+    },
+    {
+      "KeyWord": [
+        {
+          "words": "mountains"
+        },
+        {
+          "words": "mountain excursions"
+        }
+      ],
+      "URL": "/mountain-excursion",
+      "Target": "_blank"
+    },
+    {
+      "KeyWord": [
+        {
+          "words": "sightseeing excursions"
+        },
+        {
+          "words": "sightseeing and excursions"
+        },
+        {
+          "words": "sightseeing point in Europe"
+        }
+      ],
+      "URL": "/Sightseeings",
+      "Target": "_blank"
+    },
+    {
+      "KeyWord": [
+        {
+          "words": "call us"
+        }
+      ],
+      "URL": "/Info/Contact_Us.aspx?cntry=",
+      "Target": "_blank"
+    },
+
+    {
+      "KeyWord": [
+        {
+          "words": "Jungfraujoch"
+        },
+        {
+          "words": "Jungfrau"
+        }
+      ],
+      "URL": "/mountain-excursion/1-jungfraujoch-top-of-europe",
+      "Target": "_blank"
+    },
+
+    {
+      "KeyWord": [
+        {
+          "words": "Jetboat"
+        },
+        {
+          "words": "Jet boat"
+        }
+      ],
+      "URL": "/mountain-excursion/19-jetboat-interlaken",
+      "Target": "_blank"
+    },
+    {
+      "KeyWord": [
+        {
+          "words": "Matterhorn"
+        }
+      ],
+      "URL": "/mountain-excursion/7-matterhorn-glacier-paradise",
+      "Target": "_blank"
+    },
+    {
+      "KeyWord": [
+        {
+          "words": "Titlis"
+        }
+      ],
+      "URL": "/mountain-excursion/5-mount-titlis",
+      "Target": "_blank"
+    },
+    {
+      "KeyWord": [
+        {
+          "words": "Grindelwald First"
+        }
+      ],
+      "URL": "/mountain-excursion/9-grindelwald-first",
+      "Target": "_blank"
+    },
+    {
+      "KeyWord": [
+        {
+          "words": "Harder Kulm"
+        }
+      ],
+      "URL": "/mountain-excursion/2-harder-kulm",
+      "Target": "_blank"
+    },
+    {
+      "KeyWord": [
+        {
+          "words": "Pilatus"
+        }
+      ],
+      "URL": "/mountain-excursion/6-mount-pilatus",
+      "Target": "_blank"
+    },
+    {
+      "KeyWord": [
+        {
+          "words": "Swiss Transport Museum"
+        }
+      ],
+      "URL": "/mountain-excursion/35-swiss-transport-museum",
+      "Target": "_blank"
+    },
+    {
+      "KeyWord": [
+        {
+          "words": "Lake Lucerne Dinner"
+        }
+      ],
+      "URL": "/mountain-excursion/21-lake-lucerne-dinner-cruise",
+      "Target": "_blank"
+    },
+    {
+      "KeyWord": [
+        {
+          "words": "Glacier 3000"
+        }
+      ],
+      "URL": "/mountain-excursion/7-matterhorn-glacier-paradise",
+      "Target": "_blank"
+    }
+  ]
+}

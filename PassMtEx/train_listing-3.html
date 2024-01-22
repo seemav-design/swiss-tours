@@ -1,0 +1,1950 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#000" />
+<title>Welcome To SWISStours</title>
+<link href="../images/favicon.ico.jpg" rel="shortcut icon" />
+
+<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="../css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css">
+<link href="../css/style.css?v=12" rel="stylesheet" type="text/css">
+<link href="../css/menu.css" rel="stylesheet" type="text/css">
+<link href="../css/bootstrap-select.min.css" rel="stylesheet" type="text/css">
+
+<script src="../js/jquery-1.12.4.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-datetimepicker.js"></script>
+<script src="../js/bootstrap-select.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- Header Starts -->
+
+<header class="cd-main-header">
+<div class="container-fluid maxwidth">
+	<div class="col-xs-12 top_links clearfix">
+    <div class="row">
+    
+        <div class="link_box"><a href="send_your_request.html"><i class="fa fa-envelope"></i> Send your request</a></div>
+        
+        <div class="link_box dropdown contact_nos">
+          <a href="" class="dropdown-toggle dd_contact" data-toggle="dropdown" aria-haspopup="true"><i class="fa fa-phone"></i> Contact Us</a>
+            	<div class="dropdown-menu dd_contact_content">
+                <div class="contact_nos_holder">
+                    <span class="dd_cancel fa fa-times"></span>
+                    <div class="tl">Your Nearest Swisstours Office</div>
+                    <ul>
+                        <li><span>MUMBAI (Town Office)</span> Tel. (022) 61282400, 67439990</li>
+                        <li><span>MUMBAI (Suburban Office)</span> Tel. (022) 26487180/ 81 </li>
+                        <li><span>DELHI</span> Tel. (011) 23322240/ 41</li>
+                        <li><span>CHENNAI</span> Tel. (044) 42179510/ 9520</li>
+                        <li><span>BANGALORE</span> Tel. (080) 41132172, 91609072</li>
+                        <li><span>PUNE</span> Tel. (020) 26168581/ 82/ 83</li>
+                        <li><span>KOLKATA</span> Tel. (033) 40629087, 40035897</li>
+                        <li><span>AHEMDABAD</span> Tel. (079) 40028694 / 95 </li>
+                        <li><span>NAGPUR</span> Tel. (0712) 6609532/ 36/37/38/39</li>
+                        <li class="view_all"><a href="#">View All </a></li>
+                    </ul>
+                </div>
+				</div>  
+        </div>
+    
+    </div>
+    </div>
+    
+	<div class="col-md-12 col-xs-6 logo_holder"><div class="row"><a href="index.html"><img src="../images/logo.png" alt="" title="Swisstours"></a></div></div>
+    
+	<div class="col-md-12 col-xs-6 menus_container">
+    <div class="row">    
+    	<div class="cd-header-buttons">
+        <div class="cd-nav-trigger"><a href="#cd-primary-nav"><span></span></a></div>
+        <div class="login_head"><a href=""><span class="icon"></span> <span class="txt">Login</span></a></div>
+        </div>
+    </div>
+    </div>
+    
+<div class="clearfix"></div>
+</div>
+</header>
+
+<!-- Header Ends -->
+
+<div class="cd-main-content" style="padding-bottom: 0px">
+
+<div class="container-fluid main_content_container">
+
+<!-- PAGE CONTENT HOLDER STARTS  -->
+
+<div class="row">
+
+<div class="container-fluid fix_on_scroll">
+
+<div class="container-fluid listing-search_section">
+    <div class="row">
+        <div class="container-fluid maxwidth">
+        <div class="row">
+        <div class="col-xs-12">
+            <a href="javascript:void(0)" class="close_listing-search" onclick="$('.listing-search_section').hide()">X</a>
+    
+          <div class="search_forms">
+                <!-- <div class="col-sm-2 form-group trip-details">
+                    <div class="input-group"><div class="input-group-addon ic-visa"></div>
+                        <select name="triptype" class="form-control select-form trip-select" href="javascript:void(0)">
+                            <option value="1"> One Way</option>
+                            <option value="0">Round Trip</option>
+                        </select>
+                    </div>
+                </div> -->
+
+
+                <div class="col-sm-2 form-group from_control">
+                    <div class="input-group"><div class="input-group-addon ic_pointer"></div><input type="text" name="from" id="from" placeholder="From" class="form-control"></div>
+                </div>
+                <div class="col-sm-2 form-group  toggle-form">
+                 <a href="javascript:void(0)" onclick="swap_content('from','to')"><div class="swapToggleHor"><img src="../images/PTP/toggle@2x.png"> </div></a>
+                </div> 
+
+                <div class="col-sm-2 form-group to_control">
+                    <div class="input-group"><div class="input-group-addon ic_pointer"></div><input type="text" name="to" id="to" placeholder="To" class="form-control"></div>
+                </div>
+
+                <div class="col-sm-2 date-form form-group">
+                    <div class="input-group" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input7">
+                    <div class="input-group-addon ic_date"></div><input type="text" placeholder="Date of visit" class="form-control date form_date" readonly>
+                    </div>
+                    <input type="hidden" id="dtp_input7" value="" />
+                </div>
+
+                <div class="col-sm-2 date-form form-group round-disable" id="round-trip">
+                    <div class="input-group" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input7">
+                    <div class="input-group-addon ic_date"></div><input type="text" placeholder="Return on" class="form-control date form_date" name="returntrip">
+                    </div>
+                    <input type="hidden" id="dtp_input7" value="" />
+                </div>
+
+                <div class="col-sm-2 form-group passenger_no popover-markup2 passenger_count">
+
+                    <div class="input-group trigger">
+                    <div class="input-group-addon ic_person"></div><input type="text" name="passengers" id="passengers" class="form-control" placeholder="No. of persons" readonly>
+                    </div>
+
+
+                    <div class="content hide">
+                        <div class="form-group">
+                             <label class="control-label col-xs-6"><strong>Adult</strong><i> (16 - 99 yrs)</i></label>
+                             <div class="input-group number-spinner col-xs-6 spinners">
+                                <span class="input-group-btn">
+                                    <a class="btn" data-dir="dwn"><span class="fa fa-minus"></span></a>
+                                </span>
+                                <input type="text" disabled name="adult" id="adult" class="form-control text-center" value="0" max=9 min=0>
+                                <span class="input-group-btn">
+                                    <a class="btn" data-dir="up"><span class="fa fa-plus"></span></a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                           <label class="control-label col-xs-6"><strong>Children</strong><i> (6 - 15 yrs)</i></label>
+                           <div class="input-group number-spinner col-xs-6 spinners">
+                                <span class="input-group-btn">
+                                    <a class="btn" data-dir="dwn"><span class="fa fa-minus"></span></a>
+                                </span>
+                                <input type="text" disabled name="child" id="child" class="form-control text-center" value="0" max=9 min=0>
+                                <span class="input-group-btn">
+                                    <a class="btn" data-dir="up"><span class="fa fa-plus"></span></a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                           <label class="control-label col-xs-6"><strong>Infant</strong><i> (0 - 5 yrs)</i></label>
+                           <div class="input-group number-spinner col-xs-6 spinners">
+                                <span class="input-group-btn">
+                                    <a class="btn" data-dir="dwn"><span class="fa fa-minus"></span></a>
+                                </span>
+                                <input type="text" disabled name="infant" id="infant" class="form-control text-center" value="0" max=9 min=0>
+                                <span class="input-group-btn">
+                                    <a class="btn" data-dir="up"><span class="fa fa-plus"></span></a>
+                                </span>
+                            </div>
+                        </div>
+                        <a class="btn btn-default btn-block demise">Select</a>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-2 form-group">
+                    <input type="submit" placeholder="Return on" value="Search" class="cta btn text-uppercase">
+                </div>
+
+            </div>
+    
+    	</div>
+    
+        <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+        </div>
+    <div class="clearfix"></div>    
+	</div>
+</div>
+
+</div>
+
+<div class="clearfix" style="height:25px;" id="sticky-anchor"></div>
+
+<div class="container-fluid">
+
+<div class="row">
+
+<div class="container-fluid maxwidth">
+
+<div class="row">
+
+    <div class="col-12 listing_container">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7">
+            <div class="listing-area">
+                <div class="listing-area_tabList listing-area_tabList_1">
+                    <a href="javascript:void(0);" class="tab_link2 active">London St Pancras International - Paris Gare De Lyon Rer </a>
+                </div>
+                <a href="javascript:void(0);" onclick="$('.listing-search_section').show()" class="edit_train-return"></a>
+
+                <div class="clearfix"></div>
+
+                <div class="listing-area_tab" id="tab_2">
+                    <div class="date-class">
+                        <div class="hidden-xs col-xs-6">
+                            <div class="ic_date"></div> 29 Aug 2020
+                        </div>
+                        <div class="hidden-xs col-sm-3">
+                            2nd Class
+                        </div>
+                        <div class="hidden-xs col-sm-3">
+                            1st Class
+                        </div>
+                    </div>
+
+                    <div class="listing-area_list">
+                        <form>
+                            <ul>
+                                <li>
+                                    <div class="col-xs-10 col-sm-5">
+                                        <div class="train-timing row">
+                                            <div class="col-xs-3">
+                                                10:33
+                                                <span>15 Aug</span>
+                                            </div>
+                                            <div class="train-timing_stops col-xs-6">
+                                                <div class="hrs">2hr 26m</div>
+                                                <div class="stops">1 stop</div>
+                                            </div>
+                                            <div class="col-xs-3">
+                                                11:45
+                                                <span>15 Aug</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-6 col-sm-3 train-price-container">
+                                        <div>
+                                            <input id="s-class-price-1" type="radio" value="" name="journey_fare-1" class="journey_fare">
+                                            <label for="s-class-price-1"></label>
+                                        </div>
+                                        <div class="train-price">
+                                            <div class="train-class">2nd Class <a data-fancybox data-src="#faredetails_1" href="javascript:;"> <img src="../images/PTP/info-icon.svg"></a></div>
+                                            INR 5467 
+                                            <span>EUR 75.89</span>
+
+                                            <span class="cheapest">cheapest</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-6 col-sm-3 train-price-container">
+                                        <div>
+                                            <input id="f-class-price-1" type="radio" value="" name="journey_fare-1" class="journey_fare">
+                                            <label for="f-class-price-1"></label>
+                                        </div>
+                                        <div class="train-price">
+                                            <div class="train-class">1st Class <a data-fancybox data-src="#faredetails_1" href="javascript:;"> <img src="../images/PTP/info-icon.svg"></a></div>
+                                            INR 6565
+                                            <span>EUR 75.89</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 more-container">
+
+                                        <div class="col-xs-10 col-sm-9 more-fare-section">
+                                            <a href="javascript:void(0);" class="more-fare">MORE FARES</a>        
+                                            <a href="javascript:void(0);" class="more-details">TRAIN DETAILS</a>
+                                            <div class="more-fare_details">
+                                                <ul>
+                                                    <li>
+                                                        <div class="col-xs-1">
+                                                            <input id="f-class-more-price-1" type="radio" value="" name="more_fare-1" class="journey_fare">
+                                                            <label for="f-class-more-price-1"></label>
+                                                        </div>
+                                                        <div class="col-xs-7 col-md-6 class">
+                                                            <span>1st Class</span> Flexible
+                                                        </div>
+                                                        <div class="col-xs-4 col-md-6">
+                                                            <div class="col-xs-12 col-md-7 text-right fare-1">
+                                                                INR 5467
+                                                            </div>
+                                                            <div class="col-xs-12 col-md-5 fare-2">
+                                                                EUR 75.89
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="col-xs-1">
+                                                            <input id="s-class-more-price-1" type="radio" value="" name="more_fare-1" class="journey_fare">
+                                                            <label for="s-class-more-price-1"></label>
+                                                        </div>
+                                                        <div class="col-xs-7 col-md-6 class">
+                                                            <span>2nd Class</span> Flexible
+                                                        </div>
+                                                        <div class="col-xs-4 col-md-6">
+                                                            <div class="col-sm-12 col-md-7 text-right fare-1">
+                                                                INR 6565
+                                                            </div>
+                                                            <div class="col-sm-12 col-md-5 fare-2">
+                                                                EUR 75.89
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="col-xs-1">
+                                                            <input id="b-class-more-price-1" type="radio" value="" name="more_fare-1" class="journey_fare">
+                                                            <label for="b-class-more-price-1"></label>
+                                                        </div>
+                                                        <div class="col-xs-7 col-md-6 class">
+                                                            <span>Business Class</span> Semi Flex
+                                                        </div>
+                                                        <div class="col-xs-4 col-md-6">
+                                                            <div class="col-sm-12 col-md-7 text-right fare-1">
+                                                                INR 10747
+                                                            </div>
+                                                            <div class="col-sm-12 col-md-5 fare-2">
+                                                                EUR 75.89
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 train-time-detail-container">
+                                        <div class="train-time-detail-inner">
+                                            <div class="col-xs-5 col-sm-3 train-logo-no">
+                                                <picture>
+                                                    <img src="../images/PTP/eurostar-logo@2x.png">
+                                                </picture>
+                                                <p>Eurostar #9031</p>
+                                            </div>
+                                            <div class="col-xs-7 col-sm-9 train-time-detail">
+                                                <p>
+                                                    <b>11:13</b> London St. Pancras International
+                                                    <br />Sat 15 Aug
+                                                </p>
+                                                <p><b>13:26</b> Lille Europe</p>
+                                            </div>
+
+                                            <div class="col-xs-12 wait-time">
+                                                <div class="col-xs-5 col-sm-3 train-wait-icon">
+                                                    <picture>
+                                                        <img src="../images/PTP/time-left@2x.png">
+                                                    </picture>
+                                                </div>
+                                                <div class="col-xs-7 col-sm-9 train-wait-time">
+                                                    1 hour, 16 minutes
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-5 col-sm-3 train-logo-no">
+                                                <picture>
+                                                    <img src="../images/PTP/sncf-logo@2x.png">
+                                                </picture>
+                                                <p>Eurostar #9031</p>
+                                            </div>
+                                            <div class="col-xs-7 col-sm-9 train-time-detail">
+                                                <p>
+                                                    <b>11:13</b> London St. Pancras International
+                                                    <br />Sat 15 Aug
+                                                </p>
+                                                <p><b>13:26</b> Lille Europe</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+
+                                    <div class="col-xs-10 col-sm-5">
+                                        <div class="train-timing row">
+                                            <div class="col-xs-3">
+                                                11:13
+                                                <span>15 Aug</span>
+                                            </div>
+                                            <div class="train-timing_stops col-xs-6">
+                                                <div class="hrs">2hr 26m</div>
+                                                <div class="stops">1 stop</div>
+                                            </div>
+                                            <div class="col-xs-3">
+                                                12:39
+                                                <span>15 Aug</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-6 col-sm-3 train-price-container">
+                                        <div>
+                                            <input id="s-class-price-2" type="radio" value="" name="journey_fare-1" class="journey_fare">
+                                            <label for="s-class-price-2"></label>
+                                        </div>
+                                        <div class="train-price">
+                                            <div class="train-class">2nd Class <a data-fancybox data-src="#faredetails_1" href="javascript:;"> <img src="../images/PTP/info-icon.svg"></a></div>
+                                            INR 5467
+                                            <span>EUR 75.89</span>
+
+                                            <span class="cheapest">cheapest</span>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-xs-6 col-sm-3 train-price-container">
+                                        <div>
+                                            <input id="s-class-price-2" type="radio" value="" name="journey_fare-1" class="journey_fare">
+                                            <label for="s-class-price-2"></label>
+                                        </div>
+                                        <div class="train-price">
+                                            <div class="train-class">1st Class <a data-fancybox data-src="#faredetails_1" href="javascript:;"> <img src="../images/PTP/info-icon.svg"></a></div>
+                                            INR 6565
+                                            <span>EUR 75.89</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 more-container">
+                                        
+                                        <div class="col-sm-9 more-fare-section">
+                                            <a href="javascript:void(0);" class="more-fare">MORE FARES</a>
+                                            <a href="javascript:void(0);" class="more-details">TRAIN DETAILS</a>
+                                            <div class="more-fare_details">
+                                                <ul>
+                                                    <li>
+                                                        <div class="col-xs-1">
+                                                            <input id="f-class-more-price-2" type="radio" value="" name="more_fare-2" class="journey_fare">
+                                                            <label for="f-class-more-price-2"></label>
+                                                        </div>
+                                                        <div class="col-xs-7 col-md-6 class">
+                                                            <span>1st Class</span> Flexible
+                                                        </div>
+                                                        <div class="col-xs-4 col-md-6">
+                                                            <div class="col-xs-12 col-md-7 text-right fare-1">
+                                                                INR 5747
+                                                            </div>
+                                                            <div class="col-xs-12 col-md-5 fare-2">
+                                                                EUR 75.89
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="col-xs-1">
+                                                            <input id="s-class-more-price-2" type="radio" value="" name="more_fare-2" class="journey_fare">
+                                                            <label for="s-class-more-price-2"></label>
+                                                        </div>
+                                                        <div class="col-xs-7 col-md-6 class">
+                                                            <span>2nd Class</span> Flexible
+                                                        </div>
+                                                        <div class="col-xs-4 col-md-6">
+                                                            <div class="col-sm-12 col-md-7 text-right fare-1">
+                                                                INR 5747
+                                                            </div>
+                                                            <div class="col-sm-12 col-md-5 fare-2">
+                                                                EUR 75.89
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="col-xs-1">
+                                                            <input id="b-class-more-price-2" type="radio" value="" name="more_fare-2" class="journey_fare">
+                                                            <label for="b-class-more-price-2"></label>
+                                                        </div>
+                                                        <div class="col-xs-7 col-md-6 class">
+                                                            <span>Business Class</span> Semi Flex
+                                                        </div>
+                                                        <div class="col-xs-4 col-md-6">
+                                                            <div class="col-sm-12 col-md-7 text-right fare-1">
+                                                                INR 10747
+                                                            </div>
+                                                            <div class="col-sm-12 col-md-5 fare-2">
+                                                                EUR 75.89
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 train-time-detail-container">
+                                        <div class="train-time-detail-inner">
+                                            <div class="col-xs-5 col-sm-3 train-logo-no">
+                                                <picture>
+                                                    <img src="../images/PTP/eurostar-logo@2x.png">
+                                                </picture>
+                                                <p>Eurostar #9031</p>
+                                            </div>
+                                            <div class="col-xs-7 col-sm-9 train-time-detail">
+                                                <p>
+                                                    <b>11:13</b> London St. Pancras International
+                                                    <br />Sat 15 Aug
+                                                </p>
+                                                <p><b>13:26</b> Lille Europe</p>
+                                            </div>
+
+                                            <div class="col-xs-12 wait-time">
+                                                <div class="col-xs-5 col-sm-3 train-wait-icon">
+                                                    <picture>
+                                                        <img src="../images/PTP/time-left@2x.png">
+                                                    </picture>
+                                                </div>
+                                                <div class="col-xs-7 col-sm-9 train-wait-time">
+                                                    1 hour, 16 minutes
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-5 col-sm-3 train-logo-no">
+                                                <picture>
+                                                    <img src="../images/PTP/sncf-logo@2x.png">
+                                                </picture>
+                                                <p>Eurostar #9031</p>
+                                            </div>
+                                            <div class="col-xs-7 col-sm-9 train-time-detail">
+                                                <p>
+                                                    <b>11:13</b> London St. Pancras International
+                                                    <br />Sat 15 Aug
+                                                </p>
+                                                <p><b>13:26</b> Lille Europe</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+
+                                    <div class="col-xs-10 col-sm-5">
+                                        <div class="train-timing row">
+                                            <div class="col-xs-3">
+                                                11:13
+                                                <span>15 Aug</span>
+                                            </div>
+                                            <div class="train-timing_stops col-xs-6">
+                                                <div class="hrs">2hr 26m</div>
+                                                <div class="stops">1 stop</div>
+                                            </div>
+                                            <div class="col-xs-3">
+                                                12:39
+                                                <span>15 Aug</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-6 col-sm-3 train-price-container">
+                                        <div>
+                                            <input id="s-class-price-3" type="radio" value="" name="journey_fare-1" class="journey_fare">
+                                            <label for="s-class-price-3"></label>
+                                        </div>
+                                        <div class="train-price">
+                                            <div class="train-class">2nd Class <a data-fancybox data-src="#faredetails_1" href="javascript:;"> <img src="../images/PTP/info-icon.svg"></a></div>
+                                            INR 5467
+                                            <span>EUR 75.89</span>
+
+                                            <span class="cheapest">cheapest</span>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-xs-6 col-sm-3 train-price-container">
+                                        <div>
+                                            <input id="f-class-price-3" type="radio" value="" name="journey_fare-1" class="journey_fare">
+                                            <label for="f-class-price-3"></label>
+                                        </div>
+                                        <div class="train-price">
+                                            <div class="train-class">1st Class <a data-fancybox data-src="#faredetails_1" href="javascript:;"> <img src="../images/PTP/info-icon.svg"></a></div>
+                                            INR 6565
+                                            <span>EUR 75.89</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 more-container">
+
+                                        <div class="col-sm-9 more-fare-section">
+                                            <a href="javascript:void(0);" class="more-fare">MORE FARES</a>
+                                            <a href="javascript:void(0);" class="more-details">TRAIN DETAILS</a>
+                                            <div class="more-fare_details">
+                                                <ul>
+                                                    <li>
+                                                        <div class="col-xs-1">
+                                                            <input id="f-class-more-price-3" type="radio" value="" name="more_fare-3" class="journey_fare">
+                                                            <label for="f-class-more-price-3"></label>
+                                                        </div>
+                                                        <div class="col-xs-7 col-md-6 class">
+                                                            <span>1st Class</span> Flexible
+                                                        </div>
+                                                        <div class="col-xs-4 col-md-6">
+                                                            <div class="col-xs-12 col-md-7 text-right fare-1">
+                                                                INR 5747
+                                                            </div>
+                                                            <div class="col-xs-12 col-md-5 fare-2">
+                                                                EUR 75.89
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="col-xs-1">
+                                                            <input id="s-class-more-price-3" type="radio" value="" name="more_fare-3" class="journey_fare">
+                                                            <label for="s-class-more-price-3"></label>
+                                                        </div>
+                                                        <div class="col-xs-7 col-md-6 class">
+                                                            <span>2nd Class</span> Flexible
+                                                        </div>
+                                                        <div class="col-xs-4 col-md-6">
+                                                            <div class="col-sm-12 col-md-7 text-right fare-1">
+                                                                INR 5747
+                                                            </div>
+                                                            <div class="col-sm-12 col-md-5 fare-2">
+                                                                EUR 75.89
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="col-xs-1">
+                                                            <input id="b-class-more-price-3" type="radio" value="" name="more_fare-3" class="journey_fare">
+                                                            <label for="b-class-more-price-3"></label>
+                                                        </div>
+                                                        <div class="col-xs-7 col-md-6 class">
+                                                            <span>Business Class</span> Semi Flex
+                                                        </div>
+                                                        <div class="col-xs-4 col-md-6">
+                                                            <div class="col-sm-12 col-md-7 text-right fare-1">
+                                                                INR 10747
+                                                            </div>
+                                                            <div class="col-sm-12 col-md-5 fare-2">
+                                                                EUR 75.89
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 train-time-detail-container">
+                                        <div class="train-time-detail-inner">
+                                            <div class="col-xs-5 col-sm-3 train-logo-no">
+                                                <picture>
+                                                    <img src="../images/PTP/eurostar-logo@2x.png">
+                                                </picture>
+                                                <p>Eurostar #9031</p>
+                                            </div>
+                                            <div class="col-xs-7 col-sm-9 train-time-detail">
+                                                <p>
+                                                    <b>11:13</b> London St. Pancras International
+                                                    <br />Sat 15 Aug
+                                                </p>
+                                                <p><b>13:26</b> Lille Europe</p>
+                                            </div>
+
+                                            <div class="col-xs-12 wait-time">
+                                                <div class="col-xs-5 col-sm-3 train-wait-icon">
+                                                    <picture>
+                                                        <img src="../images/PTP/time-left@2x.png">
+                                                    </picture>
+                                                </div>
+                                                <div class="col-xs-7 col-sm-9 train-wait-time">
+                                                    1 hour, 16 minutes
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-5 col-sm-3 train-logo-no">
+                                                <picture>
+                                                    <img src="../images/PTP/sncf-logo@2x.png">
+                                                </picture>
+                                                <p>Eurostar #9031</p>
+                                            </div>
+                                            <div class="col-xs-7 col-sm-9 train-time-detail">
+                                                <p>
+                                                    <b>11:13</b> London St. Pancras International
+                                                    <br />Sat 15 Aug
+                                                </p>
+                                                <p><b>13:26</b> Lille Europe</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+
+                                    <div class="col-xs-10 col-sm-5">
+                                        <div class="train-timing row">
+                                            <div class="col-xs-3">
+                                                11:13
+                                                <span>15 Aug</span>
+                                            </div>
+                                            <div class="train-timing_stops col-xs-6">
+                                                <div class="hrs">2hr 26m</div>
+                                                <div class="stops">1 stop</div>
+                                            </div>
+                                            <div class="col-xs-3">
+                                                12:39
+                                                <span>15 Aug</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-6 col-sm-3 train-price-container">
+                                        <div>
+                                            <input id="s-class-price-4" type="radio" value="" name="journey_fare-1" class="journey_fare">
+                                            <label for="s-class-price-4"></label>
+                                        </div>
+                                        <div class="train-price">
+                                            <div class="train-class">2nd Class <a data-fancybox data-src="#faredetails_1" href="javascript:;"> <img src="../images/PTP/info-icon.svg"></a></div>
+                                            INR 5467
+                                            <span>EUR 75.89</span>
+
+                                            <span class="cheapest">cheapest</span>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-xs-6 col-sm-3 train-price-container">
+                                        <div>
+                                            <input id="f-class-price-4" type="radio" value="" name="journey_fare-1" class="journey_fare">
+                                            <label for="f-class-price-4"></label>
+                                        </div>
+                                        <div class="train-price">
+                                            <div class="train-class">1st Class <a data-fancybox data-src="#faredetails_1" href="javascript:;"> <img src="../images/PTP/info-icon.svg"></a></div>
+                                            INR 6565
+                                            <span>EUR 75.89</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 more-container">
+
+                                        <div class="col-sm-9 more-fare-section">
+                                            <a href="javascript:void(0);" class="more-fare">MORE FARES</a>
+                                            <a href="javascript:void(0);" class="more-details">TRAIN DETAILS</a>
+                                            <div class="more-fare_details">
+                                                <ul>
+                                                    <li>
+                                                        <div class="col-xs-1">
+                                                            <input id="f-class-more-price-3" type="radio" value="" name="more_fare-3" class="journey_fare">
+                                                            <label for="f-class-more-price-3"></label>
+                                                        </div>
+                                                        <div class="col-xs-7 col-md-6 class">
+                                                            <span>1st Class</span> Flexible
+                                                        </div>
+                                                        <div class="col-xs-4 col-md-6">
+                                                            <div class="col-xs-12 col-md-7 text-right fare-1">
+                                                                INR 5747
+                                                            </div>
+                                                            <div class="col-xs-12 col-md-5 fare-2">
+                                                                EUR 75.89
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="col-xs-1">
+                                                            <input id="s-class-more-price-3" type="radio" value="" name="more_fare-3" class="journey_fare">
+                                                            <label for="s-class-more-price-3"></label>
+                                                        </div>
+                                                        <div class="col-xs-7 col-md-6 class">
+                                                            <span>2nd Class</span> Flexible
+                                                        </div>
+                                                        <div class="col-xs-4 col-md-6">
+                                                            <div class="col-sm-12 col-md-7 text-right fare-1">
+                                                                INR 5747
+                                                            </div>
+                                                            <div class="col-sm-12 col-md-5 fare-2">
+                                                                EUR 75.89
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="col-xs-1">
+                                                            <input id="b-class-more-price-3" type="radio" value="" name="more_fare-3" class="journey_fare">
+                                                            <label for="b-class-more-price-3"></label>
+                                                        </div>
+                                                        <div class="col-xs-7 col-md-6 class">
+                                                            <span>Business Class</span> Semi Flex
+                                                        </div>
+                                                        <div class="col-xs-4 col-md-6">
+                                                            <div class="col-sm-12 col-md-7 text-right fare-1">
+                                                                INR 10747
+                                                            </div>
+                                                            <div class="col-sm-12 col-md-5 fare-2">
+                                                                EUR 75.89
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 train-time-detail-container">
+                                        <div class="train-time-detail-inner">
+                                            <div class="col-xs-5 col-sm-3 train-logo-no">
+                                                <picture>
+                                                    <img src="../images/PTP/eurostar-logo@2x.png">
+                                                </picture>
+                                                <p>Eurostar #9031</p>
+                                            </div>
+                                            <div class="col-xs-7 col-sm-9 train-time-detail">
+                                                <p>
+                                                    <b>11:13</b> London St. Pancras International
+                                                    <br />Sat 15 Aug
+                                                </p>
+                                                <p><b>13:26</b> Lille Europe</p>
+                                            </div>
+
+                                            <div class="col-xs-12 wait-time">
+                                                <div class="col-xs-5 col-sm-3 train-wait-icon">
+                                                    <picture>
+                                                        <img src="../images/PTP/time-left@2x.png">
+                                                    </picture>
+                                                </div>
+                                                <div class="col-xs-7 col-sm-9 train-wait-time">
+                                                    1 hour, 16 minutes
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-5 col-sm-3 train-logo-no">
+                                                <picture>
+                                                    <img src="../images/PTP/sncf-logo@2x.png">
+                                                </picture>
+                                                <p>Eurostar #9031</p>
+                                            </div>
+                                            <div class="col-xs-7 col-sm-9 train-time-detail">
+                                                <p>
+                                                    <b>11:13</b> London St. Pancras International
+                                                    <br />Sat 15 Aug
+                                                </p>
+                                                <p><b>13:26</b> Lille Europe</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+
+                                    <div class="col-xs-10 col-sm-5">
+                                        <div class="train-timing row">
+                                            <div class="col-xs-3">
+                                                11:13
+                                                <span>15 Aug</span>
+                                            </div>
+                                            <div class="train-timing_stops col-xs-6">
+                                                <div class="hrs">2hr 26m</div>
+                                                <div class="stops">1 stop</div>
+                                            </div>
+                                            <div class="col-xs-3">
+                                                12:39
+                                                <span>15 Aug</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-6 col-sm-3 train-price-container">
+                                        <div>
+                                            <input id="s-class-price-5" type="radio" value="" name="journey_fare-1" class="journey_fare">
+                                            <label for="s-class-price-5"></label>
+                                        </div>
+                                        <div class="train-price">
+                                            <div class="train-class">2nd Class <a data-fancybox data-src="#faredetails_1" href="javascript:;"> <img src="../images/PTP/info-icon.svg"></a></div>
+                                            INR 5467
+                                            <span>EUR 75.89</span>
+
+                                            <span class="cheapest">cheapest</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-6 col-sm-3 train-price-container">
+                                        <div>
+                                            <input id="f-class-price-5" type="radio" value="" name="journey_fare-1" class="journey_fare">
+                                            <label for="f-class-price-5"></label>
+                                        </div>
+                                        <div class="train-price">
+                                            <div class="train-class">1st Class <a data-fancybox data-src="#faredetails_1" href="javascript:;"> <img src="../images/PTP/info-icon.svg"></a></div>
+                                            INR 6565
+                                            <span>EUR 75.89</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 more-container">
+
+                                        <div class="col-sm-9 more-fare-section">
+                                            <a href="javascript:void(0);" class="more-fare">MORE FARES</a>
+                                            <a href="javascript:void(0);" class="more-details">TRAIN DETAILS</a>
+                                            <div class="more-fare_details">
+                                                <ul>
+                                                    <li>
+                                                        <div class="col-xs-1">
+                                                            <input id="f-class-more-price-3" type="radio" value="" name="more_fare-3" class="journey_fare">
+                                                            <label for="f-class-more-price-3"></label>
+                                                        </div>
+                                                        <div class="col-xs-7 col-md-6 class">
+                                                            <span>1st Class</span> Flexible
+                                                        </div>
+                                                        <div class="col-xs-4 col-md-6">
+                                                            <div class="col-xs-12 col-md-7 text-right fare-1">
+                                                                INR 5747
+                                                            </div>
+                                                            <div class="col-xs-12 col-md-5 fare-2">
+                                                                EUR 75.89
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="col-xs-1">
+                                                            <input id="s-class-more-price-3" type="radio" value="" name="more_fare-3" class="journey_fare">
+                                                            <label for="s-class-more-price-3"></label>
+                                                        </div>
+                                                        <div class="col-xs-7 col-md-6 class">
+                                                            <span>2nd Class</span> Flexible
+                                                        </div>
+                                                        <div class="col-xs-4 col-md-6">
+                                                            <div class="col-sm-12 col-md-7 text-right fare-1">
+                                                                INR 5747
+                                                            </div>
+                                                            <div class="col-sm-12 col-md-5 fare-2">
+                                                                EUR 75.89
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="col-xs-1">
+                                                            <input id="b-class-more-price-3" type="radio" value="" name="more_fare-3" class="journey_fare">
+                                                            <label for="b-class-more-price-3"></label>
+                                                        </div>
+                                                        <div class="col-xs-7 col-md-6 class">
+                                                            <span>Business Class</span> Semi Flex
+                                                        </div>
+                                                        <div class="col-xs-4 col-md-6">
+                                                            <div class="col-sm-12 col-md-7 text-right fare-1">
+                                                                INR 10747
+                                                            </div>
+                                                            <div class="col-sm-12 col-md-5 fare-2">
+                                                                EUR 75.89
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 train-time-detail-container">
+                                        <div class="train-time-detail-inner">
+                                            <div class="col-xs-5 col-sm-3 train-logo-no">
+                                                <picture>
+                                                    <img src="../images/PTP/eurostar-logo@2x.png">
+                                                </picture>
+                                                <p>Eurostar #9031</p>
+                                            </div>
+                                            <div class="col-xs-7 col-sm-9 train-time-detail">
+                                                <p>
+                                                    <b>11:13</b> London St. Pancras International
+                                                    <br />Sat 15 Aug
+                                                </p>
+                                                <p><b>13:26</b> Lille Europe</p>
+                                            </div>
+
+                                            <div class="col-xs-12 wait-time">
+                                                <div class="col-xs-5 col-sm-3 train-wait-icon">
+                                                    <picture>
+                                                        <img src="../images/PTP/time-left@2x.png">
+                                                    </picture>
+                                                </div>
+                                                <div class="col-xs-7 col-sm-9 train-wait-time">
+                                                    1 hour, 16 minutes
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-5 col-sm-3 train-logo-no">
+                                                <picture>
+                                                    <img src="../images/PTP/sncf-logo@2x.png">
+                                                </picture>
+                                                <p>Eurostar #9031</p>
+                                            </div>
+                                            <div class="col-xs-7 col-sm-9 train-time-detail">
+                                                <p>
+                                                    <b>11:13</b> London St. Pancras International
+                                                    <br />Sat 15 Aug
+                                                </p>
+                                                <p><b>13:26</b> Lille Europe</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+
+                                    <div class="col-xs-10 col-sm-5">
+                                        <div class="train-timing row">
+                                            <div class="col-xs-3">
+                                                11:13
+                                                <span>15 Aug</span>
+                                            </div>
+                                            <div class="train-timing_stops col-xs-6">
+                                                <div class="hrs">2hr 26m</div>
+                                                <div class="stops">1 stop</div>
+                                            </div>
+                                            <div class="col-xs-3">
+                                                12:39
+                                                <span>15 Aug</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-6 col-sm-3 train-price-container">
+                                        <div>
+                                            <input id="s-class-price-6" type="radio" value="" name="journey_fare-1" class="journey_fare">
+                                            <label for="s-class-price-6"></label>
+                                        </div>
+                                        <div class="train-price">
+                                            <div class="train-class">2nd Class <a data-fancybox data-src="#faredetails_1" href="javascript:;"> <img src="../images/PTP/info-icon.svg"></a></div>
+                                            INR 5467
+                                            <span>EUR 75.89</span>
+
+                                            <span class="cheapest">cheapest</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-6 col-sm-3 train-price-container">
+                                        <div>
+                                            <input id="f-class-price-6" type="radio" value="" name="journey_fare-1" class="journey_fare">
+                                            <label for="f-class-price-6"></label>
+                                        </div>
+                                        <div class="train-price">
+                                            <div class="train-class">1st Class <a data-fancybox data-src="#faredetails_1" href="javascript:;"> <img src="../images/PTP/info-icon.svg"></a></div>
+                                            INR 6565
+                                            <span>EUR 75.89</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 more-container">
+
+                                        <div class="col-sm-9 more-fare-section">
+                                            <a href="javascript:void(0);" class="more-fare">MORE FARES</a>
+                                            <a href="javascript:void(0);" class="more-details">TRAIN DETAILS</a>
+                                            <div class="more-fare_details">
+                                                <ul>
+                                                    <li>
+                                                        <div class="col-xs-1">
+                                                            <input id="f-class-more-price-3" type="radio" value="" name="more_fare-3" class="journey_fare">
+                                                            <label for="f-class-more-price-3"></label>
+                                                        </div>
+                                                        <div class="col-xs-7 col-md-6 class">
+                                                            <span>1st Class</span> Flexible
+                                                        </div>
+                                                        <div class="col-xs-4 col-md-6">
+                                                            <div class="col-xs-12 col-md-7 text-right fare-1">
+                                                                INR 5747
+                                                            </div>
+                                                            <div class="col-xs-12 col-md-5 fare-2">
+                                                                EUR 75.89
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="col-xs-1">
+                                                            <input id="s-class-more-price-3" type="radio" value="" name="more_fare-3" class="journey_fare">
+                                                            <label for="s-class-more-price-3"></label>
+                                                        </div>
+                                                        <div class="col-xs-7 col-md-6 class">
+                                                            <span>2nd Class</span> Flexible
+                                                        </div>
+                                                        <div class="col-xs-4 col-md-6">
+                                                            <div class="col-sm-12 col-md-7 text-right fare-1">
+                                                                INR 5747
+                                                            </div>
+                                                            <div class="col-sm-12 col-md-5 fare-2">
+                                                                EUR 75.89
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="col-xs-1">
+                                                            <input id="b-class-more-price-3" type="radio" value="" name="more_fare-3" class="journey_fare">
+                                                            <label for="b-class-more-price-3"></label>
+                                                        </div>
+                                                        <div class="col-xs-7 col-md-6 class">
+                                                            <span>Business Class</span> Semi Flex
+                                                        </div>
+                                                        <div class="col-xs-4 col-md-6">
+                                                            <div class="col-sm-12 col-md-7 text-right fare-1">
+                                                                INR 10747
+                                                            </div>
+                                                            <div class="col-sm-12 col-md-5 fare-2">
+                                                                EUR 75.89
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 train-time-detail-container">
+                                        <div class="train-time-detail-inner">
+                                            <div class="col-xs-5 col-sm-3 train-logo-no">
+                                                <picture>
+                                                    <img src="../images/PTP/eurostar-logo@2x.png">
+                                                </picture>
+                                                <p>Eurostar #9031</p>
+                                            </div>
+                                            <div class="col-xs-7 col-sm-9 train-time-detail">
+                                                <p>
+                                                    <b>11:13</b> London St. Pancras International
+                                                    <br />Sat 15 Aug
+                                                </p>
+                                                <p><b>13:26</b> Lille Europe</p>
+                                            </div>
+
+                                            <div class="col-xs-12 wait-time">
+                                                <div class="col-xs-5 col-sm-3 train-wait-icon">
+                                                    <picture>
+                                                        <img src="../images/PTP/time-left@2x.png">
+                                                    </picture>
+                                                </div>
+                                                <div class="col-xs-7 col-sm-9 train-wait-time">
+                                                    1 hour, 16 minutes
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-5 col-sm-3 train-logo-no">
+                                                <picture>
+                                                    <img src="../images/PTP/sncf-logo@2x.png">
+                                                </picture>
+                                                <p>Eurostar #9031</p>
+                                            </div>
+                                            <div class="col-xs-7 col-sm-9 train-time-detail">
+                                                <p>
+                                                    <b>11:13</b> London St. Pancras International
+                                                    <br />Sat 15 Aug
+                                                </p>
+                                                <p><b>13:26</b> Lille Europe</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+
+                                    <div class="col-xs-10 col-sm-5">
+                                        <div class="train-timing row">
+                                            <div class="col-xs-3">
+                                                11:13
+                                                <span>15 Aug</span>
+                                            </div>
+                                            <div class="train-timing_stops col-xs-6">
+                                                <div class="hrs">2hr 26m</div>
+                                                <div class="stops">1 stop</div>
+                                            </div>
+                                            <div class="col-xs-3">
+                                                12:39
+                                                <span>15 Aug</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-6 col-sm-3 train-price-container">
+                                        <div>
+                                            <input id="s-class-price-7" type="radio" value="" name="journey_fare-1" class="journey_fare">
+                                            <label for="s-class-price-7"></label>
+                                        </div>
+                                        <div class="train-price">
+                                            <div class="train-class">2nd Class <a data-fancybox data-src="#faredetails_1" href="javascript:;"> <img src="../images/PTP/info-icon.svg"></a></div>
+                                            INR 5467
+                                            <span>EUR 75.89</span>
+
+                                            <span class="cheapest">cheapest</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-6 col-sm-3 train-price-container">
+                                        <div>
+                                            <input id="f-class-price-7" type="radio" value="" name="journey_fare-1" class="journey_fare">
+                                            <label for="f-class-price-7"></label>
+                                        </div>
+                                        <div class="train-price">
+                                            <div class="train-class">1st Class <a data-fancybox data-src="#faredetails_1" href="javascript:;"> <img src="../images/PTP/info-icon.svg"></a></div>
+                                            INR 6565
+                                            <span>EUR 75.89</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 more-container">
+
+                                        <div class="col-sm-9 more-fare-section">
+                                            <a href="javascript:void(0);" class="more-fare">MORE FARES</a>
+                                            <a href="javascript:void(0);" class="more-details">TRAIN DETAILS</a>
+                                            <div class="more-fare_details">
+                                                <ul>
+                                                    <li>
+                                                        <div class="col-xs-1">
+                                                            <input id="f-class-more-price-3" type="radio" value="" name="more_fare-3" class="journey_fare">
+                                                            <label for="f-class-more-price-3"></label>
+                                                        </div>
+                                                        <div class="col-xs-7 col-md-6 class">
+                                                            <span>1st Class</span> Flexible
+                                                        </div>
+                                                        <div class="col-xs-4 col-md-6">
+                                                            <div class="col-xs-12 col-md-7 text-right fare-1">
+                                                                INR 5747
+                                                            </div>
+                                                            <div class="col-xs-12 col-md-5 fare-2">
+                                                                EUR 75.89
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="col-xs-1">
+                                                            <input id="s-class-more-price-3" type="radio" value="" name="more_fare-3" class="journey_fare">
+                                                            <label for="s-class-more-price-3"></label>
+                                                        </div>
+                                                        <div class="col-xs-7 col-md-6 class">
+                                                            <span>2nd Class</span> Flexible
+                                                        </div>
+                                                        <div class="col-xs-4 col-md-6">
+                                                            <div class="col-sm-12 col-md-7 text-right fare-1">
+                                                                INR 5747
+                                                            </div>
+                                                            <div class="col-sm-12 col-md-5 fare-2">
+                                                                EUR 75.89
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="col-xs-1">
+                                                            <input id="b-class-more-price-3" type="radio" value="" name="more_fare-3" class="journey_fare">
+                                                            <label for="b-class-more-price-3"></label>
+                                                        </div>
+                                                        <div class="col-xs-7 col-md-6 class">
+                                                            <span>Business Class</span> Semi Flex
+                                                        </div>
+                                                        <div class="col-xs-4 col-md-6">
+                                                            <div class="col-sm-12 col-md-7 text-right fare-1">
+                                                                INR 10747
+                                                            </div>
+                                                            <div class="col-sm-12 col-md-5 fare-2">
+                                                                EUR 75.89
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 train-time-detail-container">
+                                        <div class="train-time-detail-inner">
+                                            <div class="col-xs-5 col-sm-3 train-logo-no">
+                                                <picture>
+                                                    <img src="../images/PTP/eurostar-logo@2x.png">
+                                                </picture>
+                                                <p>Eurostar #9031</p>
+                                            </div>
+                                            <div class="col-xs-7 col-sm-9 train-time-detail">
+                                                <p>
+                                                    <b>11:13</b> London St. Pancras International
+                                                    <br />Sat 15 Aug
+                                                </p>
+                                                <p><b>13:26</b> Lille Europe</p>
+                                            </div>
+
+                                            <div class="col-xs-12 wait-time">
+                                                <div class="col-xs-5 col-sm-3 train-wait-icon">
+                                                    <picture>
+                                                        <img src="../images/PTP/time-left@2x.png">
+                                                    </picture>
+                                                </div>
+                                                <div class="col-xs-7 col-sm-9 train-wait-time">
+                                                    1 hour, 16 minutes
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-5 col-sm-3 train-logo-no">
+                                                <picture>
+                                                    <img src="../images/PTP/sncf-logo@2x.png">
+                                                </picture>
+                                                <p>Eurostar #9031</p>
+                                            </div>
+                                            <div class="col-xs-7 col-sm-9 train-time-detail">
+                                                <p>
+                                                    <b>11:13</b> London St. Pancras International
+                                                    <br />Sat 15 Aug
+                                                </p>
+                                                <p><b>13:26</b> Lille Europe</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                                <li>
+
+                                    <div class="col-xs-10 col-sm-5">
+                                        <div class="train-timing row">
+                                            <div class="col-xs-3">
+                                                11:13
+                                                <span>15 Aug</span>
+                                            </div>
+                                            <div class="train-timing_stops col-xs-6">
+                                                <div class="hrs">2hr 26m</div>
+                                                <div class="stops">1 stop</div>
+                                            </div>
+                                            <div class="col-xs-3">
+                                                12:39
+                                                <span>15 Aug</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-6 col-sm-3 train-price-container">
+                                        <div>
+                                            <input id="s-class-price-8" type="radio" value="" name="journey_fare-1" class="journey_fare">
+                                            <label for="s-class-price-8"></label>
+                                        </div>
+                                        <div class="train-price">
+                                            <div class="train-class">2nd Class <a data-fancybox data-src="#faredetails_1" href="javascript:;"> <img src="../images/PTP/info-icon.svg"></a></div>
+                                            INR 5467
+                                            <span>EUR 75.89</span>
+
+                                            <span class="cheapest">cheapest</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-6 col-sm-3 train-price-container">
+                                        <div>
+                                            <input id="f-class-price-8" type="radio" value="" name="journey_fare-1" class="journey_fare">
+                                            <label for="f-class-price-8"></label>
+                                        </div>
+                                        <div class="train-price">
+                                            <div class="train-class">1st Class <a data-fancybox data-src="#faredetails_1" href="javascript:;"> <img src="../images/PTP/info-icon.svg"></a></div>
+                                            INR 6565
+                                            <span>EUR 75.89</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 more-container">
+
+                                        <div class="col-sm-9 more-fare-section">
+                                            <a href="javascript:void(0);" class="more-fare">MORE FARES</a>
+                                            <a href="javascript:void(0);" class="more-details">TRAIN DETAILS</a>
+                                            <div class="more-fare_details">
+                                                <ul>
+                                                    <li>
+                                                        <div class="col-xs-1">
+                                                            <input id="f-class-more-price-4" type="radio" value="" name="more_fare-4" class="journey_fare">
+                                                            <label for="f-class-more-price-4"></label>
+                                                        </div>
+                                                        <div class="col-xs-7 col-md-6 class">
+                                                            <span>1st Class</span> Flexible
+                                                        </div>
+                                                        <div class="col-xs-4 col-md-6">
+                                                            <div class="col-xs-12 col-md-7 text-right fare-1">
+                                                                INR 5747
+                                                            </div>
+                                                            <div class="col-xs-12 col-md-5 fare-2">
+                                                                EUR 75.89
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="col-xs-1">
+                                                            <input id="s-class-more-price-4" type="radio" value="" name="more_fare-4" class="journey_fare">
+                                                            <label for="s-class-more-price-4"></label>
+                                                        </div>
+                                                        <div class="col-xs-7 col-md-6 class">
+                                                            <span>2nd Class</span> Flexible
+                                                        </div>
+                                                        <div class="col-xs-4 col-md-6">
+                                                            <div class="col-sm-12 col-md-7 text-right fare-1">
+                                                                INR 5747
+                                                            </div>
+                                                            <div class="col-sm-12 col-md-5 fare-2">
+                                                                EUR 75.89
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="col-xs-1">
+                                                            <input id="b-class-more-price-4" type="radio" value="" name="more_fare-4" class="journey_fare">
+                                                            <label for="b-class-more-price-4"></label>
+                                                        </div>
+                                                        <div class="col-xs-7 col-md-6 class">
+                                                            <span>Business Class</span> Semi Flex
+                                                        </div>
+                                                        <div class="col-xs-4 col-md-6">
+                                                            <div class="col-sm-12 col-md-7 text-right fare-1">
+                                                                INR 10747
+                                                            </div>
+                                                            <div class="col-sm-12 col-md-5 fare-2">
+                                                                EUR 75.89
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 train-time-detail-container">
+                                        <div class="train-time-detail-inner">
+                                            <div class="col-xs-5 col-sm-3 train-logo-no">
+                                                <picture>
+                                                    <img src="../images/PTP/eurostar-logo@2x.png">
+                                                </picture>
+                                                <p>Eurostar #9031</p>
+                                            </div>
+                                            <div class="col-xs-7 col-sm-9 train-time-detail">
+                                                <p>
+                                                    <b>11:13</b> London St. Pancras International
+                                                    <br />Sat 15 Aug
+                                                </p>
+                                                <p><b>13:26</b> Lille Europe</p>
+                                            </div>
+
+                                            <div class="col-xs-12 wait-time">
+                                                <div class="col-xs-5 col-sm-3 train-wait-icon">
+                                                    <picture>
+                                                        <img src="../images/PTP/time-left@2x.png">
+                                                    </picture>
+                                                </div>
+                                                <div class="col-xs-7 col-sm-9 train-wait-time">
+                                                    1 hour, 16 minutes
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-5 col-sm-3 train-logo-no">
+                                                <picture>
+                                                    <img src="../images/PTP/sncf-logo@2x.png">
+                                                </picture>
+                                                <p>Eurostar #9031</p>
+                                            </div>
+                                            <div class="col-xs-7 col-sm-9 train-time-detail">
+                                                <p>
+                                                    <b>11:13</b> London St. Pancras International
+                                                    <br />Sat 15 Aug
+                                                </p>
+                                                <p><b>13:26</b> Lille Europe</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="col-xs-12 listing-area_btn">
+                                <a href="" class="prev_btn pull-left">Previous Day</a>
+                                <a href="" class="later_btn">Later Trains</a>
+                                <a href="" class="next_btn pull-right">Next Day</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 booking-details_container">
+            <div class="booking-details_header">
+                <div class="col-xs-6">Booking Details</div>
+                <div class="col-xs-6">
+                    <a href="javascript:void(0);" onclick="$('.listing-search_section').show()" class="edit_train-return"></a>
+                </div>
+            </div>
+            <div class="booking-details_section sticky">
+                <div class="booking-details">
+                    <div class="journey_details one_way single_journey">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 journey_departure">
+                            <div class="booking_location">
+                                <p class="booking_location_title"><strong>PARIS</strong> Gare De Lyon Rer</p>
+                                <p class="booking_date_time">23:00 | Sun 23 Aug 2020</p>
+                            </div>
+                            <div class="journey_duration">
+                                <p class="train-icon">
+                                    <img src="../images/PTP/train-icon.svg" />
+                                    <span class="journey_time">4h 10min</span>
+                                    <span class="journey_changes">(1 Change)</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 journey_arrival">
+                            <div class="booking_location">
+                                <p class="booking_location_title"><strong>LONDON</strong> Pancras International</p>
+                                <p class="booking_date_time">03:10 | Mon 24 Aug 2020</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 booking_time_class">
+                            <p class="booking_class_title">Eurostar #9031 - <a data-fancybox data-src="#faredetails_1" href="javascript:;"><span>Second Class - Semi Flexi <span class="class-info-ic"><img src="../images/PTP/info-icon.svg" alt="class-info-icon"></span></span></a></p>
+                            
+                            <!-- FARE DETAILS POPUP -->
+                            <div style="display:none" class="fancy_inline_display" id="faredetails_1">
+                            
+                            <div class="connection_details">
+                                <div class="cd_title gray_texture">Fare Details</div>
+                                <div class="container-fluid">
+                                
+                                <ol>
+                                <li>
+                                    <div class="">From <strong>PARIS EST</strong> To <strong>STRASBOURG</strong></div>
+                                    <div class="">TGV Duplex 2407 (1h 59m) - TICKET_PLUS_RESERVATION</div>
+                                    <div class="tckt_class">1 x 2nd Cl Leisure 2 Adult</div>
+                                    <div class="policy">Advance purchase recommended - Can be combined with a Leisure Week End Fare - Child up to 11 years inclusive<br>
+                    If ticket not used, 100% refundable/exchangeable up to 2 days before train departure date with 5EUR charge within 30 days before departure. 50% refundable/exchangeable 1 days before train departure date and hour with a maximum 15EUR charge. Thereafter, no refund allowed. EUR 9 tickets are usually non refundable. No fixed charge on non mandatory reservation train ticket. Subject to administrative charges in country of purchase. Refunds/Exchanges may be subject to an administrative fee from Rail Europe. Advance purchase recommended - Can be combined with a Leisure Week End Fare - Child up to 11 years inclusive</div>
+                                </li>
+                                <li>
+                                    <div class="">From <strong>STRASBOURG</strong> To <strong>BASEL SBB</strong></div>
+                                    <div class="">TER 96267 (1h 18m) - TICKET_PLUS_RESERVATION</div>
+                                    <div class="tckt_class">1 x 2nd Cl Leisure 2 Adult</div>
+                                    <div class="policy">Advance purchase recommended - Can be combined with a Leisure Week End Fare - Child up to 11 years inclusive<br>
+                    If ticket not used, 100% refundable/exchangeable up to 2 days before train departure date with 5EUR charge within 30 days before departure. 50% refundable/exchangeable 1 days before train departure date and hour with a maximum 15EUR charge. Thereafter, no refund allowed. EUR 9 tickets are usually non refundable. No fixed charge on non mandatory reservation train ticket. Subject to administrative charges in country of purchase. Refunds/Exchanges may be subject to an administrative fee from Rail Europe. Advance purchase recommended - Can be combined with a Leisure Week End Fare - Child up to 11 years inclusive</div>
+                                </li>
+                                </ol>
+                                </div>
+                            </div>
+                            </div>
+                            <!-- FARE DETAILS POPUP ENDS -->
+                        </div>
+                        <div class="booking_pricing col-xs-12 col-md-12 col-lg-12">
+                            <p class="passanger_price">Price for <span class="no_of_passanger">1</span> passanger</p>
+                            <p class="booking_amt">INR 6747</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 booking-details_amt">
+                    <div class="col-xs-12 col-sm-7">
+                        <div class="booking-fee">Booking Fee. <span>INR 179</span></div>
+                        <div class="booking-total">GRAND TOTAL. <span>INR 12394</span></div>
+                    </div>
+                    <div class="col-xs-12 col-sm-5">
+                        <button class="book_now_btn btn cta">Book now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile_booking-detail">
+        <div class="col-xs-6">
+            <div class="fare-1">INR 4747</div>
+            <div class="fare-2">EUR 75.89</div>
+        </div>
+        <div class="col-xs-6">
+            <!--div class="select-view"><a href="javascript:void(0);" class="tab_link2">Select & Continue</a></div>
+            <div class="next-detail">Next: Ticket details</div-->
+
+            <div class="select-view"><a href="javascript:void(0);" onclick="$('.booking-details_container').show();$('.listing-area').hide();">View Tickets & Book</a></div>
+        </div>
+    </div>
+
+<div class="clearfix"></div>
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="clearfix"></div>
+</div>
+
+<div class="clearfix"></div>
+</div>
+
+</div>
+
+<script src="../js/form_script.js"></script>
+<script src="../js/pushy.min.js"></script>
+<script src="../js/jquery.fancybox.min.js"></script>
+<script>
+
+/* round trip disable*/
+$(window).load(function(){
+    $('#round-trip').attr('round-disable');
+}
+);
+    
+
+$('select[name="triptype"]').change(function(){
+    if($(this).val() == 1) {
+        $('input[name="returntrip"]').attr('disabled',true);
+        $('#round-trip').addClass('round-disable');
+    }
+    else {
+        $('input[name="returntrip"]').removeAttr('disabled');
+        $('#round-trip').removeClass('round-disable');
+    }
+});
+
+/* Fixing the modify button */
+
+function sticky_relocate() {
+    if($(window).width()>1279){ 
+        var window_top = $(window).scrollTop();
+        var div_top = $('#sticky-anchor').offset().top-100;
+        if (window_top >= div_top) {
+            $('.fix_on_scroll').addClass('stick');
+        } else {
+            $('.fix_on_scroll').removeClass('stick');
+        }   
+    }
+}
+$(function () {
+    $(window).scroll(sticky_relocate);
+    sticky_relocate();
+});
+
+/* PUSHY */
+
+var optionSideLeft = {
+	button: "side-left-pushy-button",
+	container: "container",
+	containerPush: false,
+	menuPosition: "left",
+	menuOpen: false,
+	overlayShow: true          
+}
+$("#sideLeftPushy").Pushy(optionSideLeft);
+
+/* Mobile filters Show-Hide */
+function windowResize(){
+	if($(window).width()<992){
+		$("#filter_mob_btn").click(function(){
+			$("#filter_mob_display").attr('style','display:block;');
+		})
+	}else{
+		$("#filter_mob_display").attr('style','display:block;');
+	}
+}
+
+$(document).ready(function() {
+	windowResize();
+});
+$(window).resize(function(){
+	windowResize();
+});
+
+
+/*  Passengers Select  */
+$(function() {
+  $('.popover-markup2>.trigger').each(function(index, elem) {
+    var $popover = $(elem).popover({
+      html: true,
+	  container: 'body', /* Use this only if popover needs to be append in body */
+      placement: 'bottom',
+      // title: '<?= lang("Select passengers");?><a class="close demise");">×</a>',
+      content: function() {
+        return $(this).parent().find('.content').html();
+      }
+    });
+  
+	$('.trigger').click(function() {
+		$('.popover').addClass('psngr_count')
+	})
+
+    // open popover & inital value in form
+    var passengers = [0, 0, 0];
+
+    // store form value when popover closed
+    $popover.on('hide.bs.popover', function() {
+      if ($popover.data('bs.popover').$tip && $popover.data('bs.popover').$tip[0]) {
+        var popoverElem = $popover.data('bs.popover').$tip[0];
+
+        $(".popover-content input", popoverElem).each(function(i) {
+          passengers[i] = $(this).val();
+        });
+
+        // remove events
+        $(popoverElem).off('click', '.number-spinner a');
+        $(popoverElem).off('click', '.demise');
+      }
+    });
+
+    $popover.on('inserted.bs.popover', function() {
+      if ($popover.data('bs.popover').$tip && $popover.data('bs.popover').$tip[0]) {
+        var popoverElem = $popover.data('bs.popover').$tip[0];
+
+        $('input', popoverElem).each(function(i) {
+          $(this).val(passengers[i]);
+        });
+
+        $(popoverElem).on('click', '.demise', function() {
+          $popover.popover('hide');
+        });
+
+        // spinner(+-btn to change value) & total to parent input
+        $(popoverElem).on('click', '.number-spinner a', function() {
+          var btn = $(this),
+            input = btn.closest('.number-spinner').find('input'),
+            total = $('#passengers', elem).val(),
+            oldValue = input.val().trim();
+
+          if (btn.attr('data-dir') == 'up') {
+            if (oldValue < input.attr('max')) {
+              oldValue++;
+              total++;
+            }
+          } else {
+            if (oldValue > input.attr('min')) {
+              oldValue--;
+              total--;
+            }
+          }
+          $('#passengers', elem).val(total);
+          input.val(oldValue);
+        });
+      }
+    });
+  });
+});
+
+//swaptext
+function swap_content(id1,id2){
+var tmp = document.getElementById('from').value;
+document.getElementById('from').value = document.getElementById('to').value;
+document.getElementById('to').value = tmp;
+}
+
+</script>
+
+<!-- PAGE CONTENT HOLDER ENDS -->
+
+</div>
+
+<div class="clearfix"></div>
+
+<!-- Footer Starts -->
+
+<footer class="sticky-stopper">
+<div class="container-fluid footer">
+	<div class="container-fluid maxwidth">
+    <div class="row fm_adjust">
+		
+		<div class="col-sm-4"> 
+        <div class="row">       
+			<div class="foot_head">SwissTours <i class="fa fa-plus pull-right dropdown_icon" aria-hidden="true"></i></div>                    
+            <ul class="foot_dropdown">
+				<li><a href="about_us.html" class="fade_anim">About us</a> </li>
+                <li><a href="partners.html" class="fade_anim">Partners</a></li>
+                <li><a href="careers.html" class="fade_anim">Careers</a></li>
+                <li><a href="testimonials.html" class="fade_anim">Testimonials</a></li>
+			</ul>
+         </div>
+        </div>		
+		
+        <div class="col-sm-4">
+        <div class="row">			
+            <div class="foot_head">Customer Support <i class="fa fa-plus pull-right dropdown_icon" aria-hidden="true"></i></div>                     
+			<ul class="foot_dropdown">
+				<li><a href="contact_us.html" class="fade_anim">Contact Us</a></li>
+                <li><a href="faqs.html" class="fade_anim">FAQs</a></li>
+                <li><a href="#" class="fade_anim">Sitemap</a></li>
+			</ul>
+        </div>
+		</div>
+                
+        <div class="col-sm-4">
+        <div class="row">
+        	<div class="foot_head">Legal <i class="fa fa-plus pull-right dropdown_icon" aria-hidden="true"></i></div>			
+            <ul class="foot_dropdown">
+				<li><a href="user_agreement.html" class="fade_anim">User Agreement</a></li>
+                <li><a href="privacy_policy.html" class="fade_anim">Privacy Policy</a></li>
+                <li><a href="#" class="fade_anim">Verified & Secured</a></li>
+			</ul>
+        </div> 
+		</div>
+            
+	</div>
+    </div>
+</div>  
+
+<div class="container-fluid bottom">
+	<div class="row maxwidth">
+    <div class="col-xs-6"><div class="row">&copy; 2017. Swisstours.com</div></div>            
+    <div class="col-xs-6 text-right social">
+    	<div class="row">
+            <a href="https://www.facebook.com/pages/Swisstours/256257954432198" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/_swisstours/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>                
+        </div>
+    </div>
+    <div class="clearfix"></div>                
+</div>
+    <div class="clearfix"></div>                
+</div>
+
+</footer>
+<!-- Footer Ends -->
+</div>
+
+<!-- Navigation Menus Starts -->
+
+<div class="cd-overlay"></div>
+<nav class="cd-nav">
+		<ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
+        	<li><a href="hotels_search.html">Hotels</a></li>
+            
+			<li class="has-children">
+				<a>Apartment </a>
+                <ul class="cd-nav-gallery is-hidden bot_pad">
+					<li class="go-back"><a href="#0">Menu</a></li>
+					<li><a class="cd-nav-item" href=""><img src="../images/ungroup.jpg" alt="Lucerne"><h3>Lucerne</h3></a></li>
+					<li><a class="cd-nav-item" href=""><img src="../images/interlaken.jpg" alt="Interlaken"><h3>Interlaken</h3></a></li>
+					<li><a class="cd-nav-item" href=""><img src="../images/grindewald.jpg" alt="Grindewald"><h3>Grindewald</h3></a></li>
+					<li><a class="cd-nav-item" href=""><img src="../images/engelberg.jpg" alt="Engelberg"><h3>Engelberg</h3></a></li>
+					<li class="see-all"> <a href="apartment_search.html">View All</a> </li>
+				</ul>
+			</li>
+
+			<li class="has-children">
+				<a>Holidays</a>
+				<ul class="cd-nav-gallery is-hidden">
+					<li class="go-back"><a href="#0">Menu</a></li>
+					<li><a class="cd-nav-item" href="holidays_listing.html"><img src="../images/ungroup.jpg" alt="Product Image"><h3>Unescorted Tours</h3></a></li>
+					<li><a class="cd-nav-item" href="holidays_listing.html"><img src="../images/group.jpg" alt="Product Image"><h3>Group Tours</h3></a></li>
+				</ul>
+			</li>
+            
+            <li><a href="swiss_travel_pass.html">Swiss Travel Pass</a></li>
+            
+			<li class="has-children">
+				<a>Rail</a>
+				<ul class="cd-rail-nav is-hidden">
+					<li class="go-back"><a href="#0">Menu</a>
+                    <li class="has-children">
+						<a>Popular Rail Passes</a>
+                            <ul class="is-hidden">
+                            <li class="go-back"><a href="#0">Menu</a></li>
+                            <li><a href="">Eurail Global</a></li>
+                            <li><a href="">Eurail Three Country Select Pass</a></li>
+                            <li><a href="">Eurail Two Country Select Pass</a></li>
+                            <li><a href="">Eurail Four Country Select Pass</a></li>
+                            <li><a href="">European East Pass</a></li>
+                            <li><a href="">Eurail Austria Pass</a></li>
+                            <li><a href="">Eurail Benelux Pass</a></li>
+                            <li><a href="">Eurail Bulgaria Pass</a></li>
+                            <li><a href="">Eurail Croatia Pass</a></li>
+                            <li><a href="">Eurail Czech Republic Pass</a></li>
+                            </ul>
+                     </li>
+                     
+                     <li class="has-children">
+						<a>Popular Rail Passes</a>
+                            <ul class="is-hidden">
+                            <li class="go-back"><a href="#0">Menu</a></li>
+                            <li><a href="">Eurail Denmark Pass</a></li>
+                            <li><a href="">Eurail Finland Pass</a></li>
+                            <li><a href="">Eurail France Pass</a></li>
+                            <li><a href="">Eurail Global Pass</a></li>
+                            <li><a href="">Eurail Greece Pass</a></li>
+                            <li><a href="">Eurail Greek Islands Pass</a></li>
+                            <li><a href="">Eurail Hungary Pass</a></li>
+                            <li><a href="">Eurail Ireland Pass</a></li>
+                            <li><a href="">Eurail Italy Pass</a></li>
+                            <li><a href="">Eurail Norway Pass</a></li>
+                            </ul>
+					</li>
+                     
+                     <li class="has-children">
+						<a>Popular Rail Passes</a>
+                            <ul class="is-hidden">
+                            <li class="go-back"><a href="#0">Menu</a></li>
+                            <li><a href="">Eurail Poland Pass</a></li>
+                            <li><a href="">Eurail Portugal Pass</a></li>
+                            <li><a href="">Eurail Romania Pass</a></li>
+                            <li><a href="">Eurail Scandinavia Pass</a></li>
+                            <li><a href="">Eurail Slovakia Pass</a></li>
+                            <li><a href="">Eurail Slovenia Pass</a></li>
+                            <li><a href="">Eurail Spain Pass</a></li>
+                            <li><a href="">Eurail Sweden Pass</a></li>
+                            <li><a href="">Balkan Pass</a></li>
+                            <li><a href="">Berlin Pass</a></li>
+                            </ul>
+                     </li>
+                     
+                     <li>
+						<span class="box_link">
+                        Book Online Now!<br><strong>Best Price Guaranteed</strong>
+                        <a href="train_ticket_search.html" class="link_btn">Search more</a>
+                        </span>
+                    </li>
+				</ul>
+			</li>
+            
+			<li class="has-children">
+				<a>Sightseeing</a>
+				<ul class="cd-ss-nav is-hidden">
+					<li class="go-back"><a href="#0">Menu</a></li>
+					<li class="has-children"><a>Popular Sightseeing</a>
+                            <ul class="is-hidden">
+                            <li class="go-back"><a href="#0">Menu</a></li>
+                            <li><a href="">Jungfraujoch - Interlaken</a></li>
+                            <li><a href="">Mt. Titlis - Engelberg</a></li>
+                            <li><a href="">Matterhorn Glacier Paradise - Zermatt</a></li>
+                            <li><a href="">Glacier 3000 - Gstaad</a></li>
+                            <li><a href="">Harder kulm - Interlaken</a></li>
+                            <li><a href="">Schilthorn - Interlaken</a></li>
+                            <li><a href="">Mt. Pilatus - Lucerne</a></li>
+                            <li><a href="">Lake Lucerne Cruise - Lucerne</a></li>
+                            </ul>                    
+                    </li>
+					<li class="has-children"><a>Popular Excursions</a>
+                            <ul class="is-hidden">
+                            <li class="go-back"><a href="#0">Menu</a></li>
+							<li><a href="">Sunnega - Zermatt</a></li>
+                            <li><a href="">Rochers De Naye - Montreux</a></li>
+                            <li><a href="">Stanserhorn - Lucerne</a></li>
+                            <li><a href="">Grindelwald First - Grindelwald</a></li>
+                            <li><a href="">Ski Experience - Zermatt</a></li>
+                            <li><a href="">Montparnasse Tower - Paris </a></li>
+                            <li><a href="">Kitzsteinhorn - Zell am See Kaprun</a></li>
+                            <li><a href="">Swiss Chocolate adventure - Lucerne</a></li>
+                            </ul>
+                    </li>                     
+                     <li>
+						<span class="box_link">
+                        Book Online Now!<br><strong>Best Price Guaranteed</strong>
+                        <a href="sightseeing_search.html" class="link_btn">Search more</a>
+                        </span>
+                    </li>
+				</ul>
+			</li>
+
+			<li class="has-children">
+				<a>Information</a>
+				<ul class="cd-nav-icons is-hidden">
+					<li class="go-back"><a href="#0">Menu</a></li>
+					<li><a class="cd-nav-item item-1" href=""><h3>Brochure</h3><p>This is the item description</p></a></li>
+					<li><a class="cd-nav-item item-2" href=""><h3>Maps</h3><p>This is the item description</p></a></li>
+					<li><a class="cd-nav-item item-3" href="destination_list.html"><h3>Destinations</h3><p>This is the item description</p></a></li>
+					<li><a class="cd-nav-item item-4" href="send_your_request.html"><h3>Send Your Request </h3><p>This is the item description</p></a></li>
+					<li><a class="cd-nav-item item-5" href="payment.html"><h3>Pay Now</h3><p>This is the item description</p></a></li>
+				</ul>
+			</li>
+
+			<li><a href="offers.html">Offers</a></li>
+            
+			<li><a href="">Flight</a></li>
+		</ul> <!-- primary-nav -->
+	</nav>
+        
+<!-- Navigation Menus Ends -->
+
+<script src="../js/general.js"></script>
+<script src="../js/train-listing.js"></script>
+
+
+</body>
+
+</html>

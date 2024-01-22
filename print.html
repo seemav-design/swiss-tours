@@ -1,0 +1,982 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Swisstours</title>
+    <script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+
+
+        @font-face {
+            font-family: Code39AzaleaWide2;
+            src: url(/fonts/Code39AzaleaWide2.ttf) format('truetype'), url(/fonts/Code39AzaleaWide2.woff) format('woff');
+        }
+
+        .barCode {
+            font-family: Code39AzaleaWide2;
+            font-size: 30px;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 400;
+            line-height: normal;
+            color:#0B0B0B;
+        }
+        p{
+            padding:0;
+            margin:0;
+          
+        }
+        table {
+            border-collapse: separate;
+        }
+        .padding1{
+            padding:24px 16px;
+         }
+        .border-bottom{
+            border-bottom:2px solid #D9D9D9;
+        }
+        label{
+            font-size: 16px;
+            color:#1F1449;
+            font-weight:600;
+           
+        }
+        .greybg{
+            background-color: #D9D9D9;
+        } 
+        .border-radius10{
+            border-radius:10px;    
+        }
+        .title{
+            font-size:24px;
+            color:#0B0B0B;
+            font-weight:500;
+            padding:7px 23px;
+        }
+        .title2 img{
+            width: 25px;
+            height: auto;
+            margin-right: 8px;
+        }
+        .d-flex{
+            display: flex;
+        }
+        .flex-column{
+            flex-direction: column;
+        }
+        .pinimg{
+            width:9px;
+        }
+        .flex-grow-1{
+            flex-grow: 1;
+        }
+        .w100{
+            width:100%;
+        }
+        .greyborder{
+            border:2px solid #D9D9D9;
+        }
+        .border-dash-right{
+            border-right:2px dashed #D9D9D9;
+        }
+        .border-dash-bottom{
+            border-bottom:2px dashed #D9D9D9;
+        }
+        .border-dash-top{
+            border-bottom:2px dashed #D9D9D9;
+        }
+        .widthauto{
+           width: -webkit-fill-available;
+        }
+        .title2{
+            font-size:15px;
+            font-weight: 600;
+            color:#1F1449;
+            width: 220px;
+        }
+        .fontsize12{
+            font-size:12px;
+        }
+        .text-center{
+            text-align: center;
+        }
+        .mb-6{
+            margin-bottom:6px;
+        }
+        .deatilstable th{
+            font-size: 12px;
+            font-weight: 500;
+            text-align: left;
+            border:1px solid #D9D9D9;
+           
+        }
+        .deatilstable td , .deatilstable th{
+            padding:12px 15px 12px 29px;
+            border:1px solid #D9D9D9;
+            vertical-align: top;
+           
+        }
+        .deatilstable td{
+            font-size: 12px;
+            border-top:0;
+           
+            border-right:1px solid #D9D9D9; 
+            border-left:1px solid #D9D9D9; 
+            border-bottom: 2px dashed #D9D9D9;
+        }
+        .deatilstable td p{
+            font-size: 12px;
+            margin-bottom:6px;
+        }
+        .order-summmary table td{
+            padding:6px 23px;
+        }
+        .GrandTotal{
+            padding:20px 18px;
+            border-top:2px dashed #D9D9D9; 
+            border-bottom: 2px dashed #D9D9D9;
+        }
+        .w200{
+            width: 200px;
+           
+        }
+        .justify-content-between{
+            justify-content: space-between;
+        }
+        .flex-end{
+            align-items: flex-end;
+        }
+    </style>
+    <style type="text/css" media="print">
+        @media print {
+            @page {
+                size: A4;
+                width: 210mm;
+                height: 297mm;
+            }
+
+            body {
+                background-color: #FFFFFF;
+                margin: 0.17px;
+                font-size: 12px;
+                color:#0B0B0B;
+            }
+
+            * {
+                -webkit-print-color-adjust: exact;
+            }
+        
+        }
+    </style>
+</head>
+<body>
+<!--table start-->
+<table width="896" align="center" cellpadding="0" cellspacing="0">
+<tr>
+    <td>
+        <table style="border:1px solid #D9D9D9;">
+            <tr >
+                <td valign="top" class="padding1 border-bottom"  style="vertical-align: middle; text-align: left;">
+                    <img src="images/print/logo.svg"></td>
+                <td class="padding1 border-bottom"  style="text-align: right;">01-09-24 | 12:12 pm</td>
+            </tr>
+           <tr valign="top">
+                <td class="border-bottom" style="padding:12px 16px 42px 16px;border-right:1px solid #D9D9D9;">
+                    <label>Address:</label>
+                    <p style="margin:12px 0px;">Urmi Estate, 10th Floor, 95 Ganpatrao Kadam Marg, Lower Parel West, Mumbai, Maharashtra 400013</p>
+                </td>
+                <td class="border-bottom" style="padding:12px 0px 42px 22px;">
+                    <p><label>Phone:</label>022-61282400</p>
+                    <p style="margin:12px 0px;"><label>Email:</label>Toovey.Abraham@swiss.com</p>
+                </td>
+           </tr>
+           <tr>
+                <td style="padding:12px 16px 12px 16px;width:50%;">
+                    <p style="font-size: 24px;font-weight:400;line-height: 36px;margin:0;">LX - 62YESD</p>
+                    <p style="font-size: 12px;">Airline Booking Reference</p>
+                </td>
+                <td style="padding:12px 16px 12px 16px;width:50%;">
+                    <p style="font-size: 24px;font-weight:400;line-height: 36px;margin:0;">1305708</p>
+                    <p style="font-size: 12px;">Verteil Booking Reference</p>
+                </td>
+           </tr>
+        </table>
+    </td>
+</tr>
+<tr>
+    <td style="margin:24px 0 0 0;">&nbsp;</td>
+</tr>
+<tr>
+    <td class="greybg border-radius10"  style="margin:24px 0 12px 0px;">
+        <p class="title">Itinerary</p>
+    </td>
+</tr>
+<tr>
+    <td style="margin:0 0 12px 0;">&nbsp;</td>
+</tr>
+<tr>
+    <td style="padding:13px 23px;" class="border-radius10 greyborder">
+        <table class="w100">
+            <tr style="padding:10px;">
+                <td class="border-dash-right widthauto border-dash-bottom">
+                    <table class="w100">
+                        <tr valign="top">
+                            <td>
+                                <p class="d-flex flex-column">
+                                    <img class="pinimg" src="images/print/pin.svg" alt="pinimg">
+                                    <span style="margin:8px 0px;font-size:16px;font-weight:600;">ZRH</span>
+                                    <span style="color:#9698A9;font-weight:300;font-size:12px;">Switzerland</span>
+                                </p>
+                            </td>
+                            <td valign="middle">
+                                <img src="images/print/arrivalfightimg.svg" alt="">
+                            </td>
+                            <td style="padding-right:15px;">
+                                <p class="d-flex flex-column flex-end">
+                                    <img class="pinimg" src="images/print/pin.svg" alt="pinimg">
+                                    <span style="margin:8px 0px;font-size:16px;font-weight:600;">DXB</span>
+                                    <span style="color:#9698A9;font-weight:300;font-size:12px;">UAE</span>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="padding:10px;" class="border-dash-right widthauto border-dash-bottom">
+                    <p style="font-size:10px;font-weight:300;color:#0B0B0B;margin-bottom:7px;">Departure</p>
+                    <p style="font-size:16px;font-weight:600;margin-bottom:8px;">13:05, 5 Jan 2024</p>
+                    <p style="font-size:12px;font-weight:300;color:#9698A9;">Zurich - Kloten Airport</p>
+                </td>
+                <td style="padding:10px;" class="widthauto border-dash-bottom">
+                    <p style="font-size:10px;font-weight:300;color:#0B0B0B;margin-bottom:7px;">Arrival</p>
+                    <p style="font-size:16px;font-weight:600;margin-bottom:8px;">22:15, 5 Jan 2024</p>
+                    <p style="font-size:12px;font-weight:300;color:#9698A9;">Dubai International Airport | Terminal- 1</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding:20px 14px 7px 0px;" class="border-dash-right"><p class="title2 d-flex"><img src="images/print/swisslogo2.svg" alt="">SWISS International</p></td>
+               
+                <td colspan="2" style="padding:20px 14px 7px 14px;"><p style="word-break:break-all;font-size:12px;">6h 10m <span style="padding:0px 8px">|</span> <span>Economy Class</span> <span style="padding:0px 8px">|</span><span style="padding:0px 8px">Airbus A330 - 300</span><span style="padding:0px 8px">|</span><span>Economy Class</span> <span style="padding:0px 8px">|</span><span>1 Adult</span><span style="padding:0px 8px">|</span><span>Basic</span> <span><img src="images/print/starimg.svg" alt="img"></span></p></td>
+            </tr>
+        </table>
+    </td>
+</tr>
+<tr height="24px;"></tr>
+<tr>
+    <td style="padding:13px 23px;" class="border-radius10 greyborder">
+        <table class="w100">
+            <tr style="padding:10px;">
+                <td class="border-dash-right widthauto border-dash-bottom">
+                    <table class="w100">
+                        <tr valign="top">
+                            <td>
+                                <p class="d-flex flex-column">
+                                    <img class="pinimg" src="images/print/pin.svg" alt="pinimg">
+                                    <span style="margin:8px 0px;font-size:16px;font-weight:600;">ZRH</span>
+                                    <span style="color:#9698A9;font-weight:300;font-size:12px;">Switzerland</span>
+                                </p>
+                            </td>
+                            <td valign="middle">
+                                <img src="images/print/arrivalfightimg.svg" alt="">
+                            </td>
+                            <td style="padding-right:15px;">
+                                <p class="d-flex flex-column flex-end">
+                                    <img class="pinimg" src="images/print/pin.svg" alt="pinimg">
+                                    <span style="margin:8px 0px;font-size:16px;font-weight:600;">DXB</span>
+                                    <span style="color:#9698A9;font-weight:300;font-size:12px;">UAE</span>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="padding:10px;" class="border-dash-right widthauto border-dash-bottom">
+                    <p style="font-size:10px;font-weight:300;color:#0B0B0B;margin-bottom:7px;">Departure</p>
+                    <p style="font-size:16px;font-weight:600;margin-bottom:8px;">13:05, 5 Jan 2024</p>
+                    <p style="font-size:12px;font-weight:300;color:#9698A9;">Zurich - Kloten Airport</p>
+                </td>
+                <td style="padding:10px;" class="widthauto border-dash-bottom">
+                    <p style="font-size:10px;font-weight:300;color:#0B0B0B;margin-bottom:7px;">Arrival</p>
+                    <p style="font-size:16px;font-weight:600;margin-bottom:8px;">22:15, 5 Jan 2024</p>
+                    <p style="font-size:12px;font-weight:300;color:#9698A9;">Dubai International Airport | Terminal- 1</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding:20px 14px 7px 0px;" class="border-dash-right"><p class="title2 d-flex"><img src="images/print/deutschelogo.svg" alt="">Deutsche Lufthansa AG</p></td>
+                <td colspan="2" style="padding:20px 14px 7px 14px;"><p style="word-break:break-all;font-size:12px;">6h 10m <span style="padding:0px 8px">|</span> <span>Economy Class</span> <span style="padding:0px 8px">|</span><span style="padding:0px 8px">Airbus A330 - 300</span><span style="padding:0px 8px">|</span><span>Economy Class</span> <span style="padding:0px 8px">|</span><span>1 Adult</span><span style="padding:0px 8px">|</span><span>Basic</span> <span><img src="images/print/starimg.svg" alt="img"></span></p></td>
+            </tr>
+        </table>
+    </td>
+</tr>
+<tr height="24px;"></tr>
+<tr>
+    <td style="padding:13px 23px;" class="border-radius10 greyborder">
+        <table class="w100">
+            <tr style="padding:10px;">
+                <td class="border-dash-right widthauto border-dash-bottom">
+                    <table class="w100">
+                        <tr valign="top">
+                            <td>
+                                <p class="d-flex flex-column">
+                                    <img class="pinimg" src="images/print/pin.svg" alt="pinimg">
+                                    <span style="margin:8px 0px;font-size:16px;font-weight:600;">DXB</span>
+                                    <span style="color:#9698A9;font-weight:300;font-size:12px;">UAE</span>
+                                </p>
+                            </td>
+                            <td valign="middle">
+                                <img src="images/print/arrivalfightimg.svg" alt="">
+                            </td>
+                            <td style="padding-right:15px;">
+                                <p class="d-flex flex-column">
+                                    <img class="pinimg" src="images/print/pin.svg" alt="pinimg">
+                                    <span style="margin:8px 0px;font-size:16px;font-weight:600;">FRA</span>
+                                    <span style="color:#9698A9;font-weight:300;font-size:12px;">Germany</span>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="padding:10px;" class="border-dash-right widthauto border-dash-bottom">
+                    <p style="font-size:10px;font-weight:300;color:#0B0B0B;margin-bottom:7px;">Departure</p>
+                    <p style="font-size:16px;font-weight:600;margin-bottom:8px;">13:05, 5 Jan 2024</p>
+                    <p style="font-size:12px;font-weight:300;color:#9698A9;">Zurich - Kloten Airport</p>
+                </td>
+                <td style="padding:10px;" class="widthauto border-dash-bottom">
+                    <p style="font-size:10px;font-weight:300;color:#0B0B0B;margin-bottom:7px;">Arrival</p>
+                    <p style="font-size:16px;font-weight:600;margin-bottom:8px;">22:15, 5 Jan 2024</p>
+                    <p style="font-size:12px;font-weight:300;color:#9698A9;">Dubai International Airport | Terminal- 1</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding:20px 14px 7px 14px;" class="border-dash-right"><p class="title2 d-flex"><img src="images/print/swisslogo2.svg" alt="">SWISS International</p></td>
+               
+                <td colspan="2" style="padding:20px 14px 7px 14px;"><p style="word-break:break-all;font-size:12px;">6h 10m <span style="padding:0px 8px">|</span> <span>Economy Class</span> <span style="padding:0px 8px">|</span><span style="padding:0px 8px">Airbus A330 - 300</span><span style="padding:0px 8px">|</span><span>Economy Class</span> <span style="padding:0px 8px">|</span><span>1 Adult</span><span style="padding:0px 8px">|</span><span>Basic</span> <span><img src="images/print/starimg.svg" alt="img"></span></p></td>
+            </tr>
+        </table>
+    </td>
+</tr>
+<tr height="24px;"></tr>
+<tr>
+    <td style="padding:13px 23px;" class="border-radius10 greyborder">
+        <table class="w100">
+            <tr style="padding:10px;">
+                <td class="border-dash-right widthauto border-dash-bottom">
+                    <table class="w100">
+                        <tr valign="top">
+                            <td>
+                                <p class="d-flex flex-column">
+                                    <img class="pinimg" src="images/print/pin.svg" alt="pinimg">
+                                    <span style="margin:8px 0px;font-size:16px;font-weight:600;">FRA</span>
+                                    <span style="color:#9698A9;font-weight:300;font-size:12px;">Germany</span>
+                                </p>
+                            </td>
+                            <td valign="middle">
+                                <img src="images/print/arrivalfightimg.svg" alt="">
+                            </td>
+                            <td style="padding-right:15px;">
+                                <p class="d-flex flex-column flex-end">
+                                    <img class="pinimg" src="images/print/pin.svg" alt="pinimg">
+                                    <span style="margin:8px 0px;font-size:16px;font-weight:600;">ZMU</span>
+                                    <span style="color:#9698A9;font-weight:300;font-size:12px;">XYZ</span>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="padding:10px;" class="border-dash-right widthauto border-dash-bottom">
+                    <p style="font-size:10px;font-weight:300;color:#0B0B0B;margin-bottom:7px;">Departure</p>
+                    <p style="font-size:16px;font-weight:600;margin-bottom:8px;">13:05, 5 Jan 2024</p>
+                    <p style="font-size:12px;font-weight:300;color:#9698A9;">Zurich - Kloten Airport</p>
+                </td>
+                <td style="padding:10px;" class="widthauto border-dash-bottom">
+                    <p style="font-size:10px;font-weight:300;color:#0B0B0B;margin-bottom:7px;">Arrival</p>
+                    <p style="font-size:16px;font-weight:600;margin-bottom:8px;">22:15, 5 Jan 2024</p>
+                    <p style="font-size:12px;font-weight:300;color:#9698A9;">Dubai International Airport | Terminal- 1</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding:20px 14px 7px 14px;" class="border-dash-right"><p class="title2 d-flex"><img src="images/print/swisslogo2.svg" alt="">SWISS International</p></td>
+               
+                <td colspan="2" style="padding:20px 14px 7px 14px;"><p style="word-break:break-all;font-size:12px;">6h 10m <span style="padding:0px 8px">|</span> <span>Economy Class</span> <span style="padding:0px 8px">|</span><span style="padding:0px 8px">Airbus A330 - 300</span><span style="padding:0px 8px">|</span><span>Economy Class</span> <span style="padding:0px 8px">|</span><span>1 Adult</span><span style="padding:0px 8px">|</span><span>Basic</span> <span><img src="images/print/starimg.svg" alt="img"></span></p></td>
+            </tr>
+        </table>
+    </td>
+</tr>
+<tr height="24px;"></tr>
+<tr>
+    <td style="padding:13px 23px;" class="border-radius10 greyborder">
+        <table class="w100">
+            <tr style="padding:10px;">
+                <td class="border-dash-right widthauto border-dash-bottom">
+                    <table class="w100">
+                        <tr valign="top">
+                            <td>
+                                <p class="d-flex flex-column">
+                                    <img class="pinimg" src="images/print/pin.svg" alt="pinimg">
+                                    <span style="margin:8px 0px;font-size:16px;font-weight:600;">MUC</span>
+                                    <span style="color:#9698A9;font-weight:300;font-size:12px;">Germany</span>
+                                </p>
+                            </td>
+                            <td valign="middle">
+                                <img src="images/print/arrivalfightimg.svg" alt="">
+                            </td>
+                            <td style="padding-right:15px;">
+                                <p class="d-flex flex-column flex-end">
+                                    <img class="pinimg" src="images/print/pin.svg" alt="pinimg">
+                                    <span style="margin:8px 0px;font-size:16px;font-weight:600;">ZRH</span>
+                                    <span style="color:#9698A9;font-weight:300;font-size:12px;">Switzerland</span>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="padding:10px;" class="border-dash-right widthauto border-dash-bottom">
+                    <p style="font-size:10px;font-weight:300;color:#0B0B0B;margin-bottom:7px;">Departure</p>
+                    <p style="font-size:16px;font-weight:600;margin-bottom:8px;">13:05, 5 Jan 2024</p>
+                    <p style="font-size:12px;font-weight:300;color:#9698A9;">Zurich - Kloten Airport</p>
+                </td>
+                <td style="padding:10px;" class="widthauto border-dash-bottom">
+                    <p style="font-size:10px;font-weight:300;color:#0B0B0B;margin-bottom:7px;">Arrival</p>
+                    <p style="font-size:16px;font-weight:600;margin-bottom:8px;">22:15, 5 Jan 2024</p>
+                    <p style="font-size:12px;font-weight:300;color:#9698A9;">Dubai International Airport | Terminal- 1</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding:20px 14px 7px 14px;" class="border-dash-right"><p class="title2 d-flex"><img src="images/print/swisslogo2.svg" alt="">SWISS International</p></td>
+               
+                <td colspan="2" style="padding:20px 14px 7px 14px;"><p style="word-break:break-all;font-size:12px;">6h 10m <span style="padding:0px 8px">|</span> <span>Economy Class</span> <span style="padding:0px 8px">|</span><span style="padding:0px 8px">Airbus A330 - 300</span><span style="padding:0px 8px">|</span><span>Economy Class</span> <span style="padding:0px 8px">|</span><span>1 Adult</span><span style="padding:0px 8px">|</span><span>Basic</span> <span><img src="images/print/starimg.svg" alt="img"></span></p></td>
+            </tr>
+        </table>
+    </td>
+</tr>
+<tr>
+    <td style="margin:24px 0 0 0;">&nbsp;</td>
+</tr>
+<tr>
+    <td class="greybg border-radius10"  style="margin:24px 0 12px 0px;">
+        <p class="title">Passenger Details</p>
+    </td>
+</tr>
+<tr>
+    <td style="margin:24px 0 0 0;">&nbsp;</td>
+</tr>
+<tr>
+    <td class="border-radius10  deatilstable">
+        <table class="w100" style="border-collapse:separate" cellpadding="0" cellspacing="0">
+            <tr>
+                <th>Passenger Name</th>
+                <th>Ticket Number</th>
+                <th>Coupons</th>
+                <th>Checkin Baggage</th>
+                <th>Coupon Status</th>
+            </tr>
+            <tr>
+                <td class="fontsize12 mb-6">Mr Suman S Senapatis</td>
+                <td class="fontsize12 mb-6">7543234509873216</td>
+                <td>
+                    <p class="fontsize12 mb-6"><span>1</span>LX242 ZRH-DXB 5 January</p>
+                    <p class="fontsize12 mb-6"><span>2</span>LH631 DXB-FRA 10 January</p>
+                    <p class="fontsize12 mb-6"><span>3</span>LH3464 FRA-ZMU 10 January</p>
+                </td>
+                <td>
+                    <p class="fontsize12 mb-6">1 Piece, 23Kg /50Kg</p>
+                    <p class="fontsize12 mb-6">1 Piece, 23Kg /50Kg</p>
+                    <p class="fontsize12 mb-6">1 Piece, 23Kg /50Kg</p>
+                </td>
+                <td>
+                    <p>Issued</p>
+                    <p>Airport Control</p>
+                    <p>Airport Control</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Mr Shubham Das</td>
+                <td>3543234509873216</td>
+                <td>
+                    <p><span>1</span>LX1101 MUC-ZRH 15 January</p>
+                    <p><span>2</span>LH638 ZRH-CDG 15 January</p>
+                </td>
+                <td>
+                    <p>1 Piece, 23Kg /50Kg</p>
+                    <p>1 Piece, 23Kg /50Kg</p>
+                </td>
+                <td>
+                    <p>Issued</p>
+                    <p>Issued</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="fontsize12 mb-6">Mr Surya Raj</td>
+                <td class="fontsize12 mb-6">7543234509873216</td>
+                <td>
+                    <p class="fontsize12 mb-6"><span>1</span>LX242 ZRH-DXB 5 January</p>
+                    <p class="fontsize12 mb-6"><span>2</span>LH631 DXB-FRA 10 January</p>
+                    <p class="fontsize12 mb-6"><span>3</span>LH3464 FRA-ZMU 10 January</p>
+                </td>
+                <td>
+                    <p class="fontsize12 mb-6">1 Piece, 23Kg /50Kg</p>
+                    <p class="fontsize12 mb-6">1 Piece, 23Kg /50Kg</p>
+                    <p class="fontsize12 mb-6">1 Piece, 23Kg /50Kg</p>
+                </td>
+                <td>
+                    <p>Issued</p>
+                    <p>Airport Control</p>
+                    <p>Airport Control</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Mr Susmit Shawn</td>
+                <td>4543234509873216</td>
+                <td>
+                    <p><span>1</span>LX242 ZRH-DXB 5 January</p>
+                    <p><span>2</span>LH631 DXB-FRA 10 January</p>
+                    <p><span>2</span>LH3464 FRA-ZMU 10 January</p>
+                </td>
+                <td>
+                    <p>1 Piece, 23Kg /50Kg</p>
+                    <p>1 Piece, 23Kg /50Kg</p>
+                    <p>1 Piece, 23Kg /50Kg</p>
+                </td>
+                <td>
+                    <p>Airport Control</p>
+                    <p>Airport Control</p>
+                    <p>Airport Control</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Mr Susmit Raghvam</td>
+                <td>4543234509873216</td>
+                <td>
+                    <p><span>1</span>LX242 ZRH-DXB 5 January</p>
+                    <p><span>2</span>LH631 DXB-FRA 10 January</p>
+                    <p><span>2</span>LH3464 FRA-ZMU 10 January</p>
+                </td>
+                <td>
+                    <p>1 Piece, 23Kg /50Kg</p>
+                    <p>1 Piece, 23Kg /50Kg</p>
+                    <p>1 Piece, 23Kg /50Kg</p>
+                </td>
+                <td>
+                    <p>Airport Control</p>
+                    <p>Airport Control</p>
+                    <p>Airport Control</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Mr Iyar Raj</td>
+                <td>1543234509873216</td>
+                <td>
+                    <p><span>1</span>LX242 ZRH-DXB 5 January</p>
+                    <p><span>2</span>LH631 DXB-FRA 10 January</p>
+                </td>
+                <td>
+                    <p>1 Piece, 23Kg /50Kg</p>
+                    <p>1 Piece, 23Kg /50Kg</p>
+                </td>
+                <td>
+                    <p>Issued</p>
+                    <p>Issued</p>
+               </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+<tr>
+    <td style="margin:41px 0 0 0;">&nbsp;</td>
+</tr>
+<tr>
+    <td class="greybg border-radius10"  style="margin:24px 0 12px 0px;">
+        <p class="title">Order Summary</p>
+    </td>
+</tr>
+<tr>
+    <td style="margin:24px 0 0 0;">&nbsp;</td>
+</tr>
+<tr>
+ <td>
+ <table class="order-summmary w100">
+    <tr>
+        <td width="50%" valign="top">
+            <table class="w100"  style="border-collapse: collapse;">
+                <tr>
+                    <td>Base Fare</td>
+                    <td>INR 1279637</td>
+                </tr>
+                <tr>
+                    <td>Ancillary Fare</td>
+                    <td>INR 0</td>
+                </tr>
+                <tr>
+                    <td>Taxes</td>
+                    <td>INR 171024</td>
+                </tr>
+                <tr>
+                    <td>Technology Surcharge</td>
+                    <td>INR 0</td>
+                </tr>
+                <tr>
+                    <td>Discount</td>
+                    <td>INR 0</td>
+                </tr>
+                <tr height="39px;">
+                    <td>&nbsp;</td>
+                   
+                </tr>
+                <tr class="GrandTotal">
+                    <td style="font-size:16px;font-weight:600;">Grand Total</td>
+                    <td style="font-size:32px;font-weight:300;">INR 1450659</td>
+                </tr>
+            </table>
+        </td>
+        <td width="50%" valign="middle" align="center">
+            <img src="images/print/map.svg" alt="img">
+        </td>
+    </tr>
+ </table>
+ </td>
+</tr>
+<tr height="40px;">
+    <td>&nbsp;</td>
+</tr>
+<tr>
+    <td class="greybg border-radius10"  style="margin:24px 0 12px 0px;">
+        <p class="title">Baggage Allowance</p>
+    </td>
+</tr>
+<tr height="24px;"></tr>
+<tr>
+    <td style="padding:13px 23px;" class="border-radius10 greyborder">
+        <table class="w100">
+            <tr style="padding:10px;">
+                <td class="widthauto border-dash-bottom" colspan="2" >
+                    <table class="w100">
+                        <tr valign="top">
+                            <td class="d-flex w200 justify-content-between">
+                                <p class="d-flex flex-column">
+                                    <span style="margin:8px 0px;font-size:16px;font-weight:600;">ZRH</span>
+                                   
+                                </p>
+                                <img src="images/print/arrivalfightimg.svg" alt="">
+                                <p class="d-flex flex-column">
+                                    <span style="margin:8px 0px;font-size:16px;font-weight:600;">DXB</span>
+                                    
+                                 </p>
+                            </td>
+                           
+                        </tr>
+                    </table>
+                </td>
+              
+            </tr>
+            <tr>
+                <td style="padding:12px 14px 7px 0px;width:50%;border-right:1px solid #D9D9D9">
+                    <p style="font-size:12px;font-weight:600;;margin-bottom:12px;">Adult</p>
+                    <p><span  style="font-size:12px;font-weight:500;margin-bottom:4px;">Carry-on Baggage</span><span>-</span><span  style="font-size:12px;;padding:0 5px;">1 Piece, 8Kg/18LBS</span></p>
+                    <p><span  style="font-size:12px;font-weight:500;margin-bottom:4px;">Carry-on Baggage</span><span>-</span><span  style="font-size:12px;padding:0 5px;">1 Piece, 23Kg/50LBS</span><span style="padding:0px 8px">|</span><span  style="font-size:12px;">Length: 158cm/62IN</span></p>
+                </td>
+               
+                <td style="padding:12px 14px 7px 14px;width:50%;">
+                    <p style="font-size:12px;font-weight:600;;margin-bottom:12px;">Child</p>
+                    <p><span  style="font-size:12px;font-weight:500;;margin-bottom:4px;">Carry-on Baggage</span><span>-</span><span  style="font-size:12px;;padding:0 5px;">1 Piece, 8Kg/18LBS</span></p>
+                    <p><span  style="font-size:12px;font-weight:500;margin-bottom:4px;">Carry-on Baggage</span><span>-</span><span  style="font-size:12px;padding:0 5px;">1 Piece, 23Kg/50LBS</span><span style="padding:0px 8px">|</span><span  style="font-size:12px;">Length: 158cm/62IN</span></p>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+<tr height="24px;"></tr>
+<tr>
+    <td style="padding:13px 23px;" class="border-radius10 greyborder">
+        <table class="w100">
+            <tr style="padding:10px;">
+                <td class="widthauto border-dash-bottom" colspan="2" >
+                    <table class="w100">
+                        <tr valign="top">
+                            <td class="d-flex w200 justify-content-between">
+                                <p class="d-flex flex-column">
+                                    <span style="margin:8px 0px;font-size:16px;font-weight:600;">DXB</span>
+                                  
+                                </p>
+                                <img src="images/print/arrivalfightimg.svg" alt="">
+                                <p class="d-flex flex-column">
+                                    <span style="margin:8px 0px;font-size:16px;font-weight:600;">DXB</span>
+                                    
+                                 </p>
+                            </td>
+                           
+                        </tr>
+                    </table>
+                </td>
+              
+            </tr>
+            <tr>
+                <td style="padding:12px 14px 7px 0px;width:50%;border-right:1px solid #D9D9D9">
+                    <p style="font-size:12px;font-weight:600;margin-bottom:12px;">Adult</p>
+                    <p><span  style="font-size:12px;font-weight:500;margin-bottom:4px;">Carry-on Baggage</span><span>-</span><span  style="font-size:12px;;padding:0 5px;">1 Piece, 8Kg/18LBS</span></p>
+                    <p><span  style="font-size:12px;font-weight:500;margin-bottom:4px;">Carry-on Baggage</span><span>-</span><span  style="font-size:12px;padding:0 5px;">1 Piece, 23Kg/50LBS</span><span style="padding:0px 8px">|</span><span  style="font-size:12px;">Length: 158cm/62IN</span></p>
+                </td>
+               
+                <td style="padding:12px 14px 7px 14px;width:50%;">
+                    <p style="font-size:12px;font-weight:600;;margin-bottom:12px;">Child</p>
+                    <p><span  style="font-size:12px;font-weight:500;margin-bottom:4px;">Carry-on Baggage</span><span>-</span><span  style="font-size:12px;;padding:0 5px;">1 Piece, 8Kg/18LBS</span></p>
+                    <p><span  style="font-size:12px;font-weight:500;margin-bottom:4px;">Carry-on Baggage</span><span>-</span><span  style="font-size:12px;padding:0 5px;">1 Piece, 23Kg/50LBS</span><span style="padding:0px 8px">|</span><span  style="font-size:12px;">Length: 158cm/62IN</span></p>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+<tr height="24px;"></tr>
+<tr>
+    <td style="padding:13px 23px;" class="border-radius10 greyborder">
+        <table class="w100">
+            <tr style="padding:10px;">
+                <td class="widthauto border-dash-bottom" colspan="2" >
+                    <table class="w100">
+                        <tr valign="top">
+                            <td class="d-flex w200 justify-content-between">
+                                <p class="d-flex flex-column">
+                                    <span style="margin:8px 0px;font-size:16px;font-weight:600;">FRA</span>
+                                  
+                                </p>
+                                <img src="images/print/arrivalfightimg.svg" alt="">
+                                <p class="d-flex flex-column">
+                                    <span style="margin:8px 0px;font-size:16px;font-weight:600;">ZMU</span>
+                                    
+                                 </p>
+                            </td>
+                           
+                        </tr>
+                    </table>
+                </td>
+              
+            </tr>
+            <tr>
+                <td style="padding:12px 14px 7px 0px;width:50%;border-right:1px solid #D9D9D9">
+                    <p style="font-size:12px;font-weight:600;margin-bottom:12px;">Adult</p>
+                    <p><span  style="font-size:12px;font-weight:500;margin-bottom:4px;">Carry-on Baggage</span><span>-</span><span  style="font-size:12px;;padding:0 5px;">1 Piece, 8Kg/18LBS</span></p>
+                    <p><span  style="font-size:12px;font-weight:500;margin-bottom:4px;">Carry-on Baggage</span><span>-</span><span  style="font-size:12px;padding:0 5px;">1 Piece, 23Kg/50LBS</span><span style="padding:0px 8px">|</span><span  style="font-size:12px;">Length: 158cm/62IN</span></p>
+                </td>
+               
+                <td style="padding:12px 14px 7px 14px;width:50%;">
+                    <p style="font-size:12px;font-weight:600;;margin-bottom:12px;">Child</p>
+                    <p><span  style="font-size:12px;font-weight:500;margin-bottom:4px;">Carry-on Baggage</span><span>-</span><span  style="font-size:12px;;padding:0 5px;">1 Piece, 8Kg/18LBS</span></p>
+                    <p><span  style="font-size:12px;font-weight:500;margin-bottom:4px;">Carry-on Baggage</span><span>-</span><span  style="font-size:12px;padding:0 5px;">1 Piece, 23Kg/50LBS</span><span style="padding:0px 8px">|</span><span  style="font-size:12px;">Length: 158cm/62IN</span></p>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+<tr height="24px;"></tr>
+<tr>
+    <td style="padding:13px 23px;" class="border-radius10 greyborder">
+        <table class="w100">
+            <tr style="padding:10px;">
+                <td class="widthauto border-dash-bottom" colspan="2" >
+                    <table class="w100">
+                        <tr valign="top">
+                            <td class="d-flex w200 justify-content-between">
+                                <p class="d-flex flex-column">
+                                    <span style="margin:8px 0px;font-size:16px;font-weight:600;">MUC</span>
+                                  
+                                </p>
+                                <img src="images/print/arrivalfightimg.svg" alt="">
+                                <p class="d-flex flex-column">
+                                    <span style="margin:8px 0px;font-size:16px;font-weight:600;">ZRH</span>
+                                    
+                                 </p>
+                            </td>
+                           
+                        </tr>
+                    </table>
+                </td>
+              
+            </tr>
+            <tr>
+                <td style="padding:12px 14px 7px 0px;width:50%;border-right:1px solid #D9D9D9">
+                    <p style="font-size:12px;font-weight:600;margin-bottom:12px;">Adult</p>
+                    <p><span  style="font-size:12px;font-weight:500;margin-bottom:4px;">Carry-on Baggage</span><span>-</span><span  style="font-size:12px;;padding:0 5px;">1 Piece, 8Kg/18LBS</span></p>
+                    <p><span  style="font-size:12px;font-weight:500;margin-bottom:4px;">Carry-on Baggage</span><span>-</span><span  style="font-size:12px;padding:0 5px;">1 Piece, 23Kg/50LBS</span><span style="padding:0px 8px">|</span><span  style="font-size:12px;">Length: 158cm/62IN</span></p>
+                </td>
+               
+                <td style="padding:12px 14px 7px 14px;width:50%;">
+                    <p style="font-size:12px;font-weight:600;;margin-bottom:12px;">Child</p>
+                    <p><span  style="font-size:12px;font-weight:500;margin-bottom:4px;">Carry-on Baggage</span><span>-</span><span  style="font-size:12px;;padding:0 5px;">1 Piece, 8Kg/18LBS</span></p>
+                    <p><span  style="font-size:12px;font-weight:500;margin-bottom:4px;">Carry-on Baggage</span><span>-</span><span  style="font-size:12px;padding:0 5px;">1 Piece, 23Kg/50LBS</span><span style="padding:0px 8px">|</span><span  style="font-size:12px;">Length: 158cm/62IN</span></p>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+<tr height="24px;"></tr>
+<tr>
+    <td style="padding:13px 23px;" class="border-radius10 greyborder">
+        <table class="w100">
+            <tr style="padding:10px;">
+                <td class="widthauto border-dash-bottom" colspan="2" >
+                    <table class="w100">
+                        <tr valign="top">
+                            <td class="d-flex w200 justify-content-between">
+                                <p class="d-flex flex-column">
+                                    <span style="margin:8px 0px;font-size:16px;font-weight:600;">ZRH</span>
+                                  
+                                </p>
+                                <img src="images/print/arrivalfightimg.svg" alt="">
+                                <p class="d-flex flex-column">
+                                    <span style="margin:8px 0px;font-size:16px;font-weight:600;">CDG</span>
+                                    
+                                 </p>
+                            </td>
+                           
+                        </tr>
+                    </table>
+                </td>
+              
+            </tr>
+            <tr>
+                <td style="padding:12px 14px 7px 0px;width:50%;border-right:1px solid #D9D9D9">
+                    <p style="font-size:12px;font-weight:600;margin-bottom:12px;">Adult</p>
+                    <p><span  style="font-size:12px;font-weight:500;margin-bottom:4px;">Carry-on Baggage</span><span>-</span><span  style="font-size:12px;;padding:0 5px;">1 Piece, 8Kg/18LBS</span></p>
+                    <p><span  style="font-size:12px;font-weight:500;margin-bottom:4px;">Carry-on Baggage</span><span>-</span><span  style="font-size:12px;padding:0 5px;">1 Piece, 23Kg/50LBS</span><span style="padding:0px 8px">|</span><span  style="font-size:12px;">Length: 158cm/62IN</span></p>
+                </td>
+               
+                <td style="padding:12px 14px 7px 14px;width:50%;">
+                    <p style="font-size:12px;font-weight:600;;margin-bottom:12px;">Child</p>
+                    <p><span  style="font-size:12px;font-weight:500;margin-bottom:4px;">Carry-on Baggage</span><span>-</span><span  style="font-size:12px;;padding:0 5px;">1 Piece, 8Kg/18LBS</span></p>
+                    <p><span  style="font-size:12px;font-weight:500;margin-bottom:4px;">Carry-on Baggage</span><span>-</span><span  style="font-size:12px;padding:0 5px;">1 Piece, 23Kg/50LBS</span><span style="padding:0px 8px">|</span><span  style="font-size:12px;">Length: 158cm/62IN</span></p>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+<tr height="40px;"></tr>
+<tr>
+    <td class="greybg border-radius10"  style="margin:24px 0 12px 0px;">
+        <p class="title">Cancellation /Change Penalties</p>
+    </td>
+</tr>
+<tr height="40px;"></tr>
+<tr>
+    <td class="greybg border-radius10"  style="margin:24px 0 12px 0px;">
+        <p class="title">Additional Services</p>
+    </td>
+</tr>
+<tr height="24px;"></tr>
+<tr>
+    <td style="padding:13px 23px;" class="border-radius10 greyborder">
+        <p class="border-dash-bottom" style="text-decoration:capitalized ; font-size:16px;font-weight:600;padding-bottom:12px;margin-bottom:12px;"><span>1.</span>Mr Suman S Senapati</p>
+        <div class="d-flex">
+            <p style="margin-bottom:4px;"><span style="font-size:12px;font-weight:500;">ZRH to DXB</span><span  style="padding:0 8px;">-</span><span style="font-size:12px;font-weight:500;padding:0 8px;">Seat</span><span style="font-size:12px">Not Assigned</span></p>
+            <p><span style="font-size:12px;padding:0 8px;">|</span><span style="font-size:12px;font-weight:500;">TKNE</span><span  style="font-size:12px;padding:0 8px;">-</span><span style="font-size:12px">8564323458754C1 / 277-278</span></p>
+        </div>
+        <div class="d-flex">
+            <p style="margin-bottom:4px;"><span style="font-size:12px;font-weight:500;">DXB to FRA</span><span  style="padding:0 8px;">-</span><span style="font-size:12px;font-weight:500;padding:0 8px;">Seat</span><span style="font-size:12px">Not Assigned</span></p>
+            <p><span  style="font-size:12px;padding:0 8px;">|</span><span style="font-size:12px;font-weight:500;">TKNE</span><span  style="font-size:12px;padding:0 8px;">-</span><span style="font-size:12px">8564323458754C2 / 277-278</span></p>
+        </div>
+        <div class="d-flex">
+            <p style="margin-bottom:4px;"><span style="font-size:12px;font-weight:500;">FRA to ZMU</span><span  style="padding:0 8px;">-</span><span style="font-size:12px;font-weight:500;padding:0 8px;">Seat</span><span style="font-size:12px">Not Assigned</span></p>
+            <p style="text-indent: -22px;
+            padding-left: 20px;"><span style="font-size:12px;padding:0 8px;">|</span><span style="font-size:12px;font-weight:500;">TKNE</span><span  style="font-size:12px;padding:0 8px;">-</span><span style="font-size:12px">8564323458754C3 / 277-278</span><span style="padding:0 8px;">|</span><span style="font-size:12px">RQST<span><span>-</span><span style="font-size:12px">CAR023 SEAT065</span></p>
+        </div>
+        <div class="d-flex">
+            <p style="margin-bottom:4px;"><span style="font-size:12px;font-weight:500;">MUC to ZRH</span><span  style="padding:0 8px;">-</span><span style="font-size:12px;font-weight:500;padding:0 8px;">Seat</span><span style="font-size:12px">Not Assigned</span></p>
+            <p><span  style="font-size:12px;padding:0 8px;">|</span><span style="font-size:12px;font-weight:500;">TKNE</span><span  style="font-size:12px;padding:0 8px;">-</span><span style="font-size:12px">8564323458754C3 / 277-278</span></p>
+        </div>
+        <div class="d-flex">
+            <p style="margin-bottom:4px;"><span style="font-size:12px;font-weight:500;">ZRH to CDG</span><span  style="padding:0 8px;">-</span><span style="font-size:12px;font-weight:500;padding:0 8px;">Seat</span><span style="font-size:12px">Not Assigned</span></p>
+            <p><span  style="font-size:12px;padding:0 8px;">|</span><span style="font-size:12px;font-weight:500;">TKNE</span><span  style="font-size:12px;padding:0 8px;">-</span><span style="font-size:12px">8564323458754C3 / 277-278</span></p>
+        </div>
+    </td>
+</tr>
+<tr height="24px;"></tr>
+<tr>
+    <td style="padding:13px 23px;" class="border-radius10 greyborder">
+       <p class="border-dash-bottom" style="text-decoration:capitalized ; font-size:16px;font-weight:600;padding-bottom:12px;margin-bottom:12px;"><span>2.</span>Mr Shubham Das</p>
+        <div class="d-flex">
+            <p style="margin-bottom:4px;"><span style="font-size:12px;font-weight:500;">ZRH to DXB</span><span  style="padding:0 8px;">-</span><span style="font-size:12px;font-weight:500;padding:0 8px;">Seat</span><span style="font-size:12px">Not Assigned</span></p>
+            <p><span style="font-size:12px;padding:0 8px;">|</span><span style="font-size:12px;font-weight:500;">TKNE</span><span  style="font-size:12px;padding:0 8px;">-</span><span style="font-size:12px">8564323458754C1 / 277-278</span></p>
+        </div>
+        <div class="d-flex">
+            <p style="margin-bottom:4px;"><span style="font-size:12px;font-weight:500;">DXB to FRA</span><span  style="padding:0 8px;">-</span><span style="font-size:12px;font-weight:500;padding:0 8px;">Seat</span><span style="font-size:12px">Not Assigned</span></p>
+            <p><span  style="font-size:12px;padding:0 8px;">|</span><span style="font-size:12px;font-weight:500;">TKNE</span><span  style="font-size:12px;padding:0 8px;">-</span><span style="font-size:12px">8564323458754C2 / 277-278</span></p>
+        </div>
+        <div class="d-flex">
+            <p style="margin-bottom:4px;width:250px;"><span style="font-size:12px;font-weight:500;">FRA to ZMU</span><span  style="padding:0 8px;">-</span><span style="font-size:12px;font-weight:500;padding:0 8px;">Seat</span><span style="font-size:12px">Not Assigned</span></p>
+            <p style="text-indent: -22px;
+            padding-left: 20px;"><span style="font-size:12px;padding:0 8px;">|</span><span style="font-size:12px;font-weight:500;">TKNE</span><span  style="font-size:12px;padding:0 8px;">-</span><span style="font-size:12px">8564323458754C3 / 277-278</span><span style="padding:0 8px;">|</span><span style="font-size:12px">RQST<span><span>-</span><span style="font-size:12px">CAR023 SEAT065</span><span style="padding:0 8px;">|</span><span style="font-size:12px">CHILD<span><span>-</span><span style="font-size:12px">05OCT14</span><span style="padding:0 8px;font-size:12px;">|</span><span style="font-size:12px">CHILD<span><span>-</span><span style="font-size:12px">05OCT14</span><span style="padding:0 8px;font-size:12px;">|</span><span style="font-size:12px">CHILD<span><span>-</span><span style="font-size:12px">05OCT14</span></p>
+        </div>
+        <div class="d-flex">
+            <p style="margin-bottom:4px;"><span style="font-size:12px;font-weight:500;">MUC to ZRH</span><span  style="padding:0 8px;">-</span><span style="font-size:12px;font-weight:500;padding:0 8px;">Seat</span><span style="font-size:12px">Not Assigned</span></p>
+            <p><span  style="font-size:12px;padding:0 8px;">|</span><span style="font-size:12px;font-weight:500;">TKNE</span><span  style="font-size:12px;padding:0 8px;">-</span><span style="font-size:12px">8564323458754C3 / 277-278</span></p>
+        </div>
+        <div class="d-flex">
+            <p style="margin-bottom:4px;"><span style="font-size:12px;font-weight:500;">ZRH to CDG</span><span  style="padding:0 8px;">-</span><span style="font-size:12px;font-weight:500;padding:0 8px;">Seat</span><span style="font-size:12px">Not Assigned</span></p>
+            <p><span  style="font-size:12px;padding:0 8px;">|</span><span style="font-size:12px;font-weight:500;">TKNE</span><span  style="font-size:12px;padding:0 8px;">-</span><span style="font-size:12px">8564323458754C3 / 277-278</span></p>
+        </div>
+    </td>
+</tr>
+<tr height="24px;"></tr>
+<tr>
+    <td style="padding:13px 23px;" class="border-radius10 greyborder">
+       <p class="border-dash-bottom" style="text-decoration:capitalized ; font-size:16px;font-weight:600;padding-bottom:12px;margin-bottom:12px;"><span>3.</span>Mr Susmit Shawn</p>
+       <div class="d-flex">
+        <p style="margin-bottom:4px;"><span style="font-size:12px;font-weight:500;">ZRH to DXB</span><span  style="padding:0 8px;">-</span><span style="font-size:12px;font-weight:500;padding:0 8px;">Seat</span><span style="font-size:12px">Not Assigned</span></p>
+        <p><span style="font-size:12px;padding:0 8px;">|</span><span style="font-size:12px;font-weight:500;">TKNE</span><span  style="font-size:12px;padding:0 8px;">-</span><span style="font-size:12px">8564323458754C1 / 277-278</span></p>
+    </div>
+    <div class="d-flex">
+        <p style="margin-bottom:4px;"><span style="font-size:12px;font-weight:500;">DXB to FRA</span><span  style="padding:0 8px;">-</span><span style="font-size:12px;font-weight:500;padding:0 8px;">Seat</span><span style="font-size:12px">Not Assigned</span></p>
+        <p><span  style="font-size:12px;padding:0 8px;">|</span><span style="font-size:12px;font-weight:500;">TKNE</span><span  style="font-size:12px;padding:0 8px;">-</span><span style="font-size:12px">8564323458754C2 / 277-278</span></p>
+    </div>
+    <div class="d-flex">
+        <p style="margin-bottom:4px;"><span style="font-size:12px;font-weight:500;">FRA to ZMU</span><span  style="padding:0 8px;">-</span><span style="font-size:12px;font-weight:500;padding:0 8px;">Seat</span><span style="font-size:12px">Not Assigned</span></p>
+        <p style="text-indent: -22px;
+        padding-left: 20px;"><span style="font-size:12px;padding:0 8px;">|</span><span style="font-size:12px;font-weight:500;">TKNE</span><span  style="font-size:12px;padding:0 8px;">-</span><span style="font-size:12px">8564323458754C3 / 277-278</span><span style="padding:0 8px;">|</span><span style="font-size:12px">RQST<span><span>-</span><span style="font-size:12px">CAR023 SEAT065</span></p>
+    </div>
+    <div class="d-flex">
+        <p style="margin-bottom:4px;"><span style="font-size:12px;font-weight:500;">MUC to ZRH</span><span  style="padding:0 8px;">-</span><span style="font-size:12px;font-weight:500;padding:0 8px;">Seat</span><span style="font-size:12px">Not Assigned</span></p>
+        <p><span  style="font-size:12px;padding:0 8px;">|</span><span style="font-size:12px;font-weight:500;">TKNE</span><span  style="font-size:12px;padding:0 8px;">-</span><span style="font-size:12px">8564323458754C3 / 277-278</span></p>
+    </div>
+    <div class="d-flex">
+        <p style="margin-bottom:4px;"><span style="font-size:12px;font-weight:500;">ZRH to CDG</span><span  style="padding:0 8px;">-</span><span style="font-size:12px;font-weight:500;padding:0 8px;">Seat</span><span style="font-size:12px">Not Assigned</span></p>
+        <p><span  style="font-size:12px;padding:0 8px;">|</span><span style="font-size:12px;font-weight:500;">TKNE</span><span  style="font-size:12px;padding:0 8px;">-</span><span style="font-size:12px">8564323458754C3 / 277-278</span></p>
+    </div>
+    </td>
+</tr>
+<tr height="40px;"></tr>
+<tr>
+    <td class="greybg border-radius10"  style="margin:24px 0 12px 0px;">
+        <p class="title">Cancellation /Change Penalties</p>
+    </td>
+</tr>
+<tr height="24px;"></tr>
+<tr>
+    <td style="padding:13px 23px;" class="border-radius10 greyborder">
+        <p font-size:12px;>Carriage and other servie provided by the carrier are subject to the conditions of carriage. More information on the condition of carriage may br obtained from the issuing carrier. The Montreal Convention or the Warsaw Convention system may be applicable to your journey and these conventions govern and may limit the liability of air carrier for death or bodily injury, for loss of or damage to baggage, and for delay. More information can be obtained from the issuing carrier.</p>
+    </td>
+</tr>
+<tr height="40px;"></tr>
+<tr>
+    <td class="greybg border-radius10"  style="margin:24px 0 12px 0px;">
+        <p class="title">Dangerous articles in baggage</p>
+    </td>
+</tr>
+<tr height="24px;"></tr>
+<tr>
+    <td style="padding:13px 23px;" class="border-radius10 greyborder">
+        <p font-size:12px;>For safety reason, dangerous articles such as Acids, Poisons, Flammable Liquids, Explosives, Matches/Lighters, Incapacitating sprays, Ignitable gas devices, Compressed gas, stc. must not be carried in passengers checked or hand/cabin baggage. If you do not understand the restriction, further information may be obtained from your Airline.</p>
+    </td>
+</tr>
+<tr height="40px;"></tr>
+</table>
+<!--table end-->     
+        
+
+</body>
+</html>

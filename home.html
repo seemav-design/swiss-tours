@@ -1,0 +1,1913 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="theme-color" content="#000" />
+    <title>Welcome To SWISStours</title>
+    <link href="images/favicon.ico.jpg" rel="shortcut icon" />
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/menu.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-select.min.css" rel="stylesheet" type="text/css">
+   
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <!--<script src="js/bootstrap.min.js"></script>-->
+    
+    <script src="js/bootstrap-datetimepicker.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+<!--https://codepen.io/azrikahar/pen/NWNEByV-->
+</head>
+<body>
+
+     <!-- Header Starts -->
+     <header class="cd-main-header sw-mainheader">
+        <!-- Start Mega Menu HTML -->
+        <div class="container">
+          <nav class="navbar navbar-expand-lg sw-navbar">
+            <div class="w-100 flex-column align-items-start">
+                <div class="d-flex justify-content-between w-100">
+                  <a class="navbar-brand" href="#"><img src="images/logo.svg" alt=""></a>
+                  
+                  <div class="top-right-menu d-flex flex-grow-1">
+                    <div class="cart_box">
+                        <a href="#" class="cart_btn" title="View Cart"><span class="ml-4">My Cart</span><span class="cart_items_count">0</span></a>
+                    </div>
+                    <div class="login_head">
+                        <a href=""> <span class="txt">Login</span></a>
+                    </div>
+                    <div class="sign-upbtn">
+                        <a href="" class="btn"> <img src="images/airline/signup-icon.svg" alt=""><span class="txt">sign up</span></a>
+                    </div>
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+                      <div class="hamburger-toggle">
+                        <div class="hamburger">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              
+              <div class="collapse navbar-collapse menu_navbar w-100" id="navbar-content">
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0 flex-grow-1 mt-4" >
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">
+                        <span class="nav-icon"><img src="images/airline/Plane2.svg" alt=""></span>
+                        <span class="nav-icon mb-icon"><img src="images/airline/Plane2.svg" alt=""></span>
+                        Flights</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#">
+                        <span class="nav-icon"><img src="images/airline/menu-icon/hotelmenu-icon.svg" alt="" class="filter-red"></span>
+                        <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/hotel.svg" alt=""></span>
+                        Hotels
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        <span class="nav-icon"><img src="images/airline/menu-icon/aparment.svg" alt="" class="filter-red"></span>
+                        <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/apartment.svg" alt=""></span>
+                        Apartments</a>
+                  </li>
+                
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" aria-current="page" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                        <span class="nav-icon"><img src="images/airline/menu-icon/package.svg" alt="" class="filter-red"></span>
+                        <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/package.svg" alt=""></span>
+                        Packages</a>
+                      <ul class="dropdown-menu shadow">
+                        <li class="rmm-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                       <li>
+                          <a class="dropdown-item pe-4" href="#">Air-Inclusive Packages<img src="images/airline/sw-logo2.svg" class="img-fluid menu-innericon"></a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Land Packages</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#">
+                        <span class="nav-icon"><img src="images/airline/menu-icon/e-swiss.svg" alt="" class="filter-red"></span>
+                        <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/e-swiss.svg" alt=""></span>
+                        E-Swiss Travel Pass
+                    </a>
+                  </li>
+                  <li class="nav-item dropdown dropdown-mega position-static">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                        <span class="nav-icon"><img src="images/airline/menu-icon/european.svg" alt="" class="filter-red"></span>
+                        <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/eurailpass.svg" alt=""></span>
+                        European Rail
+                    </a>
+                     <div class="dropdown-menu shadow pass">
+                        <div class="mega-content px-lg-4">
+                            <div class="container-fluid">
+                                <ul class="row">
+                                    <li class="col-12 col-lg-8 py-lg-4 border-right submenu2">
+                                        <div class="rmm-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></div>
+                                        <h5><a href="#">Eurail Pass<img src="images/airline/eurailicon.svg" class="img-fluid menucion2 ms-2"></a></h5>
+                                        <ul class="list-group submenu2-content">
+                                            <li class="s2back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                             <li><a class="list-group-item" href="#">Global Pass</a></li>
+                                             <li class="one-country-pass">
+                                                <a class="list-group-item" href="#">One Country Pass</a>
+                                                <ul class="list-group eurail-pass list-group2">
+                                                    <li class="s2back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                                    <li class="listoverflow-mb">
+                                                        <ul>
+                                                            <li><a href="#" class="list-group-item">Eurail Austria Pass</a></li>
+                                                            <li><a href="#" class="list-group-item">Eurail Belgium Pass</a></li>
+                                                            <li><a href="#" class="list-group-item">Eurail Benelux Pass</a></li>
+                                                            <li><a href="#" class="list-group-item">Eurail Bulgaria Pass</a></li>
+                                                            <li><a href="#" class="list-group-item">Eurail Croatia Pass</a></li>
+                                                            <li><a href="#" class="list-group-item"> Eurail Czech Republic Pass</a></li>
+                                                            <li><a href="#" class="list-group-item">Eurail Denmark Pass</a></li>
+                                                            <li><a href="#" class="list-group-item">Eurail Lithuania Pass</a></li>
+                                                            <li><a href="#" class="list-group-item">Eurail Luxembourg Pass</a></li>
+                                                            <li><a href="#" class="list-group-item">Eurail Netherlands Pass</a></li>
+                                                            <li><a href="#" class="list-group-item">Eurail Norway Pass</a></li>
+                                                            <li><a href="#" class="list-group-item">Eurail Poland Pass</a></li>
+                                                        </ul>
+                                                        <ul class="sub-listgrop2">
+                                                            <li><a href="#" class="list-group-item">Eurail Portugal Pass</a></li>
+                                                            <li><a href="#" class="list-group-item">Eurail Romania Pass</a></li>
+                                                            <li><a href="#" class="list-group-item">Eurail Finland Pass</a></li>
+                                                            <li><a href="#" class="list-group-item">Eurail France Pass</a></li>
+                                                            <li><a href="#" class="list-group-item">Eurail Germany Pass</a></li>
+                                                            <li><a href="#" class="list-group-item">Eurail Greece Pass</a></li>
+                                                            <li><a href="#" class="list-group-item">Eurail Hungary Pass</a></li>
+                                                            <li><a href="#" class="list-group-item">Eurail Italy Pass</a></li>
+                                                            <li><a href="#" class="list-group-item">Eurail Scandinavia Pass</a></li>
+                                                            <li><a href="#" class="list-group-item">Eurail Serbia Pass</a></li>
+                                                            <li><a href="#" class="list-group-item">Eurail Slovakia Pass</a></li>
+                                                            <li><a href="#" class="list-group-item">Eurail Slovenia Pass</a></li>
+                                                            <li><a href="#" class="list-group-item">Eurail Spain Pass</a></li>
+                                                            <li><a href="#" class="list-group-item">Eurail Sweden Pass</a></li>
+                                                            <li><a href="#" class="list-group-item">Eurail Turkey Pass</a></li>
+                                                            <li><a href="#" class="list-group-item"></a></li>
+                                                        </ul>
+                                                    </li>
+    
+                                                    
+                                                 </ul>
+                                            </li>
+
+                                           
+                                        </ul>
+                                    </li>
+                                    
+                                    <li class="col-12 col-lg-4 py-lg-4 ps-md-5 submenu3">
+                                       
+                                            <h5><a href="#">Panoramic Trains in Switzerland</a></h5>
+                                            <ul class="list-group list-group3 submenu3-content">
+                                                <li class="s3-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                                  <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/Berninalogo.png" alt="Berninalogo" class="img-fluid"></span>Bernina Express</a></li>
+                                                    <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/glacierlogo.png" alt="glacierlogo" class="img-fluid"></span>Glacier Express</a></li>
+                                                    <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/glacierlogo.png" alt="glacierlogo" class="img-fluid"></span>Lucerne-Interlaken</a></li>
+                                            </ul>
+                                        
+                                        <div class="bordertop"></div>
+                                               <div class="submenu4">
+                                                <h5><a href="#">Europe Point to Point tickets</a></h5>
+                                                <ul class="list-group list-group3 submenu4-content">
+                                                    <li class="s3-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                                    <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/londonlogo.png" alt="imglogo" class="img-fluid"></span>London to Paris</a></li>
+                                                    <li>
+                                                        <a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-baselLogo.png" alt="imglogo" class="img-fluid"></span>Paris to Basel 
+                                                            <div class="d-flex justify-content-end align-items-end populricon">
+                                                                <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-zurichlogo.png" alt="imglogo" class="img-fluid"></span>Paris to Zurich</a></li>
+                                                    <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-amsLogo.png" alt="imglogo" class="img-fluid"></span>Paris to Amsterdam</a></li>
+                                                    <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-baselLogo.png" alt="imglogo" class="img-fluid"></span>London to Amsterdam</a></li>
+                                                </ul>
+                                            </div>
+                                        
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> 
+                </li>
+                  <li class="nav-item dropdown dropdown-mega position-static">
+                      <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                        <span class="nav-icon"><img src="images/airline/menu-icon/sightseeing.svg" alt="" class="filter-red"></span>
+                        <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/sightseeing.svg" alt="" class="filter-red"></span>
+                        Attractions
+                    </a>
+                      <div class="dropdown-menu shadow pass">
+                        <div class="mega-content px-lg-4">
+                            <div class="container-fluid">
+                                <ul class="row">
+                                    <li class="col-12 col-lg-4 py-lg-4 border-right submenu2">
+                                        <div class="rmm-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></div>
+                                        <h5><a href="#">Mountains in Switzerland</a></h5>
+                                        <ul class="list-group submenu2-content">
+                                            <li class="s2back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                            <li>
+                                                <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                                    Jungfrau
+                                                    <div class="d-flex justify-content-end align-items-end populricon">
+                                                        <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="list-group-item" href="#">Jungfrau VIP Gondola</a>
+                                            </li>
+                                           
+                                            <li><a class="list-group-item" href="#">Harder Kulm</a></li>
+                                            <li><a class="list-group-item" href="#">Grindelwald First</a></li>
+                                            <li><a class="list-group-item" href="#">Schilthorn</a></li>
+                                            <li><a class="list-group-item" href="#">Mt Titlis</a></li>
+                                            <li><a class="list-group-item" href="#">Mt Pilatus</a></li>
+                                            <li><a class="list-group-item" href="#">Matterhorn</a></li>
+                                            <li>
+                                                <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                                    Sunnega Paradise
+                                                    <div class="d-flex justify-content-end align-items-end populricon">
+                                                        <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li><a class="list-group-item" href="#">Glacier 3000</a></li>
+                                            <li><a class="list-group-item" href="#">Diavolezza</a></li>
+                                            <li><a class="list-group-item" href="#">Aletsch Arena</a></li>
+                                            <li><a class="viewAllBtn" href="#">View All</a></li>
+                                          
+                                        </ul>
+                                    </li>
+                                    <li class="col-12 col-lg-4 py-lg-4 border-right submenu2">
+                                        <h5><a href="#">Attractions in Switzerland</a></h5>
+                                        <ul class="list-group submenu2-content">
+                                            <li class="s2back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                            <li><a class="list-group-item" href="#">Swiss Transport Musuem</a></li>
+                                            <li>
+                                                <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                                Saphir
+                                                <div class="d-flex justify-content-end align-items-end populricon">
+                                                    <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                </div>
+                                                </a> 
+                                            </li>
+                                            <li><a class="list-group-item" href="#">Lindt</a></li>
+                                            <li><a class="list-group-item" href="#">Swissminiatur</a></li>
+                                            <li><a class="list-group-item" href="#">Meal Voucher</a></li>
+                                            <li><a class="list-group-item" href="#">Charlie Chaplin</a></li>
+                                            <li><a class="viewAllBtn" href="#">View All</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="col-12 col-lg-4 py-lg-4 ps-md-5 submenu2">
+                                        <h5><a href="#">Guided tours in Switzerland</a></h5>
+                                        <ul class="list-group submenu2-content">
+                                            <li class="s3-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                            <li><a class="list-group-item" href="#">Zurich tour with chocolate</a></li>
+                                            <li>
+                                                <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                                    Rhine falls and Zurich city tour
+                                                    <div class="d-flex justify-content-end align-items-end populricon">
+                                                        <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                    </div>
+                                                </a> 
+                                            </li>
+                                            <li><a class="list-group-item" href="#">Rhine falls and Stein am Rhein</a></li>
+                                            <li><a class="list-group-item" href="#">Zurich city tour with lake cruise</a></li>
+                                            <li><a class="list-group-item" href="#">Lucerne and Titlis snow experience</a></li>
+                                        </ul>
+                                        <div class="bordertop"></div>
+                                        <div class="submenu2">
+                                        <h5><a href="#">Worldwide Attractions</a></h5>
+                                            <ul class="list-group submenu2-content">
+                                                <li class="s2back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                                <li><a class="list-group-item" href="#">London</a></li>
+                                                <li><a class="list-group-item" href="#">Munich</a></li>
+                                                <li><a class="list-group-item" href="#">Paris</a></li>
+                                                <li><a class="list-group-item" href="#">Vienna</a></li>
+                                                <li><a class="viewAllBtn" href="#">View All</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                      </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                        <span class="nav-icon"><img src="images/airline/menu-icon/mountain.svg" alt="" class="filter-red"></span>
+                        <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mountain.svg" alt="" class="filter-red"></span>
+                        About
+                     </a>
+                      <ul class="dropdown-menu shadow">
+                        <li class="rmm-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                        <li>
+                          <a class="dropdown-item pe-4" href="#">About Us</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Our Leadership</a></li>
+                        <li><a class="dropdown-item" href="#">Brochure</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown dropdown-mega position-static contactMegamenu">
+                      <a class="nav-link dropdown-toggle" href="#"  href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                        <span class="nav-icon"><img src="images/airline/menu-icon/sightseeing.svg" alt="" class="filter-red"></span>
+                        <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/sightseeing.svg" alt="" class="filter-red"></span>
+                        Contact
+                    </a>
+                      <div class="dropdown-menu shadow">
+                        <div class="mega-content ">
+                            <div class="container-fluid">
+                                <div class="rmm-back ps-0"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></div>
+                                <div class="row listoverflow-mb">
+                                    <div class="col-12 col-md-7 col-lg-8 py-lg-8">
+                                        <ul class="menuleftContact">
+                                            
+                                            <li><h5><a href="https://wa.me/919987997997?text=Hello.">WhatsApp<span class="ms-3"><img src="images/airline/whatapp.svg" alt=""></span></a></h5></li>
+                                            <li class="d-flex align-items-center"><h5>Toll Free</h5><a href="tel:18002020052" class="text-primary">1800 20 20 052</a></li>
+                                            <li>
+                                                <h5>Branch Office</h5>
+                                                <ul>
+                                                    <li><span>Mumbai (Head Office)</span><a href="tel:+912261282400">(022) 61282400, 67439990</a></li>  
+                                                    <li><span>Delhi</span><a href="tel:+917208820785">+91 7208820787 / +91 7208820785 / +91 9643662737</a></li>  
+                                                    <li><span>Chennai</span><a href="tel:+914442179510">(044) 42179510 / 20</a></li>  
+                                                    <li><span>Bangalore</span><a href="tel:+918041132172">(080) 41132172, 41609072</a></li>  
+                                                    <li><span>Pune</span><a href="tel:+919136117252">+919136117252, +91 8855883831</a></li>
+                                                    <li><span>Kolkata</span><a href="tel:+919007160166">+91 9007160166</a></li>  
+                                                    <li><span>Ahmedabad</span><a href="tel:+917940028694">(079) 40028694 / 95</a></li>  
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-md-5 col-lg-4 p-0">
+                                        <div class="bgimg">
+                                            <div class="d-flex justify-content-between align-items-center bottomBtn">
+                                                <a href="#" class="whitebgbtn">View Brochure</a>    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                  </li>
+                  <li class="nav-item d-block d-md-none">
+                     <a class="nav-link" href="#"><span class="nav-icon mb-icon">
+                        <img src="images/airline/menu-icon/mobile/cart.svg" alt="" class="filter-red"></span>
+                        My Cart<span class="cart_items_count">0</span></a>
+                  </li>
+                  <li class="nav-item ">
+                      <a class="nav-link" href="#">
+                        <span class="nav-icon"><img src="images/airline/menu-icon/offers.svg" alt="" class="filter-red"></span>
+                        <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/offers.svg" alt="" class="filter-red"></span>
+                        Blog
+                    </a>
+                  </li>
+                  <li class="nav-item  d-block d-md-none mt-5 mx-4 text-center login-mobilebtn">
+                    <a href="#" class="redBtn w-100 m-auto d-flex justify-content-center">Login</a>
+                  </li>
+              </ul>
+              
+              </div>
+            </div>
+          </nav>
+        </div>
+        <!-- END Mega Menu HTML -->
+      </header>
+      <!-- Header Ends -->
+      <link href="css/swiss-style.css" rel="stylesheet" type="text/css"> <!--airline css-->
+      <link href="css/jquery.autocomplete.css" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" href="css/jquery-ui.css">
+      <link rel="stylesheet" href="css/meghamenu.css">
+    
+     
+    <!--airline css-->
+  
+   
+<!--content holder start-->
+<div class="cd-main-content">
+    <div class="container-fluid main_content_container pt-0">
+        <div class="sw-main-content sw-main-content2 homepage">
+            <div class="herobanner">
+                <!--row start-->
+                <div class="row mbshadow">
+                
+                    <div class="banner_wrp sw-banner_wrp homebanner">
+                        <div class="bannermilogo d-block d-lg-none">
+                            <img src="images/airline/banner-midlogo.svg" alt="" class="img-fluid">
+                        </div>
+                        
+                    <!-- Carousel -->
+                    <div id="home-slider" class="carousel slide" data-ride="carousel">
+                        <!-- <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#home-slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#home-slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#home-slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div> -->
+                        <div class="carousel-inner sw-nstpBanner nstpBanner">
+                            <div class="carousel-item active">
+                                    <picture>
+                                        <source media="(max-width:470px)" srcset="images/airline/banner/herobanenrimg2-450.webp">
+                                        <!-- <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;"> -->
+                                        <img src="images/airline/banner/herobanenrimg1.webp" class="d-block w-100" alt="...">
+                                    </picture>
+                                    <div class="carousel-caption container">
+                                            <div class="titleBox white_txt banner_txt text-center">
+                                                <h1 data-title="Holidays SWISS Made">Holidays SWISS Made</h1>
+                                            <div class="d-flex justify-content-center">
+                                                
+                                                <div class="scrolling-words-container">
+                                                    <div class="scrolling-words-box">
+                                                    <ul>
+                                                        <li>Air Inclusive Package</li>
+                                                        <li>Swiss Travel Promotion</li>
+                                                        <li>Air Inclusive Package</li>
+                                                        <li>Swiss Travel Promotion</li>
+                                                    </ul>
+                                                    </div>
+                                                
+                                                </div>
+                                                </div>
+                                            
+                                            </div>
+                                            <div class="bottombannerlogos">
+                                                <a href="#"><img src="images/airline/banner-swiss-logo.svg" alt="bannerlogo" class="img-fluid"></a>
+                                                <a href="#"><img src="images/airline/banner-logo2.svg" alt="bannerlogo" class="img-fluid"></a>
+                                                <a href="#"><img src="images/airline/banner-logo3.svg" alt="bannerlogo" class="img-fluid"></a>
+                                            </div>
+                                    </div>
+                            </div>
+                            <!--carousal item start-->
+                            <div class="carousel-item">
+                                <picture>
+                                    <source media="(max-width:470px)" srcset="images/airline/banner/herobanenrimg2-450.webp">
+                                    <!-- <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;"> -->
+                                    <img src="images/airline/banner/herobanenrimg1.webp" class="d-block w-100" alt="...">
+                                </picture>
+                                <div class="carousel-caption container">
+                                        <div class="titleBox white_txt banner_txt text-center">
+                                            <h1 data-title="Holidays SWISS Made">Holidays SWISS Made</h1>
+                                            <p>Air Inclusive Package</p>
+                                        </div>
+                                        <div class="bottombannerlogos">
+                                            <a href="#"><img src="images/airline/banner-swiss-logo.svg" alt="bannerlogo" class="img-fluid"></a>
+                                            <a href="#"><img src="images/airline/banner-logo2.svg" alt="bannerlogo" class="img-fluid"></a>
+                                            <a href="#"><img src="images/airline/banner-logo3.svg" alt="bannerlogo" class="img-fluid"></a>
+                                        </div>
+                                </div>
+                            </div>
+                            <!--carousal item end-->
+                            <!--carosual item start-->
+                            <div class="carousel-item">
+                                <picture>
+                                    <source media="(max-width:470px)" srcset="images/airline/banner/herobanenrimg2-450.webp">
+                                    <!-- <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;"> -->
+                                    <img src="images/airline/banner/herobanenrimg1.webp" class="d-block w-100" alt="...">
+                                </picture>
+                                <div class="carousel-caption container">
+                                        <div class="titleBox white_txt banner_txt text-center">
+                                            <h1 data-title="Holidays SWISS Made">Holidays SWISS Made</h1>
+                                            <p>Air Inclusive Package</p>
+                                        </div>
+                                        <div class="bottombannerlogos">
+                                            <a href="#"><img src="images/airline/banner-swiss-logo.svg" alt="bannerlogo" class="img-fluid"></a>
+                                            <a href="#"><img src="images/airline/banner-logo2.svg" alt="bannerlogo" class="img-fluid"></a>
+                                            <a href="#"><img src="images/airline/banner-logo3.svg" alt="bannerlogo" class="img-fluid"></a>
+                                        </div>
+                                </div>
+                            </div>
+                            <!--carosal item end-->
+                            <!--carosual item start-->
+                            <div class="carousel-item">
+                                <picture>
+                                    <source media="(max-width:470px)" srcset="images/airline/banner/herobanenrimg2-450.webp">
+                                    <!-- <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;"> -->
+                                    <img src="images/airline/banner/herobanenrimg1.webp" class="d-block w-100" alt="...">
+                                </picture>
+                                <div class="carousel-caption container">
+                                        <div class="titleBox white_txt banner_txt text-center">
+                                            <h1 data-title="Holidays SWISS Made">Holidays SWISS Made</h1>
+                                            <p>Air Inclusive Package</p>
+                                        </div>
+                                        <div class="bottombannerlogos">
+                                            <a href="#"><img src="images/airline/banner-swiss-logo.svg" alt="bannerlogo" class="img-fluid"></a>
+                                            <a href="#"><img src="images/airline/banner-logo2.svg" alt="bannerlogo" class="img-fluid"></a>
+                                            <a href="#"><img src="images/airline/banner-logo3.svg" alt="bannerlogo" class="img-fluid"></a>
+                                        </div>
+                                </div>
+                            </div>
+                            <!--carosal item end-->
+                            <!--carosual item start-->
+                            <div class="carousel-item">
+                                <picture>
+                                    <source media="(max-width:470px)" srcset="images/airline/banner/herobanenrimg2-450.webp">
+                                    <!-- <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;"> -->
+                                    <img src="images/airline/banner/herobanenrimg1.webp" class="d-block w-100" alt="...">
+                                </picture>
+                                <div class="carousel-caption container">
+                                        <div class="titleBox white_txt banner_txt text-center">
+                                            <h1 data-title="Holidays SWISS Made">Holidays SWISS Made</h1>
+                                            <p>Air Inclusive Package</p>
+                                        </div>
+                                        <div class="bottombannerlogos">
+                                            <a href="#"><img src="images/airline/banner-swiss-logo.svg" alt="bannerlogo" class="img-fluid"></a>
+                                            <a href="#"><img src="images/airline/banner-logo2.svg" alt="bannerlogo" class="img-fluid"></a>
+                                            <a href="#"><img src="images/airline/banner-logo3.svg" alt="bannerlogo" class="img-fluid"></a>
+                                        </div>
+                                </div>
+                            </div>
+                            <!--carosal item end-->
+                        </div>
+                        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#home-slider" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#home-slider" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                        </button> -->
+                        
+                    </div>
+                        
+                    </div>
+                
+                </div>
+                <!--row end-->
+            </div>
+            
+            <div class="e-swisscontent container innersection_Container">
+                <!--recommanded slider start-->
+                <div class="section-padding recomd-slider">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="section-heading1">
+                        <div class="title">
+                            <h2>Swisstours Recommended</h2>
+                        </div>
+                        </div>
+                    </div> 
+                    <!--slider start-->
+                    <div class="row">
+                        <div class="col-xl-5">
+                            <div class="recommand-box">
+                                <div class="img-box">
+                                    <picture>
+                                        <source media="(max-width:470px)" srcset="images/airline/recommonedimg/BerninaExpres-470.webp">
+                                        <img src="images/airline/recommonedimg/BerninaExpres.webp" alt="" class="img-fluid">
+                                    </picture>
+                                    
+                                    <div class="img-caption">
+                                        <h3>Swiss Travel Pass</h3>
+                                        <p>Unlimited travel on train, bus, and boat across Switzerland</p>
+                                        <a href="#" class="border-btn">book now</a>
+                                    </div>
+                                    <div class="pricetag">
+                                        <p>From<span>INR 12,000</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-7">
+                            <div class="rev_slider-container">
+                                <div class="rev_slider">
+                                    <!--rev_slide start-->
+                                        <div class="rev_slide">
+                                            <div class="packImg">
+                                                <img src="images/airline/recommonedimg/img11.webp" alt="">
+                                                <div class="slidecontent">
+                                                    <div class="Recommendedslider-caption">
+                                                        <div class="headingcaption">
+                                                            <h3>Jungfraujoch<span> - Top of Europe</span></h3>
+                                                        </div>
+                                                        <div class="hoverdetailscard">
+                                                            <p> Board a comfortable coach &amp; Discover Zurich’s Highlights, take a guided stroll through...</p>
+                                                        </div>
+                                                        <div class="d-flex Pricedetails flex-column">
+                                                            <div class="d-flex">
+                                                                <p><img src="images/airline/location3.svg" alt="">Interlaken</p>
+                                                                <div class="pricerightdiv">
+                                                                    <p class="cancelprice">INR 18123</p>
+                                                                    <p>INR 11,870</p>
+                                                                </div>
+                                                            </div>
+                                                            <a href="#" class="border-btn">Book Now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--mb-slidecaption start-->
+                                            <div class="mb-slidecaption">
+                                                <div class="slider-caption">
+                                                <div class="captiondetailscard">
+                                                        <p> Board a comfortable coach & Discover Zurich’s Highlights, take a guided stroll through...Board a comfortable coach & Discover Zurich’s Highlights, take a guided stroll through...</p>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                    <a href="#" class="border-btn">Book Now</a>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            <!--mb-slidecaption end-->
+                                        </div>
+                                    <!--rev_slide end-->
+                                    <!--rev_slide start-->
+                                        <div class="rev_slide">
+                                            <div class="packImg">
+                                                <img src="images/airline/recommonedimg/img22.webp" alt="">
+                                                <div class="slidecontent">
+                                                    <div class="Recommendedslider-caption">
+                                                        <div class="headingcaption">
+                                                            <h3>Matterhorn Glacier Paradise</h3>
+                                                        </div>
+                                                        <div class="hoverdetailscard">
+                                                            <p> Board a comfortable coach &amp; Discover Zurich’s Highlights, take a guided stroll through...</p>
+                                                        </div>
+                                                        <div class="d-flex Pricedetails flex-column">
+                                                            <div class="d-flex">
+                                                                <p><img src="images/airline/location3.svg" alt="">Zermatt</p>
+                                                                <div class="pricerightdiv">
+                                                                    <p class="cancelprice">INR 7326</p>
+                                                                    <p>INR 4632</p>
+                                                                </div>
+                                                            </div>
+                                                            <a href="#" class="border-btn">Book Now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--mb-slidecaption start-->
+                                            <div class="mb-slidecaption">
+                                                <div class="slider-caption">
+                                                <div class="captiondetailscard">
+                                                        <p> 22Board a comfortable coach & Discover Zurich’s Highlights, take a guided stroll through...Board a comfortable coach & Discover Zurich’s Highlights, take a guided stroll through...</p>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                    <a href="#" class="border-btn">Book Now</a>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            <!--mb-slidecaption end-->
+                                        </div>
+                                    <!--rev_slide end-->
+                                    <!--rev_slide start-->
+                                        <div class="rev_slide">
+                                            <div class="packImg">
+                                                <img src="images/airline/recommonedimg/img33.webp" alt="">
+                                                <div class="slidecontent">
+                                                    <div class="Recommendedslider-caption">
+                                                        <div class="headingcaption">
+                                                            <h3>Mount Titls</h3>
+                                                        </div>
+                                                        <div class="hoverdetailscard">
+                                                            <p> Board a comfortable coach &amp; Discover Zurich’s Highlights, take a guided stroll through...</p>
+                                                        </div>
+                                                        <div class="d-flex Pricedetails flex-column">
+                                                            <div class="d-flex">
+                                                                <p><img src="images/airline/location3.svg" alt="">Engelberg</p>
+                                                                <div class="pricerightdiv">
+                                                                    <p class="cancelprice">INR 17326</p>
+                                                                    <p>INR 5790</p>
+                                                                </div>
+                                                            </div>
+                                                            <a href="#" class="border-btn">Book Now</a>
+                                                        </div>
+                                                    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--mb-slidecaption start-->
+                                            <div class="mb-slidecaption">
+                                                <div class="slider-caption">
+                                                <div class="captiondetailscard">
+                                                        <p> 33Board a comfortable coach & Discover Zurich’s Highlights, take a guided stroll through...Board a comfortable coach & Discover Zurich’s Highlights, take a guided stroll through...</p>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                    <a href="#" class="border-btn">Book Now</a>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            <!--mb-slidecaption end-->
+                                        </div>
+                                    <!--rev_slide end-->
+                                    <!--rev_slide start-->
+                                        <div class="rev_slide">
+                                            <div class="packImg">
+                                                <img src="images/airline/recommonedimg/img44.webp" alt="">
+                                                <div class="slidecontent">
+                                                    <div class="Recommendedslider-caption">
+                                                        <div class="headingcaption">
+                                                            <h3>Indian Meal Voucher </h3>
+                                                        </div>
+                                                        <div class="hoverdetailscard">
+                                                            <p> Board a comfortable coach &amp; Discover Zurich’s Highlights, take a guided stroll through...</p>
+                                                        </div>
+                                                        <div class="d-flex Pricedetails flex-column">
+                                                            <div class="d-flex">
+                                                                <p class="loc-details"><img src="images/airline/location3.svg" alt=""><span>Zermatti | Wengen | Sursee | Leukerbad | Lausanne | Grindelwald</span></p>
+                                                                <div class="pricerightdiv">
+                                                                    <p class="cancelprice">INR 3412</p>
+                                                                    <p>INR 4632</p>
+                                                                </div>
+                                                            </div>
+                                                            <a href="#" class="border-btn">Book Now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--mb-slidecaption start-->
+                                            <div class="mb-slidecaption">
+                                                <div class="slider-caption">
+                                                <div class="captiondetailscard">
+                                                        <p> 44Board a comfortable coach & Discover Zurich’s Highlights, take a guided stroll through...Board a comfortable coach & Discover Zurich’s Highlights, take a guided stroll through...</p>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                    <a href="#" class="border-btn">Book Now</a>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            <!--mb-slidecaption end-->
+                                        </div>
+                                    <!--rev_slide end-->
+                                    <!--rev_slide start-->
+                                    <div class="rev_slide">
+                                        <div class="packImg">
+                                            <img src="images/airline/recommonedimg/img11.webp" alt="">
+                                            <div class="slidecontent">
+                                                <div class="Recommendedslider-caption">
+                                                <div class="headingcaption">
+                                                    <h3>Jungfraujoch1 <span> - Top of Europe</span></h3>
+                                                    </div>
+                                                    <div class="hoverdetailscard">
+                                                        <p> Board a comfortable coach &amp; Discover Zurich’s Highlights, take a guided stroll through...</p>
+                                                    </div>
+                                                    <div class="d-flex Pricedetails flex-column">
+                                                        <div class="d-flex">
+                                                            <p><img src="images/airline/location3.svg" alt="">Zermatt</p>
+                                                            <div class="pricerightdiv">
+                                                                <p class="cancelprice">INR 7326</p>
+                                                                <p>INR 4632</p>
+                                                            </div>
+                                                        </div>
+                                                        <a href="#" class="border-btn">Book Now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--mb-slidecaption start-->
+                                        <div class="mb-slidecaption">
+                                            <div class="slider-caption">
+                                            <div class="captiondetailscard">
+                                                    <p>11Board a comfortable coach & Discover Zurich’s Highlights, take a guided stroll through...Board a comfortable coach & Discover Zurich’s Highlights, take a guided stroll through...</p>
+                                                </div>
+                                                <div class="d-flex">
+                                                <a href="#" class="border-btn">Book Now</a>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <!--mb-slidecaption end-->
+                                    </div>
+                                <!--rev_slide end-->
+                                <!--rev_slide start-->
+                                    <div class="rev_slide">
+                                        <div class="packImg">
+                                            <img src="images/airline/recommonedimg/img22.webp" alt="">
+                                            <div class="slidecontent">
+                                                <div class="Recommendedslider-caption">
+                                                    <div class="headingcaption">
+                                                        <h3>Matterhorn Glacier Paradise</h3>
+                                                    </div>
+                                                    <div class="hoverdetailscard">
+                                                        <p> Board a comfortable coach &amp; Discover Zurich’s Highlights, take a guided stroll through...</p>
+                                                    </div>
+                                                    <div class="d-flex Pricedetails flex-column">
+                                                        <div class="d-flex">
+                                                            <p><img src="images/airline/location3.svg" alt="">Zermatt</p>
+                                                            <div class="pricerightdiv">
+                                                                <p class="cancelprice">INR 7326</p>
+                                                                <p>INR 4632</p>
+                                                            </div>
+                                                        </div>
+                                                        <a href="#" class="border-btn">Book Now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--mb-slidecaption start-->
+                                        <div class="mb-slidecaption">
+                                            <div class="slider-caption">
+                                            <div class="captiondetailscard">
+                                                    <p> 22Board a comfortable coach & Discover Zurich’s Highlights, take a guided stroll through...Board a comfortable coach & Discover Zurich’s Highlights, take a guided stroll through...</p>
+                                                </div>
+                                                <div class="d-flex">
+                                                <a href="#" class="border-btn">Book Now</a>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <!--mb-slidecaption end-->
+                                    </div>
+                                <!--rev_slide end-->
+                                <!--rev_slide start-->
+                                    <div class="rev_slide">
+                                        <div class="packImg">
+                                            <img src="images/airline/recommonedimg/img33.webp" alt="">
+                                            <div class="slidecontent">
+                                                <div class="Recommendedslider-caption">
+                                                    <div class="headingcaption">
+                                                        <h3>Mount Titls</h3>
+                                                    </div>
+                                                    <div class="hoverdetailscard">
+                                                        <p> Board a comfortable coach &amp; Discover Zurich’s Highlights, take a guided stroll through...</p>
+                                                    </div>
+                                                    <div class="d-flex Pricedetails flex-column">
+                                                        <div class="d-flex">
+                                                            <p><img src="images/airline/location3.svg" alt="">Zermatt</p>
+                                                            <div class="pricerightdiv">
+                                                                <p class="cancelprice">INR 7326</p>
+                                                                <p>INR 4632</p>
+                                                            </div>
+                                                        </div>
+                                                        <a href="#" class="border-btn">Book Now</a>
+                                                    </div>
+                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--mb-slidecaption start-->
+                                        <div class="mb-slidecaption">
+                                            <div class="slider-caption">
+                                            <div class="captiondetailscard">
+                                                    <p> 33Board a comfortable coach & Discover Zurich’s Highlights, take a guided stroll through...Board a comfortable coach & Discover Zurich’s Highlights, take a guided stroll through...</p>
+                                                </div>
+                                                <div class="d-flex">
+                                                <a href="#" class="border-btn">Book Now</a>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <!--mb-slidecaption end-->
+                                    </div>
+                                <!--rev_slide end-->
+                                <!--rev_slide start-->
+                                    <div class="rev_slide">
+                                        <div class="packImg">
+                                            <img src="images/airline/recommonedimg/img44.webp" alt="">
+                                            <div class="slidecontent">
+                                                <div class="Recommendedslider-caption">
+                                                    <div class="headingcaption">
+                                                        <h3>Indian Meal Voucher </h3>
+                                                    </div>
+                                                    <div class="hoverdetailscard">
+                                                        <p> Board a comfortable coach &amp; Discover Zurich’s Highlights, take a guided stroll through...</p>
+                                                    </div>
+                                                    <div class="d-flex Pricedetails flex-column">
+                                                        <div class="d-flex">
+                                                            <p><img src="images/airline/location3.svg" alt="">Zermatt</p>
+                                                            <div class="pricerightdiv">
+                                                                <p class="cancelprice">INR 7326</p>
+                                                                <p>INR 4632</p>
+                                                            </div>
+                                                        </div>
+                                                        <a href="#" class="border-btn">Book Now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--mb-slidecaption start-->
+                                        <div class="mb-slidecaption">
+                                            <div class="slider-caption">
+                                            <div class="captiondetailscard">
+                                                    <p> 44Board a comfortable coach & Discover Zurich’s Highlights, take a guided stroll through...Board a comfortable coach & Discover Zurich’s Highlights, take a guided stroll through...</p>
+                                                </div>
+                                                <div class="d-flex">
+                                                <a href="#" class="border-btn">Book Now</a>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <!--mb-slidecaption end-->
+                                    </div>
+                                <!--rev_slide end-->
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--slider end-->
+                </div>
+                <!--recommaned slider end-->
+            <!--fightabout section start-->
+                <div class="section-padding section_Container fightaboutsection">
+                        <div class="d-flex justify-content-between align-items-center col-lg-10">
+                            <div class="section-heading1 flex-grow-1">
+                                <div class="title">
+                                    <h2>Save more with your flight tickets</h2>
+                                </div>
+                            </div>
+                            <!-- <div class="col-lg-2 align-items-center d-flex justify-content-end">
+                                <a href="#" class="border-btn">see more</a> 
+                            </div> -->
+                        </div>
+                        <div class="container-fluid fightticketslider">
+                            <!-- sw-packBox start-->
+                            <div class="img-slide">
+                                <a href="#">
+                                <div class="sw-packBox">
+                                    <div class="p-relative">
+                                        <div class="packImg"><img src="images/airline/popular-places/image1.webp" alt="img"  class="img-fluid"/></div>
+                                        <div class="sw-packOffer">
+                                            <div class="sw-packOffer-img d-flex justify-content-between align-items-center">
+                                                <a href="#"><img src="images/airline/Plane2.svg" alt="logoimg"></a>
+                                                <span><i class="fa fa-plus text-white"></i></span>
+                                                <a href="#"><img src="images/airline/chalets.svg" alt="chaletsimg"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="sw-packContent">
+                                        <p>Select your flights and choose your Swiss Chalets</p>
+                                    </div>
+                                    <div class="sw-packfooter">
+                                        <div class="packPrice"><span>Starting From</span>INR 1060000</div>
+                                    </div>
+                                    <div class="BookNowPack"><a href="#" class="Booknowbtn">book now</a></div>
+                                </div>
+                                </a>
+                            </div>
+                            <!-- sw-packBox end-->
+                            <!-- sw-packBox start-->
+                            <div class="img-slide">
+                                <a href="#">
+                                    <div class="sw-packBox">
+                                        <div class="p-relative">
+                                            <div class="packImg"><img src="images/airline/popular-places/image2.webp" alt="img"  class="img-fluid"/></div>
+                                            <div class="sw-packOffer">
+                                                <div class="sw-packOffer-img d-flex justify-content-between align-items-center">
+                                                    <a href="#"><img src="images/airline/Plane2.svg" alt="logoimg"></a>
+                                                    <span><i class="fa fa-plus text-white"></i></span>
+                                                    <a href="#"><img src="images/airline/pass.svg" alt="chaletsimg"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sw-packContent">
+                                            <p>Select your flight and choose your Swiss Travel Pass - one pass for travel by train, boat, and bus</p>
+                                        </div>
+                                        <div class="sw-packfooter">
+                                            <div class="packPrice"><span>Starting From</span>INR 175000</div>
+                                        </div>
+                                        <div class="BookNowPack"><a href="#" class="Booknowbtn">book now</a></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- sw-packBox end-->
+                            <!-- sw-packBox start-->
+                            <div class="img-slide">
+                                <a href="#">
+                                    <div class="sw-packBox">
+                                        <div class="p-relative">
+                                            <div class="packImg"><img src="images/airline/popular-places/image4.webp" alt="img"  class="img-fluid"/></div>
+                                            <div class="sw-packOffer">
+                                                <div class="sw-packOffer-img d-flex justify-content-between align-items-center">
+                                                    <a href="#"><img src="images/airline/Plane2.svg" alt="logoimg"></a>
+                                                    <span><i class="fa fa-plus text-white"></i></span>
+                                                    <a href="#"><img src="images/airline/circularplus.svg" alt="chaletsimg"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sw-packContent">
+                                            <p>Customize your itinerary with stay, rail pass, attractions, and flights all in one place</p>
+                                        </div>
+                                        <div class="sw-packfooter">
+                                            <div class="packPrice"><span>Starting From</span>INR 235000</div>
+                                        </div>
+                                        <div class="BookNowPack"><a href="#" class="Booknowbtn">book now</a></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- sw-packBox end-->
+                            <!-- sw-packBox start-->
+                            <div class="img-slide">
+                                <a href="#">
+                                    <div class="sw-packBox">
+                                        <div class="p-relative">
+                                            <div class="packImg"><img src="images/airline/popular-places/image4.webp" alt="img"  class="img-fluid"/></div>
+                                            <div class="sw-packOffer">
+                                                <div class="sw-packOffer-img d-flex justify-content-between align-items-center">
+                                                    <a href="#"><img src="images/airline/Plane2.svg" alt="logoimg"></a>
+                                                    <span><i class="fa fa-plus text-white"></i></span>
+                                                    <a href="#"><img src="images/airline/circularplus.svg" alt="chaletsimg"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sw-packContent">
+                                            <p>Customize your itinerary with stay, rail pass, attractions, and flights all in one place</p>
+                                        </div>
+                                        <div class="sw-packfooter">
+                                            <div class="packPrice"><span>Starting From</span>INR 235000</div>
+                                        </div>
+                                        <div class="BookNowPack"><a href="#" class="Booknowbtn">book now</a></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- sw-packBox end-->
+                            <!-- sw-packBox start-->
+                            <div class="img-slide">
+                                <a href="#">
+                                    <div class="sw-packBox">
+                                        <div class="p-relative">
+                                            <div class="packImg"><img src="images/airline/popular-places/image4.webp" alt="img"  class="img-fluid"/></div>
+                                            <div class="sw-packOffer">
+                                                <div class="sw-packOffer-img d-flex justify-content-between align-items-center">
+                                                    <a href="#"><img src="images/airline/Plane2.svg" alt="logoimg"></a>
+                                                    <span><i class="fa fa-plus text-white"></i></span>
+                                                    <a href="#"><img src="images/airline/circularplus.svg" alt="chaletsimg"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sw-packContent">
+                                            <p>Customize your itinerary with stay, rail pass, attractions, and flights all in one place</p>
+                                        </div>
+                                        <div class="sw-packfooter">
+                                            <div class="packPrice"><span>Starting From</span>INR 235000</div>
+                                        </div>
+                                        <div class="BookNowPack"><a href="#" class="Booknowbtn">book now</a></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- sw-packBox end-->
+                        </div>
+                </div>
+            <!--fightabout section edn-->
+            <!--popular package section start-->
+            <div class="section-padding section_Container popularPackagesection">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="section-heading1">
+                            <div class="title">
+                                <h2>Popular Packages</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!--gallerywrapper start-->
+                    <div class="gallerywrapper packageslider">
+                        <div class="gallerybox first slidebox popular">
+                            <a href="#">
+                                <div class="slideimg">
+                                <img src="images/airline/packages/img1.png"
+                                class="w-100 shadow-1-strong rounded mb-4"
+                                alt=""/>
+                                <div class="slidecaption">
+                                    <div>
+                                        <p>Chalet Style Holiday - Interlaken</p>
+                                        <p class="fontsize14">7 Nights / 8 Days</p>
+                                    </div>
+                                    <!--Pricedetails start-->
+                                    <div class="d-flex Pricedetails flex-column">
+                                        <div class="d-flex">
+                                        <p><img src="images/airline/location3.svg" alt="">Interlaken</p>
+                                        <div class="pricerightdiv">
+                                            <p class="cancelprice">INR 18123</p>
+                                            <p>INR 11,870</p>
+                                        </div>
+                                        </div>
+                                </div>
+                                <!--Pricedetails end-->
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="gallerybox second slidebox popular">
+                            <a href="#">
+                                <div class="slideimg">
+                                    <img
+                                    src="images/airline/packages/img3.png"
+                                    class="w-100 shadow-1-strong rounded mb-4"
+                                    alt=""/>
+                                    <div class="slidecaption">
+                                        <div>
+                                            <p>Glimpses of Switzerland & Paris</p>
+                                            <p class="fontsize14">7 Nights / 8 Days</p>
+                                        </div>
+                                        <!--Pricedetails start-->
+                                        <div class="d-flex Pricedetails flex-column">
+                                            <div class="d-flex">
+                                                <p><img src="images/airline/location3.svg" alt="">Interlaken</p>
+                                                <div class="pricerightdiv">
+                                                    <p class="cancelprice">INR 38123</p>
+                                                    <p>INR 61,870</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Pricedetails end-->
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="gallerybox third slidebox">
+                            <a href="#">
+                                <div class="slideimg">
+                                    <img
+                                    src="images/airline/packages/img5.png"
+                                    class="w-100 shadow-1-strong rounded mb-4"
+                                    alt=""/>
+                                    <div class="slidecaption">
+                                        <div>
+                                            <p>Live it up in Lucerne</p>
+                                            <p class="fontsize14">7 Nights / 8 Days</p>
+                                        </div>
+                                        <!--Pricedetails start-->
+                                        <div class="d-flex Pricedetails flex-column">
+                                            <div class="d-flex">
+                                                <p><img src="images/airline/location3.svg" alt="">Interlaken</p>
+                                                <div class="pricerightdiv">
+                                                    <p class="cancelprice">INR 28123</p>
+                                                    <p>INR 31,870</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Pricedetails end-->
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="gallerybox fourth slidebox popular">
+                            <a href="#">
+                                <div class="slideimg">
+                                    <img
+                                    src="images/airline/packages/img4.png"
+                                    class="w-100 shadow-1-strong rounded mb-4"
+                                    alt=""/>
+                                    <div class="slidecaption">
+                                        <div>
+                                            <p>Chalet Style Holiday - Interlaken</p>
+                                            <p class="fontsize14">7 Nights / 8 Days</p>
+                                        </div>
+                                        
+                                        <!--Pricedetails start-->
+                                        <div class="d-flex Pricedetails flex-column">
+                                            <div class="d-flex">
+                                                <p><img src="images/airline/location3.svg" alt="">Interlaken</p>
+                                                <div class="pricerightdiv">
+                                                    <p class="cancelprice">INR 8123</p>
+                                                    <p>INR 14,870</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Pricedetails end-->
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="gallerybox five slidebox ">
+                            <a href="#">
+                                <div class="slideimg">
+                                    <img src="images/airline/packages/img2.png"
+                                    class="w-100 shadow-1-strong rounded mb-4"
+                                    alt=""/>
+                                    <div class="slidecaption">
+                                        <div>
+                                            <p>Live it up in Lucerne</p>
+                                            <p class="fontsize14">7 Nights / 8 Days</p>
+                                        </div>
+                                    
+                                        <!--Pricedetails start-->
+                                        <div class="d-flex Pricedetails flex-column">
+                                            <div class="d-flex">
+                                                <p><img src="images/airline/location3.svg" alt="">Interlaken</p>
+                                                <div class="pricerightdiv">
+                                                    <p class="cancelprice">INR 38123</p>
+                                                    <p>INR 44,870</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Pricedetails end-->
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    
+                    </div>
+                    <!--gallerywrapper end-->
+                
+            </div>
+            <!--popular package section end-->
+                <!--Guided Day section start-->
+                <div class="section-padding section_Container guidesection">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-lg-4">
+                            <div class="section-heading1">
+                                <div class="title">
+                                    <h2>Guided Day Tours by <br><span>SWISS</span>tours</h2>
+                                </div>
+                                <p>Unlimited travel on train, bus, and boat across Switzerland</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="sw-guideDaySlider">
+                                <!--slide start-->
+                                <div class="img-slide">
+                                    <a href="">
+                                        <div class="packBox">
+                                            <div class="packImg">
+                                                <img src="images/airline/guidedayimg1.webp" data-lazy="../images/airline/combo-offerimg1.webp" class="img-fluid">
+                                            </div>
+                                            <div class="img-caption">
+                                            <div class="packContent d-flex flex-column">
+                                                    <div class="hoverdetailscard">
+                                                        <p> Board a comfortable coach & Discover Zurich’s Highlights, take a guided stroll through...</p>
+                                                    </div> 
+                                                    <h3 class="packTitle">Rhine Fall & Zurich Tour</h3>
+                                                </div>
+                                                <div class="sw-packOffer">
+                                                    <div class="d-flex">
+                                                    <p><img src="images/airline/location3.svg" alt="">Zurich</p>
+                                                        <div class="sw-packOfferprice d-flex flex-column justify-content-between align-items-center">
+                                                            <p class="cancelprice">INR 7123</p>
+                                                            <p class="combo-offerINR">INR 15000</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="sw-packfooter">
+                                                        <a href="#" class="border-btn">Book now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        
+                                    </a>
+                                </div>
+                            <!--slide end-->
+                            <!--slide start-->
+                            <div class="img-slide">
+                                <a href="">
+                                        <div class="packBox">
+                                            <div class="packImg">
+                                                <img src="images/airline/guidedayimg2.webp" data-lazy="../images/airline/combo-offerimg2.webp" class="img-fluid">
+                                            </div>
+                                            <div class="img-caption">
+                                                <div class="packContent d-flex flex-column">
+                                                    <div class="hoverdetailscard">
+                                                        <p> Board a comfortable coach & Discover Zurich’s Highlights, take a guided stroll through...</p>
+                                                    </div> 
+                                                    <h3 class="packTitle">Zurich Tour with Cruise & Chocolate</h3>
+                                                </div>
+                                                <div class="sw-packOffer">
+                                                    <div class="d-flex">
+                                                        <p><img src="images/airline/location3.svg" alt="">Zurich</p>
+                                                        <div class="sw-packOfferprice d-flex flex-column justify-content-between align-items-center">
+                                                            <p class="cancelprice">INR 2123</p>
+                                                            <p class="combo-offerINR">INR 55000</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="sw-packfooter">
+                                                        <a href="#" class="border-btn">Book now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                </a>
+                                
+                            </div>
+                            <!--slide end-->
+                                <!--slide start-->
+                                <div class="img-slide">
+                                <a href="">
+                                    <div class="packBox">
+                                    <div class="packImg">
+                                        <img src="images/airline/guidedayimg3.webp" data-lazy="../images/airline/combo-offerimg3.webp" class="img-fluid">
+                                    </div>
+                                    <div class="img-caption">
+                                        <div class="packContent d-flex flex-column">
+                                            <div class="hoverdetailscard">
+                                                <p> Board a comfortable coach & Discover Zurich’s Highlights, take a guided stroll through...</p>
+                                            </div> 
+                                            <h3 class="packTitle">Rhine Fall & Stein am Rhein</h3>
+                                        </div>
+                                        <div class="sw-packOffer">
+                                            <div class="d-flex">
+                                                <p><img src="images/airline/location3.svg" alt="">Zurich</p>
+                                                <div class="sw-packOfferprice d-flex flex-column justify-content-between align-items-center">
+                                                    <p class="cancelprice">INR 9123</p>
+                                                    <p class="combo-offerINR">INR 35000</p>
+                                                </div>
+                                            </div>
+                                            <div class="sw-packfooter">
+                                                <a href="#" class="border-btn">Book now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    
+                                </a>
+                                </div>
+                            <!--slide end-->
+                                <!--slide start-->
+                                <div class="img-slide">
+                                <a href="">
+                                    <div class="packBox">
+                                        <div class="packImg">
+                                            <img src="images/airline/guidedayimg1.webp" data-lazy="../images/airline/offer_1.webp" class="img-fluid">
+                                        </div>
+                                        <div class="img-caption">
+                                        <div class="packContent d-flex flex-column">
+                                            <div class="hoverdetailscard">
+                                                <p> Board a comfortable coach & Discover Zurich’s Highlights, take a guided stroll through...</p>
+                                            </div> 
+                                            <h3 class="packTitle">Rhine Fall & Zurich Tour</h3>
+                                        </div>
+                                        <div class="sw-packOffer">
+                                            <div class="d-flex">
+                                                <p><img src="images/airline/location3.svg" alt="">Zurich</p>
+                                                <div class="sw-packOfferprice d-flex flex-column justify-content-between align-items-center">
+                                                    <p class="cancelprice">INR 7123</p>
+                                                    <p class="combo-offerINR">INR 15000</p>
+                                                </div>
+                                            </div>
+                                            <div class="sw-packfooter">
+                                                <a href="#" class="border-btn">Book now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                
+                                </a>
+                                
+                            </div>
+                            <!--slide end-->
+                            <!--slide start-->
+                                <div class="img-slide">
+                                <a href="">
+                                <div class="packBox">
+                                    <div class="packImg">
+                                        <img src="images/airline/guidedayimg2.webp" data-lazy="../images/airline/offer_1.webp" class="img-fluid">
+                                    </div>
+                                    <div class="img-caption">
+                                    <div class="packContent d-flex flex-column">
+                                        <div class="hoverdetailscard">
+                                            <p> Board a comfortable coach & Discover Zurich’s Highlights, take a guided stroll through...</p>
+                                        </div> 
+                                        <h3 class="packTitle">Rhine Fall & Zurich Tour</h3>
+                                    </div>
+                                    <div class="sw-packOffer">
+                                        <div class="d-flex">
+                                            <p><img src="images/airline/location3.svg" alt="">Zurich</p>
+                                            <div class="sw-packOfferprice d-flex flex-column justify-content-between align-items-center">
+                                                <p class="cancelprice">INR 7123</p>
+                                                <p class="combo-offerINR">INR 15000</p>
+                                            </div>
+                                        </div>
+                                        <div class="sw-packfooter">
+                                            <a href="#" class="border-btn">Book now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                
+                                </a>
+                            
+                                </div>
+                                <!--slide end-->
+                                <!--slide start-->
+                                <div class="img-slide">
+                                    <a href="">
+                                    <div class="packBox">
+                                        <div class="packImg">
+                                            <img src="images/airline/guidedayimg3.webp" data-lazy="../images/airline/offer_1.webp" class="img-fluid">
+                                        </div>
+                                        <div class="img-caption">
+                                        <div class="packContent d-flex flex-column">
+                                            <div class="hoverdetailscard">
+                                                <p> Board a comfortable coach & Discover Zurich’s Highlights, take a guided stroll through...</p>
+                                            </div> 
+                                            <h3 class="packTitle">Rhine Fall & Zurich Tour</h3>
+                                        </div>
+                                        <div class="sw-packOffer">
+                                            <div class="d-flex">
+                                                <p><img src="images/airline/location3.svg" alt="">Zurich</p>
+                                                <div class="sw-packOfferprice d-flex flex-column justify-content-between align-items-center">
+                                                    <p class="cancelprice">INR 7123</p>
+                                                    <p class="combo-offerINR">INR 15000</p>
+                                                </div>
+                                            </div>
+                                            <div class="sw-packfooter">
+                                                <a href="#" class="border-btn">Book now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    </a>
+                                
+                                </div>
+                                <!--slide end-->
+                        </div>
+                        </div>
+                    
+                    </div>
+                </div>
+            
+                <!--Guided Day section end-->
+            </div>
+        </div>
+    </div>
+</div>
+    <!--content holder end-->
+    
+            <script src="js/slick.min.js"></script>
+            <script src="js/sliders_script.js"></script>
+            <script src="js/form_script.js"></script>
+            <script src="js/jquery.fancybox.min.js"></script>
+            <script src="js/jquery.autocomplete.js" type="text/javascript"></script>
+            <script src="js/airlineCustom.js" type="text/javascript"></script>
+            <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script> -->
+            <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/ion-rangeslider@2.3.1/js/ion.rangeSlider.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+           <!-- PAGE CONTENT HOLDER ENDS -->
+
+        </div>
+
+        <div class="clearfix"></div>
+
+      <!-- Footer Starts -->
+
+      <footer class="sw-footer">
+
+        <div class="container-fluid swissBrief d-none">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="foot_item"><img src="images/stp/swiss_logo.jpg"> A Swiss International Air Lines Company</div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="foot_item"><img src="images/stp/yrs20.jpg"> Over 2 Decades of Travel Excellence</div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="foot_item"><img src="images/stp/visit_logo.jpg">Sister Concern of VisitSwitzerland.com </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="foot_item"><img src="images/stp/services.jpg"> Bouquet of Services</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer">
+            <div class="footer-top">
+                <div class="row">
+
+                    <div class="col-12 col-md-3 border-right">
+                        <div class="row">
+                            <div class="foot_head">SwissTours <i class="fa fa-plus pull-right dropdown_icon" aria-hidden="true"></i></div>
+                            <ul class="foot_dropdown">
+                                <li><a href="about_us.html" class="fade_anim">About us</a> </li>
+                                <li><a href="partners.html" class="fade_anim">Partners</a></li>
+                                <li><a href="careers.html" class="fade_anim">Careers</a></li>
+                                <li><a href="testimonials.html" class="fade_anim">Testimonials</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- <div class="col-sm-4 col-md-3">
+                        <div class="row">
+                            <div class="foot_head">Customer Support <i class="fa fa-plus pull-right dropdown_icon" aria-hidden="true"></i></div>
+                            <ul class="foot_dropdown">
+                                <li><a href="contact_us.html" class="fade_anim">Contact Us</a></li>
+                                <li><a href="faqs.html" class="fade_anim">FAQs</a></li>
+                                <li><a href="#" class="fade_anim">Sitemap</a></li>
+                            </ul>
+                        </div>
+                    </div> -->
+
+                    <div class="col-12 col-md-3 border-right px-lg-5">
+                        <div class="row">
+                            <div class="foot_head">Legal <i class="fa fa-plus pull-right dropdown_icon" aria-hidden="true"></i></div>
+                            <ul class="foot_dropdown">
+                                <li><a href="user_agreement.html" class="fade_anim">User Agreement</a></li>
+                                <li><a href="privacy_policy.html" class="fade_anim">Privacy Policy</a></li>
+                                <li><a href="#" class="fade_anim">Verified & Secured</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 border-right px-lg-3">
+                        <div class="row">
+                            <div class="adHolder sw-adHolder">
+                                <div class="foot_head" style="text-align: center;">Accessory  Partner</div>
+                                <div style="text-align: center;">
+                                    <a href="#" target="_blank">
+                                        <img src="images/airline/victorinox-logo.png" alt="victorinox logo" class="victoximg1">
+                                        <img src="images/airline/victorinox-logo-hover.png" alt="victorinox logo" class="victoxhoverimg">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3 ps-lg-5 mt-4 mt-md-0">
+                        <div class="row">
+                            <div class="adHolder">
+                                <div class="foot_head">Official Time Partner</div>
+                                <div class="adBlock">
+                                    <iframe src="watch/index.html" scrolling="no" frameborder="0" width="100%" height="100%" allowtransparency="true"></iframe>
+                                    <!-- <a href=""><img src="images/tagheuer.jpg"></a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+               
+            </div>
+            <div class="footer-mid">
+                <a href="#"><img src="images/airline/footermid-logo.svg" alt="swiss-logo"><span>Swiss International Air Lines Company</span></a>
+            </div>
+            <div class="footer-bottom bottom">
+                <div class="row">
+                   
+                    <div class="col-xs-6 social">
+                        <div class="row d-flex justify-content-center">
+                            <a href="https://www.facebook.com/pages/Swisstours/256257954432198" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="https://www.instagram.com/_swisstours/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 copyright"><div class="row">&copy; 2023 Swisstours.com All rights reserved.</div></div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Ends -->
+
+    </div>
+
+    <!-- Navigation Menus Starts -->
+
+
+    <!-- Navigation Menus Ends -->
+    <!-- PassengersModal Modal -->
+    <div class="sw-modal modal fade" id="PassengersModal" tabindex="-1" role="dialog" aria-labelledby="PassengersModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="PassengersModalLabel">Passengers</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="content-passenger">
+                        <div class="passenger-details">
+                            <!--d-flex start-->
+                            <div class="d-flex flex-column mb-4 ageDetails">
+                                <div class="passanger-title">
+                                    <p>Adult</p>
+                                    <p>
+                                        Age 18+
+                                    </p>
+                                </div>
+                                <ul class="pagination">
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#">6</a></li>
+                                    <li><a href="#">7</a></li>
+                                    <li><a href="#">8</a></li>
+                                    <li><a href="#">9</a></li>
+                                </ul>
+                            </div>
+                            <!--d-flex end-->
+                            <!--d-flex start-->
+                            <div class="d-flex flex-column mb-4 ageDetails">
+                                <div class="passanger-title">
+                                    <p>Child</p>
+                                    <p>
+                                        Age 4-18
+                                    </p>
+                                </div>
+                                <ul class="pagination">
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#">6</a></li>
+                                    <li><a href="#">7</a></li>
+                                    <li><a href="#">8</a></li>
+                                    <li><a href="#">9</a></li>
+                                </ul>
+                            </div>
+                            <!--d-flex end-->
+                            <!--d-flex start-->
+                            <div class="d-flex flex-column mb-4 ageDetails">
+                                <div class="passanger-title">
+                                    <p>Infants</p>
+                                    <p>
+                                        Age 0-4
+                                    </p>
+                                </div>
+                                <ul class="pagination">
+                                    <li><a href="#" class="active">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#">6</a></li>
+                                    <li><a href="#">7</a></li>
+                                    <li><a href="#">8</a></li>
+                                    <li><a href="#">9</a></li>
+                                </ul>
+                            </div>
+                            <!--d-flex end-->
+                            <div class="passgr-class">
+                                <div class="modal-subtitle">Class</div>
+                                <!--swcustom-checkbox start-->
+                                <div class="swcustom-checkbox swcustom-radiobox">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="classtype" value="option1">
+                                        <label class="form-check-label" for="economy">Economy</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="classtype" value="option2">
+                                        <label class="form-check-label" for="business">Business</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="classtype" value="option2">
+                                        <label class="form-check-label" for="firstclass">First Class</label>
+                                    </div>
+                                </div>
+                                <!--swcustom-checkbox end-->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                    <button type="button" class="redBtn">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- EconomyclassModal Modal start-->
+    <!-- <div class="sw-modal modal fade" id="EconomyclassModal" tabindex="-2" role="dialog" aria-labelledby="EconomyclassModalLabel" aria-hidden="true">
+       <div class="modal-dialog modal-dialog-centered" role="document">
+           <div class="modal-content">
+               <div class="modal-header">
+               <h5 class="modal-title" id="EconomyclassModalLabel">Modal title</h5>
+               <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                   <span aria-hidden="true">&times;</span>
+               </button>
+               </div>
+               <div class="modal-body">
+
+               </div>
+               <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+               <button type="button" class="btn btn-primary">Save changes</button>
+               </div>
+           </div>
+       </div>
+    </div> -->
+    <!-- EconomyclassModal Modal end-->
+    <!-- departmentModel start-->
+    <!-- <div class="sw-modal modal fade swfiltermodal" id="departmentModel" tabindex="-3" role="dialog" aria-labelledby="departmentModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="departmentModalLabel">department</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex flex-column">
+                        <div class="d-flex">
+                            <label for="department-formdate">Form : <span>date</span></label>
+                            <label for="department-todate">To : <span>date</span></label>
+                            <p>class<span>Economy</span><p>
+                            <p>Passenger<span>01</span><p>
+                        </div>
+                        <div class="d-flex">
+                            <div class="form-group">
+                                <label for="">Simple Date & Time</label>
+                                  
+                              </div>
+                              <div class="form-group">
+                                <label for="">Simple Date & Time</label>
+                                  
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="redBtn">Search</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- departmentModel end-->
+    <!-- swfilterModal start-->
+    <div class="sw-modal modal fade swfiltermodal" id="swfilterModal" tabindex="-1" role="dialog" aria-labelledby="swfilterModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="swfilterModalLabel">Advance Filter</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!--floating form start-->
+                    <form class="card-block bg-faded">
+
+                        <!-- <div class="form-group input-group d-flex custom-float-input">
+                            <label class=""><span>Enter Airline</span></label>
+                            <input class="form-control" type="text" placeholder="Enter Airline" value=""/>
+                        </div> -->
+                        <div class="form-floating">
+                            <input type="text" class="form-control" placeholder="Enter Airline">
+                            <label for="Airline">Enter Airline</label>
+
+                        </div>
+                        <div class="form-floating">
+                            <input class="form-control" type="text" placeholder="Eg. YY (Deal Code) / (CLID)" value="" />
+                            <label for="Deal Code">Deal Code/CLID</label>
+                        </div>
+                        <div class="form-floating">
+                            <input class="form-control" type="text" placeholder="Eg. YY (Promo Code)" />
+                            <label for="Promocode">Promo Code</label>
+                        </div>
+
+                        <div class="row d-flex mx-0">
+                            <div class="col-lg-6 pl-0">
+                                <div class="form-floating">
+                                    <div class='input-group date' id='departuretime'>
+                                        <input type='text' class="form-control" placeholder="Choose here"/>
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                        </span>
+                                    </div>
+                                   <label class="has-float-label">Departure Time</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 pr-0">
+                                <div class="form-floating">
+                                    <div class='input-group date' id='arrivaltime'>
+                                        <input type='text' class="form-control" placeholder="Choose here"/>
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                        </span>
+                                    </div>
+                                  <label class="has-float-label">Arrival Time</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swcustom-checkbox p-0 border-0 mb-24">
+                            <div class="form-check form-check-inline ps-0">
+                                <input class="form-check-input" type="checkbox" id="nextarrival-time">
+                                <label class="form-check-label" for="">Enable this option to choose arrival time for next day</label>
+                            </div>
+                        </div>
+                        <!--on checked open div start-->
+                        <div class="nextday-arriavaldiv">
+                            <!--swcustom-checkbox start-->
+                            <div class="form-group input-group checkbox-floatinput">
+                                <div class="form-floating w-100">
+                                    <label class="has-float-label">Stops</label>
+                                    <!-- <div class="swcustom-checkbox form-control d-flex">
+                                        <div class="form-check form-check-inline ps-0">
+                                            <input class="form-check-input" type="checkbox" id="stop1">
+                                            <label class="form-check-label" for="stop1">Non Stop</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input type="checkbox" class="form-check-input" id="stop2">
+                                            <label class="form-check-label" for="stop2">One Stop</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input type="checkbox" class="form-check-input" id="stop3">
+                                            <label class="form-check-label" for="stop3">Two Stop</label>
+                                        </div>
+                                    </div> -->
+                                    <div class="swcustom-checkbox swcustom-radiobox form-control d-flex">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="stop1" value="option1">
+                                            <label class="form-check-label" for="inlineRadio1">Non Stop</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="stop2" value="option2">
+                                            <label class="form-check-label" for="inlineRadio2">One Stop</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="stop3" value="option3">
+                                            <label class="form-check-label" for="inlineRadio3">Two Stop</label>
+                                        </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <!--swcustom-checkbox end-->
+
+                            <div class="row d-flex mx-0">
+                                <div class="col-lg-6 pl-0">
+                                    <div class="form-floating">
+                                        <input class="form-control" type="text" placeholder="Choose here">
+                                        <label for="floatingInput">Enter Airport Code</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 pr-0">
+                                    <div class="form-floating">
+                                        <input class="form-control" type="text" placeholder="Enter Flight Number">
+                                        <label for="floatingInput">Flight Number</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--swcustom-checkbox start-->
+                            <div class="checkbox-floatinput">
+
+                                <div class="form-floating">
+                                    <label for="floatingInput">Search By</label>
+                                    <div class="swcustom-checkbox form-control d-flex flex-wrap h-auto">
+                                        <div class="form-check form-check-inline">
+                                            <input type="checkbox" class="form-check-input" id="Fare1" checked>
+                                            <label class="form-check-label" for="Fare1">Low Fare</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input type="checkbox" class="form-check-input" id="Fare2">
+                                            <label class="form-check-label" for="Fare2">Flexible Fare</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input type="checkbox" class="form-check-input" id="Fare3">
+                                            <label class="form-check-label" for="Fare3">Private Fare</label>
+                                        </div>
+                                        <div class="mt-2">
+                                            <div class="form-check form-check-inline">
+                                                <input type="checkbox" class="form-check-input" id="Fare4">
+                                                <label class="form-check-label" for="Fare4">Nego Fare</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--swcustom-checkbox end-->
+                            <!--swcustom-checkbox start-->
+                            <div class="form-floating">
+                                <label for="floatingInput">Shopping Preference</label>
+                                <div class="swcustom-checkbox form-control d-flex">
+                                    <div class="form-check form-check-inline">
+                                        <input type="checkbox" class="form-check-input" id="shoperfer1" checked>
+                                        <label class="form-check-label" for="shoperfer1">Optimised</label>
+                                    </div>
+
+                                    <div class="form-check form-check-inline">
+                                        <input type="checkbox" class="form-check-input" id="shoperfer2">
+                                        <label class="form-check-label" for="shoperfer2">Full</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="checkbox" class="form-check-input" id="shoperfer3">
+                                        <label class="form-check-label" for="shoperfer3">Best</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--swcustom-checkbox end-->
+                            <!--swcustom-checkbox start-->
+                            <div class="form-floating shop-refer2">
+                                <label for="floatingInput">Shopping Preference</label>
+                                <div class="swcustom-checkbox d-flex flex-column align-items-start">
+                                    <div class="form-check mb-2">
+                                        <input type="checkbox" class="form-check-input" id="shoperfer4" checked>
+                                        <label class="form-check-label" for="shoperfer4">Stop - Price - Departure Time</label>
+                                    </div>
+
+                                    <div class="form-check mb-2">
+                                        <input type="checkbox" class="form-check-input" id="shoperfer5">
+                                        <label class="form-check-label" for="shoperfer5">Departure Time - Stop - Price</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="shoperfer6">
+                                        <label class="form-check-label" for="shoperfer6">Price - Stop - Departure Time</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--swcustom-checkbox end-->
+                        </div>
+                    </form>
+                    <!--floating form end-->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="redBtn">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- swfilterModal end-->
+
+
+
+    <script src="js/general.js"></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+   
+</body>
+
+</html>

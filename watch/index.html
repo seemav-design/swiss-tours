@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="ad.size" content="width=300,height=160">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+
+    <link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+    <div id="wnp_wrapper">
+        <a href="javascript:window.open(window.clickTag)" id="clickTagBlock">
+            <div class="stage01">
+                <div class="watchBlock">
+                    <img src="img/watch.png?v=20220901" alt="" width="98%" height="" />
+                    <div class="watchDials">
+                        <div id="wnp_date" class="flexFont" style="display:none !important;"></div>
+                        <div id="wnp_heures" class="needles">
+                            <img src="img/watchHours.png?v=20220901" alt="" width="100%" height="100%" />
+                        </div>
+                        <div id="wnp_minutes" class="needles">
+                            <img src="img/watchMinutes.png?v=20220901" alt="" width="100%" height="100%" />
+                        </div>
+                        <div id="wnp_chrono" class="needles">
+                            <img src="img/watchChrono.png?v=20220901" alt="" width="100%" height="100%" />
+                        </div>
+                        <div id="wnp_secondes"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="stage02" id="stageImg">
+
+            </div>
+        </a>
+    </div>
+    <script src="js/app.js"></script>
+    <script>
+        var clickTag = "";
+        flexFont = function () {
+            var divs = document.getElementsByClassName("flexFont");
+            for (var i = 0; i < divs.length; i++) {
+                var relFontsize = divs[i].offsetWidth * 0.5;
+                divs[i].style.fontSize = relFontsize + 'px';
+            }
+
+            var cDates = new Date();
+            var mnth = cDates.getMonth();
+            mnth = mnth + 1;
+            switch (mnth) {
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 9:
+                case 11:
+                    clickTag = "https://www.kirchhofer.com/";
+                    document.getElementById("stageImg").innerHTML = "<img src='img/kirchhofer-brown-logo.png' width='100%' height='50%' alt='kirchhofer' class='logo' />";
+                    break;
+                case 2:
+                case 4:
+                case 6:
+                case 8:
+                case 10:
+                case 12:
+                    clickTag = "https://embassy.ch/en/watches/";
+                    document.getElementById("stageImg").innerHTML = "<img src='img/embassy-logo.png' width='100%' height='100%' alt='Embassy' class='logo' />";
+                    break;
+            }
+        };
+        window.onload = function (event) { flexFont(); };
+        window.onresize = function (event) { flexFont(); };
+    </script>
+</body>
+</html>
