@@ -64,6 +64,7 @@ nav.sw-navbar .dropdown-menu .dropdown .dropdown-menu {
 	top: 0%;
 	margin: 0 20px;
 	border-width: 0;
+	
 }
 nav.sw-navbar .dropdown-menu .dropdown .dropdown-menu.left {
 	right: 100%;
@@ -83,6 +84,18 @@ nav.sw-navbar .dropdown-menu .dropdown .dropdown-menu.left {
 	padding-bottom: 2px;
 	margin-bottom: 6px;
 	padding-right: 0;
+}
+.sw-navbar .dropdown-mega .dropdown-menu .list-group-item {
+	border: 0;
+	font-size: 14px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	margin-bottom: 6px;
+	padding-right: 0;
+}
+.sw-navbar .dropdown-mega .dropdown-menu .list-group-item.active{
+	background-color:transparent!important;
+	border-color:transparent!important;
 }
 .sw-navbar .dropdown-mega .dropdown-menu .list-group-item:hover {
 	color: var(--primary-color);
@@ -197,6 +210,7 @@ nav.sw-navbar .nav-item.dropdown.dropdown-mega .dropdown-menu {
 	width: 100%;
 	top: auto;
 	height: auto;
+	
 }
 
 .contactMegamenu .bgimg {
@@ -269,13 +283,13 @@ nav.sw-navbar .contactMegamenu .mega-content {
 	padding: 0 !important;
 	margin: 0;
 }
-nav.sw-navbar .mega-content .eurail-pass.list-group2 ul {
+/* nav.sw-navbar .mega-content .eurail-pass.list-group2 ul {
 	width: 50%;
 	float: left;
 }
 .sub-listgrop2 {
 	margin-top: -90px
-}
+} */
 nav.sw-navbar a.viewAllBtn {
 	font-size: 14px;
 	color: var(--primary-color);
@@ -788,10 +802,10 @@ nav.sw-navbar .dropdown-item:hover {
 		overflow-x: hidden;
 		min-height: 500px;
 	}
-	.sw-navbar ul.sub-listgrop2 {
+	/* .sw-navbar ul.sub-listgrop2 {
 		border-left: 1px solid #D9D9D9;
 		padding: 0 40px;
-	}
+	} */
 	.attarction-viewbtn{
 		position: relative;
 		height:100%;
@@ -801,6 +815,10 @@ nav.sw-navbar .dropdown-item:hover {
 		left:0;
 		right:0;
 		bottom:0;
+	}
+	.colcount{
+		column-count: 2;
+		column-rule:1px solid #D9D9D9;
 	}
 	
 }

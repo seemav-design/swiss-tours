@@ -21,10 +21,10 @@
     box-sizing: border-box;
 }
 
-:after,
+/* :after,
 :before {
     content: "";
-}
+} */
 
 ::-webkit-scrollbar {
     width: 7px;
