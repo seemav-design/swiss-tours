@@ -1,0 +1,2864 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="theme-color" content="#000" />
+    <title>Welcome To SWISStours</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/menu.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-select.min.css" rel="stylesheet" type="text/css">
+   
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <!--<script src="js/bootstrap.min.js"></script>-->
+    
+    <script src="js/bootstrap-datetimepicker.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+<!--new css-->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/tonystar/bootstrap-float-label/v4.0.1/dist/bootstrap-float-label.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<!--https://www.codepel.com/demo/javascript-autocomplete-dropdown/-->
+
+<body>
+
+    <!-- Header Starts -->
+
+    <header class="cd-main-header">
+        <div class="container maxwidth">
+           
+
+            <div class="col-lg-12 logo_holder">
+                <div class="row">
+                   <a href="" class="col-lg-10"><img src="images/logo.svg" alt="" title="Logo"></a>
+                         <div class="top-right-menu d-flex col-lg-2">
+                            
+
+                            <div class="cart_box">
+                                <a href="#" class="cart_btn" title="View Cart"><span class="ml-4">My Cart</span><span class="cart_items_count">0</span></a>
+                            </div>
+                            <div class="login_head">
+                                <a href=""> <span class="txt">Login</span></a>
+                            </div>
+                            <div class="sign-upbtn">
+                                <a href="" class="btn"> <span class="txt">sign up</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="col-lg-12 menus_container">
+                <div class="row">
+                     <div class="cd-header-buttons">
+                        <div class="cd-nav-trigger"><a href="#cd-primary-nav"><span></span></a></div>
+                     </div>
+                   
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </header>
+
+    <!-- Header Ends -->
+<!-- Header Ends -->
+<link href="css/swiss-style.css" rel="stylesheet" type="text/css"> <!--airline css-->
+<link href="css/jquery.autocomplete.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/jquery-ui.css">
+<link rel="stylesheet" href="css/meghamenu.css">
+    <div class="cd-main-content">
+
+        <div class="container-fluid main_content_container">
+
+            <!-- PAGE CONTENT HOLDER STARTS  -->
+
+            <div class="row">
+
+                <div class="container-fluid banner_wrp">
+
+                    <div class="row">
+
+                        <div class="slider-nav">
+                            <a href="#">
+                                <div class="hmSlide" style="background-image:url(../HTML-Neosoft/images/_banner/herobannerimg.jpg);">
+                                   
+                                </div>
+                            </a>
+                           
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="container tabs_form_container sw-hometab_form">
+
+                    <div class="maxwidth">
+
+                        
+
+                        <ul class="tabs text-center fade_anim">
+                            <li rel="tab1"><span class="tab_title">Round Trip</span></li>
+                            <li rel="tab2"><span class="tab_title">One-Way</span></li>
+                            <li rel="tab3"><span class="tab_title">Multi-City</span></li>
+                           
+                        </ul>
+                        <div class="clearfix"></div>
+
+                        <div class="tab_container search_forms">
+
+                            <div id="tab1" class="tab_content">
+
+                                <div class="row">
+                                   
+                                    <!--form-group start-->
+                                    <div class="col-md-4 col-sm-6 form-group">
+                                        <!--highlight_error-->
+                                        <div class="border-box">
+                                                <div class="form-group-input">
+                                                    <label>From</label>
+                                                    <div class="input-box">
+                                                        <div class="select-wrapper">
+                                                                <div class="autocomplete-drop-down">
+                                                                    <div class="countries-input-container">
+                                                                        <div class="d-flex country-inputtext">
+                                                                            <input class="countries-input" placeholder="Country" type="text">
+                                                                            <span class="abbr">abbr</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                              
+                                                                <div class="countries-list-container">
+                                                                  <ul class="countries-list">
+                                                                    <li>&nbsp;</li>
+                                                                  </ul>
+                                                                </div>
+                                                             
+                                                            <!-- <select>
+                                                                <option selected value="0">Lagos</option>
+                                                                <option value="1">No Wrapper</option>
+                                                                <option value="2">No JS</option>
+                                                                <option value="3">Nice!</option>
+                                                            </select> -->
+                                                            <!-- <div class="select-box d-flex">
+                                                                <div class="select-box__current" tabindex="1">
+                                                                  <div class="select-box__value">
+                                                                    <input class="select-box__input" type="radio" id="0" value="1" name="Ben" checked="checked"/>
+                                                                    <p class="select-box__input-text">Cream</p>
+                                                                  </div>
+                                                                  <div class="select-box__value">
+                                                                    <input class="select-box__input" type="radio" id="1" value="2" name="Ben" checked="checked"/>
+                                                                    <p class="select-box__input-text">Cheese</p>
+                                                                  </div>
+                                                                  <div class="select-box__value">
+                                                                    <input class="select-box__input" type="radio" id="2" value="3" name="Ben" checked="checked"/>
+                                                                    <p class="select-box__input-text">Milk</p>
+                                                                  </div>
+                                                                  <div class="select-box__value">
+                                                                    <input class="select-box__input" type="radio" id="3" value="4" name="Ben" checked="checked"/>
+                                                                    <p class="select-box__input-text">Honey</p>
+                                                                  </div>
+                                                                  <div class="select-box__value">
+                                                                    <input class="select-box__input" type="radio" id="4" value="5" name="Ben" checked="checked"/>
+                                                                    <p class="select-box__input-text">Toast</p>
+                                                                  </div><img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+                                                                </div>
+                                                                <ul class="select-box__list">
+                                                                    <li>
+                                                                      <label class="select-box__option" for="0" aria-hidden="aria-hidden">Cream</label>
+                                                                    </li>
+                                                                    <li>
+                                                                      <label class="select-box__option" for="1" aria-hidden="aria-hidden">Cheese</label>
+                                                                    </li>
+                                                                    <li>
+                                                                      <label class="select-box__option" for="2" aria-hidden="aria-hidden">Milk</label>
+                                                                    </li>
+                                                                    <li>
+                                                                      <label class="select-box__option" for="3" aria-hidden="aria-hidden">Honey</label>
+                                                                    </li>
+                                                                    <li>
+                                                                      <label class="select-box__option" for="4" aria-hidden="aria-hidden">Toast</label>
+                                                                    </li>
+                                                                    <li>|</li>
+                                                                    <li>
+                                                                        <label> <p>LOS</p></label>
+                                                                    </li>
+                                                                  </ul>
+                                                                  
+                                                            </div> -->
+                                                           
+                                                        </div>
+                                                       
+                                                    </div>
+                                                    <p>Lagos International Airport....</p>
+                                                </div>
+                                        </div>
+                                        <div class="swise-icon">
+                                            <img src="images/switch.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <!--form-group end-->
+                                   
+                                    <!--form-group start-->
+                                    <div class="col-md-4 col-sm-6 form-group">
+                                        <div class="border-box">
+                                            <div class="form-group-input">
+                                                <label>To</label>
+                                                <div class="input-box">
+                                                    <div class="select-wrapper">
+                                                        <!-- <select>
+                                                            <option selected value="0">Aalborg</option>
+                                                            <option value="1">No Wrapper</option>
+                                                            <option value="2">No JS</option>
+                                                            <option value="3">Nice!</option>
+                                                          </select> -->
+                                                          <!-- <div class="select-box">
+                                                            <div class="select-box__current" tabindex="1">
+                                                              <div class="select-box__value">
+                                                                <input class="select-box__input" type="radio" id="5" value="5" name="Ben1" checked="checked"/>
+                                                                <p class="select-box__input-text">Cream1</p>
+                                                              </div>
+                                                              <div class="select-box__value">
+                                                                <input class="select-box__input" type="radio" id="6" value="6" name="Ben1" checked="checked"/>
+                                                                <p class="select-box__input-text">Cheese2</p>
+                                                              </div>
+                                                              <div class="select-box__value">
+                                                                <input class="select-box__input" type="radio" id="7" value="7" name="Ben1" checked="checked"/>
+                                                                <p class="select-box__input-text">Milk3</p>
+                                                              </div>
+                                                              <div class="select-box__value">
+                                                                <input class="select-box__input" type="radio" id="8" value="8" name="Ben1" checked="checked"/>
+                                                                <p class="select-box__input-text">Honey4</p>
+                                                              </div>
+                                                              <div class="select-box__value">
+                                                                <input class="select-box__input" type="radio" id="9" value="9" name="Ben1" checked="checked"/>
+                                                                <p class="select-box__input-text">Toast5</p>
+                                                              </div><img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+                                                            </div>
+                                                            <ul class="select-box__list">
+                                                              <li>
+                                                                <label class="select-box__option" for="5" aria-hidden="aria-hidden">Cream1</label>
+                                                              </li>
+                                                              <li>
+                                                                <label class="select-box__option" for="6" aria-hidden="aria-hidden">Cheese2</label>
+                                                              </li>
+                                                              <li>
+                                                                <label class="select-box__option" for="7" aria-hidden="aria-hidden">Milk3</label>
+                                                              </li>
+                                                              <li>
+                                                                <label class="select-box__option" for="8" aria-hidden="aria-hidden">Honey4</label>
+                                                              </li>
+                                                              <li>
+                                                                <label class="select-box__option" for="9" aria-hidden="aria-hidden">Toast5</label>
+                                                              </li>
+                                                            </ul>
+                                                          </div> -->
+                                                    </div>
+                                                    <input class="countries-input" placeholder="Aalborg" type="text">
+                                                   
+                                                    <p>EKYT</p>
+                                                </div>
+                                               <p>Lagos International Airport....</p>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                     <!--form-group end-->
+                                    <div class="col-md-4 col-sm-6 form-group from-date-group">
+                                        <div class="border-box d-flex">
+                                            <div class="form-group-input">
+                                                    <label>Departure</label>
+                                                   
+                                                    <div class="input-box border-right">
+                                                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#departmentModel">
+                                                            Sat,11/09
+                                                        </button>
+                                                    </div>
+                                                    <p>LOS-EKYT</p>
+                                                  
+                                            </div>
+                                            <div class="form-group-input">
+                                                <label>Return</label>
+                                                <div class="input-box">
+                                                    <div class="input-group" data-date="" data-date-format="dd MM yyyy - HH:00" data-link-field="dtp_input1">
+                                                      
+                                                        <input type="text" placeholder="+ADD" class="form-control date form_datetime" readonly>
+                                                    </div>
+                                                    <input type="hidden" id="dtp_input1" value="" />
+                                                </div>
+                                                <p>LOS-EKYT</p>
+                                        </div>
+                                        </div>
+                                       
+                                    </div>
+
+                                   
+
+                                </div>
+                               <div class="row d-flex align-items-center justify-content-end">
+                                  
+                                    <div class="col-lg-6 col-xs-12 pl-0">
+                                        <!--01, Passengers model start-->
+                                                    <!-- Button trigger modal -->
+                                                    <button type="button" class="border-btn" data-toggle="modal" data-target="#PassengersModal">
+                                                        01, Passengers
+                                                    </button>
+                                                    
+                                                   
+                                        <!--01, Passengers model end-->
+                                        <!--Economy Class model start-->
+                                          <!-- Button trigger modal -->
+                                          <button type="button" class="border-btn ml-12" data-toggle="modal" data-target="#EconomyclassModal">
+                                            Economy Class
+                                          </button>
+                                        
+                                      
+                                        <!--Economy Class model start-->
+                                    </div>
+                                    <div class="col-lg-6 col-xs-12 p-0 d-flex align-items-center justify-content-end">
+                                        <div class="form-group text-center mb-0">
+                                            <a class="redBtn text-uppercase">Search Flights</a>
+                                            <button type="button" class="swfilter-btn btn-primary btn" data-toggle="modal" data-target="#swfilterModal">
+                                                <img src="images/filter-icon.svg" alt="">
+                                            </button>
+                                           
+                                        </div>
+                                       
+                                    </div>
+                                    
+                               </div>
+                                <div class="clearfix"></div>
+                            </div>
+
+                            <!-- XXXXXXXXXXXXXX -->
+
+                            <div id="tab2" class="tab_content">
+
+                                <div class="row">
+                                    <div class="col-sm-4 form-group">
+                                        <div class="input-group">
+                                            <div class="input-group-addon ic_pointer"></div>
+                                            <input type="text" placeholder="City" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4 form-group">
+                                        <div class="input-group" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2">
+                                            <div class="input-group-addon ic_date"></div>
+                                            <input type="text" placeholder="Check In" class="form-control date form_date" readonly>
+                                        </div>
+                                        <input type="hidden" id="dtp_input2" value="" />
+                                    </div>
+
+                                    <div class="col-sm-4 form-group">
+                                        <div class="input-group" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input3">
+                                            <div class="input-group-addon ic_date"></div>
+                                            <input type="text" placeholder="Check Out" class="form-control date form_date" readonly>
+                                        </div>
+                                        <input type="hidden" id="dtp_input3" value="" />
+                                    </div>
+
+                                    <div class="col-sm-4 form-group">
+                                        <div class="input-group">
+                                            <div class="input-group-addon ic_person"></div>
+                                            <select class="form-control selectpicker" title="Rooms/Persons">
+                                                <option>1 Room/ 1 Adult</option>
+                                                <option>1 Room/ 2 Adults</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4 form-group">
+                                        <div class="input-group">
+                                            <div class="input-group-addon ic_pointer"></div>
+                                            <input type="text" placeholder="Country of Residence" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4 form-group formBtnCenter">
+                                        <input type="submit" value="Search" class="btn text-uppercase">
+                                    </div>
+
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-xs-12 advSearchLink2">
+                                        <a href="">Need more rooms/ room types? Click here &nbsp;<span class="fa fa-external-link"></span></a>
+                                    </div>
+                                </div>
+
+                                <div class="clearfix"></div>
+                            </div>
+
+                            <!-- XXXXXXXXXXXXXX -->
+
+                            <div id="tab3" class="tab_content">
+
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-6 form-group">
+                                        <div class="input-group"><div class="input-group-addon ic_pointer"></div><input type="text" placeholder="City" class="form-control"></div>
+                                    </div>
+
+                                    <div class="col-md-3 col-sm-6 form-group">
+                                        <div class="input-group" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input4">
+                                            <div class="input-group-addon ic_date"></div><input type="text" placeholder="Date of Travel" class="form-control date form_date" readonly>
+                                        </div>
+                                        <input type="hidden" id="dtp_input5" value="" />
+                                    </div>
+
+                                    <div class="col-md-3 col-sm-6 form-group">
+                                        <div class="input-group">
+                                            <div class="input-group-addon ic_nights"></div>
+                                            <select class="form-control selectpicker" title="Duration of Stay">
+                                                <option>1 Week</option>
+                                                <option>2 Weeks</option>
+                                                <option>3 Weeks</option>
+                                                <option>4 Weeks</option>
+                                                <option>1 Night</option>
+                                                <option>2 Nights</option>
+                                                <option>3 Nights</option>
+                                                <option>4 Nights</option>
+                                                <option>5 Nights</option>
+                                                <option>6 Nights</option>
+                                                <option>7 Nights</option>
+                                                <option>8 Nights</option>
+                                                <option>9 Nights</option>
+                                                <option>10 Nights</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3 col-sm-6 form-group">
+                                        <div class="input-group">
+                                            <div class="input-group-addon ic_person"></div>
+                                            <select class="form-control selectpicker" title="No. of Persons">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+                                                <option>8</option>
+                                                <option>9</option>
+                                                <option>10</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 form-group text-center">
+                                        <input type="submit" value="Search" class="btn text-uppercase">
+                                        <div class="advSearchLink">
+                                            <a href="">Advanced Search &nbsp;<span class="fa fa-external-link"></span></a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="clearfix"></div>
+                            </div>
+
+                           
+
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+
+                </div>
+                <div class="clearfix"></div>
+                <!--about-section start-->
+                <div class="container-fluid section_Container about-section sw-slickslider section-padding">
+                    <div class="maxwidth">
+                        <div class="container">
+                            <div class="section-heading1">
+                                <h1>Can’t decide where to travel?</h1>
+                                <p>Time for a seasonal escape? Whether it's a family reunion or an exotic getaway, we're here to help you reach your destination.</p>
+                            </div>
+                            
+                        </div>
+                        <!--sliderScroll start-->
+                        <div class="slider_D4 sliderScroll">
+                            <!--slide start-->
+                            <div>
+                                <a href="" class="packBox">
+                                    <div class="packImg">
+                                        <img src="../HTML-Neosoft/images/aboutus/travelimg1.jpg" data-lazy="../images/aboutus/travelimg1.jpg">
+                                    </div>
+                                    <div class="img-caption">
+                                        <div class="packContent d-flex flex-column">
+                                           <h2 class="packTitle">Melbourne</h2>
+                                            <p>An amazing journey</p>
+                                        </div>
+                                        <div class="packfooter">
+                                           <button>Book now</button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--slide end-->
+                            <!--slide start-->
+                            <div>
+                                <a href="" class="packBox">
+                                    <div class="packImg">
+                                        <img src="../HTML-Neosoft/images/aboutus/travelimg2.jpg" data-lazy="../images/aboutus/travelimg1.jpg">
+                                    </div>
+                                    <div class="img-caption">
+                                        <div class="packContent d-flex flex-column">
+                                           <h2 class="packTitle">Paris</h2>
+                                            <p>A Paris Adventure</p>
+                                        </div>
+                                        <div class="packfooter">
+                                           <button>Book now</button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--slide end-->
+                            <!--slide start-->
+                            <div>
+                                <a href="" class="packBox">
+                                    <div class="packImg">
+                                        <img src="../HTML-Neosoft/images/aboutus/travelimg3.jpg" data-lazy="../images/aboutus/travelimg1.jpg">
+                                    </div>
+                                    <div class="img-caption">
+                                        <div class="packContent d-flex flex-column">
+                                           <h2 class="packTitle">London</h2>
+                                            <p>London eye adventure</p>
+                                        </div>
+                                        <div class="packfooter">
+                                           <button>Book now</button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--slide end-->
+                            <!--slide start-->
+                            <div>
+                                <a href="" class="packBox">
+                                    <div class="packImg">
+                                        <img src="../HTML-Neosoft/images/aboutus/travelimg4.jpg" data-lazy="../images/aboutus/travelimg1.jpg">
+                                    </div>
+                                    <div class="img-caption">
+                                        <div class="packContent d-flex flex-column">
+                                           <h2 class="packTitle">Columbia</h2>
+                                            <p>Amazing streets</p>
+                                        </div>
+                                        <div class="packfooter">
+                                           <button>Book now</button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--slide end-->
+                            <!--slide start-->
+                            <div>
+                                <a href="" class="packBox">
+                                    <div class="packImg">
+                                        <img src="../HTML-Neosoft/images/aboutus/travelimg1.jpg" data-lazy="../images/aboutus/travelimg1.jpg">
+                                    </div>
+                                    <div class="img-caption">
+                                        <div class="packContent d-flex flex-column">
+                                           <h2 class="packTitle">Melbourne</h2>
+                                            <p>An amazing journey</p>
+                                        </div>
+                                        <div class="packfooter">
+                                           <button>Book now</button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--slide end-->
+                            <!--slide start-->
+                            <div>
+                                <a href="" class="packBox">
+                                    <div class="packImg">
+                                        <img src="../HTML-Neosoft/images/aboutus/travelimg2.jpg" data-lazy="../images/aboutus/travelimg1.jpg">
+                                    </div>
+                                    <div class="img-caption">
+                                        <div class="packContent d-flex flex-column">
+                                           <h2 class="packTitle">Paris</h2>
+                                            <p>A Paris Adventure</p>
+                                        </div>
+                                        <div class="packfooter">
+                                           <button>Book now</button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--slide end-->
+                            <!--slide start-->
+                            <div>
+                                <a href="" class="packBox">
+                                    <div class="packImg">
+                                        <img src="../HTML-Neosoft/images/aboutus/travelimg3.jpg" data-lazy="../images/aboutus/travelimg1.jpg">
+                                    </div>
+                                    <div class="img-caption">
+                                        <div class="packContent d-flex flex-column">
+                                           <h2 class="packTitle">London</h2>
+                                            <p>London eye adventure</p>
+                                        </div>
+                                        <div class="packfooter">
+                                           <button>Book now</button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--slide end-->
+                            <!--slide start-->
+                            <div>
+                                <a href="" class="packBox">
+                                    <div class="packImg">
+                                        <img src="../HTML-Neosoft/images/aboutus/travelimg4.jpg" data-lazy="../images/aboutus/travelimg1.jpg">
+                                    </div>
+                                    <div class="img-caption">
+                                        <div class="packContent d-flex flex-column">
+                                           <h2 class="packTitle black_txt">Columbia</h2>
+                                            <p>Amazing streets</p>
+                                        </div>
+                                        <div class="packfooter">
+                                           <button>Book now</button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--slide end-->
+                            <!--slide start-->
+                            <div>
+                                <a href="" class="packBox">
+                                    <div class="packImg">
+                                        <img src="../HTML-Neosoft/images/aboutus/travelimg1.jpg" data-lazy="../images/aboutus/travelimg1.jpg">
+                                    </div>
+                                    <div class="img-caption">
+                                        <div class="packContent d-flex flex-column">
+                                           <h2 class="packTitle black_txt">Melbourne</h2>
+                                            <p>An amazing journey</p>
+                                        </div>
+                                        <div class="packfooter">
+                                           <button>Book now</button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--slide end-->
+                            </div>
+                        <!--sliderScroll end-->
+                    </div>
+                </div>
+                <!--about-section end-->
+                <div class="clearfix"></div>
+                <!--popularplaces section start-->
+                <div class="container-fluid section_Container popularplaces section-padding">
+                    <div class="maxwidth">
+                        <div class="container">
+                            <div class="container">
+                                <div class="section-heading2">
+                                    <h2>Popular places for your perfect trip in Switzerland</h2>
+                                    <p>Time for a seasonal escape? Whether it's a family reunion or an exotic getaway, we're here to help you reach your destination.</p>
+                                </div>
+                                <div class="d-flex  popular-placelist">
+                                    <ul class="row">
+                                        <!--card start-->
+                                        <li class="card col-sm-12 col-md-6 col-lg-4 d-flex">
+                                            
+                                            <div class="left-img">
+                                                <img src="../HTML-Neosoft/images/popular-places/img1.jpg" alt="">
+                                            </div>
+                                            <div class="place-details">
+                                                <h4 class="card-title">The Matterhorn</h4>
+                                                <div>
+                                                    <p class="place-location"><span class="loc-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>Switzerland</p>
+                                                    <p class="place-cost">INR 26,882.00</p>
+                                                </div>
+                                               
+                                            </div>
+                                            <div class="right-info">
+                                                <p class="place-rating d-flex mb-0">4.9 <span class="packStars star_1 ml-2"></span></p>
+                                                <div class="add-btn">
+                                                    <a href="#">ADD</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!--card start-->
+                                        <!--card start-->
+                                        <li class="card col-sm-12 col-md-6 col-lg-4">
+                                            <div class="left-img">
+                                                <img src="../HTML-Neosoft/images/popular-places/img2.jpg" alt="">
+                                            </div>
+                                            <div class="place-details">
+                                                <h4 class="card-title">The Matterhorn</h4>
+                                                <p class="palce-location"></p>
+                                                <p class="place-cost"></p>
+                                            </div>
+                                            <div class="right-info">
+                                                <p class="place-rating"></p>
+                                                <div class="add-btn">
+                                                    <a href="#">ADD</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!--card end-->
+                                        <!--card start-->
+                                        <li class="card col-sm-12 col-md-6 col-lg-4">
+                                            <div class="left-img">
+                                                <img src="../HTML-Neosoft/images/popular-places/img1.jpg" alt="">
+                                            </div>
+                                            <div class="place-details">
+                                                <h4 class="card-title">The Matterhorn</h4>
+                                                <p class="palce-location"></p>
+                                                <p class="place-cost"></p>
+                                            </div>
+                                            <div class="right-info">
+                                                <p class="place-rating"></p>
+                                                <div class="add-btn">
+                                                    <a href="#">ADD</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!--card end-->
+                                        <!--card start-->
+                                        <li class="card col-sm-12 col-md-6 col-lg-4">
+                                            <div class="left-img">
+                                                <img src="../HTML-Neosoft/images/popular-places/img1.jpg" alt="">
+                                            </div>
+                                            <div class="place-details">
+                                                <h4 class="card-title">The Matterhorn</h4>
+                                                <p class="palce-location"></p>
+                                                <p class="place-cost"></p>
+                                            </div>
+                                            <div class="right-info">
+                                                <p class="place-rating"></p>
+                                                <div class="add-btn">
+                                                    <a href="#">ADD</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!--card end-->
+                                    </ul>
+                                </div>
+                                    
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!--popularplaces section end-->
+                <div class="clearfix"></div>
+                <div class="container-fluid section_Container">
+                    <div class="maxwidth">
+
+                        <div class="title text-center">
+                            <h1>SwissTours Recommended</h1>
+                        </div>
+
+                        <div class="row section_D5">
+                            <div class="col-md-8">
+
+                                <div class="idealPackBox packBox" style="background-image:url(images/STP_BG.jpg)">
+                                    <div class="ipb_content text-center white_txt">
+                                        <div>
+                                            <h2 class="ipb_title">SWISS TRAVEL PASS</h2>
+                                            <p>With a Swiss Travel Pass in your pocket,<br> you have the ideal Rail Pass to travel in Switzerland.</p>
+                                            <a href="" class="btn cta fade_anim" style="width:150px">Get it Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-4 col-sm-6 d5Box">
+                                <a href="" class="packBox">
+                                    <div class="packImg"><img src="images/slideImg_sightseeing.jpg"></div>
+                                    <div class="packOffer"><strong>EUR 25 OFF On Eurail Global Pass </strong></div>
+                                    <div class="packHighlight">
+                                        <div class="packRecommend hide"><i class="fa fa-check" aria-hidden="true"></i> Recommended </div>
+                                        <div class="packPayat hide"> Pay <i class="fa fa-at" aria-hidden="true"></i> Apartment </div>
+                                        <div class="packSnow"> 100% Snow Guaranteed </div>
+                                    </div>
+                                    <div class="packContent">
+                                        <div class="packHead">
+                                            <div class="packheadLeft">
+                                                <div class="packLocation"><i class="fa fa-map-marker red_txt"></i> Interlaken</div>
+                                                <div class="packDuration hide"><i class="fa fa-clock-o red_txt"></i> 8 Days/ 7 Nights</div>
+                                            </div>
+                                            <div class="packheadRight hide">
+                                                <div class="packStars three_star"></div>
+                                            </div>
+                                        </div>
+                                        <h2 class="packTitle black_txt">Jungfraujoch</h2>
+                                        <p>Europe's highest altitude Railway station at 3454 metres.</p>
+                                    </div>
+                                    <div class="packfooter">
+                                        <div class="strikePrice"><s>INR 17430</s> <strong class="discount">Save 7200</strong></div>
+                                        <div class="packPrice">INR 10230</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-sm-6 d5Box">
+                                <a href="" class="packBox">
+                                    <div class="packImg"><img src="images/slideImg_Holiday.jpg"></div>
+                                    <div class="packOffer hide"><strong>10% Off </strong></div>
+                                    <div class="packHighlight">
+                                        <div class="packRecommend hide"><i class="fa fa-check" aria-hidden="true"></i> Recommended </div>
+                                        <div class="packPayat hide"> Pay <i class="fa fa-at" aria-hidden="true"></i> Apartment </div>
+                                        <div class="packSnow"> 100% Snow Guaranteed </div>
+                                    </div>
+                                    <div class="packContent">
+                                        <div class="packHead">
+                                            <div class="packheadLeft">
+                                                <div class="packLocation"><i class="fa fa-map-marker red_txt"></i> Engelberg</div>
+                                                <div class="packDuration hide"><i class="fa fa-clock-o red_txt"></i> 8 Days/ 7 Nights</div>
+                                            </div>
+                                            <div class="packheadRight hide">
+                                                <div class="packStars three_star"></div>
+                                            </div>
+                                        </div>
+                                        <h2 class="packTitle black_txt">Mount Titlis</h2>
+                                        <p>World’s first revolving cable car offering you a magical 360&deg; panoramic view.</p>
+                                    </div>
+                                    <div class="packfooter">
+                                        <div class="strikePrice hide"><s>INR 72000</s> <strong class="discount">Save 7200</strong></div>
+                                        <div class="packPrice">INR 4416</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-sm-6 d5Box">
+                                <a href="" class="packBox">
+                                    <div class="packImg"><img src="images/matterhorn.jpg"></div>
+                                    <div class="packOffer hide"><strong>10% Off </strong></div>
+                                    <div class="packHighlight">
+                                        <div class="packRecommend hide"><i class="fa fa-check" aria-hidden="true"></i> Recommended </div>
+                                        <div class="packPayat hide"> Pay <i class="fa fa-at" aria-hidden="true"></i> Apartment </div>
+                                        <div class="packSnow"> 100% Snow Guaranteed </div>
+                                    </div>
+                                    <div class="packContent">
+                                        <div class="packHead">
+                                            <div class="packheadLeft">
+                                                <div class="packLocation"><i class="fa fa-map-marker red_txt"></i> Zermatt</div>
+                                                <div class="packDuration hide"><i class="fa fa-clock-o red_txt"></i> 8 Days/ 7 Nights</div>
+                                            </div>
+                                            <div class="packheadRight hide">
+                                                <div class="packStars star_3"></div>
+                                            </div>
+                                        </div>
+                                        <h2 class="packTitle black_txt">Matterhorn Glacier Paradise</h2>
+                                        <p>Europe’s highest and largest snow sport destination at 3883 metres.</p>
+                                    </div>
+                                    <div class="packfooter">
+                                        <div class="strikePrice hide"><s>INR 72000</s> <strong class="discount">Save 7200</strong></div>
+                                        <div class="packPrice">INR 3238</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-sm-6 d5Box">
+                                <a href="" class="packBox">
+                                    <div class="packImg"><img src="images/jetboat.jpg"></div>
+                                    <div class="packOffer hide"><strong>10% Off </strong></div>
+                                    <div class="packHighlight">
+                                        <div class="packRecommend hide"><i class="fa fa-check" aria-hidden="true"></i> Recommended </div>
+                                        <div class="packPayat hide"> Pay <i class="fa fa-at" aria-hidden="true"></i> Apartment </div>
+                                        <div class="packSnow hide"> 100% Snow Guaranteed </div>
+                                    </div>
+                                    <div class="packContent">
+                                        <div class="packHead">
+                                            <div class="packheadLeft">
+                                                <div class="packLocation"><i class="fa fa-map-marker red_txt"></i> Interlaken</div>
+                                                <div class="packDuration hide"><i class="fa fa-clock-o red_txt"></i> 8 Days/ 7 Nights</div>
+                                            </div>
+                                            <div class="packheadRight hide">
+                                                <div class="packStars three_star"></div>
+                                            </div>
+                                        </div>
+                                        <h2 class="packTitle black_txt">Jetboat</h2>
+                                        <p>Take a seat in Switzerland’s first commercial Jet-Boat!</p>
+                                    </div>
+                                    <div class="packfooter">
+                                        <div class="strikePrice hide"><s>INR 70320</s></div>
+                                        <div class="packPrice">INR 5814</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="container-fluid section_Container">
+                    <div class="maxwidth">
+
+                        <div class="title text-center">
+                            <h1>Apartments in Switzerland</h1>
+                        </div>
+
+                        <div class="slider_D3 sliderScroll">
+                            <div>
+                                <a href="" class="packBox showPerRate">
+                                    <div class="packImg"><img data-lazy="images/schwizi.jpg"></div>
+                                    <div class="packOffer hide"><strong>10% Off </strong></div>
+                                    <div class="packHighlight">
+                                        <div class="packRecommend hide"><i class="fa fa-check" aria-hidden="true"></i> Recommended </div>
+                                        <div class="packPayat"> Pay <i class="fa fa-at" aria-hidden="true"></i> Apartment </div>
+                                        <div class="packSnow hide"> 100% Snow Guaranteed </div>
+                                    </div>
+                                    <div class="packContent">
+                                        <div class="packHead">
+                                            <div class="packheadLeft">
+                                                <div class="packLocation"><i class="fa fa-map-marker red_txt"></i> Interlaken</div>
+                                                <div class="packDuration hide"><i class="fa fa-clock-o red_txt"></i> 8 Days/ 7 Nights</div>
+                                            </div>
+                                            <div class="packheadRight">
+                                                <div class="packStars star_3"></div>
+                                            </div>
+                                        </div>
+                                        <h2 class="packTitle black_txt">Schwizi Holidays Apartments</h2>
+                                        <p>The picturesque resorts of Ringgenberg & Niederried.</p>
+                                    </div>
+                                    <div class="packfooter">
+                                        <div class="strikePrice hide"><s>INR 72000</s> <strong class="discount">Save 7200</strong></div>
+                                        <div class="packPrice">INR 57408<span class="packNight">per room per night</span></div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a href="" class="packBox showPerRate">
+                                    <div class="packImg"><img data-lazy="images/meca.jpg"></div>
+                                    <div class="packOffer hide"><strong>10% Off </strong></div>
+                                    <div class="packHighlight">
+                                        <div class="packRecommend"><i class="fa fa-check" aria-hidden="true"></i> Recommended </div>
+                                        <div class="packPayat hide"> Pay <i class="fa fa-at" aria-hidden="true"></i> Apartment </div>
+                                        <div class="packSnow hide"> 100% Snow Guaranteed </div>
+                                    </div>
+                                    <div class="packContent">
+                                        <div class="packHead">
+                                            <div class="packheadLeft">
+                                                <div class="packLocation"><i class="fa fa-map-marker red_txt"></i> Zermatt</div>
+                                                <div class="packDuration hide"><i class="fa fa-clock-o red_txt"></i> 8 Days/ 7 Nights</div>
+                                            </div>
+                                            <div class="packheadRight">
+                                                <div class="packStars star_5"></div>
+                                            </div>
+                                        </div>
+                                        <h2 class="packTitle black_txt">Mountain Exposure Chalets & Apartments</h2>
+                                        <p>A boutique Swiss chalet holiday company.</p>
+                                    </div>
+                                    <div class="packfooter">
+                                        <div class="strikePrice hide"><s>INR 72000</s> <strong class="discount">Save 7200</strong></div>
+                                        <div class="packPrice">INR 64800<span class="packNight">per room per night</span></div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a href="" class="packBox showPerRate">
+                                    <div class="packImg"><img data-lazy="images/pvtaptLucern.jpg"></div>
+                                    <div class="packOffer hide"><strong>EUR 25 OFF On Eurail Global Pass </strong></div>
+                                    <div class="packHighlight">
+                                        <div class="packRecommend hide"><i class="fa fa-check" aria-hidden="true"></i> Recommended </div>
+                                        <div class="packPayat hide"> Pay <i class="fa fa-at" aria-hidden="true"></i> Apartment </div>
+                                        <div class="packSnow hide"> 100% Snow Guaranteed </div>
+                                    </div>
+                                    <div class="packContent">
+                                        <div class="packHead">
+                                            <div class="packheadLeft">
+                                                <div class="packLocation"><i class="fa fa-map-marker red_txt"></i> Lucerne </div>
+                                                <div class="packDuration hide"><i class="fa fa-clock-o red_txt"></i> 8 Days/ 7 Nights</div>
+                                            </div>
+                                            <div class="packheadRight">
+                                                <div class="packStars three_star"></div>
+                                            </div>
+                                        </div>
+                                        <h2 class="packTitle black_txt">Private Apartments Lucerne</h2>
+                                        <p>The self-catering apartments have a fully equipped kitchen..</p>
+                                    </div>
+                                    <div class="packfooter">
+                                        <div class="strikePrice hide"><s>INR 70320</s></div>
+                                        <div class="packPrice">INR 37536<span class="packNight">per room per night</span></div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a href="" class="packBox showPerRate">
+                                    <div class="packImg"><img data-lazy="images/royalswiss.jpg"></div>
+                                    <div class="packOffer hide"><strong>10% Off </strong></div>
+                                    <div class="packHighlight">
+                                        <div class="packRecommend hide"><i class="fa fa-check" aria-hidden="true"></i> Recommended </div>
+                                        <div class="packPayat hide"> Pay <i class="fa fa-at" aria-hidden="true"></i> Apartment </div>
+                                        <div class="packSnow hide"> 100% Snow Guaranteed </div>
+                                    </div>
+                                    <div class="packContent">
+                                        <div class="packHead">
+                                            <div class="packheadLeft">
+                                                <div class="packLocation"><i class="fa fa-map-marker red_txt"></i> Interlaken</div>
+                                                <div class="packDuration hide"><i class="fa fa-clock-o red_txt"></i> 8 Days/ 7 Nights</div>
+                                            </div>
+                                            <div class="packheadRight">
+                                                <div class="packStars star_3"></div>
+                                            </div>
+                                        </div>
+                                        <h2 class="packTitle black_txt">Royal Swiss Apartments</h2>
+                                        <p>This offers accommodation with a terrace and free WiFi. </p>
+                                    </div>
+                                    <div class="packfooter">
+                                        <div class="strikePrice hide"><s>INR 70320</s></div>
+                                        <div class="packPrice">INR 26496<span class="packNight">per room per night</span></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="" class="packBox showPerRate">
+                                    <div class="packImg"><img data-lazy="images/ChaletAbendrot.jpg"></div>
+                                    <div class="packOffer hide"><strong>10% Off </strong></div>
+                                    <div class="packHighlight">
+                                        <div class="packRecommend hide"><i class="fa fa-check" aria-hidden="true"></i> Recommended </div>
+                                        <div class="packPayat hide"> Pay <i class="fa fa-at" aria-hidden="true"></i> Apartment </div>
+                                        <div class="packSnow hide"> 100% Snow Guaranteed </div>
+                                    </div>
+                                    <div class="packContent">
+                                        <div class="packHead">
+                                            <div class="packheadLeft">
+                                                <div class="packLocation"><i class="fa fa-map-marker red_txt"></i> Grindelwald</div>
+                                                <div class="packDuration hide"><i class="fa fa-clock-o red_txt"></i> 8 Days/ 7 Nights</div>
+                                            </div>
+                                            <div class="packheadRight">
+                                                <div class="packStars star_3"></div>
+                                            </div>
+                                        </div>
+                                        <h2 class="packTitle black_txt">Chalet Abendrot Grindelwald</h2>
+                                        <p>It houses modest studios to spacious 5 room apartments</p>
+                                    </div>
+                                    <div class="packfooter">
+                                        <div class="strikePrice hide"><s>INR 72000</s> <strong class="discount">Save 7200</strong></div>
+                                        <div class="packPrice">INR 64320<span class="packNight">per room per night</span></div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+            </div>
+
+            <!--  FOR CONTEST POPUP --><a class="fancybox_trig" href="#contest_pop" style="display:none"></a>
+            <!--  FOR EVENT POPUP  <a class="fancybox_trig" href="#event_pop" style="display:none"></a>-->
+
+
+            <div style="display:none" class="fancy_inline_display" id="event_pop">
+
+                <div class="eventpopup black_txt">
+
+                    <div class="container-fluid">
+                        <div class="row event_tl white_txt text-uppercase">Visit us to get great holiday deals!</div>
+
+                        <div class="row event_details">
+                            <div class="event_date lightgray_texture"> <strong>Sunday, 3<sup>rd</sup> Dec 2017</strong> </div>
+                            <div class="event_address"><span class="red_txt">Venue</span> Sofitel, BKC - Mumbai</div>
+                            <div class="event_time"><span class="red_txt">Time</span> 10am - 5 pm</div>
+                        </div>
+
+                        <div class="row event_note">
+                            <span class="red_txt">By appointment only.</span><br>
+                            Call us to book your appointment : 022 61282400/ 26487180<br>
+                            Note: Last date to book appointment - 1<sup>st</sup> Dec, 1700 hrs. Parking available at the venue.
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div style="display:none" class="fancy_inline_display" id="contest_pop">
+
+                <div class="contestpopup" style="background-image:url(images/contest_pop.jpg)">
+
+                    <div class="contest_text_box">
+                        <div class="contest_name red_txt"><strong>WIN A FREE SWISS TRAVEL PASS</strong></div>
+                        <div class="clearfix"></div>
+
+                        <div class="contest_info black_txt">Book your Swiss Travel Pass online. Answer 4 easy questions & stand a chance to win the lucky draw.</div>
+                        <div class="clearfix"></div>
+
+                        <div class="contest_cta">
+                            <a href="swiss_travel_pass.html" class="cta btn">Book your Pass Now</a>
+                            <a href="contest.html" class="cta btn">Enter the Contest</a>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+
+            </div>
+
+            <script src="js/slick.min.js"></script>
+            <script src="js/sliders_script.js"></script>
+            <script src="js/form_script.js"></script>
+            <script src="js/jquery.fancybox.min.js"></script>
+            <script type="text/javascript">
+                $(".slider-nav").slick({
+                    slidesToShow: 1, slidesToScroll: 1, dots: !1, arrows: !0, fade: !0, autoplay: 5000, speed: 1500, cssEase: "ease",
+                    responsive: [{ breakpoint: 992, settings: { dots: !0, arrows: !1 } }]
+                });
+
+                $(".tab_content").hide();
+                $(window).on("load", function () {
+                    if ($(window).width() >= 767) {
+                        $(".tab_content:first").show();
+                        $("ul.tabs li:first").addClass("active");
+                    }
+                    else {
+                        $(".tab_content").hide();
+                        $("ul.tabs li").removeClass("active");
+                    }
+                }).resize();
+
+                function tabScrollTo() {
+                    if ($(window).width() >= 1199) {
+                        $('html,body').delay(300).animate({ scrollTop: $(".tabs_form_container").offset().top - 100 }, 500);
+                    } else {
+                        $('html,body').delay(300).animate({ scrollTop: $(".tabs_form_container").offset().top - 70 }, 500);
+                    }
+                }
+
+                $("ul.tabs li").click(function () {
+                    if ($(window).width() >= 767) {
+                        if ($(this).hasClass('active')) { return false; };
+                    }
+                    var n = $(this).attr("rel");
+                    $("#" + n).siblings().hide();
+                    $("#" + n).toggle();
+                    $(this).siblings().removeClass("active");
+                    $(this).toggleClass("active");
+                    tabScrollTo();
+                });
+
+                var days = +4;
+                var date1 = new Date();
+                date1.setDate(date1.getDate() + days);
+                date1.setHours(8);
+                $("#depDate").datetimepicker({
+                    startDate: date1,
+                    initialDate: date1,
+                    language: 'en', weekStart: 1, todayBtn: 0, autoclose: 1, startView: 2, forceParse: 0, minView: 1, format: 'dd M yyyy - hh:00', pickerPosition: "bottom-right", hoursDisabled: '0,1,2,3,5,7,9,11,13,15,17,19,21,22,23'
+                });
+             
+            </script>
+            
+
+            <!-- PAGE CONTENT HOLDER ENDS -->
+
+        </div>
+
+        <div class="clearfix"></div>
+
+        <!-- Footer Starts -->
+
+        <footer>
+
+            <div class="container-fluid swissBrief">
+                <div class="container-fluid maxwidth">
+                    <div class="row">
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="foot_item"><img src="images/stp/swiss_logo.jpg"> A Swiss International Air Lines Company</div>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="foot_item"><img src="images/stp/yrs20.jpg"> Over 2 Decades of Travel Excellence</div>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="foot_item"><img src="images/stp/visit_logo.jpg">Sister Concern of VisitSwitzerland.com </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="foot_item"><img src="images/stp/services.jpg"> Bouquet of Services</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid footer">
+                <div class="container-fluid maxwidth">
+                    <div class="row">
+
+                        <div class="col-sm-4 col-md-3">
+                            <div class="row">
+                                <div class="foot_head">SwissTours <i class="fa fa-plus pull-right dropdown_icon" aria-hidden="true"></i></div>
+                                <ul class="foot_dropdown">
+                                    <li><a href="about_us.html" class="fade_anim">About us</a> </li>
+                                    <li><a href="partners.html" class="fade_anim">Partners</a></li>
+                                    <li><a href="careers.html" class="fade_anim">Careers</a></li>
+                                    <li><a href="testimonials.html" class="fade_anim">Testimonials</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-md-3">
+                            <div class="row">
+                                <div class="foot_head">Customer Support <i class="fa fa-plus pull-right dropdown_icon" aria-hidden="true"></i></div>
+                                <ul class="foot_dropdown">
+                                    <li><a href="contact_us.html" class="fade_anim">Contact Us</a></li>
+                                    <li><a href="faqs.html" class="fade_anim">FAQs</a></li>
+                                    <li><a href="#" class="fade_anim">Sitemap</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-md-3">
+                            <div class="row">
+                                <div class="foot_head">Legal <i class="fa fa-plus pull-right dropdown_icon" aria-hidden="true"></i></div>
+                                <ul class="foot_dropdown">
+                                    <li><a href="user_agreement.html" class="fade_anim">User Agreement</a></li>
+                                    <li><a href="privacy_policy.html" class="fade_anim">Privacy Policy</a></li>
+                                    <li><a href="#" class="fade_anim">Verified & Secured</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-3">
+                            <div class="row">
+                                <div class="adHolder">
+                                    <div class="foot_head">Official Time Partner</div>
+                                    <div class="adBlock">
+                                        <iframe src="watch/index.html" scrolling="no" frameborder="0" width="100%" height="100%" allowtransparency="true"></iframe>
+                                        <!--<a href=""><img src="images/tagheuer.jpg"></a>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid bottom">
+                <div class="row maxwidth">
+                    <div class="col-xs-6"><div class="row">&copy; 2017. Swisstours.com</div></div>
+                    <div class="col-xs-6 text-right social">
+                        <div class="row">
+                            <a href="https://www.facebook.com/pages/Swisstours/256257954432198" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="https://www.instagram.com/_swisstours/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+
+        </footer>
+        <!-- Footer Ends -->
+         
+    </div>
+
+    <!-- Navigation Menus Starts -->
+
+    <div class="cd-overlay"></div>
+    <nav class="cd-nav">
+        <ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
+            <li class=""><a href="hotels_search.html">Hotels</a></li>
+
+            <li class="has-children">
+                <a>Apartments</a>
+                <ul class="cd-nav-gallery is-hidden bot_pad">
+                    <li class="go-back"><a href="#0">Menu</a></li>
+                    <li><a class="cd-nav-item" href=""><img src="images/ungroup.jpg" alt="Lucerne"><h3>Lucerne</h3></a></li>
+                    <li><a class="cd-nav-item" href=""><img src="images/interlaken.jpg" alt="Interlaken"><h3>Interlaken</h3></a></li>
+                    <li><a class="cd-nav-item" href=""><img src="images/grindewald.jpg" alt="Grindewald"><h3>Grindewald</h3></a></li>
+                    <li><a class="cd-nav-item" href=""><img src="images/engelberg.jpg" alt="Engelberg"><h3>Engelberg</h3></a></li>
+                    <li class="see-all"> <a href="apartment_search.html">View All</a> </li>
+                </ul>
+            </li>
+
+            <li class="has-children">
+                <a>Holidays</a>
+                <ul class="cd-nav-gallery is-hidden">
+                    <li class="go-back"><a href="#0">Menu</a></li>
+                    <li><a class="cd-nav-item" href="holidays_listing.html"><img src="images/ungroup.jpg" alt="Product Image"><h3>Unescorted Tours</h3></a></li>
+                    <li><a class="cd-nav-item" href="holidays_listing.html"><img src="images/group.jpg" alt="Product Image"><h3>Group Tours</h3></a></li>
+                </ul>
+            </li>
+
+            <li><a href="swiss_travel_pass.html">Swiss Travel Pass</a></li>
+
+            <li class="has-children">
+                <a>Eurail</a>
+                <ul class="cd-rail-nav is-hidden">
+                    <li class="go-back"><a href="#0">Menu</a></li>
+                    <li class="has-children">
+                        <a>Popular Rail Passes</a>
+                        <ul class="is-hidden">
+                            <li class="go-back"><a href="#0">Menu</a></li>
+                            <li><a href="">Eurail Global</a></li>
+                            <li><a href="">Eurail Three Country Select Pass</a></li>
+                            <li><a href="">Eurail Two Country Select Pass</a></li>
+                            <li><a href="">Eurail Four Country Select Pass</a></li>
+                            <li><a href="">European East Pass</a></li>
+                            <li><a href="">Eurail Austria Pass</a></li>
+                            <li><a href="">Eurail Benelux Pass</a></li>
+                            <li><a href="">Eurail Bulgaria Pass</a></li>
+                            <li><a href="">Eurail Croatia Pass</a></li>
+                            <li><a href="">Eurail Czech Republic Pass</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="has-children">
+                        <a>Popular Rail Passes</a>
+                        <ul class="is-hidden">
+                            <li class="go-back"><a href="#0">Menu</a></li>
+                            <li><a href="">Eurail Denmark Pass</a></li>
+                            <li><a href="">Eurail Finland Pass</a></li>
+                            <li><a href="">Eurail France Pass</a></li>
+                            <li><a href="">Eurail Global Pass</a></li>
+                            <li><a href="">Eurail Greece Pass</a></li>
+                            <li><a href="">Eurail Greek Islands Pass</a></li>
+                            <li><a href="">Eurail Hungary Pass</a></li>
+                            <li><a href="">Eurail Ireland Pass</a></li>
+                            <li><a href="">Eurail Italy Pass</a></li>
+                            <li><a href="">Eurail Norway Pass</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="has-children">
+                        <a>Popular Rail Passes</a>
+                        <ul class="is-hidden">
+                            <li class="go-back"><a href="#0">Menu</a></li>
+                            <li><a href="">Eurail Poland Pass</a></li>
+                            <li><a href="">Eurail Portugal Pass</a></li>
+                            <li><a href="">Eurail Romania Pass</a></li>
+                            <li><a href="">Eurail Scandinavia Pass</a></li>
+                            <li><a href="">Eurail Slovakia Pass</a></li>
+                            <li><a href="">Eurail Slovenia Pass</a></li>
+                            <li><a href="">Eurail Spain Pass</a></li>
+                            <li><a href="">Eurail Sweden Pass</a></li>
+                            <li><a href="">Balkan Pass</a></li>
+                            <li><a href="">Berlin Pass</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <span class="box_link">
+                            Book Online Now!<br><strong>Best Price Guaranteed</strong>
+                            <a href="train_ticket_search.html" class="link_btn">Search more</a>
+                        </span>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="#">European Rail Tickets</a></li>
+
+            <li class="has-children">
+                <a>Sightseeing</a>
+                <ul class="cd-ss-nav is-hidden">
+                    <li class="go-back"><a href="#0">Menu</a></li>
+                    <li class="has-children">
+                        <a>Popular Sightseeing</a>
+                        <ul class="is-hidden">
+                            <li class="go-back"><a href="#0">Menu</a></li>
+                            <li><a href="">Jungfraujoch - Interlaken</a></li>
+                            <li><a href="">Mt. Titlis - Engelberg</a></li>
+                            <li><a href="">Matterhorn Glacier Paradise - Zermatt</a></li>
+                            <li><a href="">Glacier 3000 - Gstaad</a></li>
+                            <li><a href="">Harder kulm - Interlaken</a></li>
+                            <li><a href="">Schilthorn - Interlaken</a></li>
+                            <li><a href="">Mt. Pilatus - Lucerne</a></li>
+                            <li><a href="">Lake Lucerne Cruise - Lucerne</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children">
+                        <a>Popular Excursions</a>
+                        <ul class="is-hidden">
+                            <li class="go-back"><a href="#0">Menu</a></li>
+                            <li><a href="">Sunnega - Zermatt</a></li>
+                            <li><a href="">Rochers De Naye - Montreux</a></li>
+                            <li><a href="">Stanserhorn - Lucerne</a></li>
+                            <li><a href="">Grindelwald First - Grindelwald</a></li>
+                            <li><a href="">Ski Experience - Zermatt</a></li>
+                            <li><a href="">Montparnasse Tower - Paris </a></li>
+                            <li><a href="">Kitzsteinhorn - Zell am See Kaprun</a></li>
+                            <li><a href="">Swiss Chocolate adventure - Lucerne</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="box_link">
+                            Book Online Now!<br><strong>Best Price Guaranteed</strong>
+                            <a href="sightseeing_search.html" class="link_btn">Search more</a>
+                        </span>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="has-children">
+                <a>Information</a>
+                <ul class="cd-nav-icons is-hidden">
+                    <li class="go-back"><a href="#0">Menu</a></li>
+                    <li><a class="cd-nav-item item-1" href=""><h3>Brochure</h3><p>This is the item description</p></a></li>
+                    <li><a class="cd-nav-item item-2" href=""><h3>Maps</h3><p>This is the item description</p></a></li>
+                    <li><a class="cd-nav-item item-3" href="destination_list.html"><h3>Destinations</h3><p>This is the item description</p></a></li>
+                    <li><a class="cd-nav-item item-4" href="send_your_request.html"><h3>Send Your Request </h3><p>This is the item description</p></a></li>
+                    <li><a class="cd-nav-item item-5" href="payment.html"><h3>Pay Now</h3><p>This is the item description</p></a></li>
+                </ul>
+            </li>
+
+            <li><a href="offers.html">Offers</a></li>
+
+            <li><a href="">Flight</a></li>
+        </ul> <!-- primary-nav -->
+    </nav>
+
+    <!-- Navigation Menus Ends -->
+<!-- PassengersModal Modal -->
+<div class="sw-modal modal fade" id="PassengersModal" tabindex="-1" role="dialog" aria-labelledby="PassengersModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title" id="PassengersModalLabel">Passengers</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+            <div class="content-passenger">
+                <div class="passenger-details">
+                     <!--d-flex start-->
+                    <div class="d-flex flex-column">
+                        <div class="passanger-title">
+                            <p>Infants</p>
+                            <p>
+                                Age 0-4</p>
+                        </div>
+                        <ul class="pagination">
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                            <li><a href="#">8</a></li>
+                            <li><a href="#">9</a></li>
+                          </ul>
+                    </div>
+                     <!--d-flex end-->
+                     <!--d-flex start-->
+                    <div class="d-flex flex-column">
+                        <div class="passanger-title">
+                            <p>Child</p>
+                            <p>
+                                Age 4-18</p>
+                        </div>
+                        <ul class="pagination">
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                            <li><a href="#">8</a></li>
+                            <li><a href="#">9</a></li>
+                          </ul>
+                    </div>
+                      <!--d-flex end-->
+                    <!--d-flex start-->
+                    <div class="d-flex flex-column">
+                        <div class="passanger-title">
+                            <p>Infants</p>
+                            <p>
+                                Age 0-4</p>
+                        </div>
+                        <ul class="pagination">
+                            <li><a href="#" class="active">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                            <li><a href="#">8</a></li>
+                            <li><a href="#">9</a></li>
+                          </ul>
+                    </div>
+                    <!--d-flex end-->
+                    <div class="passgr-class">
+                        <div class="modal-subtitle">Class</div>
+                        <!-- <div class="swcustom-checkbox">
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                              <input type="checkbox" class="form-check-input" value="">Option 1
+                            </label>
+                          </div>
+                          <div class="form-check-inline">
+                            <label class="form-check-label">
+                              <input type="checkbox" class="form-check-input" value="">Option 2
+                            </label>
+                          </div>
+                          <div class="form-check-inline">
+                            <label class="form-check-label">
+                              <input type="checkbox" class="form-check-input" value="" disabled>Option 3
+                            </label>
+                          </div>
+                        </div> -->
+                        <!--swcustom-checkbox start-->
+                       <div class="swcustom-checkbox d-flex">
+                           <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
+                                <label class="custom-control-label" for="customCheck1">Economy</label>
+                              </div>
+                              
+                              <div class="custom-control custom-checkbox  custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                <label class="custom-control-label" for="customCheck2">Business</label>
+                              </div>
+                              <div class="custom-control custom-checkbox  custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                <label class="custom-control-label" for="customCheck3">First Class</label>
+                              </div>
+                            </div>
+                        </div>
+                        <!--swcustom-checkbox end-->
+                </div>
+                
+            </div>
+        </div>
+        <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+        <button type="button" class="redBtn">Submit</button>
+        </div>
+    </div>
+    </div>
+</div>
+  <!-- EconomyclassModal Modal start-->
+  <div class="modal fade" id="EconomyclassModal" tabindex="-1" role="dialog" aria-labelledby="EconomyclassModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="EconomyclassModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+ </div>
+<!-- EconomyclassModal Modal end-->
+  <!-- departmentModel start-->
+  <div class="sw-modal modal fade swfiltermodal" id="departmentModel" tabindex="-1" role="dialog" aria-labelledby="departmentModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="departmentModalLabel">department</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+              
+                    <div class="d-flex flex-column">
+                          <div class="d-flex">
+                                <label for="datepicker1">Form : <span>date</span></label>
+                                <label for="datepicker1">To : <span>date</span></label>
+                                <p>class<span>Economy</span><p>
+                                <p>Passenger<span>01</span><p>
+                            </div>
+                            <div class="d-flex">
+                                <div id="datepicker1" class="DateBox datepicker">
+                                </div>
+                            <div id="datepicker2" class="DateBox datepicker">
+                            </div>
+                            </div>
+                    </div>
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="redBtn">Search</button>
+            </div>
+        </div>
+    </div>
+ </div>
+<!-- departmentModel end-->
+  <!-- swfilterModal start-->
+  <div class="sw-modal modal fade swfiltermodal" id="swfilterModal" tabindex="-1" role="dialog" aria-labelledby="swfilterModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="swfilterModalLabel">Advance Filter</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <!--floating form start-->
+                 <form class="card card-block bg-faded">
+                    <div class="form-group input-group d-flex custom-float-input">
+                        <label class=""><span>Enter Airline</span></label>
+                        <input class="form-control" type="text" placeholder="Enter Airline" value=""/>
+                    </div>
+                    <div class="form-group input-group">
+                       <label class="has-float-label">
+                          <input class="form-control" type="text" placeholder="Enter Airline" value=""/>
+                          <span>Enter Airline</span>
+                        </label>
+                      </div>
+                      <div class="form-group input-group">
+                        <label class="has-float-label">
+                           <input class="form-control" type="text" placeholder="Eg. YY (Deal Code) / (CLID)" value=""/>
+                           <span>Deal Code/CLID</span>
+                         </label>
+                       </div>
+                    <div class="form-group input-group">
+                      <span class="has-float-label">
+                        <input class="form-control" id="first" type="text" placeholder="Eg. YY (Promo Code)"/>
+                        <label for="Promocode">Promo Code</label>
+                      </span>
+                   </div>
+                  
+                    <div class="form-group input-group row d-flex mx-0">
+                        <div class="col-lg-6 pl-0">
+                                <label class="has-float-label">
+                                <input class="form-control" type="date" placeholder="Choose here">
+                                <span>Departure Time</span>
+                            </label>
+                        </div>
+                        <div class="col-lg-6 pr-0">
+                            <label class="has-float-label">
+                                <input class="form-control" type="date" placeholder="Choose here">
+                                <span>Arrival Time</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="swcustom-checkbox p-0 border-0 mb-24">
+                        <div class="custom-control custom-checkbox  custom-control-inline l-0">
+                            <input type="checkbox" class="custom-control-input" id="option1">
+                            <label class="custom-control-label" for="option1">Enable this option to choose arrival time for next day</label>
+                        </div>  
+                    </div>
+                    <!--swcustom-checkbox start-->
+                    <div class="form-group input-group checkbox-floatinput">
+                        <label class="has-float-label">Stops</label>
+                        <div class="swcustom-checkbox d-flex">
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                             <input type="checkbox" class="custom-control-input" id="stop1" checked>
+                             <label class="custom-control-label" for="stop1">Non Stop</label>
+                            </div>
+                           
+                           <div class="custom-control custom-checkbox  custom-control-inline">
+                             <input type="checkbox" class="custom-control-input" id="stop2">
+                             <label class="custom-control-label" for="stop2">One Stop</label>
+                           </div>
+                           <div class="custom-control custom-checkbox  custom-control-inline">
+                             <input type="checkbox" class="custom-control-input" id="stop3">
+                             <label class="custom-control-label" for="stop3">Two Stop</label>
+                           </div>
+                        </div>
+                    </div>
+                    <!--swcustom-checkbox end-->
+                    
+                    <div class="form-group input-group row d-flex mx-0">
+                        <div class="col-lg-6 pl-0">
+                                <label class="has-float-label">
+                                <input class="form-control" type="text" placeholder="Choose here">
+                                <span>Enter Airport Code</span>
+                            </label>
+                        </div>
+                        <div class="col-lg-6 pr-0">
+                            <label class="has-float-label">
+                                <input class="form-control" type="text" placeholder="Enter Flight Number">
+                                <span>Flight Number</span>
+                            </label>
+                        </div>
+                    </div>
+                     <!--swcustom-checkbox start-->
+                     <div class="form-group input-group checkbox-floatinput">
+                        <label class="has-float-label">Search By</label>
+                        <div class="swcustom-checkbox ">
+                            <div class="checkbox-grp">
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="Fare1" checked>
+                                    <label class="custom-control-label" for="Fare1">Low Fare</label>
+                                   </div>
+                                  
+                                  <div class="custom-control custom-checkbox  custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="Fare2">
+                                    <label class="custom-control-label" for="Fare2">Flexible Fare</label>
+                                  </div>
+                                  <div class="custom-control custom-checkbox  custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="Fare3">
+                                    <label class="custom-control-label" for="Fare3">Private Fare</label>
+                                  </div>
+                                 
+                            </div>
+                            <div class="d-flex checkbox-grp mt-12">
+                                <div class="custom-control custom-checkbox  custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="Fare4">
+                                    <label class="custom-control-label" for="Fare4">Nego Fare</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--swcustom-checkbox end-->
+                     <!--swcustom-checkbox start-->
+                     <div class="form-group input-group checkbox-floatinput">
+                        <label class="has-float-label">Shopping Preference</label>
+                        <div class="swcustom-checkbox d-flex">
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="shoperfer1" checked>
+                                    <label class="custom-control-label" for="shoperfer1">Optimised</label>
+                                   </div>
+                                  
+                                  <div class="custom-control custom-checkbox  custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="shoperfer2">
+                                    <label class="custom-control-label" for="shoperfer2">Full</label>
+                                  </div>
+                                  <div class="custom-control custom-checkbox  custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="shoperfer3">
+                                    <label class="custom-control-label" for="shoperfer3">Best</label>
+                                  </div>
+                                 
+                            </div>
+                        </div>
+                    <!--swcustom-checkbox end-->
+                     <!--swcustom-checkbox start-->
+                     <div class="form-group input-group checkbox-floatinput shop-refer2">
+                        <label class="has-float-label">Shopping Preference</label>
+                        <div class="swcustom-checkbox d-flex flex-column text-left">
+                            <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="shoperfer4" checked>
+                                    <label class="custom-control-label" for="shoperfer4">Stop - Price - Departure Time</label>
+                                   </div>
+                                  
+                                  <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="shoperfer5">
+                                    <label class="custom-control-label" for="shoperfer5">Departure Time - Stop - Price</label>
+                                  </div>
+                                  <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="shoperfer6">
+                                    <label class="custom-control-label" for="shoperfer6">Price - Stop - Departure Time</label>
+                                  </div>
+                                 
+                            </div>
+                        </div>
+                    <!--swcustom-checkbox end-->
+                </form>
+                <!--floating form end-->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="redBtn">Search</button>
+            </div>
+        </div>
+    </div>
+ </div>
+<!-- swfilterModal end-->
+
+
+
+    <script src="js/general.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+    <script>
+        const countriesByAbbreviation = [
+{
+  country: "Afghanistan",
+  abbreviation: "AF" },
+
+{
+  country: "Albania",
+  abbreviation: "AL" },
+
+{
+  country: "Algeria",
+  abbreviation: "DZ" },
+
+{
+  country: "American Samoa",
+  abbreviation: "AS" },
+
+{
+  country: "Andorra",
+  abbreviation: "AD" },
+
+{
+  country: "Angola",
+  abbreviation: "AO" },
+
+{
+  country: "Anguilla",
+  abbreviation: "AI" },
+
+{
+  country: "Antarctica",
+  abbreviation: "AQ" },
+
+{
+  country: "Antigua and Barbuda",
+  abbreviation: "AG" },
+
+{
+  country: "Argentina",
+  abbreviation: "AR" },
+
+{
+  country: "Armenia",
+  abbreviation: "AM" },
+
+{
+  country: "Aruba",
+  abbreviation: "AW" },
+
+{
+  country: "Australia",
+  abbreviation: "AU" },
+
+{
+  country: "Austria",
+  abbreviation: "AT" },
+
+{
+  country: "Azerbaijan",
+  abbreviation: "AZ" },
+
+{
+  country: "Bahamas",
+  abbreviation: "BS" },
+
+{
+  country: "Bahrain",
+  abbreviation: "BH" },
+
+{
+  country: "Bangladesh",
+  abbreviation: "BD" },
+
+{
+  country: "Barbados",
+  abbreviation: "BB" },
+
+{
+  country: "Belarus",
+  abbreviation: "BY" },
+
+{
+  country: "Belgium",
+  abbreviation: "BE" },
+
+{
+  country: "Belize",
+  abbreviation: "BZ" },
+
+{
+  country: "Benin",
+  abbreviation: "BJ" },
+
+{
+  country: "Bermuda",
+  abbreviation: "BM" },
+
+{
+  country: "Bhutan",
+  abbreviation: "BT" },
+
+{
+  country: "Bolivia",
+  abbreviation: "BO" },
+
+{
+  country: "Bosnia and Herzegovina",
+  abbreviation: "BA" },
+
+{
+  country: "Botswana",
+  abbreviation: "BW" },
+
+{
+  country: "Bouvet Island",
+  abbreviation: "BV" },
+
+{
+  country: "Brazil",
+  abbreviation: "BR" },
+
+{
+  country: "British Indian Ocean Territory",
+  abbreviation: "IO" },
+
+{
+  country: "Brunei",
+  abbreviation: "BN" },
+
+{
+  country: "Bulgaria",
+  abbreviation: "BG" },
+
+{
+  country: "Burkina Faso",
+  abbreviation: "BF" },
+
+{
+  country: "Burundi",
+  abbreviation: "BI" },
+
+{
+  country: "Cambodia",
+  abbreviation: "KH" },
+
+{
+  country: "Cameroon",
+  abbreviation: "CM" },
+
+{
+  country: "Canada",
+  abbreviation: "CA" },
+
+{
+  country: "Cape Verde",
+  abbreviation: "CV" },
+
+{
+  country: "Cayman Islands",
+  abbreviation: "KY" },
+
+{
+  country: "Central African Republic",
+  abbreviation: "CF" },
+
+{
+  country: "Chad",
+  abbreviation: "TD" },
+
+{
+  country: "Chile",
+  abbreviation: "CL" },
+
+{
+  country: "China",
+  abbreviation: "CN" },
+
+{
+  country: "Christmas Island",
+  abbreviation: "CX" },
+
+{
+  country: "Cocos (Keeling) Islands",
+  abbreviation: "CC" },
+
+{
+  country: "Colombia",
+  abbreviation: "CO" },
+
+{
+  country: "Comoros",
+  abbreviation: "KM" },
+
+{
+  country: "Congo",
+  abbreviation: "CG" },
+
+{
+  country: "Cook Islands",
+  abbreviation: "CK" },
+
+{
+  country: "Costa Rica",
+  abbreviation: "CR" },
+
+{
+  country: "Croatia",
+  abbreviation: "HR" },
+
+{
+  country: "Cuba",
+  abbreviation: "CU" },
+
+{
+  country: "Cyprus",
+  abbreviation: "CY" },
+
+{
+  country: "Czech Republic",
+  abbreviation: "CZ" },
+
+{
+  country: "Denmark",
+  abbreviation: "DK" },
+
+{
+  country: "Djibouti",
+  abbreviation: "DJ" },
+
+{
+  country: "Dominica",
+  abbreviation: "DM" },
+
+{
+  country: "Dominican Republic",
+  abbreviation: "DO" },
+
+{
+  country: "East Timor",
+  abbreviation: "TP" },
+
+{
+  country: "Ecuador",
+  abbreviation: "EC" },
+
+{
+  country: "Egypt",
+  abbreviation: "EG" },
+
+{
+  country: "El Salvador",
+  abbreviation: "SV" },
+
+{
+  country: "England",
+  abbreviation: null },
+
+{
+  country: "Equatorial Guinea",
+  abbreviation: "GQ" },
+
+{
+  country: "Eritrea",
+  abbreviation: "ER" },
+
+{
+  country: "Estonia",
+  abbreviation: "EE" },
+
+{
+  country: "Ethiopia",
+  abbreviation: "ET" },
+
+{
+  country: "Falkland Islands",
+  abbreviation: "FK" },
+
+{
+  country: "Faroe Islands",
+  abbreviation: "FO" },
+
+{
+  country: "Fiji Islands",
+  abbreviation: "FJ" },
+
+{
+  country: "Finland",
+  abbreviation: "FI" },
+
+{
+  country: "France",
+  abbreviation: "FR" },
+
+{
+  country: "French Guiana",
+  abbreviation: "GF" },
+
+{
+  country: "French Polynesia",
+  abbreviation: "PF" },
+
+{
+  country: "French Southern territories",
+  abbreviation: "TF" },
+
+{
+  country: "Gabon",
+  abbreviation: "GA" },
+
+{
+  country: "Gambia",
+  abbreviation: "GM" },
+
+{
+  country: "Georgia",
+  abbreviation: "GE" },
+
+{
+  country: "Germany",
+  abbreviation: "DE" },
+
+{
+  country: "Ghana",
+  abbreviation: "GH" },
+
+{
+  country: "Gibraltar",
+  abbreviation: "GI" },
+
+{
+  country: "Greece",
+  abbreviation: "GR" },
+
+{
+  country: "Greenland",
+  abbreviation: "GL" },
+
+{
+  country: "Grenada",
+  abbreviation: "GD" },
+
+{
+  country: "Guadeloupe",
+  abbreviation: "GP" },
+
+{
+  country: "Guam",
+  abbreviation: "GU" },
+
+{
+  country: "Guatemala",
+  abbreviation: "GT" },
+
+{
+  country: "Guinea",
+  abbreviation: "GN" },
+
+{
+  country: "Guinea-Bissau",
+  abbreviation: "GW" },
+
+{
+  country: "Guyana",
+  abbreviation: "GY" },
+
+{
+  country: "Haiti",
+  abbreviation: "HT" },
+
+{
+  country: "Heard Island and McDonald Islands",
+  abbreviation: "HM" },
+
+{
+  country: "Holy See (Vatican City State)",
+  abbreviation: "VA" },
+
+{
+  country: "Honduras",
+  abbreviation: "HN" },
+
+{
+  country: "Hong Kong",
+  abbreviation: "HK" },
+
+{
+  country: "Hungary",
+  abbreviation: "HU" },
+
+{
+  country: "Iceland",
+  abbreviation: "IS" },
+
+{
+  country: "India",
+  abbreviation: "IN" },
+
+{
+  country: "Indonesia",
+  abbreviation: "ID" },
+
+{
+  country: "Iran",
+  abbreviation: "IR" },
+
+{
+  country: "Iraq",
+  abbreviation: "IQ" },
+
+{
+  country: "Ireland",
+  abbreviation: "IE" },
+
+{
+  country: "Israel",
+  abbreviation: "IL" },
+
+{
+  country: "Italy",
+  abbreviation: "IT" },
+
+{
+  country: "Ivory Coast",
+  abbreviation: "CI" },
+
+{
+  country: "Jamaica",
+  abbreviation: "JM" },
+
+{
+  country: "Japan",
+  abbreviation: "JP" },
+
+{
+  country: "Jordan",
+  abbreviation: "JO" },
+
+{
+  country: "Kazakstan",
+  abbreviation: null },
+
+{
+  country: "Kenya",
+  abbreviation: "KE" },
+
+{
+  country: "Kiribati",
+  abbreviation: "KI" },
+
+{
+  country: "Kuwait",
+  abbreviation: "KW" },
+
+{
+  country: "Kyrgyzstan",
+  abbreviation: "KG" },
+
+{
+  country: "Laos",
+  abbreviation: "LA" },
+
+{
+  country: "Latvia",
+  abbreviation: "LV" },
+
+{
+  country: "Lebanon",
+  abbreviation: "LB" },
+
+{
+  country: "Lesotho",
+  abbreviation: "LS" },
+
+{
+  country: "Liberia",
+  abbreviation: "LR" },
+
+{
+  country: "Libyan Arab Jamahiriya",
+  abbreviation: "LY" },
+
+{
+  country: "Liechtenstein",
+  abbreviation: "LI" },
+
+{
+  country: "Lithuania",
+  abbreviation: "LT" },
+
+{
+  country: "Luxembourg",
+  abbreviation: "LU" },
+
+{
+  country: "Macao",
+  abbreviation: "MO" },
+
+{
+  country: "Macedonia",
+  abbreviation: "MK" },
+
+{
+  country: "Madagascar",
+  abbreviation: "MG" },
+
+{
+  country: "Malawi",
+  abbreviation: "MW" },
+
+{
+  country: "Malaysia",
+  abbreviation: "MY" },
+
+{
+  country: "Maldives",
+  abbreviation: "MV" },
+
+{
+  country: "Mali",
+  abbreviation: "ML" },
+
+{
+  country: "Malta",
+  abbreviation: "MT" },
+
+{
+  country: "Marshall Islands",
+  abbreviation: "MH" },
+
+{
+  country: "Martinique",
+  abbreviation: "MQ" },
+
+{
+  country: "Mauritania",
+  abbreviation: "MR" },
+
+{
+  country: "Mauritius",
+  abbreviation: "MU" },
+
+{
+  country: "Mayotte",
+  abbreviation: "YT" },
+
+{
+  country: "Mexico",
+  abbreviation: "MX" },
+
+{
+  country: "Micronesia, Federated States of",
+  abbreviation: null },
+
+{
+  country: "Moldova",
+  abbreviation: "MD" },
+
+{
+  country: "Monaco",
+  abbreviation: "MC" },
+
+{
+  country: "Mongolia",
+  abbreviation: "MN" },
+
+{
+  country: "Montserrat",
+  abbreviation: "MS" },
+
+{
+  country: "Morocco",
+  abbreviation: "MA" },
+
+{
+  country: "Mozambique",
+  abbreviation: "MZ" },
+
+{
+  country: "Myanmar",
+  abbreviation: "MM" },
+
+{
+  country: "Namibia",
+  abbreviation: "NA" },
+
+{
+  country: "Nauru",
+  abbreviation: "NR" },
+
+{
+  country: "Nepal",
+  abbreviation: "NP" },
+
+{
+  country: "Netherlands",
+  abbreviation: "NL" },
+
+{
+  country: "Netherlands Antilles",
+  abbreviation: "AN" },
+
+{
+  country: "New Caledonia",
+  abbreviation: "NC" },
+
+{
+  country: "New Zealand",
+  abbreviation: "NZ" },
+
+{
+  country: "Nicaragua",
+  abbreviation: "NI" },
+
+{
+  country: "Niger",
+  abbreviation: "NE" },
+
+{
+  country: "Nigeria",
+  abbreviation: "NG" },
+
+{
+  country: "Niue",
+  abbreviation: "NU" },
+
+{
+  country: "Norfolk Island",
+  abbreviation: "NF" },
+
+{
+  country: "North Korea",
+  abbreviation: "KP" },
+
+{
+  country: "Northern Ireland",
+  abbreviation: null },
+
+{
+  country: "Northern Mariana Islands",
+  abbreviation: "MP" },
+
+{
+  country: "Norway",
+  abbreviation: "NO" },
+
+{
+  country: "Oman",
+  abbreviation: "OM" },
+
+{
+  country: "Pakistan",
+  abbreviation: "PK" },
+
+{
+  country: "Palau",
+  abbreviation: "PW" },
+
+{
+  country: "Palestine",
+  abbreviation: "PS" },
+
+{
+  country: "Panama",
+  abbreviation: "PA" },
+
+{
+  country: "Papua New Guinea",
+  abbreviation: "PG" },
+
+{
+  country: "Paraguay",
+  abbreviation: "PY" },
+
+{
+  country: "Peru",
+  abbreviation: "PE" },
+
+{
+  country: "Philippines",
+  abbreviation: "PH" },
+
+{
+  country: "Pitcairn",
+  abbreviation: "PN" },
+
+{
+  country: "Poland",
+  abbreviation: "PL" },
+
+{
+  country: "Portugal",
+  abbreviation: "PT" },
+
+{
+  country: "Puerto Rico",
+  abbreviation: "PR" },
+
+{
+  country: "Qatar",
+  abbreviation: "QA" },
+
+{
+  country: "Reunion",
+  abbreviation: "RE" },
+
+{
+  country: "Romania",
+  abbreviation: "RO" },
+
+{
+  country: "Russian Federation",
+  abbreviation: "RU" },
+
+{
+  country: "Rwanda",
+  abbreviation: "RW" },
+
+{
+  country: "Saint Helena",
+  abbreviation: "SH" },
+
+{
+  country: "Saint Kitts and Nevis",
+  abbreviation: "KN" },
+
+{
+  country: "Saint Lucia",
+  abbreviation: "LC" },
+
+{
+  country: "Saint Pierre and Miquelon",
+  abbreviation: "PM" },
+
+{
+  country: "Saint Vincent and the Grenadines",
+  abbreviation: "VC" },
+
+{
+  country: "Samoa",
+  abbreviation: "WS" },
+
+{
+  country: "San Marino",
+  abbreviation: "SM" },
+
+{
+  country: "Sao Tome and Principe",
+  abbreviation: "ST" },
+
+{
+  country: "Saudi Arabia",
+  abbreviation: "SA" },
+
+{
+  country: "Scotland",
+  abbreviation: null },
+
+{
+  country: "Senegal",
+  abbreviation: "SN" },
+
+{
+  country: "Seychelles",
+  abbreviation: "SC" },
+
+{
+  country: "Sierra Leone",
+  abbreviation: "SL" },
+
+{
+  country: "Singapore",
+  abbreviation: "SG" },
+
+{
+  country: "Slovakia",
+  abbreviation: "SK" },
+
+{
+  country: "Slovenia",
+  abbreviation: "SI" },
+
+{
+  country: "Solomon Islands",
+  abbreviation: "SB" },
+
+{
+  country: "Somalia",
+  abbreviation: "SO" },
+
+{
+  country: "South Africa",
+  abbreviation: "ZA" },
+
+{
+  country: "South Georgia and the South Sandwich Islands",
+  abbreviation: "GS" },
+
+{
+  country: "South Korea",
+  abbreviation: "KR" },
+
+{
+  country: "South Sudan",
+  abbreviation: null },
+
+{
+  country: "Spain",
+  abbreviation: "ES" },
+
+{
+  country: "SriLanka",
+  abbreviation: null },
+
+{
+  country: "Sudan",
+  abbreviation: "SD" },
+
+{
+  country: "Suriname",
+  abbreviation: "SR" },
+
+{
+  country: "Svalbard and Jan Mayen",
+  abbreviation: "SJ" },
+
+{
+  country: "Swaziland",
+  abbreviation: "SZ" },
+
+{
+  country: "Sweden",
+  abbreviation: "SE" },
+
+{
+  country: "Switzerland",
+  abbreviation: "CH" },
+
+{
+  country: "Syria",
+  abbreviation: "SY" },
+
+{
+  country: "Tajikistan",
+  abbreviation: "TJ" },
+
+{
+  country: "Tanzania",
+  abbreviation: "TZ" },
+
+{
+  country: "Thailand",
+  abbreviation: "TH" },
+
+{
+  country: "The Democratic Republic of Congo",
+  abbreviation: null },
+
+{
+  country: "Togo",
+  abbreviation: "TG" },
+
+{
+  country: "Tokelau",
+  abbreviation: "TK" },
+
+{
+  country: "Tonga",
+  abbreviation: "TO" },
+
+{
+  country: "Trinidad and Tobago",
+  abbreviation: "TT" },
+
+{
+  country: "Tunisia",
+  abbreviation: "TN" },
+
+{
+  country: "Turkey",
+  abbreviation: "TR" },
+
+{
+  country: "Turkmenistan",
+  abbreviation: "TM" },
+
+{
+  country: "Turks and Caicos Islands",
+  abbreviation: "TC" },
+
+{
+  country: "Tuvalu",
+  abbreviation: "TV" },
+
+{
+  country: "Uganda",
+  abbreviation: "UG" },
+
+{
+  country: "Ukraine",
+  abbreviation: "UA" },
+
+{
+  country: "United Arab Emirates",
+  abbreviation: "AE" },
+
+{
+  country: "United Kingdom",
+  abbreviation: "GB" },
+
+{
+  country: "United States",
+  abbreviation: "US" },
+
+{
+  country: "United States Minor Outlying Islands",
+  abbreviation: "UM" },
+
+{
+  country: "Uruguay",
+  abbreviation: "UY" },
+
+{
+  country: "Uzbekistan",
+  abbreviation: "UZ" },
+
+{
+  country: "Vanuatu",
+  abbreviation: "VU" },
+
+{
+  country: "Venezuela",
+  abbreviation: "VE" },
+
+{
+  country: "Vietnam",
+  abbreviation: "VN" },
+
+{
+  country: "Virgin Islands, British",
+  abbreviation: null },
+
+{
+  country: "Virgin Islands, U.S.",
+  abbreviation: null },
+
+{
+  country: "Wales",
+  abbreviation: null },
+
+{
+  country: "Wallis and Futuna",
+  abbreviation: "WF" },
+
+{
+  country: "Western Sahara",
+  abbreviation: "EH" },
+
+{
+  country: "Yemen",
+  abbreviation: "YE" },
+
+{
+  country: "Yugoslavia",
+  abbreviation: "YU" },
+
+{
+  country: "Zambia",
+  abbreviation: "ZM" },
+
+{
+  country: "Zimbabwe",
+  abbreviation: "ZW" }];
+
+
+
+const filterCountriesOnChange = event => {
+  const value = event.target.value.toLowerCase();
+
+  const result = countriesByAbbreviation.filter(countryObject => {
+    const abbreviation = countryObject.abbreviation || '';
+    const country = countryObject.country || '';
+    const countryString = `${country}  ${abbreviation} `;
+
+    return countryString.toLowerCase().includes(value);
+  });
+
+  generateCountriesList(result);
+};
+
+const addEventListenerToCountries = () => {
+  const countriesInput = document.querySelector('.countries-input');
+  const countryListItems = document.querySelectorAll('.country');
+  const countryAbbr = document.querySelector(".abbr");
+  let countryListItemIndex = 0;
+  const countryListItemILength = countryListItems.length;
+
+  for (countryListItemIndex; countryListItemIndex < countryListItemILength; countryListItemIndex++) {
+    const countryListItem = countryListItems[countryListItemIndex];
+
+    countryListItem.addEventListener('mousedown', event => {
+      event.preventDefault();
+      event.stopPropagation();
+      const value = event.currentTarget.innerText;
+      //console.log(event.currentTarget.getAttribute("data-abbr"));
+        //console.log(event.currentTarget.getAttribute("data-country"));
+      //countriesInput.value = value;
+      countriesInput.value = event.currentTarget.getAttribute("data-country");
+      countryAbbr.innerHTML = event.currentTarget.getAttribute("data-abbr");
+      filterCountriesOnChange({ target: { value } });
+
+      countriesInput.focus();
+    });
+  }
+};
+
+const createCountryListItem = ({ country = '', abbreviation = '' }) =>
+`<li class="country" data-value="${abbreviation} ${country}" data-abbr="${abbreviation}" data-country="${country}"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">${country}</span><span class="country--abbreviation">${abbreviation}</span> </li>`;
+
+
+const generateCountriesList = countriesArray => {
+  const countriesList = document.querySelector('.countries-list');
+  countriesList.innerHTML = '';
+
+  const countriesLength = countriesArray.length;
+
+  for (let countryIndex = 0; countryIndex < countriesLength; countryIndex++) {
+    countriesList.innerHTML += createCountryListItem(countriesArray[countryIndex]);
+  }
+
+  addEventListenerToCountries();
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+  const countriesInput = document.querySelector('.countries-input');
+  //const countriesInputAbbr = document.querySelector('.abbr');
+
+  generateCountriesList(countriesByAbbreviation);
+
+  countriesInput.addEventListener('keyup', filterCountriesOnChange);
+
+  countriesInput.addEventListener('focus', () => {
+    const countriesList = document.querySelector('.countries-list-container');
+    //countriesInputAbbr.innerHTML = "";
+    countriesList.classList.add('visible');
+
+  });
+
+  countriesInput.addEventListener('blur', event => {
+    const countriesList = document.querySelector('.countries-list-container');
+    countriesList.classList.remove('visible');
+  });
+});
+    </script>
+  <script>
+    $(document).ready(function(){
+      // Initialize datepicker for the first input
+      $('#datepicker1').datepicker({
+        autoclose: false, // Prevent the datepicker from closing on date selection
+        todayHighlight: true,
+        format: 'yyyy-mm-dd' // Adjust the format as needed
+      });
+  
+      // Initialize datepicker for the second input
+      $('#datepicker2').datepicker({
+        autoclose: false, // Prevent the datepicker from closing on date selection
+        todayHighlight: true,
+        keepOpen: true,
+             // inline: true,
+              debug: true,
+        format: 'yyyy-mm-dd' // Adjust the format as needed
+      });
+  
+      // Show datepickers when the modal is shown
+      $('#departmentModel').on('shown.bs.modal', function () {
+        $('#datepicker1').datepicker('show');
+        $('#datepicker2').datepicker('show');
+      });
+    });
+    
+  </script>
+
+</body>
+
+</html>

@@ -52,20 +52,19 @@ $(document).ready(function () {
           console.log($(".navbar-collapse .nav-item"));
         });
 
-       $(".submenu2 .submenutitle").click(function(){
-          $('.submenu2-content').toggleClass('show');
+       $(".submenu2 h5").click(function(){
+          $('.submenu2-content').addClass('show');
+         
         });
-      
-        $(".submenu3 .submenutitle").click(function(){
+        $(".submenu3 h5").click(function(){
           $('.submenu3-content').addClass('show');
          
         });
-        $(".submenu4 .submenutitle").click(function(){
+        $(".submenu4 h5").click(function(){
           $('.submenu4-content').addClass('show');
+         
         });
-        $(".submenu5 .submenutitle").click(function(){
-          $('.submenu5-content').addClass('show');
-        });
+    
         $(".one-country-pass").click(function(){
           $('.eurail-pass').addClass('show');
          
@@ -74,13 +73,11 @@ $(document).ready(function () {
         $(".s3-back").click(function(){
           $('.submenu3-content').removeClass('show');
           $('.submenu4-content').removeClass('show');
-          $('.submenu5-content').removeClass('show');
         
            console.log();
         });
         $(".s2back").click(function(){
           $('.submenu2-content').removeClass('show');
-          $('.submenu5-content').removeClass('show');
           $('.eurail-pass').removeClass('show');
         });
      
@@ -622,6 +619,8 @@ $('.accordion-button').click(function() {
   var target = $($(this).data('bs-target'));
   $('.accordion-collapse').not(target).collapse('hide');
 });
+
+
 
 $('.sw-hwTable.hwTable').slick({
   slidesToShow: 4, slidesToScroll: 4, infinite: false, speed: 1000, cssEase: 'ease-in-out', dots: false, arrows: false,

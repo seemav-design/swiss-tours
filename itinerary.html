@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="theme-color" content="#000" />
+    <title>Welcome To SWISStours</title>
+    <link href="images/favicon.ico.jpg" rel="shortcut icon" />
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/menu.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-select.min.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <!--<script src="js/bootstrap.min.js"></script>-->
+
+    <script src="js/bootstrap-datetimepicker.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Starts -->
+    <header class="cd-main-header sw-mainheader">
+        <!-- Start Mega Menu HTML -->
+        <div class="container">
+            <nav class="navbar navbar-expand-lg sw-navbar">
+                <div class="w-100 flex-column align-items-start">
+                    <div class="d-flex justify-content-between w-100">
+                        <a class="navbar-brand" href="#"><img src="images/logo.svg" alt=""></a>
+
+                        <div class="top-right-menu d-flex flex-grow-1">
+                            <div class="cart_box">
+                                <a href="#" class="cart_btn" title="View Cart"><span class="ml-4">My Cart</span><span
+                                        class="cart_items_count">0</span></a>
+                            </div>
+                            <div class="login_head">
+                                <a href=""> <span class="txt">Login</span></a>
+                            </div>
+                            <div class="sign-upbtn">
+                                <a href="" class="btn"> <img src="images/airline/signup-icon.svg" alt=""><span
+                                        class="txt">sign up</span></a>
+                            </div>
+                            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbar-content">
+                                <div class="hamburger-toggle">
+                                    <div class="hamburger">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="collapse navbar-collapse menu_navbar w-100" id="navbar-content">
+                        <ul class="navbar-nav mr-auto mb-2 mb-lg-0 flex-grow-1 mt-4">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">
+                                    <span class="nav-icon"><img src="images/airline/Plane2.svg" alt=""></span>
+                                    <span class="nav-icon mb-icon"><img src="images/airline/Plane2.svg" alt=""></span>
+                                    Flights</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">
+                                    <span class="nav-icon"><img src="images/airline/menu-icon/hotelmenu-icon.svg" alt=""
+                                            class="filter-red"></span>
+                                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/hotel.svg"
+                                            alt=""></span>
+                                    Hotels
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <span class="nav-icon"><img src="images/airline/menu-icon/aparment.svg" alt=""
+                                            class="filter-red"></span>
+                                    <span class="nav-icon mb-icon"><img
+                                            src="images/airline/menu-icon/mobile/apartment.svg" alt=""></span>
+                                    Apartments</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" aria-current="page" href="#"
+                                    data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                                    <span class="nav-icon"><img src="images/airline/menu-icon/package.svg" alt=""
+                                            class="filter-red"></span>
+                                    <span class="nav-icon mb-icon"><img
+                                            src="images/airline/menu-icon/mobile/package.svg" alt=""></span>
+                                    Packages</a>
+                                <ul class="dropdown-menu shadow">
+                                    <li class="rmm-back"><a href="#"><img src="images/airline/rightarrow3.svg"
+                                                alt="arrow" class="me-3">back</a></li>
+                                    <li>
+                                        <a class="dropdown-item pe-4" href="#">Air-Inclusive Packages<img
+                                                src="images/airline/sw-logo2.svg" class="img-fluid menu-innericon"></a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Land Packages</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">
+                                    <span class="nav-icon"><img src="images/airline/menu-icon/e-swiss.svg" alt=""
+                                            class="filter-red"></span>
+                                    <span class="nav-icon mb-icon"><img
+                                            src="images/airline/menu-icon/mobile/e-swiss.svg" alt=""></span>
+                                    E-Swiss Travel Pass
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown dropdown-mega position-static">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                    data-bs-auto-close="outside">
+                                    <span class="nav-icon"><img src="images/airline/menu-icon/european.svg" alt=""
+                                            class="filter-red"></span>
+                                    <span class="nav-icon mb-icon"><img
+                                            src="images/airline/menu-icon/mobile/eurailpass.svg" alt=""></span>
+                                    European Rail
+                                </a>
+                                <div class="dropdown-menu shadow pass">
+                                    <div class="mega-content px-lg-4">
+                                        <div class="container-fluid">
+                                            <ul class="row">
+                                                <li class="col-12 col-lg-8 py-lg-4 border-right submenu2">
+                                                    <div class="rmm-back"><a href="#"><img
+                                                                src="images/airline/rightarrow3.svg" alt="arrow"
+                                                                class="me-3">back</a></div>
+                                                    <h5><a href="#">Eurail Pass<img src="images/airline/eurailicon.svg"
+                                                                class="img-fluid menucion2 ms-2"></a></h5>
+                                                    <ul class="list-group submenu2-content">
+                                                        <li class="s2back"><a href="#"><img
+                                                                    src="images/airline/rightarrow3.svg" alt="arrow"
+                                                                    class="me-3">back</a></li>
+                                                        <li><a class="list-group-item" href="#">Global Pass</a></li>
+                                                        <li class="one-country-pass">
+                                                            <a class="list-group-item" href="#">One Country Pass</a>
+                                                            <ul class="list-group eurail-pass list-group2">
+                                                                <li class="s2back"><a href="#"><img
+                                                                            src="images/airline/rightarrow3.svg"
+                                                                            alt="arrow" class="me-3">back</a></li>
+                                                                <li class="listoverflow-mb">
+                                                                    <ul>
+                                                                        <li><a href="#" class="list-group-item">Eurail
+                                                                                Austria Pass</a></li>
+                                                                        <li><a href="#" class="list-group-item">Eurail
+                                                                                Belgium Pass</a></li>
+                                                                        <li><a href="#" class="list-group-item">Eurail
+                                                                                Benelux Pass</a></li>
+                                                                        <li><a href="#" class="list-group-item">Eurail
+                                                                                Bulgaria Pass</a></li>
+                                                                        <li><a href="#" class="list-group-item">Eurail
+                                                                                Croatia Pass</a></li>
+                                                                        <li><a href="#" class="list-group-item"> Eurail
+                                                                                Czech Republic Pass</a></li>
+                                                                        <li><a href="#" class="list-group-item">Eurail
+                                                                                Denmark Pass</a></li>
+                                                                        <li><a href="#" class="list-group-item">Eurail
+                                                                                Lithuania Pass</a></li>
+                                                                        <li><a href="#" class="list-group-item">Eurail
+                                                                                Luxembourg Pass</a></li>
+                                                                        <li><a href="#" class="list-group-item">Eurail
+                                                                                Netherlands Pass</a></li>
+                                                                        <li><a href="#" class="list-group-item">Eurail
+                                                                                Norway Pass</a></li>
+                                                                        <li><a href="#" class="list-group-item">Eurail
+                                                                                Poland Pass</a></li>
+                                                                    </ul>
+                                                                    <ul class="sub-listgrop2">
+                                                                        <li><a href="#" class="list-group-item">Eurail
+                                                                                Portugal Pass</a></li>
+                                                                        <li><a href="#" class="list-group-item">Eurail
+                                                                                Romania Pass</a></li>
+                                                                        <li><a href="#" class="list-group-item">Eurail
+                                                                                Finland Pass</a></li>
+                                                                        <li><a href="#" class="list-group-item">Eurail
+                                                                                France Pass</a></li>
+                                                                        <li><a href="#" class="list-group-item">Eurail
+                                                                                Germany Pass</a></li>
+                                                                        <li><a href="#" class="list-group-item">Eurail
+                                                                                Greece Pass</a></li>
+                                                                        <li><a href="#" class="list-group-item">Eurail
+                                                                                Hungary Pass</a></li>
+                                                                        <li><a href="#" class="list-group-item">Eurail
+                                                                                Italy Pass</a></li>
+                                                                        <li><a href="#" class="list-group-item">Eurail
+                                                                                Scandinavia Pass</a></li>
+                                                                        <li><a href="#" class="list-group-item">Eurail
+                                                                                Serbia Pass</a></li>
+                                                                        <li><a href="#" class="list-group-item">Eurail
+                                                                                Slovakia Pass</a></li>
+                                                                        <li><a href="#" class="list-group-item">Eurail
+                                                                                Slovenia Pass</a></li>
+                                                                        <li><a href="#" class="list-group-item">Eurail
+                                                                                Spain Pass</a></li>
+                                                                        <li><a href="#" class="list-group-item">Eurail
+                                                                                Sweden Pass</a></li>
+                                                                        <li><a href="#" class="list-group-item">Eurail
+                                                                                Turkey Pass</a></li>
+                                                                        <li><a href="#" class="list-group-item"></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+
+
+                                                            </ul>
+                                                        </li>
+
+
+                                                    </ul>
+                                                </li>
+
+                                                <li class="col-12 col-lg-4 py-lg-4 ps-md-5 submenu3">
+
+                                                    <h5><a href="#">Panoramic Trains in Switzerland</a></h5>
+                                                    <ul class="list-group list-group3 submenu3-content">
+                                                        <li class="s3-back"><a href="#"><img
+                                                                    src="images/airline/rightarrow3.svg" alt="arrow"
+                                                                    class="me-3">back</a></li>
+                                                        <li><a class="list-group-item" href="#"><span class="me-3"><img
+                                                                        src="images/airline/Berninalogo.png"
+                                                                        alt="Berninalogo"
+                                                                        class="img-fluid"></span>Bernina Express</a>
+                                                        </li>
+                                                        <li><a class="list-group-item" href="#"><span class="me-3"><img
+                                                                        src="images/airline/glacierlogo.png"
+                                                                        alt="glacierlogo"
+                                                                        class="img-fluid"></span>Glacier Express</a>
+                                                        </li>
+                                                        <li><a class="list-group-item" href="#"><span class="me-3"><img
+                                                                        src="images/airline/glacierlogo.png"
+                                                                        alt="glacierlogo"
+                                                                        class="img-fluid"></span>Lucerne-Interlaken</a>
+                                                        </li>
+                                                    </ul>
+
+                                                    <div class="bordertop"></div>
+                                                    <div class="submenu4">
+                                                        <h5><a href="#">Europe Point to Point tickets</a></h5>
+                                                        <ul class="list-group list-group3 submenu4-content">
+                                                            <li class="s3-back"><a href="#"><img
+                                                                        src="images/airline/rightarrow3.svg" alt="arrow"
+                                                                        class="me-3">back</a></li>
+                                                            <li><a class="list-group-item" href="#"><span
+                                                                        class="me-3"><img
+                                                                            src="images/airline/londonlogo.png"
+                                                                            alt="imglogo"
+                                                                            class="img-fluid"></span>London to Paris</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="list-group-item" href="#"><span
+                                                                        class="me-3"><img
+                                                                            src="images/airline/paris-baselLogo.png"
+                                                                            alt="imglogo" class="img-fluid"></span>Paris
+                                                                    to Basel
+                                                                    <div
+                                                                        class="d-flex justify-content-end align-items-end populricon">
+                                                                        <p class="MostPopulartext"><span>Most
+                                                                                Popular</span><img
+                                                                                src="images/airline/popularicon2.svg"
+                                                                                alt=""></p>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li><a class="list-group-item" href="#"><span
+                                                                        class="me-3"><img
+                                                                            src="images/airline/paris-zurichlogo.png"
+                                                                            alt="imglogo" class="img-fluid"></span>Paris
+                                                                    to Zurich</a></li>
+                                                            <li><a class="list-group-item" href="#"><span
+                                                                        class="me-3"><img
+                                                                            src="images/airline/paris-amsLogo.png"
+                                                                            alt="imglogo" class="img-fluid"></span>Paris
+                                                                    to Amsterdam</a></li>
+                                                            <li><a class="list-group-item" href="#"><span
+                                                                        class="me-3"><img
+                                                                            src="images/airline/paris-baselLogo.png"
+                                                                            alt="imglogo"
+                                                                            class="img-fluid"></span>London to
+                                                                    Amsterdam</a></li>
+                                                        </ul>
+                                                    </div>
+
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown dropdown-mega position-static">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                    data-bs-auto-close="outside">
+                                    <span class="nav-icon"><img src="images/airline/menu-icon/sightseeing.svg" alt=""
+                                            class="filter-red"></span>
+                                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/sightseeing.svg"
+                                            alt="" class="filter-red"></span>
+                                    Attractions
+                                </a>
+                                <div class="dropdown-menu shadow pass">
+                                    <div class="mega-content px-lg-4">
+                                        <div class="container-fluid">
+                                            <ul class="row">
+                                                <li class="col-12 col-lg-4 py-lg-4 border-right submenu2">
+                                                    <div class="rmm-back"><a href="#"><img
+                                                                src="images/airline/rightarrow3.svg" alt="arrow"
+                                                                class="me-3">back</a></div>
+                                                    <h5><a href="#">Mountains in Switzerland</a></h5>
+                                                    <ul class="list-group submenu2-content">
+                                                        <li class="s2back"><a href="#"><img
+                                                                    src="images/airline/rightarrow3.svg" alt="arrow"
+                                                                    class="me-3">back</a></li>
+                                                        <li>
+                                                            <a class="list-group-item d-flex justify-content-between align-items-center"
+                                                                href="#">
+                                                                Jungfrau
+                                                                <div
+                                                                    class="d-flex justify-content-end align-items-end populricon">
+                                                                    <p class="MostPopulartext"><span>Most
+                                                                            Popular</span><img
+                                                                            src="images/airline/popularicon2.svg"
+                                                                            alt=""></p>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="list-group-item" href="#">Jungfrau VIP Gondola</a>
+                                                        </li>
+
+                                                        <li><a class="list-group-item" href="#">Harder Kulm</a></li>
+                                                        <li><a class="list-group-item" href="#">Grindelwald First</a>
+                                                        </li>
+                                                        <li><a class="list-group-item" href="#">Schilthorn</a></li>
+                                                        <li><a class="list-group-item" href="#">Mt Titlis</a></li>
+                                                        <li><a class="list-group-item" href="#">Mt Pilatus</a></li>
+                                                        <li><a class="list-group-item" href="#">Matterhorn</a></li>
+                                                        <li>
+                                                            <a class="list-group-item d-flex justify-content-between align-items-center"
+                                                                href="#">
+                                                                Sunnega Paradise
+                                                                <div
+                                                                    class="d-flex justify-content-end align-items-end populricon">
+                                                                    <p class="MostPopulartext"><span>Most
+                                                                            Popular</span><img
+                                                                            src="images/airline/popularicon2.svg"
+                                                                            alt=""></p>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li><a class="list-group-item" href="#">Glacier 3000</a></li>
+                                                        <li><a class="list-group-item" href="#">Diavolezza</a></li>
+                                                        <li><a class="list-group-item" href="#">Aletsch Arena</a></li>
+                                                        <li><a class="viewAllBtn" href="#">View All</a></li>
+
+                                                    </ul>
+                                                </li>
+                                                <li class="col-12 col-lg-4 py-lg-4 border-right submenu2">
+                                                    <h5><a href="#">Attractions in Switzerland</a></h5>
+                                                    <ul class="list-group submenu2-content">
+                                                        <li class="s2back"><a href="#"><img
+                                                                    src="images/airline/rightarrow3.svg" alt="arrow"
+                                                                    class="me-3">back</a></li>
+                                                        <li><a class="list-group-item" href="#">Swiss Transport
+                                                                Musuem</a></li>
+                                                        <li>
+                                                            <a class="list-group-item d-flex justify-content-between align-items-center"
+                                                                href="#">
+                                                                Saphir
+                                                                <div
+                                                                    class="d-flex justify-content-end align-items-end populricon">
+                                                                    <p class="MostPopulartext"><span>Most
+                                                                            Popular</span><img
+                                                                            src="images/airline/popularicon2.svg"
+                                                                            alt=""></p>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li><a class="list-group-item" href="#">Lindt</a></li>
+                                                        <li><a class="list-group-item" href="#">Swissminiatur</a></li>
+                                                        <li><a class="list-group-item" href="#">Meal Voucher</a></li>
+                                                        <li><a class="list-group-item" href="#">Charlie Chaplin</a></li>
+                                                        <li><a class="viewAllBtn" href="#">View All</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="col-12 col-lg-4 py-lg-4 ps-md-5 submenu2">
+                                                    <h5><a href="#">Guided tours in Switzerland</a></h5>
+                                                    <ul class="list-group submenu2-content">
+                                                        <li class="s3-back"><a href="#"><img
+                                                                    src="images/airline/rightarrow3.svg" alt="arrow"
+                                                                    class="me-3">back</a></li>
+                                                        <li><a class="list-group-item" href="#">Zurich tour with
+                                                                chocolate</a></li>
+                                                        <li>
+                                                            <a class="list-group-item d-flex justify-content-between align-items-center"
+                                                                href="#">
+                                                                Rhine falls and Zurich city tour
+                                                                <div
+                                                                    class="d-flex justify-content-end align-items-end populricon">
+                                                                    <p class="MostPopulartext"><span>Most
+                                                                            Popular</span><img
+                                                                            src="images/airline/popularicon2.svg"
+                                                                            alt=""></p>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li><a class="list-group-item" href="#">Rhine falls and Stein am
+                                                                Rhein</a></li>
+                                                        <li><a class="list-group-item" href="#">Zurich city tour with
+                                                                lake cruise</a></li>
+                                                        <li><a class="list-group-item" href="#">Lucerne and Titlis snow
+                                                                experience</a></li>
+                                                    </ul>
+                                                    <div class="bordertop"></div>
+                                                    <div class="submenu2">
+                                                        <h5><a href="#">Worldwide Attractions</a></h5>
+                                                        <ul class="list-group submenu2-content">
+                                                            <li class="s2back"><a href="#"><img
+                                                                        src="images/airline/rightarrow3.svg" alt="arrow"
+                                                                        class="me-3">back</a></li>
+                                                            <li><a class="list-group-item" href="#">London</a></li>
+                                                            <li><a class="list-group-item" href="#">Munich</a></li>
+                                                            <li><a class="list-group-item" href="#">Paris</a></li>
+                                                            <li><a class="list-group-item" href="#">Vienna</a></li>
+                                                            <li><a class="viewAllBtn" href="#">View All</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                    data-bs-auto-close="outside">
+                                    <span class="nav-icon"><img src="images/airline/menu-icon/mountain.svg" alt=""
+                                            class="filter-red"></span>
+                                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mountain.svg"
+                                            alt="" class="filter-red"></span>
+                                    About
+                                </a>
+                                <ul class="dropdown-menu shadow">
+                                    <li class="rmm-back"><a href="#"><img src="images/airline/rightarrow3.svg"
+                                                alt="arrow" class="me-3">back</a></li>
+                                    <li>
+                                        <a class="dropdown-item pe-4" href="#">About Us</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Our Leadership</a></li>
+                                    <li><a class="dropdown-item" href="#">Brochure</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown dropdown-mega position-static contactMegamenu">
+                                <a class="nav-link dropdown-toggle" href="#" href="#" data-bs-toggle="dropdown"
+                                    data-bs-auto-close="outside">
+                                    <span class="nav-icon"><img src="images/airline/menu-icon/sightseeing.svg" alt=""
+                                            class="filter-red"></span>
+                                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/sightseeing.svg"
+                                            alt="" class="filter-red"></span>
+                                    Contact
+                                </a>
+                                <div class="dropdown-menu shadow">
+                                    <div class="mega-content ">
+                                        <div class="container-fluid">
+                                            <div class="rmm-back ps-0"><a href="#"><img
+                                                        src="images/airline/rightarrow3.svg" alt="arrow"
+                                                        class="me-3">back</a></div>
+                                            <div class="row listoverflow-mb">
+                                                <div class="col-12 col-md-7 col-lg-8 py-lg-8">
+                                                    <ul class="menuleftContact">
+
+                                                        <li>
+                                                            <h5><a href="https://wa.me/919987997997?text=Hello.">WhatsApp<span
+                                                                        class="ms-3"><img
+                                                                            src="images/airline/whatapp.svg"
+                                                                            alt=""></span></a></h5>
+                                                        </li>
+                                                        <li class="d-flex align-items-center">
+                                                            <h5>Toll Free</h5><a href="tel:18002020052"
+                                                                class="text-primary">1800 20 20 052</a>
+                                                        </li>
+                                                        <li>
+                                                            <h5>Branch Office</h5>
+                                                            <ul>
+                                                                <li><span>Mumbai (Head Office)</span><a
+                                                                        href="tel:+912261282400">(022) 61282400,
+                                                                        67439990</a></li>
+                                                                <li><span>Delhi</span><a href="tel:+917208820785">+91
+                                                                        7208820787 / +91 7208820785 / +91 9643662737</a>
+                                                                </li>
+                                                                <li><span>Chennai</span><a
+                                                                        href="tel:+914442179510">(044) 42179510 / 20</a>
+                                                                </li>
+                                                                <li><span>Bangalore</span><a
+                                                                        href="tel:+918041132172">(080) 41132172,
+                                                                        41609072</a></li>
+                                                                <li><span>Pune</span><a
+                                                                        href="tel:+919136117252">+919136117252, +91
+                                                                        8855883831</a></li>
+                                                                <li><span>Kolkata</span><a href="tel:+919007160166">+91
+                                                                        9007160166</a></li>
+                                                                <li><span>Ahmedabad</span><a
+                                                                        href="tel:+917940028694">(079) 40028694 / 95</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-12 col-md-5 col-lg-4 p-0">
+                                                    <div class="bgimg">
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center bottomBtn">
+                                                            <a href="#" class="whitebgbtn">View Brochure</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item d-block d-md-none">
+                                <a class="nav-link" href="#"><span class="nav-icon mb-icon">
+                                        <img src="images/airline/menu-icon/mobile/cart.svg" alt=""
+                                            class="filter-red"></span>
+                                    My Cart<span class="cart_items_count">0</span></a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">
+                                    <span class="nav-icon"><img src="images/airline/menu-icon/offers.svg" alt=""
+                                            class="filter-red"></span>
+                                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/offers.svg" alt=""
+                                            class="filter-red"></span>
+                                    Blog
+                                </a>
+                            </li>
+                            <li class="nav-item  d-block d-md-none mt-5 mx-4 text-center login-mobilebtn">
+                                <a href="#" class="redBtn w-100 m-auto d-flex justify-content-center">Login</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- END Mega Menu HTML -->
+    </header>
+    <!-- Header Ends -->
+    <link href="css/swiss-style.css" rel="stylesheet" type="text/css"> <!--airline css-->
+    <link href="css/jignasu.css" rel="stylesheet" type="text/css"> <!--airline css-->
+    <link href="css/jquery.autocomplete.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/meghamenu.css">
+
+    <!--airline css-->
+
+
+    <!--content holder start-->
+    <div class="cd-main-content">
+        <div class="container-fluid main_content_container">
+            <!--sw-main-content start-->
+            <div class="sw-main-content sw-main-content2">
+                <!--e-swisscontent start-->
+                <div class="container innersection_Container e-swisscontent">
+
+                    <!--ROW START-->
+                    <div class="row">
+                        <div class="col-12">
+
+                            <div class="title mb-0">
+                                <h1 class="font-bold mb-2">Itinerary - 7 Nights / 8 Days</h1>
+                            </div>
+
+                            <div class="itinerary-pageContent">
+                                <ul class="plain-tab mt-3 stikcy-tab pt-4 pb-3" id="myTab" role="tablist">
+                                    <li class="" role="presentation">
+                                        <button class="plain-tab-link active" id="itinerary-tab" data-bs-toggle="tab"
+                                            data-bs-target="#home" type="button" role="tab" aria-controls="home"
+                                            aria-selected="true">Itinerary</button>
+                                    </li>
+                                    <li class="" role="presentation">
+                                        <button class="plain-tab-link" id="faqs" data-bs-toggle="tab" data-bs-target="#profile"
+                                            type="button" role="tab" aria-controls="profile" aria-selected="false">FAQs</button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content p-0" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                        aria-labelledby="itinerary-tab">
+                                        <div class="itinerary-section">
+                                            <div class="itinerary-left-sticky">
+                                                <div class="custom-card">
+                                                    <div class="custom-card-title">Day Plan</div>
+                                                    <div class="custom-card-body">
+                                                        <div class="itineraryTimeline-left">
+                                                            <ul>
+                                                                <span class="default-line"></span>
+                                                                <span class="draw-line"></span>
+                                                                <li>
+                                                                    <div>Day 1</div>
+                                                                </li>
+                                                                <li>
+                                                                    <div>Day 2</div>
+                                                                </li>
+                                                                <li>
+                                                                    <div>Day 3</div>
+                                                                </li>
+                                                                <li>
+                                                                    <div>Day 4</div>
+                                                                </li>
+                                                                <li>
+                                                                    <div>Day 5</div>
+                                                                </li>
+                                                                <li>
+                                                                    <div>Day 6</div>
+                                                                </li>
+                                                                <li>
+                                                                    <div>Day 7</div>
+                                                                </li>
+                                                                <li>
+                                                                    <div>Day 8</div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="itineraryTimeline-right">
+                                                <ul>
+                                                    <span class="default-line"></span>
+                                                    <span class="draw-line"></span>
+                                                    <li>
+                                                        <div class="custom-card">
+                                                            <div class="custom-card-title">Day 1</div>
+                                                            <div class="custom-card-body p-0">
+                                                                <div class="journey-content grid-2">
+                                                                    <div>
+                                                                        <div class="journey-content-title">
+                                                                            <h6>Morning</h6>
+                                                                        </div>
+                                                                        <div class="d-flex">
+                                                                            <div class="journey-content-icon me-3">
+                                                                                <img src="images/airline/itinerary-page/icon-plane.svg" alt="">
+                                                                            </div>
+                                                                            <p class="m-0">Arrive in Zurich airport. Check in to your hotel.</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div>
+                                                                        <div class="journey-content-title">
+                                                                            <h6>Evening</h6>
+                                                                            <label class="bordered-label ms-2">INCLUDED</label>
+                                                                            <button class="link-text ms-auto">Change</button>
+                                                                        </div>
+                                                                        <div class="d-flex">
+                                                                            <div class="journey-content-img me-3">
+                                                                                <img src="images/airline/itinerary-page/img-1.png" alt="" class="img-popover">
+                                                                            </div>
+                                                                            <p class="m-0">Arrive in Zurich airport. Check in to your hotel.</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="custom-card">
+                                                            <div class="custom-card-title">Day 2</div>
+                                                            <div class="custom-card-body">
+                                                                <div class="journey-content">
+                                                                    <div>
+                                                                        <div class="journey-content-title">
+                                                                            <h6>Full Day</h6>
+                                                                            <label class="bordered-label ms-2">Recommended</label>
+                                                                            <button class="link-text ms-auto">Click to Include</button>
+                                                                        </div>
+                                                                        <div class="d-flex">
+                                                                            <div class="journey-content-img me-4">
+                                                                                <img src="images/airline/itinerary-page/img-1.png" alt="" class="img-popover">
+                                                                            </div>
+                                                                            <p class="m-0">Visit Matterhorn, the most photographed mountain in the world. The Matterhorn glacier paradise is the highest summer ski region in Europe and is open 365 days a year.</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="custom-card">
+                                                            <div class="custom-card-title">Day 3</div>
+                                                            <div class="custom-card-body p-0">
+                                                                <div class="journey-content grid-2">
+                                                                    <div>
+                                                                        <div class="journey-content-title">
+                                                                            <h6>Morning</h6>
+                                                                            <button class="link-text ms-auto">Change</button>
+                                                                        </div>
+                                                                        <div class="d-flex">
+                                                                            <div class="journey-content-img me-3">
+                                                                                <img src="images/airline/itinerary-page/img-1.png" alt="" class="img-popover">
+                                                                            </div>
+                                                                            <p class="m-0">Travel to Grindelwald and upto Grindelwald First to experience the most exciting descent ever. Start with the First Glider or First Glider Flyer zipping through the air at speeds of up to 84 kms/hr. Then continue by your mountain cart and finally your trotti bike back to the base.</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div>
+                                                                        <div class="journey-content-title">
+                                                                            <h6>Evening</h6>
+                                                                            <button class="bordered-label ms-auto">+Add Activity</button>
+                                                                        </div>
+                                                                        <div class="d-flex">
+                                                                            <div class="journey-content-icon me-3">
+                                                                                <img src="images/airline/itinerary-page/icon-evening.svg" alt="">
+                                                                            </div>                                                                            
+                                                                            <p class="m-0">Spend the evening free at leisure to roam around on your own</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="custom-card">
+                                                            <div class="custom-card-title">Day 4</div>
+                                                            <div class="custom-card-body">
+                                                                <div class="journey-content">
+                                                                    <div>
+                                                                        <div class="journey-content-title">
+                                                                            <h6>Full Day</h6>
+                                                                            <label class="bordered-label ms-2">Recommended</label>
+                                                                            <button class="link-text ms-auto">Change</button>
+                                                                        </div>
+                                                                        <div class="d-flex">
+                                                                            <div class="journey-content-img me-4">
+                                                                                <img src="images/airline/itinerary-page/img-1.png" alt="" class="img-popover">
+                                                                            </div>
+                                                                            <p class="m-0">Visit Matterhorn, the most photographed mountain in the world. The Matterhorn glacier paradise is the highest summer ski region in Europe and is open 365 days a year.</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="custom-card">
+                                                            <div class="custom-card-title">Day 5</div>
+                                                            <div class="custom-card-body p-0">
+                                                                <div class="journey-content grid-2">
+                                                                    <div>
+                                                                        <div class="journey-content-title">
+                                                                            <h6>Morning</h6>
+                                                                            <button class="link-text ms-auto">Change</button>
+                                                                        </div>
+                                                                        <div class="d-flex">
+                                                                            <div class="journey-content-img me-3">
+                                                                                <img src="images/airline/itinerary-page/img-1.png" alt="" class="img-popover">
+                                                                            </div>
+                                                                            <p class="m-0">Travel to Grindelwald and upto Grindelwald First to experience the most exciting descent ever. Start with the First Glider or First Glider Flyer zipping through the air at speeds of up to 84 kms/hr. Then continue by your mountain cart and finally your trotti bike back to the base.</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div>
+                                                                        <div class="journey-content-title">
+                                                                            <h6>Evening</h6>
+                                                                            <button class="bordered-label ms-auto">+Add Activity</button>
+                                                                        </div>
+                                                                        <div class="d-flex">
+                                                                            <div class="journey-content-icon me-3">
+                                                                                <img src="images/airline/itinerary-page/icon-evening.svg" alt="">
+                                                                            </div>                                                                            
+                                                                            <p class="m-0">Enjoy your day at leisure.</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="custom-card">
+                                                            <div class="custom-card-title">Day 6</div>
+                                                            <div class="custom-card-body">
+                                                                <div class="journey-content">
+                                                                    <div>
+                                                                        <div class="journey-content-title">
+                                                                            <h6>Full Day</h6>
+                                                                            <label class="bordered-label ms-2">Recommended</label>
+                                                                            <button class="bordered-label ms-auto">+Add Activity</button>
+                                                                        </div>
+                                                                        <div class="d-flex">
+                                                                            <div class="journey-content-img me-4">
+                                                                                <img src="images/airline/itinerary-page/img-1.png" alt="" class="img-popover">
+                                                                            </div>
+                                                                            <p class="m-0">Mt Titlis - World's first revolving cable car Rotair. Ice Flyer chair lift, Titlis Cliff Walk and other attractions.</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="custom-card">
+                                                            <div class="custom-card-title">Day 7</div>
+                                                            <div class="custom-card-body">
+                                                                <div class="journey-content">
+                                                                    <div>
+                                                                        <div class="journey-content-title">
+                                                                            <h6>Full Day</h6>
+                                                                            <label class="bordered-label ms-2">Recommended</label>
+                                                                            <button class="bordered-label ms-auto">+Add Activity</button>
+                                                                        </div>
+                                                                        <div class="d-flex">
+                                                                            <div class="journey-content-icon me-3">
+                                                                                <img src="images/airline/itinerary-page/icon-sun.svg" alt="">
+                                                                            </div>
+                                                                            <p class="m-0">Visit Montreux, the beautiful town by the lake. Visit Chillon Castle, perched on a small island on Lac Lehman also known as Lake Geneva.</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="custom-card">
+                                                            <div class="custom-card-title">Day 8</div>
+                                                            <div class="custom-card-body">
+                                                                <div class="journey-content">
+                                                                    <div>
+                                                                        <div class="journey-content-title">
+                                                                            <h6>Full Day</h6>
+                                                                            <label class="bordered-label ms-2">Recommended</label>
+                                                                        </div>
+                                                                        <div class="d-flex">
+                                                                            <div class="journey-content-icon me-3">
+                                                                                <img src="images/airline/itinerary-page/icon-sun.svg" alt="">
+                                                                            </div>
+                                                                            <p class="m-0">Make your way to the airport or continue your journey on your own.</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="itinerary-sidebar">
+                                                <div class="itinerary-sidebar-inner">
+                                                    <div class="custom-card">
+                                                        <div class="custom-card-title">
+                                                            Enter Travel Details
+                                                            <button class="link-text">Modify</button>
+                                                        </div>
+                                                        <div class="custom-card-body py-3">
+                                                            <div class="d-flex align-items-center justify-content-evenly">
+                                                                <a href=""><img src="images/airline/itinerary-page/icon-call.svg" alt=""></a>
+                                                                <a href=""><img src="images/airline/itinerary-page/icon-whatsapp.svg" alt=""></a>
+                                                                <a href=""><img src="images/airline/itinerary-page/icon-email2.svg" alt=""></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="custom-card-footer">
+                                                            <div class="d-grid">
+                                                                <button class="redBtn small">Get Trip Cost</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="my-3">
+                                                        <div class="custom-card">
+                                                            <img src="images/airline/itinerary-page/map.svg" alt="" class="w-100 img-popover">
+                                                        </div>
+                                                    </div>
+                                                    <h6 class="mt-2">Route Overview</h6>
+                                                    <div class="custom-card">
+                                                        <div class="custom-card-body pe-0">
+                                                            <ul class="route-timeline">
+                                                                <li>
+                                                                    <div>
+                                                                        <h6>1N Zurich</h6>
+                                                                        <p class="mb-0">Arriving in Zurich Airport and stay for 1 Day</p>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="route-counter">
+                                                                        <p class="mb-0">Interlaken</p>
+                                                                        <div class="number-counter">
+                                                                            <button onclick="decrement()">-</button>
+                                                                            <input id="counter" type="text" value="1 N" readonly>
+                                                                            <button onclick="increment()">+</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="faqs">
+                                        FAQs
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--ROW END-->
+                </div>
+                <!--e-swisscontent end-->
+            </div>
+            <!--sw-main-content end-->
+        </div>
+    </div>
+
+    <!--content holder end-->
+
+    <div id="imageOverlay" class="popover-overlay">
+        <div class="popup-wrapper">
+            <div class="popup-container">
+                <img id="popupImage" src="" alt="Popup Image">
+            </div>
+        </div>
+    </div>
+
+    <script src="js/slick.min.js"></script>
+    <script src="js/sliders_script.js"></script>
+    <script src="js/form_script.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.autocomplete.js" type="text/javascript"></script>
+    <script src="js/airlineCustom.js" type="text/javascript"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script> -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ion-rangeslider@2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- PAGE CONTENT HOLDER ENDS -->
+
+    </div>
+
+    <div class="clearfix"></div>
+
+    <!-- Footer Starts -->
+
+    <footer class="sw-footer">
+
+        <div class="container-fluid swissBrief d-none">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="foot_item"><img src="images/stp/swiss_logo.jpg"> A Swiss International Air Lines
+                            Company</div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="foot_item"><img src="images/stp/yrs20.jpg"> Over 2 Decades of Travel Excellence
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="foot_item"><img src="images/stp/visit_logo.jpg">Sister Concern of
+                            VisitSwitzerland.com </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="foot_item"><img src="images/stp/services.jpg"> Bouquet of Services</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer">
+            <div class="footer-top">
+                <div class="row">
+
+                    <div class="col-12 col-md-3 border-right">
+                        <div class="row">
+                            <div class="foot_head">SwissTours <i class="fa fa-plus pull-right dropdown_icon"
+                                    aria-hidden="true"></i></div>
+                            <ul class="foot_dropdown">
+                                <li><a href="about_us.html" class="fade_anim">About us</a> </li>
+                                <li><a href="partners.html" class="fade_anim">Partners</a></li>
+                                <li><a href="careers.html" class="fade_anim">Careers</a></li>
+                                <li><a href="testimonials.html" class="fade_anim">Testimonials</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- <div class="col-sm-4 col-md-3">
+                            <div class="row">
+                                <div class="foot_head">Customer Support <i class="fa fa-plus pull-right dropdown_icon" aria-hidden="true"></i></div>
+                                <ul class="foot_dropdown">
+                                    <li><a href="contact_us.html" class="fade_anim">Contact Us</a></li>
+                                    <li><a href="faqs.html" class="fade_anim">FAQs</a></li>
+                                    <li><a href="#" class="fade_anim">Sitemap</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+
+                    <div class="col-12 col-md-3 border-right px-lg-5">
+                        <div class="row">
+                            <div class="foot_head">Legal <i class="fa fa-plus pull-right dropdown_icon"
+                                    aria-hidden="true"></i></div>
+                            <ul class="foot_dropdown">
+                                <li><a href="user_agreement.html" class="fade_anim">User Agreement</a></li>
+                                <li><a href="privacy_policy.html" class="fade_anim">Privacy Policy</a></li>
+                                <li><a href="#" class="fade_anim">Verified & Secured</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 border-right px-lg-3">
+                        <div class="row">
+                            <div class="adHolder sw-adHolder">
+                                <div class="foot_head" style="text-align: center;">Accessory Partner</div>
+                                <div style="text-align: center;">
+                                    <a href="#" target="_blank">
+                                        <img src="images/airline/victorinox-logo.png" alt="victorinox logo"
+                                            class="victoximg1">
+                                        <img src="images/airline/victorinox-logo-hover.png" alt="victorinox logo"
+                                            class="victoxhoverimg">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3 ps-lg-5 mt-4 mt-md-0">
+                        <div class="row">
+                            <div class="adHolder">
+                                <div class="foot_head">Official Time Partner</div>
+                                <div class="adBlock">
+                                    <iframe src="watch/index.html" scrolling="no" frameborder="0" width="100%"
+                                        height="100%" allowtransparency="true"></iframe>
+                                    <!-- <a href=""><img src="images/tagheuer.jpg"></a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="footer-mid">
+                <a href="#"><img src="images/airline/footermid-logo.svg" alt="swiss-logo"><span>Swiss International Air
+                        Lines Company</span></a>
+            </div>
+            <div class="footer-bottom bottom">
+                <div class="row">
+
+                    <div class="col-xs-6 social">
+                        <div class="row d-flex justify-content-center">
+
+                            <!-- <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> -->
+                            <a href="https://www.instagram.com/_swisstours/" target="_blank"><i class="fa fa-instagram"
+                                    aria-hidden="true"></i></a>
+                            <a href="https://www.facebook.com/pages/Swisstours/256257954432198" target="_blank"><i
+                                    class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 copyright">
+                        <div class="row">&copy; 2023 Swisstours.com All rights reserved.</div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Ends -->
+
+
+
+
+
+    <script src="js/general.js"></script>
+    <script>
+        var items = $(".itineraryTimeline-right li"),
+            smallItems = $(".itineraryTimeline-left li"),
+            timelineHeight = $(".itineraryTimeline-right ul").height(),
+            greyLine = $('.itineraryTimeline-right .default-line'),
+            lineToDraw = $('.itineraryTimeline-right .draw-line'),
+            lastLI = $(".itineraryTimeline-right li").last().height();
+        
+        $(lineToDraw).css("height", '0');
+        $(items).first().addClass("in-view");
+        $(smallItems).first().addClass("in-view");
+        
+    
+        if (lineToDraw.length) {
+            $(window).on('scroll', function () {
+                var redLineHeight = lineToDraw.height(),
+                    greyLineHeight = greyLine.height(),
+                    windowDistance = $(window).scrollTop(),
+                    windowHeight = $(window).height() / 2,
+                    timelineDistance = $(".itineraryTimeline-right").offset().top;
+    
+                if (windowDistance >= timelineDistance - windowHeight) {
+                    line = windowDistance - timelineDistance + windowHeight;
+    
+                    if (line <= greyLineHeight) {
+                        lineToDraw.css({
+                            'height': line + 'px',
+                        });
+    
+                        // Calculate the percentage of progress
+                        var progress = line / greyLineHeight * 100;
+    
+                        // Apply the same progress to the small timeline
+                        var smallTimelineHeight = $(".itineraryTimeline-left ul").height();
+                        var smallLineToDraw = $('.itineraryTimeline-left .draw-line');
+                        var smallGreyLine = $('.itineraryTimeline-left .default-line');
+    
+                        smallLineToDraw.css({
+                            'height': (progress / 100) * smallTimelineHeight + 'px',
+                            
+                        });
+                    }
+                }
+    
+                var bottom = lineToDraw.offset().top + lineToDraw.outerHeight(true);
+                items.each(function (index) {
+                    var circlePosition = $(this).offset();
+    
+                    if (bottom > circlePosition.top) {
+                        $(this).addClass('in-view');
+                        smallItems.eq(index).addClass('in-view');
+                    } else {
+                        $(this).removeClass('in-view');
+                        smallItems.eq(index).removeClass('in-view');
+                    }
+                });
+
+            });
+            smallItems.on('click', function (event) {
+                var index = smallItems.index(this);
+                $('html, body').animate({
+                    scrollTop: items.eq(index).offset().top - 200
+                }, 0);
+            });
+        }
+
+        /////////////////////////////////////////////////////////
+        
+        $(document).ready(function() {
+            $('.img-popover').click(function() {
+            var imageSrc = $(this).attr('src');
+            showImagePopup(imageSrc);
+            });
+
+            $('#imageOverlay').click(function(event) {
+            // Check if the click is outside the popup container
+            if (!$(event.target).closest('.popup-container').length) {
+                hideImagePopup();
+            }
+            });
+        });
+
+        function showImagePopup(imageSrc) {
+            var overlay = $('#imageOverlay');
+            var popupContainer = $('.popup-container');
+            var popupImage = $('#popupImage');
+
+            // Set the image source dynamically
+            popupImage.attr('src', imageSrc);
+
+            // Display the overlay and popup container with fadeIn animation
+            overlay.fadeIn();
+            popupContainer.fadeIn();
+
+            $("body").css('overflow', 'hidden');
+        }
+
+        function hideImagePopup() {
+            var overlay = $('#imageOverlay');
+            var popupContainer = $('.popup-container');
+
+            // Hide the overlay and popup container with fadeOut animation
+            overlay.fadeOut();
+            popupContainer.fadeOut();
+
+            $("body").css('overflow', '');
+        }
+        ///////////////////////////////////////////////
+        var count = 0;
+        var counterElement = document.getElementById('counter');
+        function updateCounter() {
+            counterElement.value = count + " N";
+        }
+        function increment() {
+            count++;
+            updateCounter();
+        }
+        function decrement() {
+            if (count > 1) {
+                count--;
+                updateCounter();
+            }
+        }
+    </script>
+    
+</body>
+
+</html>
