@@ -20719,7 +20719,7 @@ table.seasonPrices {
 
 .journey_detail-btn {
     display: none !important;
-    *display: inline;
+    display: inline;
 }
 
     .journey_detail-btn:checked + label::after {
