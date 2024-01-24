@@ -8125,63 +8125,7 @@ margin-top:0!important;
       display: block;
   }
 }
-@media screen and (max-width: 768px) {
-    .sw-main-content.sw-main-content2 .herobanner.full-mobile .sw-nstpBanner.nstpBanner,
-    .sw-main-content.sw-main-content2 .herobanner.full-mobile .carousel-item,
-    .sw-main-content.sw-main-content2 .herobanner.full-mobile .carousel .carousel-inner picture img {
-        height: calc(100vh - 68px) !important;
-        max-height: none;
-    }
-    .packageSearch_wrapper .packageSearch_wrapper-inner {
-        width: 80vw;
-    }
-    .homepage .herobanner.full-mobile .sw-nstpBanner.nstpBanner .titleBox .scrolling-words-box li {
-        font-size: 1rem;
-        letter-spacing: 0.3rem;
-        height: auto;
-    }
-    .herobanner.full-mobile .scrolling-words-box ul {
-        margin: 0;
-    }
-    .herobanner.full-mobile .sw-banner_wrp .carousel-caption {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-    .herobanner.full-mobile .sw-nstpBanner.nstpBanner .titleBox h1 {
-        margin-bottom: 0.8rem !important;
-    }
-    .herobanner.full-mobile .scrolling-words-box {
-        height: auto;
-    }
-    .homepage .herobanner.full-mobile .sw-banner_wrp .carousel-caption {
-        bottom: 20px;
-    }
-    .searchDays-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 0.8rem 1rem;
-    }
-    .day-radio label {
-        height: 3.5rem;
-        display: flex;
-    }
-    .search-timeline {
-        padding: 0;
-    }
-    .packages-page .sw-guideDaySlider .slick-slide .packBox.packagePage-pcBox h3, .sw-sliderpadding .slick-slide .packBox.packagePage-pcBox h3 {
-        position: static;
-        text-align: left;
-        padding: 0;
-    }
-    .packages-page .sw-guideDaySlider .img-caption, .sw-sliderpadding .img-caption {
-        position: absolute;
-        bottom: 0;
-        margin: 0px 1.5rem 0.812rem 1.5rem;
-        padding-bottom: 0;
-    }
-    .packages-page .sw-guideDaySlider .packBox.packagePage-pcBox .sw-packOffer p, .sw-sliderpadding .packBox.packagePage-pcBox .sw-packOffer p {
-        color: white;
-    }
-}
+
 @media screen and (max-width: 767px) {
     .homepage .recomd-slider .recommand-box{
         margin-bottom:40px;
@@ -9214,6 +9158,7 @@ margin-top:0!important;
 .day-radio label:before,
 .day-radio label:after {
     position: absolute;
+    content:'';
     right: 0.3rem;
     top: 0.3rem;
     width: 0.6rem;
@@ -9303,7 +9248,63 @@ margin-top:0!important;
 }
 
 
-
+@media screen and (max-width: 768px) {
+    .sw-main-content.sw-main-content2 .herobanner.full-mobile .sw-nstpBanner.nstpBanner,
+    .sw-main-content.sw-main-content2 .herobanner.full-mobile .carousel-item,
+    .sw-main-content.sw-main-content2 .herobanner.full-mobile .carousel .carousel-inner picture img {
+        height: calc(100vh - 68px) !important;
+        max-height: none;
+    }
+    .packageSearch_wrapper .packageSearch_wrapper-inner {
+        width: 80vw;
+    }
+    .homepage .herobanner.full-mobile .sw-nstpBanner.nstpBanner .titleBox .scrolling-words-box li {
+        font-size: 1rem;
+        letter-spacing: 0.3rem;
+        height: auto;
+    }
+    .herobanner.full-mobile .scrolling-words-box ul {
+        margin: 0;
+    }
+    .herobanner.full-mobile .sw-banner_wrp .carousel-caption {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .herobanner.full-mobile .sw-nstpBanner.nstpBanner .titleBox h1 {
+        margin-bottom: 0.8rem !important;
+    }
+    .herobanner.full-mobile .scrolling-words-box {
+        height: auto;
+    }
+    .homepage .herobanner.full-mobile .sw-banner_wrp .carousel-caption {
+        bottom: 20px;
+    }
+    .searchDays-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.8rem 1rem;
+    }
+    .day-radio label {
+        height: 3.5rem;
+        display: flex;
+    }
+    .search-timeline {
+        padding: 0;
+    }
+    .packages-page .sw-guideDaySlider .slick-slide .packBox.packagePage-pcBox h3, .sw-sliderpadding .slick-slide .packBox.packagePage-pcBox h3 {
+        position: static;
+        text-align: left;
+        padding: 0;
+    }
+    .packages-page .sw-guideDaySlider .img-caption, .sw-sliderpadding .img-caption {
+        position: absolute;
+        bottom: 0;
+        margin: 0px 1.5rem 0.812rem 1.5rem;
+        padding-bottom: 0;
+    }
+    .packages-page .sw-guideDaySlider .packBox.packagePage-pcBox .sw-packOffer p, .sw-sliderpadding .packBox.packagePage-pcBox .sw-packOffer p {
+        color: white;
+    }
+}
 
 
 
