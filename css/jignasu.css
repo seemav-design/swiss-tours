@@ -168,6 +168,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    white-space: nowrap;
 }
 .custom-card .custom-card-title,
 .custom-card .custom-card-body,
@@ -213,13 +214,15 @@
 /* .journey-content.grid-2:before, .journey-content.grid-2:after {
     display: none;
 } */
-.journey-content.grid-2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.journey-content.grid-2 > div:nth-child(2) {
-    border-left: 1px solid #c6c6c6;
-}
+@media screen and (min-width: 1200px) {
+    .journey-content.grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .journey-content.grid-2 > div:nth-child(2) {
+        border-left: 1px solid #c6c6c6;
+    }
+} 
 .journey-content.grid-2 > div {
     padding: 1.5rem;
 }
@@ -400,8 +403,143 @@ img.img-popover {
     margin-bottom: 0 !important;
 }
 
+@media screen and (max-width: 1199px) {
+    .journey-content.grid-2 > div:nth-child(2) {
+        border-top: 1px solid #c6c6c6;
+    }
+    .itinerary-sidebar {
+        width: 17rem;
+        flex: 0 1 17rem;
+    }
+}
+@media screen and (min-width: 993px) {
+    .itinerary-left-trigger {
+        display: none;
+    }
+}
 @media screen and (max-width: 992px) {
     .itinerary-left-sticky {
+        transform: translateX(-100%);
+        position: fixed;
+        top: 33%;
+        left: 0;
+        background: white;
+        transition: ease all 0.3s;
+        z-index: 9999;
+    }
+    .itinerary-left-sticky.show {
+        transform: translateX(0);
+    }
+    .itinerary-left-sticky-inner {
+        position: relative;
+    }
+    .itinerary-left-trigger {
         position: absolute;
+        left: 100%;
+        background: #D9D9D9;
+        border: 0;
+        width: 1.8rem;
+        height: 3.2rem;
+        border-radius: 0 6px 6px 0;
+    }
+    .itinerary-left-trigger:before {
+        content: '';
+        height: 0.7rem;
+        width: 0.7rem;
+        left: -0.25rem;
+        top: 0.25rem;
+        transform: rotate(45deg);
+        border-width: 2px 2px 0 0;
+        border-style: solid;
+        display: inline-block;
+        position: relative;
+        vertical-align: top;
+        transition: ease all 0.3s;
+    }
+    .itinerary-left-trigger.showing:before {
+        transform: rotate(-135deg);
+        left: 0.15rem;
+    }
+    .itineraryTimeline-right {
+        margin: 0 0 2rem;
+    }
+    .plain-tab .plain-tab-link {
+        font-size: 1.1rem;
+    }
+    .itinerary-pageContent .stikcy-tab {
+        top: 50px;
+        width: calc(100% + 3rem);
+        margin-left: -1.6rem;
+        padding-left: 1.6rem;
+        padding-right: 1.6rem;
+    }
+    .itineraryTimeline-right ul li::before {
+        width: 1rem;
+        height: 1rem;
+        left: 0;
+    }
+    .itineraryTimeline-right .default-line, .itineraryTimeline-right .draw-line {
+        left: 0;
+    }
+    .itineraryTimeline-right ul li {
+        padding-left: 1.5rem;
+    }
+    .custom-card .custom-card-title, .custom-card .custom-card-body, .custom-card .custom-card-footer {
+        padding: 0.8rem 1rem;
+    }
+    .itinerary-sidebar {
+        width: 100%;
+    }
+    .itinerary-contactCTA-action, .itinerary-contactCTA-content {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: white;
+        z-index: 9999;
+    }
+    .itinerary-contactCTA-content {
+        bottom: 69px;
+        transform: translateY(100%);
+        transition: ease all 0.3s;
+    }
+    .itinerary-contactCTA-content.show {
+        transform: translateY(0%);
+    }
+    .itineraryCTA-trigger {
+        width: 2rem;
+        height: 2rem;
+        background-color: transparent;
+        border: 0;
+    }
+    .itineraryCTA-trigger:before {
+        content: '';
+        height: 0.7rem;
+        width: 0.7rem;
+        left: 0rem;
+        top: 0.5rem;
+        transform: rotate(-45deg);
+        border-width: 2px 2px 0 0;
+        border-style: solid;
+        display: inline-block;
+        position: relative;
+        vertical-align: top;
+        transition: ease all 0.3s;
+    }
+    .itineraryCTA-trigger.showing:before {
+        transform: rotate(135deg);
+        top: 0.25rem;
+    }
+    .custom-card:has(> .itinerary-contactCTA-content) {
+        border: 0;
+    }
+    .popover-overlay .popup-container {
+        width: 90%;
+    }
+    .journey-content.grid-2 > div {
+        padding: 1rem;
+    }
+    .container.innersection_Container.e-swisscontent.itinerary-main {
+        margin-top: 0 !important;
     }
 }
