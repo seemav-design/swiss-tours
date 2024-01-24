@@ -569,7 +569,7 @@
             <!--sw-main-content start-->
             <div class="sw-main-content sw-main-content2">
                 <!--e-swisscontent start-->
-                <div class="container innersection_Container e-swisscontent">
+                <div class="container innersection_Container e-swisscontent itinerary-main">
 
                     <!--ROW START-->
                     <div class="row">
@@ -580,7 +580,7 @@
                             </div>
 
                             <div class="itinerary-pageContent">
-                                <ul class="plain-tab mt-3 stikcy-tab pt-4 pb-3" id="myTab" role="tablist">
+                                <ul class="plain-tab mt-0 mt-lg-3 stikcy-tab pt-4 pb-3" id="myTab" role="tablist">
                                     <li class="" role="presentation">
                                         <button class="plain-tab-link active" id="itinerary-tab" data-bs-toggle="tab"
                                             data-bs-target="#home" type="button" role="tab" aria-controls="home"
@@ -596,38 +596,41 @@
                                         aria-labelledby="itinerary-tab">
                                         <div class="itinerary-section">
                                             <div class="itinerary-left-sticky">
-                                                <div class="custom-card">
-                                                    <div class="custom-card-title">Day Plan</div>
-                                                    <div class="custom-card-body">
-                                                        <div class="itineraryTimeline-left">
-                                                            <ul>
-                                                                <span class="default-line"></span>
-                                                                <span class="draw-line"></span>
-                                                                <li>
-                                                                    <div>Day 1</div>
-                                                                </li>
-                                                                <li>
-                                                                    <div>Day 2</div>
-                                                                </li>
-                                                                <li>
-                                                                    <div>Day 3</div>
-                                                                </li>
-                                                                <li>
-                                                                    <div>Day 4</div>
-                                                                </li>
-                                                                <li>
-                                                                    <div>Day 5</div>
-                                                                </li>
-                                                                <li>
-                                                                    <div>Day 6</div>
-                                                                </li>
-                                                                <li>
-                                                                    <div>Day 7</div>
-                                                                </li>
-                                                                <li>
-                                                                    <div>Day 8</div>
-                                                                </li>
-                                                            </ul>
+                                                <div class="itinerary-left-sticky-inner">
+                                                    <button class="itinerary-left-trigger"></button>
+                                                    <div class="custom-card">
+                                                        <div class="custom-card-title">Day Plan</div>
+                                                        <div class="custom-card-body">
+                                                            <div class="itineraryTimeline-left">
+                                                                <ul>
+                                                                    <span class="default-line"></span>
+                                                                    <span class="draw-line"></span>
+                                                                    <li>
+                                                                        <div>Day 1</div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div>Day 2</div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div>Day 3</div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div>Day 4</div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div>Day 5</div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div>Day 6</div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div>Day 7</div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div>Day 8</div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -849,20 +852,23 @@
                                             <div class="itinerary-sidebar">
                                                 <div class="itinerary-sidebar-inner">
                                                     <div class="custom-card">
-                                                        <div class="custom-card-title">
-                                                            Enter Travel Details
-                                                            <button class="link-text">Modify</button>
-                                                        </div>
-                                                        <div class="custom-card-body py-3">
-                                                            <div class="d-flex align-items-center justify-content-evenly">
-                                                                <a href=""><img src="images/airline/itinerary-page/icon-call.svg" alt=""></a>
-                                                                <a href=""><img src="images/airline/itinerary-page/icon-whatsapp.svg" alt=""></a>
-                                                                <a href=""><img src="images/airline/itinerary-page/icon-email2.svg" alt=""></a>
+                                                        <div class="itinerary-contactCTA-content">
+                                                            <div class="custom-card-title">
+                                                                Enter Travel Details
+                                                                <button class="link-text">Modify</button>
+                                                            </div>
+                                                            <div class="custom-card-body py-3">
+                                                                <div class="d-flex align-items-center justify-content-evenly">
+                                                                    <a href=""><img src="images/airline/itinerary-page/icon-call.svg" alt=""></a>
+                                                                    <a href=""><img src="images/airline/itinerary-page/icon-whatsapp.svg" alt=""></a>
+                                                                    <a href=""><img src="images/airline/itinerary-page/icon-email2.svg" alt=""></a>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                        <div class="custom-card-footer">
-                                                            <div class="d-grid">
-                                                                <button class="redBtn small">Get Trip Cost</button>
+                                                        <div class="custom-card-footer itinerary-contactCTA-action">
+                                                            <div class="d-flex align-items-center">
+                                                                <button class="redBtn small flex-grow-1">Get Trip Cost</button>
+                                                                <button class="d-lg-none ms-3 itineraryCTA-trigger"></button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1192,6 +1198,23 @@
                 updateCounter();
             }
         }
+        ///////////////////////////////////////////////
+        $(".itinerary-left-trigger").click(function(){
+            $(this).toggleClass("showing")
+            $(".itinerary-left-sticky").toggleClass("show")
+        })
+        ///////////////////////////////////////////////
+        $(document).ready(function() {
+            if (window.matchMedia('(max-width: 992px)').matches) {
+                var offsetTop = $('.itinerary-section').offset().top;
+                $('.itinerary-left-sticky').css('top', offsetTop)
+            }
+        })
+        ///////////////////////////////////////////////
+        $(".itineraryCTA-trigger").click(function(){
+            $(this).toggleClass("showing")
+            $(".itinerary-contactCTA-content").toggleClass("show")
+        })
     </script>
     
 </body>
