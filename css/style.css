@@ -96,7 +96,6 @@ a {
     }
 
     .title:after {
-        content: "";
         width: 100px;
         height: 1px;
         margin: auto;

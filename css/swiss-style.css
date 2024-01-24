@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500&display=swap');
 * {
-    font-family: 'poppinsregular';
+    font-family: 'Poppins', sans-serif;
+    font-weight:400;
 }
 :root {
     --primary-color: rgba(204, 0, 0, 1);
@@ -11,6 +13,7 @@
     --bs-nav-link-color: rgba(11, 11, 11, 1);
     --text-black2: #0B0B0B;
 }
+
 body {
     font-size: 0.875rem;
     color: var(--text-black);
@@ -20,7 +23,7 @@ body {
 }
 
 strong {
-    font-family: 'poppinssemibold';
+    font-weight: 600;
 }
 ul, li {
     margin: 0;
@@ -79,28 +82,28 @@ input:focus {
 }
 /*button*/
 /*font style*/
-@font-face {
+/* @font-face {
     font-family: 'poppinsregular';
     src: url('../fonts/poppins-regular-webfont.woff2') format('woff2'), url('../fonts/poppins-regular-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
 @font-face {
     font-family: 'poppinslight';
     src: url('../fonts/poppins-light-webfont.woff2') format('woff2'), url('../fonts/poppins-light-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: 300;
     font-style: normal;
 }
 @font-face {
     font-family: 'poppinsmedium';
     src: url('../fonts/poppins-medium-webfont.woff2') format('woff2'), url('../fonts/poppins-medium-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: 500;
     font-style: normal;
 }
 @font-face {
     font-family: 'poppinssemibold';
     src: url('../fonts/poppins-semibold-webfont.woff2') format('woff2'), url('../fonts/poppins-semibold-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: 600;
     font-style: normal;
 }
 @font-face {
@@ -114,7 +117,7 @@ input:focus {
     font-family: 'poppinsbold';
     src: url('../fonts/poppins-bold-webfont.woff2') format('woff2'),
          url('../fonts/poppins-bold-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: 700;
     font-style: normal;
 }
 @font-face {
@@ -124,12 +127,12 @@ input:focus {
     font-weight: normal;
     font-style: normal;
 
-}
+} */
 .sw-main-content .title *{
     color: #0B0B0B;
     font-size: 1.75rem;
-    font-family: 'poppinssemibold';
-    /* font-weight: 600; */
+   font-weight:600;
+   
 }
 /*button style*/
 .btn-border {
@@ -145,9 +148,9 @@ input:focus {
     padding: 0.937rem 1.062rem;
     border: 1px solid rgba(217, 217, 217, 1);
     color: var(--text-black);
-    font-family: 'poppinslight';
+    font-weight:300;
     font-size: 1.25rem;
-    /* font-weight: 300; */
+   
 }
 .whitebgbtn {
     background-color: #fff;
@@ -155,8 +158,7 @@ input:focus {
     color: var(--text-black2);
     padding: 0.437rem 0.75rem 0.437rem 0.75rem;
     border-radius: 0.625rem;
-    font-family: 'poppinsmedium';
-    /* font-weight: 500; */
+    font-weight:500;
     text-decoration: none;
 }
 .whitebgbtn:hover,.whitebgbtn:focus{
@@ -195,14 +197,22 @@ input:focus {
 .section-heading1 h2 {
     font-size: 2rem;
     color: #0B0B0B;
-    font-family: 'poppinssemibold';
-    /* font-weight: 600; */
-    margin-bottom: 0px;
+   font-weight:600;
+  margin-bottom: 0px;
     line-height: 2rem;
 }
-.sw-main-content .title:after {
-  right:auto!important;
-  width: 62px;
+
+.sw-main-content .title::after {
+    content: "";
+    right:auto!important;
+    width: 62px;
+    height: 1px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    display: block;
+    margin: auto;
+    background: rgb(204, 0, 0);
 }
 .sw-main-content .title{
     margin-bottom:1.5rem!important;
@@ -212,9 +222,8 @@ input:focus {
 }
 .section-heading2 h3 {
     font-size: 1.75rem;
-    font-family: 'poppinssemibold';
+   font-weight:600;
     color: var(--black);
-    /* font-weight: 600; */
     margin-bottom: 0.75rem;
     padding: 0;
     line-height: 2.25rem;
@@ -223,8 +232,7 @@ input:focus {
     padding: 5rem 0px 0 0;
 }
 .Fontmedium {
-    font-family: 'poppinsmedium';
-    /* font-weight: 500; */
+    font-weight:500;
 }
 .font16 {
     font-size: 1rem;
@@ -287,7 +295,7 @@ input:focus {
         }
     .sw-modal h5 {
         font-size: 1.5rem;
-        font-family: 'poppinsmedium';
+        font-weight:500;
         color: var(--black);
     }
 /*header*/
@@ -335,7 +343,7 @@ header .cd-primary-nav a {
     .top-right-menu a, .login_head a {
         font-size: 0.875rem;
         text-transform: capitalize;
-        font-family: 'poppinsmedium';
+        font-weight:500;
         color: var(--text-black);
         text-decoration: none;
     }
@@ -354,7 +362,7 @@ header .cd-primary-nav a {
     border-radius: 0.625rem;
     margin-left: 1.5rem;
     text-transform: capitalize;
-    font-family: 'poppinsmedium';
+    font-weight:500;
 }
 .sign-upbtn img {
     display: none;
@@ -388,9 +396,8 @@ header .cd-primary-nav a {
 }
 /*Shreya*/
 .sw-hometab_form .search_forms .tb-bottombtn p, .sw-hometab_form .search_forms .tb-bottombtn label, .sw-hometab_form .search_forms .tb-bottombtn span {
-    font-family: 'poppinslight';
+    font-weight:300;
     font-size: 1.25rem;
-    /* font-weight: 300; */
 }
 .sw-hometab_form.tabs_form_container .tab_container {
     padding: 0;
@@ -452,13 +459,13 @@ header .cd-primary-nav a {
     }
 .input-box {
     font-size: 2.125rem;
-    font-family: 'poppinsmedium';
+    font-weight:500;
 }
 .search_forms .form-group-input input[type="search"] {
     border: 0;
     width: 100%;
     font-size: 0.875rem;
-    font-family: 'poppinsregular';
+   font-weight:400;
     color: var(--text-black);
     margin-top: 5px;
 }
@@ -470,7 +477,7 @@ header .cd-primary-nav a {
     background-color: red;
 }
 .search_forms label {
-    font-family: 'poppinsregular';
+   font-weight:400;
     font-size: 0.875rem;
     color: var(--text-black);
 }
@@ -501,7 +508,7 @@ header .cd-primary-nav a {
 }
 .sw-hometab_form .form-group-input p {
     margin-bottom: 0;
-    font-family: 'poppinslight';
+    font-weight:300;
 }
 .search_forms .sw-hometab_form .form-group .input-group {
     border: 0;
@@ -515,10 +522,9 @@ header .cd-primary-nav a {
 }
 .sw-hometab_form .search_forms input.from-date-group::placeholder, .sw-hometab_form .search_forms .from-date-group .form-control, .sw-hometab_form .search_forms .from-date-group .form-group-input button {
     font-size: 1.5rem;
-    font-family: 'poppinsmedium';
+    font-weight:500;
     color: var(--text-black);
     padding: 0 !important;
-    /* font-weight: 500; */
     height: auto;
 }
 .sw-hometab_form input.form-control.date.form_datetime.add-date::placeholder {
@@ -565,7 +571,7 @@ header .cd-primary-nav a {
 }
 .sw-hometab_form .form-group-input > p {
     font-size: 0.875rem;
-    font-family: 'poppinsregular';
+   font-weight:400;
     color: var(--text-black);
     margin-top: 5px;
 }
@@ -664,7 +670,7 @@ header .cd-primary-nav a {
     padding-top: 0;
     padding-bottom: 0;
     padding-left: 0;
-    font-family: 'poppinsmedium';
+    font-weight:500;
 }
     .search_forms select::-ms-expand {
         display: none;
@@ -677,7 +683,7 @@ header .cd-primary-nav a {
         color: var(--text-black);
         font-size: 1rem;
         background-color: rgba(245, 245, 245, 1);
-        font-family: 'poppinsregular';
+       font-weight:400;
         padding: 0.75rem 1.875rem;
     }
 /*multi-city tab*/
@@ -693,7 +699,7 @@ header .cd-primary-nav a {
     border: 0;
     border-radius: 50%;
     font-size: 1.25rem;
-    font-family: 'poppinsregular';
+   font-weight:400;
 }
 .form-control:disabled {
     opacity: 0.3;
@@ -752,7 +758,7 @@ header .cd-primary-nav a {
     }
 .passgr-class .modal-subtitle {
     font-size: 1.5rem;
-    font-family: 'poppinsmedium';
+    font-weight:500;
     color: var(--black);
     padding: 1.25rem 0px 1.5rem 0px;
     border-top: 1px solid var(--text-black);
@@ -822,7 +828,7 @@ header .cd-primary-nav a {
     height: 56px;
     font-size: 1rem;
     padding: 1.062rem;
-    font-family: 'poppinsregular';
+   font-weight:400;
     line-height: 1.5;
     background-color: #fff;
     border: 1px solid rgba(121, 116, 126, 1);
@@ -868,7 +874,7 @@ header .cd-primary-nav a {
         height: auto;
         background: #fff;
         font-size: 0.875rem;
-        font-family: 'poppinsregular';
+       font-weight:400;
         padding: 0;
     }
 .sw-modal .input-group > .form-control:focus, .sw-modal .input-group > .form-floating:focus-within, .sw-modal .input-group > .form-select:focus {
@@ -929,20 +935,19 @@ header .cd-primary-nav a {
     .fightaboutsection .sw-packBox .sw-packContent p {
         font-size: 1rem;
         color: #0B0B0B;
-        font-family: 'poppinsmedium';
-        /* font-weight: 500; */
+        font-weight:500;
         margin: 1.187rem 0 0.75rem 0;
         text-decoration: none;
     }
     .fightaboutsection .sw-packBox .packPrice span {
         font-size: 0.875rem;
-        font-family: 'poppinsregular';
+       font-weight:400;
         flex-grow: 1;
         display: flex;
     }
     .fightaboutsection .sw-packBox .packPrice {
         font-size: 1.25rem;
-        font-family: 'poppinsmedium';
+        font-weight:500;
         /* font-weight: 500; */
         display: flex;
         justify-content: space-between;
@@ -1044,7 +1049,7 @@ header .cd-primary-nav a {
     }
 .popular-placelist .card-title {
     font-size: 1rem;
-    font-family: 'poppinsmedium';
+    font-weight:500;
     color: var(--black);
 }
 .place-location {
@@ -1060,7 +1065,7 @@ header .cd-primary-nav a {
 .place-cost {
     font-size: 0.875rem;
     color: var(--primary-color);
-    font-family: 'poppinssemibold';
+   font-weight:600;
     margin-bottom: 0;
 }
 .place-details {
@@ -1159,7 +1164,7 @@ header .cd-primary-nav a {
     font-size: 2.125rem;
     width: 100%;
     color: var(--text-black);
-    font-family: 'poppinsmedium';
+    font-weight:500;
     border-right: 0;
     margin-right: 0px;
     line-height: 52px;
@@ -1250,7 +1255,7 @@ input.countries-input:focus-visible {
     width: 70%;
 }
 .country-inputtext span {
-    font-family: 'poppinslight';
+    font-weight:300;
     border-left: 1px solid;
     padding-left: 1.25rem;
 }
@@ -1362,7 +1367,7 @@ div#ui-datepicker-div {
 }
     .filterWrap .filter-title {
         font-size: 1.5rem;
-        font-family: 'poppinsmedium';
+        font-weight:500;
         margin-bottom: 0;
         padding: 0;
     }
@@ -1378,7 +1383,7 @@ div#ui-datepicker-div {
             background: transparent;
             box-shadow: none;
             font-size: 1rem;
-            font-family: 'poppinsmedium';
+            font-weight:500;
             color: var(--text-black);
             padding: 0;
             margin-bottom: 1rem;
@@ -1407,7 +1412,7 @@ div#ui-datepicker-div {
         border: 1px solid var(--text-black);
         border-radius: 0.625rem;
         font-size: 1rem;
-        font-family: 'poppinslight';
+        font-weight:300;
     }
         .filterWrap .filterRow .form-control::placeholder {
             color: #1C1B1F;
@@ -1432,14 +1437,12 @@ div#ui-datepicker-div {
         .filterWrap .filterRow .dep-lagos li .lagos-time {
             font-size: 0.625rem;
             color: #112211;
-            font-family: 'poppinslight';
-            /* font-weight: 300; */
+            font-weight:300;
         }
         .filterWrap .filterRow .dep-lagos li .dpt-price {
             color: #112211;
             font-size: 0.75rem;
-            font-family: 'poppinsmedium';
-            /* font-weight: 500; */
+            font-weight:500;
         }
     .filterWrap .redBtn:hover {
         color: #fff;
@@ -1464,17 +1467,15 @@ div#ui-datepicker-div {
         .fight-schedulerow .tripRound .countryRound {
             margin-bottom: 0;
             font-size: 1.812rem;
-            font-family: 'poppinssemibold';
-            /* font-weight: 600; */
-            color: #1F1449;
+           font-weight:600;
+           color: #1F1449;
             display: flex;
             flex-direction: column;
         }
             .fight-schedulerow .tripRound .countryRound span {
-                font-family: 'poppinslight';
+                font-weight:300;
                 font-size: 1.062rem;
-                /* font-weight: 300; */
-                color: #9698A9;
+               color: #9698A9;
             }
 .tripmid-img {
     margin: 0px 1.5rem;
@@ -1505,9 +1506,8 @@ div#ui-datepicker-div {
 .fight-schedulerow h5 {
     font-size: 1.062rem;
     color: rgba(31, 20, 73, 1);
-    font-family: 'poppinssemibold';
-    /* font-weight: 600; */
-    margin: 0.562rem 0;
+   font-weight:600;
+  margin: 0.562rem 0;
 }
 .fight-schedulerow .fightscd {
     display: flex;
@@ -1585,8 +1585,8 @@ div#ui-datepicker-div {
     }
     .fightschdcalender .price {
         font-size: 0.75rem;
-        font-family: 'poppinslight';
-        /* font-weight: 300; */
+        font-weight:300;
+       
     }
 /*sw-booknowcard*/
 .sw-booknowcard {
@@ -1645,23 +1645,20 @@ div#ui-datepicker-div {
     }
     .bookcard-rowtop p.InR-Price {
         font-size: 1.25rem;
-        /* font-weight: 600; */
-        color: var(--primary-color);
-        font-family: 'poppinssemibold';
+       color: var(--primary-color);
+       font-weight:600;
         margin-bottom: 0;
     }
     .bookcard-rowtop .bookclass-price {
         font-size: 0.75rem;
     }
         .bookcard-rowtop .bookclass-price .classvalue {
-            font-family: 'poppinssemibold';
-            /* font-weight: 600; */
-        }
+           font-weight:600;
+         }
     .bookcard-rowtop .opertaBy {
         font-size: 0.625rem;
         color: rgba(0, 0, 0, 0.8);
-        font-family: 'poppinslight';
-        /* font-weight: 300; */
+        font-weight:300;
         flex-grow: 1;
         text-align: center;
         margin: 0;
@@ -1677,15 +1674,13 @@ div#ui-datepicker-div {
     }
 .sw-booknowcard .sw-interlogo p span {
     font-size: 0.75rem;
-    /* font-weight: 300; */
-    font-family: 'poppinslight';
+   font-weight:300;
     color: var(--text-black);
 }
 .sw-booknowcard .sw-interlogo p {
-    /* font-weight: 600; */
-    font-size: 1rem;
+   font-size: 1rem;
     color: rgba(31, 20, 73, 1);
-    font-family: 'poppinssemibold';
+   font-weight:600;
     display: flex;
     flex-direction: column;
     padding-left: 1.062rem;
@@ -1726,8 +1721,7 @@ div#ui-datepicker-div {
     font-size: 1rem;
     color: rgba(31, 20, 73, 1);
     line-height: 1.5rem;
-    font-family: 'poppinssemibold';
-    /* font-weight: 600; */
+   font-weight:600;
 }
 .roundtripmid-details .depstops {
     margin-top: 0.5rem;
@@ -1749,9 +1743,8 @@ div#ui-datepicker-div {
 }
 .roundtripmid-details .depstops .Ldep {
     color: rgba(31, 20, 73, 1);
-    font-family: 'poppinssemibold';
-    /* font-weight: 600; */
-    font-size: 0.5rem;
+   font-weight:600;
+   font-size: 0.5rem;
 }
 .roundtripmid-details .depstops .dayDep {
     font-weight: 400;
@@ -1762,9 +1755,8 @@ div#ui-datepicker-div {
     margin-top: 0.625rem;
 }
     .sw-card-dep .depstops .duration li {
-        font-family: 'poppinslight';
-        /* font-weight: 300; */
-        font-size: 0.75rem;
+        font-weight:300;
+       font-size: 0.75rem;
         color: var(--text-black);
         text-transform: uppercase;
         padding-right: 0.875rem;
@@ -1822,8 +1814,7 @@ div#ui-datepicker-div {
                     margin-right: 0.5rem;
                 }
                 .bookcardcheckin .checkinlis1 ul li span {
-                    font-family: 'poppinslight';
-                    /* font-weight: 300; */
+                    font-weight:300;
                     padding-left: 31px;
                     color: rgb(11 11 11 / 50%);
                     display: flex;
@@ -1876,9 +1867,8 @@ div#ui-datepicker-div {
         .bookcard-rowbottom .btngrp a.btn-light {
             background-color: rgba(254, 231, 235, 1);
             color: var(--primary-color);
-            font-family: 'poppinssemibold';
-            /* font-weight: 600; */
-            padding: 0.625rem 1.062rem;
+           font-weight:600;
+           padding: 0.625rem 1.062rem;
             border: 0;
         }
         .bookcard-rowbottom .btngrp a.btn.btn-border {
@@ -2121,8 +2111,7 @@ div#ui-datepicker-div {
 .headingTwo {
     font-size: 1.25rem;
     color: rgba(31, 20, 73, 1);
-    font-family: 'poppinssemibold';
-    /* font-weight: 600; */
+   font-weight:600;
 }
 .ancillaryLeft .ancillary-selectBox {
     background: rgba(245, 245, 245, 1);
@@ -2139,8 +2128,7 @@ div#ui-datepicker-div {
     .ancillaryLeft .ancillary-selectBox .selectiontitle {
         font-size: 1rem;
         color: rgba(17, 44, 84, 1);
-        font-family: 'poppinsmedium';
-        /* font-weight: 500; */
+        font-weight:500;
         margin: 0.5rem 0;
         padding: 0;
         text-transform: capitalize;
@@ -2257,15 +2245,13 @@ div#ui-datepicker-div {
 .ancillaryservicestab .contentBox1 h3 {
     font-size: 1rem;
     color: var(--primary-color);
-    font-family: 'poppinssemibold';
-    /* font-weight: 600; */
-    margin-bottom: 0.75rem;
+   font-weight:600;
+   margin-bottom: 0.75rem;
     padding: 0;
 }
 .ancillaryservicestab .contentBox1 h4 {
     font-size: 1rem;
-    font-family: 'poppinsmedium';
-    /* font-weight: 500; */
+    font-weight:500;
     margin-bottom: 0.75rem;
     text-transform: capitalize;
 }
@@ -2276,9 +2262,8 @@ div#ui-datepicker-div {
 }
 .ancillaryservicestab .contentBox1 .Inrvalue {
     font-size: 1.25rem;
-    font-family: 'poppinssemibold';
-    /* font-weight: 600; */
-    color: var(--primary-color);
+   font-weight:600;
+  color: var(--primary-color);
 }
     .ancillaryservicestab .contentBox1 .Inrvalue.disabled {
         color: rgba(217, 217, 217, 1);
@@ -2296,8 +2281,7 @@ div#ui-datepicker-div {
     }
     .ancillaryservicestab .totalpricediv .Inrtotal {
         font-size: 1.5rem;
-        font-family: 'poppinsmedium';
-        /* font-weight: 500; */
+        font-weight:500;
     }
 .Recommendedgallery {
     margin-top: 0px;
@@ -2307,8 +2291,7 @@ div#ui-datepicker-div {
     .Recommendedgallery h3 {
         font-size: 1rem;
         color: rgba(17, 44, 84, 1);
-        font-family: 'poppinsmedium';
-        /* font-weight: 500; */
+        font-weight:500;
         margin-bottom: 0.875rem;
     }
     .Recommendedgallery .Addbtn.RedborderBtn {
@@ -2342,6 +2325,10 @@ div#ui-datepicker-div {
         justify-content: center;
         align-items: flex-start;
         text-align: center;
+    }
+    .SeatSelectionleft .seatBooklist .SeatIcontype.unavailable {
+        background-color: rgba(217, 217, 217, 1);
+        background-image: none!important;
     }
         .SeatSelectionleft .seatBooklist ul li {
             width: 41px;
@@ -2395,14 +2382,12 @@ div#ui-datepicker-div {
     .SeatSelectionleft .seat-confirm p span {
         color: rgba(150, 152, 169, 1);
         font-size: 0.75rem;
-        font-family: 'poppinslight';
-        /* font-weight: 300; */
+        font-weight:300;
         flex-grow: 1;
     }
     .SeatSelectionleft .seat-confirm p {
         color: rgba(31, 20, 73, 1);
-        font-family: 'poppinsmedium';
-        /* font-weight: 500; */
+        font-weight:500;
         display: flex;
         justify-content: space-between;
         margin-bottom: 0;
@@ -2411,9 +2396,8 @@ div#ui-datepicker-div {
 .SeatSelectiondetails h4 {
     font-size: 0.875rem;
     color: rgba(17, 44, 84, 1);
-    font-family: 'poppinsmedium';
-    /* font-weight: 500; */
-    text-transform: capitalize;
+    font-weight:500;
+   text-transform: capitalize;
 }
 ul.SeatTypesinfo {
     margin: 1.5rem 0 1.375rem 0;
@@ -2466,9 +2450,8 @@ ul.SeatTypesinfo {
     }
     .SelectionSeatType li .Inrv {
         font-size: 1rem;
-        font-family: 'poppinsmedium';
-        /* font-weight: 500; */
-        margin-top: 0.25rem;
+        font-weight:500;
+       margin-top: 0.25rem;
     }
 .SelectionSeatType .SeatIcontype {
     border-radius: 0.375rem;
@@ -2487,7 +2470,7 @@ ul.SeatTypesinfo {
     background-color: rgba(254, 231, 235, 1);
 }
 .SeatIcontype.selected {
-    background-color: rgba(11, 11, 11, 1);
+    background-color: rgba(11, 11, 11, 1)!important;
 }
 .SeatIcontype.selected {
     background-image: url(../images/airline/seatselection-icons/selected.svg) !important;
@@ -2525,8 +2508,7 @@ ul.SeatTypesinfo {
     background-color: rgba(217 217 217 / 30%);
     padding: 0.562rem 1.875rem;
     color: rgba(17, 44, 84, 1);
-    font-family: 'poppinsmedium';
-    /* font-weight: 500; */
+    font-weight:500;
     font-size: 0.875rem;
     margin-bottom: 1.5rem;
 }
@@ -2565,9 +2547,8 @@ ul.SeatTypesinfo {
     }
         .Cartright .cart-add-ancillary ul li span.sprice {
             color: var(--primary-color);
-            font-family: 'poppinsmedium';
-            /* font-weight: 500; */
-            text-transform: capitalize;
+            font-weight:500;
+           text-transform: capitalize;
         }
         .Cartright .cart-add-ancillary ul li p {
             margin-bottom: 0;
@@ -2641,8 +2622,8 @@ ul.SeatTypesinfo {
             .Cartright .cardItemTotal ul li span.InrValue {
                 justify-content: flex-end;
                 color: var(--primary-color);
-                font-family: 'poppinssemibold';
-                /* font-weight: 600; */
+               font-weight:600;
+             
             }
 .Cartright .cardItemTotal {
     padding: 1.5rem 0px;
@@ -2659,7 +2640,7 @@ ul.SeatTypesinfo {
         flex-grow: 1;
         display: flex;
         font-size: 1.5rem;
-        font-family: 'poppinsmedium';
+        font-weight:500;
     }
     .Cartright .CartTotal a {
         text-decoration: none;
@@ -2685,8 +2666,7 @@ ul.SeatTypesinfo {
 /*mycartpage*/
 h1.page-heading1 {
     font-size: 2rem;
-    font-family: 'poppinsmedium';
-    /* font-weight: 500; */
+    font-weight:500;
     color: var(--primary-color);
     border: 1px solid rgba(217, 217, 217, 1);
     border-radius: 0.625rem;
@@ -2706,17 +2686,15 @@ h1.page-heading1 {
         .sw-LeftSection .page-title h3 {
             color: var(--text-black);
             font-size: 1.125rem;
-            font-family: 'poppinsmedium';
-            /* font-weight: 500; */
+            font-weight:500;
             margin: 0;
             padding: 0;
         }
 .divSwissTravelpass h2, .SwissTravelPass-content h2 {
     color: #0B0B0B;
     font-size: 1.75rem;
-    font-family: 'poppinssemibold';
-    /* font-weight: 600; */
-    margin: 0;
+   font-weight:600;
+  margin: 0;
     padding: 0;
 }
 .sw-LeftSection .page-title span {
@@ -2746,9 +2724,8 @@ h1.page-heading1 {
 .sw-LeftSection h4 {
     font-size: 1.125rem;
     color: rgba(17, 44, 84, 1);
-    font-family: 'poppinsmedium';
-    /* font-weight: 500; */
-    margin: 0;
+    font-weight:500;
+   margin: 0;
     padding: 0;
 }
 /*Sightseeingtab*/
@@ -2772,9 +2749,8 @@ h1.page-heading1 {
         align-items: center;
         font-size: 1.125rem;
         color: rgba(17, 44, 84, 1);
-        font-family: 'poppinslight';
-        /* font-weight: 300; */
-        padding: 1rem 0px;
+        font-weight:300;
+       padding: 1rem 0px;
     }
         .Sightseeingtab .nav-link span {
             margin-right: 0.75rem;
@@ -2785,9 +2761,8 @@ h1.page-heading1 {
     .Sightseeingtab .nav-tabs .nav-item.show .nav-link, .Sightseeingtab .nav-tabs .nav-link.active {
         border: 1px solid var(--primary-color);
         color: var(--primary-color);
-        font-family: 'poppinsmedium';
-        /* font-weight: 500; */
-    }
+        font-weight:500;
+       }
     .Sightseeingtab .popular-placelist li:nth-child(2n) {
         margin-right: 0;
     }
@@ -2831,9 +2806,8 @@ h1.page-heading1 {
 }
 .divSwissTravelpass .BooktravelpassForm label {
     font-size: 1rem;
-    font-family: 'poppinsmedium';
-    /* font-weight: 500; */
-    margin-bottom: 0.5rem;
+    font-weight:500;
+   margin-bottom: 0.5rem;
 }
 .divSwissTravelpass .BooktravelpassForm .form-control, .divSwissTravelpass .BooktravelpassForm select {
     border: 1px solid rgba(217, 217, 217, 1);
@@ -2873,9 +2847,8 @@ h1.page-heading1 {
 }
 .divSwissTravelpass .BooktravelpassForm .form-control::placeholder, .divSwissTravelpass .BooktravelpassForm select::placeholder {
     color: rgba(31, 20, 73, 1);
-    font-family: 'poppinslight';
-    /* font-weight: 300; */
-}
+    font-weight:300;
+   }
 .divSwissTravelpass.SwissTravelPass .BooktravelpassForm {
     padding: 0;
     background-image: linear-gradient(to right, rgb(217 217 217) 50%, rgba(255, 255, 255, 0) 10%);
@@ -2928,9 +2901,8 @@ h1.page-heading1 {
         background-color: var(--primary-color);
         border-radius: 0.625rem;
         color: #fff;
-        font-family: 'poppinsmedium';
-        /* font-weight: 500; */
-        padding: 0.5rem 1.062rem;
+        font-weight:500;
+       padding: 0.5rem 1.062rem;
     }
 .typeBtnGup .popoverbtn {
     border: 0;
@@ -2953,8 +2925,7 @@ h1.page-heading1 {
     width: 100%;
 }
 .sw-LeftSection .generalpopup h6 {
-    font-family: 'poppinssemibold';
-    /* font-weight: 600; */
+   font-weight:600;
 }
 .popover {
     display: block;
@@ -2971,8 +2942,8 @@ h1.page-heading1 {
 }
 .NoofDays.selectionContentdata h4{
     font-size:1.125rem;
-    font-family: 'poppinsmedium';
-    /* font-weight: 500; */
+    font-weight:500;
+   
 }
 .NoofDays .Btngroup {
     border: 1px solid rgba(217, 217, 217, 1);
@@ -2988,9 +2959,8 @@ h1.page-heading1 {
         display: flex;
         justify-content: center;
         font-size: 1rem;
-        font-family: 'poppinslight';
-        /* font-weight: 300; */
-        text-transform: capitalize;
+        font-weight:300;
+      text-transform: capitalize;
     }
     .NoofDays .Btngroup .radio label {
         margin-bottom: 0;
@@ -3001,8 +2971,8 @@ h1.page-heading1 {
     }
     .NoofDays .Btngroup input[type="radio"]:checked + label {
         color: var(--primary-color);
-        font-family: 'poppinsmedium';
-        /* font-weight: 500; */
+        font-weight:500;
+       
     }
     .NoofDays .Btngroup .radio:first-child {
         border-right: 1px solid var(--text-black);
@@ -3070,7 +3040,6 @@ h1.page-heading1 {
     text-decoration: none;
     padding: 2px 6px 2px 10px;
     text-transform: uppercase;
-    /* font-family: 'poppinsextrabold_italic'; */
     background: var(--primary-color);
     border-radius: 2px;
     transform: skewX(-8deg) translate(-11px, 0px);
@@ -3107,9 +3076,8 @@ h1.page-heading1 {
     }
     .tabContenttable .highlight .radio-label {
         margin-bottom: 0;
-        font-family: 'poppinsregular';
-        /* font-weight:400; */
-        color:#0B0B0B;
+       font-weight:400;
+       color:#0B0B0B;
     }
     .tabContenttable .highlight .radio input[type=radio] {
         position: absolute;
@@ -3191,8 +3159,8 @@ h1.page-heading1 {
     border-bottom: 2px dashed rgba(217, 217, 217, 1); */
     padding: 1.562rem 0;
     font-size: 1.25rem;
-    font-family: 'poppinsmedium';
-    /* font-weight: 500; */
+    font-weight:500;
+   
 }
 .divSwissTravelpass .selectionDiv .SelectionText {
     padding: 1.125rem;
@@ -3376,8 +3344,8 @@ h1.page-heading1 {
         }
             .ViewSummary-Booknowpass .Grdtotal li span {
                 flex-grow: 1;
-                font-family: 'poppinsmedium';
-                /* font-weight: 500; */
+                font-weight:500;
+               
             }
                 .ViewSummary-Booknowpass .Grdtotal li span.font14 {
                     font-size: 0.875rem;
@@ -3397,9 +3365,8 @@ h1.page-heading1 {
 .GrdtotalBottom li {
     color: #0B0B0B;
     font-size: 1rem;
-    font-family: 'poppinssemibold';
-    /* font-weight: 600; */
-    display: flex;
+   font-weight:600;
+ display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -3416,8 +3383,8 @@ h1.page-heading1 {
         flex-grow: 1;
         justify-content: flex-end;
         font-size: 2rem;
-        font-family: 'poppinslight';
-        font-weight: 300;
+        font-weight:300;
+      
     }
 .BooktravelpassForm .selectionDiv .border-bottom {
     border-bottom: none!important;
@@ -3429,7 +3396,7 @@ h1.page-heading1 {
 }
 .divSwissTravelpass .msg-checkbox .form-check-label {
     font-size: 0.95rem;
-    font-family: 'poppinsregular';
+   font-weight:400;
     margin-left: 0.5rem;
     /* width: 90%; */
 }
@@ -3457,7 +3424,7 @@ h1.page-heading1 {
 
 .divSwissTravelpass form .msg-checkbox .form-check-label {
     font-size: 0.95rem;
-    font-family: 'poppinsregular';
+   font-weight:400;
 }
 .sw-nstpBanner.nstpBanner {
     max-height: 90vh;
@@ -3469,9 +3436,8 @@ h1.page-heading1 {
 }
  .sw-nstpBanner.nstpBanner .titleBox h1 {
         font-size: 2.75rem;
-        font-family: 'poppinssemibold';
-        /* font-weight: 600; */
-        margin-bottom: 0px;
+       font-weight:600;
+      margin-bottom: 0px;
     }
     .sw-nstpBanner.nstpBanner .titleBox {
         margin: 0;
@@ -3546,8 +3512,7 @@ h1.page-heading1 {
     background-repeat: repeat-x;
     padding: 0.187rem 2.75rem 1.85rem 0px;
     font-size: 1.25rem;
-    font-family: 'poppinsmedium';
-    /* font-weight: 500; */
+    font-weight:500;
     line-height: 1.25rem;
 }
 .e-swisscontent  .divSwissTravelpass .selectionDiv.e-swissSelectionDiv .input-group.date {
@@ -3592,8 +3557,7 @@ h1.page-heading1 {
 }
     .sw-benefitsSection.benefitsSection .benefitsTable .btLeft {
         font-size: 2.125rem;
-        /* font-weight: 300; */
-        font-family: 'poppinslight';
+       font-weight:300;
         width: 40%;
     }
     .sw-benefitsSection.benefitsSection .benefitsTable .btLeft strong{
@@ -3632,8 +3596,7 @@ h1.page-heading1 {
     }
    .sw-benefitsSection.benefitsSection h2 {
         font-size: 1.5rem;
-        font-family: 'poppinsmedium';
-        font-weight: 500;
+        font-weight:500;
         margin-bottom: 0.75rem;
         padding: 0 0 1.5rem 0;
         border-bottom: 1px solid;
@@ -3653,16 +3616,14 @@ h1.page-heading1 {
 .sw-nstpAbout.nstpAbout .aboutInfo h2, .howworkSection h2 ,.aptBannerSection h2,.sw-combo-offer h2{
     font-size: 1.75rem;
     color: var(--text-black2);
-    font-family: 'poppinssemibold';
-    /* font-weight: 600; */
+   font-weight:600;
 }
 .sw-nstpAbout.nstpAbout .aboutInfo h2{
     padding:0;
 }
 .sw-nstpAbout.nstpAbout .aboutInfo h3 {
     font-size: 1.125rem;
-    font-family: 'poppinsmedium';
-    /* font-weight: 500; */
+    font-weight:500;
 }
 .howworkSection .title {
     margin-bottom: 1.5rem;
@@ -3722,8 +3683,7 @@ div#ContentPlaceHolder_aboutInfo h2 {
 }
 .sw-howworkSection .sw-hwTable.hwTable .hwItem h3 {
     font-size: 1.125rem;
-    font-family: 'poppinsmedium';
-    /* font-weight: 500; */
+    font-weight:500;
     min-height: 56px;
 }
 .sw-hwTable.hwTable .img-box {
@@ -3771,16 +3731,14 @@ div#ContentPlaceHolder_aboutInfo h2 {
     /* padding: 0; */
 }
 .sw-faqSection .title h2{
-    font-family: 'poppinssemibold';
-    /* font-weight: 600; */
-    font-size:1.75rem;
+   font-weight:600;
+  font-size:1.75rem;
 }
 .sw-faqSection .accordion-button {
    font-size: 1.125rem;
   color:var(--text-black2);
    padding:1.5rem 0px;
-   font-family: 'poppinsmedium';
-   /* font-weight: 500; */
+   font-weight:500;
 }
 .sw-faqSection .accordion-item {
     border-bottom: 1px solid #D9D9D9;
@@ -3792,6 +3750,7 @@ div#ContentPlaceHolder_aboutInfo h2 {
 .sw-faqSection .accordion-button:not(.collapsed) {
     background-color: #fff;
     box-shadow:none;
+   color: var(--primary-color);
 }
 .sw-faqSection .accordion-body,.sw-faqSection .accordion-body li {
    padding: 0;
@@ -3846,8 +3805,7 @@ div#ContentPlaceHolder_aboutInfo h2 {
 }
 .title.no-border h2{
     /* padding:0; */
-    font-family: 'poppinssemibold';
-    /* font-weight: 600; */
+   font-weight:600;
 }
 .sw-combo-offer {
     padding-bottom: 5rem;
@@ -3899,7 +3857,7 @@ div#ContentPlaceHolder_aboutInfo h2 {
 }
 .sw-combo-offer .packBox .packTitle {
     font-size: 1.5rem;
-    font-family: 'poppinssemibold';
+   font-weight:600;
     color: #fff;
     line-height: 2.25rem;
     margin-bottom: 0.312rem;
@@ -3908,9 +3866,8 @@ div#ContentPlaceHolder_aboutInfo h2 {
 .sw-combo-offer .img-caption p {
     font-size: 1.5rem;
     color: #fff;
-    font-family: 'poppinssemibold';
-    /* font-weight: 600; */
-    margin-bottom:0.75rem;
+   font-weight:600;
+   margin-bottom:0.75rem;
 }
 .sw-combo-offer .packBox:hover {
     top: 0 !important;
@@ -3933,8 +3890,7 @@ div#ContentPlaceHolder_aboutInfo h2 {
     width: 100%;
     color: rgba(17, 34, 17, 1);
     font-size: 0.875rem;
-    /* font-weight: 500; */
-    font-family: 'poppinsmedium';
+    font-weight:500;
 }
 .sw-combo-offer .packBox .packfooter:after {
     content: none;
@@ -3972,17 +3928,15 @@ position: relative;
 }
 .sw-comboOfferSlider .sw-packOffer .savetext{
     font-size:0.75rem;
-    font-family: 'poppinssemibold';
-    /* font-weight: 600; */
-    margin-bottom:0px;
+   font-weight:600;
+  margin-bottom:0px;
     color:#fff;
     text-transform: uppercase;
 }
 .sw-comboOfferSlider .combo-offerINR{
     font-size:1.125rem;
-    font-family: 'poppinssemibold';
-    /* font-weight: 600; */
-    color:#fff;
+   font-weight:600;
+  color:#fff;
 }
 .sw-main-content .slick-arrow{
     position: absolute;
@@ -4079,9 +4033,8 @@ footer.sw-footer .bottom .social a i {
     }
     footer.sw-footer .foot_head {
         font-size: 1rem;
-        font-family: 'poppinssemibold';
-        /* font-weight: 600; */
-        text-transform: capitalize;
+       font-weight:600;
+       text-transform: capitalize;
         color: #2D2E2E;
         border-bottom: 0;
         padding-bottom: 0px;
@@ -4090,9 +4043,8 @@ footer.sw-footer .bottom .social a i {
     }
     footer.sw-footer ul li {
         background: none;
-        font-family: 'poppinslight';
-        /* font-weight: 300; */
-        margin-bottom: 0.5rem;
+        font-weight:300;
+       margin-bottom: 0.5rem;
         padding-left: 0;
     }
         footer.sw-footer ul li a {
@@ -4119,8 +4071,7 @@ footer.sw-footer .bottom .social a i {
     }
         footer.sw-footer .footer-mid a {
             font-size: 1rem;
-            font-family: 'poppinslight';
-            /* font-weight: 300; */
+            font-weight:300;
             color: #fff;
             text-decoration: none;
             position: absolute;
@@ -4348,8 +4299,7 @@ footer.sw-footer .bottom .social a i {
 .herobanner .carousel-caption .boookprice p span{
     font-size:1.938rem;
     display: block;
-    font-family: 'poppinssemibold';
-    /* font-weight: 600; */
+   font-weight:600;
 }
 .packStars.star_4-5 {
     width: 5.625rem;
@@ -4379,7 +4329,7 @@ background: rgba(217,217,217,0.5);
     background: transparent!important;
     border: 1px solid rgba(217, 217, 217, 1);
     color: #fff;
-    font-family: 'poppinslight';
+    font-weight:300;
     padding: 0.812rem 3.937rem;
     font-size: 0.875rem;
     text-transform: capitalize;
@@ -4403,8 +4353,7 @@ background: rgba(217,217,217,0.5);
 }
 .recomd-slider .recommand-box .img-box .pricetag p span{
     font-size: 1.25rem;
-    font-family: 'poppinsmedium';
-    /* font-weight: 500; */
+    font-weight:500;
 }
 .recomd-slider .recommand-box .img-box:after{
 position: absolute;
@@ -4420,8 +4369,7 @@ z-index: 1;
 }
 .recomd-slider .recommand-box .img-box .img-caption h3{
     font-size:2.5rem;
-    font-family: 'poppinsbold';
-    /* font-weight: 700; */
+   font-weight:700;
 }
 .recomd-slider .recommand-box .img-box p{
     font-size: 1rem;
@@ -4477,15 +4425,13 @@ z-index: 1;
 .rev_slider .headingcaption h3 {
     font-size: 2rem;
     text-transform: capitalize;
-    font-family: 'poppinssemibold';
-    /* font-weight: 600; */
-    line-height: 2.187rem;
+   font-weight:600;
+  line-height: 2.187rem;
 }
 .rev_slider .headingcaption h3 span{
     font-size: 1.5rem;
-    font-family: 'poppinsregular';
-    /* font-weight: 400; */
-    display: block;
+   font-weight:400;
+   display: block;
     margin-top: 0.625rem;
 }
 .rev_slider .sliderBottomcaption {
@@ -4533,8 +4479,7 @@ z-index: 1;
 }
 .rev_slider .pricerightdiv p {
     font-size: 1.25rem;
-    font-family: 'poppinsmedium';
-    /* font-weight: 500; */
+    font-weight:500;
     margin: 0;
 }
 .rev_slider .slick-slider {
@@ -4733,9 +4678,8 @@ z-index: 1;
 }
 .homepage .sw-nstpBanner.nstpBanner .titleBox .scrolling-words-box li{
     font-size: 1.5rem;
-    font-family: 'poppinslight';
-    /* font-weight: 300; */
-    margin: 0;
+    font-weight:300;
+   margin: 0;
     letter-spacing: 0.437rem;
     margin-top: 0.937rem;
 }
@@ -4868,7 +4812,7 @@ opacity: 50%;
 }
 .guidesection h2{
 font-size: 2.187rem;
-font-family: 'poppinsbold';
+font-weight:700;
 /* font-weight:700; */
 line-height: 2.5rem;
 margin-bottom: 0;
@@ -4876,7 +4820,7 @@ margin-bottom: 0;
 .guidesection h2 span{
     color:var(--primary-color)!important;
     font-size:2.187rem;
-    font-family: 'poppinsbold';
+   font-weight:700;
     margin-bottom: 0;
 }
 .guidesection .section-heading1 p{
@@ -4925,16 +4869,14 @@ margin-bottom: 0;
 .sw-guideDaySlider .slick-slide h3,.sw-sliderpadding .slick-slide h3{
     font-size: 1.125rem;
     color:#fff;
-    font-family: 'poppinsmedium';
-    /* font-weight: 500; */
+    font-weight:500;
     text-decoration: none;
 }
 .sw-guideDaySlider .sw-packOffer p,.sw-sliderpadding .sw-packOffer p{
     font-size: 0.75rem;
     color:#fff;
-    font-family: 'poppinslight';
-    /* font-weight:300; */
-    display: flex;
+    font-weight:300;
+   display: flex;
     align-items: flex-end;
     flex-grow: 1;
 }
@@ -4948,8 +4890,7 @@ margin-bottom: 0;
 .sw-packOfferprice p.combo-offerINR{
     font-size: 1rem;
     color:#fff;
-    font-family: 'poppinsmedium';
-    /* font-weight: 500; */
+    font-weight:500;
 }
 .sw-packOfferprice p.cancelprice{
     text-decoration: line-through;
@@ -5012,9 +4953,8 @@ top: -0.937rem;
 }
 .packageslider .Pricedetails p{
     flex-grow: 1;
-    font-family: 'poppinslight';
-    /* font-weight: 300; */
-    opacity: 0.5;
+    font-weight:300;
+   opacity: 0.5;
     font-size:0.75rem;
     align-self: flex-end;
     margin: 0;
@@ -5032,15 +4972,14 @@ top: -0.937rem;
 }
 .packageslider .Pricedetails .pricerightdiv p{
     font-size:1rem;
-    font-family: 'poppinsbold';
+   font-weight:700;
     /* font-weight:700; */
 }
 .slidecaption p {
     margin: 0;
     font-size: 1rem;
     color: #fff;
-    font-family: 'poppinsmedium';
-    /* font-weight: 500; */
+    font-weight:500;
     margin-bottom: 0.375rem;
 }
 .packageslider .slideimg img{
@@ -5067,16 +5006,14 @@ top: -0.937rem;
     margin:0;
     font-size: 1rem;
     color:#fff;
-    font-family: 'poppinsmedium';
-    /* font-weight: 500; */
-    margin-bottom: 0.375rem;
+    font-weight:500;
+   margin-bottom: 0.375rem;
 }
 .slidecaption p.fontsize14{
     margin:0;
     font-size: 0.875rem;
     color:#fff;
-    font-family: 'poppinsregular';
-    /* font-weight: 400; */
+   font-weight:400;
 }
 .stickyContent{
     position: sticky;
@@ -5124,9 +5061,8 @@ top: -0.937rem;
 }
 .cartpage h1{
     font-size:1.75rem;
-    font-family: 'poppinssemibold';
-    /* font-weight: 600; */
-    color:var(--text-black2);
+   font-weight:600;
+   color:var(--text-black2);
 }
 .cartpage .discountOptions .DisOption .price-travellers {
     display: flex;
@@ -5136,12 +5072,23 @@ top: -0.937rem;
 }
 .cartpage .discountOptions .DisOption{
     border-radius: 0.625rem;
-    border:1px solid #D9D9D9;
+    /* border:1px solid #D9D9D9; */
     position: relative;
+    /* margin-bottom: 2.75rem; */
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+.cartpage .discountOptions .DisOption .card{
     margin-bottom: 2.75rem;
 }
 .cartpage .discountOptions .DisOption .img-box {
     position: relative;
+    height:141px;
+}
+.cartpage .discountOptions .DisOption .img-box img{
+    width:100%;
+    height: 100%;
 }
 .cartpage .discountOptions .DisOption .offers {
     position: absolute;
@@ -5154,8 +5101,7 @@ top: -0.937rem;
     box-shadow: 0.75rem 0.75rem 1.5rem 0px #00000040;
     color: var(--primary-color);
     font-size: 1rem;
-    font-family: 'poppinsmedium';
-    /* font-weight: 500; */
+    font-weight:500;
     display: inline-block;
     background: #fff;
     margin:0;
@@ -5173,18 +5119,38 @@ top: -0.937rem;
 }
 .cartpage .discountOptions .DisOption .OptionsDetails {
     padding: 1.5rem 1.5rem 1.125rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+.row.equalheight {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+}
+.row.equalheight > [class*='col-'] {
+    display: flex;
+}
+.cartpage .discountOptions > [class*='col-']{
+    margin-bottom: 2.75rem;
 }
 .cartpage .discountOptions .DisOption .OptionsDetails h4{
     font-size: 1rem;
-    font-family: 'poppinsmedium';
-    /* font-weight: 500; */
+    font-weight:500;
     margin-bottom: 0.75rem;
     line-height: 1.312rem;
-    min-height: 2.812rem;
+    /* min-height: 2.812rem; */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .cartpage .discountOptions .DisOption .OptionsDetails h4 span{
-    font-family: 'poppinslight';
-    /* font-weight: 300; */
+    font-weight:300;
 }
 .cartpage .discountOptions .DisOption .detailscontent{
     margin-bottom:2.25rem;
@@ -5199,9 +5165,8 @@ top: -0.937rem;
     margin: 0;
 }
 .cartpage .discountOptions .DisOption .detailscontent .location{
-    font-family: 'poppinslight';
-    /* font-weight: 300; */
-    font-size: 0.75rem;
+    font-weight:300;
+  font-size: 0.75rem;
 }
 .cartpage .discountOptions .DisOption .location img{
     filter: grayscale(1);
@@ -5221,9 +5186,8 @@ top: -0.937rem;
     text-decoration: line-through;
 }
 .cartpage .discountOptions .DisOption .price-travellers .cancelledprice,.cartpage .discountOptions .DisOption .price-travellers .travllercount{
-    font-family: 'poppinslight';
-    /* font-weight: 300; */
-    font-size: 0.625rem;
+    font-weight:300;
+   font-size: 0.625rem;
 }
 .cartpage .discountOptions .DisOption .locationWprice p {
     margin: 0;
@@ -5279,23 +5243,21 @@ top: -0.937rem;
 }
 .cartpage  .rightcartcontent .cartItem-right .cartTitle h2{
     font-size:1.25rem;
-    font-family: 'poppinsmedium';
-    /* font-weight: 500; */
-    text-transform: capitalize;
+    font-weight:500;
+   text-transform: capitalize;
     margin: 0;
     padding: 0;
 }
 .cartpage .cart-removeitem p{
     font-size:1rem;
-    font-family: 'poppinsmedium';
-    /* font-weight: 500; */
+    font-weight:500;
     padding:0.375rem 1.625rem;
     margin:0;
     display: flex;
 }
 .cartpage .cart-removeitem p span{
     opacity: 0.5;
-    font-family: 'poppinsregular';
+   font-weight:400;
     display: flex;
     flex-grow: 1;
     justify-content: flex-end;
@@ -5322,15 +5284,13 @@ top: -0.937rem;
 .cartpage .rightcartcontent .cart-item ul li h4{
     color:#000;
     font-size:1rem;
-    font-family: 'poppinsmedium';
-    /* font-weight: 500; */
-    margin-bottom:0.75rem;
+    font-weight:500;
+   margin-bottom:0.75rem;
    min-height:38px;
 }
 .cartpage .rightcartcontent .cart-item ul li h4 span{
-    font-family: 'poppinslight';
-    /* font-weight: 300; */
-    display: block;
+    font-weight:300;
+   display: block;
 }
 .cartpage .rightcartcontent .cart-item ul li .border-right{
     border-right:1px solid #D9D9D9
@@ -5359,8 +5319,7 @@ top: -0.937rem;
 }
 .cartpage .rightcartcontent .cart-item .cartrigtcontent p{
     font-size:1rem;
-    font-family: 'poppinsmedium';
-    /* font-weight: 500; */
+    font-weight:500;
 }
 .cartpage .rightcartcontent .cart-item .cartrigtcontent{
     display: flex;
@@ -5389,8 +5348,7 @@ top: -0.937rem;
 .cartpage .rightcartcontent .cart-item .Itemtotal h5{
     color:rgba(150, 152, 169, 1);
     font-size:1rem;
-    font-family: 'poppinslight';
-    /* font-weight: 300; */
+    font-weight:300;
     margin:0;
     display: flex;
     flex-grow: 1;
@@ -5398,9 +5356,8 @@ top: -0.937rem;
 .cartpage .rightcartcontent .cart-item .Itemtotal p{
     margin-bottom:0;
     font-size:1rem;
-    font-family: 'poppinsmedium';
-    /* font-weight: 500; */
-    color:var(--primary-color);
+    font-weight:500;
+   color:var(--primary-color);
 }
 .cartpage .rightcartcontent .PayAmt {
     display: flex;
@@ -5416,8 +5373,7 @@ top: -0.937rem;
     margin-bottom: 0;
     flex-grow: 1;
     font-size:1.5rem;
-    font-family: 'poppinsmedium';
-    /* font-weight: 500; */
+    font-weight:500;
 }
 .cartpage .rightcartcontent  .PayAmt a{
     color:#fff;
@@ -5448,15 +5404,13 @@ top: -0.937rem;
 .attractionpage .recommand-box .headingcaption h3 {
     font-size: 2rem;
     text-transform: capitalize;
-    font-family: 'poppinssemibold';
-    /* font-weight: 600; */
-    line-height: 2.187rem;
+   font-weight:600;
+  line-height: 2.187rem;
 }
 .attractionpage .recommand-box .headingcaption h3 span {
     font-size: 1.5rem;
-    font-family: 'poppinsregular';
-    /* font-weight: 400; */
-    display: block;
+   font-weight:400;
+  display: block;
     margin-top: 0.625rem;
 }
 .attractionpage .recommand-box .Pricedetails p {
@@ -5469,9 +5423,9 @@ top: -0.937rem;
     filter: brightness(0) invert(1);
     width:auto;
 }
-.attractionpage .rev_slider .slick-slide.slick-current.slick-active .hoverdetailscard, .attractionpage .rev_slider .slick-slide.slick-current.slick-active .border-btn{
+/* .attractionpage .rev_slider .slick-slide.slick-current.slick-active .hoverdetailscard, .attractionpage .rev_slider .slick-slide.slick-current.slick-active .border-btn{
 display:none;
-}
+} */
 .attractionpage  .sw-sliderpadding.sw-sliderpadding2 .slick-list {
     padding-top: 1.625rem;
 }
@@ -5493,9 +5447,8 @@ display:none;
 }
 .attractionpage .sw-sliderpadding.sw-sliderpadding2 .specialsw-packOffer p{
     font-size:1rem;
-    font-family: 'poppinsmedium';
-    /* font-weight: 500; */
-    color:#fff;
+    font-weight:500;
+   color:#fff;
     margin-bottom: 0;
 }
 /*comman caption for image*/
@@ -5520,8 +5473,7 @@ display:none;
 }
 .comman-imgcaption .Pricedetails .pricerightdiv p {
     font-size: 1.25rem;
-    font-family: 'poppinsmedium';
-    /* font-weight: 500; */
+    font-weight:500;
     margin: 0;
 }
 .comman-imgcaption  .hoverdetailscard {
@@ -5554,13 +5506,12 @@ display:none;
 .imghovercap.recommand-box .comman-imgcaption .headingcaption h3 {
     font-size: 2rem;
     text-transform: capitalize;
-    font-family: 'poppinssemibold';
-    /* font-weight: 600; */
-    line-height: 2.187rem;
+   font-weight:600;
+ line-height: 2.187rem;
 }
 .comman-imgcaption .headingcaption h3 span{
     font-size: 1.5rem;
-    font-family: 'poppinsregular';
+   font-weight:400;
 }
 .imghovercap .img-box:hover .comman-imgcaption .hoverdetailscard{
     display:block;
@@ -5574,11 +5525,11 @@ display:none;
 .cartdetails .herobanner .sw-nstpBanner.nstpBanner .titleBox h1{
     font-size:3.375rem;
     line-height: 3.5rem;
-    font-family: 'poppinssemibold';
+   font-weight:600;
 } 
 .cartdetails .herobanner .sw-nstpBanner.nstpBanner .titleBox h1 span{
     font-size: 1.5rem;
-    font-family: 'poppinsregular';
+   font-weight:400;
 }
 .cartdetails .herobanner .placename{
     font-size:1.125rem;
@@ -5589,9 +5540,8 @@ display:none;
     margin: 0;
     color: #0B0B0B;
     font-size: 1.75rem;
-    font-family: 'poppinssemibold';
-    /* font-weight: 600; */
-    display: flex;
+   font-weight:600;
+  display: flex;
     flex-grow: 1;
 }
 
@@ -5648,10 +5598,9 @@ margin-bottom:0px;
 }
 .cartdetails .fareTypeList ul.titles li{
     font-size: 18px;
-    font-family: 'poppinsmedium';
-    /* font-weight: 500; */
-    color:var(--text-black2);
-    text-transform: capitalize;
+    font-weight:500;
+   color:var(--text-black2);
+    /* text-transform: capitalize; */
     border-right:0;
     padding:0;
 }
@@ -5701,14 +5650,19 @@ span.text-decoration-line-through{
     justify-content: flex-start;
     align-items: flex-start;
 }
+.cartdetails .fareTypeList ul.greybg li:first-child::before{
+    content:none;
+}
+.cartdetails .fareTypeList ul.greybg ul li:first-child::before{
+    content:'|';
+}
 .cartdetails .fareTypeList ul li:last-child:before{
     content:none;
 }
 .customRadio .radio-label {
     margin-bottom: 0;
-    font-family: 'poppinsregular';
-    /* font-weight: 400; */
-    color: #0B0B0B;
+   font-weight:400;
+  color: #0B0B0B;
 }
 .customRadio .radio input[type=radio] {
     position: absolute;
@@ -5764,9 +5718,8 @@ span.text-decoration-line-through{
 .cartdetails .fareTypeList .quantity-number input{
     background: transparent;
     font-size: 0.875rem;
-    font-family: 'poppinssemibold';
-    /* font-weight: 600; */
-    color:var(--text-black2);
+   font-weight:600;
+   color:var(--text-black2);
     padding: 0 5px;
 }
 .cartdetails .booktopcontent .GTotalamt{
@@ -5790,6 +5743,21 @@ span.text-decoration-line-through{
     border-radius:20.6px;
     border:1px solid #D9D9D9;
 }
+ .cartdetails  .overviewSection .accordion-button::after{
+    background-color:#ddd;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    font-size: 0.875rem;
+    background-image: url(../images/airline/redarrow.svg);
+    background-size: 0.75rem;
+    background-position: center;
+    transform: rotate(-180deg);
+}
+.cartdetails  .overviewSection .accordion-button.collapsed::after {
+   transform: rotate(0deg);
+   background-image: url(../images/airline/downArrowN.svg);
+}
 .cartdetails  .overviewSection .leftcontent{
 border-right:1px solid var(--primary-color);
 display: flex;
@@ -5799,28 +5767,38 @@ height: 100%;
 .cartdetails  .overviewSection .rightcontent{
     padding-left:4.063rem;
 }
-
+path:focus {
+    outline: 0;
+}
+.clickaccordion .accordion-item {
+   border-bottom:1px solid #D9D9D9;
+    padding:0.875rem 0  0.875rem 0.938rem;
+    font-weight:300;
+    font-size:1rem;
+    line-height:24px;
+  }
+  .clickaccordion .accordion-item  .accordion-body{
+    padding-top:1rem;
+  }
 .hoveraccordion .accordion-item {
   display: flex;
   border-bottom:1px solid #D9D9D9;
   padding:0.875rem 0  0.875rem 0.938rem;
-  font-family: 'poppinslight';
-  /* font-weight: 300; */
-  font-size:1rem;
+  font-weight:300;
+ font-size:1rem;
   line-height:24px;
 }
-.hoveraccordion .accordion-item ul.list-itemscheck li{
+.hoveraccordion .accordion-item ul.list-itemscheck li,.clickaccordion .accordion-item ul.list-itemscheck li{
     margin-bottom:0.5rem;
 }
-.hoveraccordion .accordion-item ul.list-itemscheck li img{
+.hoveraccordion .accordion-item ul.list-itemscheck li img,.clickaccordion .accordion-item ul.list-itemscheck li img{
    width: 0.938rem;
    margin-right:0.313rem;
 }
-.hoveraccordion .accordion-header{
+.hoveraccordion .accordion-header,.clickaccordion .accordion-header{
     font-size:1rem;
-    font-family: 'poppinssemibold';
-    /* font-weight: 600; */
-    color:var(--primary-color);
+   font-weight:600;
+   color:var(--primary-color);
     padding:0;
     margin:0;
 }
@@ -5864,8 +5842,7 @@ ul.list-type1 li{
    
 }
 .sw-AboutJungSection .accordion-item table th b{
-    font-family: 'poppinssemibold';
-    /* font-weight: 600; */
+   font-weight:600;
 }
 .listtype3 li{
     position: relative;
@@ -5896,8 +5873,7 @@ ul.list-type1 li{
 }
 .sw-AboutJungSection .accordion-body  h3{
     font-size:16px;
-    font-family: 'poppinsmedium';
-    /* font-weight: 500; */
+    font-weight:500;
 }
 .routesTabSection .nav-pills .nav-link {
    font-size: 1.125rem;
@@ -5919,8 +5895,7 @@ ul.list-type1 li{
 .sw-ReadMore{
     color:var(--primary-color);
     font-size:1.125rem;
-    font-family: 'poppinsmedium';
-    /* font-weight: 500; */
+    font-weight:500;
     border:0;
     background:transparent;
     cursor:pointer;
@@ -5944,6 +5919,91 @@ ul.list-type1 li{
 } */
 
 /*cart-listing page css*/
+.routesTabSection  svg{
+    width:100%;
+    height:auto;
+}
+.routesTabSection .filterbright{
+    opacity: 1!important;
+   
+}
+.routesTabSection #redstk ,.routesTabSection #darkpurplestk,.routesTabSection #lightbluestk,.routesTabSection #brownstk,.routesTabSection #greystk,.routesTabSection #greystk1{
+opacity: 0.7;
+cursor: pointer;
+transform: opacity 0.3s ease-in 0s;
+}
+.swcustom-tooltip .tooltip-inner {
+background-color: #fff;
+box-shadow: 0px -4px 24px 0px rgba(0, 0, 0, 0.25);
+font-size: 0.75rem;
+}
+.routesTabSection a{
+text-decoration: none;
+}
+.routesTabSection tspan:focus {
+outline: 0;
+}
+.tooltip{
+--bs-tooltip-bg:#fff;
+ opacity: 1;
+ font-size:0.825rem;
+}
+.routesTabSection .map-popover.custom-popover .popovercontent{
+border:0;
+}
+.routesTabSection .map-popover.custom-popover {
+border:0!important;
+}
+.routesTabSection .map-popover.custom-popover p{
+margin:5px 0 0 0;
+font-size: 12px;
+color:var(--text-black2);
+}
+.routesTabSection .map-popover.custom-popover .popover-body {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background: #fff;
+box-shadow: 0px -8px 28px 0px rgba(0, 0, 0, 0.1);
+padding: 12px 6px 12px 6px;
+border-radius: 10px;
+}
+.routesTabSection .map-popover.custom-popover .popover-arrow{
+display:none;
+}
+.mapcountry-list{
+    padding:10px 0;
+    margin:10px 0;
+    border-top:1px solid #000;
+}
+.mapcountry-list ul li{
+    font-size:1rem; 
+    color:var(--text-black2);
+    margin-bottom:1.5rem;
+} 
+.mapcountry-list ul{
+    margin:2.5rem 0;
+    flex-grow: 1;
+}
+.mapcountry-list ul li a{
+    display: flex;
+    text-transform: capitalize;
+}
+.mapcountry-list ul li span{
+ border:1px solid var(--text-black2);
+ font-size:0.563rem;
+ border-radius:50%;
+ margin-right:1.5rem;
+ padding: 0.238rem 0.413rem;
+ width: 1.125rem;
+ height: 1.125rem;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ line-height: 1.125rem;
+}
+/*cart listing popup*/
 .fareRuleModal .switch {
     position: relative;
     display: inline-block;
@@ -6009,13 +6069,13 @@ ul.list-type1 li{
   .fareRuleModal .viewDetailsToggle p{
     margin-bottom: 0;
     font-size:0.75rem;
-    font-family: 'poppinslight';
+    font-weight:300;
     display: flex;
     padding-right: 1.688rem;
   }
   .fareRuleModal .modal-title{
     font-size:1rem;
-    font-family: 'poppinssemibold';
+   font-weight:600;
     color:#1F1449;
   }
   .fareRuleModal .modal-dialog,.viewbaggaeRModal .modal-dialog{
@@ -6058,7 +6118,7 @@ ul.list-type1 li{
   .fareRuleModal .vertical-tabs .nav-link{
     font-size:1rem;
     color:#1F1449;
-    font-family: 'poppinssemibold';
+   font-weight:600;
     padding: 1rem 1.5rem;
   
   }
@@ -6084,7 +6144,7 @@ ul.list-type1 li{
   }
   .fareRuleModal .vertical-tabs .nav-link span{
     font-size:12px;
-    font-family: 'poppinslight';
+    font-weight:300;
    
 }
 .fareRuleModal .vertical-tabs .nav-link.active {
@@ -6109,7 +6169,7 @@ ul.list-type1 li{
 .fareRuleModal .nav-tabs .nav-link {
    color: #180105;
    font-size: 1rem;
-   font-family: 'poppinsmedium';
+   font-weight:500;
   text-transform: capitalize;
    color:rgba(24 1 5 / 50%)
 }
@@ -6135,7 +6195,7 @@ ul.list-type1 li{
 
 }
 .fareRuleModal .adulttablist ul li label{
-    font-family: 'poppinssemibold';
+   font-weight:600;
 }
 .catagoryField .form-floating {
     position: relative;
@@ -6173,7 +6233,7 @@ ul.list-type1 li{
 .catagoryField .select-group option.custom-option {
     font-size: 0.875rem;
     color: #0B0B0B;
-    font-family: 'poppinslight';
+    font-weight:300;
    
 }
 .catagoryField .selectlistcontent h4{
@@ -6186,7 +6246,7 @@ padding: 0.75rem;
 }
 .catagoryField .selectlistcontent ul li{
     font-size:0.75rem;
-    font-family: 'poppinssemibold';
+   font-weight:600;
     margin-bottom:0.25rem;
 }
 .catagoryField .form-floating .form-select {
@@ -6195,7 +6255,7 @@ padding: 0.75rem;
     height: 56px;
     font-size: 1rem;
     padding: 1.062rem 1.4rem;
-    font-family: 'poppinsregular';
+   font-weight:400;
     line-height: 1.5;
     background-color: #fff;
     border: 1px solid #E0E0E0;
@@ -6204,13 +6264,105 @@ padding: 0.75rem;
 .catagoryField .form-floating .form-select label{
     font-size:0.875rem;
     color:#1C1B1F;
-    font-family: 'poppinssemibold';
+   font-weight:600;
 } 
-
 /*viewbaggaeRModal*/
-.checkinbaggage .checkinttext{
-    color:var(--primary-color);
+.viewbaggaeRModal .checkinbaggage .checkinttext {
+    color: var(--primary-color);
     font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+.viewbaggaeRModal .checkinbaggage{
+    background: #f6f6f6;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 1;
+    margin: 1rem;
+}
+.viewbaggaeRModal .checkinbaggage ul li{
+    list-style: disc inside;
+}
+/*cartdetails*/
+.cartdetails .counter-input {
+    width: 55%;
+    margin: auto;
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+.cartdetails .counter-input select {
+    border: 1px solid #eee;
+}
+.cartdetails .fareTypeList ul {
+   align-items: center;
+}
+.cartdetails .fareTypeList ul li ul {
+   align-items: normal;
+}
+/*about css*/
+.aboutpage .linkedinlink{
+    position: absolute;
+    right: 1.25rem;
+}
+.aboutpage .about-card img.card-img-top {
+    border:10px 100px 10px 10px;
+}
+.aboutpage .about-card .card-body{
+    margin:0.75rem 0 0 0;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+.aboutpage .about-card p.card-text {
+    min-height: 40px;
+   
+}
+.aboutpage .about-card .card{
+    padding:1.75rem 1.25rem;
+    background-color:#F5F5F5;
+    border:1px solid #F5F5F5;
+    border-radius:0.625rem;
+}
+.aboutpage .about-card .card-title {
+   font-size: 1.5rem;
+    font-weight: 800;
+}
+.aboutpage .about-card  .card-footer{
+    border:0;
+    background:transparent;
+    text-align: center;
+}
+.aboutpage .about-card  .card-footer img{
+    margin-bottom:0.625rem;
+}
+.aboutpage .about-card .col {
+    width: calc(100%/5);
+    padding-left: 0;
+}
+/*gobalparnter*/
+.globalpartnerlogo {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap:10px;
+}
+ul.globalpartnerlogo li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    padding: 5px;
+    height:100px;
+}
+ul.globalpartnerlogo li.logoend{
+    align-items: flex-end;
+}
+ul.globalpartnerlogo li img{
+    filter:grayscale(1);
+    transition:0.3ms ease-in;
+}
+ul.globalpartnerlogo li img:hover{
+    filter: none;
 }
 /*responsive css*/
 
@@ -6367,6 +6519,9 @@ padding: 0.75rem;
     justify-content: center;
     margin-top: 65px;
 }
+.herobanner .sw-banner_wrp .sw-nstpBanner.nstpBanner picture::before {
+  background-image: linear-gradient(180deg, rgba(255,255,255,1) 45%, rgba(255,255,255,0) );
+}
 }
 @media screen and (min-width: 1024px) and (max-width:1365px) {
     .sw-hometab_form .search_forms .form-group {
@@ -6435,6 +6590,9 @@ padding: 0.75rem;
     .fareTypeList .customRadio .radio{
         padding-left: 39px;
     }
+    .cartpage .discountOptions .DisOption .OptionsDetails {
+        padding: 1.5rem 1rem 1.125rem 1rem;
+    }
 }
 @media only screen and (max-width :1280px) {
     .tabContenttable .highlight li .radiocontainer {
@@ -6477,6 +6635,13 @@ padding: 0.75rem;
     }
     .herobanner .carousel-caption .whitebgbtn {
         font-size: 0.875rem;
+    }
+    .mapcountry-list ul li {
+        font-size: 0.8rem;
+    }
+    .mapcountry-list ul li span {
+       font-size: 0.563rem;
+        margin-right: 0.5rem;
     }
 }
 @media only screen and (min-width : 991px) and (max-width : 1199px) {
@@ -6558,7 +6723,7 @@ padding: 0.75rem;
     }
     .cartpage .rightcartcontent .cart-item .cartrigtcontent p {
         font-size: 0.95rem;
-        font-family: 'poppinsmedium';
+        font-weight:500;
         font-weight: 500;
     }
 }
@@ -6931,6 +7096,9 @@ box-shadow: 0.625rem 0.625rem 1.312rem 0px #00000040;
 .col-lg-9.hoveraccordion.p-0{
     padding:0 12px!important;
 }
+.cartpage .discountOptions .DisOption .img-box {
+    height: auto;
+  }
 }
 
 /*ipad resolution*/
@@ -7036,6 +7204,7 @@ box-shadow: 0.625rem 0.625rem 1.312rem 0px #00000040;
     .sw-banner_wrp .bottombannerlogos {
      margin-top: 2.5rem;
     }
+   
 }
 /*small resolution*/
 @media screen and (max-width: 990px) {
@@ -7097,7 +7266,7 @@ box-shadow: 0.625rem 0.625rem 1.312rem 0px #00000040;
         }
     .top-mobile-menu .top-title {
         font-weight: 600;
-        font-family: 'poppinsmedium';
+        font-weight:500;
         font-size: 1.125rem;
     }
     .country-inputtext span, .countries-input {
@@ -8013,7 +8182,6 @@ margin-top:0!important;
         color: white;
     }
 }
-
 @media screen and (max-width: 767px) {
     .homepage .recomd-slider .recommand-box{
         margin-bottom:40px;
@@ -8081,7 +8249,7 @@ margin-top:0!important;
         padding: 0px;
     }
     .tabContenttable .highlight .radio-label{
-        font-family: 'poppinssemibold';
+       font-weight:600;
         font-weight: 600;
     }
     .tabContenttable .highlight .passfarlist1 {
@@ -8207,8 +8375,8 @@ margin-top:0!important;
         }
         .herobanner .carousel-caption .boookprice p span{
             font-size:1.312rem;
-            font-family: 'poppinslight';
             font-weight:300;
+          
         }
         .selectionContentdata .highlight {
             padding: 1.25rem 0.562rem;
@@ -8648,6 +8816,17 @@ margin-top:0!important;
         border-bottom: 2px dashed #D9D9D9;
         border-right: 0;
     }
+    .cartpage .discountOptions .DisOption .img-box {
+       height: auto;
+       overflow: hidden;
+        border-radius: 10px 10px 0 0;
+    }
+    .mapcountry-list {
+       flex-direction: column;
+    }
+    .mapcountry-list ul {
+        margin:0;
+    }
     .sw-gallarySection .aptBannerBtns {
         grid-column: 4;
         grid-row: 2;
@@ -8714,6 +8893,9 @@ margin-top:0!important;
       .sw-ReadMore {
         font-size: 1rem;
        }
+       .cartpage .discountOptions .DisOption .OfferPrice {
+       font-size: 0.75rem;
+      }
 }
 
 @media screen and (max-width: 420px) {
@@ -8724,6 +8906,7 @@ margin-top:0!important;
     font-size: 2.025rem;
 } 
 }
+
 
 /* ////////////////////// Jignasu CSS ///////////////////////// */
 
@@ -8832,7 +9015,7 @@ margin-top:0!important;
 .search-timeline-step-item {
     cursor: pointer;
     color: var(--text-black2);
-    font-family: 'poppinsmedium';
+    font-weight:500;
     font-size: 1rem;
     position: relative;
     z-index: 1;
@@ -8842,7 +9025,7 @@ margin-top:0!important;
 }
 .search-timeline-step-item.active, .search-timeline-step-item.done {
     color: var(--primary-color);
-    font-family: 'poppinsbold';    
+   font-weight:700;    
 }
 .search-timeline-step-item:nth-child(1) {
     padding-right: 1rem;
@@ -9118,6 +9301,9 @@ margin-top:0!important;
 .modal.animate-bottom.show .modal-dialog {
     transform: none;
 }
+
+
+
 
 
 
