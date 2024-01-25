@@ -8940,6 +8940,7 @@ margin-top:0!important;
     position: relative;
 }
 .search-timeline-steps::before, .search-timeline-steps::after {
+    content: "";
     position: absolute;
     height: 2px;
     top: 50%;

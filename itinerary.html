@@ -604,29 +604,28 @@
                                                             <div class="itineraryTimeline-left">
                                                                 <ul>
                                                                     <span class="default-line"></span>
-                                                                    <span class="draw-line"></span>
-                                                                    <li>
+                                                                    <li data-index="1">
                                                                         <div>Day 1</div>
                                                                     </li>
-                                                                    <li>
+                                                                    <li data-index="2">
                                                                         <div>Day 2</div>
                                                                     </li>
-                                                                    <li>
+                                                                    <li data-index="3">
                                                                         <div>Day 3</div>
                                                                     </li>
-                                                                    <li>
+                                                                    <li data-index="4">
                                                                         <div>Day 4</div>
                                                                     </li>
-                                                                    <li>
+                                                                    <li data-index="5">
                                                                         <div>Day 5</div>
                                                                     </li>
-                                                                    <li>
+                                                                    <li data-index="6">
                                                                         <div>Day 6</div>
                                                                     </li>
-                                                                    <li>
+                                                                    <li data-index="7">
                                                                         <div>Day 7</div>
                                                                     </li>
-                                                                    <li>
+                                                                    <li data-index="8">
                                                                         <div>Day 8</div>
                                                                     </li>
                                                                 </ul>
@@ -640,6 +639,10 @@
                                                     <span class="default-line"></span>
                                                     <span class="draw-line"></span>
                                                     <li>
+                                                        <div class="journey-cityLable">Interlaken</div>
+                                                    </li>
+                                                    <li data-index="1">
+                                                        <div class="insider"></div>
                                                         <div class="custom-card">
                                                             <div class="custom-card-title">Day 1</div>
                                                             <div class="custom-card-body p-0">
@@ -672,7 +675,7 @@
                                                             </div>
                                                         </div>
                                                     </li>
-                                                    <li>
+                                                    <li data-index="2">
                                                         <div class="custom-card">
                                                             <div class="custom-card-title">Day 2</div>
                                                             <div class="custom-card-body">
@@ -694,7 +697,22 @@
                                                             </div>
                                                         </div>
                                                     </li>
+                                                    <li class="journey">
+                                                        <div class="journey-details">
+                                                            <div class="jd-icon"><img src="images/airline/itinerary-page/icon-journey.svg" alt=""></div>
+                                                            <div class="jd-content">
+                                                                <div><strong>Distance:</strong> <span>225 Km</span></div>
+                                                                <div><strong>Duration:</strong> <span>03 Hrs 56 Mins</span></div>
+                                                            </div>
+                                                            <div class="jd-action">
+                                                                <button class="ms-auto">Live Time Table</button>
+                                                            </div>
+                                                        </div>
+                                                    </li>
                                                     <li>
+                                                        <div class="journey-cityLable">Lugano</div>
+                                                    </li>
+                                                    <li data-index="3">
                                                         <div class="custom-card">
                                                             <div class="custom-card-title">Day 3</div>
                                                             <div class="custom-card-body p-0">
@@ -727,7 +745,7 @@
                                                             </div>
                                                         </div>
                                                     </li>
-                                                    <li>
+                                                    <li data-index="4">
                                                         <div class="custom-card">
                                                             <div class="custom-card-title">Day 4</div>
                                                             <div class="custom-card-body">
@@ -749,7 +767,7 @@
                                                             </div>
                                                         </div>
                                                     </li>
-                                                    <li>
+                                                    <li data-index="5">
                                                         <div class="custom-card">
                                                             <div class="custom-card-title">Day 5</div>
                                                             <div class="custom-card-body p-0">
@@ -782,7 +800,22 @@
                                                             </div>
                                                         </div>
                                                     </li>
+                                                    <li class="journey">
+                                                        <div class="journey-details">
+                                                            <div class="jd-icon"><img src="images/airline/itinerary-page/icon-journey.svg" alt=""></div>
+                                                            <div class="jd-content">
+                                                                <div><strong>Distance:</strong> <span>225 Km</span></div>
+                                                                <div><strong>Duration:</strong> <span>03 Hrs 56 Mins</span></div>
+                                                            </div>
+                                                            <div class="jd-action">
+                                                                <button class="ms-auto">Live Time Table</button>
+                                                            </div>
+                                                        </div>
+                                                    </li>
                                                     <li>
+                                                        <div class="journey-cityLable">ST Moritz</div>
+                                                    </li>
+                                                    <li data-index="6">
                                                         <div class="custom-card">
                                                             <div class="custom-card-title">Day 6</div>
                                                             <div class="custom-card-body">
@@ -804,7 +837,7 @@
                                                             </div>
                                                         </div>
                                                     </li>
-                                                    <li>
+                                                    <li data-index="7">
                                                         <div class="custom-card">
                                                             <div class="custom-card-title">Day 7</div>
                                                             <div class="custom-card-body">
@@ -826,7 +859,7 @@
                                                             </div>
                                                         </div>
                                                     </li>
-                                                    <li>
+                                                    <li data-index="8">
                                                         <div class="custom-card">
                                                             <div class="custom-card-title">Day 8</div>
                                                             <div class="custom-card-body">
@@ -891,12 +924,37 @@
                                                                     <div class="route-counter">
                                                                         <p class="mb-0">Interlaken</p>
                                                                         <div class="number-counter">
-                                                                            <button onclick="decrement()">-</button>
-                                                                            <input id="counter" type="text" value="1 N" readonly>
-                                                                            <button onclick="increment()">+</button>
+                                                                            <button class="decrement">-</button>
+                                                                            <input type="text" class="counter" value="0 N" readonly>
+                                                                            <button class="increment">+</button>
                                                                         </div>
                                                                     </div>
                                                                 </li>
+                                                                <li>
+                                                                    <div class="route-counter">
+                                                                        <p class="mb-0">Lugano</p>
+                                                                        <div class="number-counter">
+                                                                            <button class="decrement">-</button>
+                                                                            <input type="text" class="counter" value="0 N" readonly>
+                                                                            <button class="increment">+</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="route-counter">
+                                                                        <p class="mb-0">ST Moritz</p>
+                                                                        <div class="number-counter">
+                                                                            <button class="decrement">-</button>
+                                                                            <input type="text" class="counter" value="0 N" readonly>
+                                                                            <button class="increment">+</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="custom-card-footer">
+                                                            <div class="d-flex">
+                                                                <button class="bordered-btn flex-grow-1">Reverse Itinerary</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1076,70 +1134,97 @@
 
     <script src="js/general.js"></script>
     <script>
+        
         var items = $(".itineraryTimeline-right li"),
             smallItems = $(".itineraryTimeline-left li"),
             timelineHeight = $(".itineraryTimeline-right ul").height(),
             greyLine = $('.itineraryTimeline-right .default-line'),
             lineToDraw = $('.itineraryTimeline-right .draw-line'),
             lastLI = $(".itineraryTimeline-right li").last().height();
-        
+
         $(lineToDraw).css("height", '0');
         $(items).first().addClass("in-view");
         $(smallItems).first().addClass("in-view");
-        
-    
+
+        $(greyLine).css('height', timelineHeight - lastLI)
+
         if (lineToDraw.length) {
             $(window).on('scroll', function () {
                 var redLineHeight = lineToDraw.height(),
                     greyLineHeight = greyLine.height(),
                     windowDistance = $(window).scrollTop(),
-                    windowHeight = $(window).height() / 2,
+                    windowHeight = $(window).height() / 2 - 20,
                     timelineDistance = $(".itineraryTimeline-right").offset().top;
-    
+
                 if (windowDistance >= timelineDistance - windowHeight) {
                     line = windowDistance - timelineDistance + windowHeight;
-    
+
                     if (line <= greyLineHeight) {
                         lineToDraw.css({
                             'height': line + 'px',
                         });
-    
+
                         // Calculate the percentage of progress
-                        var progress = line / greyLineHeight * 100;
-    
-                        // Apply the same progress to the small timeline
-                        var smallTimelineHeight = $(".itineraryTimeline-left ul").height();
-                        var smallLineToDraw = $('.itineraryTimeline-left .draw-line');
-                        var smallGreyLine = $('.itineraryTimeline-left .default-line');
-    
-                        smallLineToDraw.css({
-                            'height': (progress / 100) * smallTimelineHeight + 'px',
-                            
-                        });
+                        // var progress = line / greyLineHeight * 100;
+
+                        // // Apply the same progress to the small timeline
+                        // var smallTimelineHeight = $(".itineraryTimeline-left ul").height();
+                        // var smallLineToDraw = $('.itineraryTimeline-left .draw-line');
+                        // var smallGreyLine = $('.itineraryTimeline-left .default-line');
+
+                        // smallLineToDraw.css({
+                        //     'height': (progress / 100) * smallTimelineHeight + 'px',
+                        // });
                     }
                 }
-    
+
                 var bottom = lineToDraw.offset().top + lineToDraw.outerHeight(true);
+
                 items.each(function (index) {
                     var circlePosition = $(this).offset();
-    
+
                     if (bottom > circlePosition.top) {
+                        var dataIndex = $(this).data("index");
                         $(this).addClass('in-view');
-                        smallItems.eq(index).addClass('in-view');
+
+                        if (dataIndex !== undefined) {
+                            var correspondingElement = $(".itineraryTimeline-left li[data-index='" + dataIndex + "']");
+                            if (correspondingElement.length > 0) {
+                                correspondingElement.addClass('in-view');
+                            }
+                        }
                     } else {
+                        var dataIndex = $(this).data("index");
                         $(this).removeClass('in-view');
-                        smallItems.eq(index).removeClass('in-view');
+
+                        if (dataIndex !== undefined) {
+                            var correspondingElement = $(".itineraryTimeline-left li[data-index='" + dataIndex + "']");
+                            if (correspondingElement.length > 0) {
+                                correspondingElement.removeClass('in-view');
+                            }
+                        }
                     }
                 });
 
+
+
             });
+
             smallItems.on('click', function (event) {
                 var index = smallItems.index(this);
-                $('html, body').animate({
-                    scrollTop: items.eq(index).offset().top - 200
-                }, 0);
+                var dataIndex = smallItems.eq(index).data("index");
+                
+                if (dataIndex !== undefined) {
+                    var correspondingElement = $(".itineraryTimeline-right li[data-index='" + dataIndex + "']");
+                    if (correspondingElement.length > 0) {
+                        var scrollToTop = correspondingElement.offset().top - 200;
+                        $('html, body').animate({
+                            scrollTop: scrollToTop
+                        }, 0);
+                    }
+                }
             });
-        }
+        }    
 
         /////////////////////////////////////////////////////////
         
@@ -1183,21 +1268,28 @@
             $("body").css('overflow', '');
         }
         ///////////////////////////////////////////////
-        var count = 0;
-        var counterElement = document.getElementById('counter');
-        function updateCounter() {
-            counterElement.value = count + " N";
-        }
-        function increment() {
-            count++;
-            updateCounter();
-        }
-        function decrement() {
-            if (count > 1) {
-                count--;
-                updateCounter();
+        $('.number-counter').each(function () {
+            var count = 0;
+            var counterElement = $(this).find('.counter');
+
+            function updateCounter() {
+                counterElement.val(count + " N");
             }
-        }
+
+            // Increment button click event
+            $(this).find('.increment').on('click', function () {
+                count++;
+                updateCounter();
+            });
+
+            // Decrement button click event
+            $(this).find('.decrement').on('click', function () {
+                if (count > 0) {
+                    count--;
+                    updateCounter();
+                }
+            });
+        });
         ///////////////////////////////////////////////
         $(".itinerary-left-trigger").click(function(){
             $(this).toggleClass("showing")
