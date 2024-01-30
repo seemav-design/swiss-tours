@@ -6371,7 +6371,7 @@ ul.globalpartnerlogo li img:hover{
         font-size: 85%;
     }
     .container{
-        max-width: 1165px;
+        max-width: 1200px;
     }
     /* .sw-nstpHighlights.nstpHighlights li {
        font-size: 1rem;
@@ -9219,8 +9219,10 @@ margin-top:0!important;
     height: 1.3rem;
     object-fit: contain;
 }
+.form-select {
+    padding: 0.8rem 1rem 0.7rem;
+}
 .input-with-icon .form-control, .input-with-icon .form-select {
-    padding: 0.8rem 1rem 0.7rem 4rem;
     border: 1px solid #d9d9d9;
     border-radius: 10px;
 }
