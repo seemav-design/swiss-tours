@@ -362,6 +362,3 @@ $('.tripBtn').on('click', function(tripName){
 
 // read more for mobile section js sneha
 
-(function () {
-        console.log("sagarw")   
-})();

@@ -1,0 +1,2036 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="theme-color" content="#000" />
+    <title>Welcome To SWISStours</title>
+    <link href="images/favicon.ico.jpg" rel="shortcut icon" />
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/menu.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-select.min.css" rel="stylesheet" type="text/css">
+   
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <!--<script src="js/bootstrap.min.js"></script>-->
+    
+    <script src="js/bootstrap-datetimepicker.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+
+</head>
+<body>
+
+      <!-- Header Starts -->
+  <header class="cd-main-header sw-mainheader">
+    <!-- Start Mega Menu HTML -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg sw-navbar">
+        <div class="w-100 flex-column align-items-start">
+            <div class="d-flex justify-content-between w-100">
+              <a class="navbar-brand" href="#"><img src="images/logo.svg" alt=""></a>
+              
+              <div class="top-right-menu d-flex flex-grow-1">
+                <div class="cart_box">
+                    <a href="#" class="cart_btn" title="View Cart"><span class="ml-4">My Cart</span><span class="cart_items_count">0</span></a>
+                </div>
+                <div class="login_head">
+                    <a href=""> <span class="txt">Login</span></a>
+                </div>
+                <div class="sign-upbtn">
+                    <a href="" class="btn"> <img src="images/airline/signup-icon.svg" alt=""><span class="txt">sign up</span></a>
+                </div>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+                  <div class="hamburger-toggle">
+                    <div class="hamburger">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          
+          <div class="collapse navbar-collapse menu_navbar w-100" id="navbar-content">
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0 flex-grow-1 mt-4" >
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">
+                    <span class="nav-icon"><img src="images/airline/Plane2.svg" alt=""></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/Plane2.svg" alt=""></span>
+                    Flights</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/hotelmenu-icon.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/hotel.svg" alt=""></span>
+                    Hotels
+                </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/aparment.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/apartment.svg" alt=""></span>
+                    Apartments</a>
+              </li>
+            
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" aria-current="page" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/package.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/package.svg" alt=""></span>
+                    Packages</a>
+                  <ul class="dropdown-menu shadow">
+                    <li class="rmm-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                   <li>
+                      <a class="dropdown-item pe-4" href="#">Air-Inclusive Packages<img src="images/airline/sw-logo2.svg" class="img-fluid menu-innericon"></a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Land Packages</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/e-swiss.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/e-swiss.svg" alt=""></span>
+                    E-Swiss Travel Pass
+                </a>
+              </li>
+              <li class="nav-item dropdown dropdown-mega position-static">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/european.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/eurailpass.svg" alt=""></span>
+                    European Rail
+                </a>
+                 <div class="dropdown-menu shadow pass">
+                    <div class="mega-content px-lg-4">
+                        <div class="container-fluid">
+                            <ul class="row">
+                                <li class="col-12 col-lg-8 py-lg-4 border-right submenu2">
+                                    <div class="rmm-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></div>
+                                    <h5><a href="#">Eurail Pass<img src="images/airline/eurailicon.svg" class="img-fluid menucion2 ms-2"></a></h5>
+                                    <ul class="list-group submenu2-content">
+                                        <li class="s2back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                         <li><a class="list-group-item" href="#">Global Pass</a></li>
+                                         <li class="one-country-pass">
+                                            <a class="list-group-item" href="#">One Country Pass</a>
+                                            <ul class="list-group eurail-pass list-group2">
+                                                <li class="s2back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                                <li class="listoverflow-mb">
+                                                    <ul>
+                                                        <li><a href="#" class="list-group-item">Eurail Austria Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Belgium Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Benelux Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Bulgaria Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Croatia Pass</a></li>
+                                                        <li><a href="#" class="list-group-item"> Eurail Czech Republic Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Denmark Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Lithuania Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Luxembourg Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Netherlands Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Norway Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Poland Pass</a></li>
+                                                    </ul>
+                                                    <ul class="sub-listgrop2">
+                                                        <li><a href="#" class="list-group-item">Eurail Portugal Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Romania Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Finland Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail France Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Germany Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Greece Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Hungary Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Italy Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Scandinavia Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Serbia Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Slovakia Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Slovenia Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Spain Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Sweden Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Turkey Pass</a></li>
+                                                        <li><a href="#" class="list-group-item"></a></li>
+                                                    </ul>
+                                                </li>
+
+                                                
+                                             </ul>
+                                        </li>
+
+                                       
+                                    </ul>
+                                </li>
+                                
+                                <li class="col-12 col-lg-4 py-lg-4 ps-md-5 submenu3">
+                                   
+                                        <h5><a href="#">Panoramic Trains in Switzerland</a></h5>
+                                        <ul class="list-group list-group3 submenu3-content">
+                                            <li class="s3-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                              <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/Berninalogo.png" alt="Berninalogo" class="img-fluid"></span>Bernina Express</a></li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/glacierlogo.png" alt="glacierlogo" class="img-fluid"></span>Glacier Express</a></li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/glacierlogo.png" alt="glacierlogo" class="img-fluid"></span>Lucerne-Interlaken</a></li>
+                                        </ul>
+                                    
+                                    <div class="bordertop"></div>
+                                           <div class="submenu4">
+                                            <h5><a href="#">Europe Point to Point tickets</a></h5>
+                                            <ul class="list-group list-group3 submenu4-content">
+                                                <li class="s3-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/londonlogo.png" alt="imglogo" class="img-fluid"></span>London to Paris</a></li>
+                                                <li>
+                                                    <a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-baselLogo.png" alt="imglogo" class="img-fluid"></span>Paris to Basel 
+                                                        <div class="d-flex justify-content-end align-items-end populricon">
+                                                            <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-zurichlogo.png" alt="imglogo" class="img-fluid"></span>Paris to Zurich</a></li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-amsLogo.png" alt="imglogo" class="img-fluid"></span>Paris to Amsterdam</a></li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-baselLogo.png" alt="imglogo" class="img-fluid"></span>London to Amsterdam</a></li>
+                                            </ul>
+                                        </div>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> 
+            </li>
+              <li class="nav-item dropdown dropdown-mega position-static">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/sightseeing.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/sightseeing.svg" alt="" class="filter-red"></span>
+                    Attractions
+                </a>
+                  <div class="dropdown-menu shadow pass">
+                    <div class="mega-content px-lg-4">
+                        <div class="container-fluid">
+                            <ul class="row">
+                                <li class="col-12 col-lg-4 py-lg-4 border-right submenu2">
+                                    <div class="rmm-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></div>
+                                    <h5><a href="#">Mountains in Switzerland</a></h5>
+                                    <ul class="list-group submenu2-content">
+                                        <li class="s2back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                        <li>
+                                            <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                                Jungfrau
+                                                <div class="d-flex justify-content-end align-items-end populricon">
+                                                    <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="list-group-item" href="#">Jungfrau VIP Gondola</a>
+                                        </li>
+                                       
+                                        <li><a class="list-group-item" href="#">Harder Kulm</a></li>
+                                        <li><a class="list-group-item" href="#">Grindelwald First</a></li>
+                                        <li><a class="list-group-item" href="#">Schilthorn</a></li>
+                                        <li><a class="list-group-item" href="#">Mt Titlis</a></li>
+                                        <li><a class="list-group-item" href="#">Mt Pilatus</a></li>
+                                        <li><a class="list-group-item" href="#">Matterhorn</a></li>
+                                        <li>
+                                            <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                                Sunnega Paradise
+                                                <div class="d-flex justify-content-end align-items-end populricon">
+                                                    <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li><a class="list-group-item" href="#">Glacier 3000</a></li>
+                                        <li><a class="list-group-item" href="#">Diavolezza</a></li>
+                                        <li><a class="list-group-item" href="#">Aletsch Arena</a></li>
+                                        <li><a class="viewAllBtn" href="#">View All</a></li>
+                                      
+                                    </ul>
+                                </li>
+                                <li class="col-12 col-lg-4 py-lg-4 border-right submenu2">
+                                    <h5><a href="#">Attractions in Switzerland</a></h5>
+                                    <ul class="list-group submenu2-content">
+                                        <li class="s2back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                        <li><a class="list-group-item" href="#">Swiss Transport Musuem</a></li>
+                                        <li>
+                                            <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                            Saphir
+                                            <div class="d-flex justify-content-end align-items-end populricon">
+                                                <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                            </div>
+                                            </a> 
+                                        </li>
+                                        <li><a class="list-group-item" href="#">Lindt</a></li>
+                                        <li><a class="list-group-item" href="#">Swissminiatur</a></li>
+                                        <li><a class="list-group-item" href="#">Meal Voucher</a></li>
+                                        <li><a class="list-group-item" href="#">Charlie Chaplin</a></li>
+                                        <li><a class="viewAllBtn" href="#">View All</a></li>
+                                    </ul>
+                                </li>
+                                <li class="col-12 col-lg-4 py-lg-4 ps-md-5 submenu2">
+                                    <h5><a href="#">Guided tours in Switzerland</a></h5>
+                                    <ul class="list-group submenu2-content">
+                                        <li class="s3-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                        <li><a class="list-group-item" href="#">Zurich tour with chocolate</a></li>
+                                        <li>
+                                            <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                                Rhine falls and Zurich city tour
+                                                <div class="d-flex justify-content-end align-items-end populricon">
+                                                    <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                </div>
+                                            </a> 
+                                        </li>
+                                        <li><a class="list-group-item" href="#">Rhine falls and Stein am Rhein</a></li>
+                                        <li><a class="list-group-item" href="#">Zurich city tour with lake cruise</a></li>
+                                        <li><a class="list-group-item" href="#">Lucerne and Titlis snow experience</a></li>
+                                    </ul>
+                                    <div class="bordertop"></div>
+                                    <div class="submenu2">
+                                    <h5><a href="#">Worldwide Attractions</a></h5>
+                                        <ul class="list-group submenu2-content">
+                                            <li class="s2back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                            <li><a class="list-group-item" href="#">London</a></li>
+                                            <li><a class="list-group-item" href="#">Munich</a></li>
+                                            <li><a class="list-group-item" href="#">Paris</a></li>
+                                            <li><a class="list-group-item" href="#">Vienna</a></li>
+                                            <li><a class="viewAllBtn" href="#">View All</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                  </div>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/mountain.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mountain.svg" alt="" class="filter-red"></span>
+                    About
+                 </a>
+                  <ul class="dropdown-menu shadow">
+                    <li class="rmm-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                    <li>
+                      <a class="dropdown-item pe-4" href="#">About Us</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Our Leadership</a></li>
+                    <li><a class="dropdown-item" href="#">Brochure</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown dropdown-mega position-static contactMegamenu">
+                  <a class="nav-link dropdown-toggle" href="#"  href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/sightseeing.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/sightseeing.svg" alt="" class="filter-red"></span>
+                    Contact
+                </a>
+                  <div class="dropdown-menu shadow">
+                    <div class="mega-content ">
+                        <div class="container-fluid">
+                            <div class="rmm-back ps-0"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></div>
+                            <div class="row listoverflow-mb">
+                                <div class="col-12 col-md-7 col-lg-8 py-lg-8">
+                                    <ul class="menuleftContact">
+                                        
+                                        <li><h5><a href="https://wa.me/919987997997?text=Hello.">WhatsApp<span class="ms-3"><img src="images/airline/whatapp.svg" alt=""></span></a></h5></li>
+                                        <li class="d-flex align-items-center"><h5>Toll Free</h5><a href="tel:18002020052" class="text-primary">1800 20 20 052</a></li>
+                                        <li>
+                                            <h5>Branch Office</h5>
+                                            <ul>
+                                                <li><span>Mumbai (Head Office)</span><a href="tel:+912261282400">(022) 61282400, 67439990</a></li>  
+                                                <li><span>Delhi</span><a href="tel:+917208820785">+91 7208820787 / +91 7208820785 / +91 9643662737</a></li>  
+                                                <li><span>Chennai</span><a href="tel:+914442179510">(044) 42179510 / 20</a></li>  
+                                                <li><span>Bangalore</span><a href="tel:+918041132172">(080) 41132172, 41609072</a></li>  
+                                                <li><span>Pune</span><a href="tel:+919136117252">+919136117252, +91 8855883831</a></li>
+                                                <li><span>Kolkata</span><a href="tel:+919007160166">+91 9007160166</a></li>  
+                                                <li><span>Ahmedabad</span><a href="tel:+917940028694">(079) 40028694 / 95</a></li>  
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-md-5 col-lg-4 p-0">
+                                    <div class="bgimg">
+                                        <div class="d-flex justify-content-between align-items-center bottomBtn">
+                                            <a href="#" class="whitebgbtn">View Brochure</a>    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+              </li>
+              <li class="nav-item d-block d-md-none">
+                 <a class="nav-link" href="#"><span class="nav-icon mb-icon">
+                    <img src="images/airline/menu-icon/mobile/cart.svg" alt="" class="filter-red"></span>
+                    My Cart<span class="cart_items_count">0</span></a>
+              </li>
+              <li class="nav-item ">
+                  <a class="nav-link" href="#">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/offers.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/offers.svg" alt="" class="filter-red"></span>
+                    Blog
+                </a>
+              </li>
+              <li class="nav-item  d-block d-md-none mt-5 mx-4 text-center login-mobilebtn">
+                <a href="#" class="redBtn w-100 m-auto d-flex justify-content-center">Login</a>
+              </li>
+          </ul>
+          
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- END Mega Menu HTML -->
+  </header>
+  <!-- Header Ends -->
+      <link href="css/swiss-style.css" rel="stylesheet" type="text/css"> <!--airline css-->
+      <link href="css/jquery.autocomplete.css" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" href="css/jquery-ui.css">
+      <link rel="stylesheet" href="css/meghamenu.css">
+ 
+    <!--airline css-->
+  
+   
+<!--content holder start-->
+<div class="cd-main-content">
+        <div class="container-fluid main_content_container pt-0">
+            <!--sw-main-content start-->
+            <div class="sw-main-content sw-main-content2 cartdetails">
+                <div class="herobanner">
+                    <!--row start-->
+                    <div class="row mbshadow">
+                        <div class="banner_wrp sw-banner_wrp">
+                        <div class="bannermilogo d-block d-md-none">
+                        <img src="images/airline/banner-midlogo.svg" alt="" class="img-fluid">
+                        </div>
+                        <!-- Carousel -->
+                        <div id="eswiss-slider" class="carousel slide" data-ride="carousel">
+                            <!-- <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#eswiss-slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#eswiss-slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#eswiss-slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div> -->
+                            <div class="carousel-inner sw-nstpBanner nstpBanner">
+                            <!--carousel-item start-->
+                            <div class="carousel-item active">
+                                <picture>
+                                <source media="(max-width:470px)" srcset="images/airline/banner/herobanenrimg2-450.webp">
+                                <img src="images/airline/cartdeatils/bannerimg1.webp" class="d-block w-100" alt="...">
+                                </picture>
+                                <div class="carousel-caption container">
+                                <div class="row align-items-center">
+                                        <div class="col-12 col-md-10">
+                                            <div class="titleBox white_txt banner_txt">
+                                                <h1 data-title="">Jungfraujoch  <span>- Top of Europe</span></h1>
+                                                <div class="d-flex w-100">
+                                                    <div class="d-flex flex-column">
+                                                        <p class="d-flex align-items-center lh-1 flex-grow-1 flex-lg-grow-0">
+                                                            <span class="packStars star_4-5"></span>
+                                                            <span class="ms-2 mt-1">4.5</span>
+                                                        </p>
+                                                        <p class="placename">Interlaken, Switzerland</p>
+                                                    </div>
+                                                    <div class="boookprice">
+                                                        <p class="d-block d-md-none text-end"><span>INR 12000</span></p>
+                                                    </div>
+                                                
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-2 p-0 boookprice pe-lg-0 float-end">
+                                            <p class="d-none d-md-block"><span>INR 11000/-</span></p>
+                                            <a href="#" class="redBtn">book now</a>
+                                        </div>
+                                        
+                                    </div>
+                            </div>
+                            </div>
+                            <!--carousel-item end-->
+                                <!--carousel-item start-->
+                            <!-- <div class="carousel-item">
+                                <picture>
+                                <img src="images/airline/banner/herobanenrimg2.webp" class="d-block w-100" alt="...">
+                                </picture>
+                                <div class="carousel-caption container">
+                                <div class="row align-items-center">
+                                        <div class="col-12 col-md-10">
+                                            <div class="titleBox white_txt banner_txt">
+                                                <h1 data-title="">Swiss Travel Pass</h1>
+                                                <div class="d-flex w-100">
+                                                    <p class="d-flex align-items-center lh-1 flex-grow-1 flex-lg-grow-0">
+                                                        <span class="packStars star_4-5"></span>
+                                                        <span class="ms-2">4.5</span>
+                                                    </p>
+                                                    <div class="boookprice">
+                                                        <p class="d-block d-md-none text-end"><span>INR 12000</span></p>
+                                                    </div>
+                                                
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-2 boookprice pe-lg-0 float-end">
+                                            <p class="d-none d-md-block">Starting From<span>INR 12000</span></p>
+                                            <a href="#" class="whitebgbtn">book now</a>
+                                        </div>
+                                            
+                                    </div>
+                                </div>
+                            </div> -->
+                            <!--carousel-item end-->
+                                <!--carousel-item start-->
+                            <!-- <div class="carousel-item">
+                                <picture>
+                                <img src="images/airline/banner/herobanenrimg2.webp" class="d-block w-100" alt="...">
+                                </picture>
+                                <div class="carousel-caption container">
+                                <div class="row align-items-center">
+                                        <div class="col-12 col-md-10">
+                                            <div class="titleBox white_txt banner_txt">
+                                                <h1 data-title="swiss travel pass">Swiss Travel Pass</h1>
+                                                <div class="d-flex w-100">
+                                                    <p class="d-flex align-items-center lh-1 flex-grow-1 flex-lg-grow-0">
+                                                        <span class="packStars star_4-5"></span>
+                                                        <span class="ms-2">4.5</span>
+                                                    </p>
+                                                    <div class="boookprice">
+                                                        <p class="d-block d-md-none text-end"><span>INR 12000</span></p>
+                                                    </div>
+                                                
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-2 boookprice pe-lg-0 float-end">
+                                            <p class="d-none d-md-block">Starting From<span>INR 12000</span></p>
+                                            <a href="#" class="whitebgbtn">book now</a>
+                                        </div>
+                                            
+                                    </div>
+                                </div>
+                            </div> -->
+                                <!--carousel-item end-->
+                            </div>
+                            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#eswiss-slider" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#eswiss-slider" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                            </button> -->
+                        
+                        </div>
+                            
+                        </div>
+                        <!-- <div class="banner_wrp sw-banner_wrp">
+                            <div class="row">
+                                <div class="slider-nav11">
+                                            <a href="https://www.swiss.com/IN/en" target="_blank">
+                                            <div class="hmSlide sw-nstpBanner nstpBanner" style='background-image: url(images/airline/banner/herobanenrimg1.webp);'>
+                                                <div class="container">
+                                                    <div class="d-flex sw-banner_caption banner_txt_wrp">
+                                                        <div class="titleBox white_txt banner_txt">
+                                                            <h1 class="text-uppercase" data-title="swiss travel pass">Swiss Travel Pass</h1>
+                                                            <div class="packStars star_5"></div>
+                                                        </div>
+                                                        <div class="d-flex flex-column">
+                                                            <img src="../html/images/airline/Swisstainable.svg" alt="Swisstainable" class="img-fluid">  
+                                                            <div class="imgDscpText mt-3">Interlaken-Luzern Express</div>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                                
+                                            </div>
+                                        </a>
+                                    
+                                        <a href="https://www.swiss.com/IN/en" target="_blank">
+                                            <div class="hmSlide sw-nstpBanner nstpBanner" style='background-image: url(images/airline/banner/herobanenrimg2.webp);'>
+                                                <div class="container">
+                                                    <div class="d-flex sw-banner_caption banner_txt_wrp">
+                                                        <div class="titleBox white_txt banner_txt">
+                                                            <h1 class="text-uppercase" data-title="swiss travel pass">Swiss Travel Pass</h1>
+                                                            <div class="packStars star_5"></div>
+                                                        </div>
+                                                        <div class="d-flex flex-column">
+                                                            <img src="../html/images/airline/Swisstainable.svg" alt="Swisstainable" class="img-fluid">  
+                                                            <div class="imgDscpText mt-3">Interlaken-Luzern Express</div>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                                
+                                            </div>
+                                        </a>
+                                        <a href="https://www.swiss.com/IN/en" target="_blank">
+                                            <div class="hmSlide sw-nstpBanner nstpBanner" style='background-image: url(images/airline/banner/herobanenrimg3.webp);'>
+                                                <div class="container">
+                                                    <div class="d-flex sw-banner_caption banner_txt_wrp">
+                                                        <div class="titleBox white_txt banner_txt">
+                                                            <h1 class="text-uppercase" data-title="swiss travel pass">Swiss Travel Pass</h1>
+                                                            <div class="packStars star_5"></div>
+                                                        </div>
+                                                        <div class="d-flex flex-column">
+                                                            <img src="../html/images/airline/Swisstainable.svg" alt="Swisstainable" class="img-fluid">  
+                                                            <div class="imgDscpText mt-3">Interlaken-Luzern Express</div>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                                
+                                            </div>
+                                        </a>
+                                        <a href="https://www.swiss.com/IN/en" target="_blank">
+                                            <div class="hmSlide sw-nstpBanner nstpBanner" style='background-image: url(images/airline/banner/herobanenrimg4.webp);'>
+                                                <div class="container">
+                                                    <div class="d-flex sw-banner_caption banner_txt_wrp">
+                                                        <div class="titleBox white_txt banner_txt">
+                                                            <h1 class="text-uppercase" data-title="swiss travel pass">Swiss Travel Pass</h1>
+                                                            <div class="packStars star_5"></div>
+                                                        </div>
+                                                        <div class="d-flex flex-column">
+                                                            <img src="../html/images/airline/Swisstainable.svg" alt="Swisstainable" class="img-fluid">  
+                                                            <div class="imgDscpText mt-3">Interlaken-Luzern Express</div>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                            
+                                            </div>
+                                        </a>
+                            </div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <!--row end-->
+                </div>
+                <!--e-swisscontent start-->
+                <div class="container innersection_Container e-swisscontent cartdetails">
+                    <!--swiss pass start-->
+                        <div class="booktopcontent tabContenttable">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-flex justify-content-between align-items-center topheading">
+                                        <h2>Book Jungfraujoch</h2>
+                                        <div class="rightdiv-calender">
+                                            <div class="selectDiv">
+                                                <div class="input-group date" id="EpassSelectiondate">
+                                                        <span class="input-group-addon">
+                                                        <i class="fa fa-calendar">
+                                                                <img src="images/airline/cartdeatils/calender.svg" alt="">
+                                                        </i>
+                                                        </span>
+                                                        <input type="text" class="form-control" placeholder="Swiss Pass Date">
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <!--faretype list start-->
+                                <!--titles ul start-->
+                                <div class="fareTypeList">
+                                    <ul class="titles">
+                                        <li>Fare Type</li>
+                                        <li>
+                                            <ul>
+                                                <li>CHF</li>
+                                                <li>INR</li>
+                                                <li>No. of PAX</li>
+                                                <li>Total</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <!--titles ul end-->
+                                    <!--ul start-->
+                                    <ul class="greybg">
+                                        <li>
+                                            <div class="customRadio">
+                                                <div class="radio">
+                                                    <input id="FrTyp1" name="fareType" type="radio" checked="" disabled>
+                                                    <label for="FrTyp1" class="radio-label">With Swiss Pass with Ice flyer</label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li>CHF <span class="text-decoration-line-through">232</span> <span class="primarytext">200</span></li>
+                                                <li>INR 21611</li>
+                                                <li>
+                                                    <!--counter input start-->
+                                                    <div class="counter-input">
+                                                        <input type="number" min="1" max="10" step="1" value="1">
+                                                    </div>
+                                                    <!--counter input end-->
+                                                </li>
+                                                <li>INR 13276</li>
+                                            </ul>
+                                        </li>
+                                    
+                                    </ul>
+                                    <!--ul end-->
+                                    <!--ul start-->
+                                    <ul class="greybg">
+                                        <li>
+                                            <div class="customRadio">
+                                                <div class="radio">
+                                                    <input id="FrTyp2" name="fareType" type="radio" checked="" disabled>
+                                                    <label for="FrTyp2" class="radio-label">Child between 0-15.99 years with flyer (With Family Card)</label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li>CHF 281</li>
+                                                <li>INR 26175</li>
+                                                <li>
+                                                    <!--counter input start-->
+                                                    <div class="counter-input">
+                                                        <input type="number" min="1" max="10" step="1" value="1">
+                                                    </div>
+                                                    <!--counter input end-->
+                                                </li>
+                                                <li>INR 14,112</li>
+                                            </ul>
+                                        </li>
+                                    
+                                    
+                                    </ul>
+                                    <!--ul end-->
+                                    <!--ul start-->
+                                    <ul class="greybg">
+                                        <li>
+                                            <div class="customRadio">
+                                                <div class="radio">
+                                                    <input id="FrTyp3" name="fareType" type="radio" disabled>
+                                                    <label for="FrTyp3" class="radio-label">Eurail Pass with Ice flyer</label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li>CHF 359</li>
+                                                <li>INR 33441</li>
+                                                <li>
+                                                    <!--counter input start-->
+                                                    <div class="counter-input">
+                                                        <input type="number" min="1" max="10" step="1" value="1">
+                                                    </div>
+                                                    <!--counter input end-->
+                                                </li>
+                                                <li>INR 21504</li>
+                                            </ul>
+                                        </li>
+                                        
+                                    </ul>
+                                    <!--ul end-->
+                                    <!--ul start-->
+                                    <ul class="greybg">
+                                        <li>
+                                            <div class="customRadio">
+                                                <div class="radio">
+                                                    <input id="FrTyp4" name="fareType" type="radio" disabled>
+                                                    <label for="FrTyp4" class="radio-label">Child under 06 years with flyer (With Eurail Pass)</label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li>CHF 389</li>
+                                                <li>INR 36235</li>
+                                                <li>
+                                                    <!--counter input start-->
+                                                    <div class="counter-input">
+                                                        <input type="number" min="1" max="10" step="1" value="1">
+                                                    </div>
+                                                    <!--counter input end-->
+                                                </li>
+                                                <li>INR 00</li>
+                                            </ul>
+                                        </li>
+                                        
+                                    </ul>
+                                    <!--ul end-->
+                                    <!--ul start-->
+                                    <ul class="greybg">
+                                        <li>
+                                            <div class="customRadio">
+                                                <div class="radio">
+                                                    <input id="FrTyp5" name="fareType" type="radio" disabled>
+                                                    <label for="FrTyp5" class="radio-label">Child between 0-15.99 years with flyer (With Eurail Pass)</label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li>CHF 429</li>
+                                                <li>INR 39961</li>
+                                                <li>
+                                                    <!--counter input start-->
+                                                    <div class="counter-input">
+                                                    <input type="number" min="1" max="10" step="1" value="1">
+                                                    </div>
+                                                    <!--counter input end-->
+                                                </li>
+                                                <li>INR 7104</li>
+                                            </ul>
+                                        </li>
+                                        
+                                    </ul>
+                                    <!--ul end-->
+                                    <!--ul start-->
+                                    <ul class="greybg">
+                                        <li>
+                                            <div class="customRadio">
+                                                <div class="radio">
+                                                    <input id="FrTyp6" name="fareType" type="radio" disabled>
+                                                    <label for="FrTyp6" class="radio-label">Full fare with Ice flyer</label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li>CHF 120</li>
+                                                <li>INR 12466</li>
+                                                <li>
+                                                    <!--counter input start-->
+                                                    <div class="counter-input">
+                                                    <input type="number" min="1" max="10" step="1" value="1">
+                                                    </div>
+                                                    <!--counter input end-->
+                                                </li>
+                                                <li>INR 10848</li>
+                                            </ul>
+                                        </li>
+                                        
+                                    </ul>
+                                    <!--ul end-->
+                                    <!--ul start-->
+                                    <ul class="greybg">
+                                        <li>
+                                            <div class="customRadio">
+                                                <div class="radio">
+                                                    <input id="FrTyp7" name="fareType" type="radio" disabled>
+                                                    <label for="FrTyp7" class="radio-label">Child under 06 years with Ice flyer</label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li>CHF 429</li>
+                                                <li>INR 39961</li>
+                                                <li>
+                                                    <!--counter input start-->
+                                                    <div class="counter-input">
+                                                        <input type="number" min="1" max="10" step="1" value="1">
+                                                    </div>
+                                                    <!--counter input end-->
+                                                </li>
+                                                <li>INR 00</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <!--ul end-->
+                                    <!--ul start-->
+                                    <ul class="greybg">
+                                        <li>
+                                            <div class="customRadio">
+                                                <div class="radio">
+                                                    <input id="FrTyp8" name="fareType" type="radio" disabled>
+                                                    <label for="FrTyp8" class="radio-label">Child under 06 years with flyer (With Full Fare)</label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li>CHF 120</li>
+                                                <li>INR 12466</li>
+                                                <li>
+                                                    <!--counter input start-->
+                                                    <div class="counter-input">
+                                                        <input type="number" min="1" max="10" step="1" value="1">
+                                                    </div>
+                                                    <!--counter input end-->
+                                                </li>
+                                                <li>INR 00</li>
+                                            </ul>
+                                        </li>
+                                        
+                                    </ul>
+                                    <!--ul end-->
+                                </div>
+                                    <!--faretype list end-->
+                                    <div class="GTotalamt">
+                                        <div class="GrdtotalBottom">
+                                            <ul class="d-flex justify-content-between flex-column">
+                                                <li>
+                                                    Grand Total<span>INR 80000</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="termsCondn d-flex justify-content-between">
+                                            <div class="conditionapply d-flex flex-grow-1 justify-content-start">
+                                                <a data-bs-toggle="modal" data-bs-target="#ConditionApplyModal">
+                                                    <img src="images/airline/infoIcon.svg" alt="">Terms &amp; Conditions</a>
+                                            </div>
+                                        <a href="#" class="redBtn">Book Now</a>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                            </div>
+                        </div>
+                        <!--overviewSection start-->
+                        <div class="section-padding section_Container">
+                            <div class="overviewSection">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <!--leftcontent start-->
+                                        <div class="leftcontent">
+                                            <div class="title">
+                                                <h2>Overview</h2>
+                                            </div>
+                                        </div>
+                                    <!--leftcontent end-->
+                                    </div>
+                                    <!--accordinace hover start-->
+                                    <div class="col-lg-9 hoveraccordion p-0">
+                                        <!--rightcontent start-->
+                                        <div class="rightcontent">
+                                            <!--accordion-item start-->
+                                            <div class="accordion-item">
+                                                <!-- row start-->
+                                                <div class="row w-100">
+                                                    <div class="col-md-3 p-0">
+                                                        <h2 class="accordion-header">
+                                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#overviewlist1" aria-expanded="true" aria-controls="overviewlist1">
+                                                                Includes
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+                                                    <div class="col-md-9 p-0">
+                                                        <div id="overviewlist1" class="accordion-collapse collapse show" data-bs-parent="">
+                                                            <div class="accordion-body">
+                                                                <ul class="list-itemscheck">
+                                                                    <li><span><img src="images/airline/cartdeatils/tick.svg" alt=""></span>Taxes, fees, and handling charges</li>
+                                                                    <li><span><img src="images/airline/cartdeatils/tick.svg" alt=""></span>Local and professional guide for your party only</li>
+                                                                    <li><span><img src="images/airline/cartdeatils/tick.svg" alt=""></span>Transportation fees</li>
+                                                                    <li><span><img src="images/airline/cartdeatils/tick.svg" alt=""></span>Seat reservation at Jungfrau railway</li>
+                                                                    <li><span><img src="images/airline/cartdeatils/tick.svg" alt=""></span>Entrance fees for the sights at Jungfraujoch</li>
+                                                                    <li><span><img src="images/airline/cartdeatils/cancle.svg" alt=""></span>Food and drinks</li>
+                                                                    <li><span><img src="images/airline/cartdeatils/cancle.svg" alt=""></span>Personal expenses</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- row end-->
+                                            
+                                            </div>
+                                            <!--accordion-item end-->
+                                            <!--accordion-item start-->
+                                            <div class="accordion-item">
+                                                <!-- row start-->
+                                                <div class="row w-100">
+                                                    <div class="col-md-3 p-0">
+                                                        <h2 class="accordion-header">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#overviewlist2" aria-expanded="false" aria-controls="overviewlist2">
+                                                                How to use your voucher 
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+                                                    <div class="col-md-9 p-0">
+                                                        <div id="overviewlist2" class="accordion-collapse collapse" data-bs-parent="">
+                                                            <div class="accordion-body">
+                                                                <p>Demo Text It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- row end-->
+                                            </div>
+                                            <!--accordion-item end-->
+                                            <!--accordion-item start-->
+                                            <div class="accordion-item">
+                                                <!-- row start-->
+                                                <div class="row w-100">
+                                                    <div class="col-md-3 p-0">
+                                                        <h2 class="accordion-header">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#overviewlist3" aria-expanded="false" aria-controls="overviewlist3">
+                                                                Highlights
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+                                                    <div class="col-md-9 p-0">
+                                                        <div id="overviewlist3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                                            <div class="accordion-body">
+                                                            <ul class="list-type1">
+                                                                <li>Visit the Sphinx Observatory, located on the Jungfraujoch summit</li>
+                                                                <li>Explore the Ice Palace, a fascinating network of tunnels and chambers</li>
+                                                                <li>Visit the Alpine Sensation exhibition inside the mountain</li>
+                                                                <li>Head to the outdoor observation deck for unobstructed views</li>
+                                                            </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- row end-->
+                                            </div>
+                                            <!--accordion-item end-->
+                                            <!--accordion-item start-->
+                                            <div class="accordion-item">
+                                                <!-- row start-->
+                                                <div class="row w-100">
+                                                    <div class="col-md-3 p-0">
+                                                        <h2 class="accordion-header">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#overviewlist4" aria-expanded="false" aria-controls="overviewlist4">
+                                                                Not Suitable for
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+                                                    <div class="col-md-9 p-0">
+                                                        <div id="overviewlist4" class="accordion-collapse collapse" data-bs-parent="">
+                                                            <div class="accordion-body">
+                                                                <p>Demo Text It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- row end-->
+                                            </div>
+                                            <!--accordion-item end-->
+                                            <!--accordion-item start-->
+                                            <div class="accordion-item">
+                                                <!-- row start-->
+                                                <div class="row w-100">
+                                                    <div class="col-md-3 p-0">
+                                                        <h2 class="accordion-header">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#overviewlist5" aria-expanded="false" aria-controls="overviewlist5">
+                                                                How to reach
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+                                                    <div class="col-md-9 p-0">
+                                                        <div id="overviewlist5" class="accordion-collapse collapse" data-bs-parent="">
+                                                            <div class="accordion-body">
+                                                                <p>From Interlaken Ost station take a train to Lauterbrunnen or Grindelwald. After this journey, change trains to reach Kleine Scheidegg. From Kleine Scheidegg, ride the Jungfrau Railway directly to Jungfraujoch – Top of Europe.
+                                                                </p>
+                                                                <p>New Eiger express route: From Interlaken OST take the train to the Grindelwald terminal, followed by the tricable gondola on the Eiger Express up to the Eiger Glacier Station. The last segment to the top of Jungfrau is by a cogwheel train.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- row end-->
+                                            </div>
+                                            <!--accordion-item end-->
+                                            <!--accordion-item start-->
+                                            <div class="accordion-item">
+                                                <!-- row start-->
+                                                <div class="row w-100">
+                                                    <div class="col-md-3 p-0">
+                                                        <h2 class="accordion-header">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#overviewlist6" aria-expanded="false" aria-controls="overviewlist6">
+                                                                Know before you
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+                                                    <div class="col-md-9 p-0">
+                                                        <div id="overviewlist6" class="accordion-collapse collapse" data-bs-parent="">
+                                                            <div class="accordion-body">
+                                                                <p>Demo Text It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- row end-->
+                                            </div>
+                                            <!--accordion-item end-->
+                                            <!--accordion-item start-->
+                                            <div class="accordion-item">
+                                                <!-- row start-->
+                                                <div class="row w-100">
+                                                    <div class="col-md-3 p-0">
+                                                        <h2 class="accordion-header">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#overviewlist7" aria-expanded="false" aria-controls="overviewlist7">
+                                                                Cancellation
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+                                                    <div class="col-md-9 p-0">
+                                                        <div id="overviewlist7" class="accordion-collapse collapse" data-bs-parent="">
+                                                            <div class="accordion-body">
+                                                                <p>Demo Text It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- row end-->
+                                            </div>
+                                            <!--accordion-item end-->
+                                        </div>
+                                        <!--rightcontent end-->
+                                    </div>
+                                    <!--accordiance hover end-->
+                                </div>
+                            </div>
+                        </div>
+                        <!--overviewSection end-->
+                        <!--about section start-->
+                        <div class="section-padding section_Container">
+                            <div class="sw-AboutJungSection">
+                                <div class="title">
+                                <h2>About Jungfraujoch</h2>
+                                </div>
+                                <p class="opacity-75">Book your Jungfrau tickets with ease at just the click of a button. Enjoy discounts with a Swiss Travel Pass or a Eurail Pass.
+                                    Your Jungfrau ticket includes: Return travel to Jungfrau through rail and all the free attractions at the top.
+                                    Jungfrau tickets are e-tickets as well as physical tickets. So, once you confirm your booking, you can opt for either ticket option as per your convenience.</p>
+                                    <!--accordionAboutJung start-->
+                                    <div class="accordion" id="accordionAboutJung">
+                                        <!--accordion-item start-->
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header" id="abfqheading1">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#abfaq1" aria-expanded="true" aria-controls="abfaq1">
+                                                    Jungfraujoch with Swiss Travel Pass
+                                                </button>
+                                            </h3>
+                                            <div id="abfaq1" class="accordion-collapse collapse" aria-labelledby="abfqheading1" data-bs-parent="">
+                                                <div class="accordion-body">
+                                                    <p>
+                                                        <a href="/mountain-excursion/1-jungfraujoch-top-of-europe" class="lnks"> Jungfraujoch with Swiss Travel Pass </a> comes at a discounted rate. Choose the option ‘With Swiss Pass’ for a Jungfrau ticket with Swiss Pass and add the number of passengers from the drop-down.
+                                                    </p>
+                                                    <p>Make sure the date you select for Jungfrau is valid during your Swiss Pass. For example, if you bought an 8 days consecutive Swiss Pass which is valid from 1-8 January 2020, then choose Jungfraujoch tickets between these dates only, or your Jungfrau ticket will not be accepted.</p>
+                                                    <p>With a Swiss Travel Pass, not only you get Jungfrau tickets at a discount, but also your children under the age of 16 years get free tickets – just how the Swiss Pass works. So, select the children’s ticket from the option ‘Child between 0-16 yrs (with Family Card)’ while making the booking. </p>
+                                                    <p>Jungfrau tickets with Swiss Pass is the same as full fare. You enjoy cogwheel train ride up to the top and visit Alpine Sensation, restaurants, observation deck, Ice Palace, and shopping areas. </p>
+                                                    <ul class="listtype3">
+                                                        <li>Children will not be allowed free entry if they aren’t accompanied by at least one parent.</li>
+                                                        <li> First Class and Second Class Pass: Your class of Swiss Pass will determine the class for Jungfraujoch tickets. For example, if you have chosen a second class <a href="/swiss-travel-pass" class="lnks">Swiss Travel Pass</a>, then your Jungfrau tickets will also be second class. </li>
+                                                        <li>Flexi Swiss Pass holders: A Flexi Swiss Travel Pass is valid for 30 days. So if you have chosen 4 days Flexi pass, then your Jungfrau tickets are also valid for 30 days. But the day you decide to visit will Jungfrau will be marked as one of the days on your <a href="/swiss-travel-pass" class="lnks">Swiss Pass</a>. So plan your trip to Jungfrau accordingly. </li>
+                                                        <li> A Jungfrau ticket is valid for one-time use only.</li>
+                                                        <li> Shopping, the food at the restaurants, and snow activities are not included in the price. You have to pay for them separately. </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--accordion-item end-->
+                                        <!--accordion-item start-->
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header" id="abfqheading2">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#abfaq2" aria-expanded="true" aria-controls="abfaq2">
+                                                    The new Eiger Express to Jungfraujoch
+                                                </button>
+                                            </h3>
+                                            <div id="abfaq2" class="accordion-collapse collapse" aria-labelledby="abfqheading2" data-bs-parent="">
+                                                <div class="accordion-body">
+                                                    <p>Travel on the Eiger Express tricable gondola, which transports you from Grindelwald Terminal to the Eiger Glacier station (Eigergletscher) in just 15 minutes.</p>
+
+                                                    <p>The new Eiger Express gondola not only reduces the total travel duration to the top by 47 minutes, but also guarantees stunning views of the north face of the Eiger. Each of the 44 gondolas can accommodate 26 passengers which are enclosed with glass windows and heated seating arrangements to ensure a cosy journey along with great views.</p>
+
+                                                    <p>The Grindelwald Terminal also offers a sports shop and a shopping center with popular Swiss brands for those who'd like to shop before or after the journey.</p>
+
+                                                    <p>This new journey segment is included in your Jungfraujoch ticket and is available at the same cost. Passengers are required to take the train from Interlaken OST to the Grindelwald terminal, followed by the Eiger Express up to the Eiger Glacier Station, and the last segment to the top of Jungfrau by a cogwheel train.</p>
+
+                                                    <p>Passengers can still take the traditional route from Interlaken OST / Grindelwald to Jungfraujoch by train.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--accordion-item end-->
+                                        <!--accordion-item start-->
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header" id="abfqheading3">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#abfaq3" aria-expanded="true" aria-controls="abfaq3">
+                                                    Jungfrau Weather 
+                                                </button>
+                                            </h3>
+                                            <div id="abfaq3" class="accordion-collapse collapse" aria-labelledby="abfqheading3" data-bs-parent="">
+                                                <div class="accordion-body">
+                                                    <h3>The chilled weather guarantees 100% snow all year round!</h3>
+                                                    <p>Jungfraujoch’s weather is one of the coldest in Switzerland. The mountains are always blanketed with snow in every month of the year. Whether you plan to visit in February, June or December, Jungfrau’s weather will not disappoint you. </p>
+                                                    <p>Jungfrau’s cold weather is one of the reasons why Jungfrau is among the most popular excursions in Switzerland. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--accordion-item end-->
+                                        <!--accordion-item start-->
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header" id="abfqheading4">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#abfaq4" aria-expanded="true" aria-controls="abfaq4">
+                                                    How to reach Jungfraujoch
+                                                </button>
+                                            </h3>
+                                            <div id="abfaq4" class="accordion-collapse collapse" aria-labelledby="abfqheading4" data-bs-parent="">
+                                                <div class="accordion-body">
+                                                    <p>From Interlaken Ost station take a train to Lauterbrunnen or Grindelwald. After this journey, change trains to reach Kleine Scheidegg. From Kleine Scheidegg, ride the Jungfrau Railway directly to Jungfraujoch – Top of Europe.</p>
+                                                    <p>New Eiger express route: From Interlaken OST take the train to the Grindelwald terminal, followed by the tricable gondola on the Eiger Express up to the Eiger Glacier Station. The last segment to the top of Jungfrau is by a cogwheel train.
+                                                    </p>
+                                                    <p>ROUTE<p>
+                                                    <p>
+                                                    Interlaken - Grindelwald Terminal - Eiger Glacier station - Top of Jungfraujoch (New route via Eiger Express)
+                                                    <p>
+                                                    <p>OR</p>
+                                                    <p>Interlaken - Lauterbrunnen - Kleine Scheidegg - Top of Jungfraujoch</p>
+                                                    <p>OR</p>
+                                                    <p>Interlaken - Grindelwald - Kleine Scheidegg - Top of Jungfraujoch (Regular traditional route)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--accordion-item end-->
+                                        <!--accordion-item start-->
+                                        <div class="accordion-item hidden">
+                                            <!-- row start-->
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#abfaq6" aria-expanded="true" aria-controls="abfaq6">
+                                                    Ice Palace
+                                                </button>
+                                            </h2>
+                                            <div id="abfaq6" class="accordion-collapse collapse" data-bs-parent="">
+                                                        <div class="accordion-body">
+                                                            <p><b>Fees:</b>Entry Free</p>
+                                                            <p><b>Opening times:</b> 365 days a years</p>
+                                                        
+                                                        </div>
+                                            </div>
+                                            <!-- row end-->
+                                        </div>
+                                        <!--accordion-item end-->
+                                        <!--accordion-item start-->
+                                        <div class="accordion-item hidden">
+                                            <!-- row start-->
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#abfaq7" aria-expanded="false" aria-controls="abfaq7">
+                                                    Ski & Snowboard Park
+                                                </button>
+                                            </h2>
+                                            <div id="abfaq7" class="accordion-collapse collapse" data-bs-parent="">
+                                                        <div class="accordion-body">
+                                                            <p>Experience snow sports at Jungfraujoch</p>
+                                                            <table width="340px">
+                                                                <tbody>
+                                                                <tr>
+                                                                    <th><b>Fees</b></th>
+                                                                    <th><b>Adults</b></th>
+                                                                    <th><b>Children</b></th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Day ticket (all activities)</td>
+                                                                    <td>CHF 45</td>
+                                                                    <td>CHF 30</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Ski &amp; Snowboard </td>
+                                                                    <td>CHF 35</td>
+                                                                    <td>CHF 25</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Tyrolienne (Zipline)</td>
+                                                                    <td>CHF 20</td>
+                                                                    <td>CHF 15</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Snow tubing/sledging</td>
+                                                                    <td>CHF 20</td>
+                                                                    <td>CHF 15</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Special sledging</td>
+                                                                    <td>CHF 25</td>
+                                                                    <td>CHF 20</td>
+                                                                </tr>
+                                                            </tbody></table>
+                                                        </div>
+                                            </div>
+                                            <!-- row end-->
+                                        </div>
+                                        <!--accordion-item end-->
+                                        <!--accordion-item start-->
+                                        <div class="accordion-item hidden">
+                                            <!-- row start-->
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#abfaq8" aria-expanded="false" aria-controls="abfaq8">
+                                                        The Top of Europe Shops
+                                                </button>
+                                            </h2>
+                                            <div id="abfaq8" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                                        <div class="accordion-body">
+                                                            <p>Indulge in shopping extravaganza at the highest peak in Europe.You can shop apparels, watches, chocolates, pocket knives, souvenir and much more.</p>
+                                                            <p><b>Fees:</b> Entry Free</p>
+                                                            <p><b>Opening times: </b>365 days a years</p>
+                                                        </div>
+                                            </div>
+                                            <!-- row end-->
+                                        </div>
+                                        <!--accordion-item end-->
+                                        <!--accordion-item start-->
+                                        <div class="accordion-item hidden">
+                                            <!-- row start-->
+                                            <h2 class="accordion-header">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#abfaq9" aria-expanded="false" aria-controls="abfaq9">
+                                                            Restaurants at the top Bollywood – An Indian Restaurant
+                                                        </button>
+                                            </h2>
+                                            <div id="abfaq9" class="accordion-collapse collapse" data-bs-parent="">
+                                                        <div class="accordion-body">
+                                                            <p>Experience delectable Indian cuisine at the Top of Europe.</p>
+                                                            <p><b>Opening times:</b> Beginning of April until end of October</p>
+                                                        </div>
+                                            </div>
+                                            <!-- row end-->
+                                        </div>
+                                        <!--accordion-item end-->
+                                        <!--accordion-item start-->
+                                        <div class="accordion-item hidden">
+                                            <!-- row start-->
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#abfaq10" aria-expanded="false" aria-controls="abfaq10">
+                                                Aletsch
+                                                </button>
+                                            </h2>
+                                            <div id="abfaq10" class="accordion-collapse collapse" data-bs-parent="">
+                                                        <div class="accordion-body">
+                                                            <p>In Switzerland, eat like the locals. Indulge in special Swiss dishes at Jungfraujoch.</p>
+                                                            <p><b>Opening times:</b> 365 days a years</p>
+                                                        </div>
+                                            </div>
+                                            <!-- row end-->
+                                        </div>
+                                        <!--accordion-item end-->
+                                        <!--accordion-item start-->
+                                        <div class="accordion-item hidden">
+                                            <!-- row start-->
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#abfaq11" aria-expanded="false" aria-controls="abfaq11">
+                                                    Crystal
+                                                </button>
+                                            </h2>
+                                            <div id="abfaq11" class="accordion-collapse collapse" data-bs-parent="">
+                                                        <div class="accordion-body">
+                                                            <p>Delicious Swiss cuisine prepared at 4,158m just to keep you satiated even at the Top of Europe.</p>
+                                                            <p><b>Opening times: </b>365 days a years</p>
+                                                        </div>
+                                            </div>
+                                            <!-- row end-->
+                                        </div>
+                                        <!--accordion-item end-->
+                                    </div>
+                                    <!--accordionAboutJung end-->
+                                    <!--readMoreBtn start-->
+                                    <div class="d-flex  mt-4">
+                                        <a class="sw-ReadMore sw-readMoreBtn">Read More</a>
+                                        <a class="sw-hidden sw-ReadMore sw-readLessBtn">Read Less</a>
+                                    </div>
+                                    <!--readMoreBtn end-->
+                            </div>
+                        </div>
+                        <!--about section end-->
+                        <!--routes start-->
+                        <div class="section-padding section_Container">
+                            <div class="routesTabSection">
+                                <div class="d-flex justify-content-between">
+                                    <div class="title d-flex flex-grow-1">
+                                        <h2>Routes</h2>
+                                    </div>
+                                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="routesJungfrau-tab" data-bs-toggle="pill" data-bs-target="#routes-Jungfrau" type="button" role="tab" aria-controls="routes-Jungfrau" aria-selected="true">Jungfrau</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="routes-Switzerland-tab" data-bs-toggle="pill" data-bs-target="#routes-Switzerland" type="button" role="tab" aria-controls="routes-Switzerland" aria-selected="false">Switzerland</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="routes-Jungfrau" role="tabpanel" aria-labelledby="routes-Jungfrau-tab">
+                                    <img src="images/airline/cartdeatils/jungfra.jpg" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="tab-pane fade" id="routes-Switzerland" role="tabpanel" aria-labelledby="routes-Switzerland-tab">
+                                        <img src="images/airline/cartdeatils/map2.svg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--routes end-->
+                        <!--ThingstodoSection start-->
+                        <div class="section-padding section_Container">
+                            <div class="overviewSection">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <!--leftcontent start-->
+                                        <div class="leftcontent">
+                                            <div class="title">
+                                                <h2>Things to do</h2>
+                                            </div>
+                                        </div>
+                                    <!--leftcontent end-->
+                                    </div>
+                                    <!--accordinace hover start-->
+                                    <div class="col-lg-9 hoveraccordion p-0">
+                                        <!--rightcontent start-->
+                                        <div class="rightcontent">
+                                            <!--accordion-item start-->
+                                            <div class="accordion-item">
+                                                <!-- row start-->
+                                                <div class="row w-100">
+                                                    <div class="col-md-7 p-0">
+                                                        <h2 class="accordion-header">
+                                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#overviewlist8" aria-expanded="true" aria-controls="overviewlist8">
+                                                                Alpine Sensations
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+                                                    <div class="col-md-5 p-0">
+                                                        <div id="overviewlist8" class="accordion-collapse collapse" data-bs-parent="">
+                                                            <div class="accordion-body">
+                                                                <p>A 250m long corridor between the Sphinx Hall and Ice Palace</p>
+                                                                <p><b>Fees:</b>Entry Free</p>
+                                                                <p><b>Opening times:</b>365 days a years</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- row end-->
+                                            
+                                            </div>
+                                            <!--accordion-item end-->
+                                            <!--accordion-item start-->
+                                            <div class="accordion-item">
+                                                <!-- row start-->
+                                                <div class="row w-100">
+                                                    <div class="col-md-7 p-0">
+                                                        <h2 class="accordion-header">
+                                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#overviewlist14" aria-expanded="true" aria-controls="overviewlist14">
+                                                                Ice Palace
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+                                                    <div class="col-md-5 p-0">
+                                                        <div id="overviewlist14" class="accordion-collapse collapse" data-bs-parent="">
+                                                            <div class="accordion-body">
+                                                                <p><b>Fees:</b>Entry Free</p>
+                                                                <p><b>Opening times:</b> 365 days a years</p>
+                                                            
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- row end-->
+                                            
+                                            </div>
+                                            <!--accordion-item end-->
+                                            <!--accordion-item start-->
+                                            <div class="accordion-item">
+                                                <!-- row start-->
+                                                <div class="row w-100">
+                                                    <div class="col-md-7 p-0">
+                                                        <h2 class="accordion-header">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#overviewlist9" aria-expanded="false" aria-controls="overviewlist9">
+                                                                Ski & Snowboard Park
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+                                                    <div class="col-md-5 p-0">
+                                                        <div id="overviewlist9" class="accordion-collapse collapse" data-bs-parent="">
+                                                            <div class="accordion-body">
+                                                                <p>Experience snow sports at Jungfraujoch</p>
+                                                                <table width="340px">
+                                                                    <tbody>
+                                                                    <tr>
+                                                                        <th><b>Fees</b></th>
+                                                                        <th><b>Adults</b></th>
+                                                                        <th><b>Children</b></th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Day ticket (all activities)</td>
+                                                                        <td>CHF 45</td>
+                                                                        <td>CHF 30</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Ski &amp; Snowboard </td>
+                                                                        <td>CHF 35</td>
+                                                                        <td>CHF 25</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Tyrolienne (Zipline)</td>
+                                                                        <td>CHF 20</td>
+                                                                        <td>CHF 15</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Snow tubing/sledging</td>
+                                                                        <td>CHF 20</td>
+                                                                        <td>CHF 15</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Special sledging</td>
+                                                                        <td>CHF 25</td>
+                                                                        <td>CHF 20</td>
+                                                                    </tr>
+                                                                </tbody></table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- row end-->
+                                            </div>
+                                            <!--accordion-item end-->
+                                            <!--accordion-item start-->
+                                            <div class="accordion-item">
+                                                <!-- row start-->
+                                                <div class="row w-100">
+                                                    <div class="col-md-7 p-0">
+                                                        <h2 class="accordion-header">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#overviewlist10" aria-expanded="false" aria-controls="overviewlist10">
+                                                                The Top of Europe Shops
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+                                                    <div class="col-md-5 p-0">
+                                                        <div id="overviewlist10" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                                            <div class="accordion-body">
+                                                                <p>Indulge in shopping extravaganza at the highest peak in Europe.You can shop apparels, watches, chocolates, pocket knives, souvenir and much more.</p>
+                                                                <p><b>Fees:</b> Entry Free</p>
+                                                                <p><b>Opening times: </b>365 days a years</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- row end-->
+                                            </div>
+                                            <!--accordion-item end-->
+                                            <!--accordion-item start-->
+                                            <div class="accordion-item">
+                                                <!-- row start-->
+                                                <div class="row w-100">
+                                                    <div class="col-md-7 p-0">
+                                                        <h2 class="accordion-header">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#overviewlist11" aria-expanded="false" aria-controls="overviewlist11">
+                                                                Restaurants at the top Bollywood – An Indian Restaurant
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+                                                    <div class="col-md-5 p-0">
+                                                        <div id="overviewlist11" class="accordion-collapse collapse" data-bs-parent="">
+                                                            <div class="accordion-body">
+                                                                <p>Experience delectable Indian cuisine at the Top of Europe.</p>
+                                                                <p><b>Opening times:</b> Beginning of April until end of October</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- row end-->
+                                            </div>
+                                            <!--accordion-item end-->
+                                            <!--accordion-item start-->
+                                            <div class="accordion-item">
+                                                <!-- row start-->
+                                                <div class="row w-100">
+                                                    <div class="col-md-7 p-0">
+                                                        <h2 class="accordion-header">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#overviewlist12" aria-expanded="false" aria-controls="overviewlist12">
+                                                                Aletsch
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+                                                    <div class="col-md-5 p-0">
+                                                        <div id="overviewlist12" class="accordion-collapse collapse" data-bs-parent="">
+                                                            <div class="accordion-body">
+                                                                <p>In Switzerland, eat like the locals. Indulge in special Swiss dishes at Jungfraujoch.</p>
+                                                                <p><b>Opening times:</b> 365 days a years</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- row end-->
+                                            </div>
+                                            <!--accordion-item end-->
+                                            <!--accordion-item start-->
+                                            <div class="accordion-item">
+                                                <!-- row start-->
+                                                <div class="row w-100">
+                                                    <div class="col-md-7 p-0">
+                                                        <h2 class="accordion-header">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#overviewlist13" aria-expanded="false" aria-controls="overviewlist13">
+                                                                Crystal
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+                                                    <div class="col-md-5 p-0">
+                                                        <div id="overviewlist13" class="accordion-collapse collapse" data-bs-parent="">
+                                                            <div class="accordion-body">
+                                                                <p>Delicious Swiss cuisine prepared at 4,158m just to keep you satiated even at the Top of Europe.</p>
+                                                                <p><b>Opening times: </b>365 days a years</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- row end-->
+                                            </div>
+                                            <!--accordion-item end-->
+                                            
+                                        </div>
+                                        <!--rightcontent end-->
+                                    </div>
+                                    <!--accordiance hover end-->
+                                </div>
+                            </div>
+                        </div>
+                        <!--ThingstodoSection end-->
+                        <!--video section start-->
+                        <div class="section-padding section_Container">
+                            <div id="ContentPlaceHolder_divVideo" class="my-0 sw-ssvideo_container ssvideo_container">
+                                <div class="ssvideo_holder">
+                                    <iframe src="https://www.youtube.com/embed/_dqO0s7SZuw?version=3&amp;loop=1&amp;controls=1&amp;rel=0&amp;modestbranding=1&amp;playlist=_dqO0s7SZuw" id="ContentPlaceHolder_iframe" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                                    <div class="logoverlap">
+                                        <img src="/images/logo.png" alt="SWISStours Logo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--video section end-->
+                        <!-- Gallery -->
+                        <div class="sw-gallarySection aptBannerSection section-padding section_Container">
+                            <div class="title no-border">
+                                <h2>Photo Gallery</h2>
+                            </div>
+                            <!--gallerywrapper start-->
+                            <div class="gallerywrapper">
+                                <div class="gallerybox first">
+                                    <a href="images/airline/photogallery/img1.webp" data-fancybox="group" data-caption="Optional caption,&lt;br /&gt;that contains &lt;em&gt;HTML&lt;/em&gt; code">
+                                        <img
+                                        src="images/airline/photogallery/img1.webp"
+                                        class="w-100 shadow-1-strong rounded mb-4"
+                                        alt=""/>
+                                    </a>
+                                </div>
+                                <div class="gallerybox second">
+                                    <a href="images/airline/photogallery/img3.webp" data-fancybox="group" data-caption="Optional caption,&lt;br /&gt;that contains &lt;em&gt;HTML&lt;/em&gt; code">
+                                        <img
+                                        src="images/airline/photogallery/img3.webp"
+                                        class="w-100 shadow-1-strong rounded mb-4"
+                                        alt=""/>
+                                    </a>
+                                </div>
+                                <div class="gallerybox third">
+                                    <a href="images/airline/photogallery/img5.webp" data-fancybox="group" data-caption="Optional caption,&lt;br /&gt;that contains &lt;em&gt;HTML&lt;/em&gt; code">
+                                        <img
+                                        src="images/airline/photogallery/img5.webp"
+                                        class="w-100 shadow-1-strong rounded mb-4"
+                                        alt=""/>
+                                    </a>
+                                </div>
+                                <div class="gallerybox fourth">
+                                    <a href="images/airline/photogallery/img4.webp" data-fancybox="group" data-caption="Optional caption,&lt;br /&gt;that contains &lt;em&gt;HTML&lt;/em&gt; code">
+                                        <img
+                                        src="images/airline/photogallery/img4.webp"
+                                        class="w-100 shadow-1-strong rounded mb-4"
+                                        alt=""/>
+                                    </a>
+                                </div>
+                                <div class="gallerybox five">
+                                    <a href="images/airline/photogallery/img2.webp" data-fancybox="group" data-caption="Optional caption,&lt;br /&gt;that contains &lt;em&gt;HTML&lt;/em&gt; code">
+                                        <img
+                                        src="images/airline/photogallery/img2.webp"
+                                        class="w-100 shadow-1-strong rounded mb-4"
+                                        alt=""/>
+                                    </a>
+                                </div>
+                                <div class="aptBannerBtns">
+                                <a data-fancybox-trigger="img_gallery" class="cta btn fade_anim aptGalleryBtn" id="viewgalleryimage">+234 Photos</a>
+                                </div>
+                            </div>
+                            <!--gallerywrapper end-->
+                        </div>
+                        <!-- Gallery END -->
+                        <!--faq start-->
+                        <div class="faqSection sw-faqSection section-padding section_Container">
+
+                            <div class="title">
+                            <h2>FAQs On Jungfraujoch <span>- Top Of Europe</span></h2>
+                            </div>
+                            <!--accordion start-->
+                            <div class="accordion faq_set">
+                                <div class="accordion-item">
+                                <h3 class="accordion-header" id="Jfqheading1">
+                                    <button class="accordion-button pt-0" type="button" data-bs-toggle="collapse" data-bs-target="#Jfaq1" aria-expanded="true" aria-controls="Jfaq1">
+                                        Can I book Jungfraujoch tickets on your website?
+                                    </button>
+                                </h3>
+                                <div id="Jfaq1" class="accordion-collapse collapse show" aria-labelledby="Jfqheading1" data-bs-parent="">
+                                    <div class="accordion-body">
+                                        <p>Yes, book your Jungfrau tickets with ease and confidence at just the click of a button. Your Jungfrau ticket includes: return travel to Jungfraujoch and all the free attractions at the top.</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="accordion-item">
+                                <h3 class="accordion-header" id="Jfqheading2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Jfaq2" aria-expanded="false" aria-controls="Jfaq2">
+                                        Can I get discount on Jungfraujoch tickets?
+                                    </button>
+                                </h3>
+                                <div id="Jfaq2" class="accordion-collapse collapse" aria-labelledby="Jfqheading2" data-bs-parent="">
+                                    <div class="accordion-body">
+                                    <p>You can avail discount on Jungfraujoch tickets if you are holding a valid Swiss Travel Pass or a Eurail Pass.</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="accordion-item">
+                                <h3 class="accordion-header" id="Jfqheading3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Jfaq3" aria-expanded="false" aria-controls="Jfaq3">
+                                        What activities can I avail of with the Jungfraujoch excursion ticket?
+                                    </button>
+                                </h3>
+                                <div id="Jfaq3" class="accordion-collapse collapse" aria-labelledby="Jfqheading3" data-bs-parent="">
+                                    <div class="accordion-body answer">
+                                        <p>You enjoy the amazing journey to the top and attractions like the Alpine Sensation, Observation deck and the Ice Palace.</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="Jfqheading4">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Jfaq4" aria-expanded="false" aria-controls="Jfaq4">
+                                        How do I reach Jungfraujoch?
+                                    </button>
+                                    </h3>
+                                    <div id="Jfaq4" class="accordion-collapse collapse" aria-labelledby="Jfqheading4" data-bs-parent="">
+                                    <div class="accordion-body">
+                                    <p>You can reach the Jungfraujoch via train or via a train and cableway combination</p>
+                                        <p>The train journey can be via 2 routes</p>
+                                        <p>Interlaken - Lauterbrunnen - Kleine Scheidegg - Jungfraujoch</p>
+                                        <p>OR</p>
+                                        <p>Interlaken - Grindelwald - Kleine Scheidegg - Jungfraujoch</p>
+                                        <p>The train and cableway combination route is</p>
+                                        <p>Train from Interlaken to Grindelwald - cableway from Grindelwald to Eigergletscher station - train from Eigergletscher to Jungfraujoch.</p>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="Jfqheading5">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Jfaq5" aria-expanded="false" aria-controls="Jfaq5">
+                                        Is my excursion voucher valid on the train route and the cable car route?
+                                    </button>
+                                    </h3>
+                                    <div id="Jfaq5" class="accordion-collapse collapse" aria-labelledby="Jfqheading5" data-bs-parent="">
+                                    <div class="accordion-body">
+                                        <p>Yes, you can choose to travel with the traditional train route or the new Eiger Express cabins with the SWISStours Jungfrau excursion voucher.</p>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="Jfqheading6">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Jfaq6" aria-expanded="false" aria-controls="Jfaq6">
+                                        How much time does it takes to reach Jungfraujoch?
+                                    </button>
+                                    </h3>
+                                    <div id="Jfaq6" class="accordion-collapse collapse" aria-labelledby="Jfqheading6" data-bs-parent="">
+                                    <div class="accordion-body">
+                                        <p>By train from Interlaken - 2 hours 6 mins</p>
+                                        <p>By train from Grindelwald - 1 hour 26 mins</p>
+                                        <p>By Eiger Express cableway from Grindelwald - 45 minutes</p>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="Jfqheading7">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Jfaq7" aria-expanded="false" aria-controls="Jfaq7">
+                                        Are there different classes of train travel?
+                                    </button>
+                                    </h3>
+                                    <div id="Jfaq7" class="accordion-collapse collapse" aria-labelledby="Jfqheading7" data-bs-parent="">
+                                    <div class="accordion-body">
+                                        <p>There are two classes First & Second Class. Your class of Swiss Pass or Eurail Pass will determine the class you are entitled to. if you have chosen a second-class Swiss Travel Pass or Eurail Pass , then your Jungfrau tickets will also be second class.</p>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="Jfqheading8">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Jfaq8" aria-expanded="false" aria-controls="Jfaq8">
+                                        How much time do I need to visit Jungfraujoch?
+                                    </button>
+                                    </h3>
+                                    <div id="Jfaq8" class="accordion-collapse collapse" aria-labelledby="Jfqheading8" data-bs-parent="">
+                                    <div class="accordion-body">
+                                        <p>We recommend at least 5-6 hours to allow a reasonable amount of time to spend on the Jungfraujoch.</p>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="Jfqheading9">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Jfaq9" aria-expanded="false" aria-controls="Jfaq9">
+                                        Is the excursion open all year round?
+                                    </button>
+                                    </h3>
+                                    <div id="Jfaq9" class="accordion-collapse collapse" aria-labelledby="Jfqheading9" data-bs-parent="">
+                                    <div class="accordion-body">
+                                        <p>Yes, the Jungfraujoch excursion is open 365 days a year.</p>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="Jfqheading10">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Jfaq10" aria-expanded="false" aria-controls="Jfaq10">
+                                        Is a fixed date required to book Jungfraujoch?
+                                    </button>
+                                    </h3>
+                                    <div id="Jfaq10" class="accordion-collapse collapse" aria-labelledby="Jfqheading10" data-bs-parent="">
+                                    <div class="accordion-body">
+                                        <p>Although you have to enter a date whilst booking on our site, the SWISStours Jungfrau Voucher will be open dated. You have the flexibility of using the voucher within the validity of your Swiss Travel Pass or the date of validity mentioned on it.</p>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item hidden">
+                                    <h3 class="accordion-header" id="Jfqheading11">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Jfaq11" aria-expanded="false" aria-controls="Jfaq11">
+                                        What kind of ticket does an infant and child require?
+                                    </button>
+                                    </h3>
+                                    <div id="Jfaq11" class="accordion-collapse collapse" aria-labelledby="Jfqheading11" data-bs-parent="">
+                                    <div class="accordion-body answer">
+                                    <p>Kids under 6 years of age always travel free. Kids aged 6 to under 16 pay the child fare or travel free with parents holding a Swiss Travel Pass or at a reduced rate with the Eurail Pass.</p>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item  hidden">
+                                    <h3 class="accordion-header" id="Jfqheading12">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Jfaq12" aria-expanded="false" aria-controls="Jfaq12">
+                                        Will there be snow?
+                                    </button>
+                                    </h3>
+                                    <div id="Jfaq12" class="accordion-collapse collapse" aria-labelledby="Jfqheading12" data-bs-parent="">
+                                    <div class="accordion-body">
+                                        <p>A trip to the Jungfraujoch guarantees snow all year round.</p>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item  hidden">
+                                    <h3 class="accordion-header" id="Jfqheading13">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Jfaq13" aria-expanded="false" aria-controls="Jfaq13">
+                                        Are there restaurants at the Jungfraujoch?
+                                    </button>
+                                    </h3>
+                                    <div id="Jfaq13" class="accordion-collapse collapse" aria-labelledby="Jfqheading13" data-bs-parent="">
+                                    <div class="accordion-body">
+                                        <p>Yes, you have a choice of restaurants at the Jungfraujoch. You can choose a coffee bar, self-service restaurant, a la carte dining and even an Indian Bollywood themed restaurant.</p>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--accordion end-->
+                            <!--readMoreBtn start-->
+                            <div class="d-flex justify-content-center align-items-center mt-4">
+                                <a class="sw-ReadMore sw-readMoreBtn">Read More</a>
+                                <a class="sw-hidden sw-ReadMore sw-readLessBtn">Read Less</a>
+                            </div>
+                            <!--readMoreBtn end-->
+                        </div>
+                    <!--faq end-->
+                </div>
+                <!--e-swisscontent end-->
+            </div>
+             <!--sw-main-content end-->
+        </div>
+</div>
+<!--content holder end-->
+    <script src="js/slick.min.js"></script>
+            <script src="js/sliders_script.js"></script>
+            <script src="js/form_script.js"></script>
+            <script src="js/jquery.fancybox.min.js"></script>
+            <script src="js/jquery.autocomplete.js" type="text/javascript"></script>
+            <script src="js/airlineCustom.js" type="text/javascript"></script>
+            <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script> -->
+            <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/ion-rangeslider@2.3.1/js/ion.rangeSlider.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- PAGE CONTENT HOLDER ENDS -->
+
+        <!-- Footer Starts -->
+        <footer class="sw-footer">
+
+            <div class="container-fluid swissBrief d-none">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="foot_item"><img src="images/stp/swiss_logo.jpg"> A Swiss International Air Lines Company</div>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="foot_item"><img src="images/stp/yrs20.jpg"> Over 2 Decades of Travel Excellence</div>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="foot_item"><img src="images/stp/visit_logo.jpg">Sister Concern of VisitSwitzerland.com </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="foot_item"><img src="images/stp/services.jpg"> Bouquet of Services</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container footer">
+                <div class="footer-top">
+                    <div class="row">
+
+                        <div class="col-12 col-md-3 border-right">
+                            <div class="row">
+                                <div class="foot_head">SwissTours <i class="fa fa-plus pull-right dropdown_icon" aria-hidden="true"></i></div>
+                                <ul class="foot_dropdown">
+                                    <li><a href="about_us.html" class="fade_anim">About us</a> </li>
+                                    <li><a href="partners.html" class="fade_anim">Partners</a></li>
+                                    <li><a href="careers.html" class="fade_anim">Careers</a></li>
+                                    <li><a href="testimonials.html" class="fade_anim">Testimonials</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- <div class="col-sm-4 col-md-3">
+                            <div class="row">
+                                <div class="foot_head">Customer Support <i class="fa fa-plus pull-right dropdown_icon" aria-hidden="true"></i></div>
+                                <ul class="foot_dropdown">
+                                    <li><a href="contact_us.html" class="fade_anim">Contact Us</a></li>
+                                    <li><a href="faqs.html" class="fade_anim">FAQs</a></li>
+                                    <li><a href="#" class="fade_anim">Sitemap</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+
+                        <div class="col-12 col-md-3 border-right px-lg-5">
+                            <div class="row">
+                                <div class="foot_head">Legal <i class="fa fa-plus pull-right dropdown_icon" aria-hidden="true"></i></div>
+                                <ul class="foot_dropdown">
+                                    <li><a href="user_agreement.html" class="fade_anim">User Agreement</a></li>
+                                    <li><a href="privacy_policy.html" class="fade_anim">Privacy Policy</a></li>
+                                    <li><a href="#" class="fade_anim">Verified & Secured</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 border-right px-lg-3">
+                            <div class="row">
+                                <div class="adHolder sw-adHolder">
+                                    <div class="foot_head" style="text-align: center;">Accessory  Partner</div>
+                                    <div style="text-align: center;">
+                                        <a href="#" target="_blank">
+                                            <img src="images/airline/victorinox-logo.png" alt="victorinox logo" class="victoximg1">
+                                            <img src="images/airline/victorinox-logo-hover.png" alt="victorinox logo" class="victoxhoverimg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-3 ps-lg-5 mt-4 mt-md-0">
+                            <div class="row">
+                                <div class="adHolder">
+                                    <div class="foot_head">Official Time Partner</div>
+                                    <div class="adBlock">
+                                        <iframe src="watch/index.html" scrolling="no" frameborder="0" width="100%" height="100%" allowtransparency="true"></iframe>
+                                        <!-- <a href=""><img src="images/tagheuer.jpg"></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                   
+                </div>
+                <div class="footer-mid">
+                    <a href="#"><img src="images/airline/footermid-logo.svg" alt="swiss-logo"><span>Swiss International Air Lines Company</span></a>
+                </div>
+                <div class="footer-bottom bottom">
+                    <div class="row">
+                       
+                        <div class="col-xs-6 social">
+                            <div class="row d-flex justify-content-center">
+                                <a href="https://www.facebook.com/pages/Swisstours/256257954432198" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="https://www.instagram.com/_swisstours/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 copyright"><div class="row">&copy; 2023 Swisstours.com All rights reserved.</div></div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Ends -->
+ <!-- ConditionAppplyModal Modal start -->
+    <div class="modal fade" id="ConditionApplyModal" tabindex="-1" aria-labelledby="ConditionApplyModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="contestpopup"><div style="padding:10px" id="divInfo"><b>Includes</b><br><ul>
+                        <li>Unlimited travel on train, bus and boat (<a href="https://s3.amazonaws.com/helpscout.net/docs/assets/5f27b7922c7d3a31c76a564e/attachments/5f7333c24cedfd001763928d/STS_map_area_of_validity.pdf" target="_blank">area of validity and benefits</a> )&nbsp;</li>
+                        <li>Unlimited travel on premium panorama trains: Glacier Express, Bernina Express, Golden Pass MOB, Gothard Panorama Express and Luzern Interlaken Express (seat reservations cost extra).</li>
+                        <li>Unlimited use of public transit in more than 90 towns and cities.</li>
+                        <li>Free admission to more than 500 museums (<a href="http://www.museumspass.ch" target="_blank">www.museumspass.ch</a> )</li>
+                        <li>Pass includes mountain excursions to Brunni, Klewenalp, Rigi, Stanserhorn, and Stoos.&nbsp;</li>
+                        </ul>
+                        <br><b>Bonuses</b><br><ul>
+                        <li>Up to 50% discount on mountain railways and cable cars (25% on Jungfraujoch).</li>
+                        <li>Passholder fares on Lyria</li>
+                        <li>Passholder fares on NightJet routes including Switzerland</li>
+                        </ul>
+                        <p>Bonuses are subject to change and may require use of a travel day.</p>
+                        <p>Travelers should confirm bonuses locally.</p>
+                        <br><b>Sales Conditions</b><br>Swiss Travel Pass valid for 3 consecutive days. Validity ends at 5:00 AM on the day following the last day.
+                        <br><b></b><br><p>Available for adult and youth travelers in first and second class. Youth travelers must be under 25 years old on the first day of travel.<br>Valid for residents outside of Switzerland and Liechtenstein.<br>Passes are prevalidated at time of purchase .</p>
+                        <p>The Swiss map is required to travel, either printed or via the following link: <a href="https://s3.amazonaws.com/helpscout.net/docs/assets/5f27b7922c7d3a31c76a564e/attachments/5f7333c24cedfd001763928d/STS_map_area_of_validity.pdf" target="_blank">area of validity and benefits</a>&nbsp;&nbsp;</p>
+                        <p></p>
+                        <br><b>After Sales Policy</b><br><p>Refundable up to 2 days prior to first date of validity with an administrative fee of CHF 10 per pass.  Thereafter, no refund. If pass is used or flexi days are activated, non refundable. The transaction fees are non-refundable.&nbsp;</p>
+                        <br><b>Ticketing Method</b><br>For Swiss Travel Pass with consecutive days, or Swiss Half Fare Card: ticket will be attached to your booking confirmation email as a pdf. Please, print your pass or card prior to boarding your first train.
+                        
+                        
+                        //// For Swiss Travel Pass Flex, the pdf that will be attached to your confirmation email is a receipt and not a valid travel document! You will need to activate your travel days on www.activateyourpass.com. You will receive a valid ticket for each activated travel day. Please show this either in printed form or on your mobile device when tickets are being checked. Activated tickets can be deactivated/changed any number of times until 1 day prior to the selected travel day. On the selected travel day, an activated ticket cannot be deactivated anymore.<p></p><br></div></div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+ <!-- ConditionAppplyModal Modal end-->
+<script src="js/general.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.hoveraccordion .accordion-item').hover(
+    function () {
+      var $this = $(this);
+      var hoverDelay = 500; // Set the delay in milliseconds
+
+      $this.data('hoverTimeout', setTimeout(function () {
+        $this.find('.accordion-button').click();
+      }, hoverDelay));
+    },
+    function () {
+      var $this = $(this);
+      clearTimeout($this.data('hoverTimeout'));
+      // You can add additional logic if needed
+    }
+  );
+        });   
+   // Show 5 items initially
+   $('.sw-AboutJungSection .accordion-item:lt(5)').show();
+   // Show more items when the "Read More" button is clicked
+   $('.sw-AboutJungSection .sw-readMoreBtn').on('click', function() {
+     $('.sw-AboutJungSection .accordion-item.hidden').slideDown();
+     $(this).hide();
+     $('.sw-AboutJungSection .sw-readLessBtn').show();
+   });
+   
+   // Show fewer items when the "Read Less" button is clicked
+   $('.sw-AboutJungSection .sw-readLessBtn').on('click', function() {
+     $('.sw-AboutJungSection .accordion-item.hidden').slideUp();
+     $(this).hide();
+     $('.sw-AboutJungSection .sw-readMoreBtn').show();
+   });
+     //faq red more 
+   // Show 7 items initially
+   
+   $('.faqSection .accordion-item:lt(7)').show();
+   
+   // Show more items when the "Read More" button is clicked
+   $('.faqSection .sw-readMoreBtn').on('click', function() {
+     $('.faqSection .accordion-item.hidden').slideDown();
+     $(this).hide();
+     $('.faqSection .sw-readLessBtn').show();
+   });
+   
+   // Show fewer items when the "Read Less" button is clicked
+   $('.faqSection .sw-readLessBtn').on('click', function() {
+     $('.faqSection .accordion-item.hidden').slideUp();
+     $(this).hide();
+     $('.faqSection .sw-readMoreBtn').show();
+   });
+   
+</script>
+</body>
+</html>
