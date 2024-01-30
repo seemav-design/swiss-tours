@@ -1,0 +1,595 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="theme-color" content="#000" />
+    <title>Welcome To SWISStours</title>
+    <link href="images/favicon.ico.jpg" rel="shortcut icon" />
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/menu.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-select.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+   </head>
+<body>
+<!-- Header Starts -->
+ <!-- Header Starts -->
+ <header class="cd-main-header sw-mainheader">
+    <!-- Start Mega Menu HTML -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg sw-navbar">
+        <div class="w-100 flex-column align-items-start">
+            <div class="d-flex justify-content-between w-100">
+              <a class="navbar-brand" href="#"><img src="images/logo.svg" alt=""></a>
+              
+              <div class="top-right-menu d-flex flex-grow-1">
+                <div class="cart_box">
+                    <a href="#" class="cart_btn" title="View Cart"><span class="ml-4">My Cart</span><span class="cart_items_count">0</span></a>
+                </div>
+                <div class="login_head">
+                    <a href=""> <span class="txt">Login</span></a>
+                </div>
+                <div class="sign-upbtn">
+                    <a href="" class="btn"> <img src="images/airline/signup-icon.svg" alt=""><span class="txt">sign up</span></a>
+                </div>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+                  <div class="hamburger-toggle">
+                    <div class="hamburger">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          
+          <div class="collapse navbar-collapse menu_navbar w-100" id="navbar-content">
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0 flex-grow-1 mt-4" >
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">
+                    <span class="nav-icon"><img src="images/airline/Plane2.svg" alt=""></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/Plane2.svg" alt=""></span>
+                    Flights</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/hotelmenu-icon.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/hotel.svg" alt=""></span>
+                    Hotels
+                </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/aparment.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/apartment.svg" alt=""></span>
+                    Apartments</a>
+              </li>
+            
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" aria-current="page" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/package.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/package.svg" alt=""></span>
+                    Packages</a>
+                  <ul class="dropdown-menu shadow">
+                    <li class="rmm-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                   <li>
+                      <a class="dropdown-item pe-4" href="#">Air-Inclusive Packages<img src="images/airline/sw-logo2.svg" class="img-fluid menu-innericon"></a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Land Packages</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/e-swiss.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/e-swiss.svg" alt=""></span>
+                    E-Swiss Travel Pass
+                </a>
+              </li>
+              <li class="nav-item dropdown dropdown-mega position-static">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/european.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/eurailpass.svg" alt=""></span>
+                    European Rail
+                </a>
+                 <div class="dropdown-menu shadow pass">
+                    <div class="mega-content px-lg-4">
+                        <div class="container-fluid">
+                            <ul class="row">
+                                <li class="col-12 col-lg-8 py-lg-4 border-right submenu2 colcount">
+                                    <div class="rmm-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></div>
+                                    <span class="submenutitle"><a href="#">Eurail Pass<img src="images/airline/eurailicon.svg" class="img-fluid menucion2 ms-2"></a></span>
+                                    <ul class="list-group submenu2-content">
+                                        <li class="s2back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                         <li>
+                                            <!-- <a class="list-group-item d-flex justify-content-between colcount" href="#">
+                                               
+                                            <div class="d-flex justify-content-end align-items-end">
+                                                <span> Global Pass</span>
+                                               <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                            </div>
+                                            </a>-->
+                                            <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                                Global Pass
+                                                <div class="d-flex justify-content-end align-items-end populricon">
+                                                    <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                </div>
+                                            </a>
+                                        </li> 
+                                         <li class="one-country-pass">
+                                            <a class="list-group-item populricon" href="#">One Country Pass</a>
+                                            <ul class="list-group eurail-pass list-group2">
+                                                <li class="s2back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                                <li class="listoverflow-mb">
+                                                    <ul>
+                                                        <li><a href="#" class="list-group-item">Eurail Austria Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Belgium Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Benelux Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Bulgaria Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Croatia Pass</a></li>
+                                                        <li><a href="#" class="list-group-item"> Eurail Czech Republic Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Denmark Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Lithuania Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Luxembourg Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Netherlands Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Norway Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Poland Pass</a></li>
+                                                    </ul>
+                                                    <ul class="sub-listgrop2">
+                                                        <li><a href="#" class="list-group-item">Eurail Portugal Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Romania Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Finland Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail France Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Germany Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Greece Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Hungary Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Italy Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Scandinavia Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Serbia Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Slovakia Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Slovenia Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Spain Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Sweden Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Turkey Pass</a></li>
+                                                        <li><a href="#" class="list-group-item"></a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            
+                                        </li>
+
+                                       
+                                    </ul>
+                                </li>
+                                
+                                <li class="col-12 col-lg-4 py-lg-4 ps-md-5 submenu3">
+                                   <span class="submenutitle"><a href="#">Panoramic Trains in Switzerland</a></span>
+                                        <ul class="list-group list-group3 submenu3-content">
+                                            <li class="s3-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                              <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/Berninalogo.png" alt="Berninalogo" class="img-fluid"></span>Bernina Express</a></li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/glacierlogo.png" alt="glacierlogo" class="img-fluid"></span>Glacier Express</a></li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/glacierlogo.png" alt="glacierlogo" class="img-fluid"></span>Lucerne-Interlaken</a></li>
+                                        </ul>
+                                    
+                                    <div class="bordertop"></div>
+                                           <div class="submenu4">
+                                            <span class="submenutitle"><a href="#">Europe Point to Point tickets</a></span>
+                                            <ul class="list-group list-group3 submenu4-content">
+                                                <li class="s3-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/londonlogo.png" alt="imglogo" class="img-fluid"></span>London to Paris</a></li>
+                                                <li>
+                                                    <a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-baselLogo.png" alt="imglogo" class="img-fluid"></span>Paris to Basel 
+                                                        <div class="d-flex justify-content-end align-items-end populricon">
+                                                            <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-zurichlogo.png" alt="imglogo" class="img-fluid"></span>Paris to Zurich</a></li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-amsLogo.png" alt="imglogo" class="img-fluid"></span>Paris to Amsterdam</a></li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-baselLogo.png" alt="imglogo" class="img-fluid"></span>London to Amsterdam</a></li>
+                                            </ul>
+                                        </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> 
+            </li>
+              <li class="nav-item dropdown dropdown-mega position-static">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/sightseeing.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/sightseeing.svg" alt="" class="filter-red"></span>
+                    Attractions
+                </a>
+                  <div class="dropdown-menu shadow pass">
+                    <div class="mega-content px-lg-4">
+                        <div class="container-fluid">
+                            <ul class="row">
+                                <li class="col-12 col-lg-4 py-lg-4 border-right submenu2">
+                                    <div class="rmm-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></div>
+                                    <span class="submenutitle"><a href="#">Mountains in Switzerland</a></span>
+                                    <ul class="list-group submenu2-content">
+                                        <li class="s2back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                        <li>
+                                            <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                                Jungfrau
+                                                <div class="d-flex justify-content-end align-items-end populricon">
+                                                    <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="list-group-item" href="#">Jungfrau VIP Gondola</a>
+                                        </li>
+                                       
+                                        <li><a class="list-group-item" href="#">Harder Kulm</a></li>
+                                        <li><a class="list-group-item" href="#">Grindelwald First</a></li>
+                                        <li><a class="list-group-item" href="#">Schilthorn</a></li>
+                                        <li><a class="list-group-item" href="#">Mt Titlis</a></li>
+                                        <li><a class="list-group-item" href="#">Mt Pilatus</a></li>
+                                        <li><a class="list-group-item" href="#">Matterhorn</a></li>
+                                        <li>
+                                            <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                                Sunnega Paradise
+                                                <div class="d-flex justify-content-end align-items-end populricon">
+                                                    <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li><a class="list-group-item" href="#">Glacier 3000</a></li>
+                                        <li><a class="list-group-item" href="#">Diavolezza</a></li>
+                                        <li><a class="list-group-item" href="#">Aletsch Arena</a></li>
+                                        <li><a class="viewAllBtn" href="#">View All</a></li>
+                                      
+                                    </ul>
+                                </li>
+                                <li class="col-12 col-lg-4 py-lg-4 border-right submenu3 d-flex flex-column">
+                                    <span class="submenutitle"><a href="#">Attractions in Switzerland</a></span>
+                                     <ul class="list-group list-group3 submenu3-content px-lg-3">
+                                            <li class="s3-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                            <li><a class="list-group-item" href="#">Swiss Transport Musuem</a></li>
+                                            <li>
+                                                <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                                Saphir
+                                                <div class="d-flex justify-content-end align-items-end populricon">
+                                                    <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                </div>
+                                                </a> 
+                                            </li>
+                                            <li><a class="list-group-item" href="#">Lindt</a></li>
+                                            <li><a class="list-group-item" href="#">Swissminiatur</a></li>
+                                            <li><a class="list-group-item" href="#">Meal Voucher</a></li>
+                                            <li><a class="list-group-item" href="#">Charlie Chaplin</a></li>
+                                            <li><a class="viewAllBtn list-group-item" href="#">View All</a></li>
+                                            <!-- <li class="attarction-viewbtn">
+                                                <div class="viewmidbtn d-flex align-items-center justify-content-center m-auto">
+                                                    <a href="#" class="redBtn">View all</a>
+                                                </div>
+                                            </li> -->
+                                        </ul>
+                                </li>
+                                <li class="col-12 col-lg-4 py-lg-4 ps-md-5">
+                                    <div class="submenu4">
+                                    <span class="submenutitle"><a href="#">Guided tours in Switzerland</a></span>
+                                    </div>
+                                    <ul class="list-group list-group3 submenu4-content px-lg-3">
+                                        <li class="s3-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                        <li><a class="list-group-item" href="#">Zurich tour with chocolate</a></li>
+                                        <li>
+                                            <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                                Rhine falls and Zurich city tour
+                                                <div class="d-flex justify-content-end align-items-end populricon">
+                                                    <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                </div>
+                                            </a> 
+                                        </li>
+                                        <li><a class="list-group-item" href="#">Rhine falls and Stein am Rhein</a></li>
+                                        <li><a class="list-group-item" href="#">Zurich city tour with lake cruise</a></li>
+                                        <li><a class="list-group-item" href="#">Lucerne and Titlis snow experience</a></li>
+                                    </ul>
+                                    <div class="bordertop"></div>
+                                    <div>
+                                        <div class="submenu5">
+                                            <span class="submenutitle"><a href="#">Worldwide Attractions</a></span>
+                                        </div>
+                                        
+                                        <ul class="list-group list-group3 submenu5-content px-lg-3">
+                                            <li class="s2back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                            <li><a class="list-group-item" href="#">London</a></li>
+                                            <li><a class="list-group-item" href="#">Munich</a></li>
+                                            <li><a class="list-group-item" href="#">Paris</a></li>
+                                            <li><a class="list-group-item" href="#">Vienna</a></li>
+                                            <li><a class="viewAllBtn list-group-item" href="#">View All</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                  </div>
+                  
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/mountain.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mountain.svg" alt="" class="filter-red"></span>
+                    About
+                 </a>
+                  <ul class="dropdown-menu shadow">
+                    <li class="rmm-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                    <li>
+                      <a class="dropdown-item pe-4" href="#">About Us</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Our Leadership</a></li>
+                    <li><a class="dropdown-item" href="#">Brochure</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown dropdown-mega position-static contactMegamenu">
+                  <a class="nav-link dropdown-toggle" href="#"  href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/sightseeing.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/sightseeing.svg" alt="" class="filter-red"></span>
+                    Contact
+                </a>
+                  <div class="dropdown-menu shadow">
+                    <div class="mega-content ">
+                        <div class="container-fluid">
+                            <div class="rmm-back ps-0"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></div>
+                            <div class="row listoverflow-mb">
+                                <div class="col-12 col-md-7 col-lg-8 py-lg-8">
+                                    <ul class="menuleftContact">
+                                        
+                                        <li> <span class="submenutitle"><a href="https://wa.me/919987997997?text=Hello.">WhatsApp<span class="ms-3"><img src="images/airline/whatapp.svg" alt=""></span></a></span></li>
+                                        <li class="d-flex align-items-center"> <span class="submenutitle">Toll Free</span><a href="tel:18002020052" class="text-primary">1800 20 20 052</a></li>
+                                        <li>
+                                            <span class="submenutitle">Branch Office</span>
+                                            <ul>
+                                                <li><span>Mumbai (Head Office)</span><a href="tel:+912261282400">(022) 61282400, 67439990</a></li>  
+                                                <li><span>Delhi</span><a href="tel:+917208820785">+91 7208820787 / +91 7208820785 / +91 9643662737</a></li>  
+                                                <li><span>Chennai</span><a href="tel:+914442179510">(044) 42179510 / 20</a></li>  
+                                                <li><span>Bangalore</span><a href="tel:+918041132172">(080) 41132172, 41609072</a></li>  
+                                                <li><span>Pune</span><a href="tel:+919136117252">+919136117252, +91 8855883831</a></li>
+                                                <li><span>Kolkata</span><a href="tel:+919007160166">+91 9007160166</a></li>  
+                                                <li><span>Ahmedabad</span><a href="tel:+917940028694">(079) 40028694 / 95</a></li>  
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-md-5 col-lg-4 p-0">
+                                    <div class="bgimg">
+                                        <div class="d-flex justify-content-between align-items-center bottomBtn">
+                                            <a href="#" class="whitebgbtn">View Brochure</a>    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+              </li>
+              <li class="nav-item d-block d-md-none">
+                 <a class="nav-link" href="#"><span class="nav-icon mb-icon">
+                    <img src="images/airline/menu-icon/mobile/cart.svg" alt="" class="filter-red"></span>
+                    My Cart<span class="cart_items_count">0</span></a>
+              </li>
+              <li class="nav-item ">
+                  <a class="nav-link" href="#">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/offers.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/offers.svg" alt="" class="filter-red"></span>
+                    Blog
+                </a>
+              </li>
+              <li class="nav-item  d-block d-md-none mt-5 mx-4 text-center login-mobilebtn">
+                <a href="#" class="redBtn w-100 m-auto d-flex justify-content-center">Login</a>
+              </li>
+          </ul>
+          
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- END Mega Menu HTML -->
+  </header>
+  <!-- Header Ends -->
+      <link href="css/swiss-style.css" rel="stylesheet" type="text/css"> <!--airline css-->
+      <link rel="stylesheet" href="css/meghamenu.css">
+  <!--airline css-->
+  <!--content holder start-->
+<div class="cd-main-content">
+    <div class="container-fluid main_content_container pt-0">
+        <div class="sw-main-content sw-main-content2">
+            <!--mid_Container container start-->
+            <div class="mid_Container container">
+                <div class="innersection_Container">
+                    <!--main-contentrow start-->
+                        <div class="main-contentrow innerpages">
+                            <div class="title">
+                                <h1 data-title="Privacy Policy">Privacy Policy</h1>
+                            </div>
+                            <!--row start-->
+                            <div class="useragreement-main">
+                                <p>At Airline Marketing Services (I) Pvt Ltd -100 % subsidiary of <span class="red_txt">Swiss International Air Lines AG company owning the brand SWISStours</span>  (and will hereinafter be referred to) as SWISStours, we respect your need to understand how information is being collected, used, disclosed, transferred and stored. The protection of our customers' privacy is very important to us.</p>
+
+                            <p>Hereinafter, we set out the principles we follow and for what purpose we collect and process personal data (information that determines your identity or allows us to identify you; referred to hereinafter also as “data”) via this website.</p>
+
+                            <p>The services offered by SWISStours are not directed at children under 16 years old. For children younger than 16 years old, the use of any of our services is only allowed with the valid consent of a parent or a guardian. If our services are used by a child under 16 years of age SWISStours assumes they have done so with the consent of their parent or guardian who are fully responsible for their actions.</p>
+
+                            <p>We collect and process your personal data carefully, only for the purposes described in this Privacy Statement and only to the extent necessary as defined therein and within the scope of the applicable legal regulations. We only store your personal data to the extent and as long as it is required for the performance of our services or as we are legally obligated.</p>
+
+                            <p>SWISStours allows personal data to be processed by third parties in all countries (also in countries where legislation does not guarantee appropriate data protection) for the purpose of operating the website and to meet the purposes stated in this Privacy Statement.</p>
+                            <p>In the case of the transfer of data to countries without appropriate data protection, SWISStours ensures that the measures required are implemented (generally by signing recognised data protection agreements, based on standard contractual clauses), in order to protect personal data in accordance with the applicable data protection law.</p>
+                            <p>This Privacy statement must be read together with our <strong><a href="../info/cookies-policy.aspx"><u>Cookies Policy</u>.</a></strong></p>
+                            <p><strong>Rights of customers</strong></p>
+                            <p>You have the right to information, correction, deletion and transferability of your data. Furthermore, you have the right to restrict processing.</p>
+                            <p>You have the right to object to the processing of your personal data. An objection only has future effect and does not affect previous processing. If, on account of the objection, SWISStours is no longer able to perform the services contractually agreed with you, the objection is deemed to be a breach of contract by the customer and SWISStours has the right to terminate its contract with you without notice. Payment obligations already contractually entered into by the customer remain in force.</p>
+                            <p><strong>Contact</strong></p>
+                            <p>If you have any questions about this Privacy Statement or regarding data protection at SWISStours, please contact : <a href="mailto:contact@swisstours.com"><u>contact@swisstours.com</u></a></p>
+                            <p><strong>Use of the website and cookies</strong></p>
+
+                            <p>SWISStours may use cookies or other technologies to record your visits to our Website in order to measure advertising effectiveness. We may also collect information about your visit to our Website, based on your browsing (click stream) activities. This information may include but is not limited to the pages browsed and products and services viewed or booked.</p>
+
+                            <p>When you access our Website, our system automatically records technical information about the computer accessing it. The data collected is information about the browser type and the version used, the operating system, the internet provider and the IP address of the user, the date and time of access, the websites from which the user's system obtains access to our Website, and the websites accessed by the user's system via our Website.</p>
+
+                            <p><strong>Storage of data</strong></p>
+
+                            <p>The personal information and other data we collect from you may be transferred to, processed, and stored in our servers or the servers of our third party services providers. Your Personal Information will be stored as long as is necessary to fulfil any of the purposes described in this Privacy Statement, or to comply with any (i) contractual requirement that are necessary for the provision of the services, and (ii) legal, tax or accounting requirement.</p>
+                            <p>When it is no longer necessary for us to process your personal information, we will either delete or anonymise the data or, if this is not possible (for example, because your personal information has been stored in backup archives), then we will securely store your personal information.</p>
+                            <p>We will endeavour to anonymise or aggregate your data if we intend to use it for analytical purposes or trend analysis.</p>
+                            <p>SWISStours will use reasonable endeavours to maintain appropriate physical, electronic and organisational procedures to ensure that your Personal Information and other data is treated securely and in accordance with this Privacy statement, and to protect such data against unauthorised access or unauthorised alteration, disclosure or destruction of data.</p>
+                            <p>SWISStours does not give any representation, warranty or undertaking that the Personal Information you provide to us will be secure at all times, and to the extent SWISStours has fulfilled its obligations under no circumstances shall SWISStours be responsible for any losses, damages, costs and expenses which you may suffer or incur arising from unauthorised access to or use of your personal information.</p>
+
+                            <p><strong>Sharing of data with the authorities in our home country and abroad</strong></p>
+                            <p>For legal and regulatory reasons, it is necessary that we share certain personal and booking information with the governmental authorities in our home country and abroad.</p>
+                            <p class="noneIMP">Under Indian government regulations we are required to collect Permanent Account Number (PAN) card details and produce them on request of the relevant authorities. (Applicable for Indian customers only)</p>
+
+                            <p>SWISStours is obliged to share your personal data with criminal prosecution, administrative or judicial authorities in our home country and abroad in case they require its disclosure for the prevention or prosecution of crimes, misdemeanours, or comparable administrative misconduct. Such a transfer is only performed if based on legal or regulatory requirements.</p>
+
+                            <p><strong>Data processing by third parties in our home country and abroad</strong></p>
+                            <p>SWISStours shares your personal data with several third parties such partner companies for booking handling who may share your data with companies they may have an arrangement with in order to process and complete your booking.</p>
+                            <p><a href="../default.aspx"><u>swisstours.com</u></a> will redirect you to a secure third party payment gateway at the time of payment. All payment transactions carried out by our chosen third-party provider of payment processing services will be encrypted using online encryption technology. SWISStours does not handle or store any of your sensitive card details.</p>
+                            <p>We may also share aggregate or anonymous information with relevant third parties, including our advertisers. Your personal information may be transferred outside of your home country and outside of the European Union, for the above mentioned purposes. If such transfer takes place to a country that does not provide an adequate level of protection, SWISStours will use reasonable endeavours to ensure that appropriate safeguards are in place. Once we have received your information, we will use strict procedures and security features to try to prevent unauthorised access. SWISStours does not give any representation, warranty or undertaking that the Personal Information you provide to us will be secure at all times, and to the extent SWISStours has fulfilled its obligations under no circumstances shall SWISStours be responsible for any losses, damages, costs and expenses which you may suffer or incur arising from unauthorised access to or use of your Personal Information.</p>
+                            <p>There may be links present on our website which could result in you leaving the website and/or being taken to other third party websites. You should note that any Personal Information that you provide to these third party websites are not subject to this Privacy Statement, and SWISStours is not liable for any losses, damages, costs or expenses which you may suffer or incur in connection with you providing or making available Personal Information or other data to such third party websites.</p>
+
+                            <p><strong>Booking process</strong></p>
+
+                            <p>If you start a booking process, we collect booking data and personal data, in particular your surname, first name, date of birth, passport details, telephone number and e-mail address. </p>
+                            <p><strong>Analytics Tools</strong></p>
+
+                            <p>
+                                We use various analytics tools and third party technologies including Google Analytics amongst others to collect and analyse cookies. We have contractual relationship with these third party analytics companies, who collect this information. They may combine this information with other information that they already have independently collected from other websites. Many of these companies collect and use information under their own privacy policies.
+                                Refer to our <strong><a href="../info/cookies-policy.aspx"><u>Cookie Policy</u></a></strong> for further information on cookies.
+                            </p>
+
+                            <p><strong>Newsletters</strong></p>
+                            <p>Upon your request, we will keep you informed about relevant developments and offers from SWISStours. When you subscribe to our newsletter on the website, for example by clicking a confirmation field, we will send you a notification e-mail. If you no longer wish to receive newsletters from SWISStours, you can unsubscribe in the newsletter itself at any time. </p>
+                            <p>We process your data associated with the newsletter in order to send you news about and related to SWISStours and our partners. In addition, we also process and use the e-mail address you have entered in order to send you personalised offers associated with the newsletter. If a link in the newsletter directs you to our websites, you also give us permission to process and use your IP address. </p>
+                            <p><strong>Chat service</strong></p>
+                            <p>SWISStours provides you with an online chat service on <a href="../Default.aspx"><u>swisstours.com</u></a>. SWISStours works together with an external service provider for the operation of the live chat service. The service provider may have access to your details of a chat session on the SWISStours Website. </p>
+                            <p>This notice is effective as of 10/02/2020. We reserve the right to update or change this Privacy Statement at any time. You should check the Privacy Statement periodically. Your continued use of our website after we make any modifications to the policy on this page will constitute your acknowledgment of the modifications and your consent to abide and be bound by the modified notice.</p>
+                            </div>
+                            <!--row end-->
+                        </div>
+                    <!--main-contentrow start-->
+                </div>
+            </div>
+            <!--mid_Container end-->
+        </div>
+    </div>
+</div>
+<!--content holder end-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Footer Starts -->
+    <footer class="sw-footer">
+
+        <div class="container-fluid swissBrief d-none">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="foot_item"><img src="images/stp/swiss_logo.jpg"> A Swiss International Air Lines Company</div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="foot_item"><img src="images/stp/yrs20.jpg"> Over 2 Decades of Travel Excellence</div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="foot_item"><img src="images/stp/visit_logo.jpg">Sister Concern of VisitSwitzerland.com </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="foot_item"><img src="images/stp/services.jpg"> Bouquet of Services</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer">
+            <div class="footer-top">
+                <div class="row">
+
+                    <div class="col-12 col-md-3 border-right">
+                        <div class="row">
+                            <div class="foot_head">SwissTours <i class="fa fa-plus pull-right dropdown_icon" aria-hidden="true"></i></div>
+                            <ul class="foot_dropdown">
+                                <li><a href="about_us.html" class="fade_anim">About us</a> </li>
+                                <li><a href="partners.html" class="fade_anim">Partners</a></li>
+                                <li><a href="careers.html" class="fade_anim">Careers</a></li>
+                                <li><a href="testimonials.html" class="fade_anim">Testimonials</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- <div class="col-sm-4 col-md-3">
+                        <div class="row">
+                            <div class="foot_head">Customer Support <i class="fa fa-plus pull-right dropdown_icon" aria-hidden="true"></i></div>
+                            <ul class="foot_dropdown">
+                                <li><a href="contact_us.html" class="fade_anim">Contact Us</a></li>
+                                <li><a href="faqs.html" class="fade_anim">FAQs</a></li>
+                                <li><a href="#" class="fade_anim">Sitemap</a></li>
+                            </ul>
+                        </div>
+                    </div> -->
+
+                    <div class="col-12 col-md-3 border-right px-lg-5">
+                        <div class="row">
+                            <div class="foot_head">Legal <i class="fa fa-plus pull-right dropdown_icon" aria-hidden="true"></i></div>
+                            <ul class="foot_dropdown">
+                                <li><a href="user_agreement.html" class="fade_anim">User Agreement</a></li>
+                                <li><a href="privacy_policy.html" class="fade_anim">Privacy Policy</a></li>
+                                <li><a href="#" class="fade_anim">Verified & Secured</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 border-right px-lg-3">
+                        <div class="row">
+                            <div class="adHolder sw-adHolder">
+                                <div class="foot_head" style="text-align: center;">Accessory  Partner</div>
+                                <div style="text-align: center;">
+                                    <a href="#" target="_blank">
+                                        <img src="images/airline/victorinox-logo.png" alt="victorinox logo" class="victoximg1">
+                                        <img src="images/airline/victorinox-logo-hover.png" alt="victorinox logo" class="victoxhoverimg">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3 ps-lg-5 mt-4 mt-md-0">
+                        <div class="row">
+                            <div class="adHolder">
+                                <div class="foot_head">Official Time Partner</div>
+                                <div class="adBlock">
+                                    <iframe src="watch/index.html" scrolling="no" frameborder="0" width="100%" height="100%" allowtransparency="true"></iframe>
+                                    <!-- <a href=""><img src="images/tagheuer.jpg"></a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+               
+            </div>
+            <div class="footer-mid">
+                <a href="#"><img src="images/airline/footermid-logo.svg" alt="swiss-logo"><span>Swiss International Air Lines Company</span></a>
+            </div>
+            <div class="footer-bottom bottom">
+                <div class="row">
+                   
+                    <div class="col-xs-6 social">
+                        <div class="row d-flex justify-content-center">
+                            <a href="https://www.facebook.com/pages/Swisstours/256257954432198" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="https://www.instagram.com/_swisstours/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 copyright"><div class="row">&copy; 2023 Swisstours.com All rights reserved.</div></div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Ends -->
+</body>
+
+</html>

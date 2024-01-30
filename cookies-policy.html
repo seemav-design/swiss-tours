@@ -1,0 +1,581 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="theme-color" content="#000" />
+    <title>Welcome To SWISStours</title>
+    <link href="images/favicon.ico.jpg" rel="shortcut icon" />
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/menu.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-select.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+  </head>
+<body>
+<!-- Header Starts -->
+<header class="cd-main-header sw-mainheader">
+    <!-- Start Mega Menu HTML -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg sw-navbar">
+        <div class="w-100 flex-column align-items-start">
+            <div class="d-flex justify-content-between w-100">
+              <a class="navbar-brand" href="#"><img src="images/logo.svg" alt=""></a>
+              
+              <div class="top-right-menu d-flex flex-grow-1">
+                <div class="cart_box">
+                    <a href="#" class="cart_btn" title="View Cart"><span class="ml-4">My Cart</span><span class="cart_items_count">0</span></a>
+                </div>
+                <div class="login_head">
+                    <a href=""> <span class="txt">Login</span></a>
+                </div>
+                <div class="sign-upbtn">
+                    <a href="" class="btn"> <img src="images/airline/signup-icon.svg" alt=""><span class="txt">sign up</span></a>
+                </div>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+                  <div class="hamburger-toggle">
+                    <div class="hamburger">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          
+          <div class="collapse navbar-collapse menu_navbar w-100" id="navbar-content">
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0 flex-grow-1 mt-4" >
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">
+                    <span class="nav-icon"><img src="images/airline/Plane2.svg" alt=""></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/Plane2.svg" alt=""></span>
+                    Flights</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/hotelmenu-icon.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/hotel.svg" alt=""></span>
+                    Hotels
+                </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/aparment.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/apartment.svg" alt=""></span>
+                    Apartments</a>
+              </li>
+            
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" aria-current="page" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/package.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/package.svg" alt=""></span>
+                    Packages</a>
+                  <ul class="dropdown-menu shadow">
+                    <li class="rmm-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                   <li>
+                      <a class="dropdown-item pe-4" href="#">Air-Inclusive Packages<img src="images/airline/sw-logo2.svg" class="img-fluid menu-innericon"></a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Land Packages</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/e-swiss.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/e-swiss.svg" alt=""></span>
+                    E-Swiss Travel Pass
+                </a>
+              </li>
+              <li class="nav-item dropdown dropdown-mega position-static">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/european.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/eurailpass.svg" alt=""></span>
+                    European Rail
+                </a>
+                 <div class="dropdown-menu shadow pass">
+                    <div class="mega-content px-lg-4">
+                        <div class="container-fluid">
+                            <ul class="row">
+                                <li class="col-12 col-lg-8 py-lg-4 border-right submenu2 colcount">
+                                    <div class="rmm-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></div>
+                                    <span class="submenutitle"><a href="#">Eurail Pass<img src="images/airline/eurailicon.svg" class="img-fluid menucion2 ms-2"></a></span>
+                                    <ul class="list-group submenu2-content">
+                                        <li class="s2back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                         <li>
+                                            <!-- <a class="list-group-item d-flex justify-content-between colcount" href="#">
+                                               
+                                            <div class="d-flex justify-content-end align-items-end">
+                                                <span> Global Pass</span>
+                                               <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                            </div>
+                                            </a>-->
+                                            <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                                Global Pass
+                                                <div class="d-flex justify-content-end align-items-end populricon">
+                                                    <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                </div>
+                                            </a>
+                                        </li> 
+                                         <li class="one-country-pass">
+                                            <a class="list-group-item populricon" href="#">One Country Pass</a>
+                                            <ul class="list-group eurail-pass list-group2">
+                                                <li class="s2back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                                <li class="listoverflow-mb">
+                                                    <ul>
+                                                        <li><a href="#" class="list-group-item">Eurail Austria Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Belgium Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Benelux Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Bulgaria Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Croatia Pass</a></li>
+                                                        <li><a href="#" class="list-group-item"> Eurail Czech Republic Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Denmark Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Lithuania Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Luxembourg Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Netherlands Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Norway Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Poland Pass</a></li>
+                                                    </ul>
+                                                    <ul class="sub-listgrop2">
+                                                        <li><a href="#" class="list-group-item">Eurail Portugal Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Romania Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Finland Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail France Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Germany Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Greece Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Hungary Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Italy Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Scandinavia Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Serbia Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Slovakia Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Slovenia Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Spain Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Sweden Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Turkey Pass</a></li>
+                                                        <li><a href="#" class="list-group-item"></a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            
+                                        </li>
+
+                                       
+                                    </ul>
+                                </li>
+                                
+                                <li class="col-12 col-lg-4 py-lg-4 ps-md-5 submenu3">
+                                   <span class="submenutitle"><a href="#">Panoramic Trains in Switzerland</a></span>
+                                        <ul class="list-group list-group3 submenu3-content">
+                                            <li class="s3-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                              <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/Berninalogo.png" alt="Berninalogo" class="img-fluid"></span>Bernina Express</a></li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/glacierlogo.png" alt="glacierlogo" class="img-fluid"></span>Glacier Express</a></li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/glacierlogo.png" alt="glacierlogo" class="img-fluid"></span>Lucerne-Interlaken</a></li>
+                                        </ul>
+                                    
+                                    <div class="bordertop"></div>
+                                           <div class="submenu4">
+                                            <span class="submenutitle"><a href="#">Europe Point to Point tickets</a></span>
+                                            <ul class="list-group list-group3 submenu4-content">
+                                                <li class="s3-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/londonlogo.png" alt="imglogo" class="img-fluid"></span>London to Paris</a></li>
+                                                <li>
+                                                    <a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-baselLogo.png" alt="imglogo" class="img-fluid"></span>Paris to Basel 
+                                                        <div class="d-flex justify-content-end align-items-end populricon">
+                                                            <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-zurichlogo.png" alt="imglogo" class="img-fluid"></span>Paris to Zurich</a></li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-amsLogo.png" alt="imglogo" class="img-fluid"></span>Paris to Amsterdam</a></li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-baselLogo.png" alt="imglogo" class="img-fluid"></span>London to Amsterdam</a></li>
+                                            </ul>
+                                        </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> 
+            </li>
+              <li class="nav-item dropdown dropdown-mega position-static">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/sightseeing.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/sightseeing.svg" alt="" class="filter-red"></span>
+                    Attractions
+                </a>
+                  <div class="dropdown-menu shadow pass">
+                    <div class="mega-content px-lg-4">
+                        <div class="container-fluid">
+                            <ul class="row">
+                                <li class="col-12 col-lg-4 py-lg-4 border-right submenu2">
+                                    <div class="rmm-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></div>
+                                    <span class="submenutitle"><a href="#">Mountains in Switzerland</a></span>
+                                    <ul class="list-group submenu2-content">
+                                        <li class="s2back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                        <li>
+                                            <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                                Jungfrau
+                                                <div class="d-flex justify-content-end align-items-end populricon">
+                                                    <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="list-group-item" href="#">Jungfrau VIP Gondola</a>
+                                        </li>
+                                       
+                                        <li><a class="list-group-item" href="#">Harder Kulm</a></li>
+                                        <li><a class="list-group-item" href="#">Grindelwald First</a></li>
+                                        <li><a class="list-group-item" href="#">Schilthorn</a></li>
+                                        <li><a class="list-group-item" href="#">Mt Titlis</a></li>
+                                        <li><a class="list-group-item" href="#">Mt Pilatus</a></li>
+                                        <li><a class="list-group-item" href="#">Matterhorn</a></li>
+                                        <li>
+                                            <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                                Sunnega Paradise
+                                                <div class="d-flex justify-content-end align-items-end populricon">
+                                                    <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li><a class="list-group-item" href="#">Glacier 3000</a></li>
+                                        <li><a class="list-group-item" href="#">Diavolezza</a></li>
+                                        <li><a class="list-group-item" href="#">Aletsch Arena</a></li>
+                                        <li><a class="viewAllBtn" href="#">View All</a></li>
+                                      
+                                    </ul>
+                                </li>
+                                <li class="col-12 col-lg-4 py-lg-4 border-right submenu3 d-flex flex-column">
+                                    <span class="submenutitle"><a href="#">Attractions in Switzerland</a></span>
+                                     <ul class="list-group list-group3 submenu3-content px-lg-3">
+                                            <li class="s3-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                            <li><a class="list-group-item" href="#">Swiss Transport Musuem</a></li>
+                                            <li>
+                                                <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                                Saphir
+                                                <div class="d-flex justify-content-end align-items-end populricon">
+                                                    <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                </div>
+                                                </a> 
+                                            </li>
+                                            <li><a class="list-group-item" href="#">Lindt</a></li>
+                                            <li><a class="list-group-item" href="#">Swissminiatur</a></li>
+                                            <li><a class="list-group-item" href="#">Meal Voucher</a></li>
+                                            <li><a class="list-group-item" href="#">Charlie Chaplin</a></li>
+                                            <li><a class="viewAllBtn list-group-item" href="#">View All</a></li>
+                                            <!-- <li class="attarction-viewbtn">
+                                                <div class="viewmidbtn d-flex align-items-center justify-content-center m-auto">
+                                                    <a href="#" class="redBtn">View all</a>
+                                                </div>
+                                            </li> -->
+                                        </ul>
+                                </li>
+                                <li class="col-12 col-lg-4 py-lg-4 ps-md-5">
+                                    <div class="submenu4">
+                                    <span class="submenutitle"><a href="#">Guided tours in Switzerland</a></span>
+                                    </div>
+                                    <ul class="list-group list-group3 submenu4-content px-lg-3">
+                                        <li class="s3-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                        <li><a class="list-group-item" href="#">Zurich tour with chocolate</a></li>
+                                        <li>
+                                            <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                                Rhine falls and Zurich city tour
+                                                <div class="d-flex justify-content-end align-items-end populricon">
+                                                    <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                </div>
+                                            </a> 
+                                        </li>
+                                        <li><a class="list-group-item" href="#">Rhine falls and Stein am Rhein</a></li>
+                                        <li><a class="list-group-item" href="#">Zurich city tour with lake cruise</a></li>
+                                        <li><a class="list-group-item" href="#">Lucerne and Titlis snow experience</a></li>
+                                    </ul>
+                                    <div class="bordertop"></div>
+                                    <div>
+                                        <div class="submenu5">
+                                            <span class="submenutitle"><a href="#">Worldwide Attractions</a></span>
+                                        </div>
+                                        
+                                        <ul class="list-group list-group3 submenu5-content px-lg-3">
+                                            <li class="s2back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                            <li><a class="list-group-item" href="#">London</a></li>
+                                            <li><a class="list-group-item" href="#">Munich</a></li>
+                                            <li><a class="list-group-item" href="#">Paris</a></li>
+                                            <li><a class="list-group-item" href="#">Vienna</a></li>
+                                            <li><a class="viewAllBtn list-group-item" href="#">View All</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                  </div>
+                  
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/mountain.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mountain.svg" alt="" class="filter-red"></span>
+                    About
+                 </a>
+                  <ul class="dropdown-menu shadow">
+                    <li class="rmm-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                    <li>
+                      <a class="dropdown-item pe-4" href="#">About Us</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Our Leadership</a></li>
+                    <li><a class="dropdown-item" href="#">Brochure</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown dropdown-mega position-static contactMegamenu">
+                  <a class="nav-link dropdown-toggle" href="#"  href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/sightseeing.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/sightseeing.svg" alt="" class="filter-red"></span>
+                    Contact
+                </a>
+                  <div class="dropdown-menu shadow">
+                    <div class="mega-content ">
+                        <div class="container-fluid">
+                            <div class="rmm-back ps-0"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></div>
+                            <div class="row listoverflow-mb">
+                                <div class="col-12 col-md-7 col-lg-8 py-lg-8">
+                                    <ul class="menuleftContact">
+                                        
+                                        <li> <span class="submenutitle"><a href="https://wa.me/919987997997?text=Hello.">WhatsApp<span class="ms-3"><img src="images/airline/whatapp.svg" alt=""></span></a></span></li>
+                                        <li class="d-flex align-items-center"> <span class="submenutitle">Toll Free</span><a href="tel:18002020052" class="text-primary">1800 20 20 052</a></li>
+                                        <li>
+                                            <span class="submenutitle">Branch Office</span>
+                                            <ul>
+                                                <li><span>Mumbai (Head Office)</span><a href="tel:+912261282400">(022) 61282400, 67439990</a></li>  
+                                                <li><span>Delhi</span><a href="tel:+917208820785">+91 7208820787 / +91 7208820785 / +91 9643662737</a></li>  
+                                                <li><span>Chennai</span><a href="tel:+914442179510">(044) 42179510 / 20</a></li>  
+                                                <li><span>Bangalore</span><a href="tel:+918041132172">(080) 41132172, 41609072</a></li>  
+                                                <li><span>Pune</span><a href="tel:+919136117252">+919136117252, +91 8855883831</a></li>
+                                                <li><span>Kolkata</span><a href="tel:+919007160166">+91 9007160166</a></li>  
+                                                <li><span>Ahmedabad</span><a href="tel:+917940028694">(079) 40028694 / 95</a></li>  
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-md-5 col-lg-4 p-0">
+                                    <div class="bgimg">
+                                        <div class="d-flex justify-content-between align-items-center bottomBtn">
+                                            <a href="#" class="whitebgbtn">View Brochure</a>    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+              </li>
+              <li class="nav-item d-block d-md-none">
+                 <a class="nav-link" href="#"><span class="nav-icon mb-icon">
+                    <img src="images/airline/menu-icon/mobile/cart.svg" alt="" class="filter-red"></span>
+                    My Cart<span class="cart_items_count">0</span></a>
+              </li>
+              <li class="nav-item ">
+                  <a class="nav-link" href="#">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/offers.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/offers.svg" alt="" class="filter-red"></span>
+                    Blog
+                </a>
+              </li>
+              <li class="nav-item  d-block d-md-none mt-5 mx-4 text-center login-mobilebtn">
+                <a href="#" class="redBtn w-100 m-auto d-flex justify-content-center">Login</a>
+              </li>
+          </ul>
+          
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- END Mega Menu HTML -->
+</header>
+<!-- Header Ends -->
+      <link href="css/swiss-style.css" rel="stylesheet" type="text/css"> <!--airline css-->
+      <link rel="stylesheet" href="css/meghamenu.css">
+<!--airline css-->
+<!--content holder start-->
+<div class="cd-main-content">
+    <div class="container-fluid main_content_container pt-0">
+        <div class="sw-main-content sw-main-content2">
+            <!--mid_Container container start-->
+            <div class="mid_Container container">
+                <div class="innersection_Container">
+                    <!--main-contentrow start-->
+                        <div class="main-contentrow innerpages cookies-policy">
+                            <div class="title">
+                                <h1 data-title="Cookies Policy">Cookies Policy</h1>
+                            </div>
+                            <!--row start-->
+                            <div class="useragreement-main">
+                            <p>Your data privacy and confidentiality are a priority and we do our very best to safeguard the information you entrust to us. For more information, you can review our Privacy Statement here.</p>
+                            <p>This section about cookies sets out the basis and terms upon which SWISStours uses cookies.</p>
+                            <p><strong>What are cookies?</strong></p>
+                            <p>Cookies are widely used in the Internet. They are small text files stored in your browser that contain basic information about your internet use, such as login details and your previous browsing records. </p>
+                            <p>A cookie can be classified in terms of its (i) duration and (ii) the party who places it:</p>
+                            <p><strong>(i) Session cookies and Persistent cookies</strong></p>
+                            <p>The duration of cookies depends on whether they are session or persistent cookies. </p>
+                            <p>
+                                <strong>Session cookies</strong> expire once the browsing session ends.
+                            </p>
+                            <p><strong>Persistent cookies</strong> are saved on your computer or mobile device for a fixed period of time. When you visit a website, your browser will retrieve these cookies so that the website will recognise your device and personalise your site experience according to your previous browsing records. </p>
+                            <p>SWISStours uses persistent cookies for a duration of 30 days. </p>
+                            <p><strong>(ii) First-party cookies and Third-party cookies</strong></p>
+                            <p>We control and set the scope of <strong>first-party cookies </strong>whereas, we have no control over <strong>third-party cookies. </strong>Third-party cookies are operated by third-party sites in a different domain. Some pages of this Website contain third-party cookies in the form of embedded content, such as JavaScript and API. </p>
+                            <p><strong>What types of cookies do we use? </strong></p>
+                            <p>SWISStours uses the following cookies; </p>
+    
+                            <p>
+                                <strong>Necessary cookies:</strong> These cookies allow us to manage this Website and ensure it functions properly. They are essential to help you navigate around this Website and provide you with an improved surfing experience.<br>
+                        If these cookies are disabled, we will not be in a position to offer you our services.<br>
+                        We also use these cookies for fraud detection and prevention purposes. Further, thanks to these cookies, you do not need to log in repeatedly to access different pages once you have logged into this Website.
+                            </p>
+    
+                            <ul class="disc-stylelist">
+                                <strong>Analytics cookies:</strong> We use analytics cookies including Google Analytics and other analytics tools to gather anonymous statistical information for:
+                                <li>assessing how our visitors use this Website;</li>
+                                <li>understanding the demographic and location of our visitors;</li>
+                                <li>evaluating how our new products are being received by users assessing the popularity of our marketing campaign;</li>
+                                <li>enhancing this Website content and service by customising this Website for you.</li>
+                            </ul>
+                            <p>Based on the anonymous data collected, these analytics tools will generate trend analysis and compile reports to attain the above mentioned purposes. </p>
+    
+                            <p><strong>Consent to Cookies</strong></p>
+                            <p>You can decide for yourself whether our Website's web server is allowed to save Cookies on your computer or not. You can opt to change your browser settings so that they do not allow Cookies to be accepted or saved at any time. </p>
+                            <p>You can also delete Cookies that have already been saved at any time. </p>
+                            <p>We would like to emphasise that if you decline Cookies on the Website, functions on the Website may be limited or unavailable. As a result, to make it easier to use the Website, we recommend that your browser settings accept all Cookies on the Website. </p>
+                            <p><strong>How can you manage your consent? </strong></p>
+                            <p>You can accept or decline our use of cookies at any time by managing and/or disabling all or some of the cookies from your browser settings. However, by doing so, you may not be able to enjoy the full functionality of this Website. </p>
+                            <ul class="disc-stylelist">
+                                <li>Cookies settings can normally be found in the preference or settings menu from your browser, for example:</li>
+                                <li>Google Chrome: Settings - Advanced - Content Settings - Cookies</li>
+                                <li>Safari: Preferences - Privacy - Cookies and website data</li>
+                                <li>Mozilla Firefox: Preferences - Privacy - History</li>
+                                <li>Internet Explorer: Internet Options - Privacy</li>
+                            </ul>
+                            </div>
+                            <!--row end-->
+                        </div>
+                    <!--main-contentrow start-->
+                </div>
+            </div>
+            <!--mid_Container end-->
+        </div>
+    </div>
+</div>
+<!--content holder end-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Footer Starts -->
+    <footer class="sw-footer">
+
+        <div class="container-fluid swissBrief d-none">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="foot_item"><img src="images/stp/swiss_logo.jpg"> A Swiss International Air Lines Company</div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="foot_item"><img src="images/stp/yrs20.jpg"> Over 2 Decades of Travel Excellence</div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="foot_item"><img src="images/stp/visit_logo.jpg">Sister Concern of VisitSwitzerland.com </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="foot_item"><img src="images/stp/services.jpg"> Bouquet of Services</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer">
+            <div class="footer-top">
+                <div class="row">
+
+                    <div class="col-12 col-md-3 border-right">
+                        <div class="row">
+                            <div class="foot_head">SwissTours <i class="fa fa-plus pull-right dropdown_icon" aria-hidden="true"></i></div>
+                            <ul class="foot_dropdown">
+                                <li><a href="about_us.html" class="fade_anim">About us</a> </li>
+                                <li><a href="partners.html" class="fade_anim">Partners</a></li>
+                                <li><a href="careers.html" class="fade_anim">Careers</a></li>
+                                <li><a href="testimonials.html" class="fade_anim">Testimonials</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- <div class="col-sm-4 col-md-3">
+                        <div class="row">
+                            <div class="foot_head">Customer Support <i class="fa fa-plus pull-right dropdown_icon" aria-hidden="true"></i></div>
+                            <ul class="foot_dropdown">
+                                <li><a href="contact_us.html" class="fade_anim">Contact Us</a></li>
+                                <li><a href="faqs.html" class="fade_anim">FAQs</a></li>
+                                <li><a href="#" class="fade_anim">Sitemap</a></li>
+                            </ul>
+                        </div>
+                    </div> -->
+
+                    <div class="col-12 col-md-3 border-right px-lg-5">
+                        <div class="row">
+                            <div class="foot_head">Legal <i class="fa fa-plus pull-right dropdown_icon" aria-hidden="true"></i></div>
+                            <ul class="foot_dropdown">
+                                <li><a href="user_agreement.html" class="fade_anim">User Agreement</a></li>
+                                <li><a href="privacy_policy.html" class="fade_anim">Privacy Policy</a></li>
+                                <li><a href="#" class="fade_anim">Verified & Secured</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 border-right px-lg-3">
+                        <div class="row">
+                            <div class="adHolder sw-adHolder">
+                                <div class="foot_head" style="text-align: center;">Accessory  Partner</div>
+                                <div style="text-align: center;">
+                                    <a href="#" target="_blank">
+                                        <img src="images/airline/victorinox-logo.png" alt="victorinox logo" class="victoximg1">
+                                        <img src="images/airline/victorinox-logo-hover.png" alt="victorinox logo" class="victoxhoverimg">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3 ps-lg-5 mt-4 mt-md-0">
+                        <div class="row">
+                            <div class="adHolder">
+                                <div class="foot_head">Official Time Partner</div>
+                                <div class="adBlock">
+                                    <iframe src="watch/index.html" scrolling="no" frameborder="0" width="100%" height="100%" allowtransparency="true"></iframe>
+                                    <!-- <a href=""><img src="images/tagheuer.jpg"></a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+               
+            </div>
+            <div class="footer-mid">
+                <a href="#"><img src="images/airline/footermid-logo.svg" alt="swiss-logo"><span>Swiss International Air Lines Company</span></a>
+            </div>
+            <div class="footer-bottom bottom">
+                <div class="row">
+                   
+                    <div class="col-xs-6 social">
+                        <div class="row d-flex justify-content-center">
+                            <a href="https://www.facebook.com/pages/Swisstours/256257954432198" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="https://www.instagram.com/_swisstours/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 copyright"><div class="row">&copy; 2023 Swisstours.com All rights reserved.</div></div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Ends -->
+</body>
+
+</html>
