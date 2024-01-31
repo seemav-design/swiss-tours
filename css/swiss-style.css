@@ -4004,10 +4004,13 @@ position: relative;
     position: relative;
 }
 .gallerybox img {
-    object-fit: fill;
+    object-fit: cover;
     height: 100%;
     width:100%;
 }  
+.fancybox-image{
+    border-radius:10px;
+}
 /*Footer css*/
 footer.sw-footer {
     background: #222222;
@@ -6791,6 +6794,7 @@ label.required::after{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding:20px;
 }
 .loginpage .imgbox2 img{
     width:90%;
@@ -6798,8 +6802,199 @@ label.required::after{
     height:100vh;
     border-radius:30px;
 }
-/*responsive css*/
+.red-text{
+    color:var(--primary-color);
+}
+.sw-table-responsive.table-responsive::-webkit-scrollbar {
+    width: 2px;
+    height:2px;
+  }
+   
+  .sw-table-responsive.table-responsive::-webkit-scrollbar-track {
+    box-shadow: none;
+    background: #f1f1f1;
+  }
+   
+  .sw-table-responsive.table-responsive::-webkit-scrollbar-thumb {
+    background-color: rgb(251, 1, 1);
+}
+/*apartment page css*/
+/* .apartmentpage .sw-sliderpadding .packBox .img-caption{
+    padding-bottom: 20%;
+    position: relative;
+    background:red;
+    margin:0;
 
+}
+.apartmentpage .sw-sliderpadding .packBox:hover .img-caption{
+    background-color:transparent;
+   
+}
+ .sw-sliderpadding .slick-slide .packBox {
+   overflow: visible;
+}
+.sw-sliderpadding .slick-slide {
+  position: relative;
+  min-height:100%;
+  padding-bottom: 20%;
+} */
+
+.apartmentslidersection .card{
+    border: 0;
+}   
+.apartmentslidersection .DisOption .OptionsDetails {
+    padding: 1.5rem 1.5rem 1.125rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    border-radius: 0 0 10px 10px;
+    border: 1px solid #ddd;
+}
+.apartmentslidersection .DisOption  .img-box{
+    border-radius: 10px 10px 0 0;
+}
+
+.apartmentslidersection .DisOption .location img {
+    filter: grayscale(1);
+    width: 1.25rem;
+    margin-right: 0.312rem;
+}
+.apartmentslidersection .DisOption .locationWprice {
+    display: flex;
+    justify-content: space-around;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+.apartmentslidersection .DisOption .location p{
+    font-size: 0.75rem;
+    font-weight:300;
+}
+.apartmentslidersection .DisOption .location img.popoverimg {
+    width: 0.75rem;
+    height: 0.75rem;
+    margin-left: 0.312rem;
+    filter: brightness(0) saturate(100%) invert(15%) sepia(43%) saturate(7492%) hue-rotate(4deg) brightness(93%) contrast(130%);
+}
+.apartmentslidersection .DisOption .OptionsDetails h4 {
+    font-size: 1rem;
+    font-weight: 500; 
+    margin-bottom: 0.75rem;
+    line-height: 1.312rem;
+    /* min-height: 2.812rem; */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.apartmentslidersection .DisOption .detailscontent p {
+    font-size: 0.75rem;
+    margin: 0;
+    color:var(--text-black2);
+}
+.apartmentslidersection .DisOption .detailscontent {
+    margin-bottom: 2.25rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.apartmentslidersection .DisOption .price-travellers {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.apartmentslidersection .DisOption .locationWprice p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.apartmentslidersection .DisOption .price-travellers .cancelledprice{
+   font-weight: 300; 
+    font-size: 0.625rem;
+}
+.apartmentslidersection .DisOption .price-travellers .cancelledprice {
+    text-decoration: line-through;
+}
+.apartmentslidersection .discountOptions .DisOption .locationWprice p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+.aptmentcheckmodal.sw-modal.modal .input-group-addon{
+    position: absolute;
+    z-index: 3;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+}
+.aptmentcheckmodal.sw-modal.modal .modal-dialog {
+  max-width: 60rem!important;
+}
+.aptmentcheckmodal.sw-modal.modal .inputdiv {
+    width: calc(100%/2);
+    margin-right: 12px;
+    align-items: center;
+}
+.aptmentcheckmodal.sw-modal .form-control {
+   height: 3.5rem!important;
+    border: 1px solid #79747E!important;
+  
+ }
+ .aptmentcheckmodal.sw-modal .form-floating{
+    margin-bottom:0;
+ }
+.aptmentcheckmodal.sw-modal .modal-content {
+    padding: 1.875rem 2.75rem;
+}
+.aptmentcheckmodal.sw-modal .form-select{
+   height:3.5rem;
+   padding-left: 2.5rem;
+   border: 1px solid #79747E!important;
+}
+.aptmentcheckmodal.sw-modal.modal .selectdiv .input-group-addon{
+    left: 0.625rem;
+    right:auto;
+    transform: translateY(-7px);
+}
+.aptmentcheckmodal.sw-modal.modal .redBtn {
+   min-width: auto;
+}
+.aptmentcheckmodal.sw-modal.modal .redBtn:hover,.aptmentcheckmodal.sw-modal.modal .redBtn:focus{
+    color:#fff;
+}
+.nightinput:after{
+    position: absolute;
+    content:'';
+    background-image: url(../images/airline/apartment/nighticon.svg);
+    width:1.25rem;
+    height:1.25rem;
+    background-position: left center;
+    background-repeat: no-repeat;
+
+}
+.inputcalendar:before {
+    position: absolute;
+    content: '';
+    width:1.56rem;
+    height:1.56rem;
+    background-image: url(../images/airline/apartment/calendar.svg);
+    background-position:right center;
+    background-repeat: no-repeat;
+    right: 5px;
+}
+/*responsive css*/
 @media screen and (min-width: 1366px){
     html {
         font-size: 85%;
@@ -6945,6 +7140,10 @@ label.required::after{
    padding-left: 1.375rem;
     padding-right: 1.375rem;
 }
+.guidesection h2 {
+    line-height: 30px;
+  }
+
 .guidesection h2 ,.guidesection h2 span{
     font-size: 1.8rem;
   }
@@ -7291,6 +7490,15 @@ label.required::after{
      font-size: 0.875rem;
      margin-bottom:0;
     }
+    .loginpage .redBtn {
+       width: max-content!important;
+       margin: auto;
+       display: flex;
+    }
+    .loginpage .customfloatingform .pe-0{
+        padding:0!important
+    }
+   
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:portrait) {
     .sw-main-content.sw-main-content2 .herobanner .carousel .carousel-inner picture img {
@@ -9410,7 +9618,7 @@ margin-top:0!important;
     background-repeat: no-repeat;
     right: 1.25rem;
     width: 100%;
-    height: 100%;
+    height: 65px;
     background-position: right top;
     top: 0;
     z-index: 1;
@@ -9711,6 +9919,7 @@ margin-top:0!important;
     padding: 0.8rem 1rem 0.7rem;
 }
 .input-with-icon .form-control, .input-with-icon .form-select {
+    padding:0.8rem 1rem 0.7rem 4rem;
     border: 1px solid #d9d9d9;
     border-radius: 10px;
 }
