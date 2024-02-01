@@ -18,6 +18,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <script src="js/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.css">
+<script src="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.js"></script>
+  
 </head>
 
 <body>
@@ -1178,6 +1181,8 @@
                             
                             <div class="search-timeline-step" id="step1">
                                 <div class="search-timeline-step-content">
+
+                                  
                                     <label for="" class="opacity-50">I am looking for...</label>
                                     <div class="d-flex my-3">
                                         <div>
@@ -1212,6 +1217,23 @@
                                             </div>
                                         </div>
                                         <div class="searchCity-input">
+                                        <select id="choices-multiple-remove-button" placeholder="City" multiple class="suggestedCities">
+                                            <option value="HTML">Interlaken, Switzerland</option>
+                                            <option value="Jquery">Jquery, Switzerland</option>
+                                            <option value="CSS">CSS, Switzerland</option>
+                                            <option value="Bootstrap 3">Bootstrap 3, Switzerland</option>
+                                            <option value="Bootstrap 4">Bootstrap 4, Switzerland</option>
+                                            <option value="Java">Java, Switzerland</option>
+                                            <option value="Javascript">Javascript, France</option>
+                                            <option value="Angular">Angular, France</option>
+                                            <option value="Python">Python, France</option>
+                                            <option value="Hybris">Hybris, France</option>
+                                            <option value="SQL">SQL, France</option>
+                                            <option value="NOSQL">NOSQL, France</option>
+                                            <option value="NodeJS">NodeJS, France</option>
+                                        </select>
+                                    </div>
+                                        <!-- <div class="searchCity-input">
                                             <input type="search" class="citySearch-inputBox" name="" id="" placeholder="City">
                                             <ul class="suggestedCities">
                                                 <li class="popular"><span>Interlaken, Switzerland</span></li>
@@ -1220,7 +1242,7 @@
                                                 <li class="popular"><span>St Moritz, Switzerland</span></li>
                                                 <li><span>Lugano, Switzerland</span></li>
                                             </ul>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                                 <div class="search-timeline-step-footer">
@@ -1303,6 +1325,9 @@
     <!-- Search Modal End-->
 
     <script src="js/general.js"></script>
+
+   
+    
     <script>
         $(".bkn-button").click(function () {
             $('html,body').animate({
@@ -1437,7 +1462,35 @@
                 searchDaysGrid.append(radioHtml);
             }
         });
+        $(document).ready(function(){
+    
+    var multipleCancelButton = new Choices('#choices-multiple-remove-button', {
+       removeItemButton: true,
+       //maxItemCount:5,
+       //searchResultLimit:5,
+       //renderChoiceLimit:5
+     }); 
+    
+    
+});
+function formatOption(option) {
+        if (!option.id) {
+            return option.text;
+        }
+        var imageUrl = 'path/' + option.id + '.png';
+        var optionWithImage = $(
+            '<span><img src="' + imageUrl + '" class="popular" /> ' + option.text + '</span>'
+        );
+        return optionWithImage;
+    }
+
+    $('.searchCity-input').select2({
+        templateResult: formatOption,
+        templateSelection: formatOption,
+        minimumResultsForSearch: Infinity
+    });
     </script>
+
 </body>
 
 </html>

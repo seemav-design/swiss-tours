@@ -95,6 +95,7 @@ nav.sw-navbar .dropdown-menu .dropdown .dropdown-menu.left {
 .sw-navbar .dropdown-mega .dropdown-menu .list-group-item.active{
 	background-color:transparent!important;
 	border-color:transparent!important;
+	color: var(--primary-color);
 }
 .sw-navbar .dropdown-mega .dropdown-menu .list-group-item:hover {
 	color: var(--primary-color);
