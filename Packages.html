@@ -2682,10 +2682,8 @@
     </script>
     <script>
       $(document).ready(function () {
-        // Array to store selected cities
         var selectedCities = [];
 
-        // JSON data
         var jsonData = [
           {
             text: "Switzerland",
@@ -2829,7 +2827,6 @@
           },
         ];
 
-        // Function to update selected cities display
         function updateSelectedCities() {
           $("#selectedCities").empty();
           $(".searchCity-thumb").empty();
@@ -2844,7 +2841,6 @@
                 '">X</span></div>'
             );
 
-            // Add city to searchCity-thumb
             $(".searchCity-thumb").append("<span>" + city.text + "</span>");
 
             // Update searchCity-info-tag
@@ -2857,11 +2853,9 @@
           });
         }
 
-        // Function to generate suggested cities based on the provided JSON
         function generateSuggestions(cities) {
           var suggestions = "";
           cities.forEach(function (city) {
-            // Add an <i> tag with a popular icon if the city is popular
             var popularIcon = city.title.includes("Popular")
               ? '<i class="popular-icon"></i>'
               : "";
@@ -2876,7 +2870,6 @@
           $(".suggestedCities").html(suggestions);
         }
 
-        // Event handler for input change
         $(".citySearch-inputBox").on("input", function () {
           var searchValue = $(this).val().toLowerCase();
           $(".city-item").each(function () {
@@ -2889,7 +2882,6 @@
           });
         });
 
-        // Event handler for clicking on suggested cities
         $(".suggestedCities").on("click", ".city-item", function () {
           var cityHtml = $(this).data("html");
           var cityName = $(this).text();
@@ -2897,38 +2889,31 @@
             selectedCities.push({ text: cityName, html: cityHtml });
             updateSelectedCities();
 
-            // Add a 'selected' class to the clicked city-item
             $(this).addClass("selected");
           }
         });
 
-        // Event handler for removing selected city
         $("#selectedCities").on("click", ".remove", function (event) {
           var cityToRemove = $(this).data("html");
 
-          // Remove the 'selected' class from the corresponding city-item
           $(
             '.suggestedCities .city-item[data-html="' + cityToRemove + '"]'
           ).removeClass("selected");
 
-          // Remove the city from selectedCities array
           selectedCities = selectedCities.filter(
             (city) => city.html !== cityToRemove
           );
 
-          // Remove the parent .tag element
           $(this).closest(".tag").remove();
 
-          // Remove the corresponding span from searchCity-thumb
           var cityText = $(this).parent().text().trim();
           $('.searchCity-thumb span:contains("' + cityText + '")').remove();
 
           updateSelectedCities();
 
-          event.stopPropagation(); // Prevents the event from propagating to parent elements
+          event.stopPropagation();
         });
 
-        // Event handler for clicking on "Popular Cities" button
         $("#showPopularCities").on("click", function () {
           var popularCities = jsonData.flatMap((country) =>
             country.children.filter((city) => city.title.includes("Popular"))
@@ -2936,7 +2921,6 @@
           generateSuggestions(popularCities);
         });
 
-        // Show Switzerland data on load
         generateSuggestions(
           jsonData.find((country) => country.text === "Switzerland").children
         );
