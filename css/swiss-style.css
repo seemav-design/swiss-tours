@@ -7022,7 +7022,7 @@ label.required::after{
 .apt-locationsection .sw-sliderpadding .packBox:hover h3 {
     display: block;
 }
-  /* .custom-popover.map-popover {
+  .custom-popover.map-popover {
     display: block;
     max-width: 220px;
     background: #fff;
@@ -7056,7 +7056,7 @@ label.required::after{
     font-weight: 300;
     margin-bottom: 0;
     
-} */
+}
 .packages-page .choices[data-type*=select-multiple] .choices__button, .packages-page .choices[data-type*=text] .choices__button {
    filter: invert(1);
 }
