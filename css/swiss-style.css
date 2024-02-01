@@ -7022,7 +7022,7 @@ label.required::after{
 .apt-locationsection .sw-sliderpadding .packBox:hover h3 {
     display: block;
 }
-  .custom-popover.map-popover {
+  .custom-popover2.map-popover {
     display: block;
     max-width: 220px;
     background: #fff;
@@ -7032,14 +7032,14 @@ label.required::after{
     --bs-popover-arrow-border: #ddd;
     margin-top: -20px;
 }
-.custom-popover.map-popover .popover-body{
+.custom-popover2.map-popover .popover-body{
     padding:10px;
 }
-.custom-popover.map-popover .popover-body img{
+.custom-popover2.map-popover .popover-body img{
     width:100%;
 }
 
-.custom-popover.map-popover .popover-arrow{
+.custom-popover2.map-popover .popover-arrow{
     width: 28px;
     height: 28px;
 }
@@ -7048,7 +7048,7 @@ label.required::after{
     bottom: 0;
     border-top-color: #aaa!important;
 }
-.custom-popover.map-popover p{
+.custom-popover2.map-popover p{
     text-align: center;
     text-transform: uppercase;
     margin-top: 10px;

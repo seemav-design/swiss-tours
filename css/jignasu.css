@@ -1138,4 +1138,7 @@ img.img-popover {
     .jd-icon img {
         width: 100%;
     }
+    .includeDetails-bototm ul li {
+      grid-template-columns: 8rem 1fr;
+     }
 }
