@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Selector</title>
+    <style>
+        .tag {
+            display: inline-block;
+            background-color: #e0e0e0;
+            padding: 5px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        .st_22_search_cities_items {
+            /* Add your styles for the city items here */
+        }
+
+        .selected {
+            background-color: #c0c0c0; /* Change this to your desired selected color */
+        }
+
+        .popular-icon {
+            color: gold; /* Change this to your desired popular icon color */
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="dropdown mx-2">
+    <button class="btn btn-light dropdown-toggle dynamic-dropdown searchBy-buttons  h-100" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        <img src="images/airline/package-page/icon-country.svg" alt="" class="me-2">
+        Countries
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="javascript:void(0)" data-id="allCountries">All Countries</a></li>
+        <li><a class="dropdown-item" href="javascript:void(0)" data-id="Switzerland">Switzerland</a></li>
+        <li><a class="dropdown-item" href="javascript:void(0)" data-id="France">France</a></li>
+    </ul>
+</div>
+
+<div>
+    <button class="btn btn-light searchBy-buttons h-100 text-start lh-sm" id="showPopularCities">Popular Cities</button>
+</div>
+
+<div class="searchCity-input">
+    <input type="search" class="citySearch-inputBox" placeholder="City" id="cityInput">
+    <ul class="suggestedCities">
+        <!-- Suggestions will be dynamically generated using JavaScript -->
+    </ul>
+</div>
+
+<div id="selectedCities"></div>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Array to store selected cities
+        var selectedCities = [];
+
+        // JSON data
+        var jsonData = [
+          {
+            text: "Switzerland",
+            html: "Switzerland",
+            title: "All,Popular,Switzerland",
+            children: [
+              {
+                id: 1,
+                text: "Interlaken,Switzerland",
+                html: "Interlaken, Switzerland",
+                title: "All,Interlaken,Switzerland,Popular",
+              },
+              {
+                id: 2,
+                text: "Lucerne,Switzerland",
+                html: "Lucerne, Switzerland",
+                title: "All,Lucerne,Switzerland,Popular",
+              },
+              {
+                id: 3,
+                text: "Zurich,Switzerland",
+                html: "Zurich, Switzerland",
+                title: "All,Zurich,Switzerland,Popular",
+              },
+              {
+                id: 4,
+                text: "St Moritz,Switzerland",
+                html: "St Moritz, Switzerland",
+                title: "All,St Moritz,Switzerland",
+              },
+              {
+                id: 5,
+                text: "Lugano,Switzerland",
+                html: "Lugano, Switzerland",
+                title: "All,Lugano,Switzerland",
+              },
+              {
+                id: 6,
+                text: "Grindelwald,Switzerland",
+                html: "Grindelwald, Switzerland",
+                title: "All,Grindelwald,Switzerland",
+              },
+              {
+                id: 7,
+                text: "Zermatt,Switzerland",
+                html: "Zermatt, Switzerland",
+                title: "All,Zermatt,Switzerland,Popular",
+              },
+              {
+                id: 8,
+                text: "Gstaad,Switzerland",
+                html: "Gstaad, Switzerland",
+                title: "All,Gstaad,Switzerland",
+              },
+              {
+                id: 9,
+                text: "Geneva,Switzerland",
+                html: "Geneva, Switzerland",
+                title: "All,Geneva,Switzerland,Popular",
+              },
+              {
+                id: 10,
+                text: "Chur,Switzerland",
+                html: "Chur, Switzerland",
+                title: "All,Chur,Switzerland",
+              },
+              {
+                id: 11,
+                text: "Bern,Switzerland",
+                html: "Bern, Switzerland",
+                title: "All,Bern,Switzerland",
+              },
+              {
+                id: 12,
+                text: "Davos,Switzerland",
+                html: "Davos, Switzerland",
+                title: "All,Davos,Switzerland",
+              },
+              {
+                id: 13,
+                text: "Lausanne,Switzerland",
+                html: "Lausanne, Switzerland",
+                title: "All,Lausanne,Switzerland",
+              },
+              {
+                id: 14,
+                text: "Ascona,Switzerland",
+                html: "Ascona, Switzerland",
+                title: "All,Ascona,Switzerland",
+              },
+              {
+                id: 15,
+                text: "Basel,Switzerland",
+                html: "Basel, Switzerland",
+                title: "All,Basel,Switzerland",
+              },
+              {
+                id: 16,
+                text: "Vevey,Switzerland",
+                html: "Vevey, Switzerland",
+                title: "All,Vevey,Switzerland",
+              },
+              {
+                id: 17,
+                text: "Locarno,Switzerland",
+                html: "Locarno, Switzerland",
+                title: "All,Locarno,Switzerland",
+              },
+              {
+                id: 18,
+                text: "Crans-Montana,Switzerland",
+                html: "Crans-Montana, Switzerland",
+                title: "All,Crans-Montana,Switzerland",
+              },
+              {
+                id: 19,
+                text: "Montreux,Switzerland",
+                html: "Montreux, Switzerland",
+                title: "All,Montreux,Switzerland,Popular",
+              },
+            ],
+          },
+          {
+            text: "France",
+            html: "France",
+            title: "All,Popular,France",
+            children: [
+              {
+                id: 20,
+                text: "Paris,France",
+                html: "Paris, France",
+                title: "All,Paris,France,Popular",
+              },
+              {
+                id: 21,
+                text: "Nice,France",
+                html: "Nice, France",
+                title: "All,Nice,France,Popular",
+              },
+            ],
+          },
+        ];
+
+        // Function to update selected cities display
+        function updateSelectedCities() {
+            $('#selectedCities').empty();
+            selectedCities.forEach(function (city) {
+                $('#selectedCities').append('<div class="tag">' + city.text + ' <span class="remove" data-html="' + city.html + '">X</span></div>');
+            });
+        }
+
+        // Function to generate suggested cities based on the provided JSON
+        function generateSuggestions(cities) {
+            var suggestions = '';
+            cities.forEach(function (city) {
+                // Add an <i> tag with a popular icon if the city is popular
+                var popularIcon = city.title.includes('Popular') ? '<i class="popular-icon">★</i>' : '';
+                suggestions += '<li class="city-item" data-html="' + city.html + '">' + city.text + popularIcon + '</li>';
+            });
+            $('.suggestedCities').html(suggestions);
+        }
+
+        // Event handler for input change
+        $('.citySearch-inputBox').on('input', function () {
+            var searchValue = $(this).val().toLowerCase();
+            $('.city-item').each(function () {
+                var cityText = $(this).text().toLowerCase();
+                if (cityText.includes(searchValue)) {
+                    $(this).show();
+                } else {
+                    $(this).hide();
+                }
+            });
+        });
+
+        // Event handler for clicking on suggested cities
+        $('.suggestedCities').on('click', '.city-item', function () {
+            var cityHtml = $(this).data('html');
+            var cityName = $(this).text();
+            if (!selectedCities.some(city => city.text === cityName)) {
+                selectedCities.push({ text: cityName, html: cityHtml });
+                updateSelectedCities();
+
+                // Add a 'selected' class to the clicked city-item
+                $(this).addClass('selected');
+            }
+        });
+
+        // Event handler for removing selected city
+        $('#selectedCities').on('click', '.remove', function (event) {
+            var cityToRemove = $(this).data('html');
+
+            // Remove the 'selected' class from the corresponding city-item
+            $('.suggestedCities .city-item[data-html="' + cityToRemove + '"]').removeClass('selected');
+
+            // Remove the parent .tag element
+            $(this).parents('.tag').remove();
+
+            event.stopPropagation(); // Prevents the event from propagating to parent elements
+        });
+
+        // Event handler for clicking on "Popular Cities" button
+        $('#showPopularCities').on('click', function () {
+            var popularCities = jsonData.flatMap(country => country.children.filter(city => city.title.includes('Popular')));
+            generateSuggestions(popularCities);
+        });
+
+        // Event handler for clicking on country dropdown items
+        $('.dropdown-menu').on('click', '.dropdown-item', function () {
+            var selectedCountry = $(this).data('id');
+            if (selectedCountry === 'allCountries') {
+                generateSuggestions(jsonData.flatMap(country => country.children));
+            } else {
+                var countryData = jsonData.find(country => country.text === selectedCountry);
+                if (countryData) {
+                    generateSuggestions(countryData.children);
+                }
+            }
+        });
+
+        generateSuggestions(jsonData.flatMap(country => country.children));
+    });
+</script>
+
+</body>
+</html>
