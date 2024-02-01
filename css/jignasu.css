@@ -902,7 +902,19 @@ img.img-popover {
 }
 
 
-
+.itinerary-common {
+    flex: 1;
+    margin-right: 1.5rem;
+}
+.itinerary-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+.itinerary-images img {
+    width: 100%;
+    border-radius: 0.6rem;
+}
 
 
 
@@ -1052,6 +1064,9 @@ img.img-popover {
     .container.innersection_Container.e-swisscontent.itinerary-main {
         margin-top: 0 !important;
     }
+    .itinerary-common {
+        margin: 0;
+    }
 }
 
 @media screen and (min-width: 769px) {
@@ -1127,6 +1142,9 @@ img.img-popover {
         margin-left: auto;
         font-size: 1.2rem;
     }
+    .itinerary-gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media screen and (max-width: 680px) {
@@ -1137,5 +1155,17 @@ img.img-popover {
     }
     .jd-icon img {
         width: 100%;
+    }
+    .include-discount .disc-text {
+        flex: 1;
+    }
+    .include-discount .disc-text p, .include-discount .disc-price p {
+        font-size: 3.5vw;
+    }
+    .include-discount .disc-text h5, .include-discount .disc-price h5 {
+        font-size: 5.5vw;
+    }
+    .itinerary-gallery-grid {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
