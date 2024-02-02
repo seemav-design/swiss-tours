@@ -7057,22 +7057,7 @@ label.required::after{
     margin-bottom: 0;
     
 }
-.packages-page .choices[data-type*=select-multiple] .choices__button, .packages-page .choices[data-type*=text] .choices__button {
-   filter: invert(1);
-}
-.packages-page .choices__list--multiple .choices__item {
-    background-color: #aaa;
-    border: 1px solid #aaa;
-    color: #000;
-}
-.packages-page .choices__list--dropdown .choices__item--selectable {
-    padding: 0.4rem 1.2rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    font-size:0.875rem;
-    font-weight:400;
-}
+
 /*aparment search css*/
 .apartmentsearch .customfloatingform{
     padding: 31px 44px;
