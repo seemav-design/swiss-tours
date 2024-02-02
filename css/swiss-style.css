@@ -10017,11 +10017,13 @@ margin-top:0!important;
     display: flex;
     align-items: center;
 }
+.suggestedCities li.selected {
+    color: var(--primary-color);
+}
 .suggestedCities li:hover {
     background-color: #f4f5f6;
 }
-.suggestedCities li.popular::after {
-    content: "";
+.suggestedCities li i {
     width: 1rem;
     height: 1rem;
     background: url(../images/airline/package-page/crown.svg) no-repeat;
@@ -10052,7 +10054,8 @@ margin-top:0!important;
     background-color: #000000;
     border-radius: 100%;
     box-shadow: 0px -8px 28px 0px #0000001A;
-
+    overflow: hidden;
+    text-indent: -9999px;
 }
 .searchCity-thumb > span:nth-child(n+2) {
     margin-left: -0.8rem;
