@@ -25,6 +25,9 @@
             color: gold; /* Change this to your desired popular icon color */
             margin-left: 5px;
         }
+        span.city-thumb img {
+    width: 20px;
+}
     </style>
 </head>
 <body>
@@ -51,6 +54,10 @@
         <!-- Suggestions will be dynamically generated using JavaScript -->
     </ul>
 </div>
+<div class="searchCity-info">
+  <div class="searchCity-thumb"></div>
+  <span class="searchCity-info-tag"></span>
+</div>
 
 <div id="selectedCities"></div>
 
@@ -59,158 +66,208 @@
     $(document).ready(function () {
         // Array to store selected cities
         var selectedCities = [];
+        var selectedCitiesArray = [];
 
         // JSON data
         var jsonData = [
-          {
-            text: "Switzerland",
-            html: "Switzerland",
-            title: "All,Popular,Switzerland",
-            children: [
               {
-                id: 1,
-                text: "Interlaken,Switzerland",
-                html: "Interlaken, Switzerland",
-                title: "All,Interlaken,Switzerland,Popular",
+                text: "Switzerland",
+                html: "Switzerland",
+                title: "All,Popular,Switzerland",
+                children: [
+                  {
+                    id: 1,
+                    text: "Interlaken, Switzerland",
+                    html: "Interlaken, Switzerland",
+                    title: "All,Interlaken,Switzerland,Popular",
+                    image: "https://images.pexels.com/photos/290275/pexels-photo-290275.jpeg",
+                  },
+                  {
+                    id: 2,
+                    text: "Lucerne, Switzerland",
+                    html: "Lucerne, Switzerland",
+                    title: "All,Lucerne,Switzerland,Popular",
+                    image: "https://images.pexels.com/photos/290275/pexels-photo-290275.jpeg",
+                  },
+                  {
+                    id: 3,
+                    text: "Zurich, Switzerland",
+                    html: "Zurich, Switzerland",
+                    title: "All,Zurich,Switzerland,Popular",
+                    image: "https://images.pexels.com/photos/290275/pexels-photo-290275.jpeg",
+                  },
+                  {
+                    id: 4,
+                    text: "St Moritz, Switzerland",
+                    html: "St Moritz, Switzerland",
+                    title: "All,St Moritz,Switzerland",
+                    image: "https://images.pexels.com/photos/290275/pexels-photo-290275.jpeg",
+                  },
+                  {
+                    id: 5,
+                    text: "Lugano, Switzerland",
+                    html: "Lugano, Switzerland",
+                    title: "All,Lugano,Switzerland",
+                    image: "https://images.pexels.com/photos/290275/pexels-photo-290275.jpeg",
+                  },
+                  {
+                    id: 6,
+                    text: "Grindelwald, Switzerland",
+                    html: "Grindelwald, Switzerland",
+                    title: "All,Grindelwald,Switzerland",
+                    image: "https://images.pexels.com/photos/290275/pexels-photo-290275.jpeg",
+                  },
+                  {
+                    id: 7,
+                    text: "Zermatt,Switzerland",
+                    html: "Zermatt, Switzerland",
+                    title: "All,Zermatt,Switzerland,Popular",
+                    image: "https://images.pexels.com/photos/290275/pexels-photo-290275.jpeg",
+                  },
+                  {
+                    id: 8,
+                    text: "Gstaad, Switzerland",
+                    html: "Gstaad, Switzerland",
+                    title: "All,Gstaad,Switzerland",
+                    image: "https://images.pexels.com/photos/290275/pexels-photo-290275.jpeg",
+                  },
+                  {
+                    id: 9,
+                    text: "Geneva, Switzerland",
+                    html: "Geneva, Switzerland",
+                    title: "All,Geneva,Switzerland,Popular",
+                    image: "https://images.pexels.com/photos/290275/pexels-photo-290275.jpeg",
+                  },
+                  {
+                    id: 10,
+                    text: "Chur, Switzerland",
+                    html: "Chur, Switzerland",
+                    title: "All,Chur,Switzerland",
+                    image: "https://images.pexels.com/photos/290275/pexels-photo-290275.jpeg",
+                  },
+                  {
+                    id: 11,
+                    text: "Bern, Switzerland",
+                    html: "Bern, Switzerland",
+                    title: "All,Bern,Switzerland",
+                    image: "https://images.pexels.com/photos/290275/pexels-photo-290275.jpeg",
+                  },
+                  {
+                    id: 12,
+                    text: "Davos, Switzerland",
+                    html: "Davos, Switzerland",
+                    title: "All,Davos,Switzerland",
+                    image: "https://images.pexels.com/photos/290275/pexels-photo-290275.jpeg",
+                  },
+                  {
+                    id: 13,
+                    text: "Lausanne, Switzerland",
+                    html: "Lausanne, Switzerland",
+                    title: "All,Lausanne,Switzerland",
+                    image: "https://images.pexels.com/photos/290275/pexels-photo-290275.jpeg",
+                  },
+                  {
+                    id: 14,
+                    text: "Ascona, Switzerland",
+                    html: "Ascona, Switzerland",
+                    title: "All,Ascona,Switzerland",
+                    image: "https://images.pexels.com/photos/290275/pexels-photo-290275.jpeg",
+                  },
+                  {
+                    id: 15,
+                    text: "Basel, Switzerland",
+                    html: "Basel, Switzerland",
+                    title: "All,Basel,Switzerland",
+                    image: "https://images.pexels.com/photos/290275/pexels-photo-290275.jpeg",
+                  },
+                  {
+                    id: 16,
+                    text: "Vevey, Switzerland",
+                    html: "Vevey, Switzerland",
+                    title: "All,Vevey,Switzerland",
+                    image: "https://images.pexels.com/photos/290275/pexels-photo-290275.jpeg",
+                  },
+                  {
+                    id: 17,
+                    text: "Locarno, Switzerland",
+                    html: "Locarno, Switzerland",
+                    title: "All,Locarno,Switzerland",
+                    image: "https://images.pexels.com/photos/290275/pexels-photo-290275.jpeg",
+                  },
+                  {
+                    id: 18,
+                    text: "Crans-Montana, Switzerland",
+                    html: "Crans-Montana, Switzerland",
+                    title: "All,Crans-Montana,Switzerland",
+                    image: "https://images.pexels.com/photos/290275/pexels-photo-290275.jpeg",
+                  },
+                  {
+                    id: 19,
+                    text: "Montreux, Switzerland",
+                    html: "Montreux, Switzerland",
+                    title: "All,Montreux,Switzerland,Popular",
+                    image: "https://images.pexels.com/photos/290275/pexels-photo-290275.jpeg",
+                  },
+                ],
               },
               {
-                id: 2,
-                text: "Lucerne,Switzerland",
-                html: "Lucerne, Switzerland",
-                title: "All,Lucerne,Switzerland,Popular",
+                text: "France",
+                html: "France",
+                title: "All,Popular,France",
+                children: [
+                  {
+                    id: 20,
+                    text: "Paris, France",
+                    html: "Paris, France",
+                    title: "All,Paris,France,Popular",
+                    image: "https://images.pexels.com/photos/290275/pexels-photo-290275.jpeg",
+                  },
+                  {
+                    id: 21,
+                    text: "Nice, France",
+                    html: "Nice, France",
+                    title: "All,Nice,France,Popular",
+                    image: "https://images.pexels.com/photos/290275/pexels-photo-290275.jpeg",
+                  },
+                ],
               },
-              {
-                id: 3,
-                text: "Zurich,Switzerland",
-                html: "Zurich, Switzerland",
-                title: "All,Zurich,Switzerland,Popular",
-              },
-              {
-                id: 4,
-                text: "St Moritz,Switzerland",
-                html: "St Moritz, Switzerland",
-                title: "All,St Moritz,Switzerland",
-              },
-              {
-                id: 5,
-                text: "Lugano,Switzerland",
-                html: "Lugano, Switzerland",
-                title: "All,Lugano,Switzerland",
-              },
-              {
-                id: 6,
-                text: "Grindelwald,Switzerland",
-                html: "Grindelwald, Switzerland",
-                title: "All,Grindelwald,Switzerland",
-              },
-              {
-                id: 7,
-                text: "Zermatt,Switzerland",
-                html: "Zermatt, Switzerland",
-                title: "All,Zermatt,Switzerland,Popular",
-              },
-              {
-                id: 8,
-                text: "Gstaad,Switzerland",
-                html: "Gstaad, Switzerland",
-                title: "All,Gstaad,Switzerland",
-              },
-              {
-                id: 9,
-                text: "Geneva,Switzerland",
-                html: "Geneva, Switzerland",
-                title: "All,Geneva,Switzerland,Popular",
-              },
-              {
-                id: 10,
-                text: "Chur,Switzerland",
-                html: "Chur, Switzerland",
-                title: "All,Chur,Switzerland",
-              },
-              {
-                id: 11,
-                text: "Bern,Switzerland",
-                html: "Bern, Switzerland",
-                title: "All,Bern,Switzerland",
-              },
-              {
-                id: 12,
-                text: "Davos,Switzerland",
-                html: "Davos, Switzerland",
-                title: "All,Davos,Switzerland",
-              },
-              {
-                id: 13,
-                text: "Lausanne,Switzerland",
-                html: "Lausanne, Switzerland",
-                title: "All,Lausanne,Switzerland",
-              },
-              {
-                id: 14,
-                text: "Ascona,Switzerland",
-                html: "Ascona, Switzerland",
-                title: "All,Ascona,Switzerland",
-              },
-              {
-                id: 15,
-                text: "Basel,Switzerland",
-                html: "Basel, Switzerland",
-                title: "All,Basel,Switzerland",
-              },
-              {
-                id: 16,
-                text: "Vevey,Switzerland",
-                html: "Vevey, Switzerland",
-                title: "All,Vevey,Switzerland",
-              },
-              {
-                id: 17,
-                text: "Locarno,Switzerland",
-                html: "Locarno, Switzerland",
-                title: "All,Locarno,Switzerland",
-              },
-              {
-                id: 18,
-                text: "Crans-Montana,Switzerland",
-                html: "Crans-Montana, Switzerland",
-                title: "All,Crans-Montana,Switzerland",
-              },
-              {
-                id: 19,
-                text: "Montreux,Switzerland",
-                html: "Montreux, Switzerland",
-                title: "All,Montreux,Switzerland,Popular",
-              },
-            ],
-          },
-          {
-            text: "France",
-            html: "France",
-            title: "All,Popular,France",
-            children: [
-              {
-                id: 20,
-                text: "Paris,France",
-                html: "Paris, France",
-                title: "All,Paris,France,Popular",
-              },
-              {
-                id: 21,
-                text: "Nice,France",
-                html: "Nice, France",
-                title: "All,Nice,France,Popular",
-              },
-            ],
-          },
-        ];
+            ];
 
-        // Function to update selected cities display
-        function updateSelectedCities() {
-            $('#selectedCities').empty();
-            selectedCities.forEach(function (city) {
-                $('#selectedCities').append('<div class="tag">' + city.text + ' <span class="remove" data-html="' + city.html + '">X</span></div>');
-            });
+        // Function to update searchCity-info and searchCity-thumb elements
+function updateSearchCityInfo() {
+    var searchCityThumb = $('.searchCity-thumb');
+    var searchCityInfoTag = $('.searchCity-info-tag');
+
+    // Clear existing content
+    searchCityThumb.empty();
+    searchCityInfoTag.empty();
+
+    // Display the first object in the array
+    if (selectedCitiesArray.length > 0) {
+        var firstCity = selectedCitiesArray[0];
+        searchCityInfoTag.text(firstCity.text);
+
+        // Display additional count if there are more than one city in the array
+        if (selectedCitiesArray.length > 1) {
+            var count = selectedCitiesArray.length - 1;
+            searchCityInfoTag.append(' +' + count);
         }
+
+        // Display each city in searchCity-thumb with image
+        selectedCitiesArray.forEach(function (city) {
+          console.log(selectedCitiesArray)
+            searchCityThumb.append('<span class="city-thumb"><img src="' + city.image + '" alt="' + city.text + '">' + city.text + '</span>');
+        });
+    }
+}
+
+
+      function updateSelectedCities() {
+    $('#selectedCities').empty();
+    selectedCitiesArray.forEach(function (city) {
+        $('#selectedCities').append('<div class="tag">' + city.text + ' <span class="remove" data-html="' + city.html + '">X</span></div>');
+    });
+}
 
         // Function to generate suggested cities based on the provided JSON
         function generateSuggestions(cities) {
@@ -237,30 +294,42 @@
         });
 
         // Event handler for clicking on suggested cities
-        $('.suggestedCities').on('click', '.city-item', function () {
-            var cityHtml = $(this).data('html');
-            var cityName = $(this).text();
-            if (!selectedCities.some(city => city.text === cityName)) {
-                selectedCities.push({ text: cityName, html: cityHtml });
-                updateSelectedCities();
+// Event handler for clicking on suggested cities
+$('.suggestedCities').on('click', '.city-item', function () {
+    var cityHtml = $(this).data('html');
+    var cityName = $(this).text();
+    var selectedCity = jsonData.flatMap(country => country.children).find(city => city.html === cityHtml);
+    var cityImage = selectedCity ? selectedCity.image : null;
 
-                // Add a 'selected' class to the clicked city-item
-                $(this).addClass('selected');
-            }
-        });
+    if (!selectedCitiesArray.some(city => city.text === cityName)) {
+        selectedCitiesArray.push({ text: cityName, html: cityHtml, image: cityImage });
+        updateSelectedCities();
+        updateSearchCityInfo(); // Update searchCity-info and searchCity-thumb
+        $(this).addClass('selected');
+    }
+});
 
-        // Event handler for removing selected city
+
+
         $('#selectedCities').on('click', '.remove', function (event) {
-            var cityToRemove = $(this).data('html');
+    var cityToRemove = $(this).data('html');
 
-            // Remove the 'selected' class from the corresponding city-item
-            $('.suggestedCities .city-item[data-html="' + cityToRemove + '"]').removeClass('selected');
+    // Remove the 'selected' class from the corresponding city-item
+    $('.suggestedCities .city-item[data-html="' + cityToRemove + '"]').removeClass('selected');
 
-            // Remove the parent .tag element
-            $(this).parents('.tag').remove();
+    // Remove the city from the new array
+    selectedCitiesArray = selectedCitiesArray.filter(city => city.html !== cityToRemove);
 
-            event.stopPropagation(); // Prevents the event from propagating to parent elements
-        });
+    // Update the display
+    updateSelectedCities();
+
+    // Update the searchCity-info and searchCity-thumb
+    updateSearchCityInfo();
+
+    event.stopPropagation(); // Prevents the event from propagating to parent elements
+});
+
+
 
         // Event handler for clicking on "Popular Cities" button
         $('#showPopularCities').on('click', function () {

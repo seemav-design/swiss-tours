@@ -10183,8 +10183,15 @@ margin-top:0!important;
     margin-right: auto;
     font-size: 1rem;
 }
-.selectedCountry .country-flag {
+.country-flag {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+.selectedCountry .country-flag img {
     width: 28px;
+    height: 18px;
+    object-fit: cover;
 }
 .suggestedCities {
     padding: 0.8rem 0;
@@ -10198,7 +10205,7 @@ margin-top:0!important;
     align-items: center;
 }
 .suggestedCities li.selected {
-    color: var(--primary-color);
+    display: none;
 }
 .suggestedCities li:hover {
     background-color: #f4f5f6;
@@ -10211,20 +10218,42 @@ margin-top:0!important;
     margin-left: 0.7rem;
     margin-bottom: 2px;
 }
-.citySearch-input{
+.searchtags {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
     border-top: 1px solid #d9d9d9;
     border-bottom: 1px solid #d9d9d9;
     width: 100%;
     padding: 0.8rem 1.2rem;
-    align-items: self-end;
+}
+#selectedCities {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-right: 1rem;
+    flex-wrap: wrap;
+}
+#selectedCities:empty {
+    margin-right: 0;
+}
+#selectedCities .tag {
+    background: #ddd;
+    padding: 0.3rem 0.5rem;
+    border-radius: 2rem;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+#selectedCities .tag .remove {
+    cursor: pointer;
 }
 .citySearch-inputBox {
-    /* width: 100%; */
-     border: 0;
-    /*border-top: 1px solid #d9d9d9;
-    border-bottom: 1px solid #d9d9d9; */
-   padding:0;
+    border: 0;
     font-size: 1rem;
+    display: inline-flex;
+    width: 70px;
 }
 .searchCity-info {
     display: flex;
@@ -10243,6 +10272,8 @@ margin-top:0!important;
     box-shadow: 0px -8px 28px 0px #0000001A;
     overflow: hidden;
     text-indent: -9999px;
+    position: relative;
+    border: 2px solid #fff;
 }
 .searchCity-thumb > span:nth-child(n+2) {
     margin-left: -0.8rem;
@@ -10256,7 +10287,14 @@ margin-top:0!important;
 .searchCity-thumb > span:nth-child(3) {
     background-color: #7B61FF;
 }
-
+.searchCity-thumb > span img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
 .font18 {
     font-size: 1.5rem;
 }
