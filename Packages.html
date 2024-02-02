@@ -2287,10 +2287,17 @@
                     </div>
                     <div class="citySearch-wrapper">
                       <div class="selectedCountry">
-                        <span class="selectedCountryName">Switzerland</span>
+                        <span class="selectedCountryName">France</span>
                         <div>
                           <img
                             src="images/airline/package-page/sw-flag.svg"
+                            alt=""
+                            class="country-flag"
+                          />
+                        </div>
+                        <div class="ms-3">
+                          <img
+                            src="images/airline/package-page/french-flag-small.png"
                             alt=""
                             class="country-flag"
                           />
@@ -2314,13 +2321,15 @@
                                             </select>
                                         </div> -->
                       <div class="searchCity-input">
-                        <input
-                          type="search"
-                          class="citySearch-inputBox"
-                          placeholder="City"
-                          id="cityInput"
-                        />
-                        <div id="selectedCities"></div>
+                        <div class="d-flex citySearch-input">
+                          <input
+                            type="search"
+                            class="citySearch-inputBox"
+                            placeholder="City"
+                            id="cityInput"
+                          />
+                          <div id="selectedCities"></div>
+                        </div>
                         <ul class="suggestedCities">
                           <!-- Suggestions will be dynamically generated using JavaScript -->
                         </ul>
@@ -2593,6 +2602,7 @@
 
           if (selectedValueAttr == "allCountries") {
             $(".selectedCountryName").text("Switzerland, France");
+          
           } else {
             $(".selectedCountryName").text(selectedValue);
           }
