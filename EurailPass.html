@@ -1,0 +1,1420 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="theme-color" content="#000" />
+    <title>Welcome To SWISStours</title>
+    <link href="images/favicon.ico.jpg" rel="shortcut icon" />
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/menu.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-select.min.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <!--<script src="js/bootstrap.min.js"></script>-->
+    
+    <script src="js/bootstrap-datetimepicker.js"></script>
+    <!-- <script src="js/bootstrap-select.min.js"></script> -->
+
+</head>
+<body>
+
+
+  <!-- Header Starts -->
+  <header class="cd-main-header sw-mainheader">
+    <!-- Start Mega Menu HTML -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg sw-navbar">
+        <div class="w-100 flex-column align-items-start">
+            <div class="d-flex justify-content-between w-100">
+              <a class="navbar-brand" href="#"><img src="images/logo.svg" alt=""></a>
+              
+              <div class="top-right-menu d-flex flex-grow-1">
+                <div class="cart_box">
+                    <a href="#" class="cart_btn" title="View Cart"><span class="ml-4">My Cart</span><span class="cart_items_count">0</span></a>
+                </div>
+                <div class="login_head">
+                    <a href=""> <span class="txt">Login</span></a>
+                </div>
+                <div class="sign-upbtn">
+                    <a href="" class="btn"> <img src="images/airline/signup-icon.svg" alt=""><span class="txt">sign up</span></a>
+                </div>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+                  <div class="hamburger-toggle">
+                    <div class="hamburger">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          
+          <div class="collapse navbar-collapse menu_navbar w-100" id="navbar-content">
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0 flex-grow-1 mt-4" >
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">
+                    <span class="nav-icon"><img src="images/airline/Plane2.svg" alt=""></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/Plane2.svg" alt=""></span>
+                    Flights</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/hotelmenu-icon.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/hotel.svg" alt=""></span>
+                    Hotels
+                </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/aparment.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/apartment.svg" alt=""></span>
+                    Apartments</a>
+              </li>
+            
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" aria-current="page" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/package.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/package.svg" alt=""></span>
+                    Packages</a>
+                  <ul class="dropdown-menu shadow">
+                    <li class="rmm-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                   <li>
+                      <a class="dropdown-item pe-4" href="#">Air-Inclusive Packages<img src="images/airline/sw-logo2.svg" class="img-fluid menu-innericon"></a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Land Packages</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/e-swiss.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/e-swiss.svg" alt=""></span>
+                    E-Swiss Travel Pass
+                </a>
+              </li>
+              <li class="nav-item dropdown dropdown-mega position-static">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/european.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/eurailpass.svg" alt=""></span>
+                    European Rail
+                </a>
+                 <div class="dropdown-menu shadow pass">
+                    <div class="mega-content px-lg-4">
+                        <div class="container-fluid">
+                            <ul class="row">
+                                <li class="col-12 col-lg-8 py-lg-4 border-right submenu2 colcount">
+                                    <div class="rmm-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></div>
+                                    <span class="submenutitle"><a href="#">Eurail Pass<img src="images/airline/eurailicon.svg" class="img-fluid menucion2 ms-2"></a></span>
+                                    <ul class="list-group submenu2-content">
+                                        <li class="s2back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                         <li>
+                                            <!-- <a class="list-group-item d-flex justify-content-between colcount" href="#">
+                                               
+                                            <div class="d-flex justify-content-end align-items-end">
+                                                <span> Global Pass</span>
+                                               <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                            </div>
+                                            </a>-->
+                                            <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                                Global Pass
+                                                <div class="d-flex justify-content-end align-items-end populricon">
+                                                    <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                </div>
+                                            </a>
+                                        </li> 
+                                         <li class="one-country-pass">
+                                            <a class="list-group-item populricon" href="#">One Country Pass</a>
+                                            <ul class="list-group eurail-pass list-group2">
+                                                <li class="s2back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                                <li class="listoverflow-mb">
+                                                    <ul>
+                                                        <li><a href="#" class="list-group-item">Eurail Austria Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Belgium Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Benelux Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Bulgaria Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Croatia Pass</a></li>
+                                                        <li><a href="#" class="list-group-item"> Eurail Czech Republic Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Denmark Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Lithuania Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Luxembourg Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Netherlands Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Norway Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Poland Pass</a></li>
+                                                    </ul>
+                                                    <ul class="sub-listgrop2">
+                                                        <li><a href="#" class="list-group-item">Eurail Portugal Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Romania Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Finland Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail France Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Germany Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Greece Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Hungary Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Italy Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Scandinavia Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Serbia Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Slovakia Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Slovenia Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Spain Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Sweden Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Turkey Pass</a></li>
+                                                        <li><a href="#" class="list-group-item"></a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            
+                                        </li>
+
+                                       
+                                    </ul>
+                                </li>
+                                
+                                <li class="col-12 col-lg-4 py-lg-4 ps-md-5 submenu3">
+                                   <span class="submenutitle"><a href="#">Panoramic Trains in Switzerland</a></span>
+                                        <ul class="list-group list-group3 submenu3-content">
+                                            <li class="s3-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                              <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/Berninalogo.png" alt="Berninalogo" class="img-fluid"></span>Bernina Express</a></li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/glacierlogo.png" alt="glacierlogo" class="img-fluid"></span>Glacier Express</a></li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/glacierlogo.png" alt="glacierlogo" class="img-fluid"></span>Lucerne-Interlaken</a></li>
+                                        </ul>
+                                    
+                                    <div class="bordertop"></div>
+                                           <div class="submenu4">
+                                            <span class="submenutitle"><a href="#">Europe Point to Point tickets</a></span>
+                                            <ul class="list-group list-group3 submenu4-content">
+                                                <li class="s3-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/londonlogo.png" alt="imglogo" class="img-fluid"></span>London to Paris</a></li>
+                                                <li>
+                                                    <a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-baselLogo.png" alt="imglogo" class="img-fluid"></span>Paris to Basel 
+                                                        <div class="d-flex justify-content-end align-items-end populricon">
+                                                            <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-zurichlogo.png" alt="imglogo" class="img-fluid"></span>Paris to Zurich</a></li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-amsLogo.png" alt="imglogo" class="img-fluid"></span>Paris to Amsterdam</a></li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-baselLogo.png" alt="imglogo" class="img-fluid"></span>London to Amsterdam</a></li>
+                                            </ul>
+                                        </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> 
+            </li>
+              <li class="nav-item dropdown dropdown-mega position-static">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/sightseeing.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/sightseeing.svg" alt="" class="filter-red"></span>
+                    Attractions
+                </a>
+                  <div class="dropdown-menu shadow pass">
+                    <div class="mega-content px-lg-4">
+                        <div class="container-fluid">
+                            <ul class="row">
+                                <li class="col-12 col-lg-4 py-lg-4 border-right submenu2">
+                                    <div class="rmm-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></div>
+                                    <span class="submenutitle"><a href="#">Mountains in Switzerland</a></span>
+                                    <ul class="list-group submenu2-content">
+                                        <li class="s2back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                        <li>
+                                            <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                                Jungfrau
+                                                <div class="d-flex justify-content-end align-items-end populricon">
+                                                    <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="list-group-item" href="#">Jungfrau VIP Gondola</a>
+                                        </li>
+                                       
+                                        <li><a class="list-group-item" href="#">Harder Kulm</a></li>
+                                        <li><a class="list-group-item" href="#">Grindelwald First</a></li>
+                                        <li><a class="list-group-item" href="#">Schilthorn</a></li>
+                                        <li><a class="list-group-item" href="#">Mt Titlis</a></li>
+                                        <li><a class="list-group-item" href="#">Mt Pilatus</a></li>
+                                        <li><a class="list-group-item" href="#">Matterhorn</a></li>
+                                        <li>
+                                            <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                                Sunnega Paradise
+                                                <div class="d-flex justify-content-end align-items-end populricon">
+                                                    <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li><a class="list-group-item" href="#">Glacier 3000</a></li>
+                                        <li><a class="list-group-item" href="#">Diavolezza</a></li>
+                                        <li><a class="list-group-item" href="#">Aletsch Arena</a></li>
+                                        <li><a class="viewAllBtn" href="#">View All</a></li>
+                                      
+                                    </ul>
+                                </li>
+                                <li class="col-12 col-lg-4 py-lg-4 border-right submenu3 d-flex flex-column">
+                                    <span class="submenutitle"><a href="#">Attractions in Switzerland</a></span>
+                                     <ul class="list-group list-group3 submenu3-content px-lg-3">
+                                            <li class="s3-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                            <li><a class="list-group-item" href="#">Swiss Transport Musuem</a></li>
+                                            <li>
+                                                <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                                Saphir
+                                                <div class="d-flex justify-content-end align-items-end populricon">
+                                                    <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                </div>
+                                                </a> 
+                                            </li>
+                                            <li><a class="list-group-item" href="#">Lindt</a></li>
+                                            <li><a class="list-group-item" href="#">Swissminiatur</a></li>
+                                            <li><a class="list-group-item" href="#">Meal Voucher</a></li>
+                                            <li><a class="list-group-item" href="#">Charlie Chaplin</a></li>
+                                            <li><a class="viewAllBtn list-group-item" href="#">View All</a></li>
+                                            <!-- <li class="attarction-viewbtn">
+                                                <div class="viewmidbtn d-flex align-items-center justify-content-center m-auto">
+                                                    <a href="#" class="redBtn">View all</a>
+                                                </div>
+                                            </li> -->
+                                        </ul>
+                                </li>
+                                <li class="col-12 col-lg-4 py-lg-4 ps-md-5 submenu3">
+                                    <span class="submenutitle"><a href="#">Panoramic Trains in Switzerland</a></span>
+                                         <ul class="list-group list-group3 submenu3-content">
+                                             <li class="s3-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                               <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/Berninalogo.png" alt="Berninalogo" class="img-fluid"></span>Bernina Express</a></li>
+                                                 <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/glacierlogo.png" alt="glacierlogo" class="img-fluid"></span>Glacier Express</a></li>
+                                                 <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/glacierlogo.png" alt="glacierlogo" class="img-fluid"></span>Lucerne-Interlaken</a></li>
+                                         </ul>
+                                     
+                                     <div class="bordertop"></div>
+                                            <div class="submenu4">
+                                             <span class="submenutitle"><a href="#">Europe Point to Point tickets</a></span>
+                                             <ul class="list-group list-group3 submenu4-content">
+                                                 <li class="s3-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                                 <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/londonlogo.png" alt="imglogo" class="img-fluid"></span>London to Paris</a></li>
+                                                 <li>
+                                                     <a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-baselLogo.png" alt="imglogo" class="img-fluid"></span>Paris to Basel 
+                                                         <div class="d-flex justify-content-end align-items-end populricon">
+                                                             <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                         </div>
+                                                     </a>
+                                                 </li>
+                                                 <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-zurichlogo.png" alt="imglogo" class="img-fluid"></span>Paris to Zurich</a></li>
+                                                 <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-amsLogo.png" alt="imglogo" class="img-fluid"></span>Paris to Amsterdam</a></li>
+                                                 <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-baselLogo.png" alt="imglogo" class="img-fluid"></span>London to Amsterdam</a></li>
+                                             </ul>
+                                         </div>
+                                 </li>
+                                <li class="col-12 col-lg-4 py-lg-4 ps-md-5">
+                                    <div class="submenu4">
+                                    <span class="submenutitle"><a href="#">Guided tours in Switzerland</a></span>
+                                    </div>
+                                    <ul class="list-group list-group3 submenu4-content px-lg-3">
+                                        <li class="s3-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                        <li><a class="list-group-item" href="#">Zurich tour with chocolate</a></li>
+                                        <li>
+                                            <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                                Rhine falls and Zurich city tour
+                                                <div class="d-flex justify-content-end align-items-end populricon">
+                                                    <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                </div>
+                                            </a> 
+                                        </li>
+                                        <li><a class="list-group-item" href="#">Rhine falls and Stein am Rhein</a></li>
+                                        <li><a class="list-group-item" href="#">Zurich city tour with lake cruise</a></li>
+                                        <li><a class="list-group-item" href="#">Lucerne and Titlis snow experience</a></li>
+                                    </ul>
+                                    <div class="bordertop"></div>
+                                    <div>
+                                        <div class="submenu5">
+                                            <span class="submenutitle"><a href="#">Worldwide Attractions</a></span>
+                                        </div>
+                                        
+                                        <ul class="list-group list-group3 submenu5-content px-lg-3">
+                                            <li class="s2back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                            <li><a class="list-group-item" href="#">London</a></li>
+                                            <li><a class="list-group-item" href="#">Munich</a></li>
+                                            <li><a class="list-group-item" href="#">Paris</a></li>
+                                            <li><a class="list-group-item" href="#">Vienna</a></li>
+                                            <li><a class="viewAllBtn list-group-item" href="#">View All</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                  </div>
+                  
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/mountain.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mountain.svg" alt="" class="filter-red"></span>
+                    About
+                 </a>
+                  <ul class="dropdown-menu shadow">
+                    <li class="rmm-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                    <li>
+                      <a class="dropdown-item pe-4" href="#">About Us</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Our Leadership</a></li>
+                    <li><a class="dropdown-item" href="#">Brochure</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown dropdown-mega position-static contactMegamenu">
+                  <a class="nav-link dropdown-toggle" href="#"  href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/sightseeing.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/sightseeing.svg" alt="" class="filter-red"></span>
+                    Contact
+                </a>
+                  <div class="dropdown-menu shadow">
+                    <div class="mega-content ">
+                        <div class="container-fluid">
+                            <div class="rmm-back ps-0"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></div>
+                            <div class="row listoverflow-mb">
+                                <div class="col-12 col-md-7 col-lg-8 py-lg-8">
+                                    <ul class="menuleftContact">
+                                        
+                                        <li> <span class="submenutitle"><a href="https://wa.me/919987997997?text=Hello.">WhatsApp<span class="ms-3"><img src="images/airline/whatapp.svg" alt=""></span></a></span></li>
+                                        <li class="d-flex align-items-center"> <span class="submenutitle">Toll Free</span><a href="tel:18002020052" class="text-primary">1800 20 20 052</a></li>
+                                        <li>
+                                            <span class="submenutitle">Branch Office</span>
+                                            <ul>
+                                                <li><span>Mumbai (Head Office)</span><a href="tel:+912261282400">(022) 61282400, 67439990</a></li>  
+                                                <li><span>Delhi</span><a href="tel:+917208820785">+91 7208820787 / +91 7208820785 / +91 9643662737</a></li>  
+                                                <li><span>Chennai</span><a href="tel:+914442179510">(044) 42179510 / 20</a></li>  
+                                                <li><span>Bangalore</span><a href="tel:+918041132172">(080) 41132172, 41609072</a></li>  
+                                                <li><span>Pune</span><a href="tel:+919136117252">+919136117252, +91 8855883831</a></li>
+                                                <li><span>Kolkata</span><a href="tel:+919007160166">+91 9007160166</a></li>  
+                                                <li><span>Ahmedabad</span><a href="tel:+917940028694">(079) 40028694 / 95</a></li>  
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-md-5 col-lg-4 p-0">
+                                    <div class="bgimg">
+                                        <div class="d-flex justify-content-between align-items-center bottomBtn">
+                                            <a href="#" class="whitebgbtn">View Brochure</a>    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+              </li>
+              <li class="nav-item d-block d-md-none">
+                 <a class="nav-link" href="#"><span class="nav-icon mb-icon">
+                    <img src="images/airline/menu-icon/mobile/cart.svg" alt="" class="filter-red"></span>
+                    My Cart<span class="cart_items_count">0</span></a>
+              </li>
+              <li class="nav-item ">
+                  <a class="nav-link" href="#">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/offers.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/offers.svg" alt="" class="filter-red"></span>
+                    Blog
+                </a>
+              </li>
+              <li class="nav-item  d-block d-md-none mt-5 mx-4 text-center login-mobilebtn">
+                <a href="#" class="redBtn w-100 m-auto d-flex justify-content-center">Login</a>
+              </li>
+          </ul>
+          
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- END Mega Menu HTML -->
+  </header>
+  <!-- Header Ends -->
+      <link href="css/swiss-style.css" rel="stylesheet" type="text/css"> <!--airline css-->
+      <link rel="stylesheet" href="css/meghamenu.css">
+ 
+    <!--airline css-->
+  
+   
+<!--content holder start-->
+<div class="cd-main-content">
+    <div class="container-fluid main_content_container pt-0">
+        <!--sw-main-content start-->
+        <div class="sw-main-content sw-main-content2 eurail">
+            <div class="herobanner full-mobile">
+                <!--row start-->
+                <div class="row mbshadow">
+
+                    <div class="banner_wrp sw-banner_wrp homebanner homepage">
+                        <div class="bannermilogo d-block d-lg-none">
+                            <img src="images/airline/banner-midlogo.svg" alt="" class="img-fluid">
+                        </div>
+
+                        <!-- Carousel -->
+                        <div id="attraction-slider" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner sw-nstpBanner nstpBanner">
+                                <div class="carousel-item active">
+                                    <picture>
+                                        <source media="(max-width:470px)"
+                                            srcset="images/airline/eurail/ST_3x2_Rigi-Giruno_95927.webp">
+                                      
+                                        <img src="images/airline/eurail/ST_3x2_Rigi-Giruno_95927.webp"
+                                            class="d-block w-100" alt="...">
+                                    </picture>
+                                    <div class="carousel-caption container">
+                                        <div class="titleBox white_txt banner_txt text-center">
+                                            <h1 class="" data-title="Apartments in Switzerland">Eurail Passes</h1>
+                                            <div class="d-flex justify-content-center">
+                                                <div class="scrolling-words-container">
+                                                    <div class="scrolling-words-box">
+                                                        <ul class="no-animation">
+                                                            <li class="m-0">27+ Countries</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--carousal item end-->
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!--row end-->
+            </div>
+            <!--e-swisscontent start-->
+            <div class="container innersection_Container e-swisscontent" >
+                <!--ROW START-->
+                <div class="row">
+                    <!--mostpopulareruail start-->
+                       <div class="section_Container mostpopulareruail">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-lg-4">
+                                <div class="section-heading1">
+                                    <div class="title">
+                                        <h2>Most popular passes by <span>SWISS</span>tours</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <!--sw-Slider start-->
+                                <div class="sw-Slider sw-sliderpadding">
+                                      <!--slide start-->
+                                      <div class="img-slide pack-slide">
+                                        <a href="">
+                                            <div class="packBox packagePage-pcBox">
+                                                <div class="packImg">
+                                                        <div class="logoimg">
+                                                            <img src="images/airline/eurail/euraillogo.svg" alt=""/>
+                                                        </div>
+                                                     <img src="images/airline/eurail/Austrial.webp" class="img-fluid">
+                                                </div>
+                                                <div class="img-caption">
+                                                    <div class="packContent d-flex flex-column">
+                                                        <h3 class="packTitle">Eurail Global Pass</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!--slide end-->
+                                   <!--slide start-->
+                                    <div class="img-slide pack-slide">
+                                        <a href="">
+                                            <div class="packBox packagePage-pcBox">
+                                                <div class="packImg">
+                                                        <div class="logoimg">
+                                                            <img src="images/airline/eurail/euraillogo.svg" alt=""/>
+                                                        </div>
+                                                    <img src="images/airline/eurail/dalmatia-croatia.webp" class="img-fluid">
+                                                </div>
+                                                <div class="img-caption">
+                                                    <div class="packContent d-flex flex-column">
+                                                        <h3 class="packTitle">Eurail Croatia Pass</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!--slide end-->
+                                    <!--slide start-->
+                                    <div class="img-slide pack-slide">
+                                        <a href="">
+                                            <div class="packBox packagePage-pcBox">
+                                                <div class="packImg">
+                                                    <div class="logoimg">
+                                                            <img src="images/airline/eurail/euraillogo.svg" alt=""/>
+                                                        </div>
+                                                       <img src="images/airline/eurail/Belgium.webp" class="img-fluid"/>
+                                                </div>
+                                                <div class="img-caption">
+                                                    <div class="packContent d-flex flex-column">
+                                                        <h3 class="packTitle">Eurail Belgium Pass</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!--slide end-->
+                                    <!--slide start-->
+                                    <div class="img-slide pack-slide">
+                                        <a href="">
+                                            <div class="packBox packagePage-pcBox">
+                                                <div class="packImg">
+                                                   <div class="logoimg">
+                                                            <img src="images/airline/eurail/euraillogo.svg" alt=""/>
+                                                        </div>
+                                                       <img src="images/airline/eurail/luxembourg.webp" class="img-fluid"/>
+                                                </div>
+                                                <div class="img-caption">
+                                                    <div class="packContent d-flex flex-column">
+                                                        <h3 class="packTitle">Eurail Benelux Pass</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!--slide end-->
+                                    <!--slide start-->
+                                    <div class="img-slide pack-slide">
+                                        <a href="">
+                                            <div class="packBox packagePage-pcBox">
+                                                <div class="packImg">
+                                                   <div class="logoimg">
+                                                            <img src="images/airline/eurail/euraillogo.svg" alt=""/>
+                                                        </div>
+                                                       <img src="images/airline/eurail/aromania-church.webp" class="img-fluid"/>
+                                                </div>
+                                                <div class="img-caption">
+                                                    <div class="packContent d-flex flex-column">
+                                                        <h3 class="packTitle">Eurail Bulgaria Pass</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!--slide end-->
+                                </div>
+                                <!--sw-Slider end-->
+                            </div>
+                        </div>
+                        </div>
+                        <!--mostpopulareruail end-->
+                      <!--ThingstodoSection start-->
+                      <div class="section-padding py-80">
+                        <div class="section-heading1">
+                            <div class="title">
+                                <h2>All Eurail Passes</h2>
+                            </div>
+                        </div>
+                        <div class="overviewSection">
+                           
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <!--leftcontent start-->
+                                    <div class="leftcontent">
+                                       <div class="passlist">
+                                            <h2><img src="images/airline/eurail/euraillogo.svg" alt="" class="img-fluid"/> Global Pass</h2>
+                                       </div>
+                                    </div>
+                                <!--leftcontent end-->
+                                </div>
+                                <!--accordinace hover start-->
+                                <div class="col-lg-9 p-0">
+                                    <!--rightcontent start-->
+                                    <div class="rightcontent">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="passlist">
+                                                        <p><img src="images/airline/eurail/pass-logos/AustriaPass.svg" alt="" class="img-fluid"/>Austria Pass</p>
+                                                   </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="passlist">
+                                                        <p><img src="images/airline/eurail/pass-logos/BelgiumPass.svg" alt="" class="img-fluid"/>Belgium Pass</p>
+                                                   </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="passlist">
+                                                        <p><img src="images/airline/eurail/pass-logos/BeneluxPass.svg" alt="" class="img-fluid"/>Benelux Pass</p>
+                                                   </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="passlist">
+                                                        <p><img src="images/airline/eurail/pass-logos/BulgariaPass.svg" alt="" class="img-fluid"/> Bulgaria Pass</p>
+                                                   </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="passlist">
+                                                        <p><img src="images/airline/eurail/pass-logos/CroatiaPass.svg" alt="" class="img-fluid"/>Croatia Pass</p>
+                                                   </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="passlist">
+                                                        <p><img src="images/airline/eurail/pass-logos/DenmarkPass.svg" alt="" class="img-fluid"/>Denmark Pass</p>
+                                                   </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="passlist">
+                                                        <p><img src="images/airline/eurail/pass-logos/LithuaniaPass.svg" alt="" class="img-fluid"/>Lithuania Pass</p>
+                                                   </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="passlist">
+                                                        <p><img src="images/airline/eurail/pass-logos/LuxembourgPass.svg" alt="" class="img-fluid"/>Luxembourg Pass</p>
+                                                   </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="passlist">
+                                                        <p><img src="images/airline/eurail/pass-logos/NetherlandsPass.svg" alt="" class="img-fluid"/>Netherlands Pass</p>
+                                                   </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="passlist">
+                                                        <p><img src="images/airline/eurail/pass-logos/NorwayPass.svg" alt="" class="img-fluid"/>Norway Pass</p>
+                                                   </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="passlist">
+                                                        <p><img src="images/airline/eurail/pass-logos/PolandPass.svg" alt="" class="img-fluid"/>Poland Pass</p>
+                                                   </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="passlist">
+                                                        <p><img src="images/airline/eurail/pass-logos/CzechRepublicPass.svg" alt="" class="img-fluid"/>Czech Republic Pass</p>
+                                                   </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="passlist">
+                                                        <p><img src="images/airline/eurail/pass-logos/ItalyPass.svg" alt="" class="img-fluid"/>Italy Pass</p>
+                                                   </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="passlist">
+                                                        <p><img src="images/airline/eurail/pass-logos/SpainPass.svg" alt="" class="img-fluid"/>Spain Pass</p>
+                                                   </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="passlist">
+                                                        <p><img src="images/airline/eurail/pass-logos/SerbiaPass.svg" alt="" class="img-fluid"/>Serbia Pass</p>
+                                                   </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="passlist">
+                                                        <p><img src="images/airline/eurail/pass-logos/TurkeyPass.svg" alt="" class="img-fluid"/>Turkey Pass</p>
+                                                   </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="passlist">
+                                                        <p><img src="images/airline/eurail/pass-logos/FrancePass.svg" alt="" class="img-fluid"/>France Pass</p>
+                                                   </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="passlist">
+                                                        <p><img src="images/airline/eurail/pass-logos/FinlandPass.svg" alt="" class="img-fluid"/>Finland Pass</p>
+                                                   </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="passlist">
+                                                        <p><img src="images/airline/eurail/pass-logos/GreecePass.svg" alt="" class="img-fluid"/>Greece Pass</p>
+                                                   </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="passlist">
+                                                        <p><img src="images/airline/eurail/pass-logos/SwedenPass.svg" alt="" class="img-fluid"/>Sweden Pass</p>
+                                                   </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="passlist">
+                                                        <p><img src="images/airline/eurail/pass-logos/SlovakiaPass.svg" alt="" class="img-fluid"/>Slovakia Pass</p>
+                                                   </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="passlist">
+                                                        <p><img src="images/airline/eurail/pass-logos/PortugalPass.svg" alt="" class="img-fluid"/>Portugal Pass</p>
+                                                   </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="passlist">
+                                                        <p><img src="images/airline/eurail/pass-logos/SloveniaPass.svg" alt="" class="img-fluid"/>Slovenia Pass</p>
+                                                   </div>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <div class="passlist">
+                                                        <p><img src="images/airline/eurail/pass-logos/HungaryPass.svg" alt="" class="img-fluid"/>Hungary Pass</p>
+                                                   </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="passlist">
+                                                        <p><img src="images/airline/eurail/pass-logos/RomaniaPass.svg" alt="" class="img-fluid"/>Romania Pass</p>
+                                                   </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="passlist">
+                                                        <p><img src="images/airline/eurail/pass-logos/GermanyPass.svg" alt="" class="img-fluid"/>Germany Pass</p>
+                                                   </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="passlist">
+                                                        <p><img src="images/airline/eurail/euraillogo.svg" alt="" class="img-fluid eurallogo"/>Scandinavia Pass</p>
+                                                   </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        
+                                    </div>
+                                    <!--rightcontent end-->
+                                </div>
+                                <!--accordiance hover end-->
+                            </div>
+                        </div>
+                    </div>
+                    <!--ThingstodoSection end-->
+                    <!--eurailGobalpass start-->
+                  
+                    <div class="eurailGobalpassdiv  d-none">
+                        <div class="imgbox">
+                            <img src="images/airline/eurail/eurailimg.webp" alt="" class="img-fluid"/>
+                        </div>
+                        <div class="imgcaption">
+                            <h2>Eurail Global Pass</h2>
+                            <p>One Pass. 33 Countries. 30,000 Destinations</p>
+                            <a href="#" class="btn-trans">Book Now</a>
+                        </div>
+                    </div>
+                   
+                     <!--eurailGobalpass end-->
+                    <!--sw-benefitsSection start-->
+                   <div class="sw-benefitsSection benefitsSection section-padding" style="background-image:url(images/airline/eurail/Regionalzug.webp);">
+                            
+                                <div class="benefitsTable">
+                                    <div class="btLeft">
+                                        <strong>Eurail Pass</strong>
+                                    </div>
+                                    <div class="btRight">
+                                        <div class="title">
+                                            <h2 class="white_txt">Discounts with Eurail Pass</h2>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                Discounts for young travellers under 27
+                                                <p>If you’re under 27, you can enjoy discounts of up to 25%. Available for First and Second Class.</p>
+                                            </li>
+                                            <li>
+                                                Discounts for seniors
+                                                <p>If you’re over 60, you can enjoy a 10% discount for either First or Second Class travel.</p>
+                                            </li>
+                                            <li>
+                                                Discounts for families
+                                                <p>Children up to 11 years old travel free with adults.</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                    </div>
+                    <!--sw-benefitsSection end-->
+                      <!--about section start-->
+                        <div class="section-padding py-80">
+                            <div class="sw-AboutJungSection">
+                                <div class="title">
+                                <h2>About Eurail Pass</h2>
+                                </div>
+                                    <div class="opacity-75">
+                                        <p>Eurail pass is your ‘all in one’ pass for unlimited train travel either in the country of your choice with a Eurail single-country pass or 33 countries of Europe with a Eurail global mobile pass. You can board most of the trains by showing the pass, however, there are a few exceptions where a reservation is needed before you board. The best part of traveling by train is that it takes you straight through the center of cities and villages. Eurail pass gives you the freedom and flexibility to travel as per your convenience. It’s not just about traveling in a relaxed, comfortable and safe way, its part of the European way of life itself. You also get free travel on IC buses throughout Europe and attractive discounts on various other services like bike rentals, famous hostels and sightseeing bus tours.</p>
+
+                                        <p>With the Eurail pass, travel on the national rail networks of 33 European countries (Austria, Belgium, Bosnia-Herzegovina, Bulgaria, Croatia, Czech Republic, Denmark, England, Estonia, Finland, France, Germany, Greece, Hungary, Italy, Ireland, Latvia, Lithuania, Luxembourg, Macedonia, Montenegro, Netherlands, Norway, Poland, Portugal, Romania, Scotland, Serbia, Slovakia, Slovenia, Spain, Sweden, Switzerland, Turkey and Wales).</p>
+                                        
+                                        <p>Eurail pass allows children between the ages of 4-11 to travel free when accompanied by an adult, except wherever reservation fee is mandatory. Up to two children can travel with one adult. For example, when two adults are traveling, they can take four children with them. If more than two children are traveling with one adult, a separate Youth Pass needs to be purchased for the additional child. A child travelling with someone who has a Senior Pass or a Youth Pass is not eligible to travel for free. They must purchase a Child Pass.</p>
+                                        
+                                        <p>There are two types of Eurail Mobile Pass: Continuous and Flexi, with an option ranging from 4 days within a month to 3 months consecutive pass.</p>
+                                    </div>
+                                    <!--accordionAboutJung start-->
+                                    <div class="accordion faq_set" id="accordionExample">
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header" id="abtheading1">
+                                                <button class="accordion-button pt-0" type="button" data-bs-toggle="collapse" data-bs-target="#abt1" aria-expanded="true" aria-controls="abt1">
+                                                    Type of Eurail Global Pass
+                                                </button>
+                                            </h3>
+                                            <div id="abt1" class="accordion-collapse collapse show" aria-labelledby="abtheading1" data-bs-parent="">
+                                                <div class="accordion-body">
+                                                    <p>Consecutive and Flexible passes.<p>
+                                                    <p> Both the above passes are available in 1st and 2nd class and also offer the youth pass option for travelers under 28 years of age.</p>
+                                                    <div class="accordion-body answer">
+                                                        <ul>
+                                                            <li> Consecutive Pass - Validity: Valid on 15 days, 22 days, 1, 2 & 3 months. The pass allows the passengers to travel on consecutive days depending on the number of days the pass is purchased for.</li>
+                                                            <li>Flexible Pass - Validity: Valid on 4 days in a month, 5 days in a month, 7 days in a month, 10 days in 2 months & 15 days in 2 months.
+                                                            This pass offers the same services and benefits but gives greater flexibility since it allows you to utilize the chosen number of days within a one month period or two months</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header" id="abtheading2">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#abt2" aria-expanded="false" aria-controls="abt2">
+                                                    Benefits of Eurail Global Pass
+                                                </button>
+                                            </h3>
+                                            <div id="abt2" class="accordion-collapse collapse" aria-labelledby="abtheading2" data-bs-parent="">
+                                                <div class="accordion-body">
+                                                    <div class="accordion-body answer">
+                                                        <ul>
+                                                            <li>Access unlimited train rides to visit over 40,000 destinations across 33 countries in Europe.</li>
+                                                            <li>Option of consecutive or flexible passes.</li>
+                                                            <li>Pass validity upto 11 months from the date of issue.</li>
+                                                            <li>No need for preselecting a start date until you travel.</li>
+                                                            <li>Children under 12 yrs travel free with an adult (max. 2 kids)</li>
+                                                            <li>Numerous discounts on services like sightseeing bus, ferry, hostels, food and many more with a Global pass.</li>
+                                                            <li>Cheaper than buying single travel ticket.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--accordionAboutJung end-->
+                                        
+                                    </div>
+                            </div>
+                        </div>
+                    <!--about section end-->
+                   <!--how its works start-->
+                        <div class="sw-howworkSection howworkSection">
+                            <div class="title">
+                            <h2 class="">How It Works</h2>
+                            </div>
+                            
+                            <div class="text-center sw-hwTable hwTable">
+                                <div>
+                                    <div class="hwItem">
+                                        <div class="img-box">
+                                            <img src="images/airline/hw_ic_1.svg" title="Select Your Swiss Travel Pass">
+                                        </div>
+                                        <h3>Select your Eurail Travel Pass</h3>
+                                        <div class="hw-content">
+                                            <p>Choose the right Eurail Travel Pass that suits your requirements in terms of number of days, and class of travel.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="hwItem">
+                                        <div class="img-box">
+                                            <img src="images/airline/hw_ic_2.svg" title="Confirmation">
+                                        </div>
+                                        <h3>Confirmation</h3>
+                                        <div class="hw-content">
+                                            <p>Follow the step-by-step booking procedure which allows you to view rates, select total number of passengers and see your total amount payable before you make the final booking.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="hwItem">
+                                        <div class="img-box">
+                                            <img src="images/airline/hw_ic_3.svg" title="Make the Payment">
+                                        </div>
+                                        <h3>Make the Payment</h3>
+                                        <div class="hw-content">
+                                            <p>After selection of the pass and submission of your details (name, date of birth, email id etc.) you will be directed to the 3D secured payment page where you can make payment by Debit/ Credit Card/ Net Banking/ UPI.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="hwItem">
+                                        <div class="img-box">
+                                            <img src="images/airline/hw_ic_4.svg" title="Time to Travel like a Swiss">
+                                        </div>
+                                        <h3>Time to Travel</h3>
+                                        <div class="hw-content">
+                                            <p>Once you have made the payment, you will immediately receive a confirmation email from us. You can download your e-Swiss Travel Pass from your email (a download link will be in the email).</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container-fluid text-center">
+                                
+                                <div class="otherpassLinks">
+                                    <a href="/PassMtEx/MPASS.pdf"  target="_new" class="red-text">Click on the link to get the info on how to download &amp; use the app. </a>
+                                </div>
+                            </div>
+                        </div>
+                    <!--how its work end-->
+                  
+                    <!--faq start-->
+                        <div class="container-fluid faqSection sw-faqSection  py-80">
+
+                            <div class="title">
+                            <h2>FAQs Eurail Global Pass</h2>
+                            </div>
+                            <div class="accordion faq_set" id="accordionExample">
+                                <div class="accordion-item">
+                                <h3 class="accordion-header" id="fqheading1">
+                                    <button class="accordion-button pt-0" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                                        What is a Eurail pass?
+                                    </button>
+                                </h3>
+                                <div id="faq1" class="accordion-collapse collapse show" aria-labelledby="fqheading1" data-bs-parent="">
+                                    <div class="accordion-body">
+                                        <p>The Eurail Pass is a single train pass that lets you travel as much as you want on participating European train networks for a set amount of travel days. There are different validities you can choose from, ranging from just 4 travel days up to a maximum of 3 months.</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="accordion-item">
+                                <h3 class="accordion-header" id="fqheading2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                                        Which Eurail pass should I buy?
+                                    </button>
+                                </h3>
+                                <div id="faq2" class="accordion-collapse collapse" aria-labelledby="fqheading2" data-bs-parent="">
+                                    <div class="accordion-body">
+                                    <p>Picking the right pass depends on where you want to go: If you’re only visiting a single country then a single country pass should be enough for you and if you plan to visit multiple countries then the Global pass is your pick. </p>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="accordion-item">
+                                <h3 class="accordion-header" id="fqheading3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                                        What is an adult pass? 
+                                    </button>
+                                </h3>
+                                <div id="faq3" class="accordion-collapse collapse" aria-labelledby="fqheading3" data-bs-parent="">
+                                    <p>Travelers above the age of 28 years will be issued under an adult pass. </p>
+                                </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="fqheading4">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                                        What is a youth pass?  
+                                    </button>
+                                    </h3>
+                                    <div id="faq4" class="accordion-collapse collapse" aria-labelledby="fqheading4" data-bs-parent="">
+                                    <div class="accordion-body">
+                                        <p>Travelers between the ages of 12-28 years get a special fare and the pass is issued as a youth pass. </p>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="fqheading5">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                                        Which trains are included?  
+                                    </button>
+                                    </h3>
+                                    <div id="faq5" class="accordion-collapse collapse" aria-labelledby="fqheading5" data-bs-parent="">
+                                    <div class="accordion-body">
+                                        <p>You can use the pass to travel on national railways and some private railways where your pass is valid. Someone of the popular networks includes TGV, Eurostar, Thalys and AVE, but require you to buy a seat reservation. </p>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="fqheading6">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">
+                                        What are seat reservations? 
+                                    </button>
+                                    </h3>
+                                    <div id="faq6" class="accordion-collapse collapse" aria-labelledby="fqheading6" data-bs-parent="">
+                                    <div class="accordion-body">
+                                        <p>Seat reservation ensures you a place on a particular train. Reservations are mandatory for most high speed trains and night trains. </p>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="fqheading7">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7" aria-expanded="false" aria-controls="faq7">
+                                        How much do seat reservations cost? 
+                                    </button>
+                                    </h3>
+                                    <div id="faq7" class="accordion-collapse collapse" aria-labelledby="fqheading7" data-bs-parent="">
+                                    <div class="accordion-body">
+                                        <p>Cost of seat reservation varies based on a few factors like the type of train, type of seats and the railway company. Along with the reservation cost anticipate a small transaction fee per traveler per train.</p>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="fqheading8">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8" aria-expanded="false" aria-controls="faq8">
+                                        Is there a way to avoid reservations? 
+                                    </button>
+                                    </h3>
+                                    <div id="faq8" class="accordion-collapse collapse" aria-labelledby="fqheading8" data-bs-parent="">
+                                    <div class="accordion-body">
+                                        <p>Yes, you can avoid seat reservations by using regional trains, check if your itinerary is flexible enough to pick these trains. It is suggested that you check at the ticket counter before you board.</p>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="fqheading9">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq9" aria-expanded="false" aria-controls="faq9">
+                                        When should I start making reservations? 
+                                    </button>
+                                    </h3>
+                                    <div id="faq9" class="accordion-collapse collapse" aria-labelledby="fqheading9" data-bs-parent="">
+                                    <div class="accordion-body">
+                                        <p>We usually suggest that you start making reservations for your bookings 2 - 3 months in advance. High speed trains and night trains can be reserved 3 months in advance. French Thalys trains and international TGV trains have a limited number of seats available for Eurail pass holders. Make your reservations for the high season and for weekends as early as you can. </p>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="fqheading10">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq10" aria-expanded="false" aria-controls="faq10">
+                                        Is the Eurostar included in my Eurail Pass? 
+                                    </button>
+                                    </h3>
+                                    <div id="faq10" class="accordion-collapse collapse" aria-labelledby="fqheading10" data-bs-parent="">
+                                    <div class="accordion-body">
+                                        <p>Yes, you can travel on Eurostar if you have a Global Eurail pass. Seat reservation is mandatory for Eurostar and can be made 6 months in advance. </p>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item  hidden">
+                                    <h3 class="accordion-header" id="fqheading11">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq11" aria-expanded="false" aria-controls="faq11">
+                                        What is the difference between 1st and 2nd class? 
+                                    </button>
+                                    </h3>
+                                    <div id="faq11" class="accordion-collapse collapse" aria-labelledby="fqheading11" data-bs-parent="">
+                                    <div class="accordion-body answer">
+                                      <p>The difference between 1st and 2nd class is the level of comfort and facilities available. Generally 1st class is costlier than second class as you get more leg space and additional benefits such as free wifi, adjustable reclining seats, extra wide tables, food and beverage services etc. </p>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item  hidden">
+                                    <h3 class="accordion-header" id="fqheading12">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq12" aria-expanded="false" aria-controls="faq12">
+                                        What should I do if there is incorrect information on your Pass? 
+                                    </button>
+                                    </h3>
+                                    <div id="faq12" class="accordion-collapse collapse" aria-labelledby="fqheading12" data-bs-parent="">
+                                    <div class="accordion-body">
+                                        <p>If the details on your mobile Pass are incorrect or outdated and you can’t change it yourself, please get in touch with our staff. If your Pass has not been activated yet, we will be able to change the information for you (Not applicable for Non-refundable / promotional passes) only if it is informed to us prior to your travel. Once activated passes become fully non refundable. </p>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item  hidden">
+                                    <h3 class="accordion-header" id="fqheading13">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq13" aria-expanded="false" aria-controls="faq13">
+                                        What details is required to book a Eurail global pass? 
+                                    </button>
+                                    </h3>
+                                    <div id="faq13" class="accordion-collapse collapse" aria-labelledby="fqheading13" data-bs-parent="">
+                                    <div class="accordion-body">
+                                        <p>Name, country of residence, and passport number should be as per your valid passport details.</p>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item  hidden">
+                                    <h3 class="accordion-header" id="fqheading14">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq14" aria-expanded="false" aria-controls="faq14">
+                                        How to use a pass on overnight trains? 
+                                    </button>
+                                    </h3>
+                                    <div id="faq14" class="accordion-collapse collapse" aria-labelledby="fqheading14" data-bs-parent="">
+                                    <div class="accordion-body">
+                                        <p>You need to pay a fee to use a couchette or sleeper with your pass, the fee is usually per bed, not per compartment. If you have a flexi-type pass, an overnight train only uses one day on your pass, the day of departure. </p>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item  hidden">
+                                    <h3 class="accordion-header" id="fqheading15">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq15" aria-expanded="false" aria-controls="faq15">
+                                        What is a Mobile Pass and how does it work?
+                                    </button>
+                                    </h3>
+                                    <div id="faq15" class="accordion-collapse collapse" aria-labelledby="fqheading15" data-bs-parent="">
+                                    <div class="accordion-body">
+                                        <p>A Mobile Pass is an electronic pass that can be loaded on your cell phone with the Rail Planner App. It is mandatory to download the Rail Planner App in order add / view / validate your Eurail Pass. While on tour, you would also need an internet connection once every three days (to keep the app updated and ensure the pass is active). </p>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item  hidden">
+                                    <h3 class="accordion-header" id="fqheading16">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq16" aria-expanded="false" aria-controls="faq16">
+                                        What are the initial steps to follow once I receive a Eurail Mobile Pass confirmation? 
+                                    </button>
+                                    </h3>
+                                    <div id="faq16" class="accordion-collapse collapse" aria-labelledby="fqheading16" data-bs-parent="">
+                                    <div class="accordion-body">
+                                        <p>First and foremost you will have to download the Rail Planner App. Once you open the app, add the pass to the app by entering your surname and pass number (mentioned in your confirmation email). You should then be able to see your Eurail Pass in “My Pass”. If you have a child pass, you will have to load the Child pass too on the device. Next, you will have to choose or create trips to keep track of the journeys you will be taking. Finally, you will have to activate your Mobile pass. This has to be done before you start your journey, by adding your passport number and the first date of travel. Your pass will be valid for travel from the chosen date only, for the validity period chosen at the time of booking. </p>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item  hidden">
+                                    <h3 class="accordion-header" id="fqheading17">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq17" aria-expanded="false" aria-controls="faq17">
+                                        How soon can I validate my Mobile pass? 
+                                    </button>
+                                    </h3>
+                                    <div id="faq17" class="accordion-collapse collapse" aria-labelledby="fqheading17" data-bs-parent="">
+                                    <div class="accordion-body">
+                                        <p>If your dates are fixed, validate your pass during the course of adding it to the app. If you’re not sure of your travel dates, you can activate it anytime later. You have upto 11 months from the date of purchase, to activate your pass. Please note that validating a Eurail pass is compulsory before boarding the first journey. </p>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item  hidden">
+                                    <h3 class="accordion-header" id="fqheading18">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq18" aria-expanded="false" aria-controls="faq18">
+                                        How do I show my ticket to the ticket inspector? 
+                                    </button>
+                                    </h3>
+                                    <div id="faq18" class="accordion-collapse collapse" aria-labelledby="fqheading18" data-bs-parent="">
+                                    <div class="accordion-body">
+                                        <p>The ticket inspector will scan the barcode on the Eurail Pass and check whether the train you are traveling on is added as a journey to the pass. In order to do this, in your App, go to “My Pass” and then click on “Show ticket”. The inspector can even ask for your passport to see if it matches with the Eurail Pass. </p>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item  hidden">
+                                    <h3 class="accordion-header" id="fqheading19">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq19" aria-expanded="false" aria-controls="faq19">
+                                        What does it mean to add “add a journey” to the app? 
+                                    </button>
+                                    </h3>
+                                    <div id="faq19" class="accordion-collapse collapse" aria-labelledby="fqheading19" data-bs-parent="">
+                                    <div class="accordion-body">
+                                        <p>Adding a journey means adding the sectors that you will be travelling on, using the Eurail Pass. Every journey you add to your pass, gives you a valid ticket. This ticket then needs to be shown to the ticket inspector while on board. Please note, adding a journey does not mean or entitle a seat reservation. </p>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item  hidden">
+                                    <h3 class="accordion-header" id="fqheading20">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq20" aria-expanded="false" aria-controls="faq20">
+                                        Can I cancel my first travel day once it has been added to the pass? 
+                                    </button>
+                                    </h3>
+                                    <div id="faq20" class="accordion-collapse collapse" aria-labelledby="fqheading20" data-bs-parent="">
+                                    <div class="accordion-body">
+                                        <p>Yes, you can change or cancel the first travel day any time before the start of the date (00:00 hours). Once the travel day has started, you cannot cancel or modify it. Please keep in mind that some countries follow CET (Central Europe Time) time, so there could be a difference in the start and end time of a travel day, compared to your local time. </p>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--readMoreBtn start-->
+                            <div class="d-flex justify-content-center align-items-center mt-4">
+                                <button class="sw-ReadMore sw-readMoreBtn">View More</button>
+                                <button class="sw-hidden sw-ReadMore sw-readLessBtn">View Less</button>
+                            </div>
+                            <!--readMoreBtn end-->
+                            
+                        </div>
+                    <!--faq end-->
+                </div>
+                <!--ROW END-->
+            </div>
+            <!--e-swisscontent end-->
+        </div>
+        <!--sw-main-content end-->
+    </div>
+</div>
+<!--content holder end-->
+    
+<script src="js/slick.min.js"></script>
+<script src="js/airlineCustom.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Footer Starts -->
+<footer class="sw-footer">
+
+            <div class="container-fluid swissBrief d-none">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="foot_item"><img src="images/stp/swiss_logo.jpg"> A Swiss International Air Lines Company</div>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="foot_item"><img src="images/stp/yrs20.jpg"> Over 2 Decades of Travel Excellence</div>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="foot_item"><img src="images/stp/visit_logo.jpg">Sister Concern of VisitSwitzerland.com </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="foot_item"><img src="images/stp/services.jpg"> Bouquet of Services</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container footer">
+                <div class="footer-top">
+                    <div class="row">
+
+                        <div class="col-12 col-md-3 border-right">
+                            <div class="row">
+                                <div class="foot_head">SwissTours <i class="fa fa-plus pull-right dropdown_icon" aria-hidden="true"></i></div>
+                                <ul class="foot_dropdown">
+                                    <li><a href="about_us.html" class="fade_anim">About us</a> </li>
+                                    <li><a href="partners.html" class="fade_anim">Partners</a></li>
+                                    <li><a href="careers.html" class="fade_anim">Careers</a></li>
+                                    <li><a href="testimonials.html" class="fade_anim">Testimonials</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- <div class="col-sm-4 col-md-3">
+                            <div class="row">
+                                <div class="foot_head">Customer Support <i class="fa fa-plus pull-right dropdown_icon" aria-hidden="true"></i></div>
+                                <ul class="foot_dropdown">
+                                    <li><a href="contact_us.html" class="fade_anim">Contact Us</a></li>
+                                    <li><a href="faqs.html" class="fade_anim">FAQs</a></li>
+                                    <li><a href="#" class="fade_anim">Sitemap</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+
+                        <div class="col-12 col-md-3 border-right px-lg-5">
+                            <div class="row">
+                                <div class="foot_head">Legal <i class="fa fa-plus pull-right dropdown_icon" aria-hidden="true"></i></div>
+                                <ul class="foot_dropdown">
+                                    <li><a href="user_agreement.html" class="fade_anim">User Agreement</a></li>
+                                    <li><a href="privacy_policy.html" class="fade_anim">Privacy Policy</a></li>
+                                    <li><a href="#" class="fade_anim">Verified & Secured</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 border-right px-lg-3">
+                            <div class="row">
+                                <div class="adHolder sw-adHolder">
+                                    <div class="foot_head" style="text-align: center;">Accessory  Partner</div>
+                                    <div style="text-align: center;">
+                                        <a href="#" target="_blank">
+                                            <img src="images/airline/victorinox-logo.png" alt="victorinox logo" class="victoximg1">
+                                            <img src="images/airline/victorinox-logo-hover.png" alt="victorinox logo" class="victoxhoverimg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-3 ps-lg-5 mt-4 mt-md-0">
+                            <div class="row">
+                                <div class="adHolder">
+                                    <div class="foot_head">Official Time Partner</div>
+                                    <div class="adBlock">
+                                        <iframe src="watch/index.html" scrolling="no" frameborder="0" width="100%" height="100%" allowtransparency="true"></iframe>
+                                        <!-- <a href=""><img src="images/tagheuer.jpg"></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                   
+                </div>
+                <div class="footer-mid">
+                    <a href="#"><img src="images/airline/footermid-logo.svg" alt="swiss-logo"><span>Swiss International Air Lines Company</span></a>
+                </div>
+                <div class="footer-bottom bottom">
+                    <div class="row">
+                       
+                        <div class="col-xs-6 social">
+                            <div class="row d-flex justify-content-center">
+                               
+                                <!-- <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> -->
+                                <a href="https://www.instagram.com/_swisstours/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="https://www.facebook.com/pages/Swisstours/256257954432198" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 copyright"><div class="row">&copy; 2023 Swisstours.com All rights reserved.</div></div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+</footer>
+<!-- Footer Ends -->
+<script>
+    $(".bkn-button").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#BooktravelpassFormsec").offset().top - 150},
+            'slow');
+        });
+//faq red more 
+// Show 7 items initially
+$('.faqSection .accordion-item:lt(7)').show();
+
+// Show more items when the "Read More" button is clicked
+$('.sw-readMoreBtn').on('click', function() {
+  $('.accordion-item.hidden').slideDown();
+  $(this).hide();
+  $('.sw-readLessBtn').show();
+});
+
+// Show fewer items when the "Read Less" button is clicked
+$('.sw-readLessBtn').on('click', function() {
+  $('.accordion-item.hidden').slideUp();
+  $(this).hide();
+  $('.sw-readMoreBtn').show();
+});
+$('.sw-hwTable.hwTable').slick({
+  slidesToShow: 4, slidesToScroll: 4, infinite: false, speed: 1000, cssEase: 'ease-in-out', dots: false, arrows: false,
+  responsive: [{ breakpoint: 1280, settings: { slidesToShow: 3, slidesToScroll: 3, dots: true } }, { breakpoint: 1080, settings: { slidesToShow: 3, slidesToScroll: 2, dots: true } }, { breakpoint: 767, settings: { slidesToShow: 1, slidesToScroll: 1, dots: true } },
+  { breakpoint: 767, settings: { slidesToShow: 1, slidesToScroll: 1, dots: true } }
+  ]
+});
+$(".mostpopulareruail .sw-sliderpadding").slick({
+            slidesToShow: 3.5, slidesToScroll: 1, dots: !1, arrows: !0, speed: 500, infinite: false, autoplay: false, centerPadding: '0px', centerMode: false,
+            responsive: [{ breakpoint: 850, settings: { slidesToShow: 2.9, slidesToScroll: 1 } },
+            { breakpoint: 600, settings: { slidesToShow: 1.6, slidesToScroll: 1, dots: !0, arrows: !1 } }]
+        });
+</script>
+</body>
+
+</html>

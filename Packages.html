@@ -12,6 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500&display=swap" rel="stylesheet">
     <link href="css/menu.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap-select.min.css" rel="stylesheet" type="text/css">
    <script src="js/jquery-1.12.4.min.js"></script>
@@ -19,8 +20,9 @@
 </head>
 
 <body>
-<!-- Header Starts -->
-<header class="cd-main-header sw-mainheader">
+
+  <!-- Header Starts -->
+  <header class="cd-main-header sw-mainheader">
     <!-- Start Mega Menu HTML -->
     <div class="container">
       <nav class="navbar navbar-expand-lg sw-navbar">
@@ -274,6 +276,34 @@
                                             </li> -->
                                         </ul>
                                 </li>
+                                <li class="col-12 col-lg-4 py-lg-4 ps-md-5 submenu3">
+                                    <span class="submenutitle"><a href="#">Panoramic Trains in Switzerland</a></span>
+                                         <ul class="list-group list-group3 submenu3-content">
+                                             <li class="s3-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                               <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/Berninalogo.png" alt="Berninalogo" class="img-fluid"></span>Bernina Express</a></li>
+                                                 <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/glacierlogo.png" alt="glacierlogo" class="img-fluid"></span>Glacier Express</a></li>
+                                                 <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/glacierlogo.png" alt="glacierlogo" class="img-fluid"></span>Lucerne-Interlaken</a></li>
+                                         </ul>
+                                     
+                                     <div class="bordertop"></div>
+                                            <div class="submenu4">
+                                             <span class="submenutitle"><a href="#">Europe Point to Point tickets</a></span>
+                                             <ul class="list-group list-group3 submenu4-content">
+                                                 <li class="s3-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                                 <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/londonlogo.png" alt="imglogo" class="img-fluid"></span>London to Paris</a></li>
+                                                 <li>
+                                                     <a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-baselLogo.png" alt="imglogo" class="img-fluid"></span>Paris to Basel 
+                                                         <div class="d-flex justify-content-end align-items-end populricon">
+                                                             <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                         </div>
+                                                     </a>
+                                                 </li>
+                                                 <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-zurichlogo.png" alt="imglogo" class="img-fluid"></span>Paris to Zurich</a></li>
+                                                 <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-amsLogo.png" alt="imglogo" class="img-fluid"></span>Paris to Amsterdam</a></li>
+                                                 <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-baselLogo.png" alt="imglogo" class="img-fluid"></span>London to Amsterdam</a></li>
+                                             </ul>
+                                         </div>
+                                 </li>
                                 <li class="col-12 col-lg-4 py-lg-4 ps-md-5">
                                     <div class="submenu4">
                                     <span class="submenutitle"><a href="#">Guided tours in Switzerland</a></span>
@@ -394,8 +424,8 @@
       </nav>
     </div>
     <!-- END Mega Menu HTML -->
-</header>
-<!-- Header Ends -->
+  </header>
+  <!-- Header Ends -->
 <link href="css/swiss-style.css" rel="stylesheet" type="text/css"> <!--airline css-->
 <link rel="stylesheet" href="css/meghamenu.css">
 
@@ -467,6 +497,19 @@
                                     </div>
                                     <!--carousal item end-->
                                 </div>
+                                 <!--saleoffer start-->
+                                 <div class="offercontainer container p-relative">
+                                    <div class="saleoffer-wrapper">
+                                        <!--saleoffertag start-->
+                                        <div class="saleoffertag d-flex align-items-center justify-content-center flex-column">
+                                            <p><span class="saletext">SALE</span></p>
+                                            <p class="d-flex align-items-center"><span class="ligtext">UP <br>TO</span><span class="bldtext">50%</span><span class="offtext">OFF</span></p>
+                                            <!-- <p class="d-flex align-items-center"><span class="bldtext">Get 1</span><span class="offtext">OFF</span></p> -->
+                                        </div>
+                                        <!--saleoffertag end-->
+                                    </div>
+                                    </div>
+                                  <!--saleoffer end-->
                             </div>
 
                         </div>
@@ -1298,10 +1341,7 @@
     <!-- Search Modal End-->
 
     <script src="js/general.js"></script>
-
-   
-    
-    <script>
+  <script>
         $(".bkn-button").click(function () {
             $('html,body').animate({
                 scrollTop: $("#BooktravelpassFormsec").offset().top - 150
@@ -1344,6 +1384,8 @@
                 { breakpoint: 767, settings: { slidesToShow: 1, slidesToScroll: 1, dots: true } },
             ]
         });
+        
+        
 
         $(document).ready(function() {
 

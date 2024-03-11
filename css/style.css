@@ -21899,7 +21899,7 @@ table.seasonPrices {
     padding-top: 80px;
 }
 
-    .itinerary_form-container h1, h2, h3 {
+    .itinerary_form-container h1, .itinerary_form-container h2, .itinerary_form-container h3 {
         margin: 0;
         font-style: normal;
         font-weight: 500;

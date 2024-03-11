@@ -48,7 +48,9 @@ $(document).ready(function () {
           $(".navbar-collapse .nav-item").removeClass("hidemenu");
           $(this).closest(".nav-item").removeClass('show');
           $(".navbar-collapse .nav-item a").removeClass("show");
-         
+          $('.eurail-pass').removeClass('show');
+          $('.pass').removeClass('show');
+          $('.dropdown-menu').removeClass('show');
           console.log($(".navbar-collapse .nav-item"));
         });
 
@@ -629,16 +631,16 @@ $('.sw-hwTable.hwTable').slick({
   { breakpoint: 767, settings: { slidesToShow: 1, slidesToScroll: 1, dots: true } }
   ]
 });
-$(".sw-comboOfferSlider").slick({slidesToShow:3,slidesToScroll:1,dots:!1,arrows:!0,speed:500,infinite:false,
+$(".sw-comboOfferSlider").slick({slidesToShow:3,slidesToScroll:1,dots:!1,arrows:!0,speed:500,cssEase: 'ease-in-out',infinite:false,
   responsive: [{breakpoint:850,settings:{slidesToShow:2,slidesToScroll:1}},
         {breakpoint:600,settings:{slidesToShow:1,slidesToScroll:1,arrows:!0,centerMode:true,centerPadding:'20px',infinite:true}}]
 });
-$(".fightticketslider").slick({slidesToShow:3,slidesToScroll:1,dots:!1,arrows:!0,speed:500,infinite:false,
+$(".fightticketslider").slick({slidesToShow:3,slidesToScroll:1,dots:!1,arrows:!0,speed:500,cssEase: 'ease-in-out',infinite:false,
   responsive: [{breakpoint:850,settings:{slidesToShow:2,slidesToScroll:1}},
         {breakpoint:600,settings:{slidesToShow:1.06,slidesToScroll:1,dots:!0,arrows:!1,centerMode:true,centerPadding:'10px',infinite:true}}]
 });
 
-$(".sw-guideDaySlider").slick({slidesToShow:3.5,slidesToScroll:1,dots:!1,arrows:!0,speed:500,infinite:false,autoplay:false,centerPadding: '0px', centerMode: false,
+$(".sw-guideDaySlider").slick({slidesToShow:3.5,slidesToScroll:1,dots:!1,arrows:!0,speed:500,cssEase: 'ease-in-out',infinite:false,autoplay:false,centerPadding: '0px', centerMode: false,
   responsive: [{breakpoint:850,settings:{slidesToShow:2.8,slidesToScroll:1}},
     {breakpoint:600,settings:{slidesToShow:1.6,slidesToScroll:1,dots:!0,arrows:!1}}]
 });
@@ -712,9 +714,7 @@ $('.stickyContent .btn-close').on('click', function() {
   $('.right-seletdiv').css({"display":"none"});
 });
 
-
 });
 
 
 
-  

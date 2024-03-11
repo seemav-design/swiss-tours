@@ -80,6 +80,7 @@ $(document).ready(function () {
         });
         $(".s2back").click(function(){
           $('.submenu2-content').removeClass('show');
+          $('.submenu3-content').removeClass('show');
           $('.submenu5-content').removeClass('show');
           $('.eurail-pass').removeClass('show');
         });

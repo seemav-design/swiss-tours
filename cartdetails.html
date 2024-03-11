@@ -8,19 +8,13 @@
     <meta name="theme-color" content="#000" />
     <title>Welcome To SWISStours</title>
     <link href="images/favicon.ico.jpg" rel="shortcut icon" />
-    <!--<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500&display=swap" rel="stylesheet">
     <link href="css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link href="css/menu.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap-select.min.css" rel="stylesheet" type="text/css">
-   
     <script src="js/jquery-1.12.4.min.js"></script>
-    <!--<script src="js/bootstrap.min.js"></script>-->
-    
     <script src="js/bootstrap-datetimepicker.js"></script>
-    <script src="js/bootstrap-select.min.js"></script>
-
 </head>
 <body>
 
@@ -401,13 +395,8 @@
     <!-- END Mega Menu HTML -->
   </header>
   <!-- Header Ends -->
-      <link href="css/swiss-style.css" rel="stylesheet" type="text/css"> <!--airline css-->
-      <link href="css/jquery.autocomplete.css" rel="stylesheet" type="text/css" />
-      <link rel="stylesheet" href="css/jquery-ui.css">
-      <link rel="stylesheet" href="css/meghamenu.css">
- 
-    <!--airline css-->
-  
+  <link href="css/swiss-style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/meghamenu.css">
    
 <!--content holder start-->
 <div class="cd-main-content">
@@ -436,6 +425,13 @@
                             <img src="images/airline/cartdeatils/bannerimg1.webp" class="d-block w-100" alt="...">
                             </picture>
                             <div class="carousel-caption container">
+                                 <!--saleoffertag start-->
+                                 <div class="saleoffertag d-flex align-items-center justify-content-center flex-column">
+                                    <p><span class="saletext">SALE</span></p>
+                                     <p class="d-flex align-items-center"><span class="ligtext">UP <br>TO</span><span class="bldtext">50%</span><span class="offtext">OFF</span></p>
+                                    <!-- <p class="d-flex align-items-center"><span class="bldtext">Get 1</span><span class="offtext">OFF</span></p> -->
+                                   </div>
+                                <!--saleoffertag end-->
                             <div class="row align-items-center">
                                     <div class="col-12 col-md-10">
                                         <div class="titleBox white_txt banner_txt">
@@ -1067,13 +1063,15 @@
                                 <!--accordionAboutJung start-->
                                 <div class="accordion" id="accordionAboutJung">
                                     <!--accordion-item start-->
+                                  
+
                                     <div class="accordion-item">
                                         <h3 class="accordion-header" id="abfqheading1">
                                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#abfaq1" aria-expanded="true" aria-controls="abfaq1">
                                                 Jungfraujoch with Swiss Travel Pass
                                             </button>
                                         </h3>
-                                        <div id="abfaq1" class="accordion-collapse collapse" aria-labelledby="abfqheading1" data-bs-parent="">
+                                        <div id="abfaq1" class="accordion-collapse show" aria-labelledby="abfqheading1" data-bs-parent="">
                                             <div class="accordion-body">
                                                 <p>
                                                     <a href="/mountain-excursion/1-jungfraujoch-top-of-europe" class="lnks"> Jungfraujoch with Swiss Travel Pass </a> comes at a discounted rate. Choose the option ‘With Swiss Pass’ for a Jungfrau ticket with Swiss Pass and add the number of passengers from the drop-down.
@@ -1095,7 +1093,7 @@
                                     <!--accordion-item start-->
                                     <div class="accordion-item">
                                         <h3 class="accordion-header" id="abfqheading2">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#abfaq2" aria-expanded="true" aria-controls="abfaq2">
+                                            <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#abfaq2" aria-expanded="true" aria-controls="abfaq2">
                                                 The new Eiger Express to Jungfraujoch
                                             </button>
                                         </h3>
@@ -1117,7 +1115,7 @@
                                     <!--accordion-item start-->
                                     <div class="accordion-item">
                                         <h3 class="accordion-header" id="abfqheading3">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#abfaq3" aria-expanded="true" aria-controls="abfaq3">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#abfaq3" aria-expanded="true" aria-controls="abfaq3">
                                                 Jungfrau Weather 
                                             </button>
                                         </h3>
@@ -1133,7 +1131,7 @@
                                     <!--accordion-item start-->
                                     <div class="accordion-item">
                                         <h3 class="accordion-header" id="abfqheading4">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#abfaq4" aria-expanded="true" aria-controls="abfaq4">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#abfaq4" aria-expanded="true" aria-controls="abfaq4">
                                                 How to reach Jungfraujoch
                                             </button>
                                         </h3>
@@ -1158,7 +1156,7 @@
                                     <div class="accordion-item hidden">
                                         <!-- row start-->
                                         <h2 class="accordion-header">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#abfaq6" aria-expanded="true" aria-controls="abfaq6">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#abfaq6" aria-expanded="true" aria-controls="abfaq6">
                                                 Ice Palace
                                             </button>
                                         </h2>
@@ -1423,14 +1421,18 @@
                                     <rect x="1260" y="694.5" width="8" height="8" rx="4" fill="#0B0B0B" />
                                     <rect x="1151.89" y="450.789" width="8" height="8" rx="4" fill="#0B0B0B" />
                                     <g fill="white" stroke-width="5">
-                                        <a href="#linelink">
+                                        <!-- <a href="#linelink">
                                             <path d="M987.709 739.886C987.709 745.235 983.373 749.571 978.025 749.571C972.676 749.571 968.34 745.235 968.34 739.886C968.34 734.537 972.676 730.201 978.025 730.201C983.373 730.201 987.709 734.537 987.709 739.886ZM973.818 739.886C973.818 742.209 975.701 744.092 978.025 744.092C980.348 744.092 982.231 742.209 982.231 739.886C982.231 737.563 980.348 735.679 978.025 735.679C975.701 735.679 973.818 737.563 973.818 739.886Z" fill="#0B0B0B" id="Luganoloc" />
-                                        </a>
+                                        </a> -->
                                         <circle cx="917" cy="739" r="30" fill="red" style="opacity: 0.02"></circle>
+                                        <svg width="99" height="30" viewBox="0 0 99 30" x="966.709" y="725.666" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19.842 14.8878C19.842 20.2365 15.506 24.5725 10.1573 24.5725C4.80863 24.5725 0.472656 20.2365 0.472656 14.8878C0.472656 9.5391 4.80863 5.20312 10.1573 5.20312C15.506 5.20312 19.842 9.5391 19.842 14.8878ZM5.95074 14.8878C5.95074 17.211 7.83409 19.0944 10.1573 19.0944C12.4806 19.0944 14.3639 17.211 14.3639 14.8878C14.3639 12.5646 12.4806 10.6812 10.1573 10.6812C7.83409 10.6812 5.95074 12.5646 5.95074 14.8878Z" fill="#0B0B0B"/>
+                                            <path d="M29.5026 19.6047H34.0544V21.3867H27.2945V7.92502H29.5026V19.6047ZM45.5663 10.7142V21.3867H43.3582V20.1277C43.0095 20.5667 42.5511 20.9154 41.983 21.1737C41.4277 21.419 40.8337 21.5417 40.201 21.5417C39.3617 21.5417 38.6062 21.3673 37.9348 21.0187C37.2762 20.6701 36.7532 20.1535 36.3659 19.4692C35.9914 18.7848 35.8041 17.9583 35.8041 16.9899V10.7142H37.9929V16.6606C37.9929 17.6162 38.2318 18.3522 38.7096 18.8687C39.1873 19.3723 39.8394 19.6241 40.6659 19.6241C41.4923 19.6241 42.1444 19.3723 42.6222 18.8687C43.1128 18.3522 43.3582 17.6162 43.3582 16.6606V10.7142H45.5663ZM52.7797 10.5399C53.6061 10.5399 54.3357 10.7078 54.9685 11.0435C55.6141 11.3663 56.1177 11.7731 56.4793 12.2638V10.7142H58.7067V21.561C58.7067 22.5424 58.5001 23.414 58.0869 24.1759C57.6737 24.9507 57.0733 25.5576 56.2856 25.9966C55.5108 26.4357 54.5811 26.6552 53.4964 26.6552C52.0501 26.6552 50.8492 26.313 49.8937 25.6286C48.9381 24.9571 48.3958 24.0403 48.2667 22.8782H50.4554C50.6233 23.4334 50.9784 23.8789 51.5207 24.2146C52.076 24.5633 52.7345 24.7376 53.4964 24.7376C54.3874 24.7376 55.104 24.4664 55.6464 23.9241C56.2016 23.3818 56.4793 22.5941 56.4793 21.561V19.7791C56.1048 20.2827 55.5947 20.7088 54.9491 21.0574C54.3164 21.3932 53.5932 21.561 52.7797 21.561C51.85 21.561 50.9977 21.3286 50.223 20.8637C49.4611 20.386 48.8542 19.7274 48.4022 18.8881C47.9632 18.0358 47.7437 17.0738 47.7437 16.002C47.7437 14.9303 47.9632 13.9812 48.4022 13.1547C48.8542 12.3283 49.4611 11.6891 50.223 11.2372C50.9977 10.7723 51.85 10.5399 52.7797 10.5399ZM56.4793 16.0408C56.4793 15.3047 56.3243 14.6656 56.0144 14.1232C55.7174 13.5809 55.3236 13.1677 54.8329 12.8836C54.3422 12.5995 53.8127 12.4574 53.2446 12.4574C52.6764 12.4574 52.147 12.5995 51.6563 12.8836C51.1656 13.1547 50.7653 13.5615 50.4554 14.1038C50.1584 14.6333 50.0099 15.266 50.0099 16.002C50.0099 16.7381 50.1584 17.3837 50.4554 17.939C50.7653 18.4942 51.1656 18.9204 51.6563 19.2174C52.1599 19.5014 52.6893 19.6435 53.2446 19.6435C53.8127 19.6435 54.3422 19.5014 54.8329 19.2174C55.3236 18.9333 55.7174 18.5201 56.0144 17.9777C56.3243 17.4225 56.4793 16.7768 56.4793 16.0408ZM60.871 16.002C60.871 14.9303 61.0905 13.9812 61.5295 13.1547C61.9815 12.3283 62.5884 11.6891 63.3502 11.2372C64.125 10.7723 64.9773 10.5399 65.907 10.5399C66.7463 10.5399 67.4759 10.7078 68.0957 11.0435C68.7285 11.3663 69.2321 11.7731 69.6065 12.2638V10.7142H71.834V21.3867H69.6065V19.7984C69.2321 20.302 68.722 20.7217 68.0764 21.0574C67.4307 21.3932 66.6947 21.561 65.8682 21.561C64.9514 21.561 64.1121 21.3286 63.3502 20.8637C62.5884 20.386 61.9815 19.7274 61.5295 18.8881C61.0905 18.0358 60.871 17.0738 60.871 16.002ZM69.6065 16.0408C69.6065 15.3047 69.4516 14.6656 69.1417 14.1232C68.8447 13.5809 68.4508 13.1677 67.9601 12.8836C67.4694 12.5995 66.94 12.4574 66.3718 12.4574C65.8037 12.4574 65.2743 12.5995 64.7836 12.8836C64.2929 13.1547 63.8926 13.5615 63.5827 14.1038C63.2857 14.6333 63.1372 15.266 63.1372 16.002C63.1372 16.7381 63.2857 17.3837 63.5827 17.939C63.8926 18.4942 64.2929 18.9204 64.7836 19.2174C65.2872 19.5014 65.8166 19.6435 66.3718 19.6435C66.94 19.6435 67.4694 19.5014 67.9601 19.2174C68.4508 18.9333 68.8447 18.5201 69.1417 17.9777C69.4516 17.4225 69.6065 16.7768 69.6065 16.0408ZM80.1189 10.5399C80.9583 10.5399 81.7072 10.7142 82.3658 11.0629C83.0373 11.4115 83.5602 11.928 83.9347 12.6124C84.3092 13.2968 84.4964 14.1232 84.4964 15.0917V21.3867H82.3077V15.421C82.3077 14.4654 82.0688 13.7358 81.591 13.2322C81.1132 12.7157 80.4611 12.4574 79.6347 12.4574C78.8083 12.4574 78.1497 12.7157 77.659 13.2322C77.1813 13.7358 76.9424 14.4654 76.9424 15.421V21.3867H74.7343V10.7142H76.9424V11.9345C77.3039 11.4954 77.7623 11.1532 78.3176 10.9079C78.8858 10.6626 79.4862 10.5399 80.1189 10.5399ZM91.9423 21.561C90.9351 21.561 90.0247 21.3351 89.2112 20.8831C88.3977 20.4183 87.7585 19.7726 87.2936 18.9462C86.8288 18.1068 86.5963 17.1384 86.5963 16.0408C86.5963 14.9561 86.8352 13.9941 87.313 13.1547C87.7908 12.3154 88.4429 11.6698 89.2693 11.2178C90.0957 10.7659 91.019 10.5399 92.0391 10.5399C93.0592 10.5399 93.9825 10.7659 94.8089 11.2178C95.6354 11.6698 96.2875 12.3154 96.7652 13.1547C97.243 13.9941 97.4819 14.9561 97.4819 16.0408C97.4819 17.1255 97.2366 18.0875 96.7459 18.9268C96.2552 19.7662 95.5837 20.4183 94.7315 20.8831C93.8921 21.3351 92.9624 21.561 91.9423 21.561ZM91.9423 19.6435C92.5104 19.6435 93.0399 19.5079 93.5306 19.2367C94.0342 18.9656 94.4409 18.5588 94.7508 18.0165C95.0607 17.4741 95.2157 16.8156 95.2157 16.0408C95.2157 15.266 95.0672 14.6139 94.7702 14.0845C94.4732 13.5421 94.0794 13.1354 93.5887 12.8642C93.098 12.593 92.5685 12.4574 92.0004 12.4574C91.4322 12.4574 90.9028 12.593 90.4121 12.8642C89.9343 13.1354 89.5534 13.5421 89.2693 14.0845C88.9852 14.6139 88.8432 15.266 88.8432 16.0408C88.8432 17.19 89.1337 18.081 89.7148 18.7137C90.3088 19.3336 91.0513 19.6435 91.9423 19.6435Z" fill="#0B0B0B"/>
+                                            </svg>
                                     </g>
-                                    <text fill="#0B0B0B" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="19.3693" font-weight="500" letter-spacing="0em">
+                                    <!-- <text fill="#0B0B0B" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="19.3693" font-weight="500" letter-spacing="0em">
                                     <tspan x="993.709" y="746.666">Lugano</tspan>
-                                                </text>
+                                                </text> -->
                                     <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="60" font-weight="250" letter-spacing="0em">
                                     <tspan x="98.5234" y="840.133">Switzerland</tspan>
                                                 </text>
@@ -1471,7 +1473,7 @@
                                     <a href="/mountain-excursion/37-chaplin-world">
                                         <rect x="349.057" y="526.574" width="17.25" height="17.25" rx="8.625" stroke="#0B0B0B" stroke-width="0.75" />
                                         <text fill="#0B0B0B" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="9" letter-spacing="0em">
-                                        <tspan x="353.182" y="538.481" data-bs-toggle="tooltip" data-bs-placement="top" title="Charlie Chaplin's World" id="CharlieChaplinMuseumpt14" class="tooltip" data-bs-custom-class="swcustom-tooltip">14</tspan>
+                                        <tspan x="351.182" y="539.481" data-bs-toggle="tooltip" data-bs-placement="top" title="Charlie Chaplin's World" id="CharlieChaplinMuseumpt14" class="tooltip" data-bs-custom-class="swcustom-tooltip">14</tspan>
                                                     </text>
                                     </a>
                                     <a href="/mountain-excursion/9-grindelwald-first">
@@ -1483,7 +1485,7 @@
                                     <a href="/mountain-excursion/53-zurich-city-tour-with-lake-cruise">
                                         <rect x="941.596" y="199.145" width="17.25" height="17.25" rx="8.625" stroke="#0B0B0B" stroke-width="0.75" id="zurichCitytext" />
                                         <text fill="#0B0B0B" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="9" letter-spacing="0em">
-                                        <tspan x="948.721" y="211.052" data-bs-toggle="tooltip" data-bs-placement="top" title="Zurich City Tour" id="zurichCitypt1" class="tooltip" data-bs-custom-class="swcustom-tooltip">1</tspan>
+                                        <tspan x="947.721" y="212.052" data-bs-toggle="tooltip" data-bs-placement="top" title="Zurich City Tour" id="zurichCitypt1" class="tooltip" data-bs-custom-class="swcustom-tooltip">1</tspan>
                                                     </text>
                                     </a>
                                     <a href="/mountain-excursion/5-mount-titlis">
@@ -1514,43 +1516,46 @@
                                     <rect x="740.322" y="455.742" width="17.25" height="17.25" rx="8.625" stroke="#0B0B0B" stroke-width="0.75" />
                                     <a href="/mountain-excursion/3-schilthorn">
                                         <text fill="#0B0B0B" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="9" letter-spacing="0em">
-                                        <tspan x="744.447" y="467.649" data-bs-toggle="tooltip" data-bs-placement="top" title="Schilthorn" id="Schilthornpt15" class="tooltip" data-bs-custom-class="swcustom-tooltip">15</tspan>
+                                        <tspan x="742.447" y="468.649" data-bs-toggle="tooltip" data-bs-placement="top" title="Schilthorn" id="Schilthornpt15" class="tooltip" data-bs-custom-class="swcustom-tooltip">15</tspan>
                                                     </text>
                                     </a>
-                                    <!-- <g fill="white" stroke-width="5">
-                                        <a href="/mountain-excursion/36-aletsch-arena">
-                                            <circle cx="502.213" cy="604.442" r="8.625"  width="17.25" height="17.25" rx="8.625"   fill="red" stroke="#0B0B0B" stroke-width="0.75"></circle>
-                                            <text fill="#0B0B0B" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="9" letter-spacing="0em">
-                                            <tspan x="502.213" y="604.442">11</tspan>
-                                                        </text>
-                                                        <rect x="494.588" y="592.535" width="20" height="20" rx="8.625" stroke="#0B0B0B" stroke-width="0.75" data-bs-toggle="tooltip" data-bs-placement="top" title="Aletsch Arena" id="AletschArenapt11" class="tooltip"           data-bs-custom-class="swcustom-tooltip"/>
-                                        </a>
-                                    </g> -->
-                                    <g fill="white" stroke-width="5">
-                                        <a href="/mountain-excursion/36-aletsch-arena">
-                                            <circle cx="505" cy="600" r="8.625"  width="17.25" height="17.25" rx="8.625"   fill="white" stroke="#0B0B0B" stroke-width="0.75" stroke="#0B0B0B" stroke-width="0.75"></circle>
-                                           <!-- <rect x="494.588" y="592.535" width="30" height="20" rx="8.625" stroke="#0B0B0B" stroke-width="0.75" fill="green" data-bs-toggle="tooltip" data-bs-placement="top" title="Aletsch Arena" id="AletschArenapt11" class="tooltip" data-bs-custom-class="swcustom-tooltip" style="opacity:0.02"/> -->
-                                           <text fill="#0B0B0B" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="9" letter-spacing="0em">
-                                           <tspan x="502.213" y="604.442">11</tspan></text>
-                                           <rect x="496.588" y="592.535" width="20" height="20" rx="8.625" stroke="#0B0B0B" stroke-width="0.75" data-bs-toggle="tooltip" data-bs-placement="top" id="AletschArenapt11" class="tooltip" data-bs-custom-class="swcustom-tooltip" style="opacity:0.02;" title="Aletsch Arena"></rect>
-                                        </a>
-                                        </g>
-                                    <g fill="white" stroke-width="5">
-                                    <a href="/mountain-excursion/40-diavolezza">
-                                        <circle cx="1217.43" cy="532.106" r="8.625"  width="17.25" height="17.25" rx="8.625"   fill="white" stroke="#0B0B0B" stroke-width="0.75" stroke="#0B0B0B" stroke-width="0.75"></circle>
-                                       <text fill="#0B0B0B" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="9" letter-spacing="0em">
-                                        <tspan x="1213.43" y="535.106">12</tspan>
-                                                    </text>
-                                                    <rect x="1202.3" y="524.199" width="30" height="20" rx="8.625" stroke="#0B0B0B" stroke-width="0.75" data-bs-toggle="tooltip" data-bs-placement="top" title="Diavolezza" id="Diavolezzapt122" class="tooltip" data-bs-custom-class="swcustom-tooltip" style="opacity:0.02"/>
-                                    </a>
-                                    </g>
-                                    <g fill="white" stroke-width="5">
-                                    <a href="/mountain-excursion/14-swiss-miniatur">
-                                        <circle cx="1001.209" cy="717.669" r="8.625"  width="17.25" height="17.25" rx="8.625"   fill="white" stroke="#0B0B0B" stroke-width="0.75"></circle>
+                                    <a href="/mountain-excursion/36-aletsch-arena">
+                                        <rect x="496.588" y="592.535" width="17.25" height="17.25" rx="8.625" stroke="#0B0B0B" stroke-width="0.75" />
                                         <text fill="#0B0B0B" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="9" letter-spacing="0em">
-                                        <tspan x="998.209" y="719.669">13</tspan>
+                                        <tspan x="499.213" y="604.442" data-bs-toggle="tooltip" data-bs-placement="top" title="Aletsch Arena" id="AletschArenapt11" class="tooltip" data-bs-custom-class="swcustom-tooltip">11</tspan>
                                                     </text>
-                                                    <rect x="985.084" y="707.762" width="30" height="20" rx="8.625" stroke="#0B0B0B" stroke-width="0.75" data-bs-toggle="tooltip" data-bs-placement="top" title="Swiss Miniatur" id="SwissMiniaturpt13" class="tooltip" data-bs-custom-class="swcustom-tooltip" style="opacity: 0.02;"/>
+                                    </a>
+                                    <g fill="white" stroke-width="5">
+                                    <a href="/mountain-excursion/40-diavolezza" 
+                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Diavolezza" id="Diavolezzapt12" class="tooltip" data-bs-custom-class="swcustom-tooltip"
+                                    >
+                                        <circle cx="1218.3" cy="533.199" r="12" width="17.25" height="17.25" rx="8.625" fill="red" stroke="" stroke-width="0.75" style=""></circle>
+                                        <svg width="19" height="19" x="1209.3" y="523.199" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.435547" y="1.19922" width="17.25" height="17.25" rx="8.625" stroke="#0B0B0B" stroke-width="0.75"/>
+                                            <path d="M4.90255 7.06422V6.31722H6.59455V12.8242H5.76655V7.06422H4.90255ZM7.90236 12.1672C8.66436 11.5552 9.26136 11.0542 9.69336 10.6642C10.1254 10.2682 10.4884 9.85722 10.7824 9.43122C11.0824 8.99922 11.2324 8.57622 11.2324 8.16222C11.2324 7.77222 11.1364 7.46622 10.9444 7.24422C10.7584 7.01622 10.4554 6.90222 10.0354 6.90222C9.62736 6.90222 9.30936 7.03122 9.08136 7.28922C8.85936 7.54122 8.73936 7.88022 8.72136 8.30622H7.92936C7.95336 7.63422 8.15736 7.11522 8.54136 6.74922C8.92536 6.38322 9.42036 6.20022 10.0264 6.20022C10.6444 6.20022 11.1334 6.37122 11.4934 6.71322C11.8594 7.05522 12.0424 7.52622 12.0424 8.12622C12.0424 8.62422 11.8924 9.11022 11.5924 9.58422C11.2984 10.0522 10.9624 10.4662 10.5844 10.8262C10.2064 11.1802 9.72336 11.5942 9.13536 12.0682H12.2314V12.7522H7.90236V12.1672Z" fill="#0B0B0B"/>
+                                            </svg>
+                                        <!-- <rect x="1209.3" y="523.199" width="17.25" height="17.25" rx="8.625" stroke="#0B0B0B" stroke-width="0.75" />
+                                        <text fill="#0B0B0B" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="9" letter-spacing="0em">
+                                        <tspan x="1212.43" y="535.106" data-bs-toggle="tooltip" data-bs-placement="top" title="Diavolezza" id="Diavolezzapt12" class="tooltip" data-bs-custom-class="swcustom-tooltip">12</tspan>
+                                                    </text> -->
+                                    </a></g>
+                                    <g fill="white" stroke-width="5">
+                                    <a href="/mountain-excursion/14-swiss-miniatur"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Swiss Miniatur" id="SwissMiniaturpt13" class="tooltip" data-bs-custom-class="swcustom-tooltip"
+                                    >
+                                        <circle cx="1001.209" cy="717.669" r="12"  width="17.25" height="17.25" rx="8.625"   fill="red" stroke="" stroke-width="0.75" style=""></circle>
+                                        <svg width="19" height="19" x="992.209" y="708.669" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="1.2168" y="0.761719" width="17.25" height="17.25" rx="8.625" stroke="#0B0B0B" stroke-width="0.75"/>
+                                            <path d="M5.6838 6.62672V5.87972H7.3758V12.3867H6.5478V6.62672H5.6838ZM8.76461 7.51772C8.80661 6.96572 9.01961 6.53372 9.40361 6.22172C9.78761 5.90972 10.2856 5.75372 10.8976 5.75372C11.3056 5.75372 11.6566 5.82872 11.9506 5.97872C12.2506 6.12272 12.4756 6.32072 12.6256 6.57272C12.7816 6.82472 12.8596 7.10972 12.8596 7.42772C12.8596 7.79972 12.7516 8.12072 12.5356 8.39072C12.3256 8.66072 12.0496 8.83472 11.7076 8.91272V8.95772C12.0976 9.05372 12.4066 9.24272 12.6346 9.52472C12.8626 9.80672 12.9766 10.1757 12.9766 10.6317C12.9766 10.9737 12.8986 11.2827 12.7426 11.5587C12.5866 11.8287 12.3526 12.0417 12.0406 12.1977C11.7286 12.3537 11.3536 12.4317 10.9156 12.4317C10.2796 12.4317 9.75761 12.2667 9.34961 11.9367C8.94161 11.6007 8.71361 11.1267 8.66561 10.5147H9.45761C9.49961 10.8747 9.64661 11.1687 9.89861 11.3967C10.1506 11.6247 10.4866 11.7387 10.9066 11.7387C11.3266 11.7387 11.6446 11.6307 11.8606 11.4147C12.0826 11.1927 12.1936 10.9077 12.1936 10.5597C12.1936 10.1097 12.0436 9.78572 11.7436 9.58772C11.4436 9.38972 10.9906 9.29072 10.3846 9.29072H10.1776V8.60672H10.3936C10.9456 8.60072 11.3626 8.51072 11.6446 8.33672C11.9266 8.15672 12.0676 7.88072 12.0676 7.50872C12.0676 7.19072 11.9626 6.93572 11.7526 6.74372C11.5486 6.55172 11.2546 6.45572 10.8706 6.45572C10.4986 6.45572 10.1986 6.55172 9.97061 6.74372C9.74261 6.93572 9.60761 7.19372 9.56561 7.51772H8.76461Z" fill="#0B0B0B"/>
+                                            </svg>
+                                        <!-- <svg x="992.084" y="707.762" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="1.18945" y="0.574219" width="30" height="17.25" rx="8.625" stroke="#0B0B0B" stroke-width="0.75"></rect>
+                                                <path d="M5.6838 6.62672V5.87972H7.3758V12.3867H6.5478V6.62672H5.6838ZM8.76461 7.51772C8.80661 6.96572 9.01961 6.53372 9.40361 6.22172C9.78761 5.90972 10.2856 5.75372 10.8976 5.75372C11.3056 5.75372 11.6566 5.82872 11.9506 5.97872C12.2506 6.12272 12.4756 6.32072 12.6256 6.57272C12.7816 6.82472 12.8596 7.10972 12.8596 7.42772C12.8596 7.79972 12.7516 8.12072 12.5356 8.39072C12.3256 8.66072 12.0496 8.83472 11.7076 8.91272V8.95772C12.0976 9.05372 12.4066 9.24272 12.6346 9.52472C12.8626 9.80672 12.9766 10.1757 12.9766 10.6317C12.9766 10.9737 12.8986 11.2827 12.7426 11.5587C12.5866 11.8287 12.3526 12.0417 12.0406 12.1977C11.7286 12.3537 11.3536 12.4317 10.9156 12.4317C10.2796 12.4317 9.75761 12.2667 9.34961 11.9367C8.94161 11.6007 8.71361 11.1267 8.66561 10.5147H9.45761C9.49961 10.8747 9.64661 11.1687 9.89861 11.3967C10.1506 11.6247 10.4866 11.7387 10.9066 11.7387C11.3266 11.7387 11.6446 11.6307 11.8606 11.4147C12.0826 11.1927 12.1936 10.9077 12.1936 10.5597C12.1936 10.1097 12.0436 9.78572 11.7436 9.58772C11.4436 9.38972 10.9906 9.29072 10.3846 9.29072H10.1776V8.60672H10.3936C10.9456 8.60072 11.3626 8.51072 11.6446 8.33672C11.9266 8.15672 12.0676 7.88072 12.0676 7.50872C12.0676 7.19072 11.9626 6.93572 11.7526 6.74372C11.5486 6.55172 11.2546 6.45572 10.8706 6.45572C10.4986 6.45572 10.1986 6.55172 9.97061 6.74372C9.74261 6.93572 9.60761 7.19372 9.56561 7.51772H8.76461Z" fill="#0B0B0B"/>
+                                                        </svg> -->
+                                        <!-- <rect x="994.084" y="707.762" width="17.25" height="17.25" rx="8.625" stroke="#0B0B0B" stroke-width="0.75" /> -->
+                                        <!-- <text fill="#0B0B0B" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="9" letter-spacing="0em">
+                                        <tspan x="998.209" y="719.669" data-bs-toggle="tooltip" data-bs-placement="top" title="Swiss Miniatur" id="SwissMiniaturpt13" class="tooltip" data-bs-custom-class="swcustom-tooltip">13</tspan>
+                                                    </text> -->
                                     </a></g>
                                     <a href="/mountain-excursion/47-lindt-chocolate">
                                         <rect x="824.967" y="311.312" width="17.25" height="17.25" rx="8.625" stroke="#0B0B0B" stroke-width="0.75" />
@@ -1571,14 +1576,20 @@
                                                     </text>
                                     </a>
                                     <g fill="white" stroke-width="5">
-                                    <a href="#">
-                                        <circle cx="477.58" cy="604.442" r="8.625"  width="17.25" height="17.25" rx="8.625"   fill="white" stroke="#0B0B0B" stroke-width="0.75"></circle>
+                                    <a href="/mountain-excursion/4-glacier-3000"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Glacier 3000" id="Glacier3000pt10" class="tooltip" data-bs-custom-class="swcustom-tooltip"
+                                    >
+                                        <circle cx="485.455" cy="601.535" r="12" width="17.25" height="17.25" rx="8.625" fill="red" stroke="" stroke-width="0.75" style=""></circle>
+                                        <svg width="19" height="19" x="475.58" y="592.535" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.587891" y="0.535156" width="17.25" height="17.25" rx="8.625" stroke="#0B0B0B" stroke-width="0.75"/>
+                                            <path d="M5.05489 6.40016V5.65316H6.74689V12.1602H5.91889V6.40016H5.05489ZM8.1537 8.83916C8.1537 7.80716 8.3217 7.00316 8.6577 6.42716C8.9937 5.84516 9.5817 5.55416 10.4217 5.55416C11.2557 5.55416 11.8407 5.84516 12.1767 6.42716C12.5127 7.00316 12.6807 7.80716 12.6807 8.83916C12.6807 9.88916 12.5127 10.7052 12.1767 11.2872C11.8407 11.8692 11.2557 12.1602 10.4217 12.1602C9.5817 12.1602 8.9937 11.8692 8.6577 11.2872C8.3217 10.7052 8.1537 9.88916 8.1537 8.83916ZM11.8707 8.83916C11.8707 8.31716 11.8347 7.87616 11.7627 7.51616C11.6967 7.15016 11.5557 6.85616 11.3397 6.63416C11.1297 6.41216 10.8237 6.30116 10.4217 6.30116C10.0137 6.30116 9.7017 6.41216 9.4857 6.63416C9.2757 6.85616 9.1347 7.15016 9.0627 7.51616C8.9967 7.87616 8.9637 8.31716 8.9637 8.83916C8.9637 9.37916 8.9967 9.83216 9.0627 10.1982C9.1347 10.5642 9.2757 10.8582 9.4857 11.0802C9.7017 11.3022 10.0137 11.4132 10.4217 11.4132C10.8237 11.4132 11.1297 11.3022 11.3397 11.0802C11.5557 10.8582 11.6967 10.5642 11.7627 10.1982C11.8347 9.83216 11.8707 9.37916 11.8707 8.83916Z" fill="#0B0B0B"/>
+                                        </svg>
+    
+                                        <!-- <rect x="475.58" y="592.535" width="17.25" height="17.25" rx="8.625" stroke="#0B0B0B" stroke-width="0.75" />
                                         <text fill="#0B0B0B" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="9" letter-spacing="0em">
-                                        <tspan x="477.58" y="604.442">10</tspan>
-                                                    </text>
-                                                    <rect x="467.455" y="592.535" width="20" height="20" rx="8.625" stroke="#0B0B0B" stroke-width="0.75" data-bs-toggle="tooltip" data-bs-placement="top" title="Chillon Castle" id="ChillonCastlept10" class="tooltip" data-bs-custom-class="swcustom-tooltip" style="opacity:0.02"/>
-                                    </a>
-                                    </g>
+                                        <tspan x="477.58" y="604.442" data-bs-toggle="tooltip" data-bs-placement="top" title="Glacier 3000" id="Glacier3000pt10" class="tooltip" data-bs-custom-class="swcustom-tooltip">10</tspan>
+                                                    </text> -->
+                                    </a></g>
                                     <rect x="709.537" y="700.766" width="184" height="18" rx="9" fill="white" class="fillwhite" />
                                     <text fill="#0B0B0B" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="12" letter-spacing="0em">
                                     <tspan x="717.537" y="714.142">Matterhorn Glacier Paradise</tspan>
@@ -1617,13 +1628,21 @@
                                     <text fill="#0B0B0B" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="19.3693" font-weight="500" letter-spacing="0em">
                                     <tspan x="827.775" y="350.217">Luzern</tspan>
                                                 </text>
-                                    <g style="mix-blend-mode: luminosity">
+                                                <g fill="white" stroke-width="5">
+                                                    <svg width="104" height="30"  viewBox="0 0 104 30" x="663.317" y="728.265" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g style="mix-blend-mode:luminosity">
+                                                        <path d="M19.4494 15.2667C19.4494 20.6154 15.1135 24.9514 9.76475 24.9514C4.41606 24.9514 0.0800781 20.6154 0.0800781 15.2667C0.0800781 9.91801 4.41606 5.58203 9.76475 5.58203C15.1135 5.58203 19.4494 9.91801 19.4494 15.2667ZM5.55816 15.2667C5.55816 17.5899 7.44151 19.4733 9.76475 19.4733C12.088 19.4733 13.9714 17.5899 13.9714 15.2667C13.9714 12.9435 12.088 11.0601 9.76475 11.0601C7.44151 11.0601 5.55816 12.9435 5.55816 15.2667Z" fill="#CC0000"/>
+                                                        </g>
+                                                        <path d="M29.0325 19.8481H35.2888V21.7656H26.4177V20.0418L32.6546 10.2215H26.4177V8.30393H35.2888V10.0278L29.0325 19.8481ZM47.4841 16.1679C47.4841 16.5682 47.4583 16.9297 47.4066 17.2526H39.2521C39.3167 18.1048 39.6331 18.7892 40.2012 19.3057C40.7694 19.8222 41.4667 20.0805 42.2931 20.0805C43.4811 20.0805 44.3205 19.5833 44.8112 18.5891H47.1936C46.8708 19.5704 46.2832 20.3775 45.431 21.0102C44.5916 21.63 43.5457 21.9399 42.2931 21.9399C41.273 21.9399 40.3562 21.714 39.5427 21.262C38.7421 20.7972 38.1094 20.1515 37.6445 19.3251C37.1925 18.4857 36.9666 17.5173 36.9666 16.4197C36.9666 15.3221 37.1861 14.3601 37.6251 13.5337C38.0771 12.6943 38.7033 12.0487 39.5039 11.5967C40.3175 11.1448 41.2472 10.9188 42.2931 10.9188C43.3003 10.9188 44.1978 11.1383 44.9855 11.5773C45.7732 12.0164 46.3865 12.6362 46.8256 13.4368C47.2646 14.2245 47.4841 15.1349 47.4841 16.1679ZM45.1792 15.4706C45.1663 14.6571 44.8757 14.005 44.3075 13.5143C43.7394 13.0236 43.0356 12.7782 42.1963 12.7782C41.4344 12.7782 40.7823 13.0236 40.24 13.5143C39.6976 13.9921 39.3748 14.6442 39.2715 15.4706H45.1792ZM51.8652 12.6427C52.188 12.1003 52.6142 11.6807 53.1436 11.3837C53.6859 11.0737 54.3251 10.9188 55.0612 10.9188V13.2044H54.4995C53.6343 13.2044 52.9757 13.4239 52.5238 13.8629C52.0847 14.302 51.8652 15.0638 51.8652 16.1485V21.7656H49.6571V11.0931H51.8652V12.6427ZM70.0102 10.9188C70.8496 10.9188 71.5985 11.0931 72.2571 11.4418C72.9285 11.7904 73.4515 12.3069 73.826 12.9913C74.2134 13.6757 74.4071 14.5021 74.4071 15.4706V21.7656H72.2183V15.7999C72.2183 14.8443 71.9794 14.1147 71.5017 13.6111C71.0239 13.0946 70.3718 12.8364 69.5454 12.8364C68.7189 12.8364 68.0604 13.0946 67.5697 13.6111C67.0919 14.1147 66.853 14.8443 66.853 15.7999V21.7656H64.6643V15.7999C64.6643 14.8443 64.4254 14.1147 63.9476 13.6111C63.4698 13.0946 62.8177 12.8364 61.9913 12.8364C61.1649 12.8364 60.5063 13.0946 60.0156 13.6111C59.5379 14.1147 59.299 14.8443 59.299 15.7999V21.7656H57.0909V11.0931H59.299V12.3134C59.6605 11.8743 60.1189 11.5322 60.6742 11.2868C61.2294 11.0415 61.8234 10.9188 62.4562 10.9188C63.3084 10.9188 64.0703 11.0996 64.7418 11.4611C65.4132 11.8227 65.9297 12.3457 66.2913 13.03C66.6141 12.3844 67.1177 11.8743 67.8021 11.4999C68.4865 11.1125 69.2225 10.9188 70.0102 10.9188ZM76.4808 16.3809C76.4808 15.3092 76.7003 14.3601 77.1393 13.5337C77.5913 12.7072 78.1982 12.068 78.9601 11.6161C79.7348 11.1512 80.5871 10.9188 81.5168 10.9188C82.3562 10.9188 83.0857 11.0867 83.7056 11.4224C84.3383 11.7452 84.8419 12.152 85.2164 12.6427V11.0931H87.4438V21.7656H85.2164V20.1773C84.8419 20.6809 84.3318 21.1006 83.6862 21.4363C83.0405 21.7721 82.3045 21.9399 81.4781 21.9399C80.5613 21.9399 79.7219 21.7075 78.9601 21.2427C78.1982 20.7649 77.5913 20.1063 77.1393 19.267C76.7003 18.4147 76.4808 17.4527 76.4808 16.3809ZM85.2164 16.4197C85.2164 15.6836 85.0614 15.0445 84.7515 14.5021C84.4545 13.9598 84.0607 13.5466 83.57 13.2625C83.0793 12.9784 82.5498 12.8364 81.9817 12.8364C81.4135 12.8364 80.8841 12.9784 80.3934 13.2625C79.9027 13.5337 79.5024 13.9404 79.1925 14.4828C78.8955 15.0122 78.747 15.6449 78.747 16.3809C78.747 17.117 78.8955 17.7626 79.1925 18.3179C79.5024 18.8731 79.9027 19.2993 80.3934 19.5963C80.897 19.8803 81.4264 20.0224 81.9817 20.0224C82.5498 20.0224 83.0793 19.8803 83.57 19.5963C84.0607 19.3122 84.4545 18.899 84.7515 18.3566C85.0614 17.8014 85.2164 17.1557 85.2164 16.4197ZM92.9202 12.8945V18.8021C92.9202 19.2024 93.0106 19.493 93.1914 19.6737C93.3851 19.8416 93.7079 19.9255 94.1599 19.9255H95.5157V21.7656H93.7725C92.7782 21.7656 92.0163 21.5332 91.4869 21.0683C90.9575 20.6035 90.6927 19.8481 90.6927 18.8021V12.8945H89.4337V11.0931H90.6927V8.43951H92.9202V11.0931H95.5157V12.8945H92.9202ZM100.127 12.8945V18.8021C100.127 19.2024 100.217 19.493 100.398 19.6737C100.592 19.8416 100.915 19.9255 101.367 19.9255H102.722V21.7656H100.979C99.9849 21.7656 99.2231 21.5332 98.6936 21.0683C98.1642 20.6035 97.8995 19.8481 97.8995 18.8021V12.8945H96.6405V11.0931H97.8995V8.43951H100.127V11.0931H102.722V12.8945H100.127Z" fill="#0B0B0B"/>
+                                                        </svg>
+                                                </g>
+                                    <!-- <g style="mix-blend-mode: luminosity">
                                         <path d="M686.317 733.265C686.317 738.613 681.981 742.949 676.632 742.949C671.283 742.949 666.947 738.613 666.947 733.265C666.947 727.916 671.283 723.58 676.632 723.58C681.981 723.58 686.317 727.916 686.317 733.265ZM672.425 733.265C672.425 735.588 674.309 737.471 676.632 737.471C678.955 737.471 680.839 735.588 680.839 733.265C680.839 730.942 678.955 729.058 676.632 729.058C674.309 729.058 672.425 730.942 672.425 733.265Z" fill="#CC0000" />
                 
                                     </g>
                                     <text fill="#0B0B0B" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="19.3693" font-weight="500" letter-spacing="0em">
                                     <tspan x="692.316" y="740.045">Zermatt</tspan>
-                                                </text>
+                                                </text> -->
                                     <defs>
                                         <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
                                             <use xlink:href="#image0_295_5785" transform="matrix(0.000530042 0 0 0.000899147 0 -0.124836)" />
@@ -1728,9 +1747,10 @@
                 
                                     </ul>
                                 <!--MAP END-->
-                            </div>
+                                </div>
                         </div>
                     </div>
+                </div>
                     <!--routes end-->
                     <!--ThingstodoSection start-->
                     <div class="section-padding section_Container">
@@ -2362,13 +2382,12 @@
     </div>
 </div>
 </div>
-<script src="js/general.js"></script>
+
 <script>
      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
             return new bootstrap.Tooltip(tooltipTriggerEl, {
                 'customClass': 'swcustom-tooltip'
-
             })
         })
    // Show 5 items initially

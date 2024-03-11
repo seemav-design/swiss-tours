@@ -1,0 +1,2219 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="theme-color" content="#000" />
+    <title>Welcome To SWISStours</title>
+    <link href="images/favicon.ico.jpg" rel="shortcut icon" />
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/menu.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-select.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <!--<script src="js/bootstrap.min.js"></script>-->
+    
+    <script src="js/bootstrap-datetimepicker.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+<style>
+    .hidden{
+        display:none;
+    }
+</style>
+</head>
+<body>
+   <!-- Header Starts -->
+   <header class="cd-main-header sw-mainheader">
+    <!-- Start Mega Menu HTML -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg sw-navbar">
+        <div class="w-100 flex-column align-items-start">
+            <div class="d-flex justify-content-between w-100">
+              <a class="navbar-brand" href="#"><img src="images/logo.svg" alt=""></a>
+              
+              <div class="top-right-menu d-flex flex-grow-1">
+                <div class="cart_box">
+                    <a href="#" class="cart_btn" title="View Cart"><span class="ml-4">My Cart</span><span class="cart_items_count">0</span></a>
+                </div>
+                <div class="login_head">
+                    <a href=""> <span class="txt">Login</span></a>
+                </div>
+                <div class="sign-upbtn">
+                    <a href="" class="btn"> <img src="images/airline/signup-icon.svg" alt=""><span class="txt">sign up</span></a>
+                </div>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+                  <div class="hamburger-toggle">
+                    <div class="hamburger">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          
+          <div class="collapse navbar-collapse menu_navbar w-100" id="navbar-content">
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0 flex-grow-1 mt-4" >
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">
+                    <span class="nav-icon"><img src="images/airline/Plane2.svg" alt=""></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/Plane2.svg" alt=""></span>
+                    Flights</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/hotelmenu-icon.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/hotel.svg" alt=""></span>
+                    Hotels
+                </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/aparment.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/apartment.svg" alt=""></span>
+                    Apartments</a>
+              </li>
+            
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" aria-current="page" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/package.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/package.svg" alt=""></span>
+                    Packages</a>
+                  <ul class="dropdown-menu shadow">
+                    <li class="rmm-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                   <li>
+                      <a class="dropdown-item pe-4" href="#">Air-Inclusive Packages<img src="images/airline/sw-logo2.svg" class="img-fluid menu-innericon"></a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Land Packages</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/e-swiss.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/e-swiss.svg" alt=""></span>
+                    E-Swiss Travel Pass
+                </a>
+              </li>
+              <li class="nav-item dropdown dropdown-mega position-static">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/european.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/eurailpass.svg" alt=""></span>
+                    European Rail
+                </a>
+                 <div class="dropdown-menu shadow pass">
+                    <div class="mega-content px-lg-4">
+                        <div class="container-fluid">
+                            <ul class="row">
+                                <li class="col-12 col-lg-8 py-lg-4 border-right submenu2 colcount">
+                                    <div class="rmm-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></div>
+                                    <span class="submenutitle"><a href="#">Eurail Pass<img src="images/airline/eurailicon.svg" class="img-fluid menucion2 ms-2"></a></span>
+                                    <ul class="list-group submenu2-content">
+                                        <li class="s2back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                         <li>
+                                            <!-- <a class="list-group-item d-flex justify-content-between colcount" href="#">
+                                               
+                                            <div class="d-flex justify-content-end align-items-end">
+                                                <span> Global Pass</span>
+                                               <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                            </div>
+                                            </a>-->
+                                            <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                                Global Pass
+                                                <div class="d-flex justify-content-end align-items-end populricon">
+                                                    <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                </div>
+                                            </a>
+                                        </li> 
+                                         <li class="one-country-pass">
+                                            <a class="list-group-item populricon" href="#">One Country Pass</a>
+                                            <ul class="list-group eurail-pass list-group2">
+                                                <li class="s2back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                                <li class="listoverflow-mb">
+                                                    <ul>
+                                                        <li><a href="#" class="list-group-item">Eurail Austria Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Belgium Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Benelux Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Bulgaria Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Croatia Pass</a></li>
+                                                        <li><a href="#" class="list-group-item"> Eurail Czech Republic Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Denmark Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Lithuania Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Luxembourg Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Netherlands Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Norway Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Poland Pass</a></li>
+                                                    </ul>
+                                                    <ul class="sub-listgrop2">
+                                                        <li><a href="#" class="list-group-item">Eurail Portugal Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Romania Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Finland Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail France Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Germany Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Greece Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Hungary Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Italy Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Scandinavia Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Serbia Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Slovakia Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Slovenia Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Spain Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Sweden Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Turkey Pass</a></li>
+                                                        <li><a href="#" class="list-group-item"></a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            
+                                        </li>
+
+                                       
+                                    </ul>
+                                </li>
+                                
+                                <li class="col-12 col-lg-4 py-lg-4 ps-md-5 submenu3">
+                                   <span class="submenutitle"><a href="#">Panoramic Trains in Switzerland</a></span>
+                                        <ul class="list-group list-group3 submenu3-content">
+                                            <li class="s3-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                              <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/Berninalogo.png" alt="Berninalogo" class="img-fluid"></span>Bernina Express</a></li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/glacierlogo.png" alt="glacierlogo" class="img-fluid"></span>Glacier Express</a></li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/glacierlogo.png" alt="glacierlogo" class="img-fluid"></span>Lucerne-Interlaken</a></li>
+                                        </ul>
+                                    
+                                    <div class="bordertop"></div>
+                                           <div class="submenu4">
+                                            <span class="submenutitle"><a href="#">Europe Point to Point tickets</a></span>
+                                            <ul class="list-group list-group3 submenu4-content">
+                                                <li class="s3-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/londonlogo.png" alt="imglogo" class="img-fluid"></span>London to Paris</a></li>
+                                                <li>
+                                                    <a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-baselLogo.png" alt="imglogo" class="img-fluid"></span>Paris to Basel 
+                                                        <div class="d-flex justify-content-end align-items-end populricon">
+                                                            <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-zurichlogo.png" alt="imglogo" class="img-fluid"></span>Paris to Zurich</a></li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-amsLogo.png" alt="imglogo" class="img-fluid"></span>Paris to Amsterdam</a></li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-baselLogo.png" alt="imglogo" class="img-fluid"></span>London to Amsterdam</a></li>
+                                            </ul>
+                                        </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> 
+              </li>
+              <li class="nav-item dropdown dropdown-mega position-static">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/sightseeing.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/sightseeing.svg" alt="" class="filter-red"></span>
+                    Attractions
+                </a>
+                  <div class="dropdown-menu shadow pass">
+                    <div class="mega-content px-lg-4">
+                        <div class="container-fluid">
+                            <ul class="row">
+                                <li class="col-12 col-lg-4 py-lg-4 border-right submenu2">
+                                    <div class="rmm-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></div>
+                                    <span class="submenutitle"><a href="#">Mountains in Switzerland</a></span>
+                                    <ul class="list-group submenu2-content">
+                                        <li class="s2back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                        <li>
+                                            <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                                Jungfrau
+                                                <div class="d-flex justify-content-end align-items-end populricon">
+                                                    <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="list-group-item" href="#">Jungfrau VIP Gondola</a>
+                                        </li>
+                                       
+                                        <li><a class="list-group-item" href="#">Harder Kulm<span class="buyoffer red-text">Buy 1 Get 50% Off</span></a></li>
+                                        <li><a class="list-group-item" href="#">Grindelwald First</a></li>
+                                        <li><a class="list-group-item" href="#">Schilthorn</a></li>
+                                        <li><a class="list-group-item" href="#">Mt Titlis</a></li>
+                                        <li><a class="list-group-item" href="#">Mt Pilatus<span class="buyoffer red-text">Buy 1 Get 50% Off</span></a></li>
+                                        <li><a class="list-group-item" href="#">Matterhorn</a></li>
+                                        <li>
+                                            <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                                Sunnega Paradise
+                                                <div class="d-flex justify-content-end align-items-end populricon">
+                                                    <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li><a class="list-group-item" href="#">Glacier 3000</a></li>
+                                        <li><a class="list-group-item" href="#">Diavolezza</a></li>
+                                        <li><a class="list-group-item" href="#">Aletsch Arena<span class="buyoffer red-text">Buy 1 Get 50% Off</span></a></li>
+                                        <li><a class="viewAllBtn" href="#">View All</a></li>
+                                      
+                                    </ul>
+                                </li>
+                                <li class="col-12 col-lg-4 py-lg-4 border-right submenu3 d-flex flex-column">
+                                    <span class="submenutitle"><a href="#">Attractions in Switzerland</a></span>
+                                     <ul class="list-group list-group3 submenu3-content px-lg-3">
+                                            <li class="s3-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                            <li><a class="list-group-item" href="#">Swiss Transport Musuem</a></li>
+                                            <li>
+                                                <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                                Saphir
+                                                <div class="d-flex justify-content-end align-items-end populricon">
+                                                    <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                </div>
+                                                </a> 
+                                            </li>
+                                            <li><a class="list-group-item" href="#">Lindt</a></li>
+                                            <li><a class="list-group-item" href="#">Swissminiatur</a></li>
+                                            <li><a class="list-group-item" href="#">Meal Voucher</a></li>
+                                            <li><a class="list-group-item" href="#">Charlie Chaplin<span class="buyoffer red-text">Buy 1 Get 50% Off</span></a></li>
+                                            <li><a class="viewAllBtn list-group-item" href="#">View All</a></li>
+                                            <!-- <li class="attarction-viewbtn">
+                                                <div class="viewmidbtn d-flex align-items-center justify-content-center m-auto">
+                                                    <a href="#" class="redBtn">View all</a>
+                                                </div>
+                                            </li> -->
+                                        </ul>
+                                </li>
+                                
+                                <li class="col-12 col-lg-4 py-lg-4 ps-md-5">
+                                    <div class="submenu3">
+                                        <span class="submenutitle"><a href="#">Panoramic Trains in Switzerland</a></span>
+                                    <ul class="list-group list-group3 submenu3-content">
+                                        <li class="s3-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                        <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/Berninalogo.png" alt="Berninalogo" class="img-fluid"></span>Bernina Express</a></li>
+                                            <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/glacierlogo.png" alt="glacierlogo" class="img-fluid"></span>Glacier Express</a></li>
+                                            <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/glacierlogo.png" alt="glacierlogo" class="img-fluid"></span>Lucerne-Interlaken</a></li>
+                                    </ul>
+                                    </div>
+                                    
+                                    <div class="submenu4">
+                                    <span class="submenutitle"><a href="#">Guided tours in Switzerland</a></span>
+                                    </div>
+                                    <ul class="list-group list-group3 submenu4-content px-lg-3">
+                                        <li class="s3-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                        <li><a class="list-group-item" href="#">Zurich tour with chocolate</a></li>
+                                        <li>
+                                            <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                                Rhine falls and Zurich city tour
+                                                <div class="d-flex justify-content-end align-items-end populricon">
+                                                    <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                </div>
+                                            </a> 
+                                        </li>
+                                        <li><a class="list-group-item" href="#">Rhine falls and Stein am Rhein</a></li>
+                                        <li><a class="list-group-item" href="#">Zurich city tour with lake cruise<span class="buyoffer red-text">Buy 1 Get 50% Off</span></a></li>
+                                        <li><a class="list-group-item" href="#">Lucerne and Titlis snow experience</a></li>
+                                    </ul>
+                                    <div class="bordertop"></div>
+                                    <div>
+                                        <div class="submenu5">
+                                            <span class="submenutitle"><a href="#">Worldwide Attractions</a></span>
+                                        </div>
+                                        
+                                        <ul class="list-group list-group3 submenu5-content px-lg-3">
+                                            <li class="s2back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                            <li><a class="list-group-item" href="#">London</a></li>
+                                            <li><a class="list-group-item" href="#">Munich</a></li>
+                                            <li><a class="list-group-item" href="#">Paris</a></li>
+                                            <li><a class="list-group-item" href="#">Vienna</a></li>
+                                            <li><a class="viewAllBtn list-group-item" href="#">View All</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                  </div>
+                  
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/mountain.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mountain.svg" alt="" class="filter-red"></span>
+                    About
+                 </a>
+                  <ul class="dropdown-menu shadow">
+                    <li class="rmm-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                    <li>
+                      <a class="dropdown-item pe-4" href="#">About Us</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Our Leadership</a></li>
+                    <li><a class="dropdown-item" href="#">Brochure</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown dropdown-mega position-static contactMegamenu">
+                  <a class="nav-link dropdown-toggle" href="#"  href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/sightseeing.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/sightseeing.svg" alt="" class="filter-red"></span>
+                    Contact
+                </a>
+                  <div class="dropdown-menu shadow">
+                    <div class="mega-content ">
+                        <div class="container-fluid">
+                            <div class="rmm-back ps-0"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></div>
+                            <div class="row listoverflow-mb">
+                                <div class="col-12 col-md-7 col-lg-8 py-lg-8">
+                                    <ul class="menuleftContact">
+                                        
+                                        <li> <span class="submenutitle"><a href="https://wa.me/919987997997?text=Hello.">WhatsApp<span class="ms-3"><img src="images/airline/whatapp.svg" alt=""></span></a></span></li>
+                                        <li class="d-flex align-items-center"> <span class="submenutitle">Toll Free</span><a href="tel:18002020052" class="text-primary">1800 20 20 052</a></li>
+                                        <li>
+                                            <span class="submenutitle">Branch Office</span>
+                                            <ul>
+                                                <li><span>Mumbai (Head Office)</span><a href="tel:+912261282400">(022) 61282400, 67439990</a></li>  
+                                                <li><span>Delhi</span><a href="tel:+917208820785">+91 7208820787 / +91 7208820785 / +91 9643662737</a></li>  
+                                                <li><span>Chennai</span><a href="tel:+914442179510">(044) 42179510 / 20</a></li>  
+                                                <li><span>Bangalore</span><a href="tel:+918041132172">(080) 41132172, 41609072</a></li>  
+                                                <li><span>Pune</span><a href="tel:+919136117252">+919136117252, +91 8855883831</a></li>
+                                                <li><span>Kolkata</span><a href="tel:+919007160166">+91 9007160166</a></li>  
+                                                <li><span>Ahmedabad</span><a href="tel:+917940028694">(079) 40028694 / 95</a></li>  
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-md-5 col-lg-4 p-0">
+                                    <div class="bgimg">
+                                        <div class="d-flex justify-content-between align-items-center bottomBtn">
+                                            <a href="#" class="whitebgbtn">View Brochure</a>    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+              </li>
+              <li class="nav-item d-block d-md-none">
+                 <a class="nav-link" href="#"><span class="nav-icon mb-icon">
+                    <img src="images/airline/menu-icon/mobile/cart.svg" alt="" class="filter-red"></span>
+                    My Cart<span class="cart_items_count">0</span></a>
+              </li>
+              <li class="nav-item ">
+                  <a class="nav-link" href="#">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/offers.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/offers.svg" alt="" class="filter-red"></span>
+                    Blog
+                </a>
+              </li>
+              <li class="nav-item  d-block d-md-none mt-5 mx-4 text-center login-mobilebtn">
+                <a href="#" class="redBtn w-100 m-auto d-flex justify-content-center">Login</a>
+              </li>
+          </ul>
+          
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- END Mega Menu HTML -->
+  </header>
+  <!-- Header Ends -->
+      <link href="css/swiss-style.css" rel="stylesheet" type="text/css"> <!--airline css-->
+      <link rel="stylesheet" href="css/meghamenu.css">
+      <link href="css/jquery.autocomplete.css" rel="stylesheet" type="text/css" />
+<!--airline css-->
+<!--content holder start-->
+<div class="cd-main-content">
+    <div class="container-fluid main_content_container pt-0">
+        <!--sw-main-content start-->
+        <div class="sw-main-content sw-main-content2 eurail p2p-home">
+            <div class="herobanner full-mobile">
+                <!--row start-->
+                <div class="row mbshadow">
+                    <div class="banner_wrp sw-banner_wrp homebanner homepage">
+                        <div class="bannermilogo d-block d-lg-none">
+                            <img src="images/airline/banner-midlogo.svg" alt="" class="img-fluid">
+                        </div>
+                        <!-- Carousel -->
+                        <div class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner sw-nstpBanner nstpBanner">
+                                <div class="carousel-item active">
+                                    <picture>
+                                       <img src="images/airline/p2phome/Andermatt-Apres-Ski-Train.webp"
+                                            class="d-block w-100" alt="..." class="img-fluid"/>
+                                    </picture>
+                                    <div class="carousel-caption container">
+                                       <!--searchform start-->
+                                       <div class="search_forms" id="topsearch_forms">
+                                            <!--row start-->
+                                            <div class="row mcDiv">
+                                                <!--form-group start-->
+                                                <div class="col-lg-4 form-group position-relative">
+                                                    <!--highlight_error-->
+                                                    <div class="border-box">
+                                                        <div class="form-group-input">
+                                                            <img src="/images/airline/location2-icon.svg" alt="" class="d-md-block d-lg-none left-inuticon">
+                                                            <label>From</label>
+                                                            <div class="input-box">
+                                                                <div class="select-wrapper">
+                                                                    <div class="autocomplete-drop-down">
+                                                                        <div class="countries-input-container">
+                                                                            <div class="d-flex country-inputtext">
+                                                                                <input name="ctl00$ContentPlaceHolder$txtFromAirportRT1" type="text" id="ContentPlaceHolder_txtFromAirportRT1" placeholder="City" class="countries-input ui-autocomplete-input" on-click="resizeInput(this)" value="Mumbai India" autocomplete="off">
+                                                                                <span id="ContentPlaceHolder_spnFromAirportRT1" class="abbr">BOM</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                    
+                                                                    <div class="countries-list-container">
+                                                                        <ul class="countries-list">
+                                                                            <li>&nbsp;</li>
+                                                                        </ul>
+                                                                    </div>
+                    
+                    
+                                                                </div>
+                                                            </div>
+                                                            <p id="ContentPlaceHolder_FromAirportNameRT1" class="airportname">Chhatrapati Shivaji International Airport</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swise-icon">
+                                                        <img src="images/airline/switch.svg" alt="" class="d-none d-lg-block">
+                                                        <img src="images/airline/switchmb.svg" alt="" class="d-block d-lg-none">
+                                                    </div>
+                                                </div>
+                                                <!--form-group end-->
+                                                <!--form-group start-->
+                                                <div class="col-lg-4 form-group">
+                                                    <div class="border-box">
+                                                        <div class="form-group-input">
+                                                            <img src="/images/airline/location2-icon.svg" alt="" class="d-md-block d-lg-none left-inuticon">
+                                                            <label>To</label>
+                                                            <div class="input-box">
+                                                                <div class="select-wrapper">
+                                                                    <div class="autocomplete-drop-down">
+                                                                        <div class="countries-input-container">
+                                                                            <div class="d-flex country-inputtext">
+                                                                                <input name="ctl00$ContentPlaceHolder$txtToAirportRT1" type="text" id="ContentPlaceHolder_txtToAirportRT1" class="countries-input ui-autocomplete-input" placeholder="City" value="Zurich Switzerl.." autocomplete="off">
+                                                                                <span id="ContentPlaceHolder_spnToAirportRT1" class="abbr">ZRH</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="countries-list-container">
+                                                                        <ul class="countries-list">
+                                                                            <li>&nbsp;</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <p id="ContentPlaceHolder_ToAirportNameRT1" class="airportname">Zürich-Kloten Airport</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--form-group end-->
+                                                <div class="col-lg-3 form-group from-date-group">
+                                                    <div class="border-box d-flex">
+                                                        <div class="form-group-input me-3 me-lg-0">
+                                                            <img src="images/airline/calender-icon.svg" alt="" class="d-md-block d-lg-none left-inuticon">
+                                                                <label for="deptStart">Departure</label>
+                                                                <div class="input-box">
+                                                                    <input type="text" id="deptStart" class="form-control" placeholder="+Add Date">
+                                                                </div>
+                                                            <p>LOS-EKYT</p>
+          
+                                                        </div>
+                                                        
+                                                    </div>
+                    
+                                                </div>
+                                            </div>
+                                            <!--row end-->
+                                            <!--row start-->
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="inputdiv d-flex">
+                                                      <div class="selectdiv">
+                                                        <select>
+                                                            <option selected>00 Adult</option>
+                                                            <option value="1">Adult 1</option>
+                                                            <option value="2">Adult 2</option>
+                                                            <option value="3">Adult 3</option>
+                                                        </select>
+                                                      </div>
+                                                      <div class="selectdiv">
+                                                        <select>
+                                                            <option selected>00 Youth</option>
+                                                            <option value="1">Youth 1</option>
+                                                            <option value="2">Youth 2</option>
+                                                            <option value="3">Youth 3</option>
+                                                        </select>
+                                                      </div>
+                                                        <div class="selectdiv">
+                                                            <select id="optionsSelect">
+                                                                <option selected>0 0 child</option>
+                                                                <option value="1">1 Child</option>
+                                                                <option value="2">2 Child</option>
+                                                                <option value="3">3 Child</option>
+                                                                <option value="4">4 Child</option>
+                                                                <option value="5">5 Child</option>
+                                                                <option value="6">6 Child</option>
+                                                                <option value="7">7 Child</option>
+                                                                <option value="8">8 Child</option>
+                                                                <option value="9">9 Child</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="selectdiv">
+                                                        <select>
+                                                            <option selected>00, Senior</option>
+                                                            <option value="1">Senior 1</option>
+                                                            <option value="2">Senior 2</option>
+                                                            <option value="3">Senior 3</option>
+                                                        </select>
+                                                        
+                                                        
+                                                       </div>
+                                                       
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 bottombtn">
+                                                    <div class="row justify-content-end flex-grow-1 align-items-center">
+                                                        <div class="selectdiv col-6">
+                                                            <select>
+                                                                <option selected>Nearest Branch</option>
+                                                                <option value="1">Ahmedabad</option>
+                                                                <option value="2">Pune</option>
+                                                                <option value="3">Kolkata</option>
+                                                            </select>
+                                                        </div>
+                                                        <!-- <a href="#" class="border-btn">Nearest Branch</a> -->
+                                                        <div class="col-6">
+                                                            <a href="#" class="redBtn">Search Train</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--row end-->
+                                            <div class="row customfloatingform">
+                                                <div id="inputContainer" class="col-12"></div>
+                                            </div>
+                                       </div>
+                                        <!--searchform end-->
+                                    </div>
+                                </div>
+                                <!--carousal item end-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--row end-->
+            </div>
+            <!--e-swisscontent start-->
+            <div class="container innersection_Container e-swisscontent" >
+                <!--ROW START-->
+                    <div class="row">
+                       <!--mostpopulareruail start-->
+                       <div class="section_Container mostpopulareruail" id="mostpopulareruail">
+                            <div class="row justify-content-between align-items-center">
+                                <div class="col-lg-4">
+                                    <div class="section-heading1">
+                                        <div class="title">
+                                            <h2>Trains in Other <br><span>Countries</span></h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <!--sw-Slider start-->
+                                    <div class="sw-Slider sw-sliderpadding">
+                                        <!--slide start-->
+                                        <div class="img-slide pack-slide">
+                                            <a href="">
+                                                <div class="packBox packagePage-pcBox">
+                                                    <div class="packImg">
+                                                        <img src="images/airline/p2phome/London.webp" class="img-fluid">
+                                                    </div>
+                                                    <div class="img-caption">
+                                                        <div class="packContent d-flex flex-column">
+                                                            <h3 class="packTitle">Zurich to Paris</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!--slide end-->
+                                    <!--slide start-->
+                                        <div class="img-slide pack-slide">
+                                            <a href="">
+                                                <div class="packBox packagePage-pcBox">
+                                                    <div class="packImg">
+                                                        <img src="images/airline/p2phome/Amsterdam.webp" class="img-fluid">
+                                                    </div>
+                                                    <div class="img-caption">
+                                                        <div class="packContent d-flex flex-column">
+                                                            <h3 class="packTitle">Paris to Nice</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!--slide end-->
+                                        <!--slide start-->
+                                        <div class="img-slide pack-slide">
+                                            <a href="">
+                                                <div class="packBox packagePage-pcBox">
+                                                    <div class="packImg">
+                                                        <img src="images/airline/p2phome/Brussels.webp" class="img-fluid"/>
+                                                    </div>
+                                                    <div class="img-caption">
+                                                        <div class="packContent d-flex flex-column">
+                                                            <h3 class="packTitle">Barcelona to Valencia</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!--slide end-->
+                                        <!--slide start-->
+                                        <div class="img-slide pack-slide">
+                                            <a href="">
+                                                <div class="packBox packagePage-pcBox">
+                                                    <div class="packImg">
+                                                    <img src="images/airline/p2phome/Milan.webp" class="img-fluid"/>
+                                                    </div>
+                                                    <div class="img-caption">
+                                                        <div class="packContent d-flex flex-column">
+                                                            <h3 class="packTitle">Innsbruck to Salzburg</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!--slide end-->
+                                    
+                                    </div>
+                                    <!--sw-Slider end-->
+                                </div>
+                            </div>
+                        </div>
+                        <!--mostpopulareruail end-->
+                        <!--allpointroute start-->
+                        <div class="section-padding py-80">
+                            <div class="section-heading1">
+                                <div class="title">
+                                    <h2>All Point to Point Route</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                    <div class="col-lg-12">
+                                        <!--allpointroute start-->
+                                        <div class="allpointroute">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        Zurich to Paris
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Paris to Nice
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Barcelona to Valencia
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Innsbruck to Salzburg 
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Zurich to Amsterdam
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Paris to Basel
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Amsterdam to Paris
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        London to Paris
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Milan to Rome
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        London to Amsterdam
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Munich to Stuttgart
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Frankest  to Zurich
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!--allpointroute end-->
+                                    </div>
+                            </div>
+                        </div>
+                        <!--allpointroute end-->
+                        <!--night-trains start-->
+                        <div class="section_Container night-trains" id="night-trains">
+                            <div class="section-heading1">
+                                <div class="title">
+                                    <h2>Night Trains to Other <span>Countries</span></h2>
+                                </div>
+                            </div>
+                            <!--sw-Slider start-->
+                                <div class="sw-Slider sw-sliderpadding">
+                                        <!--slide start-->
+                                        <div class="img-slide pack-slide">
+                                            <a href="#">
+                                                <div class="packBox packagePage-pcBox">
+                                                    <div class="packImg">
+                                                        <img src="images/airline/p2phome/Milan.webp" class="img-fluid">
+                                                    </div>
+                                                    <div class="img-caption">
+                                                        <div class="packContent d-flex flex-column">
+                                                            <h3 class="packTitle">Zurich to Milan</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!--slide end-->
+                                    <!--slide start-->
+                                        <div class="img-slide pack-slide">
+                                            <a href="#">
+                                                <div class="packBox packagePage-pcBox">
+                                                    <div class="packImg">
+                                                        <img src="images/airline/p2phome/Amsterdam.webp" class="img-fluid">
+                                                    </div>
+                                                    <div class="img-caption">
+                                                        <div class="packContent d-flex flex-column">
+                                                            <h3 class="packTitle">Zurich to Amsterdam</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!--slide end-->
+                                        <!--slide start-->
+                                        <div class="img-slide pack-slide">
+                                            <a href="#">
+                                                <div class="packBox packagePage-pcBox">
+                                                    <div class="packImg">
+                                                        <img src="images/airline/p2phome/Brussels.webp" class="img-fluid"/>
+                                                    </div>
+                                                    <div class="img-caption">
+                                                        <div class="packContent d-flex flex-column">
+                                                            <h3 class="packTitle">Zurich to Brussels</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!--slide end-->
+                                        <!--slide start-->
+                                        <div class="img-slide pack-slide">
+                                            <a href="#">
+                                                <div class="packBox packagePage-pcBox">
+                                                    <div class="packImg">
+                                                    <img src="images/airline/p2phome/London.webp" class="img-fluid"/>
+                                                    </div>
+                                                    <div class="img-caption">
+                                                        <div class="packContent d-flex flex-column">
+                                                            <h3 class="packTitle">Zurich to London</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!--slide end-->
+                                    <!--slide start-->
+                                    <div class="img-slide pack-slide">
+                                        <a href="#">
+                                            <div class="packBox packagePage-pcBox">
+                                                <div class="packImg">
+                                                <img src="images/airline/p2phome/Paris.webp" class="img-fluid"/>
+                                                </div>
+                                                <div class="img-caption">
+                                                    <div class="packContent d-flex flex-column">
+                                                        <h3 class="packTitle">Zurich to Paris</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!--slide end-->
+                                    <!--slide start-->
+                                    <div class="img-slide pack-slide">
+                                        <a href="#">
+                                            <div class="packBox packagePage-pcBox">
+                                                <div class="packImg">
+                                                <img src="images/airline/p2phome/Milan.webp" class="img-fluid"/>
+                                                </div>
+                                                <div class="img-caption">
+                                                    <div class="packContent d-flex flex-column">
+                                                        <h3 class="packTitle">Innsbruck to Salzburg</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!--slide end-->
+                                </div>
+                            <!--sw-Slider end-->
+                        </div>
+                        <!--night-trains end-->
+                        <!-- global-partnerpage content start-->
+                        <div class="section-padding global-partnerpage py-80">
+                            <div class="section-heading1">
+                                <div class="title">
+                                    <h2>Partners</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <ul class="globalpartnerlogo">
+                                    <li><a href="#"><img src="images/airline/global-partner/Rhaetische_Bahn_Logo.svg" alt="" class="img-fluid"></a></li>
+                                    <li><a href="#"><img src="images/airline/global-partner/switzerland.svg" alt="" class="img-fluid"></a></li>
+                                
+                                    <li><a href="#"><img src="images/airline/global-partner/goldenindia.svg" alt="" class="img-fluid"></a></li>
+                                    <li><a href="#"><img src="images/airline/global-partner/goldenpass-line-vector-logo.svg" alt="" class="img-fluid"></a></li>
+                                    <li><a href="#"><img src="images/airline/global-partner/Glacier_Express_Logo.svg" alt="" class="img-fluid"></a></li>
+                                    <li><a href="#"><img src="images/airline/global-partner/SBB_CFF_FFS_logo.svg" alt="" class="img-fluid"></a></li>
+                                    <li><a href="#"><img src="images/airline/global-partner/Eurail_logo.svg" alt="" class="img-fluid"></a></li>
+                                    <li><a href="#"><img src="images/airline/global-partner/og_image.svg" alt="" class="img-fluid"></a></li>
+                                    
+                                    <li><a href="#"><img src="images/airline/global-partner/goldenpass.svg" alt="" class="img-fluid"></a></li>
+                                    <li><a href="#"><img src="images/airline/global-partner/berninalogo.svg" alt="" class="img-fluid"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- global-partnerpage content end-->
+                        <!--how its works start-->
+                        <div class="sw-howworkSection howworkSection">
+                                <div class="title">
+                                    <h2 class="">Why Travel on Europe’s Rail Network?</h2>
+                                </div>
+                                <div class="text-center sw-hwTable hwTable">
+                                    <div>
+                                        <div class="hwItem">
+                                            <div class="img-box">
+                                                <img src="images/airline/p2phome/network.svg" title="Select Your Swiss Travel Pass">
+                                            </div>
+                                            <h3>High Speed Train Network</h3>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="hwItem">
+                                            <div class="img-box">
+                                                <img src="images/airline/p2phome/e-ticket.svg" title="Confirmation">
+                                            </div>
+                                            <h3>Flexible E-Ticket Options</h3>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="hwItem">
+                                            <div class="img-box">
+                                                <img src="images/airline/p2phome/comfort.svg" title="Make the Payment">
+                                            </div>
+                                            <h3>On Board Comfort</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <!--how its work end-->
+                        <!--sw-benefitsSection start-->
+                        <div class="section-padding py-80 px-0">
+                                <div class="sw-benefitsSection benefitsSection" style="background-image:url(images/airline/p2phome/Rochers-de-Naye-rack-railway.webp);">
+                                <div class="benefitsTable">
+                                        <h2><strong>Instant</strong> E-Tickets & <br><strong>Contactless</strong> Booking</h2>
+                                    </div>
+                                </div>
+                        </div>
+                        <!--sw-benefitsSection end-->
+                    </div>
+                <!--ROW END-->
+            </div>
+            <!--e-swisscontent end-->
+        </div>
+        <!--sw-main-content end-->
+    </div>
+</div>
+<!--content holder end-->
+    
+            <script src="js/slick.min.js"></script>
+            <script src="js/airlineCustom.js" type="text/javascript"></script>
+          
+            <script src="js/jquery.autocomplete.js" type="text/javascript"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Footer Starts -->
+<footer class="sw-footer">
+
+            <div class="container-fluid swissBrief d-none">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="foot_item"><img src="images/stp/swiss_logo.jpg"> A Swiss International Air Lines Company</div>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="foot_item"><img src="images/stp/yrs20.jpg"> Over 2 Decades of Travel Excellence</div>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="foot_item"><img src="images/stp/visit_logo.jpg">Sister Concern of VisitSwitzerland.com </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="foot_item"><img src="images/stp/services.jpg"> Bouquet of Services</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container footer">
+                <div class="footer-top">
+                    <div class="row">
+
+                        <div class="col-12 col-md-3 border-right">
+                            <div class="row">
+                                <div class="foot_head">SwissTours <i class="fa fa-plus pull-right dropdown_icon" aria-hidden="true"></i></div>
+                                <ul class="foot_dropdown">
+                                    <li><a href="about_us.html" class="fade_anim">About us</a> </li>
+                                    <li><a href="partners.html" class="fade_anim">Partners</a></li>
+                                    <li><a href="careers.html" class="fade_anim">Careers</a></li>
+                                    <li><a href="testimonials.html" class="fade_anim">Testimonials</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- <div class="col-sm-4 col-md-3">
+                            <div class="row">
+                                <div class="foot_head">Customer Support <i class="fa fa-plus pull-right dropdown_icon" aria-hidden="true"></i></div>
+                                <ul class="foot_dropdown">
+                                    <li><a href="contact_us.html" class="fade_anim">Contact Us</a></li>
+                                    <li><a href="faqs.html" class="fade_anim">FAQs</a></li>
+                                    <li><a href="#" class="fade_anim">Sitemap</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+
+                        <div class="col-12 col-md-3 border-right px-lg-5">
+                            <div class="row">
+                                <div class="foot_head">Legal <i class="fa fa-plus pull-right dropdown_icon" aria-hidden="true"></i></div>
+                                <ul class="foot_dropdown">
+                                    <li><a href="user_agreement.html" class="fade_anim">User Agreement</a></li>
+                                    <li><a href="privacy_policy.html" class="fade_anim">Privacy Policy</a></li>
+                                    <li><a href="#" class="fade_anim">Verified & Secured</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 border-right px-lg-3">
+                            <div class="row">
+                                <div class="adHolder sw-adHolder">
+                                    <div class="foot_head" style="text-align: center;">Accessory  Partner</div>
+                                    <div style="text-align: center;">
+                                        <a href="#" target="_blank">
+                                            <img src="images/airline/victorinox-logo.png" alt="victorinox logo" class="victoximg1">
+                                            <img src="images/airline/victorinox-logo-hover.png" alt="victorinox logo" class="victoxhoverimg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-3 ps-lg-5 mt-4 mt-md-0">
+                            <div class="row">
+                                <div class="adHolder">
+                                    <div class="foot_head">Official Time Partner</div>
+                                    <div class="adBlock">
+                                        <iframe src="/watch/index.html" scrolling="no" frameborder="0" width="100%" height="100%" allowtransparency="true"></iframe>
+                                        <!-- <a href=""><img src="images/tagheuer.jpg"></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                   
+                </div>
+                <div class="footer-mid">
+                    <a href="#"><img src="images/airline/footermid-logo.svg" alt="swiss-logo"><span>Swiss International Air Lines Company</span></a>
+                </div>
+                <div class="footer-bottom bottom">
+                    <div class="row">
+                       
+                        <div class="col-xs-6 social">
+                            <div class="row d-flex justify-content-center">
+                               
+                                <!-- <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> -->
+                                <a href="https://www.instagram.com/_swisstours/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="https://www.facebook.com/pages/Swisstours/256257954432198" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 copyright"><div class="row">&copy; 2023 Swisstours.com All rights reserved.</div></div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+</footer>
+<!-- Footer Ends -->
+
+<script>
+ //scrolltop
+$(".allpointroute a").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#topsearch_forms").offset().top - 150},
+    'slow');
+});
+$(".mostpopulareruail .img-slid").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#topsearch_forms").offset().top - 150},
+    'slow');
+});   
+$("#night-trains .img-slid").click(function() {
+    $('html,body').animate({
+    scrollTop: $("#topsearch_forms").offset().top - 150},
+   'slow');
+}); 
+       
+//country
+ const countriesByAbbreviation = [
+{
+country: "Afghanistan",
+abbreviation: "AF" },
+
+{
+country: "Albania",
+abbreviation: "AL" },
+
+{
+country: "Algeria",
+abbreviation: "DZ" },
+
+{
+country: "American Samoa",
+abbreviation: "AS" },
+
+{
+country: "Andorra",
+abbreviation: "AD" },
+
+{
+country: "Angola",
+abbreviation: "AO" },
+
+{
+country: "Anguilla",
+abbreviation: "AI" },
+
+{
+country: "Antarctica",
+abbreviation: "AQ" },
+
+{
+country: "Antigua and Barbuda",
+abbreviation: "AG" },
+
+{
+country: "Argentina",
+abbreviation: "AR" },
+
+{
+country: "Armenia",
+abbreviation: "AM" },
+
+{
+country: "Aruba",
+abbreviation: "AW" },
+
+{
+country: "Australia",
+abbreviation: "AU" },
+
+{
+country: "Austria",
+abbreviation: "AT" },
+
+{
+country: "Azerbaijan",
+abbreviation: "AZ" },
+
+{
+country: "Bahamas",
+abbreviation: "BS" },
+
+{
+country: "Bahrain",
+abbreviation: "BH" },
+
+{
+country: "Bangladesh",
+abbreviation: "BD" },
+
+{
+country: "Barbados",
+abbreviation: "BB" },
+
+{
+country: "Belarus",
+abbreviation: "BY" },
+
+{
+country: "Belgium",
+abbreviation: "BE" },
+
+{
+country: "Belize",
+abbreviation: "BZ" },
+
+{
+country: "Benin",
+abbreviation: "BJ" },
+
+{
+country: "Bermuda",
+abbreviation: "BM" },
+
+{
+country: "Bhutan",
+abbreviation: "BT" },
+
+{
+country: "Bolivia",
+abbreviation: "BO" },
+
+{
+country: "Bosnia and Herzegovina",
+abbreviation: "BA" },
+
+{
+country: "Botswana",
+abbreviation: "BW" },
+
+{
+country: "Bouvet Island",
+abbreviation: "BV" },
+
+{
+country: "Brazil",
+abbreviation: "BR" },
+
+{
+country: "British Indian Ocean Territory",
+abbreviation: "IO" },
+
+{
+country: "Brunei",
+abbreviation: "BN" },
+
+{
+country: "Bulgaria",
+abbreviation: "BG" },
+
+{
+country: "Burkina Faso",
+abbreviation: "BF" },
+
+{
+country: "Burundi",
+abbreviation: "BI" },
+
+{
+country: "Cambodia",
+abbreviation: "KH" },
+
+{
+country: "Cameroon",
+abbreviation: "CM" },
+
+{
+country: "Canada",
+abbreviation: "CA" },
+
+{
+country: "Cape Verde",
+abbreviation: "CV" },
+
+{
+country: "Cayman Islands",
+abbreviation: "KY" },
+
+{
+country: "Central African Republic",
+abbreviation: "CF" },
+
+{
+country: "Chad",
+abbreviation: "TD" },
+
+{
+country: "Chile",
+abbreviation: "CL" },
+
+{
+country: "China",
+abbreviation: "CN" },
+
+{
+country: "Christmas Island",
+abbreviation: "CX" },
+
+{
+country: "Cocos (Keeling) Islands",
+abbreviation: "CC" },
+
+{
+country: "Colombia",
+abbreviation: "CO" },
+
+{
+country: "Comoros",
+abbreviation: "KM" },
+
+{
+country: "Congo",
+abbreviation: "CG" },
+
+{
+country: "Cook Islands",
+abbreviation: "CK" },
+
+{
+country: "Costa Rica",
+abbreviation: "CR" },
+
+{
+country: "Croatia",
+abbreviation: "HR" },
+
+{
+country: "Cuba",
+abbreviation: "CU" },
+
+{
+country: "Cyprus",
+abbreviation: "CY" },
+
+{
+country: "Czech Republic",
+abbreviation: "CZ" },
+
+{
+country: "Denmark",
+abbreviation: "DK" },
+
+{
+country: "Djibouti",
+abbreviation: "DJ" },
+
+{
+country: "Dominica",
+abbreviation: "DM" },
+
+{
+country: "Dominican Republic",
+abbreviation: "DO" },
+
+{
+country: "East Timor",
+abbreviation: "TP" },
+
+{
+country: "Ecuador",
+abbreviation: "EC" },
+
+{
+country: "Egypt",
+abbreviation: "EG" },
+
+{
+country: "El Salvador",
+abbreviation: "SV" },
+
+{
+country: "England",
+abbreviation: null },
+
+{
+country: "Equatorial Guinea",
+abbreviation: "GQ" },
+
+{
+country: "Eritrea",
+abbreviation: "ER" },
+
+{
+country: "Estonia",
+abbreviation: "EE" },
+
+{
+country: "Ethiopia",
+abbreviation: "ET" },
+
+{
+country: "Falkland Islands",
+abbreviation: "FK" },
+
+{
+country: "Faroe Islands",
+abbreviation: "FO" },
+
+{
+country: "Fiji Islands",
+abbreviation: "FJ" },
+
+{
+country: "Finland",
+abbreviation: "FI" },
+
+{
+country: "France",
+abbreviation: "FR" },
+
+{
+country: "French Guiana",
+abbreviation: "GF" },
+
+{
+country: "French Polynesia",
+abbreviation: "PF" },
+
+{
+country: "French Southern territories",
+abbreviation: "TF" },
+
+{
+country: "Gabon",
+abbreviation: "GA" },
+
+{
+country: "Gambia",
+abbreviation: "GM" },
+
+{
+country: "Georgia",
+abbreviation: "GE" },
+
+{
+country: "Germany",
+abbreviation: "DE" },
+
+{
+country: "Ghana",
+abbreviation: "GH" },
+
+{
+country: "Gibraltar",
+abbreviation: "GI" },
+
+{
+country: "Greece",
+abbreviation: "GR" },
+
+{
+country: "Greenland",
+abbreviation: "GL" },
+
+{
+country: "Grenada",
+abbreviation: "GD" },
+
+{
+country: "Guadeloupe",
+abbreviation: "GP" },
+
+{
+country: "Guam",
+abbreviation: "GU" },
+
+{
+country: "Guatemala",
+abbreviation: "GT" },
+
+{
+country: "Guinea",
+abbreviation: "GN" },
+
+{
+country: "Guinea-Bissau",
+abbreviation: "GW" },
+
+{
+country: "Guyana",
+abbreviation: "GY" },
+
+{
+country: "Haiti",
+abbreviation: "HT" },
+
+{
+country: "Heard Island and McDonald Islands",
+abbreviation: "HM" },
+
+{
+country: "Holy See (Vatican City State)",
+abbreviation: "VA" },
+
+{
+country: "Honduras",
+abbreviation: "HN" },
+
+{
+country: "Hong Kong",
+abbreviation: "HK" },
+
+{
+country: "Hungary",
+abbreviation: "HU" },
+
+{
+country: "Iceland",
+abbreviation: "IS" },
+
+{
+country: "India",
+abbreviation: "IN" },
+
+{
+country: "Indonesia",
+abbreviation: "ID" },
+
+{
+country: "Iran",
+abbreviation: "IR" },
+
+{
+country: "Iraq",
+abbreviation: "IQ" },
+
+{
+country: "Ireland",
+abbreviation: "IE" },
+
+{
+country: "Israel",
+abbreviation: "IL" },
+
+{
+country: "Italy",
+abbreviation: "IT" },
+
+{
+country: "Ivory Coast",
+abbreviation: "CI" },
+
+{
+country: "Jamaica",
+abbreviation: "JM" },
+
+{
+country: "Japan",
+abbreviation: "JP" },
+
+{
+country: "Jordan",
+abbreviation: "JO" },
+
+{
+country: "Kazakstan",
+abbreviation: null },
+
+{
+country: "Kenya",
+abbreviation: "KE" },
+
+{
+country: "Kiribati",
+abbreviation: "KI" },
+
+{
+country: "Kuwait",
+abbreviation: "KW" },
+
+{
+country: "Kyrgyzstan",
+abbreviation: "KG" },
+
+{
+country: "Laos",
+abbreviation: "LA" },
+
+{
+country: "Latvia",
+abbreviation: "LV" },
+
+{
+country: "Lebanon",
+abbreviation: "LB" },
+
+{
+country: "Lesotho",
+abbreviation: "LS" },
+
+{
+country: "Liberia",
+abbreviation: "LR" },
+
+{
+country: "Libyan Arab Jamahiriya",
+abbreviation: "LY" },
+
+{
+country: "Liechtenstein",
+abbreviation: "LI" },
+
+{
+country: "Lithuania",
+abbreviation: "LT" },
+
+{
+country: "Luxembourg",
+abbreviation: "LU" },
+
+{
+country: "Macao",
+abbreviation: "MO" },
+
+{
+country: "Macedonia",
+abbreviation: "MK" },
+
+{
+country: "Madagascar",
+abbreviation: "MG" },
+
+{
+country: "Malawi",
+abbreviation: "MW" },
+
+{
+country: "Malaysia",
+abbreviation: "MY" },
+
+{
+country: "Maldives",
+abbreviation: "MV" },
+
+{
+country: "Mali",
+abbreviation: "ML" },
+
+{
+country: "Malta",
+abbreviation: "MT" },
+
+{
+country: "Marshall Islands",
+abbreviation: "MH" },
+
+{
+country: "Martinique",
+abbreviation: "MQ" },
+
+{
+country: "Mauritania",
+abbreviation: "MR" },
+
+{
+country: "Mauritius",
+abbreviation: "MU" },
+
+{
+country: "Mayotte",
+abbreviation: "YT" },
+
+{
+country: "Mexico",
+abbreviation: "MX" },
+
+{
+country: "Micronesia, Federated States of",
+abbreviation: null },
+
+{
+country: "Moldova",
+abbreviation: "MD" },
+
+{
+country: "Monaco",
+abbreviation: "MC" },
+
+{
+country: "Mongolia",
+abbreviation: "MN" },
+
+{
+country: "Montserrat",
+abbreviation: "MS" },
+
+{
+country: "Morocco",
+abbreviation: "MA" },
+
+{
+country: "Mozambique",
+abbreviation: "MZ" },
+
+{
+country: "Myanmar",
+abbreviation: "MM" },
+
+{
+country: "Namibia",
+abbreviation: "NA" },
+
+{
+country: "Nauru",
+abbreviation: "NR" },
+
+{
+country: "Nepal",
+abbreviation: "NP" },
+
+{
+country: "Netherlands",
+abbreviation: "NL" },
+
+{
+country: "Netherlands Antilles",
+abbreviation: "AN" },
+
+{
+country: "New Caledonia",
+abbreviation: "NC" },
+
+{
+country: "New Zealand",
+abbreviation: "NZ" },
+
+{
+country: "Nicaragua",
+abbreviation: "NI" },
+
+{
+country: "Niger",
+abbreviation: "NE" },
+
+{
+country: "Nigeria",
+abbreviation: "NG" },
+
+{
+country: "Niue",
+abbreviation: "NU" },
+
+{
+country: "Norfolk Island",
+abbreviation: "NF" },
+
+{
+country: "North Korea",
+abbreviation: "KP" },
+
+{
+country: "Northern Ireland",
+abbreviation: null },
+
+{
+country: "Northern Mariana Islands",
+abbreviation: "MP" },
+
+{
+country: "Norway",
+abbreviation: "NO" },
+
+{
+country: "Oman",
+abbreviation: "OM" },
+
+{
+country: "Pakistan",
+abbreviation: "PK" },
+
+{
+country: "Palau",
+abbreviation: "PW" },
+
+{
+country: "Palestine",
+abbreviation: "PS" },
+
+{
+country: "Panama",
+abbreviation: "PA" },
+
+{
+country: "Papua New Guinea",
+abbreviation: "PG" },
+
+{
+country: "Paraguay",
+abbreviation: "PY" },
+
+{
+country: "Peru",
+abbreviation: "PE" },
+
+{
+country: "Philippines",
+abbreviation: "PH" },
+
+{
+country: "Pitcairn",
+abbreviation: "PN" },
+
+{
+country: "Poland",
+abbreviation: "PL" },
+
+{
+country: "Portugal",
+abbreviation: "PT" },
+
+{
+country: "Puerto Rico",
+abbreviation: "PR" },
+
+{
+country: "Qatar",
+abbreviation: "QA" },
+
+{
+country: "Reunion",
+abbreviation: "RE" },
+
+{
+country: "Romania",
+abbreviation: "RO" },
+
+{
+country: "Russian Federation",
+abbreviation: "RU" },
+
+{
+country: "Rwanda",
+abbreviation: "RW" },
+
+{
+country: "Saint Helena",
+abbreviation: "SH" },
+
+{
+country: "Saint Kitts and Nevis",
+abbreviation: "KN" },
+
+{
+country: "Saint Lucia",
+abbreviation: "LC" },
+
+{
+country: "Saint Pierre and Miquelon",
+abbreviation: "PM" },
+
+{
+country: "Saint Vincent and the Grenadines",
+abbreviation: "VC" },
+
+{
+country: "Samoa",
+abbreviation: "WS" },
+
+{
+country: "San Marino",
+abbreviation: "SM" },
+
+{
+country: "Sao Tome and Principe",
+abbreviation: "ST" },
+
+{
+country: "Saudi Arabia",
+abbreviation: "SA" },
+
+{
+country: "Scotland",
+abbreviation: null },
+
+{
+country: "Senegal",
+abbreviation: "SN" },
+
+{
+country: "Seychelles",
+abbreviation: "SC" },
+
+{
+country: "Sierra Leone",
+abbreviation: "SL" },
+
+{
+country: "Singapore",
+abbreviation: "SG" },
+
+{
+country: "Slovakia",
+abbreviation: "SK" },
+
+{
+country: "Slovenia",
+abbreviation: "SI" },
+
+{
+country: "Solomon Islands",
+abbreviation: "SB" },
+
+{
+country: "Somalia",
+abbreviation: "SO" },
+
+{
+country: "South Africa",
+abbreviation: "ZA" },
+
+{
+country: "South Georgia and the South Sandwich Islands",
+abbreviation: "GS" },
+
+{
+country: "South Korea",
+abbreviation: "KR" },
+
+{
+country: "South Sudan",
+abbreviation: null },
+
+{
+country: "Spain",
+abbreviation: "ES" },
+
+{
+country: "SriLanka",
+abbreviation: null },
+
+{
+country: "Sudan",
+abbreviation: "SD" },
+
+{
+country: "Suriname",
+abbreviation: "SR" },
+
+{
+country: "Svalbard and Jan Mayen",
+abbreviation: "SJ" },
+
+{
+country: "Swaziland",
+abbreviation: "SZ" },
+
+{
+country: "Sweden",
+abbreviation: "SE" },
+
+{
+country: "Switzerland",
+abbreviation: "CH" },
+
+{
+country: "Syria",
+abbreviation: "SY" },
+
+{
+country: "Tajikistan",
+abbreviation: "TJ" },
+
+{
+country: "Tanzania",
+abbreviation: "TZ" },
+
+{
+country: "Thailand",
+abbreviation: "TH" },
+
+{
+country: "The Democratic Republic of Congo",
+abbreviation: null },
+
+{
+country: "Togo",
+abbreviation: "TG" },
+
+{
+country: "Tokelau",
+abbreviation: "TK" },
+
+{
+country: "Tonga",
+abbreviation: "TO" },
+
+{
+country: "Trinidad and Tobago",
+abbreviation: "TT" },
+
+{
+country: "Tunisia",
+abbreviation: "TN" },
+
+{
+country: "Turkey",
+abbreviation: "TR" },
+
+{
+country: "Turkmenistan",
+abbreviation: "TM" },
+
+{
+country: "Turks and Caicos Islands",
+abbreviation: "TC" },
+
+{
+country: "Tuvalu",
+abbreviation: "TV" },
+
+{
+country: "Uganda",
+abbreviation: "UG" },
+
+{
+country: "Ukraine",
+abbreviation: "UA" },
+
+{
+country: "United Arab Emirates",
+abbreviation: "AE" },
+
+{
+country: "United Kingdom",
+abbreviation: "GB" },
+
+{
+country: "United States",
+abbreviation: "US" },
+
+{
+country: "United States Minor Outlying Islands",
+abbreviation: "UM" },
+
+{
+country: "Uruguay",
+abbreviation: "UY" },
+
+{
+country: "Uzbekistan",
+abbreviation: "UZ" },
+
+{
+country: "Vanuatu",
+abbreviation: "VU" },
+
+{
+country: "Venezuela",
+abbreviation: "VE" },
+
+{
+country: "Vietnam",
+abbreviation: "VN" },
+
+{
+country: "Virgin Islands, British",
+abbreviation: null },
+
+{
+country: "Virgin Islands, U.S.",
+abbreviation: null },
+
+{
+country: "Wales",
+abbreviation: null },
+
+{
+country: "Wallis and Futuna",
+abbreviation: "WF" },
+
+{
+country: "Western Sahara",
+abbreviation: "EH" },
+
+{
+country: "Yemen",
+abbreviation: "YE" },
+
+{
+country: "Yugoslavia",
+abbreviation: "YU" },
+
+{
+country: "Zambia",
+abbreviation: "ZM" },
+
+{
+country: "Zimbabwe",
+abbreviation: "ZW" }];
+
+
+
+const filterCountriesOnChange = event => {
+const value = event.target.value.toLowerCase();
+
+const result = countriesByAbbreviation.filter(countryObject => {
+const abbreviation = countryObject.abbreviation || '';
+const country = countryObject.country || '';
+const countryString = `${country}  ${abbreviation} `;
+
+return countryString.toLowerCase().includes(value);
+});
+
+generateCountriesList(result);
+};
+
+const addEventListenerToCountries = () => {
+const countriesInput = document.querySelector('.countries-input');
+const countryListItems = document.querySelectorAll('.country');
+const countryAbbr = document.querySelector('.abbr');
+let countryListItemIndex = 0;
+const countryListItemILength = countryListItems.length;
+
+for (countryListItemIndex; countryListItemIndex < countryListItemILength; countryListItemIndex++) {
+const countryListItem = countryListItems[countryListItemIndex];
+
+countryListItem.addEventListener('mousedown', event => {
+ event.preventDefault();
+ event.stopPropagation();
+ 
+ const countryName = event.currentTarget.getAttribute('data-country');
+ const abbreviation = event.currentTarget.getAttribute('data-abbr');
+
+ const truncatedCountry = truncateString(countryName, 10); // Adjust the length as needed
+
+ countriesInput.value = truncatedCountry;
+ countryAbbr.innerHTML = abbreviation;
+ filterCountriesOnChange({ target: { value: truncatedCountry } });
+
+ countriesInput.focus();
+});
+}
+};
+
+// Function to truncate a string and add ellipsis
+const truncateString = (str, maxLength) => {
+return str.length > maxLength ? str.slice(0, maxLength) + '...' : str;
+};
+
+const createCountryListItem = ({ country = '', abbreviation = '' }) =>
+`<li class="country" data-value="${abbreviation} ${country}" data-abbr="${abbreviation}" data-country="${country}"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">${country}</span><span class="country--abbreviation">${abbreviation}</span> </li>`;
+
+
+const generateCountriesList = countriesArray => {
+const countriesList = document.querySelector('.countries-list');
+countriesList.innerHTML = '';
+
+const countriesLength = countriesArray.length;
+
+for (let countryIndex = 0; countryIndex < countriesLength; countryIndex++) {
+countriesList.innerHTML += createCountryListItem(countriesArray[countryIndex]);
+}
+
+addEventListenerToCountries();
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+const countriesInput = document.querySelector('.countries-input');
+//const countriesInputAbbr = document.querySelector('.abbr');
+
+generateCountriesList(countriesByAbbreviation);
+
+countriesInput.addEventListener('keyup', filterCountriesOnChange);
+
+countriesInput.addEventListener('focus', () => {
+const countriesList = document.querySelector('.countries-list-container');
+//countriesInputAbbr.innerHTML = "";
+countriesList.classList.add('visible');
+
+});
+
+countriesInput.addEventListener('blur', event => {
+const countriesList = document.querySelector('.countries-list-container');
+countriesList.classList.remove('visible');
+});
+});
+
+//
+$('#optionsSelect').on('change', function () {
+        var selectedValue = $(this).val();
+        var inputBoxes = '';
+
+        for (var i = 1; i <= selectedValue; i++) {
+            inputBoxes += `<div class="inputdiv selectdiv">
+                <div class="form-floating">
+                    <div class="input-group">
+                        <select class="form-select" onchange="updateChildFields(this, 1)">
+                            <option selected="">Child</option>
+                            <option value="1">1 Child</option>
+                            <option value="2">2 Child</option>
+                            <option value="3">3 Child</option>
+                            <option value="4">4 Child</option>
+                            <option value="5">5 Child</option>
+                            <option value="6">6 Child</option>
+                            <option value="7">7 Child</option>
+                            <option value="8">8 Child</option>
+                            <option value="9">9 Child</option>
+                            <!-- Add more child options if needed -->
+                        </select>
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar userinput"></span>
+                        </span>
+                    </div>
+                    <label class="has-float-label">Child ${i}</label>
+                </div>
+            </div>`;
+        }
+
+        $('#inputContainer').fadeOut(400, function () {
+            $(this).html(inputBoxes).fadeIn(400);
+            // Add a fadeIn effect for the new div inside inputContainer
+            $(this).find('.inputdiv').fadeIn(400);
+            $(this).css({"border-top": "1px solid rgba(217, 217, 217, 1)", "margin": "1rem auto","padding":"1.5rem 0 0 0","width":"100%"});
+          
+        });
+    });
+    $('.sw-hwTable.hwTable').slick({
+  slidesToShow: 3, slidesToScroll: 3, infinite: false, speed: 1000, cssEase: 'ease-in-out', dots: false, arrows: false,
+  responsive: [{ breakpoint: 1280, settings: { slidesToShow: 3, slidesToScroll: 3, dots: true } }, { breakpoint: 1080, settings: { slidesToShow: 3, slidesToScroll: 2, dots: true } }, { breakpoint: 767, settings: { slidesToShow: 1, slidesToScroll: 1, dots: true } },
+  { breakpoint: 767, settings: { slidesToShow: 1, slidesToScroll: 1, dots: true } }
+  ]
+});
+    $(".night-trains .sw-sliderpadding").slick({
+            slidesToShow: 4.5, slidesToScroll: 1, dots: !1, arrows: !0, speed: 500, infinite: false, autoplay: false, centerPadding: '0px', centerMode: false,
+            responsive: [{ breakpoint: 850, settings: { slidesToShow: 2.9, slidesToScroll: 1 } },
+            { breakpoint: 600, settings: { slidesToShow: 1.6, slidesToScroll: 1, dots: !0, arrows: !1 } }]
+        });  
+$(".sw-sliderpadding").slick({
+            slidesToShow: 3.5, slidesToScroll: 1, dots: !1, arrows: !0, speed: 500, infinite: false, autoplay: false, centerPadding: '0px', centerMode: false,
+            responsive: [{ breakpoint: 850, settings: { slidesToShow: 2.9, slidesToScroll: 1 } },
+            { breakpoint: 600, settings: { slidesToShow: 1.6, slidesToScroll: 1, dots: !0, arrows: !1 } }]
+});
+
+</script>
+
+</body>
+
+</html>

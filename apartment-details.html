@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="theme-color" content="#000" />
+    <title>Welcome To SWISStours</title>
+    <link href="images/favicon.ico.jpg" rel="shortcut icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/menu.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-select.min.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap-datetimepicker.js"></script>
+</head>
+
+<body>
+<!-- Header Starts -->
+<header class="cd-main-header sw-mainheader">
+    <!-- Start Mega Menu HTML -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg sw-navbar">
+        <div class="w-100 flex-column align-items-start">
+            <div class="d-flex justify-content-between w-100">
+              <a class="navbar-brand" href="#"><img src="images/logo.svg" alt=""></a>
+              
+              <div class="top-right-menu d-flex flex-grow-1">
+                <div class="cart_box">
+                    <a href="#" class="cart_btn" title="View Cart"><span class="ml-4">My Cart</span><span class="cart_items_count">0</span></a>
+                </div>
+                <div class="login_head">
+                    <a href=""> <span class="txt">Login</span></a>
+                </div>
+                <div class="sign-upbtn">
+                    <a href="" class="btn"> <img src="images/airline/signup-icon.svg" alt=""><span class="txt">sign up</span></a>
+                </div>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+                  <div class="hamburger-toggle">
+                    <div class="hamburger">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          
+          <div class="collapse navbar-collapse menu_navbar w-100" id="navbar-content">
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0 flex-grow-1 mt-4" >
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">
+                    <span class="nav-icon"><img src="images/airline/Plane2.svg" alt=""></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/Plane2.svg" alt=""></span>
+                    Flights</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/hotelmenu-icon.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/hotel.svg" alt=""></span>
+                    Hotels
+                </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/aparment.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/apartment.svg" alt=""></span>
+                    Apartments</a>
+              </li>
+            
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" aria-current="page" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/package.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/package.svg" alt=""></span>
+                    Packages</a>
+                  <ul class="dropdown-menu shadow">
+                    <li class="rmm-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                   <li>
+                      <a class="dropdown-item pe-4" href="#">Air-Inclusive Packages<img src="images/airline/sw-logo2.svg" class="img-fluid menu-innericon"></a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Land Packages</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/e-swiss.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/e-swiss.svg" alt=""></span>
+                    E-Swiss Travel Pass
+                </a>
+              </li>
+              <li class="nav-item dropdown dropdown-mega position-static">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/european.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/eurailpass.svg" alt=""></span>
+                    European Rail
+                </a>
+                 <div class="dropdown-menu shadow pass">
+                    <div class="mega-content px-lg-4">
+                        <div class="container-fluid">
+                            <ul class="row">
+                                <li class="col-12 col-lg-8 py-lg-4 border-right submenu2 colcount">
+                                    <div class="rmm-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></div>
+                                    <span class="submenutitle"><a href="#">Eurail Pass<img src="images/airline/eurailicon.svg" class="img-fluid menucion2 ms-2"></a></span>
+                                    <ul class="list-group submenu2-content">
+                                        <li class="s2back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                         <li>
+                                            <!-- <a class="list-group-item d-flex justify-content-between colcount" href="#">
+                                               
+                                            <div class="d-flex justify-content-end align-items-end">
+                                                <span> Global Pass</span>
+                                               <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                            </div>
+                                            </a>-->
+                                            <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                                Global Pass
+                                                <div class="d-flex justify-content-end align-items-end populricon">
+                                                    <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                </div>
+                                            </a>
+                                        </li> 
+                                         <li class="one-country-pass">
+                                            <a class="list-group-item populricon" href="#">One Country Pass</a>
+                                            <ul class="list-group eurail-pass list-group2">
+                                                <li class="s2back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                                <li class="listoverflow-mb">
+                                                    <ul>
+                                                        <li><a href="#" class="list-group-item">Eurail Austria Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Belgium Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Benelux Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Bulgaria Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Croatia Pass</a></li>
+                                                        <li><a href="#" class="list-group-item"> Eurail Czech Republic Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Denmark Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Lithuania Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Luxembourg Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Netherlands Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Norway Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Poland Pass</a></li>
+                                                    </ul>
+                                                    <ul class="sub-listgrop2">
+                                                        <li><a href="#" class="list-group-item">Eurail Portugal Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Romania Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Finland Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail France Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Germany Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Greece Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Hungary Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Italy Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Scandinavia Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Serbia Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Slovakia Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Slovenia Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Spain Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Sweden Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Turkey Pass</a></li>
+                                                        <li><a href="#" class="list-group-item"></a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            
+                                        </li>
+
+                                       
+                                    </ul>
+                                </li>
+                                
+                                <li class="col-12 col-lg-4 py-lg-4 ps-md-5 submenu3">
+                                   <span class="submenutitle"><a href="#">Panoramic Trains in Switzerland</a></span>
+                                        <ul class="list-group list-group3 submenu3-content">
+                                            <li class="s3-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                              <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/Berninalogo.png" alt="Berninalogo" class="img-fluid"></span>Bernina Express</a></li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/glacierlogo.png" alt="glacierlogo" class="img-fluid"></span>Glacier Express</a></li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/glacierlogo.png" alt="glacierlogo" class="img-fluid"></span>Lucerne-Interlaken</a></li>
+                                        </ul>
+                                    
+                                    <div class="bordertop"></div>
+                                           <div class="submenu4">
+                                            <span class="submenutitle"><a href="#">Europe Point to Point tickets</a></span>
+                                            <ul class="list-group list-group3 submenu4-content">
+                                                <li class="s3-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/londonlogo.png" alt="imglogo" class="img-fluid"></span>London to Paris</a></li>
+                                                <li>
+                                                    <a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-baselLogo.png" alt="imglogo" class="img-fluid"></span>Paris to Basel 
+                                                        <div class="d-flex justify-content-end align-items-end populricon">
+                                                            <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-zurichlogo.png" alt="imglogo" class="img-fluid"></span>Paris to Zurich</a></li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-amsLogo.png" alt="imglogo" class="img-fluid"></span>Paris to Amsterdam</a></li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-baselLogo.png" alt="imglogo" class="img-fluid"></span>London to Amsterdam</a></li>
+                                            </ul>
+                                        </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> 
+            </li>
+              <li class="nav-item dropdown dropdown-mega position-static">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/sightseeing.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/sightseeing.svg" alt="" class="filter-red"></span>
+                    Attractions
+                </a>
+                  <div class="dropdown-menu shadow pass">
+                    <div class="mega-content px-lg-4">
+                        <div class="container-fluid">
+                            <ul class="row">
+                                <li class="col-12 col-lg-4 py-lg-4 border-right submenu2">
+                                    <div class="rmm-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></div>
+                                    <span class="submenutitle"><a href="#">Mountains in Switzerland</a></span>
+                                    <ul class="list-group submenu2-content">
+                                        <li class="s2back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                        <li>
+                                            <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                                Jungfrau
+                                                <div class="d-flex justify-content-end align-items-end populricon">
+                                                    <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="list-group-item" href="#">Jungfrau VIP Gondola</a>
+                                        </li>
+                                       
+                                        <li><a class="list-group-item" href="#">Harder Kulm</a></li>
+                                        <li><a class="list-group-item" href="#">Grindelwald First</a></li>
+                                        <li><a class="list-group-item" href="#">Schilthorn</a></li>
+                                        <li><a class="list-group-item" href="#">Mt Titlis</a></li>
+                                        <li><a class="list-group-item" href="#">Mt Pilatus</a></li>
+                                        <li><a class="list-group-item" href="#">Matterhorn</a></li>
+                                        <li>
+                                            <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                                Sunnega Paradise
+                                                <div class="d-flex justify-content-end align-items-end populricon">
+                                                    <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li><a class="list-group-item" href="#">Glacier 3000</a></li>
+                                        <li><a class="list-group-item" href="#">Diavolezza</a></li>
+                                        <li><a class="list-group-item" href="#">Aletsch Arena</a></li>
+                                        <li><a class="viewAllBtn" href="#">View All</a></li>
+                                      
+                                    </ul>
+                                </li>
+                                <li class="col-12 col-lg-4 py-lg-4 border-right submenu3 d-flex flex-column">
+                                    <span class="submenutitle"><a href="#">Attractions in Switzerland</a></span>
+                                     <ul class="list-group list-group3 submenu3-content px-lg-3">
+                                            <li class="s3-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                            <li><a class="list-group-item" href="#">Swiss Transport Musuem</a></li>
+                                            <li>
+                                                <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                                Saphir
+                                                <div class="d-flex justify-content-end align-items-end populricon">
+                                                    <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                </div>
+                                                </a> 
+                                            </li>
+                                            <li><a class="list-group-item" href="#">Lindt</a></li>
+                                            <li><a class="list-group-item" href="#">Swissminiatur</a></li>
+                                            <li><a class="list-group-item" href="#">Meal Voucher</a></li>
+                                            <li><a class="list-group-item" href="#">Charlie Chaplin</a></li>
+                                            <li><a class="viewAllBtn list-group-item" href="#">View All</a></li>
+                                            <!-- <li class="attarction-viewbtn">
+                                                <div class="viewmidbtn d-flex align-items-center justify-content-center m-auto">
+                                                    <a href="#" class="redBtn">View all</a>
+                                                </div>
+                                            </li> -->
+                                        </ul>
+                                </li>
+                                <li class="col-12 col-lg-4 py-lg-4 ps-md-5">
+                                    <div class="submenu4">
+                                    <span class="submenutitle"><a href="#">Guided tours in Switzerland</a></span>
+                                    </div>
+                                    <ul class="list-group list-group3 submenu4-content px-lg-3">
+                                        <li class="s3-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                        <li><a class="list-group-item" href="#">Zurich tour with chocolate</a></li>
+                                        <li>
+                                            <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                                Rhine falls and Zurich city tour
+                                                <div class="d-flex justify-content-end align-items-end populricon">
+                                                    <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                </div>
+                                            </a> 
+                                        </li>
+                                        <li><a class="list-group-item" href="#">Rhine falls and Stein am Rhein</a></li>
+                                        <li><a class="list-group-item" href="#">Zurich city tour with lake cruise</a></li>
+                                        <li><a class="list-group-item" href="#">Lucerne and Titlis snow experience</a></li>
+                                    </ul>
+                                    <div class="bordertop"></div>
+                                    <div>
+                                        <div class="submenu5">
+                                            <span class="submenutitle"><a href="#">Worldwide Attractions</a></span>
+                                        </div>
+                                        
+                                        <ul class="list-group list-group3 submenu5-content px-lg-3">
+                                            <li class="s2back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                            <li><a class="list-group-item" href="#">London</a></li>
+                                            <li><a class="list-group-item" href="#">Munich</a></li>
+                                            <li><a class="list-group-item" href="#">Paris</a></li>
+                                            <li><a class="list-group-item" href="#">Vienna</a></li>
+                                            <li><a class="viewAllBtn list-group-item" href="#">View All</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                  </div>
+                  
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/mountain.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mountain.svg" alt="" class="filter-red"></span>
+                    About
+                 </a>
+                  <ul class="dropdown-menu shadow">
+                    <li class="rmm-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                    <li>
+                      <a class="dropdown-item pe-4" href="#">About Us</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Our Leadership</a></li>
+                    <li><a class="dropdown-item" href="#">Brochure</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown dropdown-mega position-static contactMegamenu">
+                  <a class="nav-link dropdown-toggle" href="#"  href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/sightseeing.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/sightseeing.svg" alt="" class="filter-red"></span>
+                    Contact
+                </a>
+                  <div class="dropdown-menu shadow">
+                    <div class="mega-content ">
+                        <div class="container-fluid">
+                            <div class="rmm-back ps-0"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></div>
+                            <div class="row listoverflow-mb">
+                                <div class="col-12 col-md-7 col-lg-8 py-lg-8">
+                                    <ul class="menuleftContact">
+                                        
+                                        <li> <span class="submenutitle"><a href="https://wa.me/919987997997?text=Hello.">WhatsApp<span class="ms-3"><img src="images/airline/whatapp.svg" alt=""></span></a></span></li>
+                                        <li class="d-flex align-items-center"> <span class="submenutitle">Toll Free</span><a href="tel:18002020052" class="text-primary">1800 20 20 052</a></li>
+                                        <li>
+                                            <span class="submenutitle">Branch Office</span>
+                                            <ul>
+                                                <li><span>Mumbai (Head Office)</span><a href="tel:+912261282400">(022) 61282400, 67439990</a></li>  
+                                                <li><span>Delhi</span><a href="tel:+917208820785">+91 7208820787 / +91 7208820785 / +91 9643662737</a></li>  
+                                                <li><span>Chennai</span><a href="tel:+914442179510">(044) 42179510 / 20</a></li>  
+                                                <li><span>Bangalore</span><a href="tel:+918041132172">(080) 41132172, 41609072</a></li>  
+                                                <li><span>Pune</span><a href="tel:+919136117252">+919136117252, +91 8855883831</a></li>
+                                                <li><span>Kolkata</span><a href="tel:+919007160166">+91 9007160166</a></li>  
+                                                <li><span>Ahmedabad</span><a href="tel:+917940028694">(079) 40028694 / 95</a></li>  
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-md-5 col-lg-4 p-0">
+                                    <div class="bgimg">
+                                        <div class="d-flex justify-content-between align-items-center bottomBtn">
+                                            <a href="#" class="whitebgbtn">View Brochure</a>    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+              </li>
+              <li class="nav-item d-block d-md-none">
+                 <a class="nav-link" href="#"><span class="nav-icon mb-icon">
+                    <img src="images/airline/menu-icon/mobile/cart.svg" alt="" class="filter-red"></span>
+                    My Cart<span class="cart_items_count">0</span></a>
+              </li>
+              <li class="nav-item ">
+                  <a class="nav-link" href="#">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/offers.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/offers.svg" alt="" class="filter-red"></span>
+                    Blog
+                </a>
+              </li>
+              <li class="nav-item  d-block d-md-none mt-5 mx-4 text-center login-mobilebtn">
+                <a href="#" class="redBtn w-100 m-auto d-flex justify-content-center">Login</a>
+              </li>
+          </ul>
+          
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- END Mega Menu HTML -->
+</header>
+<!-- Header Ends -->
+    <link href="css/swiss-style.css" rel="stylesheet" type="text/css"> <!--airline css-->
+    <link rel="stylesheet" href="css/meghamenu.css">
+<!--airline css-->
+<!--content holder start-->
+    <div class="cd-main-content">
+        <div class="container-fluid main_content_container pt-0">
+            <!--sw-main-content start-->
+            <div class="sw-main-content sw-main-content2 homepage apartmentsearch">
+                <div class="mid_Container container">
+                    <div class="innersection_Container ">
+                        <div class="row main-contentrow">
+                            <!--topsearchsection start-->
+                            <div class="topsearchsection">
+                               
+                                <div class="customfloatingform">
+                                     <!--row start-->
+                                    <div class="modifytitle d-flex flex-row d-lg-none">
+                                            <div class="title">
+                                                <h2>Modify</h2>
+                                           </div>
+                                           <button type="button" class="btn-close"></button>
+                                    </div>
+                                    <div class="d-flex">
+                                            <div class="inputdiv selectdiv w-75">
+                                                <div class="form-floating">
+                                                    <div class="input-group">
+                                                        <select class="form-select">
+                                                            <option selected>Lucerne</option>
+                                                            <option>Lucerne</option>
+                                                            <option>Lucerne</option>
+                                                            <option>Lucerne</option>
+                                                        </select>
+                                                        <span class="input-group-addon">
+                                                            <span class="nightinput locationicon"></span>
+                                                        </span>
+                                                    </div>
+                                                <label class="has-float-label">Destination</label>
+                                                </div>
+                                            </div>
+                                            <div class="inputdiv">
+                                                <div class="form-floating">
+                                                    <div class="input-group date" id="departuretime">
+                                                    <input type="text" class="form-control" placeholder="Choose here">
+                                                        <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-calendar inputcalendar"></span>
+                                                        </span>
+                                                    </div>
+                                                <label class="has-float-label">Check In</label>
+                                                </div>
+                                            </div>
+                                            <div class="inputdiv">
+                                                <div class="form-floating">
+                                                    <div class="input-group date" id="arrivaltime">
+                                                        <input type="text" class="form-control" placeholder="Choose here">
+                                                        <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-calendar inputcalendar"></span>
+                                                        </span>
+                                                    </div>
+                                                <label class="has-float-label">Check Out</label>
+                                                </div>
+                                            </div>
+                                            <div class="inputdiv selectdiv">
+                                                <div class="form-floating">
+                                                    <div class="input-group date" id="arrivaltime">
+                                                        <select class="form-select">
+                                                            <option selected>Nights</option>
+                                                            <option>1 Night</option>
+                                                            <option>2 Nights</option>
+                                                            <option>3 Nights</option>
+                                                        </select>
+                                                        <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-calendar nightinput"></span>
+                                                        </span>
+                                                    </div>
+                                                <label class="has-float-label">Nights</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-floating">
+                                                <a href="#" class="redBtn"><i class="fa fa-search d-none d-lg-block"></i><span class="d-block d-lg-none">Modify</span></a>
+                                            </div>
+                                       
+                                    </div>
+                                    <!--row end-->
+                                </div>
+                            </div>
+                            <!--topsearchsection start-->
+                            <!--searchapartmentgallery section start-->
+                            <div class="searchapartmentgallery mt-4">
+                                <p class="d-md-block d-lg-none w-100 text-end">
+                                    <a href="#" id="topsearchModal">
+                                        <img src="images/airline/apartment/modifyicon.svg" alt="" class="me-3"/>Modify
+                                    </a>
+                                </p>
+                                <!--topdetails start-->
+                                <div class="topdetails d-flex justify-content-between">
+                                    <div class="d-flex flex-column">
+                                        <div class="apartinfo d-flex align-items-center">
+                                            <h1 class="title me-3">ALLMEND APARTMENTS</h1>
+                                            <p class="d-flex align-items-center mb-0">
+                                                <span class="packStars star_3"></span>
+                                                <span class="ms-2 fontsize12medium">3 Star Hotel</span>
+                                            </p>
+                                        </div>
+                                        <p class="apartLoc">
+                                            <img src="images/airline/location3.svg" alt=""/>
+                                            Zihlmattweg, 44, Lucerne, Switzerland</p>
+                                        <div class="reviewdetails">
+                                            <div class="counts d-flex align-items-center">
+                                                <p class="mb-0 me-2 reviewvalue">3.2</p>
+                                                <span><b>Good</b></span>
+                                                <span class="totalreview">371</span> 
+                                                reviews
+                                            </div>
+                                            <p class="d-flex align-items-center mb-0 mb-packstart">
+                                                <span class="packStars star_3"></span>
+                                                <span class="ms-2 fontsize12medium">3 Star Hotel</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="Inrvalue">
+                                        <p class="Inr">
+                                           <span> INR 29310</span>
+                                            / CHF 300 for 3 Days
+                                        </p>
+                                        <a href="#" class="redBtn">book now</a>
+                                    </div>
+                                </div>
+                                <!--topdetails end-->
+                                <!--apartment gallery section start-->
+                                <div class="apartmentgallery sw-gallarySection">
+                                    <!--gallerywrapper start-->
+                                        <div class="gallerywrapper">
+                                            <div class="gallerybox gallimg1">
+                                                <a href="images/airline/apartment/img1.webp" data-fancybox="group" data-caption="">
+                                                    <img
+                                                    src="images/airline/apartment/img1.webp"
+                                                    class="w-100 shadow-1-strong rounded mb-4"
+                                                    alt=""/>
+                                                </a>
+                                            </div>
+                                            <div class="gallerybox gallimg2">
+                                                <a href="images/airline/apartment/img2.webp" data-fancybox="group" data-caption="Optional caption,&lt;br /&gt;that contains &lt;em&gt;HTML&lt;/em&gt; code">
+                                                    <img
+                                                    src="images/airline/apartment/img2.webp"
+                                                    class="w-100 shadow-1-strong rounded mb-4"
+                                                    alt=""/>
+                                                </a>
+                                            </div>
+                                            <div class="gallerybox gallimg3">
+                                                <a href="images/airline/apartment/img4.webp" data-fancybox="group" data-caption="Optional caption,&lt;br /&gt;that contains &lt;em&gt;HTML&lt;/em&gt; code">
+                                                    <img
+                                                    src="images/airline/apartment/img4.webp"
+                                                    class="w-100 shadow-1-strong rounded mb-4"
+                                                    alt=""/>
+                                                </a>
+                                            </div>
+                                            <div class="gallerybox gallimg4">
+                                                <a href="images/airline/apartment/img5.webp" data-fancybox="group" data-caption="Optional caption,&lt;br /&gt;that contains &lt;em&gt;HTML&lt;/em&gt; code">
+                                                    <img
+                                                    src="images/airline/apartment/img5.webp"
+                                                    class="w-100 shadow-1-strong rounded mb-4"
+                                                    alt=""/>
+                                                </a>
+                                            </div>
+                                            <div class="gallerybox gallimg5">
+                                                <a href="images/airline/apartment/img3.webp" data-fancybox="group" data-caption="Optional caption,&lt;br /&gt;that contains &lt;em&gt;HTML&lt;/em&gt; code">
+                                                    <img
+                                                    src="images/airline/apartment/img3.webp"
+                                                    class="w-100 shadow-1-strong rounded mb-4"
+                                                    alt=""/>
+                                                </a>
+                                            </div>
+                                            <div class="aptBannerBtns">
+                                            <a data-fancybox-trigger="img_gallery" class="cta btn fade_anim aptGalleryBtn" id="viewgalleryimage">View all photos</a>
+                                            </div>
+                                        </div>
+                                    <!--gallerywrapper end-->
+                                </div>
+                                <!--apartment gallery section end-->
+                                  
+                                <!--apartment facility start-->
+                                <div class="facilitySection mt-5">
+                                    <div class="title">
+                                        <h2>Facilities</h2>
+                                    </div>
+                                    <!--facilitylist start-->
+                                    <div class="facilitylist">
+                                        <ul>
+                                            <li><a href="#"><span><img src="images/airline/apartment/facility/ToasterIcon.svg" alt="" class="img-fluid"/></span>Toaster</a></li>
+                                            <li><a href="#"><span><img src="images/airline/apartment/facility/microwaveIcon.svg" alt="" class="img-fluid"/></span>Microwave</a></li>
+                                            <li><a href="#"><span><img src="images/airline/apartment/facility/coffeemachineIcon.svg" alt="" class="img-fluid"/></span>Coffee Machine</a></li>
+                                            <li><a href="#"><span><img src="images/airline/apartment/facility/DryerIcon.svg" alt="" class="img-fluid"/></span>Dryer</a></li>
+                                            <li><a href="#"><span><img src="images/airline/apartment/facility/FreezerIcon.svg" alt="" class="img-fluid"/></span>Freezer</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#"><span><img src="images/airline/apartment/facility/FridgeIcon.svg" alt="" class="img-fluid"/></span>Fridge</a></li>
+                                            <li><a href="#"><span><img src="images/airline/apartment/facility/tableWareIcon.svg" alt="" class="img-fluid"/></span>Table Ware</a></li>
+                                            <li><a href="#"><span><img src="images/airline/apartment/facility/washingmachineIcon.svg" alt="" class="img-fluid"/></span>Washing Machine</a></li>
+                                            <li><a href="#"><span><img src="images/airline/apartment/facility/kitchenutensilsIcon.svg" alt="" class="img-fluid"/></span>Kitchen Utensils</a></li>
+                                            <li><a href="#"><span><img src="images/airline/apartment/facility/elevatorIcon.svg" alt="" class="img-fluid"/></span>Elevator</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#"><span><img src="images/airline/apartment/facility/gardenIcon.svg" alt="" class="img-fluid"/></span>Garden</a></li>
+                                            <li><a href="#"><span><img src="images/airline/apartment/facility/terraceIcon.svg" alt="" class="img-fluid"/></span>Terrace</a></li>
+                                            <li><a href="#"><span><img src="images/airline/apartment/facility/radioIcon.svg" alt="" class="img-fluid"/></span>Radio</a></li>
+                                            <li><a href="#"><span><img src="images/airline/apartment/facility/electrickettleIcon.svg" alt="" class="img-fluid"/></span>Electric Kettle</a></li>
+                                            <li><a href="#"><span><img src="images/airline/apartment/facility/hairdryerIcon.svg" alt="" class="img-fluid"/></span>Hair Dryer</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#"><span><img src="images/airline/apartment/facility/balconyIcon.svg" alt="" class="img-fluid"/></span>Balcony</a></li>
+                                            <li><a href="#"><span><img src="images/airline/apartment/facility/DVDIcon.svg" alt="" class="img-fluid"/></span>DVD</a></li>
+                                            <li><a href="#"><span><img src="images/airline/apartment/facility/gardenfurnitureIcon.svg" alt="" class="img-fluid"/></span>Garden Furniture</a></li>
+                                            <li><a href="#"><span><img src="images/airline/apartment/facility/fireplaceIcon.svg" alt="" class="img-fluid"/></span>Fire Place</a></li>
+                                            <li><a href="#"><span><img src="images/airline/apartment/facility/BarbecueIcon.svg" alt="" class="img-fluid"/></span>Barbecue</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#"><span><img src="images/airline/apartment/facility/minibarIcon.svg" alt="" class="img-fluid"/></span>Mini Bar</a></li>
+                                            <li><a href="#"><span><img src="images/airline/apartment/facility/fencedplotIcon.svg" alt="" class="img-fluid"/></span>Fenced Plot</a></li>
+                                            <li><a href="#"><span><img src="images/airline/apartment/facility/securityboxIcon.svg" alt="" class="img-fluid"/></span>Security Box</a></li>
+                                            <li><a href="#"><span><img src="images/airline/apartment/facility/juicesqueezerIcon.svg" alt="" class="img-fluid"/></span>Juice Squeezer</a></li>
+                                            <li><a href="#"><span><img src="images/airline/apartment/facility/childrenareaIcon.svg" alt="" class="img-fluid"/></span>Children Area</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#"><span><img src="images/airline/apartment/facility/gymIcon.svg" alt="" class="img-fluid"/></span>Gym</a></li>
+                                            <li><a href="#"><span><img src="images/airline/apartment/facility/alarmIcon.svg" alt="" class="img-fluid"/></span>Alarm</a></li>
+                                            <li><a href="#"><span><img src="images/airline/apartment/facility/paddelIcon.svg" alt="" class="img-fluid"/></span>Paddel</a></li>
+                                            <li><a href="#"><span><img src="images/airline/apartment/facility/saunaIcon.svg" alt="" class="img-fluid"/></span>Sauna</a></li>
+                                            <li><a href="#"><span><img src="images/airline/apartment/facility/squashIcon.svg" alt="" class="img-fluid"/></span>Squash</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#"><span><img src="images/airline/apartment/facility/TVIcon.svg" alt="" class="img-fluid"/></span>TV</a></li>
+                                            <li><a href="#"><span><img src="images/airline/apartment/facility/IronIcon.svg" alt="" class="img-fluid"/></span>Iron</a></li>
+                                            <li><a href="#"><span><img src="images/airline/apartment/facility/noparkingIcon.svg" alt="" class="img-fluid"/></span>No Parking</a></li>
+                                           
+                                        </ul>
+                                    </div>
+                                    <!--facilitylist end-->
+                                </div>
+                                 <!--apartment facility start-->
+                                  <!--overviewSection start-->
+                                  <div class="section-padding section_Container">
+                                    <div class="overviewSection sw-AboutJungSection border-0 p-0">
+                                        <div class="title">
+                                            <h2>Overview</h2>
+                                        </div>
+                                        <p>Allmend apartments are 2 high rise buildings centrally located in a nice & peaceful environment. The self-catering apartments are fully equipped with modern furniture, kitchenette, free WIFI & bathroom. Washing machine & dryer which are located at the ground floor of the building are also available for common use.</p>
+                                        <!--accordinace hover start-->
+                                            <div class="accordion clickaccordion">
+                                                <!--rightcontent start-->
+                                                <div class="rightcontent">
+                                                    <!--accordion-item start-->
+                                                    <div class="accordion-item">
+                                                        <!-- row start-->
+                                                    <h2 class="accordion-header">
+                                                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#overviewlist1" aria-expanded="true" aria-controls="overviewlist1">
+                                                                        Location 
+                                                                    </button>
+                                                    </h2>
+                                                            <div id="overviewlist1" class="accordion-collapse collapse show" data-bs-parent="">
+                                                                    <div class="accordion-body">
+                                                                      <p>The apartments are 2kms from Lucerne station, the old town as well as the lake & few steps away from "Swissport Arena", the football stadium.</p>
+                                                                    </div>
+                                                            </div>
+                                                    <!-- row end-->
+                                                    
+                                                    </div>
+                                                    <!--accordion-item end-->
+                                                    <!--accordion-item start-->
+                                                    <div class="accordion-item">
+                                                        <!-- row start-->
+                                                        <h2 class="accordion-header">
+                                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#overviewlist2" aria-expanded="false" aria-controls="overviewlist2">
+                                                                        How to reach 
+                                                                    </button>
+                                                            </h2>
+                                                        <div id="overviewlist2" class="accordion-collapse collapse" data-bs-parent="">
+                                                                    <div class="accordion-body">
+                                                                        <p>There are regular buses from Lucerne main station taking just 8 mins to the apartment. The bus stop Zihlmattweg is just 50m away from the high rise buildings, directly on the street. The Allmend railway station is also close to the apartments with trains every half an hour.</p>
+                                                                    </div>
+                                                            </div>
+                                                        
+                                                        <!-- row end-->
+                                                    </div>
+                                                    <!--accordion-item end-->
+                                                    <!--accordion-item start-->
+                                                    <div class="accordion-item">
+                                                        <!-- row start-->
+                                                        <h2 class="accordion-header">
+                                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#overviewlist3" aria-expanded="false" aria-controls="overviewlist3">
+                                                                        Surroundings 
+                                                                    </button>
+                                                            </h2>
+                                                            <div id="overviewlist3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                                                    <div class="accordion-body">
+                                                                        <p>MIGROS supermarket is in the apartment complex, Not far from the apartment building is the exhibition centre where trade fairs are held regularly. Next to the apartment there is also a sports building with indoor pool, spa facilities and fitness centre. You can also go hiking or simply take a leisurely walk in the Bireggwald forest. Here, you can also enjoy the views of the lake & get a glimpse of Pilatus.
+                                                                        </p>
+                                                                    </div>
+                                                            </div>
+                                                        <!-- row end-->
+                                                    </div>
+                                                    <!--accordion-item end-->
+                                                    
+                                                </div>
+                                                <!--rightcontent end-->
+                                            </div>
+                                            <!--accordiance hover end-->
+                                    </div>
+                                </div>
+                            <!--overviewSection end-->
+                                 <!--apartment roombook section start-->
+                                 <div class="section-padding section_Container aprt-roombooksection">
+                                    <!--rooms_list start-->
+                                    <div class="title">
+                                        <h2>Book Room</h2>
+                                    </div>
+                                    <ul>
+                                        <li class="headlist">
+                                          <div class="first w-20">Available Rooms</div>
+                                          <div class="other">
+                                            <ul class="mid-list">
+                                                <li>View</li>
+                                                <li>Bed Info</li>
+                                                <li>Area</li>
+                                                <li>Occupancy</li>
+                                            </ul>
+                                          </div>
+                                          <div class="other">
+                                            <ul class="mid-list2">
+                                                <li>Condition</li>
+                                                <li>CHF Total</li>
+                                                <li>INR Total</li>
+                                                <li>No of Room</li>
+                                            </ul>
+                                          </div>
+                                          <div class="other w-12">Choose</div>
+                                        </li>
+                                        <li>
+                                          <div class="first active">
+                                            <div class="first w-20 m-title">Available Rooms</div>
+                                            <div class="room_details_holder d-flex">
+                                                <div class="room_imgs_box">
+                                                    <a data-fancybox data-src='#view_room_5'  onclick='RoomInfo(this.id);' id='a_5'  href='javascript:;'>
+                                                        <img
+                                                        src="images/airline/photogallery/e-swiss-photogallery/ST_3x2_Rigi-Kulm-Rigi-Railway_74931(1).webp"
+                                                        class="shadow-1-strong rounded"
+                                                        alt=""/>
+                                                    </a>
+                                                </div>
+                                                <div class="room_short_info">
+                                                   <p class="subtitle">LU Brachenmoor III</p>
+                                                    <p><a data-bs-toggle="modal" data-bs-target="#viewroominfoModal">Room Info</a></p>
+                                                </div>
+                                            </div>
+                                            
+                                          </div>
+                                          <div class="other">
+                                           
+                                            <ul class="mid-list viewdata">
+                                                <li>
+                                                    <span class="m-title">View</span>
+                                                    <a href="https://my.matterport.com/show/?m=7jLLxaWgZ16&amp;mls=1" class="icon">
+                                                    <img src="images/airline/apartment/360angleimg.svg" alt=""/></a></li>
+                                                <li>
+                                                    <span class="m-title">Bed Info</span>
+                                                    <p>1 Single sofa bed, 1 Double bed</p>
+                                                </li>
+                                                <li>
+                                                    <span class="m-title">Area</span>
+                                                    <p>25 sqm</p>
+                                                </li>
+                                                <li>
+                                                    <span class="m-title">Occupancy</span>
+                                                    <p>Max 3</p>
+                                                </li>
+                                            </ul>
+
+                                          </div>
+                                          <div class="other p-0">
+                                            <ul class="mid-list2 m-title px-3">
+                                                <li>Condition</li>
+                                                <li>CHF Total</li>
+                                                <li>INR Total</li>
+                                                <li>No of Room</li>
+                                            </ul>
+                                            <ul class="mid-list2 px-3">
+                                                <div class="offerprice">
+                                                    <div class="ribbon">
+                                                        <p>10% off</p>
+                                                    </div>
+                                                  
+                                                </div> 
+                                                <li><p>Non Refundable</p></li>
+                                                <li><p>CHF 300</p></li>
+                                                <li><p>INR 9367</p></li>
+                                                <li>
+                                                    <div class="counter-input">
+                                                        <select id="selectOption" class="form-select form-control">
+                                                            <option value="option1">1</option>
+                                                            <option value="option2">2</option>
+                                                            <option value="option3">3</option>
+                                                        </select>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="offerprice mid-list2 px-3 active bordertop">
+                                                <li><p>Non Refundable</p></li>
+                                                <li><p>CHF 300</p></li>
+                                                <li><p>INR 9367</p></li>
+                                                <li>
+                                                    <div class="counter-input">
+                                                        <select class="form-select form-control">
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                        </select>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                          </div>
+                                          <div class="other">
+                                            <a href="#" class="redBtn" data-bs-toggle="modal" data-bs-target="#ErrorPopupModal">Book</a>
+                                          </div>
+                                        </li>
+                                        <li class="otherDiv">
+                                            <div class="first">
+                                              <div class="first w-20 m-title">Available Rooms</div>
+                                              <div class="room_details_holder d-flex">
+                                                  <div class="room_imgs_box">
+                                                      <a data-fancybox data-src='#view_room_5'  onclick='RoomInfo(this.id);' id='a_5'  href='javascript:;'>
+                                                          <img
+                                                          src="images/airline/photogallery/e-swiss-photogallery/ST_3x2_Rigi-Kulm-Rigi-Railway_74931(1).webp"
+                                                          class="shadow-1-strong rounded"
+                                                          alt=""/>
+                                                      </a>
+                                                  </div>
+                                                  <div class="room_short_info">
+                                                     <p class="subtitle">LU Brachenmoor III</p>
+                                                      <p><a data-bs-toggle="modal" data-bs-target="#viewroominfoModal">Room Info</a></p>
+                                                  </div>
+                                              </div>
+                                              
+                                            </div>
+                                            <div class="other">
+                                             
+                                              <ul class="mid-list viewdata">
+                                                  <li>
+                                                      <span class="m-title">View</span>
+                                                      <a href="https://my.matterport.com/show/?m=7jLLxaWgZ16&amp;mls=1" class="icon">
+                                                      <img src="images/airline/apartment/360angleimg.svg" alt=""/></a></li>
+                                                  <li>
+                                                      <span class="m-title">Bed Info</span>
+                                                      <p>1 Single sofa bed, 1 Double bed</p>
+                                                  </li>
+                                                  <li>
+                                                      <span class="m-title">Area</span>
+                                                      <p>25 sqm</p>
+                                                  </li>
+                                                  <li>
+                                                      <span class="m-title">Occupancy</span>
+                                                      <p>Max 3</p>
+                                                  </li>
+                                              </ul>
+  
+                                            </div>
+                                            <div class="other p-0">
+                                              <ul class="mid-list2 m-title px-3">
+                                                  <li>Condition</li>
+                                                  <li>CHF Total</li>
+                                                  <li>INR Total</li>
+                                                  <li>No of Room</li>
+                                              </ul>
+                                              <ul class="mid-list2 px-3">
+                                                  <div class="offerprice">
+                                                      <div class="ribbon">
+                                                          <p>10% off</p>
+                                                      </div>
+                                                    
+                                                  </div> 
+                                                  <li><p>Non Refundable</p></li>
+                                                  <li><p>CHF 300</p></li>
+                                                  <li><p>INR 9367</p></li>
+                                                  <li>
+                                                      <div class="counter-input">
+                                                          <select id="selectOption" class="form-select form-control">
+                                                              <option value="option1">1</option>
+                                                              <option value="option2">2</option>
+                                                              <option value="option3">3</option>
+                                                          </select>
+                                                      </div>
+                                                  </li>
+                                              </ul>
+                                            
+                                            </div>
+                                            <div class="other">
+                                              <a href="#" class="redBtn" data-bs-toggle="modal" data-bs-target="#ErrorPopupModal">Book</a>
+                                            </div>
+                                        </li>
+                                        <li class="otherDiv">
+                                            <div class="first">
+                                              <div class="first w-20 m-title">Available Rooms</div>
+                                              <div class="room_details_holder d-flex">
+                                                  <div class="room_imgs_box">
+                                                      <a data-fancybox data-src='#view_room_5'  onclick='RoomInfo(this.id);' id='a_5'  href='javascript:;'>
+                                                          <img
+                                                          src="images/airline/photogallery/e-swiss-photogallery/ST_3x2_Rigi-Kulm-Rigi-Railway_74931(1).webp"
+                                                          class="shadow-1-strong rounded"
+                                                          alt=""/>
+                                                      </a>
+                                                  </div>
+                                                  <div class="room_short_info">
+                                                     <p class="subtitle">LU Brachenmoor III</p>
+                                                      <p><a data-bs-toggle="modal" data-bs-target="#viewroominfoModal">Room Info</a></p>
+                                                  </div>
+                                              </div>
+                                              
+                                            </div>
+                                            <div class="other">
+                                             
+                                              <ul class="mid-list viewdata">
+                                                  <li>
+                                                      <span class="m-title">View</span>
+                                                      <a href="https://my.matterport.com/show/?m=7jLLxaWgZ16&amp;mls=1" class="icon">
+                                                      <img src="images/airline/apartment/360angleimg.svg" alt=""/></a></li>
+                                                  <li>
+                                                      <span class="m-title">Bed Info</span>
+                                                      <p>1 Single sofa bed, 1 Double bed</p>
+                                                  </li>
+                                                  <li>
+                                                      <span class="m-title">Area</span>
+                                                      <p>25 sqm</p>
+                                                  </li>
+                                                  <li>
+                                                      <span class="m-title">Occupancy</span>
+                                                      <p>Max 3</p>
+                                                  </li>
+                                              </ul>
+  
+                                            </div>
+                                            <div class="other p-0">
+                                              <ul class="mid-list2 m-title px-3">
+                                                  <li>Condition</li>
+                                                  <li>CHF Total</li>
+                                                  <li>INR Total</li>
+                                                  <li>No of Room</li>
+                                              </ul>
+                                              <ul class="mid-list2 px-3">
+                                                  <div class="offerprice">
+                                                      <div class="ribbon">
+                                                          <p>10% off</p>
+                                                      </div>
+                                                    
+                                                  </div> 
+                                                  <li><p>Non Refundable</p></li>
+                                                  <li><p>CHF 300</p></li>
+                                                  <li><p>INR 9367</p></li>
+                                                  <li>
+                                                      <div class="counter-input">
+                                                          <select id="selectOption" class="form-select form-control">
+                                                              <option value="option1">1</option>
+                                                              <option value="option2">2</option>
+                                                              <option value="option3">3</option>
+                                                          </select>
+                                                      </div>
+                                                  </li>
+                                              </ul>
+                                            
+                                            </div>
+                                            <div class="other">
+                                              <a href="#" class="redBtn" data-bs-toggle="modal" data-bs-target="#ErrorPopupModal">Book</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                     
+                                    <!--rooms_list start-->
+                                 </div>
+                                 <!--apartment roombook section end-->
+                            </div>
+                          <!--searchapartmentgallery section end-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--sw-main-content end-->
+        </div>
+    </div>
+
+    <!--content holder end-->
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/airlineCustom.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+ 
+    <!-- Footer Starts -->
+    <footer class="sw-footer">
+        <div class="container-fluid swissBrief d-none">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="foot_item"><img src="images/stp/swiss_logo.jpg"> A Swiss International Air Lines
+                            Company</div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="foot_item"><img src="images/stp/yrs20.jpg"> Over 2 Decades of Travel Excellence
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="foot_item"><img src="images/stp/visit_logo.jpg">Sister Concern of
+                            VisitSwitzerland.com </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="foot_item"><img src="images/stp/services.jpg"> Bouquet of Services</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer">
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-12 col-md-3 border-right">
+                        <div class="row">
+                            <div class="foot_head">SwissTours <i class="fa fa-plus pull-right dropdown_icon"
+                                    aria-hidden="true"></i></div>
+                            <ul class="foot_dropdown">
+                                <li><a href="about_us.html" class="fade_anim">About us</a> </li>
+                                <li><a href="partners.html" class="fade_anim">Partners</a></li>
+                                <li><a href="careers.html" class="fade_anim">Careers</a></li>
+                                <li><a href="testimonials.html" class="fade_anim">Testimonials</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- <div class="col-sm-4 col-md-3">
+                            <div class="row">
+                                <div class="foot_head">Customer Support <i class="fa fa-plus pull-right dropdown_icon" aria-hidden="true"></i></div>
+                                <ul class="foot_dropdown">
+                                    <li><a href="contact_us.html" class="fade_anim">Contact Us</a></li>
+                                    <li><a href="faqs.html" class="fade_anim">FAQs</a></li>
+                                    <li><a href="#" class="fade_anim">Sitemap</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+
+                    <div class="col-12 col-md-3 border-right px-lg-5">
+                        <div class="row">
+                            <div class="foot_head">Legal <i class="fa fa-plus pull-right dropdown_icon"
+                                    aria-hidden="true"></i></div>
+                            <ul class="foot_dropdown">
+                                <li><a href="user_agreement.html" class="fade_anim">User Agreement</a></li>
+                                <li><a href="privacy_policy.html" class="fade_anim">Privacy Policy</a></li>
+                                <li><a href="#" class="fade_anim">Verified & Secured</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 border-right px-lg-3">
+                        <div class="row">
+                            <div class="adHolder sw-adHolder">
+                                <div class="foot_head" style="text-align: center;">Accessory Partner</div>
+                                <div style="text-align: center;">
+                                    <a href="#" target="_blank">
+                                        <img src="images/airline/victorinox-logo.png" alt="victorinox logo"
+                                            class="victoximg1">
+                                        <img src="images/airline/victorinox-logo-hover.png" alt="victorinox logo"
+                                            class="victoxhoverimg">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3 ps-lg-5 mt-4 mt-md-0">
+                        <div class="row">
+                            <div class="adHolder">
+                                <div class="foot_head">Official Time Partner</div>
+                                <div class="adBlock">
+                                    <iframe src="watch/index.html" scrolling="no" frameborder="0" width="100%"
+                                        height="100%" allowtransparency="true"></iframe>
+                                    <!-- <a href=""><img src="images/tagheuer.jpg"></a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="footer-mid">
+                <a href="#"><img src="images/airline/footermid-logo.svg" alt="swiss-logo"><span>Swiss International Air
+                        Lines Company</span></a>
+            </div>
+            <div class="footer-bottom bottom">
+                <div class="row">
+
+                    <div class="col-xs-6 social">
+                        <div class="row d-flex justify-content-center">
+
+                            <!-- <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> -->
+                            <a href="https://www.instagram.com/_swisstours/" target="_blank"><i class="fa fa-instagram"
+                                    aria-hidden="true"></i></a>
+                            <a href="https://www.facebook.com/pages/Swisstours/256257954432198" target="_blank"><i
+                                    class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 copyright">
+                        <div class="row">&copy; 2023 Swisstours.com All rights reserved.</div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- Footer Ends -->
+
+<!-- Modal -->
+<div class="modal fade ErrorPopup" id="ErrorPopupModal" tabindex="-1" aria-labelledby="ErrorPopupModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="ErrorPopupModalLabel">Alert</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>You can not book more than one room category at a time</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+<!--ErrorPopupModal end-->
+<!--viewroominfoModal start -->
+<div class="modal fade" id="viewroominfoModal" tabindex="-1" aria-labelledby="viewroominfoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+         <!--topslider start-->
+         <div class="topgalleryslider">
+            <!-- Carousel -->
+            <div id="viewroomgallery" class="carousel"  data-interval="false">
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/airline/apartment/banner.webp" alt="" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/airline/attractionpage/banner/attractionbanner2.webp" alt="" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/airline/apartment/banner.webp" alt="" class="d-block w-100">
+                </div>
+                </div>
+                <!-- Left and right controls/icons -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#viewroomgallery" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#viewroomgallery" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    </button>
+            </div>
+        </div>
+        <!--topslider end-->
+        <!--room-overview start-->
+        <div class="room-overview">
+            <div class="title">
+                <h2>OverView</h2>
+            </div>
+            <ul>
+                <li><strong>Bed choices -</strong> 1 Single sofa bed,1 Double bed</li>
+                <li><strong>Room Description -</strong> Beautiful and modernly furnished studio apartment in a prime location close to a local recreation area.</li>
+                <li>
+                    <p>The beautiful and furnished studio apartment "KKL IV" offers all around comfort on 25m2. The studio apartment is equipped with three beds, consisting of one double bed and a sofa bed. The kitchen corner is fully equipped for three persons with crockery, cutlery and pans, has two hot plates and a combination appliance that can be used both for baking and as a microwave. The bathroom is equipped with a shower, toilet, mirror cabinet, hair dryer, iron and an ironing board. Bath towels and bed linen are provided.</p>
+                    <p>In the basement there are washing machines, which can be used free of charge. Wi-Fi and a flat screen TV with international channels are available free of charge for business or pleasure.</p>
+                    <p>You live centrally on the Lucerne Allmend, yet many leisure and recreation facilities are available in the immediate vicinity. Lucerne railway station, the old town and most of the sights are two kilometres away and can be reached by train, bus, on foot or by car in no time at all. Garage spaces are available for persons with a car against payment.</p>
+                </li>
+                <li><strong>Area -</strong>25 sqm</li>
+                <li>
+                    <div class="subtitle">Facilities</div>
+                     <!--facilitylist start-->
+                     <div class="facilitylist">
+                        <ul>
+                            <li><a href="#"><span><img src="images/airline/apartment/facility/ToasterIcon.svg" alt="" class="img-fluid"/></span>Toaster</a></li>
+                            <li><a href="#"><span><img src="images/airline/apartment/facility/microwaveIcon.svg" alt="" class="img-fluid"/></span>Microwave</a></li>
+                            <li><a href="#"><span><img src="images/airline/apartment/facility/coffeemachineIcon.svg" alt="" class="img-fluid"/></span>Coffee Machine</a></li>
+                            <li><a href="#"><span><img src="images/airline/apartment/facility/DryerIcon.svg" alt="" class="img-fluid"/></span>Dryer</a></li>
+                            <li><a href="#"><span><img src="images/airline/apartment/facility/FreezerIcon.svg" alt="" class="img-fluid"/></span>Freezer</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#"><span><img src="images/airline/apartment/facility/FridgeIcon.svg" alt="" class="img-fluid"/></span>Fridge</a></li>
+                            <li><a href="#"><span><img src="images/airline/apartment/facility/tableWareIcon.svg" alt="" class="img-fluid"/></span>Table Ware</a></li>
+                            <li><a href="#"><span><img src="images/airline/apartment/facility/washingmachineIcon.svg" alt="" class="img-fluid"/></span>Washing Machine</a></li>
+                            <li><a href="#"><span><img src="images/airline/apartment/facility/kitchenutensilsIcon.svg" alt="" class="img-fluid"/></span>Kitchen Utensils</a></li>
+                            <li><a href="#"><span><img src="images/airline/apartment/facility/elevatorIcon.svg" alt="" class="img-fluid"/></span>Elevator</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#"><span><img src="images/airline/apartment/facility/gardenIcon.svg" alt="" class="img-fluid"/></span>Garden</a></li>
+                            <li><a href="#"><span><img src="images/airline/apartment/facility/terraceIcon.svg" alt="" class="img-fluid"/></span>Terrace</a></li>
+                            <li><a href="#"><span><img src="images/airline/apartment/facility/radioIcon.svg" alt="" class="img-fluid"/></span>Radio</a></li>
+                            <li><a href="#"><span><img src="images/airline/apartment/facility/electrickettleIcon.svg" alt="" class="img-fluid"/></span>Electric Kettle</a></li>
+                            <li><a href="#"><span><img src="images/airline/apartment/facility/hairdryerIcon.svg" alt="" class="img-fluid"/></span>Hair Dryer</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#"><span><img src="images/airline/apartment/facility/balconyIcon.svg" alt="" class="img-fluid"/></span>Balcony</a></li>
+                            <li><a href="#"><span><img src="images/airline/apartment/facility/DVDIcon.svg" alt="" class="img-fluid"/></span>DVD</a></li>
+                            <li><a href="#"><span><img src="images/airline/apartment/facility/gardenfurnitureIcon.svg" alt="" class="img-fluid"/></span>Garden Furniture</a></li>
+                            <li><a href="#"><span><img src="images/airline/apartment/facility/fireplaceIcon.svg" alt="" class="img-fluid"/></span>Fire Place</a></li>
+                            <li><a href="#"><span><img src="images/airline/apartment/facility/BarbecueIcon.svg" alt="" class="img-fluid"/></span>Barbecue</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#"><span><img src="images/airline/apartment/facility/minibarIcon.svg" alt="" class="img-fluid"/></span>Mini Bar</a></li>
+                            <li><a href="#"><span><img src="images/airline/apartment/facility/fencedplotIcon.svg" alt="" class="img-fluid"/></span>Fenced Plot</a></li>
+                            <li><a href="#"><span><img src="images/airline/apartment/facility/securityboxIcon.svg" alt="" class="img-fluid"/></span>Security Box</a></li>
+                            <li><a href="#"><span><img src="images/airline/apartment/facility/juicesqueezerIcon.svg" alt="" class="img-fluid"/></span>Juice Squeezer</a></li>
+                            <li><a href="#"><span><img src="images/airline/apartment/facility/childrenareaIcon.svg" alt="" class="img-fluid"/></span>Children Area</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#"><span><img src="images/airline/apartment/facility/gymIcon.svg" alt="" class="img-fluid"/></span>Gym</a></li>
+                            <li><a href="#"><span><img src="images/airline/apartment/facility/alarmIcon.svg" alt="" class="img-fluid"/></span>Alarm</a></li>
+                            <li><a href="#"><span><img src="images/airline/apartment/facility/paddelIcon.svg" alt="" class="img-fluid"/></span>Paddel</a></li>
+                            <li><a href="#"><span><img src="images/airline/apartment/facility/saunaIcon.svg" alt="" class="img-fluid"/></span>Sauna</a></li>
+                            <li><a href="#"><span><img src="images/airline/apartment/facility/squashIcon.svg" alt="" class="img-fluid"/></span>Squash</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#"><span><img src="images/airline/apartment/facility/TVIcon.svg" alt="" class="img-fluid"/></span>TV</a></li>
+                            <li><a href="#"><span><img src="images/airline/apartment/facility/IronIcon.svg" alt="" class="img-fluid"/></span>Iron</a></li>
+                            <li><a href="#"><span><img src="images/airline/apartment/facility/noparkingIcon.svg" alt="" class="img-fluid"/></span>No Parking</a></li>
+                           
+                        </ul>
+                    </div>
+                    <!--facilitylist end-->
+                </li>
+            </ul>
+        </div>
+        <!--room-overview end-->
+        
+        </div>
+       </div>
+    </div>
+  </div>
+<!--viewroominfoModal end -->
+
+
+<script>
+     $(document).ready(function(){
+  $('#selectOption').change(function () {
+    var selectedOption = $(this).val();
+
+    // Remove any existing 'disabled' classes from all li elements
+    $('.aprt-roombooksection ul li').removeClass('disabled');
+
+    // Add a 'disabled' class to the targeted li elements based on the selected option
+    if ('#selectOption option[value="' + selectedOption + '"]') {
+      $('.otherDiv').addClass('disabled');
+    }
+  });
+
+//close topsearch
+
+$("#topsearchModal").click(function(){
+             $(".topsearchsection").show();
+        });
+
+
+$(".topsearchsection .btn-close").click(function(){
+             $(".topsearchsection").hide();
+        });
+    });
+
+</script>
+
+</body>
+
+</html>

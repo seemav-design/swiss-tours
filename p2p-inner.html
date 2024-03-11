@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="theme-color" content="#000" />
+    <title>Welcome To SWISStours</title>
+    <link href="images/favicon.ico.jpg" rel="shortcut icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/menu.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-select.min.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap-datetimepicker.js"></script>
+</head>
+
+<body>
+<!-- Header Starts -->
+<header class="cd-main-header sw-mainheader">
+    <!-- Start Mega Menu HTML -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg sw-navbar">
+        <div class="w-100 flex-column align-items-start">
+            <div class="d-flex justify-content-between w-100">
+              <a class="navbar-brand" href="#"><img src="images/logo.svg" alt=""></a>
+              
+              <div class="top-right-menu d-flex flex-grow-1">
+                <div class="cart_box">
+                    <a href="#" class="cart_btn" title="View Cart"><span class="ml-4">My Cart</span><span class="cart_items_count">0</span></a>
+                </div>
+                <div class="login_head">
+                    <a href=""> <span class="txt">Login</span></a>
+                </div>
+                <div class="sign-upbtn">
+                    <a href="" class="btn"> <img src="images/airline/signup-icon.svg" alt=""><span class="txt">sign up</span></a>
+                </div>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+                  <div class="hamburger-toggle">
+                    <div class="hamburger">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          
+          <div class="collapse navbar-collapse menu_navbar w-100" id="navbar-content">
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0 flex-grow-1 mt-4" >
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">
+                    <span class="nav-icon"><img src="images/airline/Plane2.svg" alt=""></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/Plane2.svg" alt=""></span>
+                    Flights</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/hotelmenu-icon.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/hotel.svg" alt=""></span>
+                    Hotels
+                </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/aparment.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/apartment.svg" alt=""></span>
+                    Apartments</a>
+              </li>
+            
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" aria-current="page" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/package.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/package.svg" alt=""></span>
+                    Packages</a>
+                  <ul class="dropdown-menu shadow">
+                    <li class="rmm-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                   <li>
+                      <a class="dropdown-item pe-4" href="#">Air-Inclusive Packages<img src="images/airline/sw-logo2.svg" class="img-fluid menu-innericon"></a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Land Packages</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/e-swiss.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/e-swiss.svg" alt=""></span>
+                    E-Swiss Travel Pass
+                </a>
+              </li>
+              <li class="nav-item dropdown dropdown-mega position-static">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/european.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/eurailpass.svg" alt=""></span>
+                    European Rail
+                </a>
+                 <div class="dropdown-menu shadow pass">
+                    <div class="mega-content px-lg-4">
+                        <div class="container-fluid">
+                            <ul class="row">
+                                <li class="col-12 col-lg-8 py-lg-4 border-right submenu2 colcount">
+                                    <div class="rmm-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></div>
+                                    <span class="submenutitle"><a href="#">Eurail Pass<img src="images/airline/eurailicon.svg" class="img-fluid menucion2 ms-2"></a></span>
+                                    <ul class="list-group submenu2-content">
+                                        <li class="s2back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                         <li>
+                                            <!-- <a class="list-group-item d-flex justify-content-between colcount" href="#">
+                                               
+                                            <div class="d-flex justify-content-end align-items-end">
+                                                <span> Global Pass</span>
+                                               <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                            </div>
+                                            </a>-->
+                                            <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                                Global Pass
+                                                <div class="d-flex justify-content-end align-items-end populricon">
+                                                    <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                </div>
+                                            </a>
+                                        </li> 
+                                         <li class="one-country-pass">
+                                            <a class="list-group-item populricon" href="#">One Country Pass</a>
+                                            <ul class="list-group eurail-pass list-group2">
+                                                <li class="s2back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                                <li class="listoverflow-mb">
+                                                    <ul>
+                                                        <li><a href="#" class="list-group-item">Eurail Austria Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Belgium Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Benelux Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Bulgaria Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Croatia Pass</a></li>
+                                                        <li><a href="#" class="list-group-item"> Eurail Czech Republic Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Denmark Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Lithuania Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Luxembourg Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Netherlands Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Norway Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Poland Pass</a></li>
+                                                    </ul>
+                                                    <ul class="sub-listgrop2">
+                                                        <li><a href="#" class="list-group-item">Eurail Portugal Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Romania Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Finland Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail France Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Germany Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Greece Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Hungary Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Italy Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Scandinavia Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Serbia Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Slovakia Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Slovenia Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Spain Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Sweden Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Turkey Pass</a></li>
+                                                        <li><a href="#" class="list-group-item"></a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            
+                                        </li>
+
+                                       
+                                    </ul>
+                                </li>
+                                
+                                <li class="col-12 col-lg-4 py-lg-4 ps-md-5 submenu3">
+                                   <span class="submenutitle"><a href="#">Panoramic Trains in Switzerland</a></span>
+                                        <ul class="list-group list-group3 submenu3-content">
+                                            <li class="s3-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                              <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/Berninalogo.png" alt="Berninalogo" class="img-fluid"></span>Bernina Express</a></li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/glacierlogo.png" alt="glacierlogo" class="img-fluid"></span>Glacier Express</a></li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/glacierlogo.png" alt="glacierlogo" class="img-fluid"></span>Lucerne-Interlaken</a></li>
+                                        </ul>
+                                    
+                                    <div class="bordertop"></div>
+                                           <div class="submenu4">
+                                            <span class="submenutitle"><a href="#">Europe Point to Point tickets</a></span>
+                                            <ul class="list-group list-group3 submenu4-content">
+                                                <li class="s3-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/londonlogo.png" alt="imglogo" class="img-fluid"></span>London to Paris</a></li>
+                                                <li>
+                                                    <a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-baselLogo.png" alt="imglogo" class="img-fluid"></span>Paris to Basel 
+                                                        <div class="d-flex justify-content-end align-items-end populricon">
+                                                            <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-zurichlogo.png" alt="imglogo" class="img-fluid"></span>Paris to Zurich</a></li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-amsLogo.png" alt="imglogo" class="img-fluid"></span>Paris to Amsterdam</a></li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-baselLogo.png" alt="imglogo" class="img-fluid"></span>London to Amsterdam</a></li>
+                                            </ul>
+                                        </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> 
+            </li>
+              <li class="nav-item dropdown dropdown-mega position-static">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/sightseeing.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/sightseeing.svg" alt="" class="filter-red"></span>
+                    Attractions
+                </a>
+                  <div class="dropdown-menu shadow pass">
+                    <div class="mega-content px-lg-4">
+                        <div class="container-fluid">
+                            <ul class="row">
+                                <li class="col-12 col-lg-4 py-lg-4 border-right submenu2">
+                                    <div class="rmm-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></div>
+                                    <span class="submenutitle"><a href="#">Mountains in Switzerland</a></span>
+                                    <ul class="list-group submenu2-content">
+                                        <li class="s2back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                        <li>
+                                            <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                                Jungfrau
+                                                <div class="d-flex justify-content-end align-items-end populricon">
+                                                    <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="list-group-item" href="#">Jungfrau VIP Gondola</a>
+                                        </li>
+                                       
+                                        <li><a class="list-group-item" href="#">Harder Kulm</a></li>
+                                        <li><a class="list-group-item" href="#">Grindelwald First</a></li>
+                                        <li><a class="list-group-item" href="#">Schilthorn</a></li>
+                                        <li><a class="list-group-item" href="#">Mt Titlis</a></li>
+                                        <li><a class="list-group-item" href="#">Mt Pilatus</a></li>
+                                        <li><a class="list-group-item" href="#">Matterhorn</a></li>
+                                        <li>
+                                            <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                                Sunnega Paradise
+                                                <div class="d-flex justify-content-end align-items-end populricon">
+                                                    <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li><a class="list-group-item" href="#">Glacier 3000</a></li>
+                                        <li><a class="list-group-item" href="#">Diavolezza</a></li>
+                                        <li><a class="list-group-item" href="#">Aletsch Arena</a></li>
+                                        <li><a class="viewAllBtn" href="#">View All</a></li>
+                                      
+                                    </ul>
+                                </li>
+                                <li class="col-12 col-lg-4 py-lg-4 border-right submenu3 d-flex flex-column">
+                                    <span class="submenutitle"><a href="#">Attractions in Switzerland</a></span>
+                                     <ul class="list-group list-group3 submenu3-content px-lg-3">
+                                            <li class="s3-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                            <li><a class="list-group-item" href="#">Swiss Transport Musuem</a></li>
+                                            <li>
+                                                <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                                Saphir
+                                                <div class="d-flex justify-content-end align-items-end populricon">
+                                                    <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                </div>
+                                                </a> 
+                                            </li>
+                                            <li><a class="list-group-item" href="#">Lindt</a></li>
+                                            <li><a class="list-group-item" href="#">Swissminiatur</a></li>
+                                            <li><a class="list-group-item" href="#">Meal Voucher</a></li>
+                                            <li><a class="list-group-item" href="#">Charlie Chaplin</a></li>
+                                            <li><a class="viewAllBtn list-group-item" href="#">View All</a></li>
+                                            <!-- <li class="attarction-viewbtn">
+                                                <div class="viewmidbtn d-flex align-items-center justify-content-center m-auto">
+                                                    <a href="#" class="redBtn">View all</a>
+                                                </div>
+                                            </li> -->
+                                        </ul>
+                                </li>
+                                <li class="col-12 col-lg-4 py-lg-4 ps-md-5">
+                                    <div class="submenu4">
+                                    <span class="submenutitle"><a href="#">Guided tours in Switzerland</a></span>
+                                    </div>
+                                    <ul class="list-group list-group3 submenu4-content px-lg-3">
+                                        <li class="s3-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                        <li><a class="list-group-item" href="#">Zurich tour with chocolate</a></li>
+                                        <li>
+                                            <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                                Rhine falls and Zurich city tour
+                                                <div class="d-flex justify-content-end align-items-end populricon">
+                                                    <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                </div>
+                                            </a> 
+                                        </li>
+                                        <li><a class="list-group-item" href="#">Rhine falls and Stein am Rhein</a></li>
+                                        <li><a class="list-group-item" href="#">Zurich city tour with lake cruise</a></li>
+                                        <li><a class="list-group-item" href="#">Lucerne and Titlis snow experience</a></li>
+                                    </ul>
+                                    <div class="bordertop"></div>
+                                    <div>
+                                        <div class="submenu5">
+                                            <span class="submenutitle"><a href="#">Worldwide Attractions</a></span>
+                                        </div>
+                                        
+                                        <ul class="list-group list-group3 submenu5-content px-lg-3">
+                                            <li class="s2back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                            <li><a class="list-group-item" href="#">London</a></li>
+                                            <li><a class="list-group-item" href="#">Munich</a></li>
+                                            <li><a class="list-group-item" href="#">Paris</a></li>
+                                            <li><a class="list-group-item" href="#">Vienna</a></li>
+                                            <li><a class="viewAllBtn list-group-item" href="#">View All</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                  </div>
+                  
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/mountain.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mountain.svg" alt="" class="filter-red"></span>
+                    About
+                 </a>
+                  <ul class="dropdown-menu shadow">
+                    <li class="rmm-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                    <li>
+                      <a class="dropdown-item pe-4" href="#">About Us</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Our Leadership</a></li>
+                    <li><a class="dropdown-item" href="#">Brochure</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown dropdown-mega position-static contactMegamenu">
+                  <a class="nav-link dropdown-toggle" href="#"  href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/sightseeing.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/sightseeing.svg" alt="" class="filter-red"></span>
+                    Contact
+                </a>
+                  <div class="dropdown-menu shadow">
+                    <div class="mega-content ">
+                        <div class="container-fluid">
+                            <div class="rmm-back ps-0"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></div>
+                            <div class="row listoverflow-mb">
+                                <div class="col-12 col-md-7 col-lg-8 py-lg-8">
+                                    <ul class="menuleftContact">
+                                        
+                                        <li> <span class="submenutitle"><a href="https://wa.me/919987997997?text=Hello.">WhatsApp<span class="ms-3"><img src="images/airline/whatapp.svg" alt=""></span></a></span></li>
+                                        <li class="d-flex align-items-center"> <span class="submenutitle">Toll Free</span><a href="tel:18002020052" class="text-primary">1800 20 20 052</a></li>
+                                        <li>
+                                            <span class="submenutitle">Branch Office</span>
+                                            <ul>
+                                                <li><span>Mumbai (Head Office)</span><a href="tel:+912261282400">(022) 61282400, 67439990</a></li>  
+                                                <li><span>Delhi</span><a href="tel:+917208820785">+91 7208820787 / +91 7208820785 / +91 9643662737</a></li>  
+                                                <li><span>Chennai</span><a href="tel:+914442179510">(044) 42179510 / 20</a></li>  
+                                                <li><span>Bangalore</span><a href="tel:+918041132172">(080) 41132172, 41609072</a></li>  
+                                                <li><span>Pune</span><a href="tel:+919136117252">+919136117252, +91 8855883831</a></li>
+                                                <li><span>Kolkata</span><a href="tel:+919007160166">+91 9007160166</a></li>  
+                                                <li><span>Ahmedabad</span><a href="tel:+917940028694">(079) 40028694 / 95</a></li>  
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-md-5 col-lg-4 p-0">
+                                    <div class="bgimg">
+                                        <div class="d-flex justify-content-between align-items-center bottomBtn">
+                                            <a href="#" class="whitebgbtn">View Brochure</a>    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+              </li>
+              <li class="nav-item d-block d-md-none">
+                 <a class="nav-link" href="#"><span class="nav-icon mb-icon">
+                    <img src="images/airline/menu-icon/mobile/cart.svg" alt="" class="filter-red"></span>
+                    My Cart<span class="cart_items_count">0</span></a>
+              </li>
+              <li class="nav-item ">
+                  <a class="nav-link" href="#">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/offers.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/offers.svg" alt="" class="filter-red"></span>
+                    Blog
+                </a>
+              </li>
+              <li class="nav-item  d-block d-md-none mt-5 mx-4 text-center login-mobilebtn">
+                <a href="#" class="redBtn w-100 m-auto d-flex justify-content-center">Login</a>
+              </li>
+          </ul>
+          
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- END Mega Menu HTML -->
+</header>
+<!-- Header Ends -->
+    <link href="css/swiss-style.css" rel="stylesheet" type="text/css"> <!--airline css-->
+    <link rel="stylesheet" href="css/meghamenu.css">
+
+<!--content holder start-->
+    <div class="cd-main-content">
+        <div class="container-fluid main_content_container pt-0">
+            <!--sw-main-content start-->
+            <div class="sw-main-content sw-main-content2 homepage p2pinner p2p-home">
+                <!--mid_Container container start-->
+                <div class="mid_Container container">
+                    <div class="innersection_Container ">
+                        <!--main-contentrow start-->
+                        <div class="row main-contentrow">
+                           <!--topModify start-->
+                           <div class="Topinfo">
+                                <div class="customfloatingform">
+                                    <div class="modifytitle d-flex flex-row d-lg-none">
+                                        <div class="title">
+                                            <h2>Modify</h2>
+                                    </div>
+                                    <button type="button" class="btn-close modify-btn"></button>
+                                    </div>
+                                    <div class="sw-modal">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-5 d-flex loctninput">
+                                                <div class="inputdiv selectdiv">
+                                                    <div class="form-floating">
+                                                        <div class="input-group">
+                                                            <select class="form-select">
+                                                                <option selected="">Lucerne</option>
+                                                                <option>Lucerne1</option>
+                                                                <option>Lucerne2</option>
+                                                                <option>Lucerne3</option>
+                                                            </select>
+                                                            <span class="input-group-addon">
+                                                                <span class="nightinput locationicon"></span>
+                                                            </span>
+                                                        </div>
+                                                        <label class="has-float-label">From</label>
+                                                    </div>
+                                                </div>
+                                                <div class="swise-icon">
+                                                    <img src="images/airline/switch.svg" alt="" class="d-none d-lg-block">
+                                                    <img src="images/airline/switchmb.svg" alt="" class="d-block d-lg-none">
+                                                </div>
+                                                <div class="inputdiv selectdiv">
+                                                    <div class="form-floating">
+                                                        <div class="input-group">
+                                                            <select class="form-select">
+                                                                <option selected="">Lucerne</option>
+                                                                <option>Lucerne1</option>
+                                                                <option>Lucerne2</option>
+                                                                <option>Lucerne3</option>
+                                                            </select>
+                                                            <span class="input-group-addon">
+                                                                <span class="nightinput locationicon"></span>
+                                                            </span>
+                                                        </div>
+                                                        <label class="has-float-label">To</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                                <div class="inputdiv col-lg-2">
+                                                    <div class="form-floating">
+                                                        <div class="input-group date" id="departuretime3">
+                                                        <input type="text" class="form-control" placeholder="Choose here">
+                                                        <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-calendar"></span>
+                                                        </span>
+                                                        </div>
+                                                    <label class="has-float-label">Check Out</label>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="inputdiv col-lg-3">
+                                                    <div class="form-floating">
+                                                        <div class="input-group" id="">
+                                                        <input type="text" class="form-control" placeholder="Choose here">
+                                                        
+                                                        </div>
+                                                    <label class="has-float-label">Total person</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 d-flex">
+                                                    <a href="#" class="redBtn h-100 w-100" data-bs-toggle="modal" data-bs-target="#modifysearchformsModal">
+                                                    Modify
+                                                    </a>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                             <!--topModify end-->
+                        
+                             <!--cart row start-->
+                             <div class="row m-auto">
+                                <!--leftsectn start-->
+                                <div class="col-lg-8 ps-0">
+                                    <div class="leftsectn">
+                                        <!--locinfo start-->
+                                        <div class="locinfo fight-schedulerow d-flex">
+                                            <div class="tripRound d-flex justify-content-between w-100">
+                                                <div class="countryRound">LOS<span>Paris</span></div>
+                                                <div class="tripmid-img">
+                                                  <div class="divider">
+                                                      <img src="images/airline/p2phome/trainicon.svg" alt="">
+                                                  </div>
+                                                </div>
+                                                <div class="countryRound">TLC<span>Basel</span></div>
+                                            </div>
+                                            
+                                        </div>
+                                         <!--locinfo end-->
+                                         <!--traindetails list start-->
+                                         <div class="trainDetails sw-highlightN">
+                                            <p class="highlight_text"><a href="#">Cheapest</a></p>
+                                            <div class="row">
+                                                <div class="col-lg-8">
+                                                    <div class="tripRound d-flex justify-content-between w-100 align-items-center">
+                                                        <div class="triptime">08:10 AM<span>11 Sep</span></div>
+                                                        <div class="tripmid-img d-flex justify-content-between align-items-center text-cnter">
+                                                        <div class="divider">
+                                                            <span class="tripdist">3h 40m</span>
+                                                        </div>
+                                                        <p class="stopinfo">Non Stop</p>
+                                                        </div>
+                                                        <div class="triptime">3h 40m<span class="text-end">11 Sep</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="pricerightinfo d-flex flex-column align-items-end">
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="stop1" value="option1">
+                                                            <label class="form-check-label inr" for="inlineRadio1">INR 80,000.00</label>
+                                                            <p>EUR 71.00</p>
+                                                        </div>
+                                                      
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--trainfaredetails start-->
+                                            <div class="trainfaredetails">
+                                               <ul>
+                                                    <li>
+                                                        <a href="javascript:void(0)" class="traindetailsbtn">
+                                                            <img src="images/icon/iIcon.svg" alt="" class="me-2"/>
+                                                            Train Details
+                                                            <i class="fa fa-angle-right ms-3"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)" class="traindetailsbtn">
+                                                            <img src="images/icon/fareicon.svg" alt="" class="me-2"/>
+                                                            More Fares<i class="fa fa-angle-right ms-3"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!--trainfaredetails end-->
+                                            <!--slide div traindetails start-->
+                                            <div class="TrainDetailsContent DetailsContent" style="display:none;">
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <div class="leftDiv d-flex">
+                                                            <div class="logodiv">
+                                                               <img src="" class="img-fluid"/>
+                                                            </div>
+                                                            <div class="rightDiv">
+                                                                <ul>
+                                                                    <li><label>08:10 AM</label> <span>:</span> Paris Gare de Lyon</li>
+                                                                    <li><label>11:50 AM</label> <span>:</span> Basel</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <ul>
+                                                            <li>
+                                                                <div class="d-flex justify-content-between align-items-center">
+                                                                    <div class="swcustom-checkbox border-0 padding-0">
+                                                                        <label class="form-check-label" for=""><input class="form-check-input me-2" type="checkbox">2nd Class Semi Flex</label>
+                                                                        <span class="checkmark"></span>
+                                                                    </div>
+                                                                    <div class="EUR">EUR 71</div>
+                                                                    <div class="Inr">INR 81,000</div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="d-flex justify-content-between align-items-center">
+                                                                    <div class="swcustom-checkbox border-0 padding-0">
+                                                                        <label class="form-check-label" for=""><input class="form-check-input me-2" type="checkbox">2nd Class Semi Flex</label>
+                                                                        <span class="checkmark"></span>
+                                                                    </div>
+                                                                    <div class="EUR">EUR 71</div>
+                                                                    <div class="Inr">INR 81,000</div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="d-flex justify-content-between align-items-center">
+                                                                    <div class="swcustom-checkbox border-0 padding-0">
+                                                                        <label class="form-check-label" for=""><input class="form-check-input me-2" type="checkbox">2nd Class Semi Flex</label>
+                                                                        <span class="checkmark"></span>
+                                                                    </div>
+                                                                    <div class="EUR">EUR 71</div>
+                                                                    <div class="Inr">INR 81,000</div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--slide div traindetails end-->
+                                          
+                                         </div>
+                                         <!--traindetails list end-->
+                                         <!--traindetails list start-->
+                                         <div class="trainDetails">
+                                           <div class="row">
+                                                <div class="col-lg-8">
+                                                    <div class="tripRound d-flex justify-content-between w-100 align-items-center">
+                                                        <div class="triptime">08:10 AM<span>11 Sep</span></div>
+                                                        <div class="tripmid-img d-flex justify-content-between align-items-center text-cnter">
+                                                        <div class="divider">
+                                                            <span class="tripdist">3h 40m</span>
+                                                        </div>
+                                                        <p class="stopinfo">Non Stop</p>
+                                                        </div>
+                                                        <div class="triptime">3h 40m<span class="text-end">11 Sep</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="pricerightinfo d-flex flex-column align-items-end">
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="stop1" value="option1">
+                                                            <label class="form-check-label inr" for="inlineRadio1">INR 80,000.00</label>
+                                                            <p>EUR 71.00</p>
+                                                        </div>
+                                                      
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--trainfaredetails start-->
+                                            <div class="trainfaredetails">
+                                               <ul>
+                                                    <li>
+                                                        <a href="#" class="traindetailsbtn"><img src="images/icon/iIcon.svg" alt="" class="me-2"/>Train Details<i class="fa fa-angle-right ms-3"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <img src="images/icon/fareicon.svg" alt="" class="me-2"/>
+                                                            More Fares<i class="fa fa-angle-right ms-3"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!--trainfaredetails end-->
+                                         </div>
+                                         <!--traindetails list end-->
+                                         <!--traindetails list start-->
+                                         <div class="trainDetails">
+                                            <div class="row">
+                                                 <div class="col-lg-8">
+                                                     <div class="tripRound d-flex justify-content-between w-100 align-items-center">
+                                                         <div class="triptime">08:10 AM<span>11 Sep</span></div>
+                                                         <div class="tripmid-img d-flex justify-content-between align-items-center text-cnter">
+                                                         <div class="divider">
+                                                             <span class="tripdist">3h 40m</span>
+                                                         </div>
+                                                         <p class="stopinfo">Non Stop</p>
+                                                         </div>
+                                                         <div class="triptime">3h 40m<span class="text-end">11 Sep</span></div>
+                                                     </div>
+                                                 </div>
+                                                 <div class="col-lg-4">
+                                                     <div class="pricerightinfo d-flex flex-column align-items-end">
+                                                         <div class="form-check form-check-inline">
+                                                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="stop1" value="option1">
+                                                             <label class="form-check-label inr" for="inlineRadio1">INR 80,000.00</label>
+                                                             <p>EUR 71.00</p>
+                                                         </div>
+                                                       
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                             <!--trainfaredetails start-->
+                                             <div class="trainfaredetails">
+                                                <ul>
+                                                     <li>
+                                                         <a href="#"><img src="images/icon/iIcon.svg" alt="" class="me-2"/>Train Details<i class="fa fa-angle-right ms-3"></i></a>
+                                                     </li>
+                                                     <li>
+                                                         <a href="#">
+                                                             <img src="images/icon/fareicon.svg" alt="" class="me-2"/>
+                                                             More Fares<i class="fa fa-angle-right ms-3"></i>
+                                                         </a>
+                                                     </li>
+                                                 </ul>
+                                             </div>
+                                             <!--trainfaredetails end-->
+                                          </div>
+                                         <!--traindetails list end-->
+                                    </div>
+                                    <div class="bookcard-rowbottom">
+                                        <div class="btngrp justify-content-between">
+                                          <a href="#" class="btn btn-border">Previous Day</a>
+                                          <a href="#" class="btn redBtn">Later Train</a>
+                                          <a href="#" class="btn  btn-border">Next Day</a>
+                                        </div>
+                                      </div>
+                                </div>
+                                
+                                <!--leftsectn end-->
+                                <!--rightsectn start-->
+                                <div class="col-lg-4 rightsec pe-0">
+                                    <div class="Cartright">
+                                        <!--mb-cartright start-->
+                                        <div id="mb-cartright">
+                                          <div class="cart-title">
+                                            <h2 class="headingTwo">Cart Items</h2>
+                                          </div>
+                                            <!--card-content start-->
+                                            <div id="ancillarycard-content">
+                                              <h4 class="card-subtitle cartitem">Train Ticket</h4>
+                                              <!--cart mid start-->
+                                              <div class="cart-mid-details">
+                                                  <!--sw-booknowcard start-->
+                                                  <div class="sw-booknowcard">
+                                                    <!--topcont start-->
+                                                    <div class="topcont">
+                                                        <div class="d-flex">
+                                                            <div class="jd-icon"><img src="images/airline/itinerary-page/icon-journey.svg" alt=""></div>
+                                                            <div>
+                                                                <p><span class="font16 Fontexbold">LYRIA </span><span>9203 - Second Class - Non Flex</span></p>
+                                                                <p>
+                                                                    <span class="hrmininfo">3H 4Min (Direct)</span>
+                                                                    <a type="button" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom" data-html="true" data-bs-custom-class="custom-popover" data-bs-title="Custom popover" data-bs-content-id="OptionMoreInfo">
+                                                                        <img src="images/icon/iIcon.svg" alt="" class="popoverimg">
+                                                                    </a>
+                                                                </p>
+                                                                <div id="OptionMoreInfo" class="d-none">
+                                                                    <!--sw-ContinuousMoreInfo start-->
+                                                                    <div class="sw-ContinuousMoreInfo">
+                                                                        <div class="generalpopup">
+                                                                        <h6><strong>Type of Pass Continuous</strong></h6>
+                                                                            <ul>
+                                                                                <li>Unlimited travel within the set selected days<br>
+                                                                                    <strong>For example: </strong>
+                                                                                    If you choose Consecutive 8 Days Swiss Travel Pass, you can travel unlimited times on Swiss Public Transport for 8 days.
+                                                                                </li>
+                                                                                <li>Pass is valid from the selected start date<br>
+                                                                                    <strong>For example: </strong>
+                                                                                    If select start date as 1<sup>st</sup> Jan 2024, then your pass is valid till 8<sup>th</sup> Jan 2024 midnight.
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!--sw-ContinuousMoreInfo end-->
+                                                                    <!--sw-flexiMoreInfo start-->
+                                                                    <div class="sw-flexiMoreInfo">
+                                                                        <div class="generalpopup">
+                                                                            <h6><strong>Type of Pass flexi</strong></h6>
+                                                                            <ul>
+                                                                                <li>Unlimited travel within 1 month from the selected start date<br>
+                                                                                    <strong>For example: </strong>
+                                                                                    If you choose Flexi 8 Days Swiss Travel Pass, you can travel unlimited times for 8 days in one month
+                                                                                </li>
+                                                                                <li>Pass is valid from the selected start date<br>
+                                                                                    <strong>For example: </strong>
+                                                                                    If you select start date as 1<sup>st</sup> Jan 2024, then your pass is valid till 30<sup>th</sup> Jan 2024 and you can unlimited travel any 8 days within these 30 days.
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                        <!--sw-flexiMoreInfo end-->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    <!--topcont end-->
+                                                  <!--roundtripmid-details start-->
+                                                    <div class="roundtripmid-details row">
+                                                   <!--col start-->
+                                                    <div class="col-lg-12">
+                                                      <ul>
+                                                        <li>
+                                                            <p>Paris Gare De Lyon</p>
+                                                            <p class="tm-date">07:22 am <span>Thu 29 Feb 2024</span></p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Basel</p>
+                                                            <p class="tm-date">10:26 pm<span>Thu 29 Feb 2024</span></p>
+                                                        </li>
+                                                      </ul>
+                                                    </div>
+                                                    <!--col end-->
+                                                    </div>
+                                                    <!--roundtripmid-details end-->
+                                                    <!--bookcard-rowtop start-->
+                                                    <div class="bookcard-rowtop">
+                                                      <div class="sw-interlogo">
+                                                        <img src="images/airline/p2phome/trainicon.svg" alt="" class="img-fluid">
+                                                        <p>Price for 1 Passenger</p>
+                                                      </div>
+                                                    
+                                                      <div class="bookclass-price">
+                                                          <p class="InR-Price">INR 4430</p>
+                                                         
+                                                      </div>
+                                                    </div>
+                                                    <!--bookcard-rowtop end-->
+                                                   
+                                                  </div>
+                                                <!--sw-booknowcard end-->
+                                                <!--fightRemove start-->
+                                                <div class="fightRemove">
+                                                  <h4 class="card-subtitle">Train Ticket</h4>
+                                                  <a href="#" id="fightRemoveBtn" class="removeBtn">remove</a>
+                                                </div>
+                                                <!--fightRemove end-->
+                                                <!--cart itemtotal start-->
+                                                <div class="cardItemTotal">
+                                                  <ul>
+                                                    <li><span>Booking Fee</span><span class="InrValue">INR 543</span></li>
+                                                    <li><span>Grand Total</span><span class="InrValue">Grand Total</span></li>
+                                                  </ul>
+                                                </div>
+                                                 <!--cart itemtotal start-->
+                                                </div>
+                                              <!--mb-cartright end-->
+                                                
+                                              </div>
+                                              <!--cart mid end-->
+                                            </div>
+                                           <!--card-content end-->
+                                             <!--CartTotal start-->
+                                             <div class="CartTotal d-flex justify-content-between align-items-center">
+                                              <p class="Inrcarttotal">INR 60543/-</p>
+                                              <a href="#" class="redBtn">Book Now<span id="cartContinue"><i class="fa fa-angle-up" aria-hidden="true"></i></span></a>
+                                             
+                                             </div>
+                                            <!--CartTotal end-->
+                                      </div>
+                                </div>
+                                
+                                 <!--rightsectn end-->
+                             </div>
+                             
+                             <!--cart row end-->
+                        </div>
+                         <!--main-contentrow end-->
+                    </div>
+                </div>
+                 <!--mid_Container container end-->
+            </div>
+        </div>
+    </div>
+<!--content holder end-->
+    <!-- <script src="js/slick.min.js"></script> -->
+    <script src="js/airlineCustom.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Footer Starts -->
+    <footer class="sw-footer">
+
+        <div class="container-fluid swissBrief d-none">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="foot_item"><img src="images/stp/swiss_logo.jpg"> A Swiss International Air Lines
+                            Company</div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="foot_item"><img src="images/stp/yrs20.jpg"> Over 2 Decades of Travel Excellence
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="foot_item"><img src="images/stp/visit_logo.jpg">Sister Concern of
+                            VisitSwitzerland.com </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="foot_item"><img src="images/stp/services.jpg"> Bouquet of Services</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer">
+            <div class="footer-top">
+                <div class="row">
+
+                    <div class="col-12 col-md-3 border-right">
+                        <div class="row">
+                            <div class="foot_head">SwissTours <i class="fa fa-plus pull-right dropdown_icon"
+                                    aria-hidden="true"></i></div>
+                            <ul class="foot_dropdown">
+                                <li><a href="about_us.html" class="fade_anim">About us</a> </li>
+                                <li><a href="partners.html" class="fade_anim">Partners</a></li>
+                                <li><a href="careers.html" class="fade_anim">Careers</a></li>
+                                <li><a href="testimonials.html" class="fade_anim">Testimonials</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- <div class="col-sm-4 col-md-3">
+                            <div class="row">
+                                <div class="foot_head">Customer Support <i class="fa fa-plus pull-right dropdown_icon" aria-hidden="true"></i></div>
+                                <ul class="foot_dropdown">
+                                    <li><a href="contact_us.html" class="fade_anim">Contact Us</a></li>
+                                    <li><a href="faqs.html" class="fade_anim">FAQs</a></li>
+                                    <li><a href="#" class="fade_anim">Sitemap</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+
+                    <div class="col-12 col-md-3 border-right px-lg-5">
+                        <div class="row">
+                            <div class="foot_head">Legal <i class="fa fa-plus pull-right dropdown_icon"
+                                    aria-hidden="true"></i></div>
+                            <ul class="foot_dropdown">
+                                <li><a href="user_agreement.html" class="fade_anim">User Agreement</a></li>
+                                <li><a href="privacy_policy.html" class="fade_anim">Privacy Policy</a></li>
+                                <li><a href="#" class="fade_anim">Verified & Secured</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 border-right px-lg-3">
+                        <div class="row">
+                            <div class="adHolder sw-adHolder">
+                                <div class="foot_head" style="text-align: center;">Accessory Partner</div>
+                                <div style="text-align: center;">
+                                    <a href="#" target="_blank">
+                                        <img src="images/airline/victorinox-logo.png" alt="victorinox logo"
+                                            class="victoximg1">
+                                        <img src="images/airline/victorinox-logo-hover.png" alt="victorinox logo"
+                                            class="victoxhoverimg">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3 ps-lg-5 mt-4 mt-md-0">
+                        <div class="row">
+                            <div class="adHolder">
+                                <div class="foot_head">Official Time Partner</div>
+                                <div class="adBlock">
+                                    <iframe src="watch/index.html" scrolling="no" frameborder="0" width="100%"
+                                        height="100%" allowtransparency="true"></iframe>
+                                    <!-- <a href=""><img src="images/tagheuer.jpg"></a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="footer-mid">
+                <a href="#"><img src="images/airline/footermid-logo.svg" alt="swiss-logo"><span>Swiss International Air
+                        Lines Company</span></a>
+            </div>
+            <div class="footer-bottom bottom">
+                <div class="row">
+
+                    <div class="col-xs-6 social">
+                        <div class="row d-flex justify-content-center">
+
+                            <!-- <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> -->
+                            <a href="https://www.instagram.com/_swisstours/" target="_blank"><i class="fa fa-instagram"
+                                    aria-hidden="true"></i></a>
+                            <a href="https://www.facebook.com/pages/Swisstours/256257954432198" target="_blank"><i
+                                    class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 copyright">
+                        <div class="row">&copy; 2023 Swisstours.com All rights reserved.</div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Ends -->
+<!-- modifysearchformsModal start -->
+<div class="modal fade p2p-home p2pinner" id="modifysearchformsModal" tabindex="-1" aria-labelledby="modifysearchformslLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modifysearchformslLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        <!--searchform start-->
+        <div class="search_forms">
+            <!--row start-->
+            <div class="row mcDiv">
+                <!--form-group start-->
+                <div class="col-lg-4 form-group position-relative">
+                    <!--highlight_error-->
+                    <div class="border-box">
+                        <div class="form-group-input">
+                            <img src="/images/airline/location2-icon.svg" alt="" class="d-md-block d-lg-none left-inuticon">
+                            <label>From</label>
+                            <div class="input-box">
+                                <div class="select-wrapper">
+                                    <div class="autocomplete-drop-down">
+                                        <div class="countries-input-container">
+                                            <div class="d-flex country-inputtext">
+                                                <input name="ctl00$ContentPlaceHolder$txtFromAirportRT1" type="text" id="ContentPlaceHolder_txtFromAirportRT1" placeholder="City" class="countries-input ui-autocomplete-input" on-click="resizeInput(this)" value="Mumbai India" autocomplete="off">
+                                                <span id="ContentPlaceHolder_spnFromAirportRT1" class="abbr">BOM</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="countries-list-container">
+                                        <ul class="countries-list"><li class="country" data-value="AF Afghanistan" data-abbr="AF" data-country="Afghanistan"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Afghanistan</span><span class="country--abbreviation">AF</span> </li><li class="country" data-value="AL Albania" data-abbr="AL" data-country="Albania"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Albania</span><span class="country--abbreviation">AL</span> </li><li class="country" data-value="DZ Algeria" data-abbr="DZ" data-country="Algeria"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Algeria</span><span class="country--abbreviation">DZ</span> </li><li class="country" data-value="AS American Samoa" data-abbr="AS" data-country="American Samoa"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">American Samoa</span><span class="country--abbreviation">AS</span> </li><li class="country" data-value="AD Andorra" data-abbr="AD" data-country="Andorra"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Andorra</span><span class="country--abbreviation">AD</span> </li><li class="country" data-value="AO Angola" data-abbr="AO" data-country="Angola"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Angola</span><span class="country--abbreviation">AO</span> </li><li class="country" data-value="AI Anguilla" data-abbr="AI" data-country="Anguilla"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Anguilla</span><span class="country--abbreviation">AI</span> </li><li class="country" data-value="AQ Antarctica" data-abbr="AQ" data-country="Antarctica"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Antarctica</span><span class="country--abbreviation">AQ</span> </li><li class="country" data-value="AG Antigua and Barbuda" data-abbr="AG" data-country="Antigua and Barbuda"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Antigua and Barbuda</span><span class="country--abbreviation">AG</span> </li><li class="country" data-value="AR Argentina" data-abbr="AR" data-country="Argentina"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Argentina</span><span class="country--abbreviation">AR</span> </li><li class="country" data-value="AM Armenia" data-abbr="AM" data-country="Armenia"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Armenia</span><span class="country--abbreviation">AM</span> </li><li class="country" data-value="AW Aruba" data-abbr="AW" data-country="Aruba"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Aruba</span><span class="country--abbreviation">AW</span> </li><li class="country" data-value="AU Australia" data-abbr="AU" data-country="Australia"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Australia</span><span class="country--abbreviation">AU</span> </li><li class="country" data-value="AT Austria" data-abbr="AT" data-country="Austria"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Austria</span><span class="country--abbreviation">AT</span> </li><li class="country" data-value="AZ Azerbaijan" data-abbr="AZ" data-country="Azerbaijan"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Azerbaijan</span><span class="country--abbreviation">AZ</span> </li><li class="country" data-value="BS Bahamas" data-abbr="BS" data-country="Bahamas"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Bahamas</span><span class="country--abbreviation">BS</span> </li><li class="country" data-value="BH Bahrain" data-abbr="BH" data-country="Bahrain"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Bahrain</span><span class="country--abbreviation">BH</span> </li><li class="country" data-value="BD Bangladesh" data-abbr="BD" data-country="Bangladesh"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Bangladesh</span><span class="country--abbreviation">BD</span> </li><li class="country" data-value="BB Barbados" data-abbr="BB" data-country="Barbados"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Barbados</span><span class="country--abbreviation">BB</span> </li><li class="country" data-value="BY Belarus" data-abbr="BY" data-country="Belarus"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Belarus</span><span class="country--abbreviation">BY</span> </li><li class="country" data-value="BE Belgium" data-abbr="BE" data-country="Belgium"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Belgium</span><span class="country--abbreviation">BE</span> </li><li class="country" data-value="BZ Belize" data-abbr="BZ" data-country="Belize"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Belize</span><span class="country--abbreviation">BZ</span> </li><li class="country" data-value="BJ Benin" data-abbr="BJ" data-country="Benin"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Benin</span><span class="country--abbreviation">BJ</span> </li><li class="country" data-value="BM Bermuda" data-abbr="BM" data-country="Bermuda"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Bermuda</span><span class="country--abbreviation">BM</span> </li><li class="country" data-value="BT Bhutan" data-abbr="BT" data-country="Bhutan"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Bhutan</span><span class="country--abbreviation">BT</span> </li><li class="country" data-value="BO Bolivia" data-abbr="BO" data-country="Bolivia"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Bolivia</span><span class="country--abbreviation">BO</span> </li><li class="country" data-value="BA Bosnia and Herzegovina" data-abbr="BA" data-country="Bosnia and Herzegovina"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Bosnia and Herzegovina</span><span class="country--abbreviation">BA</span> </li><li class="country" data-value="BW Botswana" data-abbr="BW" data-country="Botswana"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Botswana</span><span class="country--abbreviation">BW</span> </li><li class="country" data-value="BV Bouvet Island" data-abbr="BV" data-country="Bouvet Island"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Bouvet Island</span><span class="country--abbreviation">BV</span> </li><li class="country" data-value="BR Brazil" data-abbr="BR" data-country="Brazil"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Brazil</span><span class="country--abbreviation">BR</span> </li><li class="country" data-value="IO British Indian Ocean Territory" data-abbr="IO" data-country="British Indian Ocean Territory"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">British Indian Ocean Territory</span><span class="country--abbreviation">IO</span> </li><li class="country" data-value="BN Brunei" data-abbr="BN" data-country="Brunei"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Brunei</span><span class="country--abbreviation">BN</span> </li><li class="country" data-value="BG Bulgaria" data-abbr="BG" data-country="Bulgaria"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Bulgaria</span><span class="country--abbreviation">BG</span> </li><li class="country" data-value="BF Burkina Faso" data-abbr="BF" data-country="Burkina Faso"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Burkina Faso</span><span class="country--abbreviation">BF</span> </li><li class="country" data-value="BI Burundi" data-abbr="BI" data-country="Burundi"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Burundi</span><span class="country--abbreviation">BI</span> </li><li class="country" data-value="KH Cambodia" data-abbr="KH" data-country="Cambodia"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Cambodia</span><span class="country--abbreviation">KH</span> </li><li class="country" data-value="CM Cameroon" data-abbr="CM" data-country="Cameroon"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Cameroon</span><span class="country--abbreviation">CM</span> </li><li class="country" data-value="CA Canada" data-abbr="CA" data-country="Canada"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Canada</span><span class="country--abbreviation">CA</span> </li><li class="country" data-value="CV Cape Verde" data-abbr="CV" data-country="Cape Verde"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Cape Verde</span><span class="country--abbreviation">CV</span> </li><li class="country" data-value="KY Cayman Islands" data-abbr="KY" data-country="Cayman Islands"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Cayman Islands</span><span class="country--abbreviation">KY</span> </li><li class="country" data-value="CF Central African Republic" data-abbr="CF" data-country="Central African Republic"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Central African Republic</span><span class="country--abbreviation">CF</span> </li><li class="country" data-value="TD Chad" data-abbr="TD" data-country="Chad"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Chad</span><span class="country--abbreviation">TD</span> </li><li class="country" data-value="CL Chile" data-abbr="CL" data-country="Chile"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Chile</span><span class="country--abbreviation">CL</span> </li><li class="country" data-value="CN China" data-abbr="CN" data-country="China"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">China</span><span class="country--abbreviation">CN</span> </li><li class="country" data-value="CX Christmas Island" data-abbr="CX" data-country="Christmas Island"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Christmas Island</span><span class="country--abbreviation">CX</span> </li><li class="country" data-value="CC Cocos (Keeling) Islands" data-abbr="CC" data-country="Cocos (Keeling) Islands"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Cocos (Keeling) Islands</span><span class="country--abbreviation">CC</span> </li><li class="country" data-value="CO Colombia" data-abbr="CO" data-country="Colombia"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Colombia</span><span class="country--abbreviation">CO</span> </li><li class="country" data-value="KM Comoros" data-abbr="KM" data-country="Comoros"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Comoros</span><span class="country--abbreviation">KM</span> </li><li class="country" data-value="CG Congo" data-abbr="CG" data-country="Congo"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Congo</span><span class="country--abbreviation">CG</span> </li><li class="country" data-value="CK Cook Islands" data-abbr="CK" data-country="Cook Islands"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Cook Islands</span><span class="country--abbreviation">CK</span> </li><li class="country" data-value="CR Costa Rica" data-abbr="CR" data-country="Costa Rica"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Costa Rica</span><span class="country--abbreviation">CR</span> </li><li class="country" data-value="HR Croatia" data-abbr="HR" data-country="Croatia"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Croatia</span><span class="country--abbreviation">HR</span> </li><li class="country" data-value="CU Cuba" data-abbr="CU" data-country="Cuba"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Cuba</span><span class="country--abbreviation">CU</span> </li><li class="country" data-value="CY Cyprus" data-abbr="CY" data-country="Cyprus"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Cyprus</span><span class="country--abbreviation">CY</span> </li><li class="country" data-value="CZ Czech Republic" data-abbr="CZ" data-country="Czech Republic"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Czech Republic</span><span class="country--abbreviation">CZ</span> </li><li class="country" data-value="DK Denmark" data-abbr="DK" data-country="Denmark"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Denmark</span><span class="country--abbreviation">DK</span> </li><li class="country" data-value="DJ Djibouti" data-abbr="DJ" data-country="Djibouti"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Djibouti</span><span class="country--abbreviation">DJ</span> </li><li class="country" data-value="DM Dominica" data-abbr="DM" data-country="Dominica"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Dominica</span><span class="country--abbreviation">DM</span> </li><li class="country" data-value="DO Dominican Republic" data-abbr="DO" data-country="Dominican Republic"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Dominican Republic</span><span class="country--abbreviation">DO</span> </li><li class="country" data-value="TP East Timor" data-abbr="TP" data-country="East Timor"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">East Timor</span><span class="country--abbreviation">TP</span> </li><li class="country" data-value="EC Ecuador" data-abbr="EC" data-country="Ecuador"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Ecuador</span><span class="country--abbreviation">EC</span> </li><li class="country" data-value="EG Egypt" data-abbr="EG" data-country="Egypt"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Egypt</span><span class="country--abbreviation">EG</span> </li><li class="country" data-value="SV El Salvador" data-abbr="SV" data-country="El Salvador"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">El Salvador</span><span class="country--abbreviation">SV</span> </li><li class="country" data-value="null England" data-abbr="null" data-country="England"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">England</span><span class="country--abbreviation">null</span> </li><li class="country" data-value="GQ Equatorial Guinea" data-abbr="GQ" data-country="Equatorial Guinea"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Equatorial Guinea</span><span class="country--abbreviation">GQ</span> </li><li class="country" data-value="ER Eritrea" data-abbr="ER" data-country="Eritrea"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Eritrea</span><span class="country--abbreviation">ER</span> </li><li class="country" data-value="EE Estonia" data-abbr="EE" data-country="Estonia"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Estonia</span><span class="country--abbreviation">EE</span> </li><li class="country" data-value="ET Ethiopia" data-abbr="ET" data-country="Ethiopia"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Ethiopia</span><span class="country--abbreviation">ET</span> </li><li class="country" data-value="FK Falkland Islands" data-abbr="FK" data-country="Falkland Islands"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Falkland Islands</span><span class="country--abbreviation">FK</span> </li><li class="country" data-value="FO Faroe Islands" data-abbr="FO" data-country="Faroe Islands"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Faroe Islands</span><span class="country--abbreviation">FO</span> </li><li class="country" data-value="FJ Fiji Islands" data-abbr="FJ" data-country="Fiji Islands"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Fiji Islands</span><span class="country--abbreviation">FJ</span> </li><li class="country" data-value="FI Finland" data-abbr="FI" data-country="Finland"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Finland</span><span class="country--abbreviation">FI</span> </li><li class="country" data-value="FR France" data-abbr="FR" data-country="France"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">France</span><span class="country--abbreviation">FR</span> </li><li class="country" data-value="GF French Guiana" data-abbr="GF" data-country="French Guiana"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">French Guiana</span><span class="country--abbreviation">GF</span> </li><li class="country" data-value="PF French Polynesia" data-abbr="PF" data-country="French Polynesia"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">French Polynesia</span><span class="country--abbreviation">PF</span> </li><li class="country" data-value="TF French Southern territories" data-abbr="TF" data-country="French Southern territories"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">French Southern territories</span><span class="country--abbreviation">TF</span> </li><li class="country" data-value="GA Gabon" data-abbr="GA" data-country="Gabon"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Gabon</span><span class="country--abbreviation">GA</span> </li><li class="country" data-value="GM Gambia" data-abbr="GM" data-country="Gambia"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Gambia</span><span class="country--abbreviation">GM</span> </li><li class="country" data-value="GE Georgia" data-abbr="GE" data-country="Georgia"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Georgia</span><span class="country--abbreviation">GE</span> </li><li class="country" data-value="DE Germany" data-abbr="DE" data-country="Germany"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Germany</span><span class="country--abbreviation">DE</span> </li><li class="country" data-value="GH Ghana" data-abbr="GH" data-country="Ghana"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Ghana</span><span class="country--abbreviation">GH</span> </li><li class="country" data-value="GI Gibraltar" data-abbr="GI" data-country="Gibraltar"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Gibraltar</span><span class="country--abbreviation">GI</span> </li><li class="country" data-value="GR Greece" data-abbr="GR" data-country="Greece"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Greece</span><span class="country--abbreviation">GR</span> </li><li class="country" data-value="GL Greenland" data-abbr="GL" data-country="Greenland"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Greenland</span><span class="country--abbreviation">GL</span> </li><li class="country" data-value="GD Grenada" data-abbr="GD" data-country="Grenada"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Grenada</span><span class="country--abbreviation">GD</span> </li><li class="country" data-value="GP Guadeloupe" data-abbr="GP" data-country="Guadeloupe"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Guadeloupe</span><span class="country--abbreviation">GP</span> </li><li class="country" data-value="GU Guam" data-abbr="GU" data-country="Guam"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Guam</span><span class="country--abbreviation">GU</span> </li><li class="country" data-value="GT Guatemala" data-abbr="GT" data-country="Guatemala"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Guatemala</span><span class="country--abbreviation">GT</span> </li><li class="country" data-value="GN Guinea" data-abbr="GN" data-country="Guinea"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Guinea</span><span class="country--abbreviation">GN</span> </li><li class="country" data-value="GW Guinea-Bissau" data-abbr="GW" data-country="Guinea-Bissau"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Guinea-Bissau</span><span class="country--abbreviation">GW</span> </li><li class="country" data-value="GY Guyana" data-abbr="GY" data-country="Guyana"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Guyana</span><span class="country--abbreviation">GY</span> </li><li class="country" data-value="HT Haiti" data-abbr="HT" data-country="Haiti"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Haiti</span><span class="country--abbreviation">HT</span> </li><li class="country" data-value="HM Heard Island and McDonald Islands" data-abbr="HM" data-country="Heard Island and McDonald Islands"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Heard Island and McDonald Islands</span><span class="country--abbreviation">HM</span> </li><li class="country" data-value="VA Holy See (Vatican City State)" data-abbr="VA" data-country="Holy See (Vatican City State)"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Holy See (Vatican City State)</span><span class="country--abbreviation">VA</span> </li><li class="country" data-value="HN Honduras" data-abbr="HN" data-country="Honduras"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Honduras</span><span class="country--abbreviation">HN</span> </li><li class="country" data-value="HK Hong Kong" data-abbr="HK" data-country="Hong Kong"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Hong Kong</span><span class="country--abbreviation">HK</span> </li><li class="country" data-value="HU Hungary" data-abbr="HU" data-country="Hungary"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Hungary</span><span class="country--abbreviation">HU</span> </li><li class="country" data-value="IS Iceland" data-abbr="IS" data-country="Iceland"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Iceland</span><span class="country--abbreviation">IS</span> </li><li class="country" data-value="IN India" data-abbr="IN" data-country="India"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">India</span><span class="country--abbreviation">IN</span> </li><li class="country" data-value="ID Indonesia" data-abbr="ID" data-country="Indonesia"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Indonesia</span><span class="country--abbreviation">ID</span> </li><li class="country" data-value="IR Iran" data-abbr="IR" data-country="Iran"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Iran</span><span class="country--abbreviation">IR</span> </li><li class="country" data-value="IQ Iraq" data-abbr="IQ" data-country="Iraq"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Iraq</span><span class="country--abbreviation">IQ</span> </li><li class="country" data-value="IE Ireland" data-abbr="IE" data-country="Ireland"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Ireland</span><span class="country--abbreviation">IE</span> </li><li class="country" data-value="IL Israel" data-abbr="IL" data-country="Israel"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Israel</span><span class="country--abbreviation">IL</span> </li><li class="country" data-value="IT Italy" data-abbr="IT" data-country="Italy"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Italy</span><span class="country--abbreviation">IT</span> </li><li class="country" data-value="CI Ivory Coast" data-abbr="CI" data-country="Ivory Coast"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Ivory Coast</span><span class="country--abbreviation">CI</span> </li><li class="country" data-value="JM Jamaica" data-abbr="JM" data-country="Jamaica"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Jamaica</span><span class="country--abbreviation">JM</span> </li><li class="country" data-value="JP Japan" data-abbr="JP" data-country="Japan"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Japan</span><span class="country--abbreviation">JP</span> </li><li class="country" data-value="JO Jordan" data-abbr="JO" data-country="Jordan"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Jordan</span><span class="country--abbreviation">JO</span> </li><li class="country" data-value="null Kazakstan" data-abbr="null" data-country="Kazakstan"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Kazakstan</span><span class="country--abbreviation">null</span> </li><li class="country" data-value="KE Kenya" data-abbr="KE" data-country="Kenya"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Kenya</span><span class="country--abbreviation">KE</span> </li><li class="country" data-value="KI Kiribati" data-abbr="KI" data-country="Kiribati"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Kiribati</span><span class="country--abbreviation">KI</span> </li><li class="country" data-value="KW Kuwait" data-abbr="KW" data-country="Kuwait"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Kuwait</span><span class="country--abbreviation">KW</span> </li><li class="country" data-value="KG Kyrgyzstan" data-abbr="KG" data-country="Kyrgyzstan"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Kyrgyzstan</span><span class="country--abbreviation">KG</span> </li><li class="country" data-value="LA Laos" data-abbr="LA" data-country="Laos"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Laos</span><span class="country--abbreviation">LA</span> </li><li class="country" data-value="LV Latvia" data-abbr="LV" data-country="Latvia"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Latvia</span><span class="country--abbreviation">LV</span> </li><li class="country" data-value="LB Lebanon" data-abbr="LB" data-country="Lebanon"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Lebanon</span><span class="country--abbreviation">LB</span> </li><li class="country" data-value="LS Lesotho" data-abbr="LS" data-country="Lesotho"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Lesotho</span><span class="country--abbreviation">LS</span> </li><li class="country" data-value="LR Liberia" data-abbr="LR" data-country="Liberia"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Liberia</span><span class="country--abbreviation">LR</span> </li><li class="country" data-value="LY Libyan Arab Jamahiriya" data-abbr="LY" data-country="Libyan Arab Jamahiriya"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Libyan Arab Jamahiriya</span><span class="country--abbreviation">LY</span> </li><li class="country" data-value="LI Liechtenstein" data-abbr="LI" data-country="Liechtenstein"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Liechtenstein</span><span class="country--abbreviation">LI</span> </li><li class="country" data-value="LT Lithuania" data-abbr="LT" data-country="Lithuania"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Lithuania</span><span class="country--abbreviation">LT</span> </li><li class="country" data-value="LU Luxembourg" data-abbr="LU" data-country="Luxembourg"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Luxembourg</span><span class="country--abbreviation">LU</span> </li><li class="country" data-value="MO Macao" data-abbr="MO" data-country="Macao"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Macao</span><span class="country--abbreviation">MO</span> </li><li class="country" data-value="MK Macedonia" data-abbr="MK" data-country="Macedonia"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Macedonia</span><span class="country--abbreviation">MK</span> </li><li class="country" data-value="MG Madagascar" data-abbr="MG" data-country="Madagascar"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Madagascar</span><span class="country--abbreviation">MG</span> </li><li class="country" data-value="MW Malawi" data-abbr="MW" data-country="Malawi"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Malawi</span><span class="country--abbreviation">MW</span> </li><li class="country" data-value="MY Malaysia" data-abbr="MY" data-country="Malaysia"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Malaysia</span><span class="country--abbreviation">MY</span> </li><li class="country" data-value="MV Maldives" data-abbr="MV" data-country="Maldives"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Maldives</span><span class="country--abbreviation">MV</span> </li><li class="country" data-value="ML Mali" data-abbr="ML" data-country="Mali"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Mali</span><span class="country--abbreviation">ML</span> </li><li class="country" data-value="MT Malta" data-abbr="MT" data-country="Malta"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Malta</span><span class="country--abbreviation">MT</span> </li><li class="country" data-value="MH Marshall Islands" data-abbr="MH" data-country="Marshall Islands"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Marshall Islands</span><span class="country--abbreviation">MH</span> </li><li class="country" data-value="MQ Martinique" data-abbr="MQ" data-country="Martinique"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Martinique</span><span class="country--abbreviation">MQ</span> </li><li class="country" data-value="MR Mauritania" data-abbr="MR" data-country="Mauritania"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Mauritania</span><span class="country--abbreviation">MR</span> </li><li class="country" data-value="MU Mauritius" data-abbr="MU" data-country="Mauritius"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Mauritius</span><span class="country--abbreviation">MU</span> </li><li class="country" data-value="YT Mayotte" data-abbr="YT" data-country="Mayotte"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Mayotte</span><span class="country--abbreviation">YT</span> </li><li class="country" data-value="MX Mexico" data-abbr="MX" data-country="Mexico"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Mexico</span><span class="country--abbreviation">MX</span> </li><li class="country" data-value="null Micronesia, Federated States of" data-abbr="null" data-country="Micronesia, Federated States of"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Micronesia, Federated States of</span><span class="country--abbreviation">null</span> </li><li class="country" data-value="MD Moldova" data-abbr="MD" data-country="Moldova"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Moldova</span><span class="country--abbreviation">MD</span> </li><li class="country" data-value="MC Monaco" data-abbr="MC" data-country="Monaco"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Monaco</span><span class="country--abbreviation">MC</span> </li><li class="country" data-value="MN Mongolia" data-abbr="MN" data-country="Mongolia"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Mongolia</span><span class="country--abbreviation">MN</span> </li><li class="country" data-value="MS Montserrat" data-abbr="MS" data-country="Montserrat"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Montserrat</span><span class="country--abbreviation">MS</span> </li><li class="country" data-value="MA Morocco" data-abbr="MA" data-country="Morocco"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Morocco</span><span class="country--abbreviation">MA</span> </li><li class="country" data-value="MZ Mozambique" data-abbr="MZ" data-country="Mozambique"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Mozambique</span><span class="country--abbreviation">MZ</span> </li><li class="country" data-value="MM Myanmar" data-abbr="MM" data-country="Myanmar"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Myanmar</span><span class="country--abbreviation">MM</span> </li><li class="country" data-value="NA Namibia" data-abbr="NA" data-country="Namibia"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Namibia</span><span class="country--abbreviation">NA</span> </li><li class="country" data-value="NR Nauru" data-abbr="NR" data-country="Nauru"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Nauru</span><span class="country--abbreviation">NR</span> </li><li class="country" data-value="NP Nepal" data-abbr="NP" data-country="Nepal"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Nepal</span><span class="country--abbreviation">NP</span> </li><li class="country" data-value="NL Netherlands" data-abbr="NL" data-country="Netherlands"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Netherlands</span><span class="country--abbreviation">NL</span> </li><li class="country" data-value="AN Netherlands Antilles" data-abbr="AN" data-country="Netherlands Antilles"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Netherlands Antilles</span><span class="country--abbreviation">AN</span> </li><li class="country" data-value="NC New Caledonia" data-abbr="NC" data-country="New Caledonia"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">New Caledonia</span><span class="country--abbreviation">NC</span> </li><li class="country" data-value="NZ New Zealand" data-abbr="NZ" data-country="New Zealand"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">New Zealand</span><span class="country--abbreviation">NZ</span> </li><li class="country" data-value="NI Nicaragua" data-abbr="NI" data-country="Nicaragua"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Nicaragua</span><span class="country--abbreviation">NI</span> </li><li class="country" data-value="NE Niger" data-abbr="NE" data-country="Niger"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Niger</span><span class="country--abbreviation">NE</span> </li><li class="country" data-value="NG Nigeria" data-abbr="NG" data-country="Nigeria"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Nigeria</span><span class="country--abbreviation">NG</span> </li><li class="country" data-value="NU Niue" data-abbr="NU" data-country="Niue"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Niue</span><span class="country--abbreviation">NU</span> </li><li class="country" data-value="NF Norfolk Island" data-abbr="NF" data-country="Norfolk Island"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Norfolk Island</span><span class="country--abbreviation">NF</span> </li><li class="country" data-value="KP North Korea" data-abbr="KP" data-country="North Korea"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">North Korea</span><span class="country--abbreviation">KP</span> </li><li class="country" data-value="null Northern Ireland" data-abbr="null" data-country="Northern Ireland"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Northern Ireland</span><span class="country--abbreviation">null</span> </li><li class="country" data-value="MP Northern Mariana Islands" data-abbr="MP" data-country="Northern Mariana Islands"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Northern Mariana Islands</span><span class="country--abbreviation">MP</span> </li><li class="country" data-value="NO Norway" data-abbr="NO" data-country="Norway"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Norway</span><span class="country--abbreviation">NO</span> </li><li class="country" data-value="OM Oman" data-abbr="OM" data-country="Oman"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Oman</span><span class="country--abbreviation">OM</span> </li><li class="country" data-value="PK Pakistan" data-abbr="PK" data-country="Pakistan"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Pakistan</span><span class="country--abbreviation">PK</span> </li><li class="country" data-value="PW Palau" data-abbr="PW" data-country="Palau"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Palau</span><span class="country--abbreviation">PW</span> </li><li class="country" data-value="PS Palestine" data-abbr="PS" data-country="Palestine"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Palestine</span><span class="country--abbreviation">PS</span> </li><li class="country" data-value="PA Panama" data-abbr="PA" data-country="Panama"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Panama</span><span class="country--abbreviation">PA</span> </li><li class="country" data-value="PG Papua New Guinea" data-abbr="PG" data-country="Papua New Guinea"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Papua New Guinea</span><span class="country--abbreviation">PG</span> </li><li class="country" data-value="PY Paraguay" data-abbr="PY" data-country="Paraguay"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Paraguay</span><span class="country--abbreviation">PY</span> </li><li class="country" data-value="PE Peru" data-abbr="PE" data-country="Peru"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Peru</span><span class="country--abbreviation">PE</span> </li><li class="country" data-value="PH Philippines" data-abbr="PH" data-country="Philippines"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Philippines</span><span class="country--abbreviation">PH</span> </li><li class="country" data-value="PN Pitcairn" data-abbr="PN" data-country="Pitcairn"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Pitcairn</span><span class="country--abbreviation">PN</span> </li><li class="country" data-value="PL Poland" data-abbr="PL" data-country="Poland"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Poland</span><span class="country--abbreviation">PL</span> </li><li class="country" data-value="PT Portugal" data-abbr="PT" data-country="Portugal"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Portugal</span><span class="country--abbreviation">PT</span> </li><li class="country" data-value="PR Puerto Rico" data-abbr="PR" data-country="Puerto Rico"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Puerto Rico</span><span class="country--abbreviation">PR</span> </li><li class="country" data-value="QA Qatar" data-abbr="QA" data-country="Qatar"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Qatar</span><span class="country--abbreviation">QA</span> </li><li class="country" data-value="RE Reunion" data-abbr="RE" data-country="Reunion"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Reunion</span><span class="country--abbreviation">RE</span> </li><li class="country" data-value="RO Romania" data-abbr="RO" data-country="Romania"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Romania</span><span class="country--abbreviation">RO</span> </li><li class="country" data-value="RU Russian Federation" data-abbr="RU" data-country="Russian Federation"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Russian Federation</span><span class="country--abbreviation">RU</span> </li><li class="country" data-value="RW Rwanda" data-abbr="RW" data-country="Rwanda"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Rwanda</span><span class="country--abbreviation">RW</span> </li><li class="country" data-value="SH Saint Helena" data-abbr="SH" data-country="Saint Helena"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Saint Helena</span><span class="country--abbreviation">SH</span> </li><li class="country" data-value="KN Saint Kitts and Nevis" data-abbr="KN" data-country="Saint Kitts and Nevis"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Saint Kitts and Nevis</span><span class="country--abbreviation">KN</span> </li><li class="country" data-value="LC Saint Lucia" data-abbr="LC" data-country="Saint Lucia"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Saint Lucia</span><span class="country--abbreviation">LC</span> </li><li class="country" data-value="PM Saint Pierre and Miquelon" data-abbr="PM" data-country="Saint Pierre and Miquelon"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Saint Pierre and Miquelon</span><span class="country--abbreviation">PM</span> </li><li class="country" data-value="VC Saint Vincent and the Grenadines" data-abbr="VC" data-country="Saint Vincent and the Grenadines"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Saint Vincent and the Grenadines</span><span class="country--abbreviation">VC</span> </li><li class="country" data-value="WS Samoa" data-abbr="WS" data-country="Samoa"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Samoa</span><span class="country--abbreviation">WS</span> </li><li class="country" data-value="SM San Marino" data-abbr="SM" data-country="San Marino"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">San Marino</span><span class="country--abbreviation">SM</span> </li><li class="country" data-value="ST Sao Tome and Principe" data-abbr="ST" data-country="Sao Tome and Principe"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Sao Tome and Principe</span><span class="country--abbreviation">ST</span> </li><li class="country" data-value="SA Saudi Arabia" data-abbr="SA" data-country="Saudi Arabia"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Saudi Arabia</span><span class="country--abbreviation">SA</span> </li><li class="country" data-value="null Scotland" data-abbr="null" data-country="Scotland"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Scotland</span><span class="country--abbreviation">null</span> </li><li class="country" data-value="SN Senegal" data-abbr="SN" data-country="Senegal"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Senegal</span><span class="country--abbreviation">SN</span> </li><li class="country" data-value="SC Seychelles" data-abbr="SC" data-country="Seychelles"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Seychelles</span><span class="country--abbreviation">SC</span> </li><li class="country" data-value="SL Sierra Leone" data-abbr="SL" data-country="Sierra Leone"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Sierra Leone</span><span class="country--abbreviation">SL</span> </li><li class="country" data-value="SG Singapore" data-abbr="SG" data-country="Singapore"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Singapore</span><span class="country--abbreviation">SG</span> </li><li class="country" data-value="SK Slovakia" data-abbr="SK" data-country="Slovakia"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Slovakia</span><span class="country--abbreviation">SK</span> </li><li class="country" data-value="SI Slovenia" data-abbr="SI" data-country="Slovenia"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Slovenia</span><span class="country--abbreviation">SI</span> </li><li class="country" data-value="SB Solomon Islands" data-abbr="SB" data-country="Solomon Islands"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Solomon Islands</span><span class="country--abbreviation">SB</span> </li><li class="country" data-value="SO Somalia" data-abbr="SO" data-country="Somalia"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Somalia</span><span class="country--abbreviation">SO</span> </li><li class="country" data-value="ZA South Africa" data-abbr="ZA" data-country="South Africa"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">South Africa</span><span class="country--abbreviation">ZA</span> </li><li class="country" data-value="GS South Georgia and the South Sandwich Islands" data-abbr="GS" data-country="South Georgia and the South Sandwich Islands"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">South Georgia and the South Sandwich Islands</span><span class="country--abbreviation">GS</span> </li><li class="country" data-value="KR South Korea" data-abbr="KR" data-country="South Korea"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">South Korea</span><span class="country--abbreviation">KR</span> </li><li class="country" data-value="null South Sudan" data-abbr="null" data-country="South Sudan"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">South Sudan</span><span class="country--abbreviation">null</span> </li><li class="country" data-value="ES Spain" data-abbr="ES" data-country="Spain"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Spain</span><span class="country--abbreviation">ES</span> </li><li class="country" data-value="null SriLanka" data-abbr="null" data-country="SriLanka"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">SriLanka</span><span class="country--abbreviation">null</span> </li><li class="country" data-value="SD Sudan" data-abbr="SD" data-country="Sudan"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Sudan</span><span class="country--abbreviation">SD</span> </li><li class="country" data-value="SR Suriname" data-abbr="SR" data-country="Suriname"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Suriname</span><span class="country--abbreviation">SR</span> </li><li class="country" data-value="SJ Svalbard and Jan Mayen" data-abbr="SJ" data-country="Svalbard and Jan Mayen"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Svalbard and Jan Mayen</span><span class="country--abbreviation">SJ</span> </li><li class="country" data-value="SZ Swaziland" data-abbr="SZ" data-country="Swaziland"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Swaziland</span><span class="country--abbreviation">SZ</span> </li><li class="country" data-value="SE Sweden" data-abbr="SE" data-country="Sweden"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Sweden</span><span class="country--abbreviation">SE</span> </li><li class="country" data-value="CH Switzerland" data-abbr="CH" data-country="Switzerland"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Switzerland</span><span class="country--abbreviation">CH</span> </li><li class="country" data-value="SY Syria" data-abbr="SY" data-country="Syria"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Syria</span><span class="country--abbreviation">SY</span> </li><li class="country" data-value="TJ Tajikistan" data-abbr="TJ" data-country="Tajikistan"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Tajikistan</span><span class="country--abbreviation">TJ</span> </li><li class="country" data-value="TZ Tanzania" data-abbr="TZ" data-country="Tanzania"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Tanzania</span><span class="country--abbreviation">TZ</span> </li><li class="country" data-value="TH Thailand" data-abbr="TH" data-country="Thailand"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Thailand</span><span class="country--abbreviation">TH</span> </li><li class="country" data-value="null The Democratic Republic of Congo" data-abbr="null" data-country="The Democratic Republic of Congo"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">The Democratic Republic of Congo</span><span class="country--abbreviation">null</span> </li><li class="country" data-value="TG Togo" data-abbr="TG" data-country="Togo"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Togo</span><span class="country--abbreviation">TG</span> </li><li class="country" data-value="TK Tokelau" data-abbr="TK" data-country="Tokelau"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Tokelau</span><span class="country--abbreviation">TK</span> </li><li class="country" data-value="TO Tonga" data-abbr="TO" data-country="Tonga"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Tonga</span><span class="country--abbreviation">TO</span> </li><li class="country" data-value="TT Trinidad and Tobago" data-abbr="TT" data-country="Trinidad and Tobago"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Trinidad and Tobago</span><span class="country--abbreviation">TT</span> </li><li class="country" data-value="TN Tunisia" data-abbr="TN" data-country="Tunisia"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Tunisia</span><span class="country--abbreviation">TN</span> </li><li class="country" data-value="TR Turkey" data-abbr="TR" data-country="Turkey"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Turkey</span><span class="country--abbreviation">TR</span> </li><li class="country" data-value="TM Turkmenistan" data-abbr="TM" data-country="Turkmenistan"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Turkmenistan</span><span class="country--abbreviation">TM</span> </li><li class="country" data-value="TC Turks and Caicos Islands" data-abbr="TC" data-country="Turks and Caicos Islands"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Turks and Caicos Islands</span><span class="country--abbreviation">TC</span> </li><li class="country" data-value="TV Tuvalu" data-abbr="TV" data-country="Tuvalu"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Tuvalu</span><span class="country--abbreviation">TV</span> </li><li class="country" data-value="UG Uganda" data-abbr="UG" data-country="Uganda"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Uganda</span><span class="country--abbreviation">UG</span> </li><li class="country" data-value="UA Ukraine" data-abbr="UA" data-country="Ukraine"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Ukraine</span><span class="country--abbreviation">UA</span> </li><li class="country" data-value="AE United Arab Emirates" data-abbr="AE" data-country="United Arab Emirates"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">United Arab Emirates</span><span class="country--abbreviation">AE</span> </li><li class="country" data-value="GB United Kingdom" data-abbr="GB" data-country="United Kingdom"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">United Kingdom</span><span class="country--abbreviation">GB</span> </li><li class="country" data-value="US United States" data-abbr="US" data-country="United States"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">United States</span><span class="country--abbreviation">US</span> </li><li class="country" data-value="UM United States Minor Outlying Islands" data-abbr="UM" data-country="United States Minor Outlying Islands"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">United States Minor Outlying Islands</span><span class="country--abbreviation">UM</span> </li><li class="country" data-value="UY Uruguay" data-abbr="UY" data-country="Uruguay"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Uruguay</span><span class="country--abbreviation">UY</span> </li><li class="country" data-value="UZ Uzbekistan" data-abbr="UZ" data-country="Uzbekistan"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Uzbekistan</span><span class="country--abbreviation">UZ</span> </li><li class="country" data-value="VU Vanuatu" data-abbr="VU" data-country="Vanuatu"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Vanuatu</span><span class="country--abbreviation">VU</span> </li><li class="country" data-value="VE Venezuela" data-abbr="VE" data-country="Venezuela"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Venezuela</span><span class="country--abbreviation">VE</span> </li><li class="country" data-value="VN Vietnam" data-abbr="VN" data-country="Vietnam"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Vietnam</span><span class="country--abbreviation">VN</span> </li><li class="country" data-value="null Virgin Islands, British" data-abbr="null" data-country="Virgin Islands, British"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Virgin Islands, British</span><span class="country--abbreviation">null</span> </li><li class="country" data-value="null Virgin Islands, U.S." data-abbr="null" data-country="Virgin Islands, U.S."><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Virgin Islands, U.S.</span><span class="country--abbreviation">null</span> </li><li class="country" data-value="null Wales" data-abbr="null" data-country="Wales"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Wales</span><span class="country--abbreviation">null</span> </li><li class="country" data-value="WF Wallis and Futuna" data-abbr="WF" data-country="Wallis and Futuna"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Wallis and Futuna</span><span class="country--abbreviation">WF</span> </li><li class="country" data-value="EH Western Sahara" data-abbr="EH" data-country="Western Sahara"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Western Sahara</span><span class="country--abbreviation">EH</span> </li><li class="country" data-value="YE Yemen" data-abbr="YE" data-country="Yemen"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Yemen</span><span class="country--abbreviation">YE</span> </li><li class="country" data-value="YU Yugoslavia" data-abbr="YU" data-country="Yugoslavia"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Yugoslavia</span><span class="country--abbreviation">YU</span> </li><li class="country" data-value="ZM Zambia" data-abbr="ZM" data-country="Zambia"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Zambia</span><span class="country--abbreviation">ZM</span> </li><li class="country" data-value="ZW Zimbabwe" data-abbr="ZW" data-country="Zimbabwe"><span><img src="images/location-icon.svg" alt=""></span><span class="country--name">Zimbabwe</span><span class="country--abbreviation">ZW</span> </li></ul>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <p id="ContentPlaceHolder_FromAirportNameRT1" class="airportname">Chhatrapati Shivaji International Airport</p>
+                        </div>
+                    </div>
+                    <div class="swise-icon">
+                        <img src="images/airline/switch.svg" alt="" class="d-none d-lg-block">
+                        <img src="images/airline/switchmb.svg" alt="" class="d-block d-lg-none">
+                    </div>
+                </div>
+                <!--form-group end-->
+                <!--form-group start-->
+                <div class="col-lg-4 form-group">
+                    <div class="border-box">
+                        <div class="form-group-input">
+                            <img src="/images/airline/location2-icon.svg" alt="" class="d-md-block d-lg-none left-inuticon">
+                            <label>To</label>
+                            <div class="input-box">
+                                <div class="select-wrapper">
+                                    <div class="autocomplete-drop-down">
+                                        <div class="countries-input-container">
+                                            <div class="d-flex country-inputtext">
+                                                <input name="ctl00$ContentPlaceHolder$txtToAirportRT1" type="text" id="ContentPlaceHolder_txtToAirportRT1" class="countries-input ui-autocomplete-input" placeholder="City" value="Zurich Switzerl.." autocomplete="off">
+                                                <span id="ContentPlaceHolder_spnToAirportRT1" class="abbr">ZRH</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="countries-list-container">
+                                        <ul class="countries-list">
+                                            <li>&nbsp;</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <p id="ContentPlaceHolder_ToAirportNameRT1" class="airportname">Zürich-Kloten Airport</p>
+                        </div>
+                    </div>
+                </div>
+                <!--form-group end-->
+                <div class="col-lg-3 form-group from-date-group">
+                    <div class="border-box d-flex">
+                        <div class="form-group-input me-3 me-lg-0">
+                            <img src="images/airline/calender-icon.svg" alt="" class="d-md-block d-lg-none left-inuticon">
+                                <label for="deptStart">Departure</label>
+                                <div class="input-box">
+                                    <input type="text" id="deptStart" class="form-control hasDatepicker" placeholder="+Add Date">
+                                </div>
+                            <p>LOS-EKYT</p>
+
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+            <!--row end-->
+            <!--row start-->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="inputdiv d-flex">
+                    <div class="selectdiv">
+                        <select>
+                            <option selected="">00 Adult</option>
+                            <option value="1">Adult 1</option>
+                            <option value="2">Adult 2</option>
+                            <option value="3">Adult 3</option>
+                        </select>
+                    </div>
+                    <div class="selectdiv">
+                        <select>
+                            <option selected="">00 Youth</option>
+                            <option value="1">Youth 1</option>
+                            <option value="2">Youth 2</option>
+                            <option value="3">Youth 3</option>
+                        </select>
+                    </div>
+                        <div class="selectdiv">
+                            <select id="optionsSelect">
+                                <option selected="">0 0 child</option>
+                                <option value="1">1 Child</option>
+                                <option value="2">2 Child</option>
+                                <option value="3">3 Child</option>
+                                <option value="4">4 Child</option>
+                                <option value="5">5 Child</option>
+                                <option value="6">6 Child</option>
+                                <option value="7">7 Child</option>
+                                <option value="8">8 Child</option>
+                                <option value="9">9 Child</option>
+                            </select>
+                        </div>
+                        <div class="selectdiv">
+                        <select>
+                            <option selected="">00, Senior</option>
+                            <option value="1">Senior 1</option>
+                            <option value="2">Senior 2</option>
+                            <option value="3">Senior 3</option>
+                        </select>
+                        
+                        
+                    </div>
+                    
+                    </div>
+                </div>
+                <div class="col-lg-6 bottombtn">
+                    <div class="row justify-content-end flex-grow-1 align-items-center">
+                        <div class="selectdiv col-6">
+                            <select>
+                                <option selected="">Nearest Branch</option>
+                                <option value="1">Ahmedabad</option>
+                                <option value="2">Pune</option>
+                                <option value="3">Kolkata</option>
+                            </select>
+                        </div>
+                        <!-- <a href="#" class="border-btn">Nearest Branch</a> -->
+                        <div class="col-6">
+                            <a href="#" class="redBtn">Search Train</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--row end-->
+            <div class="row customfloatingform">
+                <div id="inputContainer" class="col-12"></div>
+            </div>
+        </div>
+        <!--searchform end-->
+        </div>
+       
+      </div>
+    </div>
+  </div>
+<!-- modifysearchformsModal end -->
+  <script>
+    //fightRemoveBtn
+$("#fightRemoveBtn").click(function () {
+  $("#ancillarycard-content").hide();
+  
+});
+    //
+$('#optionsSelect').on('change', function () {
+        var selectedValue = $(this).val();
+        var inputBoxes = '';
+
+        for (var i = 1; i <= selectedValue; i++) {
+            inputBoxes += `<div class="inputdiv selectdiv">
+                <div class="form-floating">
+                    <div class="input-group">
+                        <select class="form-select" onchange="updateChildFields(this, 1)">
+                            <option selected="">Child</option>
+                            <option value="1">1 Child</option>
+                            <option value="2">2 Child</option>
+                            <option value="3">3 Child</option>
+                            <option value="4">4 Child</option>
+                            <option value="5">5 Child</option>
+                            <option value="6">6 Child</option>
+                            <option value="7">7 Child</option>
+                            <option value="8">8 Child</option>
+                            <option value="9">9 Child</option>
+                            <!-- Add more child options if needed -->
+                        </select>
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar userinput"></span>
+                        </span>
+                    </div>
+                    <label class="has-float-label">Child ${i}</label>
+                </div>
+            </div>`;
+        }
+
+        $('#inputContainer').fadeOut(400, function () {
+            $(this).html(inputBoxes).fadeIn(400);
+            // Add a fadeIn effect for the new div inside inputContainer
+            $(this).find('.inputdiv').fadeIn(400);
+            $(this).css({"border-top": "1px solid rgba(217, 217, 217, 1)", "margin": "1rem auto","padding":"1.5rem 0 0 0","width":"100%"});
+          
+        });
+    });
+   
+//traindetailsbtn
+   
+
+$(".traindetailsbtn").click(function () {
+  $(".TrainDetailsContent").toggle();
+  
+  // Check if TrainDetailsContent is visible or not
+  if ($(".TrainDetailsContent").is(":visible")) {
+    $(".fa-angle-right").css({"transform": "rotate(90deg)"});
+  } else {
+    // Call a function to remove the CSS changes
+    removeCssChanges();
+  }
+});
+
+// Function to remove CSS changes
+function removeCssChanges() {
+  $(".fa-angle-right").css({"transform": ""}); // Reset the transform property
+}
+
+var windowWidth=$(document).innerWidth();
+$("#cartContinue").click(function () {
+  if (window.matchMedia('screen and (max-width: 990px)').matches) {
+    $("#mb-cartright").toggle('slow');
+  }
+});
+</script>
+
+</body>
+
+</html>

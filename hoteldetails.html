@@ -1,0 +1,1859 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="theme-color" content="#000" />
+    <title>Welcome To SWISStours</title>
+    <link href="images/favicon.ico.jpg" rel="shortcut icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/menu.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-select.min.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap-datetimepicker.js"></script>
+</head>
+
+<body>
+<!-- Header Starts -->
+<header class="cd-main-header sw-mainheader">
+    <!-- Start Mega Menu HTML -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg sw-navbar">
+        <div class="w-100 flex-column align-items-start">
+            <div class="d-flex justify-content-between w-100">
+              <a class="navbar-brand" href="#"><img src="images/logo.svg" alt=""></a>
+              
+              <div class="top-right-menu d-flex flex-grow-1">
+                <div class="cart_box">
+                    <a href="#" class="cart_btn" title="View Cart"><span class="ml-4">My Cart</span><span class="cart_items_count">0</span></a>
+                </div>
+                <div class="login_head">
+                    <a href=""> <span class="txt">Login</span></a>
+                </div>
+                <div class="sign-upbtn">
+                    <a href="" class="btn"> <img src="images/airline/signup-icon.svg" alt=""><span class="txt">sign up</span></a>
+                </div>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+                  <div class="hamburger-toggle">
+                    <div class="hamburger">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          
+          <div class="collapse navbar-collapse menu_navbar w-100" id="navbar-content">
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0 flex-grow-1 mt-4" >
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">
+                    <span class="nav-icon"><img src="images/airline/Plane2.svg" alt=""></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/Plane2.svg" alt=""></span>
+                    Flights</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/hotelmenu-icon.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/hotel.svg" alt=""></span>
+                    Hotels
+                </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/aparment.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/apartment.svg" alt=""></span>
+                    Apartments</a>
+              </li>
+            
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" aria-current="page" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/package.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/package.svg" alt=""></span>
+                    Packages</a>
+                  <ul class="dropdown-menu shadow">
+                    <li class="rmm-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                   <li>
+                      <a class="dropdown-item pe-4" href="#">Air-Inclusive Packages<img src="images/airline/sw-logo2.svg" class="img-fluid menu-innericon"></a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Land Packages</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/e-swiss.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/e-swiss.svg" alt=""></span>
+                    E-Swiss Travel Pass
+                </a>
+              </li>
+              <li class="nav-item dropdown dropdown-mega position-static">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/european.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mobile/eurailpass.svg" alt=""></span>
+                    European Rail
+                </a>
+                 <div class="dropdown-menu shadow pass">
+                    <div class="mega-content px-lg-4">
+                        <div class="container-fluid">
+                            <ul class="row">
+                                <li class="col-12 col-lg-8 py-lg-4 border-right submenu2 colcount">
+                                    <div class="rmm-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></div>
+                                    <span class="submenutitle"><a href="#">Eurail Pass<img src="images/airline/eurailicon.svg" class="img-fluid menucion2 ms-2"></a></span>
+                                    <ul class="list-group submenu2-content">
+                                        <li class="s2back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                         <li>
+                                            <!-- <a class="list-group-item d-flex justify-content-between colcount" href="#">
+                                               
+                                            <div class="d-flex justify-content-end align-items-end">
+                                                <span> Global Pass</span>
+                                               <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                            </div>
+                                            </a>-->
+                                            <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                                Global Pass
+                                                <div class="d-flex justify-content-end align-items-end populricon">
+                                                    <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                </div>
+                                            </a>
+                                        </li> 
+                                         <li class="one-country-pass">
+                                            <a class="list-group-item populricon" href="#">One Country Pass</a>
+                                            <ul class="list-group eurail-pass list-group2">
+                                                <li class="s2back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                                <li class="listoverflow-mb">
+                                                    <ul>
+                                                        <li><a href="#" class="list-group-item">Eurail Austria Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Belgium Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Benelux Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Bulgaria Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Croatia Pass</a></li>
+                                                        <li><a href="#" class="list-group-item"> Eurail Czech Republic Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Denmark Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Lithuania Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Luxembourg Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Netherlands Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Norway Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Poland Pass</a></li>
+                                                    </ul>
+                                                    <ul class="sub-listgrop2">
+                                                        <li><a href="#" class="list-group-item">Eurail Portugal Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Romania Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Finland Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail France Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Germany Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Greece Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Hungary Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Italy Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Scandinavia Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Serbia Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Slovakia Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Slovenia Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Spain Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Sweden Pass</a></li>
+                                                        <li><a href="#" class="list-group-item">Eurail Turkey Pass</a></li>
+                                                        <li><a href="#" class="list-group-item"></a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            
+                                        </li>
+
+                                       
+                                    </ul>
+                                </li>
+                                
+                                <li class="col-12 col-lg-4 py-lg-4 ps-md-5 submenu3">
+                                   <span class="submenutitle"><a href="#">Panoramic Trains in Switzerland</a></span>
+                                        <ul class="list-group list-group3 submenu3-content">
+                                            <li class="s3-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                              <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/Berninalogo.png" alt="Berninalogo" class="img-fluid"></span>Bernina Express</a></li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/glacierlogo.png" alt="glacierlogo" class="img-fluid"></span>Glacier Express</a></li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/glacierlogo.png" alt="glacierlogo" class="img-fluid"></span>Lucerne-Interlaken</a></li>
+                                        </ul>
+                                    
+                                    <div class="bordertop"></div>
+                                           <div class="submenu4">
+                                            <span class="submenutitle"><a href="#">Europe Point to Point tickets</a></span>
+                                            <ul class="list-group list-group3 submenu4-content">
+                                                <li class="s3-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/londonlogo.png" alt="imglogo" class="img-fluid"></span>London to Paris</a></li>
+                                                <li>
+                                                    <a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-baselLogo.png" alt="imglogo" class="img-fluid"></span>Paris to Basel 
+                                                        <div class="d-flex justify-content-end align-items-end populricon">
+                                                            <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-zurichlogo.png" alt="imglogo" class="img-fluid"></span>Paris to Zurich</a></li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-amsLogo.png" alt="imglogo" class="img-fluid"></span>Paris to Amsterdam</a></li>
+                                                <li><a class="list-group-item" href="#"><span class="me-3"><img src="images/airline/paris-baselLogo.png" alt="imglogo" class="img-fluid"></span>London to Amsterdam</a></li>
+                                            </ul>
+                                        </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> 
+            </li>
+              <li class="nav-item dropdown dropdown-mega position-static">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/sightseeing.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/sightseeing.svg" alt="" class="filter-red"></span>
+                    Attractions
+                </a>
+                  <div class="dropdown-menu shadow pass">
+                    <div class="mega-content px-lg-4">
+                        <div class="container-fluid">
+                            <ul class="row">
+                                <li class="col-12 col-lg-4 py-lg-4 border-right submenu2">
+                                    <div class="rmm-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></div>
+                                    <span class="submenutitle"><a href="#">Mountains in Switzerland</a></span>
+                                    <ul class="list-group submenu2-content">
+                                        <li class="s2back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                        <li>
+                                            <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                                Jungfrau
+                                                <div class="d-flex justify-content-end align-items-end populricon">
+                                                    <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="list-group-item" href="#">Jungfrau VIP Gondola</a>
+                                        </li>
+                                       
+                                        <li><a class="list-group-item" href="#">Harder Kulm</a></li>
+                                        <li><a class="list-group-item" href="#">Grindelwald First</a></li>
+                                        <li><a class="list-group-item" href="#">Schilthorn</a></li>
+                                        <li><a class="list-group-item" href="#">Mt Titlis</a></li>
+                                        <li><a class="list-group-item" href="#">Mt Pilatus</a></li>
+                                        <li><a class="list-group-item" href="#">Matterhorn</a></li>
+                                        <li>
+                                            <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                                Sunnega Paradise
+                                                <div class="d-flex justify-content-end align-items-end populricon">
+                                                    <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li><a class="list-group-item" href="#">Glacier 3000</a></li>
+                                        <li><a class="list-group-item" href="#">Diavolezza</a></li>
+                                        <li><a class="list-group-item" href="#">Aletsch Arena</a></li>
+                                        <li><a class="viewAllBtn" href="#">View All</a></li>
+                                      
+                                    </ul>
+                                </li>
+                                <li class="col-12 col-lg-4 py-lg-4 border-right submenu3 d-flex flex-column">
+                                    <span class="submenutitle"><a href="#">Attractions in Switzerland</a></span>
+                                     <ul class="list-group list-group3 submenu3-content px-lg-3">
+                                            <li class="s3-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                            <li><a class="list-group-item" href="#">Swiss Transport Musuem</a></li>
+                                            <li>
+                                                <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                                Saphir
+                                                <div class="d-flex justify-content-end align-items-end populricon">
+                                                    <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                </div>
+                                                </a> 
+                                            </li>
+                                            <li><a class="list-group-item" href="#">Lindt</a></li>
+                                            <li><a class="list-group-item" href="#">Swissminiatur</a></li>
+                                            <li><a class="list-group-item" href="#">Meal Voucher</a></li>
+                                            <li><a class="list-group-item" href="#">Charlie Chaplin</a></li>
+                                            <li><a class="viewAllBtn list-group-item" href="#">View All</a></li>
+                                            <!-- <li class="attarction-viewbtn">
+                                                <div class="viewmidbtn d-flex align-items-center justify-content-center m-auto">
+                                                    <a href="#" class="redBtn">View all</a>
+                                                </div>
+                                            </li> -->
+                                        </ul>
+                                </li>
+                                <li class="col-12 col-lg-4 py-lg-4 ps-md-5">
+                                    <div class="submenu4">
+                                    <span class="submenutitle"><a href="#">Guided tours in Switzerland</a></span>
+                                    </div>
+                                    <ul class="list-group list-group3 submenu4-content px-lg-3">
+                                        <li class="s3-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                        <li><a class="list-group-item" href="#">Zurich tour with chocolate</a></li>
+                                        <li>
+                                            <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                                Rhine falls and Zurich city tour
+                                                <div class="d-flex justify-content-end align-items-end populricon">
+                                                    <p class="MostPopulartext"><span>Most Popular</span><img src="images/airline/popularicon2.svg" alt=""></p>
+                                                </div>
+                                            </a> 
+                                        </li>
+                                        <li><a class="list-group-item" href="#">Rhine falls and Stein am Rhein</a></li>
+                                        <li><a class="list-group-item" href="#">Zurich city tour with lake cruise</a></li>
+                                        <li><a class="list-group-item" href="#">Lucerne and Titlis snow experience</a></li>
+                                    </ul>
+                                    <div class="bordertop"></div>
+                                    <div>
+                                        <div class="submenu5">
+                                            <span class="submenutitle"><a href="#">Worldwide Attractions</a></span>
+                                        </div>
+                                        
+                                        <ul class="list-group list-group3 submenu5-content px-lg-3">
+                                            <li class="s2back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                                            <li><a class="list-group-item" href="#">London</a></li>
+                                            <li><a class="list-group-item" href="#">Munich</a></li>
+                                            <li><a class="list-group-item" href="#">Paris</a></li>
+                                            <li><a class="list-group-item" href="#">Vienna</a></li>
+                                            <li><a class="viewAllBtn list-group-item" href="#">View All</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                  </div>
+                  
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/mountain.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/mountain.svg" alt="" class="filter-red"></span>
+                    About
+                 </a>
+                  <ul class="dropdown-menu shadow">
+                    <li class="rmm-back"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></li>
+                    <li>
+                      <a class="dropdown-item pe-4" href="#">About Us</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Our Leadership</a></li>
+                    <li><a class="dropdown-item" href="#">Brochure</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown dropdown-mega position-static contactMegamenu">
+                  <a class="nav-link dropdown-toggle" href="#"  href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/sightseeing.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/sightseeing.svg" alt="" class="filter-red"></span>
+                    Contact
+                </a>
+                  <div class="dropdown-menu shadow">
+                    <div class="mega-content ">
+                        <div class="container-fluid">
+                            <div class="rmm-back ps-0"><a href="#"><img src="images/airline/rightarrow3.svg" alt="arrow" class="me-3">back</a></div>
+                            <div class="row listoverflow-mb">
+                                <div class="col-12 col-md-7 col-lg-8 py-lg-8">
+                                    <ul class="menuleftContact">
+                                        
+                                        <li> <span class="submenutitle"><a href="https://wa.me/919987997997?text=Hello.">WhatsApp<span class="ms-3"><img src="images/airline/whatapp.svg" alt=""></span></a></span></li>
+                                        <li class="d-flex align-items-center"> <span class="submenutitle">Toll Free</span><a href="tel:18002020052" class="text-primary">1800 20 20 052</a></li>
+                                        <li>
+                                            <span class="submenutitle">Branch Office</span>
+                                            <ul>
+                                                <li><span>Mumbai (Head Office)</span><a href="tel:+912261282400">(022) 61282400, 67439990</a></li>  
+                                                <li><span>Delhi</span><a href="tel:+917208820785">+91 7208820787 / +91 7208820785 / +91 9643662737</a></li>  
+                                                <li><span>Chennai</span><a href="tel:+914442179510">(044) 42179510 / 20</a></li>  
+                                                <li><span>Bangalore</span><a href="tel:+918041132172">(080) 41132172, 41609072</a></li>  
+                                                <li><span>Pune</span><a href="tel:+919136117252">+919136117252, +91 8855883831</a></li>
+                                                <li><span>Kolkata</span><a href="tel:+919007160166">+91 9007160166</a></li>  
+                                                <li><span>Ahmedabad</span><a href="tel:+917940028694">(079) 40028694 / 95</a></li>  
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-md-5 col-lg-4 p-0">
+                                    <div class="bgimg">
+                                        <div class="d-flex justify-content-between align-items-center bottomBtn">
+                                            <a href="#" class="whitebgbtn">View Brochure</a>    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+              </li>
+              <li class="nav-item d-block d-md-none">
+                 <a class="nav-link" href="#"><span class="nav-icon mb-icon">
+                    <img src="images/airline/menu-icon/mobile/cart.svg" alt="" class="filter-red"></span>
+                    My Cart<span class="cart_items_count">0</span></a>
+              </li>
+              <li class="nav-item ">
+                  <a class="nav-link" href="#">
+                    <span class="nav-icon"><img src="images/airline/menu-icon/offers.svg" alt="" class="filter-red"></span>
+                    <span class="nav-icon mb-icon"><img src="images/airline/menu-icon/offers.svg" alt="" class="filter-red"></span>
+                    Blog
+                </a>
+              </li>
+              <li class="nav-item  d-block d-md-none mt-5 mx-4 text-center login-mobilebtn">
+                <a href="#" class="redBtn w-100 m-auto d-flex justify-content-center">Login</a>
+              </li>
+          </ul>
+          
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- END Mega Menu HTML -->
+</header>
+<!-- Header Ends -->
+    <link href="css/swiss-style.css" rel="stylesheet" type="text/css"> <!--airline css-->
+    <link rel="stylesheet" href="css/meghamenu.css">
+
+<!--content holder start-->
+    <div class="cd-main-content">
+        <div class="container-fluid main_content_container pt-0">
+            <!--sw-main-content start-->
+            <div class="sw-main-content sw-main-content2 homepage hotelDetails">
+                <!--mid_Container container start-->
+                <div class="mid_Container container">
+                    <div class="innersection_Container ">
+                        <!--main-contentrow start-->
+                        <div class="row main-contentrow">
+                            <!--row start-->
+                            <div class="Topinfo">
+                                <div class="customfloatingform row">
+                                    <div class="modifytitle d-flex flex-row d-lg-none">
+                                        <div class="title">
+                                            <h2>Modify</h2>
+                                    </div>
+                                    <button type="button" class="btn-close modify-btn"></button>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <!--custform start-->
+                                        
+                                            <!--row start-->
+                                            <div class="d-flex">
+                                                <div class="inputdiv selectdiv w-100">
+                                                    <div class="form-floating">
+                                                        <div class="input-group">
+                                                            <select class="form-select">
+                                                                <option selected="">Lucerne</option>
+                                                                <option>Lucerne1</option>
+                                                                <option>Lucerne2</option>
+                                                                <option>Lucerne3</option>
+                                                            </select>
+                                                            <span class="input-group-addon">
+                                                                <span class="nightinput locationicon"></span>
+                                                            </span>
+                                                        </div>
+                                                        <label class="has-float-label">Destination</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--row end-->     
+                                        
+                                        <!--custmform end-->
+                                    </div>
+                                    <div class="col-lg-9 sw-modal">
+                                        <div class="row align-items-center">
+                                                <div class="inputdiv col-lg-2">
+                                                    <div class="form-floating">
+                                                        <div class="input-group date" id="departuretime2">
+                                                            <input type="text" class="form-control" placeholder="Choose here">
+                                                                <span class="input-group-addon">
+                                                                <span class="glyphicon glyphicon-calendar"></span>
+                                                            </span>
+                                                        </div>
+                                                        <label class="has-float-label">Check In</label>
+                                                    </div>
+                                                </div>
+                                                <div class="inputdiv col-lg-2">
+                                                    <div class="form-floating">
+                                                        <div class="input-group date" id="departuretime3">
+                                                        <input type="text" class="form-control" placeholder="Choose here">
+                                                        <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-calendar"></span>
+                                                        </span>
+                                                        </div>
+                                                    <label class="has-float-label">Check Out</label>
+                                                    </div>
+                                                </div>
+                                                <div class="inputdiv selectdiv col-lg-2">
+                                                    <div class="form-floating">
+                                                        <div class="input-group">
+                                                            <select class="form-select ps-3">
+                                                                <option selected="">1 Night</option>
+                                                                <option>1 Night</option>
+                                                                <option>2 Night</option>
+                                                                <option>3 Night</option>
+                                                            </select>
+                                                            
+                                                        </div>
+                                                    <label class="has-float-label">Night</label>
+                                                    </div>
+                                                </div>
+                                                <div class="inputdiv col-lg-4">
+                                                    <div class="form-floating">
+                                                        <div class="input-group" id="">
+                                                        <input type="text" class="form-control" placeholder="Choose here">
+                                                        
+                                                        </div>
+                                                    <label class="has-float-label">Total person</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2">
+                                                    <a href="#" class="redBtn h-100">
+                                                    Modify
+                                                    </a>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--row end-->
+                            <!--ROW START-->
+                            <div class="d-block d-lg-none">
+                                <!--mb-filterbtn start-->
+                                <div class="mb-filterbtn d-flex justify-content-between align-items-center my-3 my-md-0">
+                                    <a href="javascript:void(0)" class="redBtn d-block d-lg-none allfilterbtn">All Filter</a>
+                                    <a href="javascript:void(0)" class="redBtn h-100" id="topsearchModal">
+                                        <img src="images/airline/apartment/modifyicon.svg" alt="" class="me-3 d-block d-md-none"/>
+                                        Modify
+                                    </a>
+                                </div>
+                                <!--mb-filterbtn end-->
+                            </div>
+                            <div class="row midfiterdiv">
+                                <div class="col-lg-3">
+                                        <div class="leftFilter">
+                                            <!--filter hotel div start-->
+                                                <div class="filterHoteldiv">
+                                                    <div class="filterTitle">
+                                                        <h2>Filters<a href="#"><span>Clear All Filters</span></a></h2>
+                                                    </div>
+                                                    <!--filtergrids start-->
+                                                    <div class="filtergrids">
+                                                        <h3>Search by Hotel Name<span class="CloseDiv">Clear</span></h3>
+                                                        <div class="input-group mb-3">
+                                                            <input type="text" class="form-control" placeholder="Hotel Name">
+                                                            <button class="btn searchbtn" type="submit"><i class="fa fa-search"></i></button>
+                                                        </div>
+                                                    </div>
+                                                    <!--filtergrids end-->
+                                                    <!--filtergrids start-->
+                                                    <div class="filtergrids">
+                                                        <h3>Price <span class="CloseDiv">Clear</span></h3>
+                                                        <select class="form-select">
+                                                            <option>Ascending</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                        </select>
+                                                    </div>
+                                                    <!--filtergrids end-->
+                                                <!--filtergrids start-->
+                                                <div class="filtergrids">
+                                                    <h3>Star Rating <span class="CloseDiv">Clear</span></h3>
+                                                    <!--swcustom-checkbox start-->
+                                                    <div class="swcustom-checkbox d-flex flex-column border-0 p-0 align-items-start">
+                                                        <!--form-check start-->
+                                                        <div class="form-check p-0">
+                                                        <div class="flex-grow-1">
+                                                            <input class="form-check-input" type="checkbox" id="Star-rate5" value="Star-rate5">
+                                                            <label class="form-check-label" for="Star-rate5"><span class="sw-packStars packStars star_5"></span></label>
+                                                        </div>
+                                                        </div>
+                                                        <!--form-check end-->
+                                                    <!--form-check start-->
+                                                    <div class="form-check p-0">
+                                                        <div class="flex-grow-1">
+                                                        <input class="form-check-input" type="checkbox" id="Star-rate4" value="Star-rate4">
+                                                        <label class="form-check-label" for="Star-rate4"> <span class="sw-packStars packStars star_4"></span></label>
+                                                        </div>
+                                                    </div>
+                                                    <!--form-check end-->
+                                                    <!--form-check start-->
+                                                        <div class="form-check p-0">
+                                                            <div class="flex-grow-1">
+                                                                <input class="form-check-input" type="checkbox" id="Star-rate3" value="Star-rate3">
+                                                                <label class="form-check-label" for="Star-rate3">
+                                                                    <span class="sw-packStars packStars star_3"></span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    <!--form-check end-->
+                                                    <!--form-check start-->
+                                                    <div class="form-check p-0">
+                                                        <div class="flex-grow-1">
+                                                            <input class="form-check-input" type="checkbox" id="Star-rate2" value="Star-rate2">
+                                                            <label class="form-check-label" for="Star-rate2">
+                                                                <span class="sw-packStars packStars star_2"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <!--form-check end-->
+                                                    <!--form-check start-->
+                                                    <div class="form-check p-0">
+                                                        <div class="flex-grow-1">
+                                                            <input class="form-check-input" type="checkbox" id="Star-rate1" value="Star-rate1">
+                                                            <label class="form-check-label" for="Star-rate1">
+                                                                <span class="sw-packStars packStars star_1"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <!--form-check end-->
+                                                    </div>
+                                                    <!--swcustom-checkbox end-->
+                                                    </div>
+                                                    <!--filtergrids end-->
+                                                    <!--filtergrids start-->
+                                                        <div class="filtergrids">
+                                                        <h3>Condition <span class="CloseDiv">Clear</span></h3>
+                                                        <!--swcustom-checkbox start-->
+                                                        <div class="swcustom-checkbox border-0 p-0 flex-column d-flex">
+                                                            <!--form-check start-->
+                                                            <div class="form-check p-0">
+                                                            <div class="flex-grow-1">
+                                                                <input class="form-check-input" type="checkbox" id="cd-refundable" value="cd-refundable">
+                                                                <label class="form-check-label" for="cd-refundable">Refundable</label>
+                                                            </div>
+                                                            </div>
+                                                            <!--form-check end-->
+                                                        <!--form-check start-->
+                                                            <div class="form-check p-0">
+                                                                <div class="flex-grow-1">
+                                                                <input class="form-check-input" type="checkbox" id="cd-Non-Refundable" value="cd-Non-Refundable">
+                                                                <label class="form-check-label" for="cd-Non-Refundable">Non-Refundable</label></div>
+                                                                </div>
+                                                            </div>
+                                                        <!--form-check end-->
+                                                        </div>
+                                                    <!--swcustom-checkbox end-->
+                                                    <!--filtergrids start-->
+                                                    <div class="filtergrids">
+                                                        <h3>Location <span class="CloseDiv">Clear</span></h3>
+                                                        <!--swcustom-checkbox start-->
+                                                        <div class="swcustom-checkbox border-0 p-0 flex-column d-flex">
+                                                            <!--form-check start-->
+                                                            <div class="form-check p-0">
+                                                            <div class="flex-grow-1">
+                                                                <input class="form-check-input" type="checkbox" id="loc1" value="loc1">
+                                                                <label class="form-check-label" for="loc1">Airport <span>(1)</span></label>
+                                                            </div>
+                                                            </div>
+                                                            <!--form-check end-->
+                                                        <!--form-check start-->
+                                                            <div class="form-check p-0">
+                                                                <div class="flex-grow-1">
+                                                                    <input class="form-check-input" type="checkbox" id="loc2" value="loc2">
+                                                                    <label class="form-check-label" for="loc2">Near Center <span>(2)</span></label>
+                                                                </div>
+                                                            </div>
+                                                        <!--form-check end-->
+                                                        <!--form-check start-->
+                                                        <div class="form-check p-0">
+                                                                <div class="flex-grow-1">
+                                                                    <input class="form-check-input" type="checkbox" id="loc3" value="loc3">
+                                                                    <label class="form-check-label" for="loc3">City Center <span>(2)</span></label>
+                                                                </div>
+                                                            </div>
+                                                    <!--form-check end-->
+                                                        </div>
+                                                    <!--swcustom-checkbox end-->
+                                                    </div>
+                                                    <!--filtergrids end-->
+                                                    <!--filtergrids start-->
+                                                    <div class="filtergrids">
+                                                        <h3>Hotel Chain <span class="CloseDiv">Clear</span></h3>
+                                                        <!--swcustom-checkbox start-->
+                                                        <div class="swcustom-checkbox border-0 p-0 flex-column d-flex">
+                                                            <!--form-check start-->
+                                                            <div class="form-check p-0">
+                                                            <div class="flex-grow-1">
+                                                                <input class="form-check-input" type="checkbox" id="hotelchain1" value="hotelchain1">
+                                                                <label class="form-check-label" for="hotelchain1">IHG</label>
+                                                            </div>
+                                                            </div>
+                                                            <!--form-check end-->
+                                                        <!--form-check start-->
+                                                            <div class="form-check p-0">
+                                                                <div class="flex-grow-1">
+                                                                    <input class="form-check-input" type="checkbox" id="hotelchain2" value="hotelchain2">
+                                                                    <label class="form-check-label" for="hotelchain2">Independent</label>
+                                                                </div>
+                                                            </div>
+                                                        <!--form-check end-->
+                                                        <!--form-check start-->
+                                                        <div class="form-check p-0">
+                                                                <div class="flex-grow-1">
+                                                                    <input class="form-check-input" type="checkbox" id="hotelchain3" value="hotelchain3">
+                                                                    <label class="form-check-label" for="hotelchain3">Accor</label>
+                                                                </div>
+                                                            </div>
+                                                    <!--form-check end-->
+                                                    <!--form-check start-->
+                                                    <div class="form-check p-0">
+                                                        <div class="flex-grow-1">
+                                                            <input class="form-check-input" type="checkbox" id="hotelchain4" value="hotelchain4">
+                                                            <label class="form-check-label" for="hotelchain4">Sorell Hotels</label>
+                                                        </div>
+                                                    </div>
+                                            <!--form-check end-->
+                                                        </div>
+                                                    <!--swcustom-checkbox end-->
+                                                    </div>
+                                                    <!--filtergrids end-->
+                                                </div>
+                                                
+                                                <!--filter hotel div end-->
+                                        </div>
+                                </div>
+                                <!--col start-->
+                                <div class="col-lg-9 rightsectionhotelLlist">
+                                <!--filterviewbtn div start-->
+                                    <div class="filterViewBtndiv">
+                                    
+                                        <div class="d-flex  justify-content-between align-items-center w-100">
+                                            <p>Applied Filters:<span>Special</span><a href="#" class="">Recommended <span><i class="fa fa-close"></i></span></a></p>
+                                            <!-- <a href="#" class="border-btn">Compact View</a> -->
+                                        </div>
+                                        
+                                    </div>
+                                    <!--filterviewbtn div end-->
+                                    <!--filterhotel list start-->
+                                    <div class="filterhotel-compactview">
+                                        <!--include2view start-->
+                                        <div class="include2view">
+                                            <div class="include-list">
+                                                <div class="includeList-image">
+                                                    <img src="images/airline/hotel/hotel-alexander.webp" alt="" class="img-fluid"/>
+                                                </div>
+                                                <div class="includeList-details">
+                                                    <div class="includeDetails-top">
+                                                        <div class="inc-title">
+                                                            <h4 class="m-0">Hotel Alexander</h4>
+                                                            <div class="ms-auto">
+                                                            <span class="packStars star_5"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="inc-address">232323Friedenstrasse, 8, 8Ch-6004</div>
+                                                    </div>
+                                                    <div class="includeDetails-bototm">
+                                                    <div class="row">
+                                                            <div class="col-lg-8">
+                                                                <div class="Info">
+                                                                    <p>This 4 star hotel is located within the city of Zurich and was established in 2008. It is close to the Hallenstadion venue hall and the nearest station is Messe/Hallenstadion. The Hotel has a restaurant, a bar, a conference room, a coffee shop and a fitness centre/gym.</p>
+                                                                </div>
+                                                                <a data-bs-toggle="modal" data-bs-target="#moreinfoModal" class="red-text text-decoration-none">Read more</a>
+                                                                <div class="Hotel-Loc">
+                                                                    <span>Location: </span>Zurich
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 inrdiv">
+                                                                <div class="InrVal">
+                                                                    <p>INR 9367</p>
+                                                                </div>
+                                                                <a href="javascript:void(0)" class="SelectRoom sm-borderbtn">
+                                                                    Select Room
+                                                                </a>
+                                                            </div>
+                                                    </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="moreHotels-section grid-responsivetable hidden">
+                                                <div class="border-top mt-3 pt-3">
+                                                    <h5 class="mb-3">Available Rooms</h5>
+                                                    <table>
+                                                        <tr>
+                                                            <th><div>No.</div></th>
+                                                            <th><div>Available Rooms</div></th>
+                                                            <th><div>Meal</div></th>
+                                                            <th><div>Condition</div></th>
+                                                            <th><div>Total</div></th>
+                                                            <th></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><div>01</div></td>
+                                                            <td><div>2 Single Bed Standard</div></td>
+                                                            <td><div><strong>Meal Plane :</strong>Room Only</div></td>
+                                                            <td><div><strong>Cancellation Policy :</strong>Non Refundable</div></td>
+                                                            <td><div><strong>Room Fare :</strong>INR 9367.00 <img src="images/airline/itinerary-page/arrow-down.svg" alt="" class="ms-2"></div></td>
+                                                            <td><div><button class="btn-gray-b">Add</button></div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><div>02</div></td>
+                                                            <td><div>Standard Room</div></td>
+                                                            <td><div>Room Only</div></td>
+                                                            <td><div>Refundable</div></td>
+                                                            <td><div>INR 12992.00 <img src="images/airline/itinerary-page/arrow-up.svg" alt="" class="ms-2"></div></td>
+                                                            <td><div><button class="btn-gray-b">Add</button></div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><div>03</div></td>
+                                                            <td><div>1 Queen Bed Standard</div></td>
+                                                            <td><div>Room Only</div></td>
+                                                            <td><div>Non Refundable</div></td>
+                                                            <td><div>INR 10910.00 <img src="images/airline/itinerary-page/arrow-down.svg" alt="" class="ms-2"></div></td>
+                                                            <td><div><button class="btn-gray-b">Add</button></div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><div>04</div></td>
+                                                            <td><div>Double Queen Bed Non Smocking</div></td>
+                                                            <td><div>Room Only</div></td>
+                                                            <td><div>Refundable</div></td>
+                                                            <td><div>INR 14992.00 <img src="images/airline/itinerary-page/arrow-up.svg" alt="" class="ms-2"></div></td>
+                                                            <td><div><button class="btn-gray-b">Add</button></div></td>
+                                                        </tr>
+                                                    </table>
+                                                    <div class="viewMore-wrapper">
+                                                        <button>View More Room</button>
+                                                    </div>
+                                                </div>
+                                            
+                                            </div>
+                                        </div>
+                                        <!--include2view end-->
+                                        <!--include2view start-->
+                                        <div class="include2view">
+                                            <div class="include-list">
+                                                <div class="includeList-image">
+                                                    <img src="images/airline/hotel/hotel-alexander2.webp" alt="" class="img-fluid"/>
+                                                </div>
+                                                <div class="includeList-details">
+                                                    <div class="includeDetails-top">
+                                                        <div class="inc-title">
+                                                            <h4 class="m-0">Aotel Alexander 2</h4>
+                                                            <div class="ms-auto">
+                                                            <span class="packStars star_5"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="inc-address">232323Friedenstrasse, 8, 8Ch-6004</div>
+                                                    </div>
+                                                    <div class="includeDetails-bototm">
+                                                    <div class="row">
+                                                            <div class="col-lg-8">
+                                                                <div class="Info">
+                                                                    <p>This 4 star hotel is located within the city of Zurich and was established in 2008. It is close to the Hallenstadion venue hall and the nearest station is Messe/Hallenstadion. The Hotel has a restaurant, a bar, a conference room, a coffee shop and a fitness centre/gym.</p>
+                                                                </div>
+                                                                <a data-bs-toggle="modal" data-bs-target="#moreinfoModal" class="red-text text-decoration-none">Read more</a>
+                                                                <div class="Hotel-Loc">
+                                                                    <span>Location: </span>Zurich
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 inrdiv">
+                                                                <div class="InrVal">
+                                                                    <p>INR 9367</p>
+                                                                </div>
+                                                                <a href="javascript:void(0)" class="SelectRoom sm-borderbtn">
+                                                                    Select Room
+                                                                </a>
+                                                            </div>
+                                                    </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="moreHotels-section grid-responsivetable hidden">
+                                                <div class="border-top mt-3 pt-3">
+                                                    <h5 class="mb-3">Available Rooms</h5>
+                                                    <table>
+                                                        <tr>
+                                                            <th><div>No.</div></th>
+                                                            <th><div>Available Rooms</div></th>
+                                                            <th><div>Meal</div></th>
+                                                            <th><div>Condition</div></th>
+                                                            <th><div>Total</div></th>
+                                                            <th></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><div>01</div></td>
+                                                            <td><div>2 Single Bed Standard</div></td>
+                                                            <td><div><strong>Meal Plane :</strong>Room Only</div></td>
+                                                            <td><div><strong>Cancellation Policy :</strong>Non Refundable</div></td>
+                                                            <td><div><strong>Room Fare :</strong>INR 9367.00 <img src="images/airline/itinerary-page/arrow-down.svg" alt="" class="ms-2"></div></td>
+                                                            <td><div><button class="btn-gray-b">Add</button></div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><div>02</div></td>
+                                                            <td><div>Standard Room</div></td>
+                                                            <td><div>Room Only</div></td>
+                                                            <td><div>Refundable</div></td>
+                                                            <td><div>INR 12992.00 <img src="images/airline/itinerary-page/arrow-up.svg" alt="" class="ms-2"></div></td>
+                                                            <td><div><button class="btn-gray-b">Add</button></div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><div>03</div></td>
+                                                            <td><div>1 Queen Bed Standard</div></td>
+                                                            <td><div>Room Only</div></td>
+                                                            <td><div>Non Refundable</div></td>
+                                                            <td><div>INR 10910.00 <img src="images/airline/itinerary-page/arrow-down.svg" alt="" class="ms-2"></div></td>
+                                                            <td><div><button class="btn-gray-b">Add</button></div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><div>04</div></td>
+                                                            <td><div>Double Queen Bed Non Smocking</div></td>
+                                                            <td><div>Room Only</div></td>
+                                                            <td><div>Refundable</div></td>
+                                                            <td><div>INR 14992.00 <img src="images/airline/itinerary-page/arrow-up.svg" alt="" class="ms-2"></div></td>
+                                                            <td><div><button class="btn-gray-b">Add</button></div></td>
+                                                        </tr>
+                                                    </table>
+                                                    <div class="viewMore-wrapper">
+                                                        <button>View More Room</button>
+                                                    </div>
+                                                </div>
+                                            
+                                            </div>
+                                        </div>
+                                        <!--include2view end-->
+                                        <!--include2view start-->
+                                        <div class="include2view">
+                                            <div class="include-list">
+                                                <div class="includeList-image">
+                                                    <img src="images/airline/hotel/BotelAlexander3.webp" alt="" class="img-fluid"/>
+                                                </div>
+                                                <div class="includeList-details">
+                                                    <div class="includeDetails-top">
+                                                        <div class="inc-title">
+                                                            <h4 class="m-0">Botel Alexander 3</h4>
+                                                            <div class="ms-auto">
+                                                            <span class="packStars star_5"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="inc-address">232323Friedenstrasse, 8, 8Ch-6004</div>
+                                                    </div>
+                                                    <div class="includeDetails-bototm">
+                                                    <div class="row">
+                                                            <div class="col-lg-8">
+                                                                <div class="Info">
+                                                                    <p>This 4 star hotel is located within the city of Zurich and was established in 2008. It is close to the Hallenstadion venue hall and the nearest station is Messe/Hallenstadion. The Hotel has a restaurant, a bar, a conference room, a coffee shop and a fitness centre/gym.</p>
+                                                                </div>
+                                                                <a data-bs-toggle="modal" data-bs-target="#moreinfoModal" class="red-text text-decoration-none">Read more</a>
+                                                                <div class="Hotel-Loc">
+                                                                    <span>Location: </span>Zurich
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 inrdiv">
+                                                                <div class="InrVal">
+                                                                    <p>INR 9367</p>
+                                                                </div>
+                                                                <a href="javascript:void(0)" class="SelectRoom sm-borderbtn">
+                                                                    Select Room
+                                                                </a>
+                                                            </div>
+                                                    </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="moreHotels-section grid-responsivetable hidden">
+                                                <div class="border-top mt-3 pt-3">
+                                                    <h5 class="mb-3">Available Rooms</h5>
+                                                    <table>
+                                                        <tr>
+                                                            <th><div>No.</div></th>
+                                                            <th><div>Available Rooms</div></th>
+                                                            <th><div>Meal</div></th>
+                                                            <th><div>Condition</div></th>
+                                                            <th><div>Total</div></th>
+                                                            <th></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><div>01</div></td>
+                                                            <td><div>2 Single Bed Standard</div></td>
+                                                            <td><div><strong>Meal Plane :</strong>Room Only</div></td>
+                                                            <td><div><strong>Cancellation Policy :</strong>Non Refundable</div></td>
+                                                            <td><div><strong>Room Fare :</strong>INR 9367.00 <img src="images/airline/itinerary-page/arrow-down.svg" alt="" class="ms-2"></div></td>
+                                                            <td><div><button class="btn-gray-b">Add</button></div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><div>02</div></td>
+                                                            <td><div>Standard Room</div></td>
+                                                            <td><div>Room Only</div></td>
+                                                            <td><div>Refundable</div></td>
+                                                            <td><div>INR 12992.00 <img src="images/airline/itinerary-page/arrow-up.svg" alt="" class="ms-2"></div></td>
+                                                            <td><div><button class="btn-gray-b">Add</button></div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><div>03</div></td>
+                                                            <td><div>1 Queen Bed Standard</div></td>
+                                                            <td><div>Room Only</div></td>
+                                                            <td><div>Non Refundable</div></td>
+                                                            <td><div>INR 10910.00 <img src="images/airline/itinerary-page/arrow-down.svg" alt="" class="ms-2"></div></td>
+                                                            <td><div><button class="btn-gray-b">Add</button></div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><div>04</div></td>
+                                                            <td><div>Double Queen Bed Non Smocking</div></td>
+                                                            <td><div>Room Only</div></td>
+                                                            <td><div>Refundable</div></td>
+                                                            <td><div>INR 14992.00 <img src="images/airline/itinerary-page/arrow-up.svg" alt="" class="ms-2"></div></td>
+                                                            <td><div><button class="btn-gray-b">Add</button></div></td>
+                                                        </tr>
+                                                    </table>
+                                                    <div class="viewMore-wrapper">
+                                                        <button>View More Room</button>
+                                                    </div>
+                                                </div>
+                                            
+                                            </div>
+                                        </div>
+                                        <!--include2view end-->
+                                        <!--include2view start-->
+                                        <div class="include2view">
+                                            <div class="include-list">
+                                                <div class="includeList-image">
+                                                    <img src="images/airline/hotel/CotelAlexander4.webp" alt="" class="img-fluid"/>
+                                                </div>
+                                                <div class="includeList-details">
+                                                    <div class="includeDetails-top">
+                                                        <div class="inc-title">
+                                                            <h4 class="m-0">Cotel Alexander 4</h4>
+                                                            <div class="ms-auto">
+                                                            <span class="packStars star_5"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="inc-address">232323Friedenstrasse, 8, 8Ch-6004</div>
+                                                    </div>
+                                                    <div class="includeDetails-bototm">
+                                                    <div class="row">
+                                                            <div class="col-lg-8">
+                                                                <div class="Info">
+                                                                    <p>This 4 star hotel is located within the city of Zurich and was established in 2008. It is close to the Hallenstadion venue hall and the nearest station is Messe/Hallenstadion. The Hotel has a restaurant, a bar, a conference room, a coffee shop and a fitness centre/gym.</p>
+                                                                </div>
+                                                                <a data-bs-toggle="modal" data-bs-target="#moreinfoModal" class="red-text text-decoration-none">Read more</a>
+                                                                <div class="Hotel-Loc">
+                                                                    <span>Location: </span>Zurich
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 inrdiv">
+                                                                <div class="InrVal">
+                                                                    <p>INR 9367</p>
+                                                                </div>
+                                                                <a href="javascript:void(0)" class="SelectRoom sm-borderbtn">
+                                                                    Select Room
+                                                                </a>
+                                                            </div>
+                                                    </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="moreHotels-section grid-responsivetable hidden">
+                                                <div class="border-top mt-3 pt-3">
+                                                    <h5 class="mb-3">Available Rooms</h5>
+                                                    <table>
+                                                        <tr>
+                                                            <th><div>No.</div></th>
+                                                            <th><div>Available Rooms</div></th>
+                                                            <th><div>Meal</div></th>
+                                                            <th><div>Condition</div></th>
+                                                            <th><div>Total</div></th>
+                                                            <th></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><div>01</div></td>
+                                                            <td><div>2 Single Bed Standard</div></td>
+                                                            <td><div><strong>Meal Plane :</strong>Room Only</div></td>
+                                                            <td><div><strong>Cancellation Policy :</strong>Non Refundable</div></td>
+                                                            <td><div><strong>Room Fare :</strong>INR 9367.00 <img src="images/airline/itinerary-page/arrow-down.svg" alt="" class="ms-2"></div></td>
+                                                            <td><div><button class="btn-gray-b">Add</button></div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><div>02</div></td>
+                                                            <td><div>Standard Room</div></td>
+                                                            <td><div>Room Only</div></td>
+                                                            <td><div>Refundable</div></td>
+                                                            <td><div>INR 12992.00 <img src="images/airline/itinerary-page/arrow-up.svg" alt="" class="ms-2"></div></td>
+                                                            <td><div><button class="btn-gray-b">Add</button></div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><div>03</div></td>
+                                                            <td><div>1 Queen Bed Standard</div></td>
+                                                            <td><div>Room Only</div></td>
+                                                            <td><div>Non Refundable</div></td>
+                                                            <td><div>INR 10910.00 <img src="images/airline/itinerary-page/arrow-down.svg" alt="" class="ms-2"></div></td>
+                                                            <td><div><button class="btn-gray-b">Add</button></div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><div>04</div></td>
+                                                            <td><div>Double Queen Bed Non Smocking</div></td>
+                                                            <td><div>Room Only</div></td>
+                                                            <td><div>Refundable</div></td>
+                                                            <td><div>INR 14992.00 <img src="images/airline/itinerary-page/arrow-up.svg" alt="" class="ms-2"></div></td>
+                                                            <td><div><button class="btn-gray-b">Add</button></div></td>
+                                                        </tr>
+                                                    </table>
+                                                    <div class="viewMore-wrapper">
+                                                        <button>View More Room</button>
+                                                    </div>
+                                                </div>
+                                            
+                                            </div>
+                                        </div>
+                                        <!--include2view end-->
+                                         <!--include2view start-->
+                                         <div class="include2view">
+                                            <div class="include-list">
+                                                <div class="includeList-image">
+                                                    <img src="images/airline/hotel/DotelAlexander5.webp" alt="" class="img-fluid"/>
+                                                </div>
+                                                <div class="includeList-details">
+                                                    <div class="includeDetails-top">
+                                                        <div class="inc-title">
+                                                            <h4 class="m-0">Dotel Alexander 5</h4>
+                                                            <div class="ms-auto">
+                                                            <span class="packStars star_5"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="inc-address">232323Friedenstrasse, 8, 8Ch-6004</div>
+                                                    </div>
+                                                    <div class="includeDetails-bototm">
+                                                    <div class="row">
+                                                            <div class="col-lg-8">
+                                                                <div class="Info">
+                                                                    <p>This 4 star hotel is located within the city of Zurich and was established in 2008. It is close to the Hallenstadion venue hall and the nearest station is Messe/Hallenstadion. The Hotel has a restaurant, a bar, a conference room, a coffee shop and a fitness centre/gym.</p>
+                                                                </div>
+                                                                <a data-bs-toggle="modal" data-bs-target="#moreinfoModal" class="red-text text-decoration-none">Read more</a>
+                                                                <div class="Hotel-Loc">
+                                                                    <span>Location: </span>Zurich
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 inrdiv">
+                                                                <div class="InrVal">
+                                                                    <p>INR 9367</p>
+                                                                </div>
+                                                                <a href="javascript:void(0)" class="SelectRoom sm-borderbtn">
+                                                                    Select Room
+                                                                </a>
+                                                            </div>
+                                                    </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="moreHotels-section grid-responsivetable hidden">
+                                                <div class="border-top mt-3 pt-3">
+                                                    <h5 class="mb-3">Available Rooms</h5>
+                                                    <table>
+                                                        <tr>
+                                                            <th><div>No.</div></th>
+                                                            <th><div>Available Rooms</div></th>
+                                                            <th><div>Meal</div></th>
+                                                            <th><div>Condition</div></th>
+                                                            <th><div>Total</div></th>
+                                                            <th></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><div>01</div></td>
+                                                            <td><div>2 Single Bed Standard</div></td>
+                                                            <td><div><strong>Meal Plane :</strong>Room Only</div></td>
+                                                            <td><div><strong>Cancellation Policy :</strong>Non Refundable</div></td>
+                                                            <td><div><strong>Room Fare :</strong>INR 9367.00 <img src="images/airline/itinerary-page/arrow-down.svg" alt="" class="ms-2"></div></td>
+                                                            <td><div><button class="btn-gray-b">Add</button></div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><div>02</div></td>
+                                                            <td><div>Standard Room</div></td>
+                                                            <td><div>Room Only</div></td>
+                                                            <td><div>Refundable</div></td>
+                                                            <td><div>INR 12992.00 <img src="images/airline/itinerary-page/arrow-up.svg" alt="" class="ms-2"></div></td>
+                                                            <td><div><button class="btn-gray-b">Add</button></div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><div>03</div></td>
+                                                            <td><div>1 Queen Bed Standard</div></td>
+                                                            <td><div>Room Only</div></td>
+                                                            <td><div>Non Refundable</div></td>
+                                                            <td><div>INR 10910.00 <img src="images/airline/itinerary-page/arrow-down.svg" alt="" class="ms-2"></div></td>
+                                                            <td><div><button class="btn-gray-b">Add</button></div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><div>04</div></td>
+                                                            <td><div>Double Queen Bed Non Smocking</div></td>
+                                                            <td><div>Room Only</div></td>
+                                                            <td><div>Refundable</div></td>
+                                                            <td><div>INR 14992.00 <img src="images/airline/itinerary-page/arrow-up.svg" alt="" class="ms-2"></div></td>
+                                                            <td><div><button class="btn-gray-b">Add</button></div></td>
+                                                        </tr>
+                                                    </table>
+                                                    <div class="viewMore-wrapper">
+                                                        <button>View More Room</button>
+                                                    </div>
+                                                </div>
+                                            
+                                            </div>
+                                        </div>
+                                        <!--include2view end-->
+                                         <!--include2view start-->
+                                         <div class="include2view">
+                                            <div class="include-list">
+                                                <div class="includeList-image">
+                                                    <img src="images/airline/hotel/EotelAlexander6.webp" alt="" class="img-fluid"/>
+                                                </div>
+                                                <div class="includeList-details">
+                                                    <div class="includeDetails-top">
+                                                        <div class="inc-title">
+                                                            <h4 class="m-0">Eotel Alexander 6</h4>
+                                                            <div class="ms-auto">
+                                                            <span class="packStars star_5"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="inc-address">232323Friedenstrasse, 8, 8Ch-6004</div>
+                                                    </div>
+                                                    <div class="includeDetails-bototm">
+                                                    <div class="row">
+                                                            <div class="col-lg-8">
+                                                                <div class="Info">
+                                                                    <p>This 4 star hotel is located within the city of Zurich and was established in 2008. It is close to the Hallenstadion venue hall and the nearest station is Messe/Hallenstadion. The Hotel has a restaurant, a bar, a conference room, a coffee shop and a fitness centre/gym.</p>
+                                                                </div>
+                                                                <a data-bs-toggle="modal" data-bs-target="#moreinfoModal" class="red-text text-decoration-none">Read more</a>
+                                                                <div class="Hotel-Loc">
+                                                                    <span>Location: </span>Zurich
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 inrdiv">
+                                                                <div class="InrVal">
+                                                                    <p>INR 9367</p>
+                                                                </div>
+                                                                <a href="javascript:void(0)" class="SelectRoom sm-borderbtn">
+                                                                    Select Room
+                                                                </a>
+                                                            </div>
+                                                    </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="moreHotels-section grid-responsivetable hidden">
+                                                <div class="border-top mt-3 pt-3">
+                                                    <h5 class="mb-3">Available Rooms</h5>
+                                                    <table>
+                                                        <tr>
+                                                            <th><div>No.</div></th>
+                                                            <th><div>Available Rooms</div></th>
+                                                            <th><div>Meal</div></th>
+                                                            <th><div>Condition</div></th>
+                                                            <th><div>Total</div></th>
+                                                            <th></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><div>01</div></td>
+                                                            <td><div>2 Single Bed Standard</div></td>
+                                                            <td><div><strong>Meal Plane :</strong>Room Only</div></td>
+                                                            <td><div><strong>Cancellation Policy :</strong>Non Refundable</div></td>
+                                                            <td><div><strong>Room Fare :</strong>INR 9367.00 <img src="images/airline/itinerary-page/arrow-down.svg" alt="" class="ms-2"></div></td>
+                                                            <td><div><button class="btn-gray-b">Add</button></div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><div>02</div></td>
+                                                            <td><div>Standard Room</div></td>
+                                                            <td><div>Room Only</div></td>
+                                                            <td><div>Refundable</div></td>
+                                                            <td><div>INR 12992.00 <img src="images/airline/itinerary-page/arrow-up.svg" alt="" class="ms-2"></div></td>
+                                                            <td><div><button class="btn-gray-b">Add</button></div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><div>03</div></td>
+                                                            <td><div>1 Queen Bed Standard</div></td>
+                                                            <td><div>Room Only</div></td>
+                                                            <td><div>Non Refundable</div></td>
+                                                            <td><div>INR 10910.00 <img src="images/airline/itinerary-page/arrow-down.svg" alt="" class="ms-2"></div></td>
+                                                            <td><div><button class="btn-gray-b">Add</button></div></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><div>04</div></td>
+                                                            <td><div>Double Queen Bed Non Smocking</div></td>
+                                                            <td><div>Room Only</div></td>
+                                                            <td><div>Refundable</div></td>
+                                                            <td><div>INR 14992.00 <img src="images/airline/itinerary-page/arrow-up.svg" alt="" class="ms-2"></div></td>
+                                                            <td><div><button class="btn-gray-b">Add</button></div></td>
+                                                        </tr>
+                                                    </table>
+                                                    <div class="viewMore-wrapper">
+                                                        <button>View More Room</button>
+                                                    </div>
+                                                </div>
+                                            
+                                            </div>
+                                        </div>
+                                        <!--include2view end-->
+                                    </div>
+                                    <!--filterhotel list end-->
+                                </div>
+                                <!--col end-->
+                            </div>
+                            <!--ROW END-->
+                        </div>
+                         <!--main-contentrow end-->
+                    </div>
+                </div>
+                 <!--mid_Container container end-->
+            </div>
+        </div>
+    </div>
+<!--content holder end-->
+    <!-- <script src="js/slick.min.js"></script> -->
+    <script src="js/airlineCustom.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Footer Starts -->
+    <footer class="sw-footer">
+
+        <div class="container-fluid swissBrief d-none">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="foot_item"><img src="images/stp/swiss_logo.jpg"> A Swiss International Air Lines
+                            Company</div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="foot_item"><img src="images/stp/yrs20.jpg"> Over 2 Decades of Travel Excellence
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="foot_item"><img src="images/stp/visit_logo.jpg">Sister Concern of
+                            VisitSwitzerland.com </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="foot_item"><img src="images/stp/services.jpg"> Bouquet of Services</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer">
+            <div class="footer-top">
+                <div class="row">
+
+                    <div class="col-12 col-md-3 border-right">
+                        <div class="row">
+                            <div class="foot_head">SwissTours <i class="fa fa-plus pull-right dropdown_icon"
+                                    aria-hidden="true"></i></div>
+                            <ul class="foot_dropdown">
+                                <li><a href="about_us.html" class="fade_anim">About us</a> </li>
+                                <li><a href="partners.html" class="fade_anim">Partners</a></li>
+                                <li><a href="careers.html" class="fade_anim">Careers</a></li>
+                                <li><a href="testimonials.html" class="fade_anim">Testimonials</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- <div class="col-sm-4 col-md-3">
+                            <div class="row">
+                                <div class="foot_head">Customer Support <i class="fa fa-plus pull-right dropdown_icon" aria-hidden="true"></i></div>
+                                <ul class="foot_dropdown">
+                                    <li><a href="contact_us.html" class="fade_anim">Contact Us</a></li>
+                                    <li><a href="faqs.html" class="fade_anim">FAQs</a></li>
+                                    <li><a href="#" class="fade_anim">Sitemap</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+
+                    <div class="col-12 col-md-3 border-right px-lg-5">
+                        <div class="row">
+                            <div class="foot_head">Legal <i class="fa fa-plus pull-right dropdown_icon"
+                                    aria-hidden="true"></i></div>
+                            <ul class="foot_dropdown">
+                                <li><a href="user_agreement.html" class="fade_anim">User Agreement</a></li>
+                                <li><a href="privacy_policy.html" class="fade_anim">Privacy Policy</a></li>
+                                <li><a href="#" class="fade_anim">Verified & Secured</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 border-right px-lg-3">
+                        <div class="row">
+                            <div class="adHolder sw-adHolder">
+                                <div class="foot_head" style="text-align: center;">Accessory Partner</div>
+                                <div style="text-align: center;">
+                                    <a href="#" target="_blank">
+                                        <img src="images/airline/victorinox-logo.png" alt="victorinox logo"
+                                            class="victoximg1">
+                                        <img src="images/airline/victorinox-logo-hover.png" alt="victorinox logo"
+                                            class="victoxhoverimg">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3 ps-lg-5 mt-4 mt-md-0">
+                        <div class="row">
+                            <div class="adHolder">
+                                <div class="foot_head">Official Time Partner</div>
+                                <div class="adBlock">
+                                    <iframe src="watch/index.html" scrolling="no" frameborder="0" width="100%"
+                                        height="100%" allowtransparency="true"></iframe>
+                                    <!-- <a href=""><img src="images/tagheuer.jpg"></a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="footer-mid">
+                <a href="#"><img src="images/airline/footermid-logo.svg" alt="swiss-logo"><span>Swiss International Air
+                        Lines Company</span></a>
+            </div>
+            <div class="footer-bottom bottom">
+                <div class="row">
+
+                    <div class="col-xs-6 social">
+                        <div class="row d-flex justify-content-center">
+
+                            <!-- <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> -->
+                            <a href="https://www.instagram.com/_swisstours/" target="_blank"><i class="fa fa-instagram"
+                                    aria-hidden="true"></i></a>
+                            <a href="https://www.facebook.com/pages/Swisstours/256257954432198" target="_blank"><i
+                                    class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 copyright">
+                        <div class="row">&copy; 2023 Swisstours.com All rights reserved.</div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Ends -->
+
+  <!--moreinfoModal start-->
+  <div class="modal" id="moreinfoModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">More Info</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+            <p>Additional fees/city tax/resort fees to be paid in local currency of country booked.</p>
+            <p>Check-in hour 16:00-.Car park YES (With additional debit notes).Identification card at arrival.Deposit on arrival.Minimum check 
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+ <!--moreinfoModal end-->
+      <!--packagescheckdeatils start-->
+      <div class="sw-modal modal fade hotelDetailsmodify checkroomdetailsmodal" id="checkroomdetails" tabindex="-1" aria-labelledby="checkroomdetailsLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!--modal body start-->
+            <div class="modal-body">
+                <div class="hotelsearchform p-0">
+                    
+                    <div class="customfloatingform">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="inputdiv selectdiv">
+                                    <div class="form-floating">
+                                        <div class="input-group">
+                                            <select class="form-select">
+                                                <option selected="">0 Guests</option>
+                                                <option>1 Guests</option>
+                                                <option>2 Guests</option>
+                                                <option>3 Guests</option>
+                                            </select>
+                                            <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar userinput locationicon"></span>
+                                            </span>
+                                        </div>
+                                    <label class="has-float-label">No of Guests</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!--input div start-->
+                            <div class="inputdiv col-lg-4">
+                                <div class="form-floating">
+                                    <div class="input-group date" id="departuretime">
+                                    <input type="text" class="form-control" placeholder="Choose here">
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar inputcalendar"></span>
+                                        </span>
+                                    </div>
+                                <label class="has-float-label">Check In</label>
+                                </div>
+                            </div>
+                            <!--input div end-->
+                            <!--input div start-->
+                            <div class="inputdiv col-lg-4">
+                                <div class="form-floating">
+                                    <div class="input-group date" id="arrivaltime">
+                                        <input type="text" class="form-control" placeholder="Choose here">
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar inputcalendar"></span>
+                                        </span>
+                                    </div>
+                                <label class="has-float-label">Check Out</label>
+                                </div>
+                            </div>
+                            <!--input div end-->
+                            <!--input div start-->
+                            <div class="inputdiv selectdiv col-lg-4">
+                                <div class="form-floating">
+                                    <div class="input-group">
+                                        <select class="form-select">
+                                            <option selected="">0 Guests</option>
+                                            <option>1 Guests</option>
+                                            <option>2 Guests</option>
+                                            <option>3 Guests</option>
+                                        </select>
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar nightinput"></span>
+                                        </span>
+                                    </div>
+                                <label class="has-float-label">No of Guests</label>
+                                </div>
+                            </div>
+                            <!--input div end-->
+                        </div>
+                       
+                        <div class="row align-items-center advdiv">
+                            <div class="inputdiv selectdiv col-lg-4">
+                                <div class="form-floating  mb-0">
+                                    <div class="input-group">
+                                        <select class="form-select" id="options" onchange="showDivs()">
+                                            <option selected>0 Room</option>
+                                            <option value="option1">1 Room</option>
+                                            <option value="option2">2 Room</option>
+                                            <option value="option3">3 Room</option>
+                                            <option value="option4">4 Room</option>
+                                            <option value="option5">5 Room</option>
+                                        </select>
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon roominput"></span>
+                                        </span>
+                                    </div>
+                                <label class="has-float-label">Room</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 d-flex justify-content-end">
+                                <a href="#" id="advancesearch">Advance Search</a>
+                            </div>
+                        </div>
+                        <div id="addedDivContainer"></div>
+                       
+                       
+                         
+                        <!--advancedformdiv start-->
+                        <div class="hidden advancedformdiv">
+                            <div class="d-flex mb-3 align-items-start">
+                                <label>Advance Search</label>
+                            </div>
+                            <!--row start-->
+                            <div class="row">
+                                <div class="inputdiv selectdiv col-lg-8">
+                                    <div class="form-floating">
+                                        <div class="input-group">
+                                            <select class="form-select">
+                                                <option selected>Name</option>
+                                                <option>hotel</option>
+                                                <option>hotel</option>
+                                                <option>hotel</option>
+                                            </select>
+                                            <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar hotelinput userinput"></span>
+                                            </span>
+                                        </div>
+                                    <label class="has-float-label">Hotel Name</label>
+                                    </div>
+                                </div>
+                                <div class="inputdiv selectdiv col-lg-4">
+                                    <div class="form-floating">
+                                        <div class="input-group">
+                                            <select class="form-select">
+                                                <option selected>All</option>
+                                                <option>Hotel</option>
+                                                <option>Hotel</option>
+                                                <option>Hotel</option>
+                                            </select>
+                                            <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar userinput hotelinput"></span>
+                                            </span>
+                                        </div>
+                                    <label class="has-float-label">Hotel</label>
+                                    </div>
+                                </div>
+                            </div>
+                             <!--row end-->
+                             <!--row start-->
+                            <div class="row">
+                                <div class="inputdiv selectdiv col-lg-5">
+                                    <div class="form-floating">
+                                        <div class="input-group">
+                                            <select class="form-select">
+                                                <option selected>Star</option>
+                                                <option>Star 1</option>
+                                                <option>Star 2</option>
+                                                <option>Star 3</option>
+                                            </select>
+                                            <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar userinput starinput"></span>
+                                            </span>
+                                        </div>
+                                    <label class="has-float-label">Star</label>
+                                    </div>
+                                </div>
+                                <div class="inputdiv selectdiv col-lg-7">
+                                    <div class="form-floating">
+                                        <div class="input-group">
+                                            <select class="form-select">
+                                                <option selected>Non-Refundable</option>
+                                                <option>Refundable</option>
+                                            </select>
+                                            <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar userinput sortinput"></span>
+                                            </span>
+                                        </div>
+                                    <label class="has-float-label">Sort By</label>
+                                    </div>
+                                </div>
+                            </div>
+                             <!--row end-->
+                        </div>
+                         <!--advancedformdiv end-->
+                        <a href="#" class="redBtn d-flex">Search</a>
+                        
+                    </div>
+                </div>
+              
+            </div>
+           <!--modalbody end-->
+          </div>
+        </div>
+        </div>
+        <!--checkroomdetails end--> 
+  
+    <script>
+       
+      
+      
+
+    function showDivs() {
+            // Get the selected option value
+            var selectedOption = document.getElementById("options").value;
+
+            // Get the container div
+            var containerDiv = document.getElementById("addedDivContainer");
+
+            // Clear previous divs
+            containerDiv.innerHTML = '';
+
+            // Add divs based on the selected option
+            if (selectedOption === "option1") {
+                createAndAppendDiv(containerDiv, 1);
+            } else if (selectedOption === "option2") {
+                createAndAppendDiv(containerDiv, 2);
+            } else if (selectedOption === "option3") {
+                createAndAppendDiv(containerDiv, 3);
+            } else if (selectedOption === "option4") {
+                createAndAppendDiv(containerDiv, 4);
+            }else if (selectedOption === "option5") {
+                createAndAppendDiv(containerDiv, 5);
+            }
+            
+        }
+
+        // Helper function to create and append divs
+        function createAndAppendDiv(container, count) {
+            for (var i = 1; i <= count; i++) {
+                var newDiv = document.createElement("div");
+                newDiv.className = "added-div";
+                newDiv.innerHTML = ` <div class="moreroomdetailsinfodiv" id="addedDivContainer" >
+                                                        <div class="d-flex mb-3 align-items-start">
+                                                            <label>Room ${i}</label>
+                                                        </div>
+                                                        <!--row start-->
+                                                        <div class="row">
+                                                            <div class="inputdiv selectdiv col-lg-6">
+                                                                <div class="form-floating">
+                                                                    <div class="input-group">
+                                                                        <select class="form-select">
+                                                                            <option selected>Adult</option>
+                                                                            <option>1 Adult</option>
+                                                                            <option>2 Adult</option>
+                                                                            <option>3 Adult</option>
+                                                                        </select>
+                                                                        <span class="input-group-addon">
+                                                                            <span class="glyphicon glyphicon-calendar userinput"></span>
+                                                                        </span>
+                                                                    </div>
+                                                                <label class="has-float-label">Adult 18+</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="inputdiv selectdiv col-lg-6">
+                                                                <div class="form-floating">
+                                                                    <div class="input-group">
+                                                                        <select class="form-select">
+                                                                            <option selected>Child</option>
+                                                                            <option>1 Child</option>
+                                                                            <option>2 Child</option>
+                                                                            <option>3 Child</option>
+                                                                        </select>
+                                                                        <span class="input-group-addon">
+                                                                            <span class="glyphicon glyphicon-calendar userinput"></span>
+                                                                        </span>
+                                                                    </div>
+                                                                <label class="has-float-label">Child >17</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--row end-->
+                                                        <!--row start-->
+                                                        <div class="row">
+                                                            <div class="inputdiv selectdiv col-lg-3">
+                                                                <div class="form-floating">
+                                                                    <div class="input-group">
+                                                                        <select class="form-select">
+                                                                            <option selected>4 year</option>
+                                                                            <option>1 year</option>
+                                                                            <option>2 year</option>
+                                                                            <option>3 year</option>
+                                                                            <option>4 year</option>
+                                                                            <option>5 year</option>
+                                                                            <option>6 year</option>
+                                                                        </select>
+                                                                        <span class="input-group-addon">
+                                                                            <span class="glyphicon glyphicon-calendar userinput"></span>
+                                                                        </span>
+                                                                    </div>
+                                                                <label class="has-float-label">Child 1</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="inputdiv selectdiv col-lg-3">
+                                                                <div class="form-floating">
+                                                                    <div class="input-group">
+                                                                        <select class="form-select">
+                                                                            <option selected>7 year</option>
+                                                                            <option>7 year</option>
+                                                                            <option>8 year</option>
+                                                                            <option>9 year</option>
+                                                                        </select>
+                                                                        <span class="input-group-addon">
+                                                                            <span class="glyphicon glyphicon-calendar userinput"></span>
+                                                                        </span>
+                                                                    </div>
+                                                                <label class="has-float-label">Child 2</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="inputdiv selectdiv col-lg-3">
+                                                                <div class="form-floating">
+                                                                    <div class="input-group">
+                                                                        <select class="form-select">
+                                                                            <option selected>10 year</option>
+                                                                            <option>7 year</option>
+                                                                            <option>8 year</option>
+                                                                            <option>9 year</option>
+                                                                            <option>10 year</option>
+                                                                        </select>
+                                                                        <span class="input-group-addon">
+                                                                            <span class="glyphicon glyphicon-calendar userinput"></span>
+                                                                        </span>
+                                                                    </div>
+                                                                <label class="has-float-label">Child 3</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="inputdiv selectdiv col-lg-3">
+                                                                <div class="form-floating">
+                                                                    <div class="input-group">
+                                                                        <select class="form-select">
+                                                                            <option selected>17 year</option>
+                                                                            <option>7 year</option>
+                                                                            <option>8 year</option>
+                                                                            <option>9 year</option>
+                                                                            <option>10 year</option>
+                                                                        </select>
+                                                                        <span class="input-group-addon">
+                                                                            <span class="glyphicon glyphicon-calendar userinput"></span>
+                                                                        </span>
+                                                                    </div>
+                                                                <label class="has-float-label">Child 4</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--row end-->
+                                                    </div>` + i;
+                container.appendChild(newDiv);
+            }
+        }
+                
+$(document).ready(function() {
+    //datepicker
+    $('#departuretime2,#departuretime3').datetimepicker({
+    language: 'en', 
+    weekStart: 1, 
+    todayBtn: 0, 
+    autoclose: 1, 
+    startView: 2,
+    forceParse: 0, 
+    minView: 2, 
+    format: 'dd M yyyy', 
+    pickerPosition: 'bottom-left'
+  
+   });
+
+   //advance search click
+   $('#advancesearch').click(function () {
+    // Toggle visibility of advancedformdiv
+    $('.advancedformdiv').toggle();
+
+    // Toggle visibility of addedDivContainer
+    $('#addedDivContainer').toggle();
+
+    // If addedDivContainer is visible, call showDivs
+    if ($('#addedDivContainer').is(":visible")) {
+        showDivs();
+    }
+});
+
+    $('.modify-btn').click(function(){
+        $('.Topinfo').hide();
+        $('.sw-mainheader').removeClass('zindex');
+    });
+
+    $('#topsearchModal').click(function(){
+        $('.Topinfo').show();
+        $('.sw-mainheader').addClass('zindex');
+      
+    });
+
+    $('.allfilterbtn').click(function(){
+        $('.leftFilter').show();
+        $('.sw-mainheader').addClass('zindex');
+    });
+
+    $('.leftFilter').click(function(){
+        $(this).hide();
+        $('.sw-mainheader').removeClass('zindex');
+    });
+    //SelectRoom toggle
+    $('.SelectRoom').click(function(){
+        var parentDiv = $(this).closest('.include2view');
+        parentDiv.find('.moreHotels-section').fadeToggle();
+    });
+
+    $(".hotelslidersection .sw-sliderpadding").slick({
+            slidesToShow: 5, slidesToScroll: 1, dots: !1, arrows: !0, speed: 500, infinite: false, autoplay: false, centerPadding: '0px', centerMode: false,
+            responsive: [{ breakpoint: 850, settings: { slidesToShow: 3, slidesToScroll: 1 } },
+            { breakpoint: 600, settings: { slidesToShow: 1.6, slidesToScroll: 1, dots: !0, arrows: !1 } }]
+        });
+        $(".apt-locationsection .sw-sliderpadding").slick({
+            slidesToShow: 3.5, slidesToScroll: 1, dots: !1, arrows: !0, speed: 500, infinite: false, autoplay: false, centerPadding: '0px', centerMode: false,
+            responsive: [{ breakpoint: 850, settings: { slidesToShow: 2.8, slidesToScroll: 1 } },
+            { breakpoint: 600, settings: { slidesToShow: 1.6, slidesToScroll: 1, dots: !0, arrows: !1 } }]
+        });
+        
+    });
+</script>
+</body>
+
+</html>

@@ -14,7 +14,7 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/menu.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap-select.min.css" rel="stylesheet" type="text/css">
-   
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500&display=swap" rel="stylesheet">
     <script src="js/jquery-1.12.4.min.js"></script>
     <!--<script src="js/bootstrap.min.js"></script>-->
     
@@ -205,7 +205,7 @@
                         </div>
                     </div>
                 </div> 
-            </li>
+              </li>
               <li class="nav-item dropdown dropdown-mega position-static">
                   <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
                     <span class="nav-icon"><img src="images/airline/menu-icon/sightseeing.svg" alt="" class="filter-red"></span>
@@ -233,11 +233,11 @@
                                             <a class="list-group-item" href="#">Jungfrau VIP Gondola</a>
                                         </li>
                                        
-                                        <li><a class="list-group-item" href="#">Harder Kulm</a></li>
+                                        <li><a class="list-group-item" href="#">Harder Kulm<span class="buyoffer red-text">Buy 1 Get 50% Off</span></a></li>
                                         <li><a class="list-group-item" href="#">Grindelwald First</a></li>
                                         <li><a class="list-group-item" href="#">Schilthorn</a></li>
                                         <li><a class="list-group-item" href="#">Mt Titlis</a></li>
-                                        <li><a class="list-group-item" href="#">Mt Pilatus</a></li>
+                                        <li><a class="list-group-item" href="#">Mt Pilatus<span class="buyoffer red-text">Buy 1 Get 50% Off</span></a></li>
                                         <li><a class="list-group-item" href="#">Matterhorn</a></li>
                                         <li>
                                             <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
@@ -249,7 +249,7 @@
                                         </li>
                                         <li><a class="list-group-item" href="#">Glacier 3000</a></li>
                                         <li><a class="list-group-item" href="#">Diavolezza</a></li>
-                                        <li><a class="list-group-item" href="#">Aletsch Arena</a></li>
+                                        <li><a class="list-group-item" href="#">Aletsch Arena<span class="buyoffer red-text">Buy 1 Get 50% Off</span></a></li>
                                         <li><a class="viewAllBtn" href="#">View All</a></li>
                                       
                                     </ul>
@@ -270,7 +270,7 @@
                                             <li><a class="list-group-item" href="#">Lindt</a></li>
                                             <li><a class="list-group-item" href="#">Swissminiatur</a></li>
                                             <li><a class="list-group-item" href="#">Meal Voucher</a></li>
-                                            <li><a class="list-group-item" href="#">Charlie Chaplin</a></li>
+                                            <li><a class="list-group-item" href="#">Charlie Chaplin<span class="buyoffer red-text">Buy 1 Get 50% Off</span></a></li>
                                             <li><a class="viewAllBtn list-group-item" href="#">View All</a></li>
                                             <!-- <li class="attarction-viewbtn">
                                                 <div class="viewmidbtn d-flex align-items-center justify-content-center m-auto">
@@ -295,7 +295,7 @@
                                             </a> 
                                         </li>
                                         <li><a class="list-group-item" href="#">Rhine falls and Stein am Rhein</a></li>
-                                        <li><a class="list-group-item" href="#">Zurich city tour with lake cruise</a></li>
+                                        <li><a class="list-group-item" href="#">Zurich city tour with lake cruise<span class="buyoffer red-text">Buy 1 Get 50% Off</span></a></li>
                                         <li><a class="list-group-item" href="#">Lucerne and Titlis snow experience</a></li>
                                     </ul>
                                     <div class="bordertop"></div>
@@ -402,8 +402,6 @@
   </header>
   <!-- Header Ends -->
       <link href="css/swiss-style.css" rel="stylesheet" type="text/css"> <!--airline css-->
-      <link href="css/jquery.autocomplete.css" rel="stylesheet" type="text/css" />
-      <link rel="stylesheet" href="css/jquery-ui.css">
       <link rel="stylesheet" href="css/meghamenu.css">
     
      
@@ -564,7 +562,12 @@
                                         <source media="(max-width:470px)" srcset="images/airline/attractionpage/recommonedimg/remimg1.webp">
                                         <img src="images/airline/attractionpage/recommonedimg/remimg1.webp" alt="" class="img-fluid">
                                     </picture>
-                                    
+                                    <div class="pricetag">
+                                        <p>From
+                                            <span class="cancelprice">INR 7326</span>
+                                            <span>INR 12,000</span>
+                                        </p>
+                                    </div>
                                     <div class="comman-imgcaption">
                                         <div class="Recommendedslider-caption">
                                             <div class="headingcaption">
@@ -576,16 +579,17 @@
                                             <div class="d-flex Pricedetails flex-column">
                                                 <div class="d-flex">
                                                     <p><img src="images/airline/location3.svg" alt="">Zermatt</p>
-                                                    <div class="pricerightdiv">
+                                                    <!-- <div class="pricerightdiv">
                                                         <p class="cancelprice">INR 7326</p>
                                                         <p>INR 4632</p>
-                                                    </div>
+                                                    </div> -->
                                                 </div>
                                             </div>
                                             <div class="Bookbtn">
                                                 <a href="#" class="border-btn">Book Now</a>
                                             </div>
                                         </div>
+                                        
                                     </div>
                                 
                                 </div>
@@ -939,7 +943,7 @@
                                             <div class="img-caption">
                                             <div class="packContent d-flex flex-column">
                                                     <div class="hoverdetailscard">
-                                                        <p> Board a comfortable coach & Discover Zurich’s Highlights, take a guided stroll through...</p>
+                                                        <p> Board a comfortable coach & Discover Zurich’s Highlights, take a guided stroll through  Board a comfortable coach & Discover Zurich’s Highlights, take a guided stroll through... Board a comfortable coach & Discover Zurich’s Highlights, take a guided stroll through...</p>
                                                     </div> 
                                                     <h3 class="packTitle">Rhine Fall & Zurich Tour</h3>
                                                 </div>
@@ -1593,9 +1597,10 @@
                                         </div>
                                     </div> 
                                     <!--specialsw-packOffer start-->
-                                    <div class="specialsw-packOffer">
+                                    <div class="ribbonN">
                                         <div class="sw-packOffer-img d-flex flex-column justify-content-between align-items-center">
-                                        <p>Buy 1 <br>Get 1 Free</p>
+                                            <p class="savetext">Buy 1</p>
+                                            <p class="combo-offerINR">Get 50%<span>OFF</span></p>
                                         </div>
                                     </div>
                                     <!--specialsw-packOffer end-->
@@ -1631,9 +1636,10 @@
                                         </div>
                                     </div>
                                     <!--specialsw-packOffer start-->
-                                    <div class="specialsw-packOffer">
+                                    <div class="ribbonN">
                                         <div class="sw-packOffer-img d-flex flex-column justify-content-between align-items-center">
-                                        <p>50% Off</p>
+                                            <p class="savetext">Save</p>
+                                            <p class="combo-offerINR">CHF 15</p>
                                         </div>
                                     </div>
                                     <!--specialsw-packOffer end-->

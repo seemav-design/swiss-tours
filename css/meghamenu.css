@@ -109,7 +109,6 @@ nav.sw-navbar .dropdown-menu .dropdown .dropdown-menu.left {
 	display: none;
 	transition: 0.5ms;
 	color: var(--primary-color);
-	font-family: 'poppinssemibold';
 	font-weight: 600;
 }
 .MostPopulartext:hover span {
@@ -209,7 +208,7 @@ nav.sw-navbar .nav-item.dropdown.dropdown-mega {
 nav.sw-navbar .nav-item.dropdown.dropdown-mega .dropdown-menu {
 	width: 100%;
 	top: auto;
-	height: auto;
+	/* height: auto; */
 	
 }
 
@@ -228,6 +227,9 @@ nav.sw-navbar .nav-item.dropdown.dropdown-mega .dropdown-menu {
 	bottom: 48px;
 	left: 0;
 	right: 0;
+}
+.contactMegamenu .bottomBtn .whitebgbtn{
+	margin: auto;
 }
 .hidden {
 	display: none;
@@ -266,7 +268,7 @@ nav.sw-navbar .nav-item ul li a.text-primary {
 	text-decoration: none;
 }
 .menuleftContact h5,.menuleftContact span.submenutitle{
-	font-family: 'poppinssemibold';
+	/* font-family: 'poppinssemibold'; */
 	font-weight: 600;
 	font-size: 14px;
 	margin: 0;
@@ -544,10 +546,10 @@ nav.sw-navbar .dropdown-item:hover {
 		margin-bottom: 0;
 		padding: 14.2px 12px;
 		border-bottom: 1px solid #eee;
-		font-size: 14px;
+		font-size: 0.875rem;
 		display: flex;
 	}
-	.sw-navbar .mega-content .menuleftContact h5 ,.sw-navbar .mega-content .menuleftContact .submenutitle a{
+	.sw-navbar .mega-content .menuleftContact .submenutitle ,.sw-navbar .mega-content .menuleftContact .submenutitle a{
 		border-bottom: 0;
 		padding: 0;
 	}
@@ -754,6 +756,12 @@ nav.sw-navbar .dropdown-item:hover {
 	.attarction-viewbtn .viewmidbtn a{
 		border-radius: 0.825rem!important;
 		width:auto;
+	}
+	.sw-navbar .dropdown-menu .ps-md-5 {
+		padding-left: 0;
+	}
+	.sw-navbar .dropdown-menu.pass .ps-md-5 {
+		padding-left: 0!important;
 	}
 	
 }
