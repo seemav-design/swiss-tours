@@ -137,6 +137,7 @@ nav.sw-navbar .dropdown-toggle::after {
 .sw-navbar .dropdown-mega .dropdown-menu .list-group.list-group2 {
 	margin-left: 12px;
 }
+
 nav.sw-navbar .nav-item.dropdown.dropdown-mega .dropdown-menu .list-group3 .list-group-item {
 	padding-left: 0;
 	padding-right: 0;
@@ -763,8 +764,17 @@ nav.sw-navbar .dropdown-item:hover {
 	.sw-navbar .dropdown-menu.pass .ps-md-5 {
 		padding-left: 0!important;
 	}
-	
+	.sw-navbar .dropdown-mega .dropdown-menu .list-group.list-group2.eurail-pass{
+		width: 98%!important;
+	}
+	.sw-navbar .dropdown-mega .dropdown-menu .list-group.list-group2.eurail-pass li a::after{
+		content:none;
+	}
+	.s2back a::after{
+		content:none;
+	} 
 }
+
 @media (min-width: 992px) {
 	nav.sw-navbar {
 		padding-top: 2.25rem;
@@ -830,3 +840,4 @@ nav.sw-navbar .dropdown-item:hover {
 	}
 	
 }
+
