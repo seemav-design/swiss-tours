@@ -413,12 +413,18 @@ nav.sw-navbar .dropdown-item:hover {
 	.sw-navbar .navbar-nav::-webkit-scrollbar {
 		width: 5px;
 	  }
+	  
+	  /* Track */
 	  .sw-navbar .navbar-nav::-webkit-scrollbar-track {
 		background: #f1f1f1; 
 	  }
+	   
+	  /* Handle */
 	  .sw-navbar .navbar-nav::-webkit-scrollbar-thumb {
 		background: var(--primary-color); 
 	  }
+	  
+	  /* Handle on hover */
 	  .sw-navbar .navbar-nav::-webkit-scrollbar-thumb:hover {
 		background: #555; 
 	  }
@@ -643,20 +649,18 @@ nav.sw-navbar .dropdown-item:hover {
 	.one-country-pass.active+.list-group.eurail-pass {
 		display: block !important;
 	}
+
 	.nav-item.active .dropdown-menu {
 		display: block;
 		position: fixed;
 		left: 116%;
-		top: 0px !important;
+		top: 0 !important;
 		width: 105% !important;
 		right: 0;
 		margin: 0 auto;
-		/* height: 100vh; */
+		height: 100vh;
 		padding: 0;
 	}
-	/* .nav-item .dropdown-menu {
-		top: 85px !important;
-	} */
 	.dropdown-menu.shadow.pass.show.active {
 		left: 109%;
 		opacity: 1;
@@ -710,21 +714,13 @@ nav.sw-navbar .dropdown-item:hover {
 		z-index: 2;
 		transform: translateX(-100%);
 		transition: transform 0.3s;
-		
 	}
-	
 	.dropdown-menu.pass .list-group.submenu2-content.show,
 	.list-group.eurail-pass.show {
 		opacity: 1;
 		pointer-events: all;
 		transform: translateX(0%);
 	}
-	.attrnMenu .list-group.submenu2-content.show{
-		overflow-y:scroll;
-		height:75vh;
-		width: 100% !important;
-	}
-	
 	ul.list-group.list-group3,
 	.submenu2-content {
 		opacity: 0;
@@ -778,12 +774,8 @@ nav.sw-navbar .dropdown-item:hover {
 	}
 	.listoverflow-mb {
 		overflow-y: scroll;
-		height: 73vh;
-		width: 93%;
-	}
-	.contactMegamenu .listoverflow-mb{
-		width: 100%;
 		height: 81vh;
+		width: 100%;
 	}
 	.divSwissTravelpass .selectionDiv .SelectionText {
 		padding: 22px;
